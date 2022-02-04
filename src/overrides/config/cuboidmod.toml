@@ -1,0 +1,577 @@
+
+#Quantum Collapser Settings
+[quantum_collapsers]
+
+	[quantum_collapsers.quantum_collapser]
+
+		[quantum_collapsers.quantum_collapser.notsogudium]
+			# Speed at which the collapser works.
+			# 1.0 means the collapser runs at normal speed according to the recipe being used.
+			# Default: 1.0
+			#Range: 1.0 ~ 20.0
+			speed = 1.0
+
+		[quantum_collapsers.quantum_collapser.notarfbadium]
+			# Speed at which the collapser works.
+			# 1.5 means the collapser runs 50% faster than the recipe being used specifies (e.g. 200 / 1.5 = 133 ticks).
+			# Default: 1.5
+			#Range: 1.0 ~ 20.0
+			speed = 1.5
+
+		[quantum_collapsers.quantum_collapser.wikidium]
+			# Speed at which the collapser works.
+			# 2.5 means the collapser runs 150% faster than the recipe being used specifies (e.g. 200 / 2.5 = 80 ticks).
+			# Default: 2.5
+			#Range: 1.0 ~ 20.0
+			speed = 2.5
+
+		[quantum_collapsers.quantum_collapser.kudbebedda]
+			# Speed at which the collapser works.
+			# 1.2 means the collapser runs 20% faster than the recipe being used specifies (e.g. 200 / 1.2 = 167 ticks).
+			# Default: 1.2
+			#Range: 1.0 ~ 20.0
+			speed = 1.2
+
+		[quantum_collapsers.quantum_collapser.thatldu]
+			# Speed at which the collapser works.
+			# 5.0 means the collapser runs 300% faster than the recipe being used specifies (e.g. 200 / 5.0 = 40 ticks).
+			# Default: 5.0
+			#Range: 1.0 ~ 20.0
+			speed = 5
+
+#Singularity Power Generator Settings
+[singularity_power_generators]
+
+	[singularity_power_generators.spg]
+
+		[singularity_power_generators.spg.notsogudium]
+			# The base FE per tick this generator produces.
+			# 4 means that 4 FE/t is produced. If ticks per cycle is 10, then twice per second, 40 FE is produced. 
+			# Default: 4
+			#Range: 1 ~ 50000
+			base_fe_generated = 4
+			# Number of ticks between power generation cycles.
+			# 10 would mean that energy is produced twice each second.
+			# Default: 10
+			#Range: 1 ~ 20
+			ticks_per_cycle = 10
+			# The maximum amount of FE per tick that this generator can provide to consumers.
+			# Usually you'd set this at around 4 to 8 times the figure used for base energy generated. Default: 16
+			#Range: 1 ~ 10000000
+			max_output_per_tick = 16
+			# The internal energy capacity in FE.
+			# Default: 20000
+			#Range: 1 ~ 10000000
+			energy_capacity = 20000
+
+		[singularity_power_generators.spg.notarfbadium]
+			# The base FE per tick this generator produces.
+			# 16 means that 16 FE/t is produced. If ticks per cycle is 10, then twice per second, 160 FE is produced. 
+			# Default: 16
+			#Range: 1 ~ 50000
+			base_fe_generated = 16
+			# Number of ticks between power generation cycles.
+			# 10 would mean that energy is produced twice each second.
+			# Default: 10
+			#Range: 1 ~ 20
+			ticks_per_cycle = 10
+			# The maximum amount of FE per tick that this generator can provide to consumers.
+			# Usually you'd set this at around 4 to 8 times the figure used for base energy generated. Default: 120
+			#Range: 1 ~ 10000000
+			max_output_per_tick = 120
+			# The internal energy capacity in FE.
+			# Default: 150000
+			#Range: 1 ~ 10000000
+			energy_capacity = 150000
+
+		[singularity_power_generators.spg.wikidium]
+			# The base FE per tick this generator produces.
+			# 40 means that 40 FE/t is produced. If ticks per cycle is 10, then twice per second, 400 FE is produced. 
+			# Default: 40
+			#Range: 1 ~ 50000
+			base_fe_generated = 40
+			# Number of ticks between power generation cycles.
+			# 10 would mean that energy is produced twice each second.
+			# Default: 10
+			#Range: 1 ~ 20
+			ticks_per_cycle = 10
+			# The maximum amount of FE per tick that this generator can provide to consumers.
+			# Usually you'd set this at around 4 to 8 times the figure used for base energy generated. Default: 300
+			#Range: 1 ~ 10000000
+			max_output_per_tick = 300
+			# The internal energy capacity in FE.
+			# Default: 500000
+			#Range: 1 ~ 10000000
+			energy_capacity = 500000
+
+		[singularity_power_generators.spg.kudbebedda]
+			# The base FE per tick this generator produces.
+			# 8 means that 8 FE/t is produced. If ticks per cycle is 10, then twice per second, 80 FE is produced. 
+			# Default: 8
+			#Range: 1 ~ 50000
+			base_fe_generated = 8
+			# Number of ticks between power generation cycles.
+			# 10 would mean that energy is produced twice each second.
+			# Default: 10
+			#Range: 1 ~ 20
+			ticks_per_cycle = 10
+			# The maximum amount of FE per tick that this generator can provide to consumers.
+			# Usually you'd set this at around 4 to 8 times the figure used for base energy generated. Default: 60
+			#Range: 1 ~ 10000000
+			max_output_per_tick = 60
+			# The internal energy capacity in FE.
+			# Default: 60000
+			#Range: 1 ~ 10000000
+			energy_capacity = 60000
+
+		[singularity_power_generators.spg.thatldu]
+			# The base FE per tick this generator produces.
+			# 100 means that 100 FE/t is produced. If ticks per cycle is 10, then twice per second, 1000 FE is produced. 
+			# Default: 100
+			#Range: 1 ~ 50000
+			base_fe_generated = 100
+			# Number of ticks between power generation cycles.
+			# 10 would mean that energy is produced twice each second.
+			# Default: 10
+			#Range: 1 ~ 20
+			ticks_per_cycle = 10
+			# The maximum amount of FE per tick that this generator can provide to consumers.
+			# Usually you'd set this at around 4 to 8 times the figure used for base energy generated. Default: 800
+			#Range: 1 ~ 10000000
+			max_output_per_tick = 800
+			# The internal energy capacity in FE.
+			# Default: 1000000
+			#Range: 1 ~ 10000000
+			energy_capacity = 1000000
+
+#Chest Settings
+[chests]
+
+	[chests.notsogudium_chest]
+		# Whether the chest can open if there's a full block above it.
+		# If true then can always open.
+		# Default: false
+		can_open_obstructed = false
+		# Whether the chest keeps its inventory when broken.
+		# If true then chest retains inventory. If false, inventory is dumped on the ground when broken.
+		# Default: false
+		retains_inventory = false
+
+	[chests.notarfbadium_chest]
+		# Whether the chest can open if there's a full block above it.
+		# If true then can always open.
+		# Default: false
+		can_open_obstructed = true
+		# Whether the chest keeps its inventory when broken.
+		# If true then chest retains inventory. If false, inventory is dumped on the ground when broken.
+		# Default: false
+		retains_inventory = false
+
+	[chests.kudbebedda_chest]
+		# Whether the chest can open if there's a full block above it.
+		# If true then can always open.
+		# Default: false
+		can_open_obstructed = false
+		# Whether the chest keeps its inventory when broken.
+		# If true then chest retains inventory. If false, inventory is dumped on the ground when broken.
+		# Default: false
+		retains_inventory = false
+
+	[chests.wikidium_chest]
+		# Whether the chest can open if there's a full block above it.
+		# If true then can always open.
+		# Default: false
+		can_open_obstructed = true
+		# Whether the chest keeps its inventory when broken.
+		# If true then chest retains inventory. If false, inventory is dumped on the ground when broken.
+		# Default: false
+		retains_inventory = true
+
+	[chests.thatldu_chest]
+		# Whether the chest can open if there's a full block above it.
+		# If true then can always open.
+		# Default: false
+		can_open_obstructed = true
+		# Whether the chest keeps its inventory when broken.
+		# If true then chest retains inventory. If false, inventory is dumped on the ground when broken.
+		# Default: false
+		retains_inventory = true
+
+#Refined Inscriber Settings
+[refined_inscriber]
+
+	[refined_inscriber.ri]
+		# The default number of ticks for recipes if not specified in the recipe itself.
+		# Default: 100
+		#Range: 1 ~ 10000
+		recipe_work_ticks = 200
+		# The default amount of FE required for recipes if not specified in the recipe itself.
+		# Default: 5000
+		#Range: 1 ~ 10000000
+		recipe_energy_required = 5000
+		# The internal energy capacity in FE.
+		# Default: 50000
+		#Range: 1 ~ 10000000
+		energy_capacity = 50000
+		# The maximum amount of FE per tick that the Refined Inscriber can receive.
+		# Default: 250
+		#Range: 1 ~ 10000000
+		max_energy_in_per_tick = 250
+
+#Furnace Settings
+[furnaces]
+
+	[furnaces.furnace]
+		# Show furnace settings errors in chat, used for debugging
+		errors = false
+
+	[furnaces.notarfbadium_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 140
+		#Range: 2 ~ 72000
+		speed = 140
+
+	[furnaces.furnace_xp_drop]
+		# This value indicates when the furnace should 'overload' and spit out the xp stored. 
+		# Default: 10, Recipes
+		#Range: 1 ~ 500
+		value = 10
+		# This value indicates when the furnace should 'overload' and spit out the xp stored. 
+		# Default: 100000, Single recipe uses
+		#Range: 1 ~ 1000000
+		value_two = 100000
+
+	[furnaces.thatldu_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 70
+		#Range: 2 ~ 72000
+		speed = 70
+
+	[furnaces.wikidium_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 110
+		#Range: 2 ~ 72000
+		speed = 110
+
+	[furnaces.eumus_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 200
+		#Range: 2 ~ 72000
+		speed = 200
+
+	[furnaces.notsogudium_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 180
+		#Range: 2 ~ 72000
+		speed = 180
+
+	[furnaces.kudbebedda_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 160
+		#Range: 2 ~ 72000
+		speed = 160
+
+#JEI Settings
+[jei]
+
+	[jei.jei]
+		# Enable or disable the Click Area inside the GUI in all Cuboid machines.
+		enable_jei_click_area = true
+		# Enable or disable the Catalysts in Jei for Cuboid machines.
+		enable_jei_catalysts = true
+		# Enable or disable the JeiPlugin of Cuboid machines.
+		enable_jei = true
+
+#Drying Cupboard Settings
+[drying_cupboard]
+
+	[drying_cupboard.drying_cupboard]
+		# The internal energy capacity in FE.
+		# Default: 10000
+		#Range: 1 ~ 10000000
+		energy_capacity = 10000
+		# The amount of FE per tick that the drying cupboard uses when active.
+		# Default: 8
+		#Range: 1 ~ 10000
+		max_energy_in_per_tick = 8
+
+#Settings
+[general]
+
+	[general.notsogudium_smasher]
+		# Durability for the Notsogudium Smasher.
+		# Default: 261
+		#Range: 1 ~ 32767
+		durability = 261
+		# Attack speed for the Notsogudium Smasher.
+		# Default: 1.4
+		#Range: 0.0 ~ 4.0
+		attackSpeed = 1.4
+		# Attack Damage for the Notsogudium Smasher.
+		# Default: 2
+		#Range: 0 ~ 20
+		attackDamage = 2
+
+	[general.smoosher]
+		# Durability for the Smoosher.
+		# Default: 481
+		#Range: 1 ~ 32767
+		durability = 481
+
+	[general.thatldu_smasher]
+		# Durability for the Thatldu Smasher.
+		# Default: 2577
+		#Range: 1 ~ 32767
+		durability = 2577
+		# Attack speed for the Thatldu Smasher.
+		# Default: 1.5
+		#Range: 0.0 ~ 4.0
+		attackSpeed = 1.5
+		# Attack Damage for the Thatldu Smasher.
+		# Default: 2
+		#Range: 0 ~ 20
+		attackDamage = 6
+
+	[general.notarfbadium_smasher]
+		# Durability for the Notarfbadium Smasher.
+		# Default: 727
+		#Range: 1 ~ 32767
+		durability = 727
+		# Attack speed for the Notarfbadium Smasher.
+		# Default: 1.4
+		#Range: 0.0 ~ 4.0
+		attackSpeed = 1.4
+		# Attack Damage for the Notarfbadium Smasher.
+		# Default: 4
+		#Range: 0 ~ 20
+		attackDamage = 4
+
+	[general.kudbebedda_smasher]
+		# Durability for the Kudbebedda Smasher.
+		# Default: 383
+		#Range: 1 ~ 32767
+		durability = 383
+		# Attack speed for the Kudbebedda Smasher.
+		# Default: 1.4
+		#Range: 0.0 ~ 4.0
+		attackSpeed = 1.4
+		# Attack Damage for the Kudbebedda Smasher.
+		# Default: 3
+		#Range: 0 ~ 20
+		attackDamage = 3
+
+	[general.wikidium_smasher]
+		# Durability for the Wikidium Smasher.
+		# Default: 1337
+		#Range: 1 ~ 32767
+		durability = 1337
+		# Attack speed for the Wikidium Smasher.
+		# Default: 1.4
+		#Range: 0.0 ~ 4.0
+		attackSpeed = 1.4
+		# Attack Damage for the Wikidium Smasher.
+		# Default: 2
+		#Range: 0 ~ 20
+		attackDamage = 5
+
+#Quantum Transmutation Chamber Settings
+[quantum_transmutation_chamber]
+
+	[quantum_transmutation_chamber.qtc]
+		# The internal energy capacity in FE.
+		# Default: 50000
+		#Range: 1 ~ 10000000
+		energy_capacity = 50000
+		# The maximum amount of FE per tick that the QTC can receive.
+		# Default: 250
+		#Range: 1 ~ 10000000
+		max_energy_in_per_tick = 250
+
+#Molecular Recycler Settings
+#
+#  The Molecular Recycler is essentially similar to the concept of uncrafters,
+#  but is intentionally designed to be imperfect. What it attempts to do, with the
+#  default configuration, is recursively break down ingredients based on crafting
+#  recipes that result in the item being recycled. The number of steps it will take
+#  is determined by [qtc.max_recycling_steps] and defaults to 3. Increasing this will
+#  increase the likelihood that the outputs are going to be really basic! e.g. more
+#  likely to be nuggets than ingots, or any familiar ingredients given the input.
+#
+#  For example, an oak fence gate requires 4 sticks and 2 oak planks. If you put in
+#  an oak fence gate, you won't get back all 4 sticks and 2 oak planks - instead you
+#  will most likely get back less than that.
+#
+#  For each final ingredient type, the Molecular Recycler uses the following formula
+#  to determine your chances of getting back each of the input materials:
+#
+#    - For the first [qtc.guaranteed_amount] items of a particular type, you will get
+#      back [qtc.guaranteed_count] of that item with 100% certainty. By default, these
+#      are 4 and 3 respectively, which means that for any item where there were 4 or
+#      more ingredients identified by the recycler, you will get back 3 of the first 4.
+#    - For the next 2 items of a particular type, there is a 80% chance of getting (up to) 2 back
+#    - For the next 2 items of a particular type, there is a 60% chance of getting (up to) 2 back
+#    - For the next 2 items of a particular type, there is a 50% chance of getting (up to) 2 back
+#    - For the remainder of items, for each of the next 2 items of a particular type,       there is a 25% chance of getting (up to) 2 back
+#
+#Note that we use (up to) 2 because if at any stage there is only 1 left, then the logic will apply
+#to just that one remaining item.
+#
+#Yes - it's confusing, and possibly a bit harsh, but this is not meant to be a lossless uncrafter!
+#
+#Going back to the oak fence gate example, 4 sticks and two oak planks - assuming default settings -
+#this would result in 3 sticks, and an 80% chance of getting back 2 oak planks.
+#
+#Another example is an Iron Chest from the Iron Chests mod. To make it you need a vanilla chest 
+#(8x planks) and 8 iron ingots. The planks would not break down further, so would result in 3 of 
+#the first 4 being guaranteed, then an 80% chance of 2 and a 60% chance of 2. The iron ingots, however
+#would be broken down again into iron nuggets - 72 of them. The first 4 would give back a guaranteed 3
+#then 2 at 80% chance, 2 at 60% chance, 2 at 50% chance, and the remaining 62 would be as 31 rolls of
+#2 at 25% chance... if you're really, really unlucky, you might only get back 3 planks and 3 nuggets!
+#It should be fairly clear that this machine is a mixed blessing, and should be used with caution!
+#
+#NOTE: When it comes to recycling items with multiple recipes (or their results when recursively
+#      recycling), the recipe with the most ingredients is chosen as a preference. This is not
+#      currently configurable.
+#
+[molecular_recycler]
+
+	[molecular_recycler.qtc]
+		# The additional time taken in ticks for each additional recycling step, based on the maximum depth used on any 'branch'.
+		#Default: 40, Max: 6000
+		#Range: 0 ~ 6000
+		step_work_ticks = 40
+		# If the net result of recycling exceeds the guaranteed amount, then this number of resulting items is guaranteed.
+		# This should always be less than or equal to the guaranteed amount. e.g. if Guaranteed Amount is 4, and this is 3, then if the recycler determines that there are 4 or more of a potential output, the first 4 will result in a 100% chance of getting 3 back (guaranteed 75% output).
+		#Default: 3, Max: 64
+		#Range: 0 ~ 64
+		guaranteed_count = 3
+		# If the net result of recycling exceeds this number (N), then the first N results will have a guaranteed output count as specified.
+		# Default: 4, Max: 64
+		#Range: 0 ~ 64
+		guaranteed_amount = 4
+		# The additional energy required for each additional recycling step, based on the maximum depth used on any 'branch'.
+		#Default: 500, Max: 50000
+		#Range: 0 ~ 50000
+		step_energy = 500
+		# The maximum number of recycling steps to perform.
+		# Default: 3, Max: 10
+		#Range: 1 ~ 10
+		max_recycling_steps = 3
+		# The base energy requirement for any recycling.
+		#Default: 2000, Max: 50000
+		#Range: 0 ~ 50000
+		base_energy = 2000
+		# The internal energy capacity in FE.
+		# Default: 50000
+		#Range: 1 ~ 10000000
+		energy_capacity = 50000
+		# The maximum amount of FE per tick that the recycler can receive.
+		# Default: 250
+		#Range: 1 ~ 10000000
+		max_energy_in_per_tick = 250
+		# The base time taken for any recycling in ticks.
+		#Default: 100, Max: 6000
+		#Range: 0 ~ 6000
+		base_work_ticks = 100
+
+#Cryogenic Dimensional Teleporter Settings
+[cryogenic_dimensional_teleporter]
+
+	[cryogenic_dimensional_teleporter.cryogenic_dimensional_teleporter]
+		# The rotation speed for a ready / fully charged teleporter - lower = faster rotation.
+		# Default: 50
+		#Range: 1 ~ 300
+		ready_rotation_speed = 50
+		# Indicates whether teleporting to the overworld takes the player to their own respawn point.
+		# If false, player is just teleported to location relative to position in the originating dimension.
+		# Default: true
+		overworld_uses_player_spawn = true
+		# Indicates whether using an invalid key on the CDT will reset the target dimension.
+		clears_for_invalid_key = false
+		# The internal energy capacity in FE - i.e. the amount of FE needed per teleport
+		# Default: 300000
+		#Range: 1 ~ 10000000
+		energy_capacity = 300000
+		# The maximum amount of FE per tick that the CDT can receive.
+		# Default: 5000
+		#Range: 1 ~ 50000
+		max_energy_in_per_tick = 5000
+
+#Singularity Resource Generator Settings
+[singularity_resource_generators]
+
+	[singularity_resource_generators.srg]
+
+		[singularity_resource_generators.srg.notsogudium]
+			# Number of items being produced per operation.
+			# 1 would mean that every specified number of ticks, 1 item is produced.
+			# Default: 1
+			#Range: 1 ~ 64
+			items_per_op = 1
+			# Number of ticks between operations where items are produced.
+			# 20 would mean the amount of items gets produced every second.
+			# Default: 20
+			#Range: 1 ~ 1200
+			ticks_per_op = 20
+
+		[singularity_resource_generators.srg.notarfbadium]
+			# Number of items being produced per operation.
+			# 4 would mean that every specified number of ticks, 4 items are produced.
+			# Default: 4
+			#Range: 1 ~ 64
+			items_per_op = 4
+			# Number of ticks between operations where items are produced.
+			# 5 would mean the amount of items gets produced 4 times per second.
+			# Default: 5
+			#Range: 1 ~ 1200
+			ticks_per_op = 5
+
+		[singularity_resource_generators.srg.wikidium]
+			# Number of items being produced per operation.
+			# 16 would mean that every specified number of ticks, 16 items are produced.
+			# Default: 16
+			#Range: 1 ~ 64
+			items_per_op = 16
+			# Number of ticks between operations where items are produced.
+			# 2 would mean the amount of items gets produced 10 times per second.
+			# Default: 2
+			#Range: 1 ~ 1200
+			ticks_per_op = 5
+
+		[singularity_resource_generators.srg.kudbebedda]
+			# Number of items being produced per operation.
+			# 4 would mean that every specified number of ticks, 2 items are produced.
+			# Default: 2
+			#Range: 1 ~ 64
+			items_per_op = 2
+			# Number of ticks between operations where items are produced.
+			# 10 would mean the amount of items gets produced every half second.
+			# Default: 10
+			#Range: 1 ~ 1200
+			ticks_per_op = 10
+
+		[singularity_resource_generators.srg.thatldu]
+			# Number of items being produced per operation.
+			# 64 would mean that every specified number of ticks, 64 items are produced.
+			# Default: 64
+			#Range: 1 ~ 64
+			items_per_op = 64
+			# Number of ticks between operations where items are produced.
+			# 2 would mean the amount of items gets produced 10 times per second.
+			# Default: 2
+			#Range: 1 ~ 1200
+			ticks_per_op = 5
+
+#Misc
+[misc]
+
+	[misc.misc]
+		# Logs additional information when loading Quantum Singularity and Molecular Recycler Blacklist config files.
+		verbose_logging = false
+

@@ -1,0 +1,18 @@
+[
+    {
+        "mob": "minecraft:witch",
+        "remove": "minecraft:stick"
+    },
+    {
+        "mob": "minecraft:zombie",
+        "remove": "minecraft:iron_ingot"
+    },
+    {
+        "mob": "minecraft:zombie",
+        "remove": "minecraft:carrot"
+    },
+    {
+        "mob": "minecraft:zombie",
+        "remove": "minecraft:potato"
+    }
+]

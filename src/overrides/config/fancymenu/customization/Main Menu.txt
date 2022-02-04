@@ -1,0 +1,93 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screen.MainMenuScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = kubejs/assets/kubejs/textures/quests/background.png
+  action = texturizebackground
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=400322%
+  orientation = mid-left
+  x = 89
+  action = movebutton
+  y = -9
+}
+
+customization {
+  identifier = %id=604382%
+  orientation = mid-left
+  x = 269
+  action = movebutton
+  y = 63
+}
+
+customization {
+  identifier = %id=400382%
+  orientation = mid-left
+  x = 89
+  action = movebutton
+  y = 39
+}
+
+customization {
+  identifier = %id=502382%
+  orientation = mid-left
+  x = 191
+  action = movebutton
+  y = 39
+}
+
+customization {
+  identifier = %id=376382%
+  orientation = mid-left
+  x = 89
+  action = movebutton
+  y = 63
+}
+
+customization {
+  identifier = %id=400298%
+  orientation = mid-left
+  x = 89
+  action = movebutton
+  y = -33
+}
+
+customization {
+  identifier = %id=400346%
+  orientation = mid-left
+  x = 89
+  action = movebutton
+  y = 15
+}
+
+customization {
+  identifier = %id=400346%
+  width = 200
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=502346%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=604346%
+  action = hidebutton
+}
+

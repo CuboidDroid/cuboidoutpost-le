@@ -1,0 +1,636 @@
+{
+	id: "16D377F0D36CA2DE"
+	group: "24F09E0B1AD125E9"
+	order_index: 2
+	filename: "digital_refined_storage"
+	title: "Digital: Refined Storage"
+	icon: "refinedstorage:advanced_processor"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Raw Ingredients"
+			x: 0.0d
+			y: -3.0d
+			shape: "gear"
+			description: [
+				"Now that you have managed to make sufficient progress with your existing storage system, you can either choose to continue using it, or switch over to an alternative solution, which we have coined \"Refined Storage\"."
+				""
+				"There are only a few differences between your existing system and this alternative, perhaps the biggest differences being the lack of channels and storage is purely based on the number of items rather than type and storage size, but some of the scientists here at Cuboid Corp (tm) feel that this might be of interest. They should have been working on providing you with significant advances in medical science, but it turns out that they were concentrating on this pet project instead! Oh well. Hopefully you don't contract some new alien virus while you're out there!"
+				""
+				"To get started, you will need to create raw processors, which will be used in the creation of this line of machinery - you might want to stock up on some of these!"
+				""
+				"&eNote:&f The tasks here should be enough to get you started, but you will need to figure out the rest for yourself if you need anything more than what is described here. We would have included more, but our keyboards are melting and we can't keep goi..."
+			]
+			dependencies: ["0841F4A3C8B05581"]
+			id: "7D1F920F5C37A64D"
+			tasks: [
+				{
+					id: "385628061A2296D6"
+					type: "item"
+					item: "refinedstorage:processor_binding"
+					count: 32L
+				}
+				{
+					id: "0542226A5CAE4593"
+					type: "item"
+					item: "refinedstorage:raw_basic_processor"
+					count: 16L
+				}
+				{
+					id: "3838631F7F6CDB9F"
+					type: "item"
+					item: "refinedstorage:raw_improved_processor"
+					count: 8L
+				}
+				{
+					id: "637B51129640A8C4"
+					type: "item"
+					item: "refinedstorage:raw_advanced_processor"
+					count: 8L
+				}
+			]
+		}
+		{
+			title: "Refined Processors"
+			x: -1.0d
+			y: -1.0d
+			description: ["To convert your raw processors into a form that you can use in crafting, just cook them in a furnace."]
+			dependencies: ["7D1F920F5C37A64D"]
+			id: "5FA27E9D8BFBB244"
+			tasks: [
+				{
+					id: "32E5C9EE7968CA51"
+					type: "item"
+					item: "refinedstorage:basic_processor"
+					count: 16L
+				}
+				{
+					id: "368664CCE7ACF17F"
+					type: "item"
+					item: "refinedstorage:improved_processor"
+					count: 8L
+				}
+				{
+					id: "31FDE0EEBF1DD18B"
+					type: "item"
+					item: "refinedstorage:advanced_processor"
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "579D78721F08F949"
+					type: "item"
+					item: "refinedstorage:basic_processor"
+					count: 8
+					random_bonus: 8
+				}
+				{
+					id: "6FC2E68BC72BC821"
+					type: "item"
+					item: "refinedstorage:improved_processor"
+					count: 4
+					random_bonus: 4
+				}
+				{
+					id: "65D7638649BC4B08"
+					type: "item"
+					item: "refinedstorage:advanced_processor"
+					count: 4
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			description: ["The other key ingredient for many of these machines is a special form of iron that has been enriched with Quartz."]
+			dependencies: ["7D1F920F5C37A64D"]
+			id: "26BCA1722B2DABB6"
+			tasks: [{
+				id: "4BF6E26554A92AD2"
+				type: "item"
+				item: "refinedstorage:quartz_enriched_iron"
+				count: 32L
+			}]
+		}
+		{
+			title: "Refined Storage Controller"
+			x: 0.0d
+			y: 1.0d
+			description: [
+				"The Controller is the heart of a Refined Storage network. You will need one, and only one, per network."
+				""
+				"The Controller accepts power, and then provides power to the other peripherals added to your network. Power can be transferred between peripherals by Cable, or by peripherals touching each other."
+			]
+			dependencies: [
+				"5FA27E9D8BFBB244"
+				"26BCA1722B2DABB6"
+			]
+			id: "5F429B6CD0379453"
+			tasks: [{
+				id: "4207BCCE2EA44747"
+				type: "item"
+				item: "refinedstorage:controller"
+			}]
+			rewards: [{
+				id: "45A0E9BB29ADD032"
+				type: "item"
+				item: "refinedstorage:wrench"
+			}]
+		}
+		{
+			title: "Refined Storage Disk Drive"
+			x: -1.0d
+			y: 5.0d
+			description: [
+				"As with your existing Applied Energistics system, you will need to attach a disk drive and load it with storage disks to be able to store items in your Refined Storage network. Create yourself at least on Disk Drive now."
+				""
+				"A Disk Drive can be configured to use Storage Disks or Fluid Storage Disks. It defaults to items."
+			]
+			dependencies: ["4354DA99F4CB3848"]
+			id: "30F1A30BCF64EC94"
+			tasks: [{
+				id: "03B179FB3C9D772F"
+				type: "item"
+				item: "refinedstorage:disk_drive"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			description: ["A Grid provides you access to your storage. It does not, however, provide you with a crafting interface - but we'll sort that out next."]
+			dependencies: ["4354DA99F4CB3848"]
+			id: "2C08F8142A170F6D"
+			tasks: [{
+				id: "6849007CC24C4A0D"
+				type: "item"
+				item: "refinedstorage:grid"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["5F429B6CD0379453"]
+			id: "4354DA99F4CB3848"
+			tasks: [{
+				id: "478C27DF4494C8C1"
+				type: "item"
+				item: "refinedstorage:machine_casing"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			description: ["A Grid can easily be upgraded to a Crafting Grid, which will provide full access to your shiny new storage system, as well as give you the ability to craft items directly from your storage."]
+			dependencies: ["2C08F8142A170F6D"]
+			id: "565B7D0983390F1C"
+			tasks: [{
+				id: "4321345B53A8AE2B"
+				type: "item"
+				item: "refinedstorage:crafting_grid"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 7.0d
+			description: ["A 1k Storage Part can either be used to create a 1k Storage Disk, or 3 can be used to create a 4k Storage Part."]
+			dependencies: ["30F1A30BCF64EC94"]
+			id: "2D5A502672774F00"
+			tasks: [{
+				id: "2FBE896A76BF4652"
+				type: "item"
+				item: "refinedstorage:1k_storage_part"
+			}]
+			rewards: [{
+				id: "2EB40326CFC94980"
+				type: "item"
+				item: "refinedstorage:1k_storage_part"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			x: -3.0d
+			y: 8.0d
+			description: ["A 1k Storage Disk will add an additional 1000 items capacity to your digital storage."]
+			dependencies: ["2D5A502672774F00"]
+			optional: true
+			id: "19A7C407BDE45054"
+			tasks: [{
+				id: "094EE33D22BCE158"
+				type: "item"
+				item: "refinedstorage:1k_storage_disk"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 9.0d
+			description: ["A 4k Storage Part can either be used to create a 4k Storage Disk, or 3 can be used to create a 16k Storage Part."]
+			dependencies: ["2D5A502672774F00"]
+			id: "0910720FB14140FA"
+			tasks: [{
+				id: "30A2B8284779C88A"
+				type: "item"
+				item: "refinedstorage:4k_storage_part"
+			}]
+			rewards: [{
+				id: "439F71F08E3BF338"
+				type: "item"
+				item: "refinedstorage:4k_storage_part"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: -3.0d
+			y: 10.0d
+			description: ["A 4k Storage Disk will add an additional 4000 items capacity to your digital storage."]
+			dependencies: ["0910720FB14140FA"]
+			optional: true
+			id: "4D7C1D297CE5DAF4"
+			tasks: [{
+				id: "0B39E4B67B11AE4A"
+				type: "item"
+				item: "refinedstorage:4k_storage_disk"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 11.0d
+			description: ["A 16k Storage Part can either be used to create a 16k Storage Disk, or 3 can be used to create a 64k Storage Part."]
+			dependencies: ["0910720FB14140FA"]
+			id: "0FB1D91E0BACF5D0"
+			tasks: [{
+				id: "0F567D864542B0BE"
+				type: "item"
+				item: "refinedstorage:16k_storage_part"
+			}]
+			rewards: [{
+				id: "45B026E5C5400C83"
+				type: "item"
+				item: "refinedstorage:16k_storage_part"
+				random_bonus: 1
+			}]
+		}
+		{
+			x: -3.0d
+			y: 12.0d
+			description: ["A 16k Storage Disk will add an additional 16000 items capacity to your digital storage."]
+			dependencies: ["0FB1D91E0BACF5D0"]
+			optional: true
+			id: "1D3998A407A1C49E"
+			tasks: [{
+				id: "1D129D1433B5A4C5"
+				type: "item"
+				item: "refinedstorage:16k_storage_disk"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 13.0d
+			description: ["A 64k Storage Part can be used to create a 64k Storage Disk. Unfortunately this is the largest size of storage part we believe you will be able to make given your circumstances."]
+			dependencies: ["0FB1D91E0BACF5D0"]
+			id: "6FDC0BE810B1B9D1"
+			tasks: [{
+				id: "6CC90DB93A562D91"
+				type: "item"
+				item: "refinedstorage:64k_storage_part"
+			}]
+			rewards: [{
+				id: "0871133D0D0AAC1D"
+				type: "item"
+				item: "refinedstorage:64k_storage_part"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 14.0d
+			description: ["A 64k Storage Disk will add an additional 64000 items capacity to your digital storage."]
+			dependencies: ["6FDC0BE810B1B9D1"]
+			optional: true
+			id: "2DA3C958955FF273"
+			tasks: [{
+				id: "36EBF1234B211750"
+				type: "item"
+				item: "refinedstorage:64k_storage_disk"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			description: [
+				"The Fluid Grid can be used to view the content of your network's fluid storage. If your item storage or inventory contains buckets, you can extract fluids in buckets simply by clicking on a fluid."
+				""
+				"You can also insert fluid by clicking a bucket of fluid into the appropriate slot in the user interface."
+			]
+			dependencies: ["2C08F8142A170F6D"]
+			id: "7E0229A374EE78ED"
+			tasks: [{
+				id: "1151A6DADCE89422"
+				type: "item"
+				item: "refinedstorage:fluid_grid"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 7.0d
+			description: ["A 64k Fluid Storage Part can either be used to create a 64k Fluid Storage Disk, or 3 can be used to create a 256k Fluid Storage Part."]
+			dependencies: ["30F1A30BCF64EC94"]
+			id: "62E108396CCA4C44"
+			tasks: [{
+				id: "6D73CACC94F120E1"
+				type: "item"
+				item: "refinedstorage:64k_fluid_storage_part"
+			}]
+			rewards: [{
+				id: "1C135B912495CF01"
+				type: "item"
+				item: "refinedstorage:64k_fluid_storage_part"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 0.0d
+			y: 9.0d
+			description: ["A 256k Fluid Storage Part can either be used to create a 256k Fluid Storage Disk, or 3 can be used to create a 1024k Fluid Storage Part."]
+			dependencies: ["62E108396CCA4C44"]
+			id: "1672776564773AF5"
+			tasks: [{
+				id: "7B8D6084A33DEB81"
+				type: "item"
+				item: "refinedstorage:256k_fluid_storage_part"
+			}]
+			rewards: [{
+				id: "55E6A5EFBF61BB0F"
+				type: "item"
+				item: "refinedstorage:256k_fluid_storage_part"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 0.0d
+			y: 11.0d
+			description: ["A 1024k Fluid Storage Part can either be used to create a 1024k Fluid Storage Disk, or 3 can be used to create a 4096k Fluid Storage Part."]
+			dependencies: ["1672776564773AF5"]
+			id: "5F755C7F60CF1BBC"
+			tasks: [{
+				id: "11D3129FBBBB8341"
+				type: "item"
+				item: "refinedstorage:1024k_fluid_storage_part"
+			}]
+			rewards: [{
+				id: "4D0DBB3352936F45"
+				type: "item"
+				item: "refinedstorage:1024k_fluid_storage_part"
+				random_bonus: 1
+			}]
+		}
+		{
+			x: 0.0d
+			y: 13.0d
+			description: ["A 4096k Fluid Storage Part can either be used to create a 4096k Fluid Storage Disk. Unfortunately this is the largest size of fluid storage part we believe you will be able to make given your circumstances."]
+			dependencies: ["5F755C7F60CF1BBC"]
+			id: "4688001A3164D7BC"
+			tasks: [{
+				id: "08DD0C42785C8E16"
+				type: "item"
+				item: "refinedstorage:4096k_fluid_storage_part"
+			}]
+			rewards: [{
+				id: "763AC9172CE8631F"
+				type: "item"
+				item: "refinedstorage:4096k_fluid_storage_part"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 8.0d
+			description: ["A 64k Fluid Storage Disk will add an additional 64000 mB (64 buckets) fluid storage capacity to your network."]
+			dependencies: ["62E108396CCA4C44"]
+			optional: true
+			id: "243A8EE6887569ED"
+			tasks: [{
+				id: "39D671CAB527C5A6"
+				type: "item"
+				item: "refinedstorage:64k_fluid_storage_disk"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 10.0d
+			description: ["A 256k Fluid Storage Disk will add an additional 256000 mB (256 buckets) fluid storage capacity to your network."]
+			dependencies: ["1672776564773AF5"]
+			optional: true
+			id: "2D3892A5839A71AC"
+			tasks: [{
+				id: "437207DAEEF2B743"
+				type: "item"
+				item: "refinedstorage:256k_fluid_storage_disk"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 12.0d
+			description: ["A 1024k Fluid Storage Disk will add an additional 1024000 mB (1024 buckets) fluid storage capacity to your network."]
+			dependencies: ["5F755C7F60CF1BBC"]
+			optional: true
+			id: "4A04EDA99BE8C4E5"
+			tasks: [{
+				id: "0E2306BC9BBF1954"
+				type: "item"
+				item: "refinedstorage:1024k_fluid_storage_disk"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 14.0d
+			description: ["A 4096k Fluid Storage Disk will add an additional 4096000 mB (4096 buckets) fluid storage capacity to your network."]
+			dependencies: ["4688001A3164D7BC"]
+			optional: true
+			id: "7BF6B8C2CA93F7D6"
+			tasks: [{
+				id: "69C9AE9BEDE9437F"
+				type: "item"
+				item: "refinedstorage:4096k_fluid_storage_disk"
+			}]
+		}
+		{
+			title: "Pattern Grid"
+			icon: "refinedstorage:pattern_grid"
+			x: 3.0d
+			y: 5.0d
+			description: [
+				"A Pattern Grid is where Patterns can be encoded with either crafting or processing patterns. These can then be used in Crafters to enable auto-crafting."
+				""
+				"Note that it is possible to create patterns that include fluid requirements as well as items - use the toggle on the left of the grid to change mode to fluids if required."
+			]
+			dependencies: ["2C08F8142A170F6D"]
+			id: "1059E4046EEF6762"
+			tasks: [
+				{
+					id: "08718B5B1D15CCC9"
+					type: "item"
+					item: "refinedstorage:pattern"
+				}
+				{
+					id: "1F4F5FC766756A4F"
+					type: "item"
+					item: "refinedstorage:pattern_grid"
+				}
+			]
+			rewards: [{
+				id: "62941B005A404654"
+				type: "item"
+				item: "refinedstorage:pattern"
+				count: 16
+				random_bonus: 16
+			}]
+		}
+		{
+			title: "Refined Storage Cable"
+			x: 3.0d
+			y: -1.0d
+			description: ["The Cable is used to connect parts of your Refined Storage network together."]
+			dependencies: ["26BCA1722B2DABB6"]
+			id: "25D362F7FBB8289F"
+			tasks: [{
+				id: "027458DD035B815D"
+				type: "item"
+				item: "refinedstorage:cable"
+			}]
+			rewards: [{
+				id: "18BC78F2666C5B79"
+				type: "item"
+				item: "refinedstorage:cable"
+				count: 16
+				random_bonus: 16
+			}]
+		}
+		{
+			x: 4.0d
+			y: 7.0d
+			description: [
+				"Crafters enable auto-crafting. They can hold 9 patterns. If the patterns are crafting patterns, then the orientation of the crafter does not matter."
+				""
+				"If the patterns are processing patterns (i.e. the craft is done by a machine), then the \"dot\" must be facing the machine that will perform the crafting for the provided pattern(s)."
+				""
+				"Note that the Crafter will insert the items into a machine for a processing craft, but will not extract the result. You will need to use an Importer to import the item back into your storage system for the craft to complete."
+				""
+				"Speed Upgrades can be added to a Crafter to increase the rate at which crafts complete."
+				""
+				"A Refined Storage Wrench can be used to rotate Crafters."
+			]
+			dependencies: ["1059E4046EEF6762"]
+			id: "1B5DF8A47819A3CA"
+			tasks: [{
+				id: "25CC3890240DBC1B"
+				type: "item"
+				item: "refinedstorage:crafter"
+			}]
+			rewards: [
+				{
+					id: "04FAD3FE37A90196"
+					type: "item"
+					item: "refinedstorage:crafter"
+				}
+				{
+					id: "24EB9C8360B47387"
+					type: "item"
+					item: "refinedstorage:speed_upgrade"
+					random_bonus: 2
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -2.0d
+			description: [
+				"The Importer can be attached to any machine or inventory to pull items into the storage network."
+				""
+				"Speed Upgrades and a Stack Upgrade can be added to import items or fluids quicker. The Importer has basic filtering options, and can be changed between Item and Fluid mode."
+				""
+				"These can be rotated using a Refined Storage Wrench."
+			]
+			dependencies: ["25D362F7FBB8289F"]
+			id: "50172236AD27C3E3"
+			tasks: [{
+				id: "05FA5B778523A766"
+				type: "item"
+				item: "refinedstorage:importer"
+			}]
+			rewards: [{
+				id: "52B332CF795001B1"
+				type: "item"
+				item: "refinedstorage:importer"
+				random_bonus: 1
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.0d
+			description: [
+				"The Exporter can be attached to any machine or inventory to push items from the storage network into the target block."
+				""
+				"Speed Upgrades and a Stack Upgrade can be added to export items or fluids quicker. The Exporter has basic filtering options, and can be changed between Item and Fluid mode. A Crafting Upgrade can also be used to auto-craft items to be exported on demand (assuming your system knows how to auto-craft them)"
+				""
+				"These can be rotated using a Refined Storage Wrench."
+			]
+			dependencies: ["25D362F7FBB8289F"]
+			id: "0B4A2763A41D1B39"
+			tasks: [{
+				id: "4A6093BBF0E5ADAB"
+				type: "item"
+				item: "refinedstorage:exporter"
+			}]
+			rewards: [{
+				id: "40EAD6379EE2A471"
+				type: "item"
+				item: "refinedstorage:exporter"
+				random_bonus: 1
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			description: [
+				"The External Storage attachment can be connected to any inventory to allow its content to be used by your storage network."
+				""
+				"The External Storage can be configured to insert, extract or both, can have a priority set, and has basic filtering options."
+				""
+				"These can be rotated using a Refined Storage Wrench."
+			]
+			dependencies: ["25D362F7FBB8289F"]
+			id: "55BE79C8CDAA93CD"
+			tasks: [{
+				id: "1622D2959CEA2DE3"
+				type: "item"
+				item: "refinedstorage:external_storage"
+			}]
+			rewards: [{
+				id: "2AFA34EBD0FC6584"
+				type: "item"
+				item: "refinedstorage:upgrade"
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 6.0d
+			y: 7.0d
+			description: [
+				"Once you have more than a few Crafters in place and working (especially if they are scattered around more than one area), you might want to consider making a Crafting Manager."
+				""
+				"This allows you to have a central place for seeing all Crafters on your network, and have access to their patterns too."
+			]
+			dependencies: ["1B5DF8A47819A3CA"]
+			optional: true
+			id: "51F8533F8CF5A0FF"
+			tasks: [{
+				id: "12FDDCCA60AA9BEB"
+				type: "item"
+				item: "refinedstorage:crafter_manager"
+			}]
+		}
+	]
+}

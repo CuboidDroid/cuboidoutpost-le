@@ -1,0 +1,35 @@
+{
+    "item.pamhc2trees.maplesyrupitem": "Maple Syrup",
+    "item.kubejs.platinum_ingot": "Platinum Ingot",
+    "item.kubejs.platinum_nugget": "Platinum Nugget",
+    "item.kubejs.platinum_dust": "Platinum Dust",
+
+    "block.kubejs.platinum_block": "Block of Platinum",
+
+    "item.kubejs.rna": "Ribonucleic Acid (RNA)",
+    "item.kubejs.dna": "Deoxyribonucleic Acid (DNA)",
+    "item.kubejs.primordial_gloop": "Primordial Gloop",
+    "item.kubejs.albumen": "Albumen",
+    "item.kubejs.fullerene_fluid_bucket": "Bucket of Fullerene Fluid",
+    "item.kubejs.molten_notsogudium_bucket": "Bucket of Molten Notsogudium",
+    "item.kubejs.molten_kudbebedda_bucket": "Bucket of Molten Kudbebedda",
+    "item.kubejs.molten_notarfbadium_bucket": "Bucket of Molten Notarfbadium",
+    "item.kubejs.molten_wikidium_bucket": "Bucket of Molten Wikidium",
+    "item.kubejs.molten_thatldu_bucket": "Bucket of Molten Thatldu",
+    "item.kubejs.lactic_acid_bucket": "Bucket of Lactic Acid",
+    "fluid.kubejs.fullerene_fluid": "Fullerene Fluid",
+    "fluid.kubejs.molten_notsogudium": "Molten Notsogudium",
+    "fluid.kubejs.molten_kudbebedda": "Molten Kudbebedda",
+    "fluid.kubejs.molten_notarfbadium": "Molten Notarfbadium",
+    "fluid.kubejs.molten_wikidium": "Molten Wikidium",
+    "fluid.kubejs.molten_thatldu": "Molten Thatldu",
+    "fluid.kubejs.lactic_acid": "Lactic Acid",
+
+    "block.kubejs.fullerene_fluid": "Fullerene Fluid",
+    "block.kubejs.molten_notsogudium": "Molten Notsogudium",
+    "block.kubejs.molten_kudbebedda": "Molten Kudbebedda",
+    "block.kubejs.molten_notarfbadium": "Molten Notarfbadium",
+    "block.kubejs.molten_wikidium": "Molten Wikidium",
+    "block.kubejs.molten_thatldu": "Molten Thatldu",
+    "block.kubejs.lactic_acid": "Lactic Acid"
+}

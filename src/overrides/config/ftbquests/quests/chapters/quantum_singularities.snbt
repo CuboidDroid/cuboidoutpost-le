@@ -1,0 +1,672 @@
+{
+	id: "0817A1C43045302D"
+	group: "4785B5C7E26FA669"
+	order_index: 0
+	filename: "quantum_singularities"
+	title: "Quantum Singularities"
+	icon: "cuboidmod:thatldu_quantum_collapser"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -17.5d
+			y: -8.0d
+			id: "56289ECE8C9680AB"
+			tasks: [{
+				id: "4FD3444087697107"
+				type: "item"
+				item: "cuboidmod:notsogudium_quantum_singularity"
+			}]
+		}
+		{
+			x: -17.5d
+			y: -7.0d
+			id: "0C27647CB99165BC"
+			tasks: [{
+				id: "46569309806624D2"
+				type: "item"
+				item: "cuboidmod:kudbebedda_quantum_singularity"
+			}]
+		}
+		{
+			x: -17.5d
+			y: -6.0d
+			id: "0C5EB3273F1E642D"
+			tasks: [{
+				id: "1CC7000F2648818C"
+				type: "item"
+				item: "cuboidmod:notarfbadium_quantum_singularity"
+			}]
+		}
+		{
+			x: -17.5d
+			y: -5.0d
+			id: "00A02B2EE6E7FDE1"
+			tasks: [{
+				id: "75356B2E378E0EAC"
+				type: "item"
+				item: "cuboidmod:wikidium_quantum_singularity"
+			}]
+		}
+		{
+			x: -17.5d
+			y: -4.0d
+			id: "201D80E9CB82BB81"
+			tasks: [{
+				id: "0321E4E982BFD48B"
+				type: "item"
+				item: "cuboidmod:thatldu_quantum_singularity"
+			}]
+		}
+		{
+			x: -19.0d
+			y: -8.0d
+			id: "2BDF6DE61C07EEA3"
+			tasks: [{
+				id: "194BE2E8CB4062E4"
+				type: "item"
+				item: "cuboidmod:notsogudium_quantum_collapser"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -8.0d
+			id: "26F9F84E8897C250"
+			tasks: [{
+				id: "615D8376639A220F"
+				type: "item"
+				item: "cuboidmod:carbon_nanotube_quantum_singularity"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -7.0d
+			id: "6C67456F849776C9"
+			tasks: [{
+				id: "44BF54FD50032A75"
+				type: "item"
+				item: "cuboidmod:cellulose_quantum_singularity"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -6.0d
+			id: "6430B5A691917E61"
+			tasks: [{
+				id: "1A1859FCD7794AE2"
+				type: "item"
+				item: "cuboidmod:clay_quantum_singularity"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -8.0d
+			id: "7F73DF5A8AE44A25"
+			tasks: [{
+				id: "19D456E225A250BB"
+				type: "item"
+				item: "cuboidmod:coal_quantum_singularity"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -5.0d
+			id: "31BD336744E7D32F"
+			tasks: [{
+				id: "61B974BF008A2490"
+				type: "item"
+				item: "cuboidmod:cobblestone_quantum_singularity"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -4.0d
+			id: "310766C030982691"
+			tasks: [{
+				id: "001988AAAF4A329D"
+				type: "item"
+				item: "cuboidmod:dirt_quantum_singularity"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -6.0d
+			id: "71DF92D63CCF7CD9"
+			tasks: [{
+				id: "561D44DAF67C2006"
+				type: "item"
+				item: "cuboidmod:dust_quantum_singularity"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -7.0d
+			id: "527A3C9718632FCC"
+			tasks: [{
+				id: "17D6CBD1080CDE24"
+				type: "item"
+				item: "cuboidmod:glowstone_quantum_singularity"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -5.0d
+			id: "34A915BD4BE6F7C1"
+			tasks: [{
+				id: "443C9AF6926828AC"
+				type: "item"
+				item: "cuboidmod:gravel_quantum_singularity"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -6.0d
+			id: "14AC026F9DFA932E"
+			tasks: [{
+				id: "676873F81C2BC3C0"
+				type: "item"
+				item: "cuboidmod:lapis_quantum_singularity"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -5.0d
+			id: "05C56B5DE605FF28"
+			tasks: [{
+				id: "389CDFB7D026C37D"
+				type: "item"
+				item: "cuboidmod:redstone_quantum_singularity"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -8.0d
+			id: "4E37B6BA2BB063CC"
+			tasks: [{
+				id: "6C3F9D6DE83D8208"
+				type: "item"
+				item: "cuboidmod:sand_quantum_singularity"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -7.0d
+			id: "6AF9F0534A76D141"
+			tasks: [{
+				id: "3A914D421574DBA3"
+				type: "item"
+				item: "cuboidmod:silica_dust_quantum_singularity"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -4.0d
+			id: "1798EB026C70AC73"
+			tasks: [{
+				id: "3CB40EAD089DC057"
+				type: "item"
+				item: "cuboidmod:oak_log_quantum_singularity"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -8.0d
+			id: "32913D0208200ACB"
+			tasks: [{
+				id: "4ACF4B5C652EAD82"
+				type: "item"
+				item: "cuboidmod:acacia_log_quantum_singularity"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -7.0d
+			id: "2653FB5CAA72E2E9"
+			tasks: [{
+				id: "4D4A7CCFD746BBEC"
+				type: "item"
+				item: "cuboidmod:birch_log_quantum_singularity"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -6.0d
+			id: "1C2DD4994101FEA6"
+			tasks: [{
+				id: "2F782A7EBEF0C5DE"
+				type: "item"
+				item: "cuboidmod:dark_oak_log_quantum_singularity"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -5.0d
+			id: "3106C0CA4D5DDD15"
+			tasks: [{
+				id: "0A2071659D4D744D"
+				type: "item"
+				item: "cuboidmod:jungle_log_quantum_singularity"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -4.0d
+			id: "4C0C28ED3BAB54C2"
+			tasks: [{
+				id: "35DA91635D9534C6"
+				type: "item"
+				item: "cuboidmod:spruce_log_quantum_singularity"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -4.0d
+			id: "67C1AD10206DCA9F"
+			tasks: [{
+				id: "7FE8004E70D26CB2"
+				type: "item"
+				item: "cuboidmod:andesite_quantum_singularity"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -8.0d
+			id: "12636CF2B29D8595"
+			tasks: [{
+				id: "5DD9DE211BAC6EB6"
+				type: "item"
+				item: "cuboidmod:basalt_quantum_singularity"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -7.0d
+			id: "1E3182709F3A467D"
+			tasks: [{
+				id: "112C1EE68B1F691E"
+				type: "item"
+				item: "cuboidmod:blackstone_quantum_singularity"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -6.0d
+			id: "1BDB80DDF3A73AC1"
+			tasks: [{
+				id: "7928BC81C68EC933"
+				type: "item"
+				item: "cuboidmod:diorite_quantum_singularity"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -5.0d
+			id: "5279CBFE8FA1A6E4"
+			tasks: [{
+				id: "0859D3BED17A350E"
+				type: "item"
+				item: "cuboidmod:granite_quantum_singularity"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -8.0d
+			id: "760F209400F05D19"
+			tasks: [{
+				id: "3D870FBA30ACB884"
+				type: "item"
+				item: "cuboidmod:zinc_quantum_singularity"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -7.0d
+			id: "6CEAC6CD15ACC868"
+			tasks: [{
+				id: "753D3995844A93DB"
+				type: "item"
+				item: "cuboidmod:tin_quantum_singularity"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -6.0d
+			id: "0094FEFED1781936"
+			tasks: [{
+				id: "41A1F7C5AB93C630"
+				type: "item"
+				item: "cuboidmod:copper_quantum_singularity"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -5.0d
+			id: "45308FF4D7B0377B"
+			tasks: [{
+				id: "315897C67E2188EE"
+				type: "item"
+				item: "cuboidmod:nickel_quantum_singularity"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -4.0d
+			id: "23E340F4C5E6C73A"
+			tasks: [{
+				id: "4F1E6B2620C269F1"
+				type: "item"
+				item: "cuboidmod:silver_quantum_singularity"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -3.0d
+			id: "62A21210646CF2F9"
+			tasks: [{
+				id: "7487EFBB3FADA111"
+				type: "item"
+				item: "cuboidmod:aluminium_quantum_singularity"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -8.0d
+			id: "61FF6B562A934D8E"
+			tasks: [{
+				id: "30494435BED35D69"
+				type: "item"
+				item: "cuboidmod:notsogudium_singularity_power_generator"
+			}]
+		}
+		{
+			x: -15.5d
+			y: -8.0d
+			id: "44153B4271AD3B95"
+			tasks: [{
+				id: "3644D97C539D38A2"
+				type: "item"
+				item: "cuboidmod:iron_quantum_singularity"
+			}]
+		}
+		{
+			x: -19.0d
+			y: -7.0d
+			id: "0046883B78827A0D"
+			tasks: [{
+				id: "0EBBD92FD498BCEE"
+				type: "item"
+				item: "cuboidmod:kudbebedda_quantum_collapser"
+			}]
+		}
+		{
+			x: -19.0d
+			y: -6.0d
+			id: "5763C0AF32D7A6B3"
+			tasks: [{
+				id: "7794728946D8B08B"
+				type: "item"
+				item: "cuboidmod:notarfbadium_quantum_collapser"
+			}]
+		}
+		{
+			x: -19.0d
+			y: -5.0d
+			id: "69135A3F916EF14D"
+			tasks: [{
+				id: "67D279EA1809137E"
+				type: "item"
+				item: "cuboidmod:wikidium_quantum_collapser"
+			}]
+		}
+		{
+			x: -19.0d
+			y: -4.0d
+			id: "0C5ECC38033F9D96"
+			tasks: [{
+				id: "370043E954F67285"
+				type: "item"
+				item: "cuboidmod:thatldu_quantum_collapser"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -9.5d
+			id: "56F902D360B4F898"
+			tasks: [{
+				id: "099704DFE69ACD86"
+				type: "item"
+				item: "cuboidmod:notsogudium_singularity_resource_generator"
+			}]
+		}
+		{
+			x: -15.5d
+			y: -9.5d
+			id: "46353A9F1E0800B5"
+			tasks: [{
+				id: "1747E74452FDBC4D"
+				type: "item"
+				item: "cuboidmod:kudbebedda_singularity_resource_generator"
+			}]
+		}
+		{
+			x: -14.5d
+			y: -9.5d
+			id: "7D574C95231123B2"
+			tasks: [{
+				id: "5BAB174D360D757D"
+				type: "item"
+				item: "cuboidmod:notarfbadium_singularity_resource_generator"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -9.5d
+			id: "649A08EA543BA8E6"
+			tasks: [{
+				id: "1A3C8370837C2B5D"
+				type: "item"
+				item: "cuboidmod:wikidium_singularity_resource_generator"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -9.5d
+			id: "7121697871F17DBD"
+			tasks: [{
+				id: "26E2A8A2D2F2E966"
+				type: "item"
+				item: "cuboidmod:thatldu_singularity_resource_generator"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -7.0d
+			id: "114151A6256073E1"
+			tasks: [{
+				id: "450399AF8846C173"
+				type: "item"
+				item: "cuboidmod:kudbebedda_singularity_power_generator"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -6.0d
+			id: "649BD7B6E85E745F"
+			tasks: [{
+				id: "50469615E419C050"
+				type: "item"
+				item: "cuboidmod:notarfbadium_singularity_power_generator"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -5.0d
+			id: "7DBDCCB9231A396E"
+			tasks: [{
+				id: "2A461CBE563FCD7E"
+				type: "item"
+				item: "cuboidmod:wikidium_singularity_power_generator"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -4.0d
+			id: "3D196FB2989FA2F3"
+			tasks: [{
+				id: "328D1E101BCEDFD7"
+				type: "item"
+				item: "cuboidmod:thatldu_singularity_power_generator"
+			}]
+		}
+		{
+			x: -15.5d
+			y: -7.0d
+			id: "0CEFDA1A24CFC0A9"
+			tasks: [{
+				id: "693599E1E17E99CD"
+				type: "item"
+				item: "cuboidmod:gold_quantum_singularity"
+			}]
+		}
+		{
+			x: -15.5d
+			y: -6.0d
+			id: "6980628AE4BD0F4F"
+			tasks: [{
+				id: "44670A1A8E04FF67"
+				type: "item"
+				item: "cuboidmod:lead_quantum_singularity"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -3.0d
+			id: "0578218C8A5EB91F"
+			tasks: [{
+				id: "3047764CD0CCD902"
+				type: "item"
+				item: "cuboidmod:uranium_quantum_singularity"
+			}]
+		}
+		{
+			x: -15.5d
+			y: -5.0d
+			id: "352989E83162A77C"
+			tasks: [{
+				id: "4D5F07764999183D"
+				type: "item"
+				item: "cuboidmod:osmium_quantum_singularity"
+			}]
+		}
+		{
+			x: -15.5d
+			y: -4.0d
+			id: "41547FB791DD68E5"
+			tasks: [{
+				id: "3718B48AA8B43064"
+				type: "item"
+				item: "cuboidmod:cobalt_quantum_singularity"
+			}]
+		}
+		{
+			x: -15.5d
+			y: -3.0d
+			id: "2B950BE10B23F524"
+			tasks: [{
+				id: "46740A202D8B9013"
+				type: "item"
+				item: "cuboidmod:uraninite_quantum_singularity"
+			}]
+		}
+		{
+			x: -17.5d
+			y: -3.0d
+			id: "709639D390F429F4"
+			tasks: [{
+				id: "7971A7B09F768383"
+				type: "item"
+				item: "cuboidmod:platinum_quantum_singularity"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -1.5d
+			id: "5B8D5364889B26A2"
+			tasks: [{
+				id: "0C53B35A31B8D7C3"
+				type: "item"
+				item: "cuboidmod:steel_quantum_singularity"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -2.0d
+			id: "41C083A7DF12B68B"
+			tasks: [{
+				id: "6EFE021E814504BE"
+				type: "item"
+				item: "cuboidmod:diamond_quantum_singularity"
+			}]
+		}
+		{
+			x: -15.5d
+			y: -2.0d
+			id: "6594EAF5A41569C8"
+			tasks: [{
+				id: "78BCD0CDC7B084D3"
+				type: "item"
+				item: "cuboidmod:emerald_quantum_singularity"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -1.5d
+			id: "43174776572408D1"
+			tasks: [{
+				id: "1C08CB1999DA054F"
+				type: "item"
+				item: "cuboidmod:bronze_quantum_singularity"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -1.5d
+			id: "1280ED29DB2476B4"
+			tasks: [{
+				id: "156336925668D1FD"
+				type: "item"
+				item: "cuboidmod:invar_quantum_singularity"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -0.5d
+			id: "788AFB2054343F12"
+			tasks: [{
+				id: "5026384FF16B6304"
+				type: "item"
+				item: "cuboidmod:electrum_quantum_singularity"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -3.0d
+			id: "4C97527DF943A853"
+			tasks: [{
+				id: "56CFC39980B68927"
+				type: "item"
+				item: "cuboidmod:endstone_quantum_singularity"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -4.0d
+			id: "4D90784573FE6D50"
+			tasks: [{
+				id: "68DB40221500E532"
+				type: "item"
+				item: "cuboidmod:netherrack_quantum_singularity"
+			}]
+		}
+	]
+}

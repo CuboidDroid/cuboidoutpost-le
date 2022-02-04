@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "cuboidmod:smoosher"
+      },
+      {
+        "tag": "forge:ingots/lead"
+      }
+    ],
+    "result": {
+      "item": "immersiveengineering:plate_lead",
+      "count": 1
+    }
+}

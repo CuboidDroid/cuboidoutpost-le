@@ -1,0 +1,570 @@
+{
+	id: "4C3211D7C7EB80CF"
+	group: "4F582DBBFACF1F69"
+	order_index: 2
+	filename: "thermal_content"
+	title: "Ther-malcontents"
+	icon: "thermal:machine_pulverizer"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Ther-malcontent"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"You've managed to recreate a number of machines so far, but there are a few gaps we need to get you to fill in so that we're able to get your life back on track."
+				""
+				"Thermal Series machines offer an alternative to many other machines, as well as some new machines that can help solve specific problems you're likely to encounter."
+				""
+				"&aUnlocked by getting Gold in the \"Getting Tinks Done\" chapter.&f"
+			]
+			dependencies: ["3B00278F3DDF103C"]
+			id: "304B2612E56845AB"
+			tasks: [
+				{
+					id: "40E39A53CB16A9DC"
+					type: "item"
+					item: "minecraft:gold_ingot"
+				}
+				{
+					id: "5132997F84207BD0"
+					type: "item"
+					title: "Tin Ingot"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/tin"
+						}
+					}
+				}
+				{
+					id: "7DF5C6055A7E2589"
+					type: "item"
+					title: "Copper Ingot"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/copper"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Basic Gears"
+			x: 2.0d
+			y: 0.0d
+			shape: "square"
+			description: ["Gears are used extensively in the making of these Thermal Machines. These first two will be needed to get going."]
+			dependencies: ["304B2612E56845AB"]
+			id: "5E3BB220C87D1E87"
+			tasks: [
+				{
+					id: "061E4D95E2898E08"
+					type: "item"
+					title: "Tin Gear"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:gears/tin"
+						}
+					}
+				}
+				{
+					id: "469B6CB3DAA67A7B"
+					type: "item"
+					title: "Copper Gear"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:gears/copper"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Wasn't me guv! Honest!"
+			x: 4.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Framing that machine"
+			description: [
+				"Machine Frames are used to hold together all the other gubbins that goes into making Thermal Machines."
+				""
+				"They're relatively cheap and easy to make, so it might be worth making a few to have some on-hand for later."
+			]
+			dependencies: ["5E3BB220C87D1E87"]
+			id: "177C75AD8B222FD5"
+			tasks: [{
+				id: "1D0BB74EF86256D5"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			description: [
+				"The Redstone Furnace is a furnace that uses Redstone Flux (RF - a.k.a. power) to cook things rather than burnable fuels. It's not just a furnace for redstone!"
+				""
+				"It's upgradable too and can be a very efficient way of smelting items very quickly just using energy."
+			]
+			dependencies: ["43FA19C5DEEEF7E2"]
+			optional: true
+			id: "7FCD766C2820B7F3"
+			tasks: [{
+				id: "16FFB95BAEC11B3C"
+				type: "item"
+				item: "thermal:machine_furnace"
+			}]
+		}
+		{
+			title: "Redstone Flux Coils"
+			x: 6.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"The Redstone Flux Coil is used in machines and augments requiring regulation of RF energy."
+				""
+				"These coils are needed in a lot of machines, so you might as well make a few of these two - we're sure they'll come in handy as we progress..."
+			]
+			dependencies: ["177C75AD8B222FD5"]
+			id: "43FA19C5DEEEF7E2"
+			tasks: [{
+				id: "195143340B6A367F"
+				type: "item"
+				item: "thermal:rf_coil"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -2.0d
+			description: [
+				"The Sawmill efficiently cuts logs into planks, yielding 6 planks per log instead of the usual 4. The sawdust that accumulates can also be used to create paper and cardboard."
+				""
+				"It's also not a bad way of cutting Melons into Melon Slices."
+			]
+			dependencies: ["43FA19C5DEEEF7E2"]
+			optional: true
+			id: "0D0D0371C13D40E3"
+			tasks: [{
+				id: "12E3E6E94C0A9E5E"
+				type: "item"
+				item: "thermal:machine_sawmill"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 1.0d
+			description: [
+				"Think of a Pulverizer as an automatable Smoosher and you won't be far off."
+				""
+				"It can pulverize things a Smoosher can't, and is quite efficient to boot!"
+			]
+			dependencies: ["43FA19C5DEEEF7E2"]
+			optional: true
+			id: "26CEE055CC89D4EC"
+			tasks: [{
+				id: "4C9D635160353E20"
+				type: "item"
+				item: "thermal:machine_pulverizer"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.0d
+			description: ["Lumium can only be made in an Induction Smelter."]
+			dependencies: ["508B9043053F83F3"]
+			id: "751956F759096D80"
+			tasks: [{
+				id: "5A2F8CB859362CE1"
+				type: "item"
+				title: "Lumium Gear"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:gears/lumium"
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.0d
+			description: ["The Fluid Encapsulator can have fluids pumped into it, and can then fill containers including bottles, buckets and portable tanks."]
+			dependencies: ["43FA19C5DEEEF7E2"]
+			optional: true
+			id: "28B5AB28799FEE21"
+			tasks: [{
+				id: "3AC692EE0A66BECB"
+				type: "item"
+				item: "thermal:machine_bottler"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 2.0d
+			description: [
+				"The Sequential Fabricator can have a recipe set, and when provided with the resources and power, can craft the target item automatically."
+				""
+				"It's great for simple automation tasks that normally would require multiple manual steps - simply have a Sequential Fabricator for each step, and pipe results through to where they're needed."
+			]
+			dependencies: ["43FA19C5DEEEF7E2"]
+			optional: true
+			id: "0C96F700BB74F8DC"
+			tasks: [{
+				id: "01129D9D67C55C4F"
+				type: "item"
+				item: "thermal:machine_crafter"
+			}]
+		}
+		{
+			title: "Constantan Gears"
+			x: 0.5d
+			y: 5.5d
+			shape: "gear"
+			subtitle: "(see how to make Constantan in the \"Allo? Allo? Alloy!\" chapter)"
+			dependencies: ["239ABB6920C2D4C2"]
+			dependency_requirement: "one_completed"
+			optional: true
+			id: "7E0F0541B4718277"
+			tasks: [{
+				id: "49390DD485B72533"
+				type: "item"
+				title: "Constantan Gear"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:gears/constantan"
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 4.0d
+			description: [
+				"The Phytogenic Insulator is like a farm in a box."
+				""
+				"You provide it with water and power, and it will rapidly grow an input like a seed and deposit the results into its output slots which can subsequently be piped out."
+				""
+				"Growth catalysts like Bone Meal and Phytogro can speed up the growth process."
+				""
+				"Augments are available to increase yield or retain the input item for continuous production."
+			]
+			dependencies: ["751956F759096D80"]
+			optional: true
+			id: "5040463B5E776B76"
+			tasks: [{
+				id: "725D641063961DA7"
+				type: "item"
+				item: "thermal:machine_insolator"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.0d
+			description: ["The Centrifugal Separator can separate certain materials into component items."]
+			dependencies: ["7E0F0541B4718277"]
+			optional: true
+			id: "50B1893A30931C26"
+			tasks: [{
+				id: "6C0370AB3BD82613"
+				type: "item"
+				item: "thermal:machine_centrifuge"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.0d
+			description: ["The Multiservo Press is a very versatile machine that, when fitted with an appropriate Die, can do things like pack and unpack items to and from block form, turn ingots to gears or plates, and more. It's extremely useful in auto crafting setups and production lines."]
+			dependencies: ["7E0F0541B4718277"]
+			optional: true
+			id: "75FF9C12DE5741E0"
+			tasks: [{
+				id: "3541A8A76C5A8377"
+				type: "item"
+				item: "thermal:machine_press"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.0d
+			description: [
+				"If you were wondering what that Appatite stuff was actually for (apart from the easy access to Cyan Dye), then this is it."
+				""
+				"Phytogro is an extremely potent fertilizer that when used in the Phytogenic Insulator will significantly decrease growing times."
+			]
+			dependencies: ["5040463B5E776B76"]
+			optional: true
+			id: "49B3B842F3607B54"
+			tasks: [{
+				id: "776A551942C142F3"
+				type: "item"
+				item: "thermal:phytogro"
+			}]
+		}
+		{
+			title: "Invar Gears"
+			x: 2.0d
+			y: 3.5d
+			shape: "gear"
+			subtitle: "(see how to make Invar in the \"Allo? Allo? Alloy!\" chapter)"
+			dependencies: ["370DC91DCE34BD2B"]
+			id: "6B6CBCB0904E17C4"
+			tasks: [{
+				id: "27E01E0F92322595"
+				type: "item"
+				title: "Invar Gear"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:gears/invar"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 6.0d
+			description: ["The Alchemical Imbuer is used in mass-producing potions (usually piped through to something like a Fluid Encapsulator which can bottle up the potion fluids into usable bottled form)."]
+			dependencies: ["7E0F0541B4718277"]
+			optional: true
+			id: "71CA68F42A658AD1"
+			tasks: [{
+				id: "4016337303D01A7D"
+				type: "item"
+				item: "thermal:machine_brewer"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.0d
+			description: ["The Pyrolyzer can be used to create Coke (not the drink!), Creosote Oil, Heavy Oil, Tar and Charcoal."]
+			dependencies: ["7E0F0541B4718277"]
+			optional: true
+			id: "4070E83E154D268C"
+			tasks: [{
+				id: "2645874E180406BB"
+				type: "item"
+				item: "thermal:machine_pyrolyzer"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 5.0d
+			shape: "square"
+			description: ["The Induction Smelter uses energy to create alloys and smelt ores. It can do some materials that cannot be made in the Smeltery, and can do the majority of the same materials too in a single block."]
+			dependencies: ["6B6CBCB0904E17C4"]
+			id: "508B9043053F83F3"
+			tasks: [{
+				id: "42AD38D4EFF90D13"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			description: ["The Magma Crucible uses energy to melt solids into liquids."]
+			dependencies: ["6B6CBCB0904E17C4"]
+			optional: true
+			id: "60ECC7258A85864D"
+			tasks: [{
+				id: "64FE1EC996FD1B4C"
+				type: "item"
+				item: "thermal:machine_crucible"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			shape: "gear"
+			description: [
+				"The Blast Chiller is used to rapidly freeze certain liquids into their solid form."
+				""
+				"You'll definitely need one of these for an upcoming machine - something to do with cryogenics and dimensional travel, but more on that later."
+				""
+				"&aRequired for: What's left in the End?&f"
+			]
+			dependencies: ["6B6CBCB0904E17C4"]
+			size: 1.2d
+			id: "131A4A51271715E2"
+			tasks: [{
+				id: "6A75705700D0E322"
+				type: "item"
+				item: "thermal:machine_chiller"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			description: ["The Fractionating Still separates fluids into component materials, such as sap into Syrup and Water, and Resin into Rosin and Tree Oil."]
+			dependencies: ["6B6CBCB0904E17C4"]
+			optional: true
+			id: "5D58C72431929C9D"
+			tasks: [{
+				id: "0AF1FDDCC1A84ACA"
+				type: "item"
+				item: "thermal:machine_refinery"
+			}]
+		}
+		{
+			title: "Redstone Servos"
+			x: -2.0d
+			y: 0.0d
+			description: ["The Redstone Servo is a component used in the making of several simple machines, but also in the creation of a number of Augments that can be added to machines to increase their capabilities."]
+			dependencies: ["304B2612E56845AB"]
+			optional: true
+			id: "25C51F1B3C28DE9F"
+			tasks: [{
+				id: "3AB055309AA35766"
+				type: "item"
+				item: "thermal:redstone_servo"
+			}]
+		}
+		{
+			title: "Keep those floors clean!"
+			x: -4.0d
+			y: 0.5d
+			description: [
+				"The Vacuumulator will pick up any loose items lying around it and put them inside its internal inventory. You will then be able to pipe them out again."
+				""
+				"This is useful in areas where you know a lot of things might end up on the ground - for example, in an automated tree farm where wood, sticks and leaves may end up on the floor, or in a Mob Farm where Mob drops could end up lying around."
+				""
+				"A Filter Augment can also be applied to make the pick-up function more selective."
+			]
+			dependencies: ["25C51F1B3C28DE9F"]
+			optional: true
+			id: "57EC076D817C1485"
+			tasks: [{
+				id: "2980167E3F9857AB"
+				type: "item"
+				item: "thermal:device_collector"
+			}]
+		}
+		{
+			title: "Arboreal Extraction"
+			x: -4.0d
+			y: -0.5d
+			description: [
+				"The Arboreal extractor, when placed adjacent to a tree (with leaves on it!) and provided with fuel, will slowly extract one of three types of fluid:"
+				""
+				"&aResin&f - Used in a Fractionating Still to make Rosin and Tree Oil."
+				""
+				"&aSap&f - Used in a Fractionating Still to make Syrup and Water."
+				""
+				"&aLatex&f - can be used to make Rubber."
+				""
+			]
+			dependencies: ["25C51F1B3C28DE9F"]
+			optional: true
+			id: "17A8A53541D15D3F"
+			tasks: [{
+				id: "78AC9DA7FF42F898"
+				type: "item"
+				item: "thermal:device_tree_extractor"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 7.0d
+			description: ["Signalum can only be made in an Induction Smelter."]
+			dependencies: ["508B9043053F83F3"]
+			optional: true
+			id: "649E4011A9875F66"
+			tasks: [{
+				id: "01AD9FE0D0C3F7D9"
+				type: "item"
+				title: "Signalum Gear"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:gears/signalum"
+					}
+				}
+			}]
+		}
+		{
+			title: "Integral Components"
+			x: 2.0d
+			y: 7.5d
+			shape: "gear"
+			subtitle: "(see how to make Invar in the \"Allo? Allo? Alloy!\" chapter)"
+			description: [
+				"Integral Components can be added to Thermal Machine augment slots to increase their capabilities - usually in terms of processing speed and/or energy capacity or efficiency."
+				""
+				"The first Integral Components upgrade is the Hardened Integral Components augment."
+			]
+			dependencies: ["370DC91DCE34BD2B"]
+			optional: true
+			id: "5807222BFBC0B66A"
+			tasks: [{
+				id: "3A164F4B53B08EF7"
+				type: "item"
+				item: "thermal:upgrade_augment_1"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 9.5d
+			description: ["The second Integral Components upgrade is the Reinforced Integral Components upgrade."]
+			dependencies: [
+				"649E4011A9875F66"
+				"5807222BFBC0B66A"
+			]
+			optional: true
+			id: "7045B2B822678989"
+			tasks: [{
+				id: "5115AE24141071ED"
+				type: "item"
+				item: "thermal:upgrade_augment_2"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			shape: "gear"
+			description: [
+				"Enderium can only be made in an Induction Smelter."
+				""
+				"&aRequired for: What's left in the End?&f"
+			]
+			dependencies: ["508B9043053F83F3"]
+			size: 1.2d
+			id: "7DB0567D4BF1657C"
+			tasks: [{
+				id: "25FCCD5AD0F5B9C4"
+				type: "item"
+				item: "thermal:enderium_ingot"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 7.5d
+			description: ["The third and final Integral Components upgrade is the Resonant Integral Components augment."]
+			dependencies: [
+				"7045B2B822678989"
+				"7DB0567D4BF1657C"
+			]
+			optional: true
+			id: "435B559A8CA70380"
+			tasks: [{
+				id: "1869DE0E3916DB51"
+				type: "item"
+				item: "thermal:upgrade_augment_3"
+			}]
+		}
+	]
+}

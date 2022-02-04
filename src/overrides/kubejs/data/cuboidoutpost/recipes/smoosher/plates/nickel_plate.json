@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "cuboidmod:smoosher"
+      },
+      {
+        "tag": "forge:ingots/nickel"
+      }
+    ],
+    "result": {
+      "item": "immersiveengineering:plate_nickel",
+      "count": 1
+    }
+}

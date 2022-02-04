@@ -1,0 +1,318 @@
+{
+	id: "74CA2AF06834E7BC"
+	group: "033EC740B2EF1FC1"
+	order_index: 2
+	filename: "energy_transfer"
+	title: "Energy Transfer"
+	icon: "immersiveengineering:wirecoil_copper"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 3.5d
+			description: [
+				"MV Wire Coils can transfer 8192 FE/t continuously before burning up, and lose approximately 0.156% FE per block distance travelled (maximum wire distance spanned is 16 blocks)."
+				""
+				"Like LV Wire Coils, there are both standard and insulated versions of the MV Wire Coil, and the standard version will shock you if touched."
+			]
+			dependencies: ["7040588235EC486C"]
+			id: "63CD676C5C5D1C1D"
+			tasks: [
+				{
+					id: "1D32E3E557C4ACEF"
+					type: "item"
+					item: "immersiveengineering:wirecoil_electrum"
+				}
+				{
+					id: "1AB05EB25B535C22"
+					type: "item"
+					item: "immersiveengineering:wirecoil_electrum_ins"
+				}
+				{
+					id: "65329895A71BBD37"
+					type: "item"
+					item: "immersiveengineering:connector_mv"
+				}
+				{
+					id: "003426107E3CD473"
+					type: "item"
+					item: "immersiveengineering:connector_mv_relay"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			description: [
+				"HV Wire Coils can transfer 32768 FE/t continuously before burning up, and lose approximately 0.078% FE per block distance travelled (maximum wire distance spanned is 32 blocks)."
+				""
+				"There is no insulated version of the HV Wire Coil, so care must be taken when using them."
+			]
+			dependencies: ["63CD676C5C5D1C1D"]
+			id: "7F1EFBCEB7CF828D"
+			tasks: [
+				{
+					id: "7FA9708B1D381AC3"
+					type: "item"
+					item: "immersiveengineering:wirecoil_steel"
+				}
+				{
+					id: "452B3629D415F349"
+					type: "item"
+					item: "immersiveengineering:connector_hv"
+				}
+				{
+					id: "1B9FBAC9EB84AFB0"
+					type: "item"
+					item: "immersiveengineering:connector_hv_relay"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"For low voltage (LV) applications, energy cable be transferred using LV wire coils between LV connectors and LV Relays."
+				""
+				"Connectors must be added to the source of the energy (where energy is being extracted from) and to the energy consumer (e.g. the machine). Connectors can only have one cable attached to them."
+				""
+				"Relays can have up to 8 cables attached to them, and do not transfer power to the block or machine they are connected to - they simply relay the power to the other connected LV cables which, in turn, can connect to more relays or to connectors on machines."
+				""
+				"Note that LV cables come in standard and insulated forms. Standard LV cables will shock you if powered, whereas Insulated LV Cables are safe to the touch."
+				""
+				"LV Wire Coils can be attached between an LV Connector and an LV Relay by using them on each point you wish to connect. They can be removed either by breaking the connector or relay, or by using Engineer's Wire Cutters on them."
+				""
+				"LV Wire Coils can transfer 2048 FE/t continuously before burning up, and lose approximately 0.312% FE per block distance travelled (maximum wire distance spanned is 16 blocks)."
+			]
+			id: "7040588235EC486C"
+			tasks: [
+				{
+					id: "0988E26F33A8A08C"
+					type: "item"
+					item: "immersiveengineering:wirecoil_copper"
+				}
+				{
+					id: "14AE4077C4CAABA2"
+					type: "item"
+					item: "immersiveengineering:connector_lv"
+				}
+				{
+					id: "1914C243D1285C74"
+					type: "item"
+					item: "immersiveengineering:connector_lv_relay"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			description: [
+				"The Basic Universal Cable can transfer energy at a rate of 3.2kFE/t."
+				""
+				"Universal cables can be configured using a Configurator. By default, when the cables are placed down, they will attempt to connect to anything they can, and will allow energy to flow in any direction. This is usually what you want, but in some cases, you might want to change this behaviour. Using the configurator, you can change a connection to only allow energy to be pulled, pushed, or even be disconnected for a particular direction that the cable connects in."
+				""
+				"Universal cables can automatically convert between different energy types, including FE, EU and Joules."
+			]
+			id: "7579E2A5FD29894A"
+			tasks: [{
+				id: "658D67B29297EFAD"
+				type: "item"
+				item: "mekanism:basic_universal_cable"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.5d
+			description: [
+				"The Advanced Universal Cable can transfer energy at a rate of 51.2kFE/t."
+				""
+				"You can perform an \"in-world\" upgrade of up to 8 of the Basic Universal Cables to this Advanced version by using an Infused Alloy on one of them."
+			]
+			dependencies: ["7579E2A5FD29894A"]
+			id: "549C0E94F29DCF32"
+			tasks: [{
+				id: "0C6379F9ADDF5FB4"
+				type: "item"
+				item: "mekanism:advanced_universal_cable"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 5.0d
+			description: [
+				"The Elite Universal Cable can transfer energy at a rate of 409.6kFE/t."
+				""
+				"You can upgrade up to 8 connected Advanced Universal Cables \"in-world\" by using a Reinforced Alloy on one of them."
+			]
+			dependencies: ["549C0E94F29DCF32"]
+			id: "025DEAF9BABC8F66"
+			tasks: [{
+				id: "614FF834720CF255"
+				type: "item"
+				item: "mekanism:elite_universal_cable"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.5d
+			description: [
+				"The Ultimate Universal Cable can transfer energy at a rate of 3.27MFE/t."
+				""
+				"Up to 8 connected Elite Univeral Cables can be upgraded \"in-world\" by using an Atomic Alloy on one of them."
+			]
+			dependencies: ["025DEAF9BABC8F66"]
+			id: "6366AE3C13655BD1"
+			tasks: [{
+				id: "6CEEFE981FAA33C2"
+				type: "item"
+				item: "mekanism:ultimate_universal_cable"
+			}]
+		}
+		{
+			title: "XNet for Energy"
+			x: 2.0d
+			y: 2.0d
+			description: [
+				"XNet can be used to transfer energy too. You will need a connected controller, an energy channel, and an energy source that has a connector attached, and then to place a connector on the block you wish to transfer energy to. In the controller, set the channel to extract from the power source and insert into the target block."
+				""
+				"Normal connectors can transfer energy at a maximum rate of 50,000 FE/t. The Advanced Connectors can transfer energy at a rate of 500,000 FE/t."
+				""
+				"A note on the advanced connectors for energy - you cannot consume power from other sides of the source energy block even with an advanced connector - energy can only be consumed from a side of the energy source that is providing power. Advanced connectors can, however, provide energy to sides the connector is not actually attached to."
+				""
+				"If you would like some examples of how to use it, take a look at the \"Networks for XMen\" topic in this appendix."
+				""
+				"&cUnfortunately you can't look up the recipe from here directly due to corruption that occurred during transmission of this survival guide. Please use the search feature in JEI instead.&f"
+			]
+			id: "4684D4B747C9FBB4"
+			tasks: [
+				{
+					id: "054FBCCC43077EAE"
+					type: "item"
+					title: "Connector"
+					icon: "xnet:connector_blue"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "xnet:connectors"
+						}
+					}
+				}
+				{
+					id: "478A405F85CF52D6"
+					type: "item"
+					title: "Network Cable"
+					icon: "xnet:netcable_blue"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "xnet:cables"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			description: [
+				"The Energy Cables are fairly high capacity, and are quite special in that they do not block movement."
+				""
+				"The Starter Energy Cables can transfer at a rate of 100 FE/t"
+			]
+			id: "10449893EC1BD735"
+			tasks: [{
+				id: "220E0886E740783B"
+				type: "item"
+				item: "powah:energy_cable_starter"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.5d
+			description: ["The Basic Energy Cables can transfer at a rate of 1.4k FE/t"]
+			dependencies: ["10449893EC1BD735"]
+			id: "52CAE4A078362D76"
+			tasks: [{
+				id: "20E22F0D3834D78F"
+				type: "item"
+				item: "powah:energy_cable_basic"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 5.0d
+			description: ["The Hardened Energy Cables can transfer at a rate of 5k FE/t"]
+			dependencies: ["52CAE4A078362D76"]
+			id: "4B22B5E60F8E1C9D"
+			tasks: [{
+				id: "638AEF4BDBA08929"
+				type: "item"
+				item: "powah:energy_cable_hardened"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.5d
+			description: ["The Blazing Energy Cables can transfer at a rate of 18k FE/t"]
+			dependencies: ["4B22B5E60F8E1C9D"]
+			id: "34D8BA1A3C031B0B"
+			tasks: [{
+				id: "6D1A02B8C2261208"
+				type: "item"
+				item: "powah:energy_cable_blazing"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 8.0d
+			description: ["The Niotic Energy Cables can transfer at a rate of 40k FE/t"]
+			dependencies: ["34D8BA1A3C031B0B"]
+			id: "367D6CD950F4E48B"
+			tasks: [{
+				id: "5821E1C8FA8BAEBF"
+				type: "item"
+				item: "powah:energy_cable_niotic"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 9.5d
+			description: ["The Spirited Energy Cables can transfer at a rate of 90k FE/t"]
+			dependencies: ["367D6CD950F4E48B"]
+			id: "573B2B8B63121C43"
+			tasks: [{
+				id: "18910295FFD96E58"
+				type: "item"
+				item: "powah:energy_cable_spirited"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 11.0d
+			description: ["The Nitro Energy Cables can transfer at a rate of 200k FE/t"]
+			dependencies: ["573B2B8B63121C43"]
+			id: "09D9978BC183F61F"
+			tasks: [{
+				id: "671EC127685853D3"
+				type: "item"
+				item: "powah:energy_cable_nitro"
+			}]
+		}
+		{
+			title: "Energy Transfer Options"
+			x: 1.0d
+			y: 0.0d
+			shape: "gear"
+			description: ["Moving energy around is going to be important when we start needing you to make a lot of different machines. This part of the guide aims to lay out the main options available to you."]
+			size: 1.5d
+			id: "12F66403A13D4B05"
+			tasks: [{
+				id: "0E67762453A2B546"
+				type: "checkmark"
+			}]
+		}
+	]
+}

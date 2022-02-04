@@ -1,0 +1,35 @@
+{
+    "name": "Team Commands",
+    "icon": "minecraft:writable_book",
+    "category": "patchouli:player_commands",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "On a server, it is possible to work together in teams too. These commands are more team-specific if that's something you want to do. Note that FTB Chunks are independent of this, so make sure that if you claim chunks, you also set up permissions for your team too."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l)List Existing Teams:$()$(br)$(1)/skyblock list <team>$()$(br2)This will list all teams if no <team> has been provided, or list the players in the <team> specified.$(br2)$(l)Rename Team:$()$(br)$(1)/skyblock team <new name>$()$(br2)This will rename your own team."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Allow Visits:$()$(br)$(1)/skyblock team allowVisit <true/false>$()$(br2)Leave off <true/false> to see the current visiting state for your Outpost. You can enable/disable visits by specifying true or false.$(br2)$(l)Invite Player to your Team:$()$(br)$(1)/skyblock invite <player>$()$(br2)This sends an invitation to <player> asking them to join your team."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Accepting an Invite:$()$(br)$(1)/skyblock accept <team name>$()$(br2)Accepts the invitation to join the team. You cannot already be in a team.$(br2)$(l)Declining an Invite:$()$(br)$(1)/skyblock decline <team name>$()$(br2)Declines the invitation to join the team."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Requesting to Join a Team:$()$(br)$(1)/skyblock join <team name>$()$(br2)Sends a request to join a team. You cannot already be in a team.$(br2)$(l)Allow Join Requests:$()$(br)$(1)/skyblock allowRequest <true/false>$()$(br2)Leave off <true/false> to see the current join request state for your Outpost. You can enable/disable join requests by specifying true or false."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Accept a Join Request:$()$(br)$(1)/skyblock team accept <player>$()$(br2)Accepts the Join Request from <player> and adds them to your team.$(br2)$(l)Decline a Join Request:$()$(br)$(1)/skyblock team deny <player>$()$(br2)Declines the Join Request from <player>."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Leaving a Team:$()$(br)$(1)/skyblock leave$()$(br2)If you want to leave your team, type in this command. $(c)$(l)NOTE: You will drop all your items and be teleported to spawn.$()"
+        }
+    ]
+}

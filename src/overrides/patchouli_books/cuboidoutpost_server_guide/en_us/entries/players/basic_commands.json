@@ -1,0 +1,19 @@
+{
+    "name": "Basic Commands",
+    "icon": "minecraft:writable_book",
+    "category": "patchouli:player_commands",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "There are several basic commands you should know about. Some may not be available, depending on your server config set by your admins."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Create Your Own Outpost:$()$(br)$(1)/skyblock create <name> <players>$()$(br2)This will create a new team with the given name and with the specified players in the team. If no <players> provided, only you will be in the team. If no <name> provided, a random one is created. If this command is not available, an admin will need to create a team for you."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Teleport to Spawn:$()$(br)$(1)/skyblock spawn$()$(br2)$(l)Teleport to Home Outpost:$()$(br)$(1)/skyblock home$()$(br2)$(l)Visit Another Outpost:$()$(1)/skyblock visit <team>$()$(br2)The <team> (even if a solo player) must have enabled visiting their Outpost for this to work."
+        }
+    ]
+}

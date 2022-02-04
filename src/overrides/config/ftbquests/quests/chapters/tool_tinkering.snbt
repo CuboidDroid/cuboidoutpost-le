@@ -1,0 +1,627 @@
+{
+	id: "33F4535B8E4C3579"
+	group: "6E3D5CD175F7344D"
+	order_index: 0
+	filename: "tool_tinkering"
+	title: "Tool Tinkering"
+	icon: {
+		id: "tconstruct:cleaver"
+		Count: 1b
+		tag: {
+			tic_multipliers: {
+				"tconstruct:mining_speed": 0.25f
+				"tconstruct:attack_damage": 1.5f
+				"tconstruct:durability": 3.5f
+			}
+			tic_stats: {
+				"tconstruct:attack_speed": 0.85499996f
+				"tconstruct:mining_speed": 1.4625f
+				"tconstruct:attack_damage": 13.125f
+				"tconstruct:harvest_level": 4.0f
+				"tconstruct:durability": 4812.5f
+			}
+			tic_broken: 0b
+			tic_modifiers: [
+				{
+					name: "tconstruct:insatiable"
+					level: 4s
+				}
+				{
+					name: "tconstruct:severing"
+					level: 2s
+				}
+				{
+					name: "tconstruct:silky_aoe_shears"
+					level: 1s
+				}
+				{
+					name: "tconstruct:two_handed"
+					level: 1s
+				}
+			]
+			tic_materials: [
+				"tconstruct:manyullyn"
+				"tconstruct:manyullyn"
+				"tconstruct:manyullyn"
+				"tconstruct:manyullyn"
+			]
+			Damage: 0
+			tic_persistent_data: {
+				abilities: 1
+				traits: 0
+				upgrades: 2
+			}
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Tool Tinkering"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			description: ["With access to a bit of wood, there are other ways of making tools that are now available to you. There is a modular method that requires a bit of Tinkering to Construct tools that we feel you might find useful. You can get started on some of it now, but will need access to other materials later to be able to progress further in this chapter."]
+			dependencies: ["164AA3AA7EEDB5DC"]
+			id: "32E874AAA865CA9C"
+			tasks: [{
+				id: "5AC52B6410FD097D"
+				type: "item"
+				item: "minecraft:oak_log"
+			}]
+			rewards: [{
+				id: "1BB158FA4FBADD5D"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+		}
+		{
+			title: "Pattern-ity Test"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"To get started, you will need to make some Patterns. Luckily, this is simple to do!"
+				""
+				"Patterns are used in some crafting recipes, but more importantly will be used in a Part Builder to make the various parts that make up your tools."
+			]
+			dependencies: ["32E874AAA865CA9C"]
+			id: "2407EB86462E9AA4"
+			tasks: [{
+				id: "28220A10052165B5"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 6L
+			}]
+			rewards: [{
+				id: "66D5889ED751D476"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 16
+				random_bonus: 16
+			}]
+		}
+		{
+			title: "A better crafting table"
+			x: -1.5d
+			y: 4.0d
+			description: [
+				"A Crafting Station is essentially a Crafting Table, but can connect to an inventory next to it (for example, a chest), as well as the other work stations in this section."
+				""
+				"It will connect to an inventory only if it is next to the Crafting Station, but for the other workstations it will connect through them too, which means that moving from one workstation to another does not require leaving the user interface - really handy!"
+			]
+			dependencies: ["2407EB86462E9AA4"]
+			id: "225F2F452807CAE0"
+			tasks: [{
+				id: "2B4D2D42C82CC5EF"
+				type: "item"
+				title: "Any Crafting Station"
+				item: {
+					id: "tconstruct:crafting_station"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Somewhere to build parts"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"The Part Builder is where you put in blank Patterns and some kind of raw material (for example wood or stone), and can then select the type of part you would like to build. The parts can be stored in a Part Chest if you wish, but typically you will use the parts on a Tinker Station to assemble your tools."
+				""
+				"The Part Builder is fine for lower tier materials like wood and stone, but in order to make metallic and higher-tier materials, you will need make a bit more progress first."
+			]
+			dependencies: ["2407EB86462E9AA4"]
+			id: "441E5C590FD64D90"
+			tasks: [{
+				id: "0728C460FC46D219"
+				type: "item"
+				title: "Any Part Builder"
+				item: {
+					id: "tconstruct:part_builder"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "One stop tinkering shop"
+			x: 1.5d
+			y: 4.0d
+			description: [
+				"The Tinker Station is where you assemble your basic tools. You simply select the tool type you are trying to make, then supply the necessary parts, and voila! New tool!"
+				""
+				"We suggest you lay out your tables so that the Crafting Station, Part Builder and Tinker Station are all next to each other - that way you can move between them without needing to leave their individual user interfaces."
+			]
+			dependencies: ["2407EB86462E9AA4"]
+			id: "7DED5CD6998498A6"
+			tasks: [{
+				id: "77ED20CAC5FB6FAD"
+				type: "item"
+				title: "Any Tinker Station"
+				item: {
+					id: "tconstruct:tinker_station"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Your first modifiable tool"
+			icon: {
+				id: "tconstruct:hand_axe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:mining_speed": 2.0f
+						"tconstruct:attack_damage": 6.0f
+						"tconstruct:harvest_level": 0.0f
+						"tconstruct:durability": 60.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 3s
+						}
+						{
+							name: "tconstruct:axe_transform_hidden"
+							level: 1s
+						}
+					]
+					tic_materials: [
+						"tconstruct:wood"
+						"tconstruct:wood"
+						"tconstruct:wood"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						traits: 0
+						upgrades: 3
+					}
+				}
+			}
+			x: 0.0d
+			y: 8.0d
+			description: [
+				"In the Tinker Station, select the Hand Axe on the left. The user interface will change, showing that you need to provide a Small Axe Head, a Tool Handle and a Tool Binding. Insert the ones you previously made, and make yourself a Wooden Hand Axe."
+				""
+				"Ok, so it's not a great tool, but it demonstrates the system to you. To demonstrate it a bit further - head out and use your new axe until it breaks..."
+				""
+				"What you will notice is that when it breaks, it does not disappear like other tools do. Instead, it just becomes useless. You have two choices for repairing your broken tools (or repairing tools)."
+				""
+				"The first option is to place your broken tool into a Tinkering Station, select the anvil icon on the left, insert your broken tool, and insert some of the material that your tool is made from - your tool can then be repaired."
+				""
+				"The second option is to make a Repair Kit of the same material you would repair your tool from in an anvil. Repair Kits can simply be applied to broken tools (or tools needing repair) in a crafting grid. This includes the 2x2 crafting grid in your player inventory!"
+			]
+			dependencies: ["047F3185F9885869"]
+			id: "0FBD70A678F713DE"
+			tasks: [{
+				id: "7959A44CD51C7394"
+				type: "item"
+				item: {
+					id: "tconstruct:hand_axe"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:attack_speed": 0.9f
+							"tconstruct:mining_speed": 2.0f
+							"tconstruct:attack_damage": 6.0f
+							"tconstruct:harvest_level": 0.0f
+							"tconstruct:durability": 60.0f
+						}
+						tic_broken: 0b
+						tic_modifiers: [
+							{
+								name: "tconstruct:cultivated"
+								level: 3s
+							}
+							{
+								name: "tconstruct:axe_transform_hidden"
+								level: 1s
+							}
+						]
+						tic_materials: [
+							"tconstruct:wood"
+							"tconstruct:wood"
+							"tconstruct:wood"
+						]
+						Damage: 0
+						tic_persistent_data: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "6B43BD0CBA8A9B08"
+				type: "item"
+				item: {
+					id: "tconstruct:repair_kit"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:wood"
+					}
+				}
+			}]
+		}
+		{
+			title: "Trying it out"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"Use the Part Builder to make a Small Axe Head, a Tool Handle, and a Tool Binding - all out of wood."
+				""
+				"&aMake sure that you get credit for these by putting them into your player inventory before moving on!&f"
+			]
+			dependencies: [
+				"225F2F452807CAE0"
+				"441E5C590FD64D90"
+				"7DED5CD6998498A6"
+			]
+			id: "047F3185F9885869"
+			tasks: [
+				{
+					id: "4B3D02A02FD4EBA7"
+					type: "item"
+					item: {
+						id: "tconstruct:small_axe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "53C9F514978FED05"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+				{
+					id: "44E6521EE5059874"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Tinkering with an existing tool"
+			x: 0.0d
+			y: 10.0d
+			description: [
+				"As soon as you have access to stone, you will be able to upgrade your axe to have a stone axe head."
+				""
+				"Before you do upgrade, it's important to note that your Wooden Hand Axe has got some extra statistics and attributes that you don't see on a plain old Wooden Axe..."
+				""
+				"There's something called \"Cultivated III\" on it, and if you look at the tool tips for your axe and hold down Shift you will notice that it also has things called Upgrades and Abilities. Information on all of these can be found in the \"Materials and You\" book - you should already have one, but if you can't find yours, you can claim a one-off replacement in the \"Emergency Items\" in Appendix E."
+				""
+				"We will leave the reading up on what the different statistics mean to you, but the important thing to note is that when we change your axe to have a stone axe head, these will change too. Let's do that now - get back into the Tinkering Station and in the Anvil, put your existing tool and the new stone axe head (in left slot) to make yourself a Stone Hand Axe."
+				""
+				"If you look at the statistics for the Stone Hand Axe in the tool tips, you will see that Cultivated has dropped from level III to level II, and your tool now also has Stonebound I. The important point here is that the attributes of your tools are determined by the materials your tool is made up from."
+			]
+			dependencies: ["0FBD70A678F713DE"]
+			id: "30E592B9968A4B46"
+			tasks: [
+				{
+					id: "2B6EF24D09E52C6E"
+					type: "item"
+					item: {
+						id: "tconstruct:small_axe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+				{
+					id: "25B26DD231CDA123"
+					type: "checkmark"
+					title: "I hereby confirm I have made an axe with a stone axe head."
+				}
+			]
+		}
+		{
+			title: "Better upgrades"
+			x: 2.0d
+			y: 10.0d
+			shape: "gear"
+			description: [
+				"&aComplete \"Smelt or Melt\" in \"Getting Tinks Done\" to activate this section.&f"
+				""
+				"The next tier of upgrades is unlocked when you have access to a Melter or Smeltery. This is because to make the parts out of second tier materials (metals in most cases), you will need to make an appropriate cast for the part you want, have it in place on a Casting Table, and then pour the material into the cast. Go ahead and make an Iron Small Axe Head now."
+			]
+			dependencies: [
+				"30E592B9968A4B46"
+				"54493C0419586822"
+			]
+			id: "382ACEA3B14FE049"
+			tasks: [{
+				id: "69287F70ED08AFB3"
+				type: "item"
+				item: {
+					id: "tconstruct:small_axe_head"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:iron"
+					}
+				}
+			}]
+			rewards: [{
+				id: "694E20EFF1595E50"
+				type: "item"
+				item: "tconstruct:puny_smelting"
+			}]
+		}
+		{
+			title: "Upgrading again"
+			x: 4.0d
+			y: 10.0d
+			description: [
+				"Go ahead and upgrade your Stone Hand Axe to an Iron Hand Axe in your Tinker Station. Once again, statistics will change. By now you should have an idea of how to make basic tools that can easily be upgraded and repaired."
+				""
+				"You've also been given a copy of \"Puny Smelting\" which contains information on Tier II materials that can be used in the making of tools, as well as information on how to apply and use upgrades and modifiers on your tools."
+				""
+				"So what's next? More tools!"
+				""
+				"The reward for getting this far is a bundle of 5 Silky Cloth. You can apply these to a Tinkers Tool (probably best used on a pickaxe or mattock) to allow you to pick up blocks instead of breaking them in the same way as the Silk Touch enchantment works. Doing this requires that your tool have 1 Ability slot available."
+			]
+			dependencies: ["382ACEA3B14FE049"]
+			id: "2497581D002D9694"
+			tasks: [{
+				id: "10BFDB20C95492E7"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+			rewards: [{
+				id: "1F8C64E72C38CD62"
+				type: "item"
+				item: "tconstruct:silky_cloth"
+				count: 5
+			}]
+		}
+		{
+			title: "A special anvil"
+			x: 6.0d
+			y: 10.0d
+			description: [
+				"&aComplete \"Alloy Aloha!\" in \"Getting Tinks Done\" to activate this section.&f"
+				""
+				"Access to more modular tools and better upgrade options requires that you make a special anvil. There are several different kinds available - pick one that suits you, and let's get going!"
+				""
+				"As a bonus, we'll give you a free copy of Mighty Smelting, which explains Tier III materials as well as provide additional information on abilities!"
+			]
+			dependencies: ["2497581D002D9694"]
+			id: "32BD594EE5DEF1FA"
+			tasks: [{
+				id: "5D94B2B948A1287E"
+				type: "item"
+				title: "Any Tinker's Anvil"
+				item: {
+					id: "tconstruct:tinkers_anvil"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "19C5D1294A115DA8"
+				type: "item"
+				item: "tconstruct:mighty_smelting"
+			}]
+		}
+		{
+			title: "Don't lose your head"
+			x: 8.0d
+			y: 10.0d
+			description: [
+				"One of the new tools and weapons you have access to now is a Cleaver. It's a fairly slow weapon compared to something like a sword, but does high damage and comes with Severing II automatically, which increases the chance of decapitating your enemies. Having a Cleaver is really useful in a pinch if you're on the hunt for skulls, so it's worth having a good one available."
+				""
+				"Read up on the different materials when deciding what to use in the construction of your Cleaver, and consider utilising some of the upgrade and ability slots to focus in on what you want to use it for. For example, you can look at adding further levels of Severing, where each level increases the chances of heads being dropped when you slay your opponents."
+			]
+			dependencies: ["32BD594EE5DEF1FA"]
+			id: "048DD287EC811A58"
+			tasks: [
+				{
+					id: "0078E5803F22C337"
+					type: "item"
+					title: "Any 2 Tough Handles"
+					item: {
+						id: "tconstruct:tough_handle"
+						Count: 1b
+						tag: { }
+					}
+					count: 2L
+				}
+				{
+					id: "3F4F3433F923AD5F"
+					type: "item"
+					title: "Any Broad Blade"
+					item: {
+						id: "tconstruct:broad_blade"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "6D2B1ACB5BDAD035"
+					type: "item"
+					title: "Any Large Plate"
+					item: {
+						id: "tconstruct:large_plate"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "259D65F2CE40E689"
+					type: "item"
+					title: "Any Cleaver"
+					item: {
+						id: "tconstruct:cleaver"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:mining_speed": 0.25f
+								"tconstruct:attack_damage": 1.5f
+								"tconstruct:durability": 3.5f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 0.9f
+								"tconstruct:mining_speed": 0.25f
+								"tconstruct:attack_damage": 5.25f
+								"tconstruct:durability": 3.5f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:severing"
+									level: 2s
+								}
+								{
+									name: "tconstruct:silky_aoe_shears"
+									level: 1s
+								}
+								{
+									name: "tconstruct:two_handed"
+									level: 1s
+								}
+							]
+							Damage: 0
+							tic_persistent_data: { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4F1D4F7B7956ADEF"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "abilities"
+					}
+				}
+			}]
+		}
+		{
+			title: "A smasher for dirt and snow"
+			x: 8.0d
+			y: 8.0d
+			description: [
+				"A Smasher is a great tool, but is only really any good for rocky materials. When it comes to snow, dirt, sand and gravel, the tool you need is an Excavator."
+				""
+				"The Excavator digs up material in a 3x3 area by default, just like a smasher - it's great for rapidly clearing an area in a more controlled fashion than using a vein miner."
+			]
+			dependencies: ["32BD594EE5DEF1FA"]
+			id: "4E4BD248C7BF3A19"
+			tasks: [
+				{
+					id: "3875AF169ED6A46C"
+					type: "item"
+					title: "Any 2 Large Plates"
+					item: {
+						id: "tconstruct:large_plate"
+						Count: 1b
+						tag: { }
+					}
+					count: 2L
+				}
+				{
+					id: "6B550B487627AC35"
+					type: "item"
+					title: "Any 2 Tough Handles"
+					item: {
+						id: "tconstruct:tough_handle"
+						Count: 1b
+						tag: { }
+					}
+					count: 2L
+				}
+				{
+					id: "145BF10E5A813E30"
+					type: "item"
+					title: "Any Excavator"
+					item: {
+						id: "tconstruct:excavator"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:mining_speed": 0.3f
+								"tconstruct:attack_damage": 1.2f
+								"tconstruct:durability": 3.75f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 1.0f
+								"tconstruct:mining_speed": 0.3f
+								"tconstruct:attack_damage": 1.8000001f
+								"tconstruct:durability": 3.75f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:knockback"
+									level: 2s
+								}
+								{
+									name: "tconstruct:shovel_transform_hidden"
+									level: 1s
+								}
+								{
+									name: "tconstruct:two_handed"
+									level: 1s
+								}
+							]
+							Damage: 0
+							tic_persistent_data: { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "3E52F9E4C37915EC"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "upgrades"
+					}
+				}
+			}]
+		}
+	]
+}

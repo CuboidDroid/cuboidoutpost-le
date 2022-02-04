@@ -1,0 +1,35 @@
+{
+    "name": "Admin Commands",
+    "icon": "minecraft:writable_book",
+    "category": "patchouli:admin_commands",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Administrators (permission level 2 or higher) have access to some additional commands."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Rename Team:$()$(br)$(1)/skyblock team <new name> <old name>$()$(br2)<old name> is optional for your own team, but if provided will rename the <old name> team.$(br2)$(l)Create a team:$()$(br)$(1)/skyblock manage teams create <name>$()$(br2)Creates a team with the given name. If no name is provided, a random one is generated."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Create and join a Team:$()$(br)$(1)/skyblock manage teams createAndJoin <name>$()$(br2)Creates a team with the given name, and you will automatically join it. If no name is provided, a random one is generated."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Deleting Teams:$()$(br)$(1)/skyblock manage teams delete <name>$()$(br2)Deletes the team with the given name.$(br2)$(c)WARNING! This cannot be undone.$()$(br2)The Outpost will still exist, but you cannot re-bind a new team to that island. If users are in that team, they will be teleported to spawn after dropping all their items."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Clearing Teams:$()$(br)$(1)/skyblock manage teams clear <name>$()$(br2)All empty teams will be deleted as in the ''Deleting Teams'' command. If a <name> is provided, all players in that team will drop their items, be removed from the team, and teleported to spawn."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Add Player to Team:$()$(br)$(1)/skyblock manage addPlayer <player> <team name>$()$(br2)This will add a player to an existing team. This will cause the player to be teleported to the team Outpost."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l)Kick Player from Team:$()$(br)$(1)/skyblock manage kickPlayer <player>$()$(br2)This will remove the <player> from their current team. They will drop their items, be removed from the team, and then be teleported back to the spawn Outpost."
+        }
+    ]
+}

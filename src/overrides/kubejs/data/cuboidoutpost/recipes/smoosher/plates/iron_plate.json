@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "cuboidmod:smoosher"
+      },
+      {
+        "tag": "forge:ingots/iron"
+      }
+    ],
+    "result": {
+      "item": "immersiveengineering:plate_iron",
+      "count": 1
+    }
+}
