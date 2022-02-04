@@ -2,7 +2,7 @@
 
 Set up your Forge Server with version:
 
-**`forge-1.16.5-36.2.20.jar`**
+**`forge-1.16.5-36.2.26.jar`**
 
 You can find out how to do that manually by reading this article on the Minecraft Wiki: [Setting up a Minecraft Forge server](https://minecraft.fandom.com/wiki/Tutorials/Setting_up_a_Minecraft_Forge_server).
 
