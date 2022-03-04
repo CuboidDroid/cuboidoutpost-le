@@ -1954,6 +1954,7 @@
 	[oddities.totem_of_holding]
 		#Set this to false to remove the behaviour where totems destroy themselves if the player dies again.
 		"Dark Souls Mode" = true
+		#Totem will always spawn if the player killer is himself.
 		"Spawn Totem on PVP Kill" = false
 		#Set this to true to make it so that if a totem is destroyed, the items it holds are destroyed alongside it rather than dropped
 		"Destroy Lost Items" = false
@@ -2019,6 +2020,7 @@
 		"Extra Chance Per Looting" = 0.5
 		#Set this to true to allow the backpacks to be unequipped even with items in them
 		"Super Op Mode" = false
+		"Items In Backpack Tick" = true
 
 	[oddities.crate]
 		"Max Items" = 640
@@ -2032,17 +2034,14 @@
 		"Pipe Speed" = 5
 
 [experimental]
-	Shiba = false
 	"Adjustable Chat" = false
-	"Narrator Readout" = false
-	"Overlay Shader" = false
 	"Custom Underground Biome" = false
 	"Game Nerfs" = false
 	Pallet = false
-
-	[experimental.adjustable_chat]
-		"Horizontal Shift" = 0
-		"Vertical Shift" = 0
+	Shiba = false
+	"Narrator Readout" = false
+	"Microcrafting Helper" = false
+	"Overlay Shader" = false
 
 	[experimental.custom_underground_biome]
 		#The format for these definitions is:
@@ -2050,6 +2049,10 @@
 		#That's a lot to take in, so here's an example. This would be for the default config of the Slime underground biome. (Spaces are allowed.)
 		#minecraft:overworld; false; SWAMP; false; 120; 10..40; 26,14; 14,6; minecraft:water@915, minecraft:slime_block@85; minecraft:green_terracotta@2, minecraft:lime_terracotta@3, minecraft:light_blue_terracotta@1; CEILING; false
 		"Biome Definitions" = []
+
+	[experimental.adjustable_chat]
+		"Horizontal Shift" = 0
+		"Vertical Shift" = 0
 
 	[experimental.game_nerfs]
 		#Makes Mending act like the Unmending mod

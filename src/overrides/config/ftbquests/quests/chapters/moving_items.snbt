@@ -341,7 +341,7 @@
 		}
 		{
 			title: "Better than a man in a van"
-			x: -1.0d
+			x: 0.0d
 			y: -2.25d
 			shape: "gear"
 			description: [
@@ -371,6 +371,32 @@
 						Items: { }
 					}
 				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.0d
+			description: [
+				"A pair of Item Transporters can be used to move items between blocks over a 1 block distance. Place an Item Transporter on each block, and then press in the button on the side you want to receive the items."
+				""
+				"Can be filtered by whitelist / blacklist."
+			]
+			id: "4CD2F74DF812083B"
+			tasks: [{
+				id: "569631D59D8BFA8B"
+				type: "item"
+				item: "industrialforegoing:item_transporter_type"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			description: ["Transfers items. Use a Pipe Wrench to configure. Can be upgraded using Pipe Upgrades."]
+			id: "47C0486BA8120EB0"
+			tasks: [{
+				id: "7FD9DB0052845816"
+				type: "item"
+				item: "pipez:item_pipe"
 			}]
 		}
 	]

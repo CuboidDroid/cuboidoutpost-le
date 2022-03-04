@@ -10,8 +10,8 @@
 	quests: [
 		{
 			title: "Gas Transport"
-			x: 0.0d
-			y: -0.5d
+			x: 0.75d
+			y: -0.75d
 			shape: "gear"
 			description: ["Not many machines use or produce gas, but if you plan on making some of the more advanced ones from Mekanism, you'll need to know how to get the gases moved around."]
 			size: 1.5d
@@ -137,6 +137,17 @@
 				id: "5137DFA5FFDA6EDA"
 				type: "item"
 				item: "mekanism:basic_chemical_tank"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			description: ["Transfers gases. Use a Pipe Wrench to configure. Can be upgraded using Pipe Upgrades."]
+			id: "73F2525F3CE42FAE"
+			tasks: [{
+				id: "49F8D19837FA125D"
+				type: "item"
+				item: "pipez:gas_pipe"
 			}]
 		}
 	]

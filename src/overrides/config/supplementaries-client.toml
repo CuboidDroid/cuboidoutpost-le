@@ -170,7 +170,7 @@
 	#Range: -10.0 ~ 10.0
 	test3 = 0.0
 	#Enable Quark style config button on main menu. Needs Configured installed to work
-	config_button = true
+	config_button = false
 	#Show some tooltip hints to guide players through the mod
 	tooltip_hints = true
 	#ignore this

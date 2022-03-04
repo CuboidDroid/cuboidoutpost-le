@@ -202,7 +202,7 @@
 		}
 		{
 			title: "Fluid Transport"
-			x: 2.0d
+			x: 3.75d
 			y: 0.0d
 			shape: "gear"
 			description: [
@@ -237,6 +237,32 @@
 				id: "04D8A47038A41DFF"
 				type: "item"
 				item: "immersiveengineering:jerrycan"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 2.0d
+			description: [
+				"A pair of Fluid Transporters can be used to move fluids between blocks over a 1 block distance. Place a Fluid Transporter on each block, and then press in the button on the side you want to receive the fluids."
+				""
+				"Supports filtering on whitelist / blacklist."
+			]
+			id: "3A53D5F1E7426C55"
+			tasks: [{
+				id: "5670EB889425CF2B"
+				type: "item"
+				item: "industrialforegoing:fluid_transporter_type"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 2.0d
+			description: ["Transfers fluids. Use a Pipe Wrench to configure. Can be upgraded using Pipe Upgrades."]
+			id: "6CF2A3AD1FE8A99D"
+			tasks: [{
+				id: "5A3CAF06472F0395"
+				type: "item"
+				item: "pipez:fluid_pipe"
 			}]
 		}
 	]

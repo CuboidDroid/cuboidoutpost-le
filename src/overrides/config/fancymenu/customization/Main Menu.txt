@@ -87,7 +87,7 @@ customization {
 }
 
 customization {
-  identifier = %id=604346%
+  identifier = %id=376322%
   action = hidebutton
 }
 

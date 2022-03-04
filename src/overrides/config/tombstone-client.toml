@@ -10,6 +10,9 @@
 	allow_halloween_ghost = true
 	#Equips elytra in priority when recovering your lost items [false/true|default:false]
 	equip_elytra_in_priority = false
+	#Defines the type of marker when holding in hand some items like the Grave's Key [WING/SPARK/NOTE/BOX|default:WING]
+	#Allowed Values: WING, SPARK, NOTE, BOX
+	marker_type = "WING"
 	#Shows the use of the Tombstone's enchantments in tooltip [false/true|default:true]
 	show_info_on_enchantment = true
 	#Defines your grave placement logic (nearest or ideal placement) [SAFEST/NORMAL/NEAREST|default:NORMAL]
@@ -18,6 +21,8 @@
 	#Decimal value for the color of the particles when using magic items [0..16777215|default:125656]
 	#Range: 0 ~ 16777215
 	particle_casting_color = 14937088
+	#Display an icon when fishing with the Rod of Misadventure showing if you're in openwater [false/true|default:true]
+	show_fishing_marker = true
 	#Highlights the tomb from far when holding the key [false/true|default:true]
 	highlight = true
 	#Favorite grave

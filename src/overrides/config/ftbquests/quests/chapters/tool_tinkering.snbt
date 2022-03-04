@@ -39,6 +39,7 @@
 					level: 1s
 				}
 			]
+			HideFlags: 3
 			tic_materials: [
 				"tconstruct:manyullyn"
 				"tconstruct:manyullyn"
@@ -191,6 +192,7 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:wood"
 						"tconstruct:wood"
@@ -245,6 +247,7 @@
 								level: 1s
 							}
 						]
+						HideFlags: 3
 						tic_materials: [
 							"tconstruct:wood"
 							"tconstruct:wood"
@@ -519,6 +522,7 @@
 									level: 1s
 								}
 							]
+							HideFlags: 3
 							Damage: 0
 							tic_persistent_data: { }
 						}
@@ -605,6 +609,7 @@
 									level: 1s
 								}
 							]
+							HideFlags: 3
 							Damage: 0
 							tic_persistent_data: { }
 						}

@@ -114,4 +114,76 @@ onEvent('recipes', e => {
         R: 'minecraft:redstone'
       })
 
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // refinedstorageaddons:creative_wireless_crafting_grid (ie)
+    e.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+          "-G-",
+          "-#-"
+        ],
+        "key": {
+          "G": { "item": "refinedstorageaddons:wireless_crafting_grid" },
+          "#": { "item": "immersiveengineering:capacitor_creative" },
+          "-": { "item": "extendedcrafting:the_ultimate_ingot" }
+      },
+        "result": {
+          "item": "refinedstorageaddons:creative_wireless_crafting_grid"
+        }
+      })
+  
+      // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      // refinedstorage:creative_wireless_crafting_grid (mekanism)
+      e.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+          "-G-",
+          "-#-"
+        ],
+        "key": {
+          "G": { "item": "refinedstorageaddons:wireless_crafting_grid" },
+          "#": { "item": "mekanism:creative_energy_cube" },
+          "-": { "item": "extendedcrafting:the_ultimate_ingot" }
+      },
+        "result": {
+          "item": "refinedstorageaddons:creative_wireless_crafting_grid"
+        }
+      })
+  
+      // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      // refinedstorage:creative_wireless_crafting_grid (thermal)
+      e.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+          "-G-",
+          "-#-"
+        ],
+        "key": {
+          "G": { "item": "refinedstorageaddons:wireless_crafting_grid" },
+          "#": { "item": "thermal:rf_coil_creative_augment" },
+          "-": { "item": "extendedcrafting:the_ultimate_ingot" }
+      },
+        "result": {
+          "item": "refinedstorageaddons:creative_wireless_crafting_grid"
+        }
+      })
+  
+      // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      // refinedstorage:creative_wireless_crafting_grid (powah)
+      e.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+          "-G-",
+          "-#-"
+        ],
+        "key": {
+          "G": { "item": "refinedstorageaddons:wireless_crafting_grid" },
+          "#": { "item": "powah:energy_cell_creative" },
+          "-": { "item": "extendedcrafting:the_ultimate_ingot" }
+      },
+        "result": {
+          "item": "refinedstorageaddons:creative_wireless_crafting_grid"
+        }
+      })  
+
 })

@@ -303,7 +303,7 @@
 		}
 		{
 			title: "Energy Transfer Options"
-			x: 1.0d
+			x: 2.0d
 			y: 0.0d
 			shape: "gear"
 			description: ["Moving energy around is going to be important when we start needing you to make a lot of different machines. This part of the guide aims to lay out the main options available to you."]
@@ -312,6 +312,17 @@
 			tasks: [{
 				id: "0E67762453A2B546"
 				type: "checkmark"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			description: ["Transfers energy. Use a Pipe Wrench to configure. Can be upgraded using Pipe Upgrades."]
+			id: "6E50D5E02D8FBDD3"
+			tasks: [{
+				id: "7104A049A0F84693"
+				type: "item"
+				item: "pipez:energy_pipe"
 			}]
 		}
 	]

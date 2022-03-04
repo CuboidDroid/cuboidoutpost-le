@@ -10,6 +10,8 @@
 	#Base energy storage (Joules).
 	energizedSmelter = "20000"
 	#Base energy storage (Joules).
+	pigmentExtractor = "40000"
+	#Base energy storage (Joules).
 	seismicVibrator = "20000"
 	#Base energy storage (Joules).
 	isotopicCentrifuge = "80000"
@@ -35,6 +37,10 @@
 	osmiumCompressor = "80000"
 	#Base energy storage (Joules).
 	precisionSawmill = "20000"
+	#Base energy storage (Joules).
+	paintingMachine = "40000"
+	#Base energy storage (Joules).
+	pigmentMixer = "80000"
 	#Base energy storage (Joules). Also defines max process rate.
 	antiprotonicNucleosynthesizer = "1000000000"
 	#Base energy storage (Joules).

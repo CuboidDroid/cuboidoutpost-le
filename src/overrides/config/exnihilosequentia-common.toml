@@ -21,6 +21,8 @@
 	woodBarrelMaxTemp = 300
 	#Should Ex Nihilo show any Patricle?
 	showParticles = true
+	#If set to false, the blocks have same sounds as wooden barrels
+	netherBarrelSoundsEnabled = true
 	#How much fluid rain will fill per iteration (Default: 2)
 	#Range: > 1
 	rainFillAmount = 2
@@ -179,6 +181,8 @@
 	#Number of buckets the crucible will hold (Default: 4)
 	#Range: > 1
 	crucibleNumberOfBuckets = 4
+	#If set to false, the blocks have same sounds as wooden crucibles
+	netherCrucibleSoundsEnabled = true
 
 	#Wooden Crucible Configs
 	[crucible.wood]
@@ -195,6 +199,8 @@
 	maxSieveClicks = 10
 	#Meshes will have durability and can break, but don't stack. (Default: false)
 	enableMeshDurability = false
+	#If set to false, the blocks have same sounds as wooden sieves
+	netherSieveSoundsEnabled = true
 	#Meshes will stack, but don't have durability. (Default: 64)
 	#Range: 1 ~ 64
 	meshStackSize = 64

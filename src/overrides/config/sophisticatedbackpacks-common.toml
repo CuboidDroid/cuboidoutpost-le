@@ -3,8 +3,10 @@
 [common]
 	#Turns on/off loot added to various vanilla chest loot tables
 	chestLootEnabled = true
+	#List of items that are not allowed to be put in backpacks - e.g. "minecraft:shulker_box"
+	disallowedItems = []
 	#Disable / enable any items here (disables their recipes)
-	enabledItems = ["void_upgrade:true", "advanced_pickup_upgrade:true", "jukebox_upgrade:true", "everlasting_upgrade:true", "compacting_upgrade:true", "advanced_restock_upgrade:true", "advanced_magnet_upgrade:true", "advanced_tool_swapper_upgrade:true", "advanced_filter_upgrade:true", "diamond_backpack:true", "inception_upgrade:true", "crafting_upgrade:true", "auto_smelting_upgrade:true", "pickup_upgrade:true", "stack_upgrade_tier_4:true", "stack_upgrade_tier_3:true", "stack_upgrade_tier_1:true", "smelting_upgrade:true", "upgrade_base:true", "filter_upgrade:true", "magnet_upgrade:true", "refill_upgrade:true", "deposit_upgrade:true", "iron_backpack:true", "gold_backpack:true", "advanced_deposit_upgrade:true", "advanced_void_upgrade:true", "restock_upgrade:true", "stonecutter_upgrade:true", "advanced_compacting_upgrade:true", "backpack:true", "feeding_upgrade:true", "stack_upgrade_tier_2:true", "tool_swapper_upgrade:true", "netherite_backpack:true", "tank_upgrade:true", "battery_upgrade:true", "advanced_feeding_upgrade:true"]
+	enabledItems = ["void_upgrade:true", "advanced_pickup_upgrade:true", "jukebox_upgrade:true", "everlasting_upgrade:true", "compacting_upgrade:true", "advanced_restock_upgrade:true", "advanced_magnet_upgrade:true", "advanced_tool_swapper_upgrade:true", "advanced_filter_upgrade:true", "diamond_backpack:true", "inception_upgrade:true", "crafting_upgrade:true", "auto_smelting_upgrade:true", "pickup_upgrade:true", "stack_upgrade_tier_4:true", "stack_upgrade_tier_3:true", "stack_upgrade_tier_1:true", "smelting_upgrade:true", "upgrade_base:true", "filter_upgrade:true", "magnet_upgrade:true", "refill_upgrade:true", "deposit_upgrade:true", "iron_backpack:true", "gold_backpack:true", "advanced_deposit_upgrade:true", "advanced_void_upgrade:true", "restock_upgrade:true", "stonecutter_upgrade:true", "advanced_compacting_upgrade:true", "backpack:true", "feeding_upgrade:true", "stack_upgrade_tier_2:true", "tool_swapper_upgrade:true", "netherite_backpack:true", "tank_upgrade:true", "battery_upgrade:true", "advanced_feeding_upgrade:true", "auto_smoking_upgrade:true", "auto_blasting_upgrade:true", "smoking_upgrade:true", "blasting_upgrade:true", "xp_pump_upgrade:true", "advanced_pump_upgrade:true", "pump_upgrade:true"]
 
 	#Advanced Filter Upgrade Settings
 	[common.advancedFilterUpgrade]
@@ -35,6 +37,15 @@
 		#Number of filter slots displayed in a row
 		#Range: 1 ~ 6
 		slotsInRow = 4
+
+	#Smoking Upgrade Settings
+	[common.smokingUpgrade]
+		#Smelting speed multiplier (1.0 equals speed at which vanilla furnace smelts items)
+		#Range: 0.25 ~ 4.0
+		smeltingSpeedMultiplier = 1.0
+		#Fuel efficiency multiplier (1.0 equals speed at which it's used in vanilla furnace)
+		#Range: 0.25 ~ 4.0
+		fuelEfficiencyMultiplier = 1.0
 
 	#Pickup Upgrade Settings
 	[common.pickupUpgrade]
@@ -96,6 +107,16 @@
 		#Range: 1 ~ 6
 		slotsInRow = 4
 
+	[common.nerfs]
+		#Ratio of slowness levels per every backpack above the maximum number allowed. (number of backpacks above the max gets multiplied by this number and ceiled)
+		#Range: 0.1 ~ 5.0
+		slownessLevelsPerAdditionalBackpack = 1.0
+		#Maximum number of backpacks in player's inventory that will not cause slowness
+		#Range: 1 ~ 27
+		maxNumberOfBackpacks = 3
+		#Determines if too many backpacks in player's inventory cause slowness to the player
+		tooManyBackpacksSlowness = false
+
 	#Inception Upgrade Settings
 	[common.inceptionUpgrade]
 		#Allows / Disallows backpack upgrades to work with inventories of Backpacks in the Backpack with Inception Upgrade
@@ -111,6 +132,48 @@
 		#Number of filter slots displayed in a row
 		#Range: 1 ~ 6
 		slotsInRow = 3
+
+	#Auto-Blasting Upgrade Settings
+	[common.autoBlastingUpgrade]
+		#Number of fuel filter slots displayed in a row
+		#Range: 1 ~ 6
+		fuelFilterSlotsInRow = 4
+		#Number of input filter slots
+		#Range: 1 ~ 20
+		inputFilterSlots = 8
+		#Smelting speed multiplier (1.0 equals speed at which vanilla furnace smelts items)
+		#Range: 0.25 ~ 4.0
+		smeltingSpeedMultiplier = 1.0
+		#Number of fuel filter slots
+		#Range: 1 ~ 20
+		fuelFilterSlots = 4
+		#Fuel efficiency multiplier (1.0 equals speed at which it's used in vanilla furnace)
+		#Range: 0.25 ~ 4.0
+		fuelEfficiencyMultiplier = 1.0
+		#Number of input filter slots displayed in a row
+		#Range: 1 ~ 6
+		inputFilterSlotsInRow = 4
+
+	#Auto-Smoking Upgrade Settings
+	[common.autoSmokingUpgrade]
+		#Number of fuel filter slots displayed in a row
+		#Range: 1 ~ 6
+		fuelFilterSlotsInRow = 4
+		#Number of input filter slots
+		#Range: 1 ~ 20
+		inputFilterSlots = 8
+		#Smelting speed multiplier (1.0 equals speed at which vanilla furnace smelts items)
+		#Range: 0.25 ~ 4.0
+		smeltingSpeedMultiplier = 1.0
+		#Number of fuel filter slots
+		#Range: 1 ~ 20
+		fuelFilterSlots = 4
+		#Fuel efficiency multiplier (1.0 equals speed at which it's used in vanilla furnace)
+		#Range: 0.25 ~ 4.0
+		fuelEfficiencyMultiplier = 1.0
+		#Number of input filter slots displayed in a row
+		#Range: 1 ~ 6
+		inputFilterSlotsInRow = 4
 
 	#Advanced Deposit Upgrade Settings
 	[common.advancedDepositUpgrade]
@@ -138,6 +201,18 @@
 		#Number of filter slots displayed in a row
 		#Range: 1 ~ 6
 		slotsInRow = 3
+
+	#Pump Upgrade Settings
+	[common.pumpUpgrade]
+		#Ratio that gets applied (multiplies) to inventory stack multiplier before this is applied to max input/output value. Value lower than 1 makes stack multiplier affect the capacity less, higher makes it affect the capacity more. 0 turns off stack multiplier affecting input/output
+		#Range: 0.0 ~ 5.0
+		stackMultiplierRatio = 1.0
+		#Number of fluid filter slots
+		#Range: 1 ~ 20
+		filterSlots = 4
+		#How much mB can be transfered in / out per operation. This is a base transfer rate that gets multiplied by number of rows in backpack and stack multiplier.
+		#Range: 1 ~ 1000
+		maxInputOutput = 20
 
 	#Auto-Smelting Upgrade Settings
 	[common.autoSmeltingUpgrade]
@@ -168,6 +243,15 @@
 		#Number of filter slots displayed in a row
 		#Range: 1 ~ 6
 		slotsInRow = 4
+
+	#Blasting Upgrade Settings
+	[common.blastingUpgrade]
+		#Smelting speed multiplier (1.0 equals speed at which vanilla furnace smelts items)
+		#Range: 0.25 ~ 4.0
+		smeltingSpeedMultiplier = 1.0
+		#Fuel efficiency multiplier (1.0 equals speed at which it's used in vanilla furnace)
+		#Range: 0.25 ~ 4.0
+		fuelEfficiencyMultiplier = 1.0
 
 	#Leather Backpack Settings
 	[common.leatherBackpack]
@@ -235,6 +319,14 @@
 		#Range: 0.25 ~ 4.0
 		fuelEfficiencyMultiplier = 1.0
 
+	#Xp Pump Upgrade Settings
+	[common.xpPumpUpgrade]
+		#Whether xp pump can mend items with mending. Set false here to turn off the feature altogether.
+		mendingOn = true
+		#How many experience points at a maximum would be used to mend an item per operation (every 5 ticks and 1 xp point usually translates to 2 damage repaired).
+		#Range: 1 ~ 20
+		maxXpPointsPerMending = 5
+
 	#Tank Upgrade Settings
 	[common.tankUpgrade]
 		#Ratio that gets applied (multiplies) to inventory stack multiplier before this is applied to max energy of the battery and max in/out. Value lower than 1 makes stack multiplier affect the max energy less, higher makes it affect the max energy more. 0 turns off stack multiplier affecting battery upgrade
@@ -281,12 +373,18 @@
 		#Chance of an entity spawning with Backpack
 		#Range: 0.0 ~ 1.0
 		chance = 0.01
+		#Chance increase per looting level of mob dropping backpack
+		#Range: 0.0 ~ 0.2
+		lootingChanceIncreasePerLevel = 0.01
 		#Turns on/off buffing the entity that wears backpack with potion effects. These are scaled based on how much loot is added.
 		buffWithPotionEffects = true
 		#Map of entities that can spawn with backpack and related loot tables (if adding a loot is enabled) in format of "EntityRegistryName|LootTableName"
 		entityLootTableList = ["minecraft:creeper|minecraft:chests/desert_pyramid", "minecraft:drowned|minecraft:chests/shipwreck_treasure", "minecraft:enderman|minecraft:chests/end_city_treasure", "minecraft:evoker|minecraft:chests/woodland_mansion", "minecraft:husk|minecraft:chests/desert_pyramid", "minecraft:piglin|minecraft:chests/bastion_bridge", "minecraft:piglin_brute|minecraft:chests/bastion_treasure", "minecraft:pillager|minecraft:chests/pillager_outpost", "minecraft:skeleton|minecraft:chests/simple_dungeon", "minecraft:stray|minecraft:chests/igloo_chest", "minecraft:vex|minecraft:chests/woodland_mansion", "minecraft:vindicator|minecraft:chests/woodland_mansion", "minecraft:witch|minecraft:chests/buried_treasure", "minecraft:wither_skeleton|minecraft:chests/nether_bridge", "minecraft:zombie|minecraft:chests/simple_dungeon", "minecraft:zombie_villager|minecraft:chests/village/village_armorer", "minecraft:zombified_piglin|minecraft:chests/bastion_other"]
 		#List of music discs that are not supposed to be played by entities
 		discBlockList = ["botania:record_gaia_1", "botania:record_gaia_2"]
+		#Chance of mob dropping backpack when killed by player
+		#Range: 0.0 ~ 1.0
+		backpackDropChance = 0.085
 		#Turns on/off buffing the entity that wears backpack with additional health. Health is scaled based on backpack tier the mob wears.
 		buffHealth = true
 		#Turns on/off equiping the entity that wears backpack with armor. What armor material and how enchanted is scaled based on backpack tier the mob wears.

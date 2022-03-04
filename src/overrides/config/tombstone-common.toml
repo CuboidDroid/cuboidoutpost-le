@@ -85,17 +85,12 @@
 	unhandled_beneficial_effects = ["extraalchemy", "astralsorcery:potiontimefreeze", "xreliquary:flight_potion"]
 	#Harmful effects that can't used by certain features such as tablet of cupidity and the enchantment plague bringer
 	unhandled_harmful_effects = ["minecraft:nausea"]
-	#Fishing treasures can only be found in open water [false/true|default:true]
-	fishing_treasure_in_open_water = true
 	#Cooldown in minutes to use the command tbteleportdeath [-1..1440|default:-1]
 	#Range: -1 ~ 1440
 	cooldown_teleport_death = -1
 	#Cooldown in minutes to use the command tbrequestteleport [-1..1440|default:-1]
 	#Range: -1 ~ 1440
 	cooldown_request_teleport = -1
-	#Cooldown in minutes to use the perk Tomb Raider [60..1440|default:60]
-	#Range: 60 ~ 1440
-	cooldown_tomb_raiding = 60
 	#Increases the minimum time without sleeping for phantom spawn around player based on their level in Knowledge of Death [false/true|default:true]
 	knowledge_reduce_phantom_spawn = true
 	#Minimum time without sleeping for phantom to spawn around players [1200..MAX|default:72000]
@@ -150,6 +145,10 @@
 	time_soul = 30
 	#Allows the merchant grave gardian [false/true|default:true]
 	allow_grave_gardian = true
+	#The items that can't be recycled by the Book of Recycling
+	denied_item_to_recycle = []
+	#Damaged items can be recycled with the Book of Recycling
+	can_recycle_damaged_item = true
 	#Allows lost tablets to find locations outside the current world [false/true|default:true]
 	lost_tablet_search_outside_world = true
 	#Allows lost tablets to find modded structures [false/true|default:true]
@@ -170,8 +169,6 @@
 	#Duration of applied effects in seconds [1..MAX|default:10]
 	#Range: > 1
 	duration_plague_bringer = 10
-	#Restricts the effect of Shadow Step to players [false/true|default:true]
-	restrict_shadow_step_to_player = false
 
 #Options related to the command recovery and auto-save of players
 [recovery]

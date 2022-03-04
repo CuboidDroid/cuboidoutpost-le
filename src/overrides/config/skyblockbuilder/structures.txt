@@ -139,6 +139,8 @@ dungeons_arise:plague_asylum
 dungeons_arise:bandit_towers
 dungeons_arise:thornborn_towers
 dungeons_arise:jungle_tree_house
+dungeons_arise:aviary
+dungeons_arise:illager_windmill
 tconstruct:earth_slime_island
 tconstruct:overworld_slime_island
 tconstruct:clay_island
