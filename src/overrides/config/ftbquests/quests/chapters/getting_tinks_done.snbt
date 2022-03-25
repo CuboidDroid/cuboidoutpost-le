@@ -133,7 +133,7 @@
 				""
 				"The Seared Heater consumes almost any fuel source, including the likes of coal and wood - much like a furnace."
 				""
-				"The Seared Heater will also be used later on to make the Smeltery Controller, so while a Seared Fuel Tank full of Lava could be used to power the Seared Smelter instead, it's worth making one of these now regardless."
+				"The Seared Heater will also be used later on to make the Smeltery Controller, so while a Seared Fuel Tank full of Lava could be used to power the Seared Melter instead, it's worth making one of these now regardless."
 			]
 			dependencies: ["1F4CB5B1FA691BAC"]
 			id: "44443475CE111148"
@@ -149,7 +149,7 @@
 			y: -1.5d
 			shape: "square"
 			description: [
-				"The Seared Smelter is a small container for melting and holding small amounts of molten materials."
+				"The Seared Melter is a small container for melting and holding small amounts of molten materials."
 				""
 				"It will need:"
 				"  - a Seared Heater underneath"

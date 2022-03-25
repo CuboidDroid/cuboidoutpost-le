@@ -757,6 +757,8 @@
 				"It's also a bit faster than a standard Inscriber (that has not been upgraded with acceleration cards)."
 				""
 				"In addition, the sides have color-coding. The green side (the left, but also the front of the machine) will allow items to be piped into the top-left slot in the machine's user interface. The orange sides (right and back) accept items for the top-right slot in the user interface, and the top of the machine (purple) will accept items for the bottom middle slot in the user interface. Resulting items can be extracted from the bottom of the machine."
+				""
+				"&o&7The Refined Inscriber uses normal FE as an energy source.&r"
 			]
 			dependencies: ["0841F4A3C8B05581"]
 			optional: true
