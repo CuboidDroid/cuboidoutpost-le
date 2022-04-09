@@ -145,7 +145,7 @@
 			x: -1.0d
 			y: 5.0d
 			description: [
-				"As with your existing Applied Energistics system, you will need to attach a disk drive and load it with storage disks to be able to store items in your Refined Storage network. Create yourself at least on Disk Drive now."
+				"As with your existing Applied Energistics system, you will need to attach a disk drive and load it with storage disks to be able to store items in your Refined Storage network. Create yourself at least one Disk Drive now."
 				""
 				"A Disk Drive can be configured to use Storage Disks or Fluid Storage Disks. It defaults to items."
 			]
@@ -195,7 +195,7 @@
 		{
 			x: -2.0d
 			y: 7.0d
-			description: ["A 1k Storage Part can either be used to create a 1k Storage Disk, or 3 can be used to create a 4k Storage Part."]
+			description: ["You can use a 1k Storage Part to create a 1k Storage Disk, or use three of them to create a 4k Storage Part."]
 			dependencies: ["30F1A30BCF64EC94"]
 			id: "2D5A502672774F00"
 			tasks: [{
@@ -227,7 +227,7 @@
 		{
 			x: -2.0d
 			y: 9.0d
-			description: ["A 4k Storage Part can either be used to create a 4k Storage Disk, or 3 can be used to create a 16k Storage Part."]
+			description: ["You can use a 4k Storage Part to create a 4k Storage Disk, or use three of them to create a 16k Storage Part."]
 			dependencies: ["2D5A502672774F00"]
 			id: "0910720FB14140FA"
 			tasks: [{
@@ -258,7 +258,7 @@
 		{
 			x: -2.0d
 			y: 11.0d
-			description: ["A 16k Storage Part can either be used to create a 16k Storage Disk, or 3 can be used to create a 64k Storage Part."]
+			description: ["You can use a 16k Storage Part to create a 16k Storage Disk, or use three of them to create a 64k Storage Part."]
 			dependencies: ["0910720FB14140FA"]
 			id: "0FB1D91E0BACF5D0"
 			tasks: [{
@@ -289,7 +289,7 @@
 		{
 			x: -2.0d
 			y: 13.0d
-			description: ["A 64k Storage Part can be used to create a 64k Storage Disk. Unfortunately this is the largest size of storage part we believe you will be able to make given your circumstances."]
+			description: ["You can use a 64k Storage Part to create a 64k Storage Disk. Unfortunately this is the largest size of storage part we believe you will be able to make given your circumstances."]
 			dependencies: ["0FB1D91E0BACF5D0"]
 			id: "6FDC0BE810B1B9D1"
 			tasks: [{
@@ -335,7 +335,7 @@
 		{
 			x: 0.0d
 			y: 7.0d
-			description: ["A 64k Fluid Storage Part can either be used to create a 64k Fluid Storage Disk, or 3 can be used to create a 256k Fluid Storage Part."]
+			description: ["You can use a 64k Fluid Storage Part to create a 64k Fluid Storage Disk, or use three of them to create a 256k Fluid Storage Part."]
 			dependencies: ["30F1A30BCF64EC94"]
 			id: "62E108396CCA4C44"
 			tasks: [{
@@ -354,7 +354,7 @@
 		{
 			x: 0.0d
 			y: 9.0d
-			description: ["A 256k Fluid Storage Part can either be used to create a 256k Fluid Storage Disk, or 3 can be used to create a 1024k Fluid Storage Part."]
+			description: ["You can use a 256k Fluid Storage Part to create a 256k Fluid Storage Disk, or use three of them to create a 1024k Fluid Storage Part."]
 			dependencies: ["62E108396CCA4C44"]
 			id: "1672776564773AF5"
 			tasks: [{
@@ -372,7 +372,7 @@
 		{
 			x: 0.0d
 			y: 11.0d
-			description: ["A 1024k Fluid Storage Part can either be used to create a 1024k Fluid Storage Disk, or 3 can be used to create a 4096k Fluid Storage Part."]
+			description: ["You can use a 1024k Fluid Storage Part to create a 1024k Fluid Storage Disk, or use three of them to create a 4096k Fluid Storage Part."]
 			dependencies: ["1672776564773AF5"]
 			id: "5F755C7F60CF1BBC"
 			tasks: [{
@@ -390,7 +390,7 @@
 		{
 			x: 0.0d
 			y: 13.0d
-			description: ["A 4096k Fluid Storage Part can either be used to create a 4096k Fluid Storage Disk. Unfortunately this is the largest size of fluid storage part we believe you will be able to make given your circumstances."]
+			description: ["You can use a 4096k Fluid Storage Part to create a 4096k Fluid Storage Disk. Unfortunately this is the largest size of fluid storage part we believe you will be able to make given your circumstances."]
 			dependencies: ["5F755C7F60CF1BBC"]
 			id: "4688001A3164D7BC"
 			tasks: [{
