@@ -1,0 +1,274 @@
+{
+	id: "6362652E582C4885"
+	group: "24F09E0B1AD125E9"
+	order_index: 3
+	filename: "mekanism"
+	title: "Stoccaggio di fluidi"
+	icon: "mekanism:basic_fluid_tank"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 2.5d
+			description: [
+				"La Basic Fluid Tank è fatto da 4 Iron Ingot e 4 Redstone. Questo è così economico che è quasi un peccato non usarlo ogni volta che si può!"
+				""
+				"La Basic Fluid Tank (e altri) possono essere impostati per spingere automaticamente il loro fluido verso il basso accovacciandosi e usando un Configurator su di essi, che è un modo pratico per far entrare i fluidi nelle macchine o nei Barrel. Si può anche tubare dentro e fuori da questi Fluid Tanks, come ci si aspetterebbe."
+				""
+				"La Basic Fluid Tank può contenere &a14k mB&f di fluido (14 bucket)."
+			]
+			id: "42653A59BE87EB10"
+			tasks: [{
+				id: "1586EEDD33F211F8"
+				type: "item"
+				item: "mekanism:basic_fluid_tank"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"L'Advanced Fluid Tank si ottiene rinforzando un Basic Fluid Tank con altri 4 Iron Ingot e 4 Infused Alloys."
+				""
+				"Questa versione Advanced contiene il doppio del fluido rispetto alla versione Basic Fluid Tank, il che significa che può contenere &a28k mB&f di fluido (28 buckets)."
+			]
+			dependencies: ["42653A59BE87EB10"]
+			id: "106D46ACF4A554A1"
+			tasks: [{
+				id: "1D729892B72DACFC"
+				type: "item"
+				item: "mekanism:advanced_fluid_tank"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			description: [
+				"L'Elite Fluid Tank si ottiene rinforzando un Advanced Fluid Tank con altri 4 Iron Ingots e 4 Reinforced Alloys."
+				""
+				"La versione Elite contiene il doppio del fluido rispetto alla versione Advanced Fluid Tank, il che significa che può contenere &a56k mB&f di fluido (56 buckets)."
+			]
+			dependencies: ["106D46ACF4A554A1"]
+			id: "1D475D06EFC829B5"
+			tasks: [{
+				id: "73524C25A340E976"
+				type: "item"
+				item: "mekanism:elite_fluid_tank"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 7.0d
+			description: [
+				"L'Ultimate Fluid Tank si ottiene rinforzando un Elite Fluid Tank con altri 4 Iron Ingots e 4 Atomic Alloys."
+				""
+				"La versione Ultimate contiene il doppio del fluido rispetto alla versione Elite Fluid Tank, il che significa che può contenere &a112k mB&f di fluido (112 buckets)."
+			]
+			dependencies: ["1D475D06EFC829B5"]
+			id: "7FB133615DC58178"
+			tasks: [{
+				id: "0A4AE2A91A70F726"
+				type: "item"
+				item: "mekanism:ultimate_fluid_tank"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			description: [
+				"Una Dynamic Tank Structure è una struttura a più blocchi composta da pareti di Dynamic Tank e Dynamic Valves (per accedere al singolo tipo di fluido che contiene). La struttura può essere fatta in qualsiasi forma, ma tutti i bordi esterni (angoli) devono essere fatti da blocchi di Dynamic Tank, e le valvole dinamiche devono essere in una faccia con il vuoto interno dietro di loro (lo spazio aperto dove si trova il fluido)."
+				""
+				"La dimensione minima per una Dynamic Tank Structure è un 3x3x3, e la massima è una struttura 18x18x18."
+				""
+				"Ogni blocco che compone le pareti del serbatoio (sia i blocchi Dynamic Tank o Dynamic Valve), così come i blocchi d'aria all'interno della struttura, fornisce 16k mB di stoccaggio del fluido, quindi la struttura minima del serbatoio di 3x3x3 ha una capacità di 27 x 16k mB, o 432k mB (432 bucket) di stoccaggio."
+				""
+				"Quando si crea una Dynamic Tank structure, lampeggerà con le particelle \"active redstone\" quando la struttura del serbatoio è considerata valida."
+			]
+			id: "6EA1BED42FEAFC0C"
+			tasks: [
+				{
+					id: "77712FE8EB1ABC14"
+					type: "item"
+					item: "mekanism:dynamic_tank"
+				}
+				{
+					id: "52F2FB024B373273"
+					type: "item"
+					item: "mekanism:dynamic_valve"
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 2.5d
+			description: ["Il Fluid Tank è un meccanismo di stoccaggio del fluido che può immagazzinare fino a 8 secchi di fluido per blocco. I Fluid tanks si fondono anche con i serbatoi adiacenti (impronta 1x1, 2x2 o 3x3), fino a 32 blocchi alti in un'impronta 3x3, permettendo di immagazzinare fino a 2.304 secchi di qualsiasi fluido."]
+			id: "064A1B5AC31A3824"
+			tasks: [{
+				id: "4733423E499441B0"
+				type: "item"
+				item: "create:fluid_tank"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.5d
+			description: ["Mentre questo Fuel Tank è progettato per l'uso come parte di una fonderia ed è destinato a conservare la lava o il Blazing Blood come combustibile per la Smeltery da usare, può anche essere usato come un serbatoio portatile che contiene fino a 4 secchi di questi fluidi."]
+			id: "5B3D08C917D40635"
+			tasks: [{
+				id: "0F33C3A0CF589972"
+				type: "item"
+				item: "tconstruct:seared_fuel_tank"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.5d
+			description: ["Questo serbatoio è ideale per contenere fino a 32 lingotti di metalli fusi. Sebbene sia stato progettato per essere utilizzato per le uscite da una Smeltery, può anche essere usato come un serbatoio portatile per essere in grado di conservare o spostare in modo sicuro i metalli fusi in giro per l'avamposto."]
+			id: "264E2498394090CF"
+			tasks: [{
+				id: "04AD57603F420461"
+				type: "item"
+				item: "tconstruct:seared_ingot_tank"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.5d
+			description: ["Mentre questo Fuel Tank è progettato per l'uso come parte di una Foundry ed è destinato a conservare Lava o Blazing Blood come combustibile per la Foundry da usare, può anche essere usato come un serbatoio portatile che contiene fino a 4 secchi di questi fluidi."]
+			id: "40870017816A89CA"
+			tasks: [{
+				id: "3EB0AAD5F85A21A7"
+				type: "item"
+				item: "tconstruct:scorched_fuel_tank"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.5d
+			description: ["Questo serbatoio è ideale per contenere fino a 3 blocchi di metalli fusi. Sebbene sia stato progettato per essere utilizzato per le uscite di una Foundry o come ingressi per un Alloyer, può anche essere utilizzato come serbatoio portatile."]
+			id: "0576A7A9C57F2EB8"
+			tasks: [{
+				id: "3747A93E54442B35"
+				type: "item"
+				item: "tconstruct:scorched_ingot_tank"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.5d
+			description: ["Il Common Black Hole Tank può contenere &a16 bucket&f di qualsiasi singolo fluido."]
+			id: "14ACC056658FE59C"
+			tasks: [{
+				id: "665FD057DEBCF1C5"
+				type: "item"
+				item: "industrialforegoing:common_black_hole_tank"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.5d
+			description: ["Il Pity Black Hole Tank può contenere &a64 buckets&f di qualsiasi singolo fluido."]
+			id: "7486BE3EE148DB62"
+			tasks: [{
+				id: "2E6F5247392D7BA1"
+				type: "item"
+				item: "industrialforegoing:pity_black_hole_tank"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.5d
+			description: ["Il Simple Black Hole Tank può contenere &a1024 buckets&f di qualsiasi singolo fluido."]
+			id: "126C76D1A7178D26"
+			tasks: [{
+				id: "35A97A70ED7C3974"
+				type: "item"
+				item: "industrialforegoing:simple_black_hole_tank"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.5d
+			description: ["Il Advanced Black Hole Tank può contenere &a64k (65536) buckets&f di qualsiasi singolo fluido."]
+			id: "14F553BA1ABCEDEA"
+			tasks: [{
+				id: "2C0C70C069B020A5"
+				type: "item"
+				item: "industrialforegoing:advanced_black_hole_tank"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.5d
+			description: ["Il Supreme Black Hole Tank può contenere &a2.147 milioni buckets&f di qualsiasi singolo fluido.!!"]
+			id: "20BB802691FB3B2B"
+			tasks: [{
+				id: "40041A6C578B24AD"
+				type: "item"
+				item: "industrialforegoing:supreme_black_hole_tank"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 2.5d
+			description: [
+				"L'Ender Tank funziona come un Ender Chest, tranne che può contenere un tipo di fluido invece di oggetti. Tutti gli Ender Tank che condividono lo stesso canale (impostato applicando dei coloranti ai pulsanti in alto, o in una crafting grid) hanno accesso allo stesso serbatoio di stoccaggio del fluido."
+				""
+				"Essenzialmente ciò significa che se avete due Ender Tank con lo stesso canale e ne riempite uno con la lava, potete estrarre quella lava dall'altro tank, questo funziona sia in modo interdimensionale che su qualsiasi distanza!"
+				""
+				"p.s. Se hai la paranoia che altre persone in altre dimensioni rubino la tua roba, puoi rendere i tuoi Ender Tank privati applicando un Diamond al quadrante del serbatoio."
+			]
+			id: "6FBCCE519B37691C"
+			tasks: [{
+				id: "5FEE4E350CD93F12"
+				type: "item"
+				item: "enderstorage:ender_tank"
+			}]
+		}
+		{
+			title: "Stoccaggio di fluidi"
+			x: 0.5d
+			y: 0.5d
+			shape: "gear"
+			description: [
+				"Avere serbatoi in grado di immagazzinare fluidi è importante per molte ragioni diverse. A volte è solo perché si vuole un po' di un liquido a portata di mano per quando serve, e a volte è per agire come un buffer tra diverse fasi in un complesso processo a più stadi."
+				""
+				"Qualunque siano le tue esigenze, questa sezione della guida di sopravvivenza ti illustra le principali opzioni per la conservazione dei fluidi."
+			]
+			id: "07ECB3D29598CFBC"
+			tasks: [{
+				id: "6143AF856557D38C"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.5d
+			description: [
+				"La Fluid Cell inizia con una capacità di 32 bucket. Ciò che rende questo serbatoio diverso dagli altri è che può essere configurato per limitare il flusso di fluido in entrata e in uscita dal blocco, e può essere aggiornato attraverso l'uso di Augments."
+				""
+				"Con i Resonant Integral Components e un aumento della  Expanded Tank Construction augment, può contenere 512 bucket di fluido. E' anche possibile aggiungere a questi serbatoi un Filter Augment per limitare i tipi di fluidi che vi possono essere conservati."
+			]
+			id: "343A0B3CF993D5B0"
+			tasks: [{
+				id: "726F271DE4E64E40"
+				type: "item"
+				item: {
+					id: "thermal:fluid_cell"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							TankInv: [{
+								FluidName: "minecraft:empty"
+								Capacity: 32000
+								Tank: 0b
+								Amount: 0
+							}]
+						}
+					}
+				}
+			}]
+		}
+	]
+}

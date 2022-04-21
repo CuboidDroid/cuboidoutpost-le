@@ -1,0 +1,14 @@
+{
+	id: "1C4801A01D077FD6"
+	order_index: 0
+	title: "Curious Rewards"
+	loot_size: 1
+	rewards: [
+		{ item: "curios:ring" }
+		{ item: "curios:knuckles" }
+		{ item: "bountifulbaubles:black_dragon_scale" }
+		{ item: "bountifulbaubles:lucky_horseshoe" }
+		{ item: "bountifulbaubles:obsidian_skull" }
+		{ item: "bountifulbaubles:amulet_sin_pride" }
+	]
+}

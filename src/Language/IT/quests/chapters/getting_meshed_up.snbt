@@ -1,0 +1,1552 @@
+{
+	id: "4E08EF020C16D9F2"
+	group: "0B5EDAD5D67C6935"
+	order_index: 0
+	filename: "getting_meshed_up"
+	title: "Questo è Meshed Up"
+	icon: "exnihilosequentia:mesh_diamond"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Meshed Up - String Mesh"
+			disable_toast: true
+			x: -12.5d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["17C12643E64292EA"]
+			size: 3.0d
+			id: "5ABD25D4A60D5079"
+			tasks: [{
+				id: "2E7512285F1B977D"
+				type: "item"
+				item: "exnihilosequentia:mesh_string"
+			}]
+		}
+		{
+			title: "String Mesh + Blocco di Silica Dust"
+			disable_toast: true
+			x: -12.5d
+			y: -3.0d
+			shape: "hexagon"
+			dependencies: ["5ABD25D4A60D5079"]
+			size: 1.2d
+			id: "775F2E145DF924CE"
+			tasks: [{
+				id: "0D4A7FD5A0D8D412"
+				type: "item"
+				item: "cuboidmod:silica_dust_block"
+			}]
+		}
+		{
+			title: "String Mesh + Dust"
+			disable_toast: true
+			x: -10.0d
+			y: -1.5d
+			shape: "hexagon"
+			dependencies: ["5ABD25D4A60D5079"]
+			size: 1.2d
+			id: "5CE0892B5D5E441F"
+			tasks: [{
+				id: "3B007D126E558D41"
+				type: "item"
+				item: "exnihilosequentia:dust"
+			}]
+		}
+		{
+			title: "String Mesh + Sand"
+			disable_toast: true
+			x: -10.0d
+			y: 1.5d
+			shape: "hexagon"
+			dependencies: ["5ABD25D4A60D5079"]
+			size: 1.2d
+			id: "3084E06F2B80B74E"
+			tasks: [{
+				id: "4FF9FF91C7297092"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			title: "String Mesh + Gravel"
+			disable_toast: true
+			x: -12.5d
+			y: 3.0d
+			shape: "hexagon"
+			dependencies: ["5ABD25D4A60D5079"]
+			size: 1.2d
+			id: "329E3DC2FF320C1F"
+			tasks: [{
+				id: "7E2FB1D9F862CBD4"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			title: "String Mesh + Block of Cellulose"
+			x: -15.0d
+			y: 1.5d
+			shape: "hexagon"
+			dependencies: ["5ABD25D4A60D5079"]
+			size: 1.2d
+			id: "35E7F74CBF51752D"
+			tasks: [{
+				id: "0009F0BF98F06767"
+				type: "item"
+				item: "cuboidmod:cellulose_block"
+			}]
+		}
+		{
+			title: "String Mesh + Dirt"
+			x: -15.0d
+			y: -1.5d
+			shape: "hexagon"
+			dependencies: ["5ABD25D4A60D5079"]
+			size: 1.2d
+			id: "7D90D85E17C430B4"
+			tasks: [{
+				id: "1BD7494EEAB837E9"
+				type: "item"
+				item: "minecraft:dirt"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -11.0d
+			y: -2.5d
+			dependencies: [
+				"775F2E145DF924CE"
+				"5CE0892B5D5E441F"
+			]
+			dependency_requirement: "one_completed"
+			id: "359763AEAAF6D788"
+			tasks: [{
+				id: "5914732520F7645A"
+				type: "item"
+				item: "minecraft:bone_meal"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -12.5d
+			y: -4.0d
+			dependencies: ["775F2E145DF924CE"]
+			id: "52CE8A12AA4FD8B9"
+			tasks: [{
+				id: "0852F38829F6442F"
+				type: "item"
+				item: "cuboidmod:salt"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -9.0d
+			y: -2.0d
+			dependencies: ["5CE0892B5D5E441F"]
+			id: "18761A03D380E95E"
+			tasks: [{
+				id: "4AD03465FAB66BF8"
+				type: "item"
+				item: "minecraft:gunpowder"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -9.0d
+			y: 1.0d
+			dependencies: ["3084E06F2B80B74E"]
+			id: "4A17FD6114DFBDEE"
+			tasks: [{
+				id: "32659A3281FAC28C"
+				type: "item"
+				item: "minecraft:cocoa_beans"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -12.5d
+			y: 4.0d
+			dependencies: ["329E3DC2FF320C1F"]
+			id: "256D10A98ED94A9A"
+			tasks: [{
+				id: "5FA9CF41038B2419"
+				type: "item"
+				item: "minecraft:flint"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -17.0d
+			y: 2.5d
+			dependencies: ["35E7F74CBF51752D"]
+			id: "0B56440DB0D0A48C"
+			tasks: [{
+				id: "3B54AA6508B2FFB5"
+				type: "item"
+				item: "exnihilosequentia:seed_oak"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -14.0d
+			y: 2.0d
+			dependencies: ["35E7F74CBF51752D"]
+			id: "75C1D3C767815BCE"
+			tasks: [{
+				id: "28644BFB9CE690B1"
+				type: "item"
+				item: "exnihilosequentia:seed_darkoak"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -15.0d
+			y: 2.5d
+			dependencies: ["35E7F74CBF51752D"]
+			id: "35153ADDDD368110"
+			tasks: [{
+				id: "04AED7EF443DB4D8"
+				type: "item"
+				item: "exnihilosequentia:seed_acacia"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -16.0d
+			y: 1.0d
+			dependencies: ["35E7F74CBF51752D"]
+			id: "58ED860F99A0B135"
+			tasks: [{
+				id: "15C4B6977E4150FA"
+				type: "item"
+				item: "exnihilosequentia:seed_spruce"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -16.0d
+			y: 2.0d
+			dependencies: ["35E7F74CBF51752D"]
+			id: "499071DDA422C80D"
+			tasks: [{
+				id: "042794213BF1F24F"
+				type: "item"
+				item: "exnihilosequentia:seed_birch"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -15.0d
+			y: 0.5d
+			dependencies: ["35E7F74CBF51752D"]
+			id: "7E0E8C1B0FBCE1F6"
+			tasks: [{
+				id: "7D5011E75A198B1D"
+				type: "item"
+				item: "exnihilosequentia:seed_jungle"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -16.0d
+			y: -2.0d
+			dependencies: ["7D90D85E17C430B4"]
+			id: "58E2F2B65EA6F475"
+			tasks: [{
+				id: "121A2FFC40DAEE08"
+				type: "item"
+				item: "exnihilosequentia:pebble_granite"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -15.0d
+			y: -2.5d
+			dependencies: ["7D90D85E17C430B4"]
+			id: "43256E24E16CDECA"
+			tasks: [{
+				id: "48377EF702BAA072"
+				type: "item"
+				item: "exnihilosequentia:pebble_diorite"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -16.0d
+			y: -1.0d
+			dependencies: ["7D90D85E17C430B4"]
+			id: "4FE4DEA172E44EFD"
+			tasks: [{
+				id: "7BADB5B31DDE98D1"
+				type: "item"
+				item: "exnihilosequentia:pebble_andesite"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -15.0d
+			y: -0.5d
+			dependencies: ["7D90D85E17C430B4"]
+			id: "5D96A8B1584E17AD"
+			tasks: [{
+				id: "32C4660B6052862D"
+				type: "item"
+				item: "exnihilosequentia:pebble_basalt"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -14.0d
+			y: -2.0d
+			dependencies: ["7D90D85E17C430B4"]
+			id: "2183DD049F6AF4AB"
+			tasks: [{
+				id: "556AF76E498FA27B"
+				type: "item"
+				item: "exnihilosequentia:pebble_blackstone"
+			}]
+		}
+		{
+			title: "Meshed Up - Flint Mesh"
+			x: 0.0d
+			y: -7.0d
+			hide_dependency_lines: true
+			dependencies: ["5ABD25D4A60D5079"]
+			size: 3.0d
+			id: "15572542DE3F664D"
+			tasks: [{
+				id: "4471041127224B44"
+				type: "item"
+				item: "exnihilosequentia:mesh_flint"
+			}]
+		}
+		{
+			title: "Meshed Up - Iron Mesh"
+			disable_toast: true
+			x: 12.5d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["15572542DE3F664D"]
+			size: 3.0d
+			id: "7561B5BB8A244431"
+			tasks: [{
+				id: "7C346439638CA209"
+				type: "item"
+				item: "exnihilosequentia:mesh_iron"
+			}]
+		}
+		{
+			title: "Meshed Up - Diamond Mesh"
+			disable_toast: true
+			x: 12.5d
+			y: 18.0d
+			hide_dependency_lines: true
+			dependencies: ["7561B5BB8A244431"]
+			size: 3.0d
+			id: "4600FFF5EFF6F4A0"
+			tasks: [{
+				id: "74820F0A7411DC07"
+				type: "item"
+				item: "exnihilosequentia:mesh_diamond"
+			}]
+		}
+		{
+			title: "Meshed Up - Emerald Mesh"
+			x: 0.0d
+			y: 25.0d
+			hide_dependency_lines: true
+			dependencies: ["4600FFF5EFF6F4A0"]
+			size: 3.0d
+			id: "3083134FAB77BF02"
+			tasks: [{
+				id: "1AE13C599C8D5C84"
+				type: "item"
+				item: "exnihilosequentia:mesh_emerald"
+			}]
+		}
+		{
+			title: "Meshed Up - Netherite Mesh"
+			disable_toast: true
+			x: -12.5d
+			y: 18.0d
+			hide_dependency_lines: true
+			dependencies: ["3083134FAB77BF02"]
+			size: 3.0d
+			id: "33961498D0DCE01C"
+			tasks: [{
+				id: "2D53FCE09F77B8A7"
+				type: "item"
+				item: "exnihilosequentia:mesh_netherite"
+			}]
+		}
+		{
+			title: "Flint Mesh + Gravel"
+			disable_toast: true
+			x: 0.0d
+			y: -4.0d
+			shape: "hexagon"
+			dependencies: ["15572542DE3F664D"]
+			size: 1.2d
+			id: "1DAB6AD5353F56BF"
+			tasks: [{
+				id: "5FC584127BE470D6"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: -3.0d
+			dependencies: ["1DAB6AD5353F56BF"]
+			id: "552B2210614E6276"
+			tasks: [{
+				id: "70358A2ACCC64C9C"
+				type: "item"
+				item: "minecraft:coal"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["1DAB6AD5353F56BF"]
+			id: "6F0CCC62EA9E2BF3"
+			tasks: [{
+				id: "60C9962E60243BFB"
+				type: "item"
+				item: "thermal:cinnabar"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: -3.5d
+			dependencies: ["1DAB6AD5353F56BF"]
+			id: "681E62124654DFBE"
+			tasks: [{
+				id: "6BDA120B94FFCF9B"
+				type: "item"
+				item: "minecraft:lapis_lazuli"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: -3.5d
+			dependencies: ["1DAB6AD5353F56BF"]
+			id: "6A59F6E981149AEF"
+			tasks: [{
+				id: "03622057683A61D2"
+				type: "item"
+				item: "thermal:niter"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: -4.5d
+			dependencies: ["1DAB6AD5353F56BF"]
+			id: "21BBE6F42BDFFEC9"
+			tasks: [{
+				id: "02ACE648DD92F4AC"
+				type: "item"
+				item: "thermal:sulfur"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: -4.5d
+			dependencies: ["1DAB6AD5353F56BF"]
+			id: "687F213C73BE1E01"
+			tasks: [{
+				id: "00018377F3C8BEB2"
+				type: "item"
+				item: "thermal:apatite"
+			}]
+		}
+		{
+			title: "Flint Mesh + Sand"
+			disable_toast: true
+			x: 2.5d
+			y: -5.5d
+			shape: "hexagon"
+			dependencies: ["15572542DE3F664D"]
+			size: 1.2d
+			id: "0FF622C35404A107"
+			tasks: [{
+				id: "7BC19BBE12D2215F"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.5d
+			y: -4.5d
+			dependencies: ["0FF622C35404A107"]
+			id: "51CF1E5DEA90BC78"
+			tasks: [{
+				id: "4E28CF8DDC76DCE7"
+				type: "item"
+				item: "exnihilosequentia:seed_bamboo"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.5d
+			y: -5.0d
+			dependencies: ["0FF622C35404A107"]
+			id: "1406D0912EA0D66D"
+			tasks: [{
+				id: "539DF818D6E1B7C1"
+				type: "item"
+				item: "exnihilosequentia:seed_sugarcane"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.5d
+			y: -6.0d
+			dependencies: ["0FF622C35404A107"]
+			id: "4E66CC9DE76010DE"
+			tasks: [{
+				id: "7BEFD9F73413F507"
+				type: "item"
+				item: "exnihilosequentia:seed_cactus"
+			}]
+		}
+		{
+			title: "Flint Mesh + Dust"
+			disable_toast: true
+			x: 2.5d
+			y: -8.5d
+			shape: "hexagon"
+			dependencies: ["15572542DE3F664D"]
+			size: 1.2d
+			id: "2EC85D49867C2036"
+			tasks: [{
+				id: "4D1DBBEE8F6C80BB"
+				type: "item"
+				item: "exnihilosequentia:dust"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.5d
+			y: -8.0d
+			dependencies: ["2EC85D49867C2036"]
+			id: "1E473D207A3D5846"
+			tasks: [{
+				id: "441A263A22A56120"
+				type: "item"
+				item: "appliedenergistics2:sky_dust"
+			}]
+		}
+		{
+			title: "Uovo di mare sottaceto"
+			disable_toast: true
+			x: -10.0d
+			y: 2.5d
+			subtitle: "Il setaccio deve essere bagnato"
+			dependencies: ["3084E06F2B80B74E"]
+			id: "40F10AC03856E05E"
+			tasks: [{
+				id: "4372B3AB5C529CF8"
+				type: "item"
+				item: "exnihilosequentia:seed_pickle"
+			}]
+		}
+		{
+			title: "Kelp Seeds"
+			disable_toast: true
+			x: -9.0d
+			y: 2.0d
+			subtitle: "Il setaccio deve essere bagnato"
+			dependencies: ["3084E06F2B80B74E"]
+			id: "0E36BC9FFDB5C389"
+			tasks: [{
+				id: "53B6E7A2ED2AF0E7"
+				type: "item"
+				item: "exnihilosequentia:seed_kelp"
+			}]
+		}
+		{
+			title: "Flint Mesh + Crushed Andesite"
+			disable_toast: true
+			x: 0.0d
+			y: -10.0d
+			shape: "hexagon"
+			dependencies: ["15572542DE3F664D"]
+			size: 1.2d
+			id: "1C7EA73F0927E914"
+			tasks: [{
+				id: "08FDD7612713606E"
+				type: "item"
+				item: "exnihilosequentia:crushed_andesite"
+			}]
+		}
+		{
+			title: "Flint Mesh + Crushed Diorite"
+			disable_toast: true
+			x: -2.5d
+			y: -8.5d
+			shape: "hexagon"
+			dependencies: ["15572542DE3F664D"]
+			size: 1.2d
+			id: "2C52A79CEF716B5B"
+			tasks: [{
+				id: "49C21B29B8890A11"
+				type: "item"
+				item: "exnihilosequentia:crushed_diorite"
+			}]
+		}
+		{
+			title: "Flint Mesh + Crushed Granite"
+			disable_toast: true
+			x: -2.5d
+			y: -5.5d
+			shape: "hexagon"
+			dependencies: ["15572542DE3F664D"]
+			size: 1.2d
+			id: "1AAF8F004C949C96"
+			tasks: [{
+				id: "6B2757E23A822374"
+				type: "item"
+				item: "exnihilosequentia:crushed_granite"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: -10.5d
+			dependencies: ["1C7EA73F0927E914"]
+			id: "3AEBDD2B02523ED4"
+			tasks: [{
+				id: "166A31E9603E6F79"
+				type: "item"
+				item: "exnihilosequentia:piece_zinc"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: -10.5d
+			dependencies: ["1C7EA73F0927E914"]
+			id: "696CC1B451A24061"
+			tasks: [{
+				id: "19FF99E79523A20D"
+				type: "item"
+				item: "exnihilosequentia:piece_tin"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.5d
+			y: -6.0d
+			dependencies: ["1AAF8F004C949C96"]
+			id: "2345305AD4FCB5E9"
+			tasks: [{
+				id: "57FD318B2F012C38"
+				type: "item"
+				item: "exnihilosequentia:piece_copper"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.5d
+			y: -4.5d
+			dependencies: ["1AAF8F004C949C96"]
+			id: "6663F390AB514421"
+			tasks: [{
+				id: "0CB9BFFC93593CE6"
+				type: "item"
+				item: "exnihilosequentia:piece_nickel"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.5d
+			y: -8.0d
+			dependencies: ["2C52A79CEF716B5B"]
+			id: "19A6EF0670B6DFB8"
+			tasks: [{
+				id: "4C010DDC406A7D8E"
+				type: "item"
+				item: "exnihilosequentia:piece_silver"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.5d
+			y: -9.5d
+			dependencies: ["2C52A79CEF716B5B"]
+			id: "2F926A17D485D5E5"
+			tasks: [{
+				id: "5A029D5EBF950708"
+				type: "item"
+				item: "exnihilosequentia:piece_aluminum"
+			}]
+		}
+		{
+			title: "Iron Mesh + Block of Silica Dust"
+			disable_toast: true
+			x: 12.5d
+			y: -5.0d
+			shape: "hexagon"
+			dependencies: ["7561B5BB8A244431"]
+			size: 1.2d
+			id: "1E7FF6BB8963F95E"
+			tasks: [{
+				id: "6A385A798DE72EA9"
+				type: "item"
+				item: "cuboidmod:silica_dust_block"
+			}]
+		}
+		{
+			title: "Iron Mesh + Dust"
+			disable_toast: true
+			x: 15.5d
+			y: -4.0d
+			shape: "hexagon"
+			dependencies: ["7561B5BB8A244431"]
+			size: 1.2d
+			id: "5383BFDC9ADB2984"
+			tasks: [{
+				id: "0928D3D566633D08"
+				type: "item"
+				item: "exnihilosequentia:dust"
+			}]
+		}
+		{
+			title: "Iron Mesh + Sand"
+			disable_toast: true
+			x: 17.5d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["7561B5BB8A244431"]
+			size: 1.2d
+			id: "5F37EA9F8187F8A6"
+			tasks: [{
+				id: "77092D42E914555E"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			title: "Iron Mesh + Organically Enriched Sand"
+			disable_toast: true
+			x: 17.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["7561B5BB8A244431"]
+			size: 1.2d
+			id: "2C98D74AFB6260DE"
+			tasks: [{
+				id: "7EB7AD6C086B40D7"
+				type: "item"
+				item: "cuboidmod:organically_enriched_sand"
+			}]
+		}
+		{
+			title: "Iron Mesh + Gravel"
+			disable_toast: true
+			x: 14.5d
+			y: 4.5d
+			shape: "hexagon"
+			dependencies: ["7561B5BB8A244431"]
+			size: 1.2d
+			id: "62714B005AA7C33E"
+			tasks: [{
+				id: "25FA4191F5B9181A"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			title: "Iron Mesh + Crushed Sky Stone"
+			disable_toast: true
+			x: 10.5d
+			y: 4.5d
+			shape: "hexagon"
+			dependencies: ["7561B5BB8A244431"]
+			size: 1.2d
+			id: "486C2583DBFF95C8"
+			tasks: [{
+				id: "41702E52AAE0A237"
+				type: "item"
+				item: "exnihiloae:crushed_skystone"
+			}]
+		}
+		{
+			title: "Iron Mesh + Crushed End Stone"
+			disable_toast: true
+			x: 8.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["7561B5BB8A244431"]
+			size: 1.2d
+			id: "07A8DB5B8C8B669B"
+			tasks: [{
+				id: "1AC929F53AEEEEEE"
+				type: "item"
+				item: "exnihilosequentia:crushed_end_stone"
+			}]
+		}
+		{
+			title: "Iron Mesh + Crushed Netherrack"
+			disable_toast: true
+			x: 7.5d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["7561B5BB8A244431"]
+			size: 1.2d
+			id: "4193E18DE676282D"
+			tasks: [{
+				id: "321825798F6D3CA5"
+				type: "item"
+				item: "exnihilosequentia:crushed_netherrack"
+			}]
+		}
+		{
+			title: "Iron Mesh + Soul Sand"
+			disable_toast: true
+			x: 9.5d
+			y: -4.0d
+			shape: "hexagon"
+			dependencies: ["7561B5BB8A244431"]
+			size: 1.2d
+			id: "3279C4D38A6D8F03"
+			tasks: [{
+				id: "0EDEA4190033E016"
+				type: "item"
+				item: "minecraft:soul_sand"
+			}]
+		}
+		{
+			title: "Ottenere un Meshed Up!"
+			icon: "exnihilosequentia:sieve"
+			x: 0.5d
+			y: 8.0d
+			shape: "gear"
+			description: [
+				"A differenza della maggior parte dei capitoli delle altre sezioni, non sarete in grado di passare tutto in sequenza immediatamente."
+				""
+				"Per esempio, non setaccerete la gravel finché non ne avrete davvero un po'!"
+				""
+				"Ma avere una guida su quali materiali possono essere setacciati, in base al livello di Mesh e al materiale in entrata è una cosa utile, quindi questo è stato incluso per voi per aiutarvi a tenere traccia."
+				""
+				"La buona notizia è che le Meshes migliori includono tutti gli output delle Meshes di livello precedente, e spesso anche ad un tasso di rendimento migliore! Vale sempre la pena di fare un aggiornamento!"
+			]
+			dependencies: ["428FD7AF1B49A51D"]
+			size: 3.0d
+			id: "17C12643E64292EA"
+			tasks: [{
+				id: "33B4BF928B2FDB0B"
+				type: "item"
+				item: "exnihilosequentia:sieve"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 13.0d
+			y: -6.0d
+			dependencies: ["1E7FF6BB8963F95E"]
+			id: "325E5A1E4684AA4A"
+			tasks: [{
+				id: "0732D50071DC06F6"
+				type: "item"
+				item: "exnihilosequentia:seed_large_fern"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 12.0d
+			y: -6.0d
+			dependencies: ["1E7FF6BB8963F95E"]
+			id: "552736D8D8C0B13B"
+			tasks: [{
+				id: "3388B9867E81470C"
+				type: "item"
+				item: "exnihilosequentia:seed_fern"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 15.5d
+			y: -5.0d
+			dependencies: ["5383BFDC9ADB2984"]
+			id: "65585C884F7EC772"
+			tasks: [{
+				id: "155FE11714D39766"
+				type: "item"
+				item: "appliedenergistics2:certus_quartz_dust"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 16.5d
+			y: -4.5d
+			dependencies: ["5383BFDC9ADB2984"]
+			id: "21178124AD317C73"
+			tasks: [{
+				id: "45E056CB35815CD0"
+				type: "item"
+				item: "minecraft:redstone"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 16.5d
+			y: -3.5d
+			dependencies: ["5383BFDC9ADB2984"]
+			id: "23547FB474FA1578"
+			tasks: [{
+				id: "4F3F704E57CA68C3"
+				type: "item"
+				item: "minecraft:blaze_powder"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 14.5d
+			y: -4.5d
+			dependencies: ["5383BFDC9ADB2984"]
+			id: "49B2FC7C055AAC4A"
+			tasks: [{
+				id: "73D4385DDDB7D6BB"
+				type: "item"
+				item: "minecraft:glowstone_dust"
+			}]
+		}
+		{
+			title: "Seagrass"
+			disable_toast: true
+			x: 18.5d
+			y: -1.5d
+			subtitle: "Il setaccio deve essere bagnato"
+			dependencies: ["5F37EA9F8187F8A6"]
+			id: "0022334DEA314633"
+			tasks: [{
+				id: "1D16DF116E0A96A1"
+				type: "item"
+				item: "minecraft:seagrass"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 18.5d
+			y: -0.5d
+			dependencies: ["5F37EA9F8187F8A6"]
+			id: "7E6C25D833D9E3F0"
+			tasks: [{
+				id: "5D784ED7C880CD41"
+				type: "item"
+				item: "minecraft:prismarine_shard"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 18.0d
+			y: 2.5d
+			dependencies: ["2C98D74AFB6260DE"]
+			id: "34E45E70D783322F"
+			tasks: [{
+				id: "18D256C8A50D351F"
+				type: "item"
+				item: "exnihilosequentia:seed_potato"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 18.0d
+			y: 1.5d
+			dependencies: ["2C98D74AFB6260DE"]
+			id: "3B176D2E36728983"
+			tasks: [{
+				id: "4CD86DA19D0D33F2"
+				type: "item"
+				item: "minecraft:wheat_seeds"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 17.0d
+			y: 3.0d
+			dependencies: ["2C98D74AFB6260DE"]
+			id: "22F21AF7366D3402"
+			tasks: [{
+				id: "3AFE15D660F5A9EC"
+				type: "item"
+				item: "exnihilosequentia:seed_carrot"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 14.5d
+			y: 5.5d
+			dependencies: ["62714B005AA7C33E"]
+			id: "2B11E00B187113A9"
+			tasks: [{
+				id: "0F275DEEF44265CB"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 15.5d
+			y: 5.0d
+			dependencies: ["62714B005AA7C33E"]
+			id: "20F42F0AD8232230"
+			tasks: [{
+				id: "220AE57B2E13B43E"
+				type: "item"
+				item: "mekanism:fluorite_gem"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 13.5d
+			y: 5.0d
+			dependencies: ["62714B005AA7C33E"]
+			id: "4CD315AC3E78B771"
+			tasks: [{
+				id: "4697A692FBB09812"
+				type: "item"
+				item: "exnihilosequentia:piece_lead"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 15.5d
+			y: 4.0d
+			dependencies: ["62714B005AA7C33E"]
+			id: "6737BDC6700D2137"
+			tasks: [{
+				id: "57E78F441736CA56"
+				type: "item"
+				item: "exnihilosequentia:piece_uranium"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 10.0d
+			y: 5.5d
+			dependencies: ["486C2583DBFF95C8"]
+			id: "7FD06C53B23D340C"
+			tasks: [{
+				id: "34D72174651ADA3F"
+				type: "item"
+				item: "appliedenergistics2:certus_quartz_crystal"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 7.0d
+			y: 2.5d
+			dependencies: ["07A8DB5B8C8B669B"]
+			id: "2CB87A2B1DD2E759"
+			tasks: [{
+				id: "11C2C28FE1DF4693"
+				type: "item"
+				item: "minecraft:ender_pearl"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 6.5d
+			y: -1.5d
+			dependencies: ["4193E18DE676282D"]
+			id: "3DE054F1DAE75C18"
+			tasks: [{
+				id: "545D3BA904437465"
+				type: "item"
+				item: "minecraft:netherite_scrap"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 7.5d
+			y: -2.0d
+			dependencies: ["4193E18DE676282D"]
+			id: "48060C70CE521ACD"
+			tasks: [{
+				id: "2C4BFF2CF186B58B"
+				type: "item"
+				item: "exnihilosequentia:piece_cobalt"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 6.5d
+			y: -0.5d
+			dependencies: ["4193E18DE676282D"]
+			id: "00AD0FF08806434A"
+			tasks: [{
+				id: "6D1424412BF5914E"
+				type: "item"
+				item: "exnihilosequentia:piece_gold"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 9.5d
+			y: -5.0d
+			dependencies: ["3279C4D38A6D8F03"]
+			id: "27F70094E5E97440"
+			tasks: [{
+				id: "29F09B3B121C41A3"
+				type: "item"
+				item: "minecraft:nether_wart"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 8.5d
+			y: -4.5d
+			dependencies: ["3279C4D38A6D8F03"]
+			id: "169CC5C7C9ADD743"
+			tasks: [{
+				id: "68374E8B63D0A73D"
+				type: "item"
+				item: "minecraft:quartz"
+			}]
+		}
+		{
+			title: "Diamond Mesh + Block of Silica Dust"
+			disable_toast: true
+			x: 12.5d
+			y: 13.0d
+			shape: "hexagon"
+			dependencies: ["4600FFF5EFF6F4A0"]
+			size: 1.2d
+			id: "74B0052AEE2AE6AC"
+			tasks: [{
+				id: "0012C38AF3FE576B"
+				type: "item"
+				item: "cuboidmod:silica_dust_block"
+			}]
+		}
+		{
+			title: "Diamond Mesh + Sand"
+			disable_toast: true
+			x: 17.5d
+			y: 18.0d
+			shape: "hexagon"
+			dependencies: ["4600FFF5EFF6F4A0"]
+			size: 1.2d
+			id: "6D32F782151EC4C8"
+			tasks: [{
+				id: "113C0D7351D533A1"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			title: "Diamond Mesh + Dust"
+			disable_toast: true
+			x: 16.0d
+			y: 14.5d
+			shape: "hexagon"
+			dependencies: ["4600FFF5EFF6F4A0"]
+			size: 1.2d
+			id: "1D6CFC3435CBC71D"
+			tasks: [{
+				id: "39CF5952EDA48EA9"
+				type: "item"
+				item: "exnihilosequentia:dust"
+			}]
+		}
+		{
+			title: "Diamond Mesh + Organically Enriched Sand"
+			disable_toast: true
+			x: 16.0d
+			y: 21.5d
+			shape: "hexagon"
+			dependencies: ["4600FFF5EFF6F4A0"]
+			size: 1.2d
+			id: "7E89EB098520561A"
+			tasks: [{
+				id: "070FF28F32C0166D"
+				type: "item"
+				item: "cuboidmod:organically_enriched_sand"
+			}]
+		}
+		{
+			title: "Diamond Mesh + Gravel"
+			x: 12.5d
+			y: 23.0d
+			shape: "hexagon"
+			dependencies: ["4600FFF5EFF6F4A0"]
+			size: 1.2d
+			id: "301EB6FA4F26CCA2"
+			tasks: [{
+				id: "44DB0B699C913316"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			title: "Diamond Mesh + Crushed Sky Stone"
+			disable_toast: true
+			x: 9.0d
+			y: 21.5d
+			shape: "hexagon"
+			dependencies: ["4600FFF5EFF6F4A0"]
+			size: 1.2d
+			id: "5583E4C6AA949847"
+			tasks: [{
+				id: "6CBEEF326BB0D021"
+				type: "item"
+				item: "exnihiloae:crushed_skystone"
+			}]
+		}
+		{
+			title: "Diamond Mesh + Dirt"
+			disable_toast: true
+			x: 7.5d
+			y: 18.0d
+			shape: "hexagon"
+			dependencies: ["4600FFF5EFF6F4A0"]
+			size: 1.2d
+			id: "20D20CCEB9E12A9E"
+			tasks: [{
+				id: "0D39D6E7B39A6180"
+				type: "item"
+				item: "minecraft:dirt"
+			}]
+		}
+		{
+			title: "Diamond Mesh + Soul Sand"
+			disable_toast: true
+			x: 9.0d
+			y: 14.5d
+			shape: "hexagon"
+			dependencies: ["4600FFF5EFF6F4A0"]
+			size: 1.2d
+			id: "563A04E635B69757"
+			tasks: [{
+				id: "65F97380929BC75E"
+				type: "item"
+				item: "minecraft:soul_sand"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 12.5d
+			y: 12.0d
+			dependencies: ["74B0052AEE2AE6AC"]
+			id: "463703296CE783CC"
+			tasks: [{
+				id: "5B951DE4A381EC8D"
+				type: "item"
+				item: "exnihilosequentia:ancient_spores"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 16.0d
+			y: 13.5d
+			dependencies: ["1D6CFC3435CBC71D"]
+			id: "55E9D9E41FCDB264"
+			tasks: [{
+				id: "520B4DCFA5F7C4FE"
+				type: "item"
+				item: "appliedenergistics2:fluix_dust"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 17.0d
+			y: 14.0d
+			dependencies: ["1D6CFC3435CBC71D"]
+			id: "15CF47F3DBB3DBC5"
+			tasks: [{
+				id: "124D63168A133E15"
+				type: "item"
+				item: "appliedenergistics2:nether_quartz_dust"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 18.5d
+			y: 18.0d
+			dependencies: ["6D32F782151EC4C8"]
+			id: "3DD476004FA0DBEA"
+			tasks: [{
+				id: "79839A4162A89B01"
+				type: "item"
+				item: "minecraft:prismarine_crystals"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 17.0d
+			y: 22.0d
+			dependencies: ["7E89EB098520561A"]
+			id: "3ED93A15101282DA"
+			tasks: [{
+				id: "18F827A7B2669931"
+				type: "item"
+				item: "minecraft:melon_seeds"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 16.0d
+			y: 22.5d
+			dependencies: ["7E89EB098520561A"]
+			id: "4ADFB0C2E7D26478"
+			tasks: [{
+				id: "54DED5CA797A20AD"
+				type: "item"
+				item: "minecraft:pumpkin_seeds"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 17.0d
+			y: 21.0d
+			dependencies: ["7E89EB098520561A"]
+			id: "4E6836D90BD751C4"
+			tasks: [{
+				id: "36BC4E0544B82E6F"
+				type: "item"
+				item: "exnihilosequentia:seed_berry"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 12.5d
+			y: 24.0d
+			dependencies: ["301EB6FA4F26CCA2"]
+			id: "14BB147EA5184E68"
+			tasks: [{
+				id: "1ECE256CEB41950C"
+				type: "item"
+				item: "minecraft:emerald"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 11.5d
+			y: 23.5d
+			dependencies: ["301EB6FA4F26CCA2"]
+			id: "69D69A085D9F3647"
+			tasks: [{
+				id: "2FDE97ADDC11D90B"
+				type: "item"
+				item: "exnihilosequentia:piece_iron"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -11.5d
+			y: 23.5d
+			dependencies: ["21703ECD81A72300"]
+			id: "7E0974F6BA61F360"
+			tasks: [{
+				id: "24F9F97FC6E025F0"
+				type: "item"
+				item: "exnihilosequentia:piece_gold"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 8.0d
+			y: 22.0d
+			dependencies: ["5583E4C6AA949847"]
+			id: "46B341B21B3C07FB"
+			tasks: [{
+				id: "7EEC69551C6E33B3"
+				type: "item"
+				item: "appliedenergistics2:charged_certus_quartz_crystal"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 8.0d
+			y: 21.0d
+			dependencies: ["5583E4C6AA949847"]
+			id: "6BD66B260CDED030"
+			tasks: [{
+				id: "458E469AF159F411"
+				type: "item"
+				item: "appliedenergistics2:certus_crystal_seed"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 9.0d
+			y: 22.5d
+			dependencies: ["5583E4C6AA949847"]
+			id: "6860A174D67E43FF"
+			tasks: [{
+				id: "3B654B6EDFF4D4CB"
+				type: "item"
+				item: "appliedenergistics2:nether_quartz_seed"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 7.0d
+			y: 17.0d
+			dependencies: ["20D20CCEB9E12A9E"]
+			id: "5108BDE20A043A4A"
+			tasks: [{
+				id: "4814ECEDD3812AA7"
+				type: "item"
+				item: "exnihilosequentia:pebble_stone"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 8.5d
+			y: 13.5d
+			dependencies: ["563A04E635B69757"]
+			id: "1D6A08BEFDD5DB77"
+			tasks: [{
+				id: "2FBAE2F5D8016877"
+				type: "item"
+				item: "minecraft:ghast_tear"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 7.0d
+			y: 19.0d
+			dependencies: ["20D20CCEB9E12A9E"]
+			id: "0C7BC6F1219084D8"
+			tasks: [{
+				id: "29147A366526D875"
+				type: "item"
+				item: "immersiveengineering:seed"
+			}]
+		}
+		{
+			title: "Emerald Mesh + Organically Enriched Sand"
+			x: 3.5d
+			y: 28.5d
+			shape: "hexagon"
+			dependencies: ["3083134FAB77BF02"]
+			size: 1.2d
+			id: "691FB6E332D5E897"
+			tasks: [{
+				id: "5C62250EA6E72D1F"
+				type: "item"
+				item: "cuboidmod:organically_enriched_sand"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 29.0d
+			dependencies: ["691FB6E332D5E897"]
+			id: "077D2DE412F0A308"
+			tasks: [{
+				id: "7003F18F51C9A0B3"
+				type: "item"
+				item: "minecraft:beetroot_seeds"
+			}]
+		}
+		{
+			title: "Emerald Mesh + Crushed Sky Stone"
+			x: -3.5d
+			y: 28.5d
+			shape: "hexagon"
+			dependencies: ["3083134FAB77BF02"]
+			size: 1.2d
+			id: "4523DD5DA56E66BC"
+			tasks: [{
+				id: "2F11C9C8C89D2243"
+				type: "item"
+				item: "exnihiloae:crushed_skystone"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 29.0d
+			dependencies: ["4523DD5DA56E66BC"]
+			id: "16E130AFFBAF44F8"
+			tasks: [{
+				id: "762A1724F15C39F2"
+				type: "item"
+				item: "appliedenergistics2:fluix_crystal_seed"
+			}]
+		}
+		{
+			title: "Emerald Mesh + Gravel"
+			x: 0.0d
+			y: 30.0d
+			shape: "hexagon"
+			dependencies: ["3083134FAB77BF02"]
+			size: 1.2d
+			id: "0B70DF277F4F1902"
+			tasks: [{
+				id: "6A85383F9F2EB783"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 31.0d
+			dependencies: ["0B70DF277F4F1902"]
+			id: "134569A06705311B"
+			tasks: [{
+				id: "16ECFAA7E9EFF809"
+				type: "item"
+				item: "powah:uraninite_raw_poor"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 31.0d
+			dependencies: ["0B70DF277F4F1902"]
+			id: "67A55646EAC2CAE0"
+			tasks: [{
+				id: "20EA005F1DBC9229"
+				type: "item"
+				item: "powah:uraninite_raw"
+			}]
+		}
+		{
+			title: "Netherite Mesh + Gravel"
+			x: -12.5d
+			y: 23.0d
+			shape: "hexagon"
+			dependencies: ["33961498D0DCE01C"]
+			size: 1.2d
+			id: "21703ECD81A72300"
+			tasks: [{
+				id: "6ADEFBB6D8D4A56B"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 23.5d
+			dependencies: ["21703ECD81A72300"]
+			id: "2736B33886DD93A5"
+			tasks: [{
+				id: "413C10840596C410"
+				type: "item"
+				item: "powah:uraninite_raw_dense"
+			}]
+		}
+		{
+			x: -12.5d
+			y: 24.0d
+			dependencies: ["21703ECD81A72300"]
+			id: "10611D8902F60755"
+			tasks: [{
+				id: "549962CA411BCA37"
+				type: "item"
+				item: "exnihilosequentia:piece_platinum"
+			}]
+		}
+	]
+}

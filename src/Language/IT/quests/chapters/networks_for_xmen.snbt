@@ -1,0 +1,426 @@
+{
+	id: "16F6E346E0584C7C"
+	group: "033EC740B2EF1FC1"
+	order_index: 4
+	filename: "networks_for_xmen"
+	title: "Reti per X-Men"
+	icon: "xnet:controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 10.0d
+			y: -5.0d
+			width: 7.5d
+			height: 5.5d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/netherrack_gen.png"
+			hover: ["An Infinite Netherrack / End Stone Generator"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 10.0d
+			y: -1.0d
+			width: 7.5d
+			height: 3.75d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/netherrack_gen_config.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 10.0d
+			y: 4.5d
+			width: 7.5d
+			height: 6.54d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/energizing_orb.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 10.0d
+			y: 9.0d
+			width: 7.5d
+			height: 3.75d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/energizing_orb_config.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 10.0d
+			y: 13.5d
+			width: 7.5d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/soulsand/xnet-soulsand-generator.png"
+			hover: ["The basic layout of the Soul Sand Generator."]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 10.0d
+			y: 16.5d
+			width: 7.5d
+			height: 3.5d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/soulsand/xnet-soulsand-1-water.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 10.0d
+			y: 19.75d
+			width: 7.5d
+			height: 3.5d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/soulsand/xnet-soulsand-2-witchwater.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 10.0d
+			y: 23.0d
+			width: 7.5d
+			height: 3.5d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/soulsand/xnet-soulsand-3-sand.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 10.0d
+			y: 26.25d
+			width: 7.5d
+			height: 3.5d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/soulsand/xnet-soulsand-4-soulsand.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 15.5d
+			y: 13.5d
+			width: 3.5d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/soulsand/xnet-soulsand-rain-protection.png"
+			hover: ["If you build this outdoors, add a slab above the barrel in which you make Soul Sand to stop rain from filling it up with plain water!"]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "Reti per X-Men"
+			x: -2.0d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"La XNet è un potente pezzo di kit per collegare i blocchi insieme usando meno cavi di quanto sarebbe altrimenti necessario. Richiede un Controller, che ti permette di impostare 8 diversi canali che descrivono il comportamento della tua rete."
+				""
+				"Abbiamo incluso alcuni esempi di come XNet può essere usato per automatizzare alcuni processi che altrimenti potreste trovare impegnativi."
+			]
+			id: "2EBE94F050C5DCA6"
+			tasks: [{
+				id: "6CCFBE7BFD955FFD"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Network Cable"
+			x: -0.5d
+			y: 1.5d
+			description: [
+				"I Network Cables vanno da Connector a un Connector. I Connector e i cavi devono essere dello stesso colore per connettersi tra loro. Questo è comodo se vuoi far passare cavi di reti separate uno accanto all'altro, assicurati solo che usino cables/connector di colore diverso."
+				""
+				"&cPurtroppo non puoi cercare la ricetta direttamente da qui a causa di una corruzione avvenuta durante la trasmissione di questa guida di sopravvivenza. Usa invece la funzione di ricerca nella JEI.&f"
+			]
+			dependencies: ["2EBE94F050C5DCA6"]
+			id: "08A8C51EB01F3C18"
+			tasks: [{
+				id: "75022431F4C6570E"
+				type: "item"
+				title: "Network Cable"
+				icon: "xnet:netcable_blue"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "xnet:cables"
+					}
+				}
+			}]
+		}
+		{
+			title: "Connectors"
+			x: -0.5d
+			y: -1.5d
+			description: [
+				"I Standard connector si collegheranno alle macchine adiacenti o ai cavi XNet in tutte le direzioni. Selezionando un connector vi permetterà di dargli un nome, così come di disconnettervi da uno qualsiasi dei 6 lati."
+				""
+				"I standard Connector funzionano più lentamente delle loro controparti avanzate, e possono operare solo attraverso il lato del blocco a cui sono collegati."
+				""
+				"&cPurtroppo non puoi cercare la ricetta direttamente da qui a causa di una corruzione avvenuta durante la trasmissione di questa guida di sopravvivenza. Usa invece la funzione di ricerca nella JEI.&f"
+			]
+			dependencies: ["2EBE94F050C5DCA6"]
+			id: "3074D94C2567198F"
+			tasks: [{
+				id: "203465D598754FAB"
+				type: "item"
+				title: "Connector"
+				icon: "xnet:connector_blue"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "xnet:connectors"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			dependencies: [
+				"08A8C51EB01F3C18"
+				"3074D94C2567198F"
+			]
+			id: "792D60E6C75B19E1"
+			tasks: [{
+				id: "62AE2F45FBBC7157"
+				type: "item"
+				item: "xnet:controller"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.5d
+			description: [
+				"I Advanced Connector funzionano allo stesso modo di quelli standard, ma sono generalmente più veloci e permettono anche di interagire con i blocchi collegati su qualsiasi lato di quel blocco, indipendentemente da dove il connector è collegato."
+				""
+				"&cPurtroppo non puoi cercare la ricetta direttamente da qui a causa di una corruzione avvenuta durante la trasmissione di questa guida di sopravvivenza. Usa invece la funzione di ricerca nella JEI.&f"
+			]
+			dependencies: ["3074D94C2567198F"]
+			id: "693B99EEE4A98DDF"
+			tasks: [{
+				id: "2931062668143553"
+				type: "item"
+				title: "Advanced Connector"
+				icon: "xnet:advanced_connector_blue"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "xnet:advanced_connectors"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.0d
+			description: ["I Connector Upgrade Kit possono essere usati sui Connector esistenti nel mondo per aggiornarli senza doverli rompere e sostituire."]
+			dependencies: ["3074D94C2567198F"]
+			optional: true
+			id: "36731AE0D76D7BEE"
+			tasks: [{
+				id: "1EB3C214AD11125F"
+				type: "item"
+				item: "xnet:connector_upgrade"
+			}]
+		}
+		{
+			title: "Infinito Netherrack / End Stone Generator"
+			x: 6.0d
+			y: -3.0d
+			description: [
+				"In questo esempio (un po' artificioso), X-Net è usato per muovere sia oggetti che fluidi attraverso un singolo set di cavi (connector in questo caso)."
+				""
+				"L'alimentazione viene fornita al controller tramite un SPG"
+				"."
+				""
+				"Ci sono due connector a destra del Controller e (in senso orario dall'alto a sinistra) c'è:"
+				"- SRG produce redstone dust"
+				"- SRG produce diorite"
+				"- Stone Barrel"
+				"- Fired Crucible (con il fuoco sotto)"
+				"- Chest di uscita per il Netherrack"
+				""
+				"Il primo SRG potrebbe produrre glowstone, nel qual caso la chest di uscita conterrebbe End Stone che viene prodotto. Gli SPG potrebbero anche essere facilmente sostituiti da qualche altra fonte di materie prime, come una chest o uno storage drawer, possibilmente solo una chest potrebbe essere usata sia per l'input che per l'output, ma questa configurazione è spero un po' più facile da capire se sei nuovo di X-Net."
+				""
+				"&aLa configurazione del canale nel controller è mostrata qui sotto.&f"
+				""
+				"&aCanale 1&f: Il primo canale è configurato per Items. Gli SRG sono impostati per estrarre. Il Fired Crucible è impostato per inserire, con la Diorite nel filtro sul lato destro. Allo stesso modo, anche lo Stone Barrel è impostato per inserire, ma con la Redstone Dust nel filtro."
+				""
+				"&aCanale 2&f: Questo canale è impostato su fluidi, ed è impostato per estrarre dal Fired Crucible e inserire nel Stone Barrel."
+				""
+				"&aCanale 3&f: L'ultimo canale utilizzato è impostato su Items, e si occupa dell'uscita. Abbiamo bisogno di questo canale aggiuntivo perché non possiamo inserire ed estrarre sullo stesso canale con un solo connector. Semplicemente estraiamo dallo Stone Barrel e inseriamo nella nostra chest di uscita."
+			]
+			optional: true
+			id: "3597BCB5AFE09176"
+			tasks: [{
+				id: "1452B5581E97DEC3"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Automatizzare le Energizing Orb"
+			x: 6.0d
+			y: 7.0d
+			description: [
+				"A destra potete vedere una semplice configurazione per automatizzare l'uso di una energizing orb."
+				""
+				"Probabilmente dovreste cercare di configurare più sfere piuttosto che cercare di aggiungere più ricette ad una sfera, poiché diventa più difficile tenere separati gli ingredienti più complesse sono queste configurazioni."
+				""
+				"Il concetto di base è quello di fornire energia all'Energizing Rod, collegarla alla sfera, e poi avere la sfera e uno chest (o altro inventario) collegato al controller (che ha anche bisogno di energia)."
+				""
+				"Nella configurazione, vedrete che il canale 8 viene utilizzato per l'alimentazione."
+				""
+				"Il canale 1 viene utilizzato per spostare un Gold Ingot dalla chest al Energizing Orb. Nella configurazione, potete vedere che siamo in grado di applicare un filtro in modo che l'inserto al Energizing Orb sul canale 1 sia filtrato per essere Gold Ingot, e il numero massimo di questo oggetto da inserire nell'Orb è 1 (l'1 nella # Box). Questo significa che se la chest (che è impostato per estrarre sul canale 1) ha Gold Ingots, 1 sarà spostato nel Energizing Orb se non c'è già un lingotto d'oro, ma se c'è, allora non ne verranno inseriti altri."
+				""
+				"Il secondo canale è impostato allo stesso modo ma per l'Iron."
+				""
+				"Infine, il canale 7 è impostato per estrarre dalla sfera e reinserire nella chest."
+				""
+				"Tutto quello che dovreste fare per fare l'Energized Steel ora è mettere quantità uguali di Ingot di Iron e Gold nella chest, e lasciarlo lavorare per un po'."
+				""
+				"Si può espandere facilmente aggiungendo altre energizing orbs e usando i canali rimanenti per inserirvi gli ingredienti giusti. Per esempio, il canale 3 potrebbe estrarre dalla chest e inserire Blaze Powder (con un 4 nel # box) nel nuovo Orb, che potrebbe avere un nuovo Energizing Rod assegnato ad esso, e si può quindi impostare l'estrazione sul canale 7 per l'orb per rimettere il risultato (Blazing Crystal) nella chest. In alternativa basta duplicare il setup e averne uno di questo tipo per ogni uscita dell'Energizing Orb che si vuole ottenere (il che sarebbe sicuramente più semplice da gestire, anche se un po' più costoso)"
+			]
+			optional: true
+			id: "045B1C5B7E2A3503"
+			tasks: [{
+				id: "3959BA1C1F566282"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Soul Sand Generator using XNet - Step 1"
+			x: 6.0d
+			y: 15.0d
+			description: [
+				"Questa sezione della Guida alla Sopravvivenza spiega come puoi impostare un Soul Sand Generator usando XNet."
+				""
+				"Avrete bisogno di:"
+				"- 2 wooden barrels"
+				"- 4 XNet Connectors"
+				"- An XNet Controller"
+				"- An output chest o storage drawer"
+				"- Mycelium per posizionare un barrel su"
+				"- Una fonte di water (Kitchen Sink)"
+				"- Una fonte di sand (e.g. an SRG)"
+				"- Una fonte di power (e.g. an SPG)"
+				""
+				"Posiziona il barrel sul mycelium. Aggiungi un connector al barrel (può essere anche in cima se si sta cercando di massimizzare la produzione con barrel affiancati)."
+				""
+				"Posiziona il tuo Controller e forniscilo di energia."
+				""
+				"Metti giù un Kitchen Sink, e aggiungi un connector ad esso, questa sarà la nostra fonte di acqua infinita. Ora date un'occhiata all'immagine del primo canale impostato per muovere l'acqua. Imposta prima l'inserto sul Wooden Barrel, e aggiungi un bucket of water nello slot del filtro, poi imposta l'estratto dal Kitchen Sink (opzionalmente specificando un filtro con il bucket of water). Il tuo barrel dovrebbe iniziare a produrre Witchwater."
+			]
+			optional: true
+			id: "768A534C21FC6B8E"
+			tasks: [{
+				id: "1A8F1C63A3D6B0E6"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Soul Sand Generator usando la XNet - passo 2"
+			x: 6.0d
+			y: 20.0d
+			description: [
+				"Ora che il nostro primo barrel è pieno di witchwater, dobbiamo spostarlo nell'altro barrel dove faremo la Soul Sand."
+				""
+				"Per questo impostiamo un secondo canale di fluido, e poi impostiamo l'inserto per il secondo barrel, assicurandoci di impostare un filtro usando un Bucket di Witchwater. Questo assicura che non iniziamo accidentalmente a tirare fuori l'acqua prima che sia stata convertita."
+				""
+				"Una volta che l'insert per il secondo barrel è impostato correttamente, si può andare avanti e aggiungere l'extract sul primo barrel, opzionalmente si può impostare un filtro anche qui per Witchwater per sicurezza."
+				""
+				"p.s. Una volta che hai impostato le basi, potresti voler aggiungere altri barrel per produrre Witchwater, semplicemente aggiungi i barrel aggiuntivi con i connectors e imposta la loro funzione di estrazione nello stesso modo."
+			]
+			dependencies: ["768A534C21FC6B8E"]
+			optional: true
+			id: "5BDB9BF9E69F02C2"
+			tasks: [{
+				id: "0DB6DC4DFD3B610A"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Soul Sand Generator usando la XNet - passo 3"
+			x: 6.0d
+			y: 23.0d
+			description: [
+				"A questo punto, abbiamo una fonte affidabile di Witchwater in un barrel. Il prossimo passo è quello di inserire la sand in quel barrel in modo che si trasformi in Soul Sand."
+				""
+				"Aggiungi un nuovo canale Item, poi aggiungi la funzione insert sul barile che riceverà la Witchwater. Imposta un filtro su di esso usando un blocco di sand."
+				""
+				"Successivamente, imposta una funzione di extract sulla tua fonte di Sand, impostando opzionalmente un filtro per la Sand anche su quella."
+				""
+				"Ora dovreste avere la Soul Sand nel vostro secondo barrel, e se lo rimuovete a mano, il barrel dovrebbe automaticamente riempirsi di Witchwater, avere la Sand inserita in esso, e dovrebbe trasformarsi in altra Soul Sand."
+			]
+			dependencies: ["5BDB9BF9E69F02C2"]
+			optional: true
+			id: "6FE284033A7200F2"
+			tasks: [{
+				id: "389FA5106FEF6627"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Soul Sand Generator usando la XNet - passo 4"
+			x: 6.0d
+			y: 26.0d
+			description: [
+				"Il passo finale è quello di spostare la Soul Sand dal Barrel e metterla in uno storage."
+				""
+				"Crea il quarto canale come item, poi imposta l'insert sul tuo storage di destinazione, e metti un pezzo di Soul Sand nel filtro della whitelist come mostrato."
+				""
+				"Infine, crea la funzione di extract anche sul barrel dove viene prodotta la Soul Sand, impostando opzionalmente un filtro per la Soul Sand anche su quello."
+				""
+				"Congratulazioni! Il tuo generatore di Soul Sand dovrebbe ora funzionare perfettamente!"
+				""
+				"Un'ultima nota, se hai costruito il tuo all'esterno, dovresti considerare almeno di coprire il barile dove viene prodotta la Soul Sand con qualcosa, anche se solo una slab o una trap door, per evitare che si riempia accidentalmente d'acqua quando piove."
+			]
+			dependencies: ["6FE284033A7200F2"]
+			optional: true
+			id: "65E6B36767117199"
+			tasks: [{
+				id: "4373A5BAE8F29A7D"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Soul Sand Generator - Sfida!"
+			x: 6.0d
+			y: 29.0d
+			subtitle: "(solo per divertimento!)"
+			description: ["Se vuoi sfidare te stesso, è possibile, usando XNet, costruire un Soul Sand Generator usando un solo barrel invece di due. Riesci a capire come fare?"]
+			dependencies: ["65E6B36767117199"]
+			optional: true
+			id: "25868E38BE8CD503"
+			tasks: [{
+				id: "070F5D6DFC067BCF"
+				type: "checkmark"
+			}]
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	chapter_groups: [
+		{ id: "719DAED049159F2E", title: "1 - Una nuova vita" }
+		{ id: "6E3D5CD175F7344D", title: "2 - Un nuovo obiettivo" }
+		{ id: "4F582DBBFACF1F69", title: "3 - Un nuovo apprezzamento" }
+		{ id: "53EA7D6C6A1B0F69", title: "4 - Una nuova missione" }
+		{ id: "298C586EA6E5A561", title: "5 - Un nuovo mondo" }
+		{ id: "033EC740B2EF1FC1", title: "Appendice A - Da A a B" }
+		{ id: "24F09E0B1AD125E9", title: "Appendice B - Inquadrato" }
+		{ id: "0B5EDAD5D67C6935", title: "Appendice C - Per riferimento" }
+		{ id: "4785B5C7E26FA669", title: "Appendice D - Per i completisti" }
+		{ id: "73C2C2D59F8E4DE2", title: "Appendice E - Una mano" }
+	]
+}

@@ -1,0 +1,801 @@
+{
+	id: "0A30A5690903F3A3"
+	group: "53EA7D6C6A1B0F69"
+	order_index: 1
+	filename: "backpacking"
+	title: "Prepara le tue borse"
+	icon: {
+		id: "sophisticatedbackpacks:backpack"
+		Count: 1b
+		tag: {
+			borderColor: 16701501
+			clothColor: 16701501
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Prepara le tue borse"
+			x: 0.0d
+			y: -3.5d
+			shape: "gear"
+			description: [
+				"Forse è arrivato il momento di cercare di capire cos'altro c'è \"là fuori\". Il velo tra questa dimensione e le altre sembra assottigliarsi sempre di più, e presto potresti anche essere in grado di esplorarne una o più."
+				""
+				"Prima di andare, però, potresti voler pensare allo stoccaggio in movimento. Questi zaini sono qualcosa di speciale, non solo offrono più spazio di archiviazione sulla tua persona, ma sono anche aggiornabili in termini di dimensioni e funzioni."
+				""
+				"O forse ti piace semplicemente portare in giro più cose! In ogni caso, gli zaini sono fantastici!"
+				""
+				"&ap.s. Se ti stai chiedendo come mettere le mani su un po' di pelle, potresti:&f"
+				""
+				"- Cuocere 4 Rotten Flesh nella Redstone Furnace"
+				"- Alleva e poi \"ritira\" cavalli, mucche, conigli o lama."
+				"- Andare a pescare, molto raramente si può ottenere un po' di pelle come oggetto \"spazzatura\"."
+				"- Metti un po' di Biltong nella Drying Cupboard"
+			]
+			id: "7F60ADA33828168E"
+			tasks: [
+				{
+					id: "7343104B6FDF7AD2"
+					type: "item"
+					item: "minecraft:leather"
+				}
+				{
+					id: "741AAE5BF90175DB"
+					type: "item"
+					item: "minecraft:string"
+				}
+				{
+					id: "1E7295CA3620E53F"
+					type: "item"
+					title: "Wooden Chest"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:chests/wooden"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Zaino in spalla per ciucci"
+			x: 1.5d
+			y: -5.0d
+			description: [
+				"Questo Backpack di livello iniziale ti permette di portare con te l'equivalente di una cassa intera."
+				""
+				"È facilmente accessibile (può essere legato a un tasto - 'b' di default), e ha uno slot di aggiornamento per fornire miglioramenti funzionali."
+				""
+				"L'altra cosa comoda è che puoi metterlo in uno speciale slot posteriore sulla tua persona che è specificamente progettato per esso, e salvare uno slot extra nel tuo inventario."
+			]
+			dependencies: ["7F60ADA33828168E"]
+			id: "36703E93A5A1585B"
+			tasks: [{
+				id: "0547782F34057442"
+				type: "item"
+				item: "sophisticatedbackpacks:backpack"
+			}]
+			rewards: [{
+				id: "062D0EB986E6B732"
+				type: "item"
+				item: "minecraft:leather"
+				count: 2
+			}]
+		}
+		{
+			title: "Più che altro un Piggy Hatpack."
+			x: -1.5d
+			y: -5.0d
+			description: [
+				"Hai mai voluto prendere uno dei tuoi animali da fattoria e muoverlo in un modo più facile che tirarlo con un guinzaglio o tentarlo con del cibo?"
+				""
+				"Bene, ora è possibile"
+				""
+				"Basta usarlo su un animale per prenderlo e poterlo spostare con te semplicemente camminando!"
+			]
+			dependencies: ["7F60ADA33828168E"]
+			optional: true
+			id: "75605060ACCD415C"
+			tasks: [{
+				id: "7EED73AC386E6E74"
+				type: "item"
+				item: "tconstruct:piggy_backpack"
+			}]
+		}
+		{
+			title: "Aggiornamento Base"
+			x: 0.0d
+			y: 1.5d
+			description: ["L'Aggiornamento Base si usa per legare insieme gli ingredienti che compongono i potenziamenti del Backpack. Ogni potenziamento richiede una base di potenziamento."]
+			dependencies: ["7F60ADA33828168E"]
+			id: "01CBB02FDC0FAB88"
+			tasks: [{
+				id: "0E7158BFD8DE7B03"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "Zaino in spalla per 2 ciucci"
+			x: 3.5d
+			y: -5.0d
+			description: [
+				"Rinforzare il tuo zaino con otto lingotti di ferro ti permetterà di trasportare il doppio, è come legare una doppia cassa sulla schiena, ma più esteticamente gradevole."
+				""
+				"Aggiunge anche un altro slot di aggiornamento per una bontà ancora più funzionale."
+			]
+			dependencies: ["36703E93A5A1585B"]
+			id: "29A118D2C35A23CF"
+			tasks: [{
+				id: "6EE62411AEED1356"
+				type: "item"
+				item: "sophisticatedbackpacks:iron_backpack"
+			}]
+			rewards: [{
+				id: "4FB0CC79C65123ED"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 4
+			}]
+		}
+		{
+			title: "Lo zaino per esploratori"
+			x: 5.5d
+			y: -5.0d
+			description: [
+				"Aggiungendo il 50% di spazio in più rispetto all'Iron Backpack, questo zaino può contenere ben 81 pile di oggetti prima dei potenziamenti! Vale a dire 3 Chest."
+				""
+				"Questa è una dimensione abbastanza buona per un esploratore con cui lavorare."
+				""
+				"Oh, e aggiunge anche un altro slot di aggiornamento!"
+			]
+			dependencies: ["29A118D2C35A23CF"]
+			id: "2CE61518732516C0"
+			tasks: [{
+				id: "01996A15BE330CC5"
+				type: "item"
+				item: "sophisticatedbackpacks:gold_backpack"
+			}]
+			rewards: [{
+				id: "2C6F57838E62CBF8"
+				type: "item"
+				item: "minecraft:gold_ingot"
+				count: 4
+			}]
+		}
+		{
+			title: "Lo Zaino per gli accaparratori"
+			x: 7.5d
+			y: -5.0d
+			description: [
+				"108 slot (2 doppie Chest)! Questo dovrebbe essere sufficiente per la maggior parte degli esploratori, anche quelli a cui piace raccogliere quasi tutto."
+				""
+				"Più altri 2 slot di aggiornamento, per un totale di 5!"
+			]
+			dependencies: ["2CE61518732516C0"]
+			optional: true
+			id: "7C5EBBE71A9C4AFA"
+			tasks: [{
+				id: "255806722824F551"
+				type: "item"
+				item: "sophisticatedbackpacks:diamond_backpack"
+			}]
+			rewards: [{
+				id: "5448FE17DBDA41CD"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 4
+			}]
+		}
+		{
+			title: "Lo Zaino per i nomadi"
+			x: 9.5d
+			y: -5.0d
+			description: ["Con un massimo di 120 slot e 7 potenziamenti, il Netherite Backpack è appena sufficiente per permetterti di essere un nomade, se è quello che vuoi!"]
+			dependencies: ["7C5EBBE71A9C4AFA"]
+			optional: true
+			id: "3675175CE7676E51"
+			tasks: [{
+				id: "1EE235797FED198B"
+				type: "item"
+				item: "sophisticatedbackpacks:netherite_backpack"
+			}]
+			rewards: [
+				{
+					id: "6B5F6789D6679612"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+					count: 2
+				}
+				{
+					id: "4ABDD1704D8B1A7D"
+					type: "item"
+					item: "minecraft:gold_ingot"
+					count: 2
+				}
+			]
+		}
+		{
+			title: "Ordinato"
+			x: 4.0d
+			y: 4.5d
+			description: [
+				"Tutti gli oggetti raccolti che corrispondono a uno dei 9 filtri saranno depositati nello zaino invece che nell'inventario del giocatore."
+				""
+				"È come un Magnet Upgrade senza il magnetismo."
+			]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "25DD853DBFF2C912"
+			tasks: [{
+				id: "68B2EF307759AB10"
+				type: "item"
+				item: "sophisticatedbackpacks:pickup_upgrade"
+			}]
+			rewards: [{
+				id: "7A9F4BBB9E036F6A"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "Ordinato e archiviato"
+			x: 5.5d
+			y: 5.5d
+			description: ["16 filtri invece di 9, e più opzioni di filtraggio, questo mette anche automaticamente gli oggetti filtrati nello zaino invece che nell'inventario del giocatore quando vengono raccolti."]
+			dependencies: ["25DD853DBFF2C912"]
+			optional: true
+			id: "139BFABA8DED4516"
+			tasks: [{
+				id: "0EF4A84BB082269E"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_pickup_upgrade"
+			}]
+		}
+		{
+			title: "Il computer dice di no"
+			x: -1.5d
+			y: 6.0d
+			description: ["Se il tuo zaino è posizionato nel mondo e collegato a Hopper / Pipes, questo ti permette di filtrare quali oggetti possono essere convogliati dentro o fuori dal tuo zaino. Questa versione ha 9 semplici slot per filtrare per tipo di oggetto."]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "600D2590887D75AA"
+			tasks: [{
+				id: "0214EC7954937BAD"
+				type: "item"
+				item: "sophisticatedbackpacks:filter_upgrade"
+			}]
+			rewards: [{
+				id: "65455CE4AA5C7CD1"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "Il computer dice forse"
+			x: -1.5d
+			y: 7.5d
+			description: ["La versione avanzata di questo aggiornamento offre più slot per i filtri (16 invece di 9), e più opzioni di filtraggio per essere più specifici su ciò che può o non può essere convogliato dentro o fuori dal tuo zaino."]
+			dependencies: ["600D2590887D75AA"]
+			optional: true
+			id: "48E3EC0DE62B4974"
+			tasks: [{
+				id: "17578ADCFE435A77"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_filter_upgrade"
+			}]
+		}
+		{
+			title: "L'aiutante dell'uomo pigro"
+			x: 1.5d
+			y: 6.0d
+			description: [
+				"Raccoglie automaticamente gli oggetti sciolti a corto raggio e li deposita nello zaino."
+				""
+				"Ha 9 slot per filtri di base."
+			]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "59874D7E400D7009"
+			tasks: [{
+				id: "5E463ABBAB917939"
+				type: "item"
+				item: "sophisticatedbackpacks:magnet_upgrade"
+			}]
+			rewards: [{
+				id: "2CE827A4447595BA"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "L'aiutante intelligente dell'uomo pigro"
+			x: 1.5d
+			y: 7.5d
+			description: [
+				"Raccoglie automaticamente gli oggetti vicini e li mette nello zaino."
+				""
+				"La versione avanzata ha 16 slot per i filtri e più opzioni di filtraggio."
+			]
+			dependencies: ["59874D7E400D7009"]
+			optional: true
+			id: "5D9E83D529ECD1C5"
+			tasks: [{
+				id: "60EBF14BB86241AF"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_magnet_upgrade"
+			}]
+		}
+		{
+			title: "Trasporto efficiente"
+			x: 3.0d
+			y: 5.5d
+			description: ["Può compattare automaticamente fino a 9 articoli diversi usando ricette 2x2."]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "43A5BB9DDBAD7B48"
+			tasks: [{
+				id: "5E70B6D3840B94C6"
+				type: "item"
+				item: "sophisticatedbackpacks:compacting_upgrade"
+			}]
+			rewards: [{
+				id: "6C35BADAE4172100"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "Trasporto super efficiente"
+			x: 4.0d
+			y: 7.0d
+			description: ["Può compattare automaticamente fino a 16 oggetti nello zaino usando ricette 2x2 o 3x3."]
+			dependencies: ["43A5BB9DDBAD7B48"]
+			optional: true
+			id: "62DCE59DF12E9A67"
+			tasks: [{
+				id: "027BF80D4955F23E"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_compacting_upgrade"
+			}]
+		}
+		{
+			title: "Troppo di una cosa bella"
+			x: -4.0d
+			y: 4.5d
+			description: [
+				"Il void upgrade vi permette di specificare 9 tipi di articoli che dovrebbero essere scartati automaticamente al momento del ritiro."
+				""
+				"Questo è particolarmente utile quando si estraggono tonnellate di pietra che non si vuole tenere, e può evitare che l'inventario si intasi inutilmente."
+			]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "1B219E4A92F3033F"
+			tasks: [{
+				id: "499ACE3ECAEC8927"
+				type: "item"
+				item: "sophisticatedbackpacks:void_upgrade"
+			}]
+			rewards: [{
+				id: "152EB3A1CE5AA9C2"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "Troppo di una cosa fantastica"
+			x: -5.5d
+			y: 5.5d
+			description: ["La versione avanzata di questo aggiornamento ha 16 slot per i filtri e più opzioni di filtraggio per darvi più controllo su ciò che viene automaticamente annullato e ciò che non lo fa."]
+			dependencies: ["1B219E4A92F3033F"]
+			optional: true
+			id: "2C28B7681047872B"
+			tasks: [{
+				id: "6441A3CF93835665"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_void_upgrade"
+			}]
+		}
+		{
+			title: "Ritiri veloci"
+			x: -4.5d
+			y: 3.0d
+			description: ["Questo è l'inverso del Deposit upgrade. Ha anche 9 slot per i filtri, ma quando si clicca con il tasto shift-destro su un inventario, tenterà di estrarre gli oggetti che corrispondono al filtro da quell'inventario e metterli nello zaino."]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "15010ACB49E7E328"
+			tasks: [{
+				id: "132A13CDDA0BFB12"
+				type: "item"
+				item: "sophisticatedbackpacks:restock_upgrade"
+			}]
+			rewards: [{
+				id: "2155495EE2BCE060"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "Ritiri pignoli"
+			x: -6.0d
+			y: 3.0d
+			description: [
+				"Il numero di filtri aumenta da 9 a 16 con questo aggiornamento avanzato."
+				""
+				"La versione avanzata ha anche opzioni aggiuntive di corrispondenza dei filtri per avere un migliore controllo su ciò che viene rifornito e ciò che non lo fa."
+			]
+			dependencies: ["15010ACB49E7E328"]
+			optional: true
+			id: "184752B46D85505E"
+			tasks: [{
+				id: "67AFD480528607DA"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_restock_upgrade"
+			}]
+		}
+		{
+			title: "Caduta rapida"
+			x: -4.5d
+			y: 1.5d
+			description: ["Questo potenziamento ti permette di shiftare e  cliccare con il tasto destro del mouse sul tuo zaino su un inventario di destinazione e di avere fino a 9 tipi di oggetti (specificati negli slot del filtro del potenziamento) presi automaticamente dal tuo zaino e messi nell'inventario di destinazione (per esempio una Chest)"]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "590D03BD3B468F7A"
+			tasks: [{
+				id: "63006581DD60656F"
+				type: "item"
+				item: "sophisticatedbackpacks:deposit_upgrade"
+			}]
+			rewards: [{
+				id: "201E8701543DC742"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "Caduta pignola"
+			x: -6.0d
+			y: 1.5d
+			description: [
+				"Il numero di filtri aumenta da 9 a 16 con questo aggiornamento avanzato."
+				""
+				"La versione avanzata ha anche opzioni aggiuntive di corrispondenza dei filtri per avere un migliore controllo su ciò che viene depositato e ciò che non lo fa."
+			]
+			dependencies: ["590D03BD3B468F7A"]
+			optional: true
+			id: "74A474E4D7FD0E63"
+			tasks: [{
+				id: "370D07B178D722B8"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_deposit_upgrade"
+			}]
+		}
+		{
+			title: "Tasca calda"
+			x: 4.5d
+			y: 3.0d
+			description: ["Questo aggiornamento permette di utilizzare una capacità di forno incorporata."]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "49E2A83BBBF857D2"
+			tasks: [{
+				id: "4BEDB40CF382831E"
+				type: "item"
+				item: "sophisticatedbackpacks:smelting_upgrade"
+			}]
+			rewards: [{
+				id: "26A134EC00565C8F"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "Correre a caldo"
+			x: 6.0d
+			y: 3.0d
+			description: [
+				"L'Upgrade Auto Smelter estrae automaticamente il carburante e gli oggetti da fondere, li fonde e spinge gli oggetti fusi indietro nello zaino."
+				""
+				"I filtri possono essere applicati ai carburanti e agli articoli per specificare quali dovrebbero essere usati."
+			]
+			dependencies: ["49E2A83BBBF857D2"]
+			optional: true
+			id: "374CB1CA3DC1B9E5"
+			tasks: [{
+				id: "0D41408E7EDE67E6"
+				type: "item"
+				item: "sophisticatedbackpacks:auto_smelting_upgrade"
+			}]
+		}
+		{
+			title: "A due piani"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"Raddoppia la dimensione massima dello stack degli slot nello zaino. Per esempio, se non si usano altri potenziamenti, questo significherà che ogni slot può contenere 128 di oggetti che di solito possono impilarsi fino a 64."
+				""
+				"&bPuò essere combinato con altri aggiornamenti degli Stack!&f"
+			]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "0619A603A7926E36"
+			tasks: [{
+				id: "49B8A2BB98A02125"
+				type: "item"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_1"
+			}]
+			rewards: [{
+				id: "076F1C7E0924E7BE"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "Ifantastici quattro"
+			x: 0.0d
+			y: 7.5d
+			description: [
+				"Quadruplica la dimensione massima degli stack di oggetti nello zaino. Per esempio, se non sono in uso altri potenziamenti degli stack, questo aumenterà il numero massimo di oggetti in uno slot a 256, se in circostanze normali il massimo è 64."
+				""
+				"&bPuò essere combinato con altri aggiornamenti degli Stack!&f"
+			]
+			dependencies: ["0619A603A7926E36"]
+			optional: true
+			id: "214D379ED4DBDAD5"
+			tasks: [{
+				id: "1E58F01FA803931A"
+				type: "item"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_2"
+			}]
+		}
+		{
+			title: "Magico 8"
+			x: 0.0d
+			y: 9.0d
+			description: [
+				"Aumenta la dimensione massima degli stack di oggetti negli slot dello zaino di 8! Per esempio, se non sono in uso altri potenziamenti degli stack, questo aumenterà il numero massimo di oggetti in uno slot a 512 se in circostanze normali il massimo è 64."
+				""
+				"&bPuò essere combinato con altri aggiornamenti degli stack!&f"
+			]
+			dependencies: ["214D379ED4DBDAD5"]
+			optional: true
+			id: "288A7ED62FAE7B53"
+			tasks: [{
+				id: "564BB3ABBEE609A0"
+				type: "item"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_3"
+			}]
+		}
+		{
+			title: "Hexdeca cosa?"
+			x: 0.0d
+			y: 10.5d
+			description: [
+				"Aumenta la dimensione massima dello stack degli slot nello zaino di un fattore 16! Anche senza altri potenziamenti di stack, ciò significa che ogni slot nello zaino potrebbe contenere 1024 oggetti che normalmente si impilano fino a un massimo di 64."
+				""
+				"&bPuò essere combinato con altri aggiornamenti degli stack!&f"
+			]
+			dependencies: ["288A7ED62FAE7B53"]
+			optional: true
+			id: "4EA62D60EC837301"
+			tasks: [{
+				id: "2D623AE7F52383B9"
+				type: "item"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_4"
+			}]
+		}
+		{
+			title: "Quello che ti serve quando ti serve"
+			x: -3.0d
+			y: 5.5d
+			description: [
+				"Questo aggiornamento cercherà di scambiare automaticamente lo strumento giusto per il lavoro nella vostra mano dallo zaino quando si clicca qualcosa."
+				""
+				"Questo può essere davvero utile quando si lavora con diverse chiavi e strumenti simili per configurare macchine e cavi."
+			]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "645F632F3EB6FD37"
+			tasks: [{
+				id: "55457F925EF78549"
+				type: "item"
+				item: "sophisticatedbackpacks:tool_swapper_upgrade"
+			}]
+			rewards: [{
+				id: "240008023CC22A6B"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "Quello che vuoi quando lo vuoi"
+			x: -4.0d
+			y: 7.0d
+			description: ["La versione avanzata di questo aggiornamento ha dei filtri che permettono di filtrare cosa viene scambiato e cosa no."]
+			dependencies: ["645F632F3EB6FD37"]
+			optional: true
+			id: "027074AA7733A571"
+			tasks: [{
+				id: "5D9532FFC3778787"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_tool_swapper_upgrade"
+			}]
+		}
+		{
+			title: "Cibo in fuga"
+			x: 4.5d
+			y: 0.0d
+			description: [
+				"Questo aggiornamento ti nutrirà automaticamente dal cibo nello zaino quando avrai fame."
+				""
+				"Ha dei filtri che permettono di limitare gli elementi di cibo che vi devono essere somministrati. È piuttosto utile quando si raccolgono cose come carne marcia e cibi simili con effetti negativi."
+				""
+				"Davvero utile quando si vuole variare la dieta, basta assicurarsi di avere il cibo non consumato in precedenza nello zaino per essere nutriti automaticamente con i nuovi alimenti."
+			]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "1D68E3838FBB09E8"
+			tasks: [{
+				id: "355FB765494B32F3"
+				type: "item"
+				item: "sophisticatedbackpacks:feeding_upgrade"
+			}]
+			rewards: [{
+				id: "7052C58651599FDA"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "Fai il pieno!"
+			x: -4.5d
+			y: 0.0d
+			description: [
+				"Permette di specificare fino a 6 oggetti diversi da tenere automaticamente in stock nel tuo inventario principale dagli oggetti nel tuo zaino."
+				""
+				"Questo può essere utile se, per esempio, volete che le vostre frecce rimangano rifornite senza bisogno di rimescolare il vostro inventario, o quando fate un ponte su lunghe distanze e volete semplicemente che la vostra scorta di blocchi continui ad arrivare."
+			]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "0B5128FEAE079CDD"
+			tasks: [{
+				id: "42B616AE51A63B79"
+				type: "item"
+				item: "sophisticatedbackpacks:refill_upgrade"
+			}]
+			rewards: [{
+				id: "33AD1B0C39AFDAA1"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "Backfractals"
+			x: 4.5d
+			y: 1.5d
+			description: [
+				"Permette di riporre gli zaini nello zaino."
+				""
+				"Lo permette solo su un livello, quindi niente zaino nello zaino nello zaino."
+				""
+				"I potenziamenti in questi zaini funzioneranno anche in modo da poter avere, per esempio, un potenziamento di pickup in uno di questi che raccoglie oggetti direttamente in esso."
+				""
+				"I potenziamenti nello zaino principale possono accedere al contenuto dei sotto zaini e c'è un'opzione che definisce se usano prima il contenuto dei sotto zaini o quello principale."
+				""
+				"Gli aggiornamenti dei filtri nei sotto zaini possono essere usati per limitare quali oggetti vengono inseriti / estratti da essi."
+				""
+				"Gli zaini nello zaino principale possono essere aperti usando il keybind \"open backpack\" (b di default) quando il cursore del mouse è sopra di essi."
+			]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "68B9F2F8E5B0A3EB"
+			tasks: [{
+				id: "3EAB7D7FE3CC122C"
+				type: "item"
+				item: "sophisticatedbackpacks:inception_upgrade"
+			}]
+			rewards: [{
+				id: "290DD05406A65DEC"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "Se Superman avesse uno zaino"
+			x: 4.0d
+			y: -1.5d
+			description: [
+				"Questo rende il tuo zaino praticamente indistruttibile."
+				""
+				"- Immune alle esplosioni"
+				""
+				"- Immune a qualsiasi tipo di cosa spinosa come il cactus"
+				""
+				"- Immune ai danni da Lava / Fuoco"
+				""
+				"- Non scompare dopo pochi minuti quando viene fatto cadere accidentalmente"
+				""
+				"- Quando cade nella lava galleggia sopra di essa e vi rimane"
+				""
+				"- Lo stesso accade quando cade nel vuoto, tranne che rimane appena sopra il limite di costruzione più basso."
+			]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "09A9523A33C8A2D9"
+			tasks: [{
+				id: "14ECF6CBD9C5E26F"
+				type: "item"
+				item: "sophisticatedbackpacks:everlasting_upgrade"
+			}]
+			rewards: [{
+				id: "4577EE6346663882"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "Crafting in movimento"
+			x: -4.0d
+			y: -1.5d
+			description: ["Permette di creare ricette 3x3 direttamente nel tuo zaino."]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "57E6DC38C234DFE6"
+			tasks: [{
+				id: "103F877E72CF748C"
+				type: "item"
+				item: "sophisticatedbackpacks:crafting_upgrade"
+			}]
+			rewards: [{
+				id: "5F60CACF7CC5448B"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "L'amico del decoratore"
+			x: -3.0d
+			y: -2.5d
+			description: [
+				"Avete mai deciso di costruire qualcosa di più che semplici blocchi, ma vi trovate a dover tornare alla base per ottenere altro materiale da un stonecutter?"
+				""
+				"Questo aggiornamento ti permette di tagliare la pietra direttamente nel tuo zaino! Ora hai solo bisogno di portare con te i materiali grezzi, e puoi tagliare secondo il bisogno, quando è necessario!"
+			]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "2F79958BB3B14F83"
+			tasks: [{
+				id: "0E9EF8DCE11C0D2A"
+				type: "item"
+				item: "sophisticatedbackpacks:stonecutter_upgrade"
+			}]
+			rewards: [{
+				id: "342BB9F740045126"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			title: "Boombox"
+			x: 3.0d
+			y: -2.5d
+			description: ["Questo aggiornamento ti permette di riprodurre dischi musicali ovunque tu vada."]
+			dependencies: ["01CBB02FDC0FAB88"]
+			optional: true
+			id: "01BE4FC27410C2D4"
+			tasks: [{
+				id: "4B7868323C24E540"
+				type: "item"
+				item: "sophisticatedbackpacks:jukebox_upgrade"
+			}]
+			rewards: [{
+				id: "6636FD373B807843"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+	]
+}

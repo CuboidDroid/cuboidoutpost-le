@@ -1,0 +1,160 @@
+{
+	id: "1CD2D67D5E56DD13"
+	group: "73C2C2D59F8E4DE2"
+	order_index: 0
+	filename: "emergency_items"
+	title: "Oggetti d'emergenza"
+	icon: "minecraft:dragon_head"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Scomparso: Dragon"
+			icon: "minecraft:dragon_head"
+			x: 3.0d
+			y: 0.0d
+			shape: "octagon"
+			description: [
+				"Se il Dragon manca (il che probabilmente significa che stai giocando su un server e qualcuno ti ha battuto sul tempo), puoi ottenerne uno Egg in cui spawnare mettendo questi sul bordo dell'area centrale alla fine nelle 4 direzioni cardinali dal picco centrale."
+				""
+				"Dopo un po' di fanfara, dovrebbe apparire un nuovo Drago e potrete fargli vedere chi è il capo."
+			]
+			dependencies: ["10E3ABB4530A9F1A"]
+			optional: true
+			id: "49A42F0726EFA8CB"
+			tasks: [{
+				id: "0C9C5B8BEA683FF5"
+				type: "checkmark"
+				title: "Rivendicare"
+			}]
+			rewards: [{
+				id: "3B9E66A13E06BEE7"
+				type: "item"
+				item: "minecraft:end_crystal"
+				count: 4
+			}]
+		}
+		{
+			title: "Evitare la fame"
+			icon: "cuboidmod:ration_pack"
+			x: 0.0d
+			y: -1.5d
+			shape: "octagon"
+			description: [
+				"Se avete davvero bisogno di un po' di cibo, noi della Cuboid Corp siamo riusciti a scroccare alcune delle nostre razioni da donare alla vostra causa."
+				""
+				"Dopo tutto, abbiamo solo pochi minuti di vita, e quelle cose sono così dure che ci vorrebbero comunque ore per digerirle..."
+				""
+				"Bon appetit!"
+			]
+			optional: true
+			id: "58BCE1E85A605E84"
+			tasks: [{
+				id: "1C355FA787F0CE73"
+				type: "checkmark"
+				title: "Dammi da mangiare Seymour!"
+			}]
+			rewards: [{
+				id: "1E557D673B0F0B1C"
+				type: "item"
+				item: "cuboidmod:ration_pack"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Non riesco a trovare la mia copia di \"Materials and You\"!"
+			icon: "tconstruct:materials_and_you"
+			x: 1.5d
+			y: -1.5d
+			shape: "octagon"
+			description: ["Dovresti averne ricevuto una copia quando hai iniziato, ma gli incidenti capitano, quindi nel caso in cui ne avessi bisogno in un momento di difficoltà, ecco una copia di riserva di \"Materials and You\"."]
+			optional: true
+			id: "095A5628202AD4D1"
+			tasks: [{
+				id: "29F6AB0D917E24C1"
+				type: "checkmark"
+				title: "\"Mi dispiace molto! Prometto di occuparmi di questo!\""
+			}]
+			rewards: [{
+				id: "0CD5EE018418DFF8"
+				type: "item"
+				item: "tconstruct:materials_and_you"
+			}]
+		}
+		{
+			title: "La chiave sostitutiva dell'The End"
+			icon: "cuboidmod:energized_end_stone_bricks"
+			x: 3.0d
+			y: -1.5d
+			shape: "octagon"
+			description: ["Se hai completato la \"Chiave dell'End\", ma non riesci ancora ad arrivarci, prova a spuntare questa casella e riprova!"]
+			dependencies: ["562DF660E5C68A16"]
+			optional: true
+			id: "4BFEA90E3190E5D1"
+			tasks: [{
+				id: "5E1B390EC364E2CE"
+				type: "checkmark"
+				title: "Facciamolo!"
+			}]
+			rewards: [{
+				id: "2F3DF9C2B125482F"
+				type: "gamestage"
+				title: "Fammi entrare nel End!"
+				icon: "cuboidmod:energized_end_stone_bricks"
+				team_reward: true
+				auto: "disabled"
+				stage: "end_access"
+			}]
+		}
+		{
+			title: "La chiave sostitutiva del Nether"
+			icon: "cuboidmod:energized_nether_bricks"
+			x: 4.5d
+			y: -1.5d
+			shape: "octagon"
+			description: ["Se hai completato la missione \"Energized Nether Bricks\", ma non riesci ancora a raggiungere il Nether, prova a spuntare questa casella e riprova!"]
+			dependencies: ["46821A52352BBC8F"]
+			optional: true
+			id: "002E9AE6A28F22CF"
+			tasks: [{
+				id: "5CEB140C0276AEAC"
+				type: "checkmark"
+				title: "Let's do this!"
+			}]
+			rewards: [{
+				id: "2643F170CE20050B"
+				type: "gamestage"
+				title: "Fammi entrare nel Nether!"
+				icon: "cuboidmod:energized_nether_bricks"
+				team_reward: true
+				auto: "disabled"
+				stage: "nether_access"
+			}]
+		}
+		{
+			title: "La chiave sostitutiva di Tutto"
+			icon: "cuboidmod:energized_thatlduvium"
+			x: 6.0d
+			y: -1.5d
+			shape: "octagon"
+			description: ["Se hai completato la missione \"La chiave per Tutto\", ma non riesci ancora a raggiungere l'Overworld di Cuboid, prova a spuntare questa casella e riprova!"]
+			dependencies: ["51C4DAB656980D21"]
+			id: "0C30417644852F83"
+			tasks: [{
+				id: "4C3BE3C13A9CC9B1"
+				type: "checkmark"
+				title: "Let's do this!"
+			}]
+			rewards: [{
+				id: "54CDC1A580F92D11"
+				type: "gamestage"
+				title: "Fammi entrare nel Cuboid Overworld!"
+				icon: "cuboidmod:energized_thatlduvium"
+				team_reward: true
+				auto: "disabled"
+				stage: "cuboid_overworld_access"
+			}]
+		}
+	]
+}

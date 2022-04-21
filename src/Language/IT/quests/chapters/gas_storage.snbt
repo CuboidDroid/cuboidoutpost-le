@@ -1,0 +1,94 @@
+{
+	id: "674471B595CC747A"
+	group: "24F09E0B1AD125E9"
+	order_index: 4
+	filename: "gas_storage"
+	title: "Stoccaggio dei Gas"
+	icon: "mekanism:advanced_chemical_tank"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Stoccaggio dei Gas"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"Anche se ci sono solo poche macchine di Mekanism che producono o consumano gas, è comunque importante conoscere le tue opzioni per il suo stoccaggio."
+				""
+				"Il più delle volte, non è il gas che vi interessa, è quello che viene usato per produrre. Tuttavia, può essere importante in molte configurazioni multi-macchina (che coinvolgano o meno il gas) avere una sorta di buffer per permettere ai vostri processi di funzionare più agevolmente."
+				""
+				"I Chemical Tanks qui hanno anche opzioni per scaricare l'eccesso, il che significa che possono essere configurati per svuotare automaticamente qualsiasi gas extra se sono troppo pieni, il che è davvero utile, supponendo che il gas non sia tossico!"
+			]
+			id: "2517962CE6D9B773"
+			tasks: [{
+				id: "442F69B791715FF1"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			description: [
+				"La Basic Chemical ha solo bisogno di 4 Redstone e 4 Osmium Ingot per costruirne una, è così economico che potresti facilmente usarne uno come buffer per ogni mekanism che produce gas che hai!"
+				""
+				"Il Basic Chemical Tank può contenere &a64k mB&f (64 bucket) di gas."
+			]
+			dependencies: ["639FAD5D76D7C78A"]
+			id: "32CD7133D7372A9E"
+			tasks: [{
+				id: "0DAE435F4E64463B"
+				type: "item"
+				item: "mekanism:basic_chemical_tank"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"L'Advanced Chemical Tank è una versione base che è stata rinforzata da 4 Osmium Ingots in più e 4 Infused Alloys."
+				""
+				"Contiene il doppio del volume della versione Basic, il che significa che può contenere &a128k mB&f di gas."
+			]
+			dependencies: ["32CD7133D7372A9E"]
+			id: "56CD9FBBBD7E2DA0"
+			tasks: [{
+				id: "68874B3EB064BA47"
+				type: "item"
+				item: "mekanism:advanced_chemical_tank"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			description: [
+				"L'Elite Chemical Tank è una versione avanzata che è stata rinforzata da 4 Osmium Ingots in più e 4 Reinforced Alloys."
+				""
+				"Contiene il doppio del volume della versione Advanced, il che significa che può contenere &a256k mB&f di gas."
+			]
+			dependencies: ["56CD9FBBBD7E2DA0"]
+			id: "56F77674B8BBE20F"
+			tasks: [{
+				id: "5B44618691754156"
+				type: "item"
+				item: "mekanism:elite_chemical_tank"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"L'Ultimate Chemical Tank è una versione Elite che è stata rinforzata da 4 Osmium Ingots in più e 4 Atomic Alloys."
+				""
+				"Contiene il doppio del volume della versione Elite, il che significa che può contenere &a512k mB&f di gas."
+			]
+			dependencies: ["56F77674B8BBE20F"]
+			id: "0C5079AB1F530714"
+			tasks: [{
+				id: "2DB6419CD61A18A2"
+				type: "item"
+				item: "mekanism:ultimate_chemical_tank"
+			}]
+		}
+	]
+}

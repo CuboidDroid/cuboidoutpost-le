@@ -1,0 +1,586 @@
+{
+	id: "5B32B4916CFFB467"
+	group: "6E3D5CD175F7344D"
+	order_index: 5
+	filename: "utterly_scrumptious"
+	title: "Assolutamente delizioso"
+	icon: "cookingforblockheads:oven"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Assolutamente delizioso"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"Mangiare nuovi cibi è fantastico, e i benefici per la salute sono ancora meglio, ma cercare costantemente ricette e cercare di capire cosa si può fare con quello che si ha a portata di mano è una vera sofferenza!"
+				""
+				"Per fortuna, ci sono cose che possono aiutare a rendere l'intero processo molto più facile da affrontare."
+				""
+				"La Divisione delle Scienze, in consultazione con il Dipartimento della Salute e del Grub, ha gentilmente fornito questo capitolo della Guida per mostrarvi come sfruttare più facilmente i vostri ingredienti."
+				""
+				"&aCi sono alcune cose critiche di cui avrete bisogno anche qui, come indicato dai compiti a forma di quadrato e di ingranaggio.&f"
+			]
+			dependencies: ["3D904B464EEC52B5"]
+			id: "748E7FD5E332FB32"
+			tasks: [{
+				id: "55E3F106DBB85C93"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "77AD1710130B7DF7"
+				type: "item"
+				item: "minecraft:book"
+			}]
+		}
+		{
+			title: "Il cuore della cucina"
+			x: 6.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Il Cooking Table è il cuore della cucina a più blocchi. Può accedere agli inventari e alle capacità di qualsiasi altro blocco cucina che può \"vedere\" e fornisce un'unica interfaccia per creare i tuoi capolavori culinari."
+				""
+				"Ti verrà presentato un elenco di elementi che possono essere creati con le tue risorse attuali. Selezionando un elemento verrà mostrata la ricetta per esso, e selezionandolo di nuovo lo farà effettivamente, prendendo automaticamente gli ingredienti necessari e le attrezzature come necessario."
+			]
+			dependencies: ["0AFAC4A8DC2D1412"]
+			id: "14AC85C196945101"
+			tasks: [{
+				id: "120A84BB7C116987"
+				type: "item"
+				item: "cookingforblockheads:cooking_table"
+			}]
+		}
+		{
+			title: "Ricettario parte seconda"
+			x: 4.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Puoi convertire il tuo attuale libro di cucina in qualcosa di ancora più utile combinandolo con un paio di Crafting Tables e un paio di diamonds."
+				""
+				"Il \"Cooking for Blockheads II\" non solo ti dirà cosa puoi fare, ma se hai tutto l'equipaggiamento necessario, ti permetterà anche di farlo immediatamente."
+			]
+			dependencies: ["1447EC3E9F8EB4F4"]
+			id: "0AFAC4A8DC2D1412"
+			tasks: [{
+				id: "03F54553AC7349B7"
+				type: "item"
+				item: "cookingforblockheads:crafting_book"
+			}]
+		}
+		{
+			title: "Libro di cucina"
+			x: 2.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "È un'istruzione, non un nome"
+			description: [
+				"La prima cosa di cui avrete bisogno è un libro di cucina di base."
+				""
+				"Per ottenerlo, cucina un libro."
+				""
+				"Questo libro, giustamente chiamato \"Cooking for Blockheads I\", ti aiuta a identificare i cibi che puoi fare con gli ingredienti presenti nel tuo inventario. Basta mettere alcuni ingredienti nel tuo inventario e aprire il libro di cucina per vedere cosa puoi fare."
+			]
+			dependencies: ["748E7FD5E332FB32"]
+			id: "1447EC3E9F8EB4F4"
+			tasks: [{
+				id: "4E64D483B4566A86"
+				type: "item"
+				item: "cookingforblockheads:recipe_book"
+			}]
+			rewards: [{
+				id: "0ED396E659E00905"
+				type: "item"
+				item: "minecraft:crafting_table"
+				count: 2
+			}]
+		}
+		{
+			title: "Storage Verticali"
+			x: 6.0d
+			y: -2.0d
+			description: ["I Kitchen Cabinets possono essere montati sopra i Kitchen Counters e altri elettrodomestici con uno spazio in mezzo per permettere l'uso delle superfici del banco, ed essere ancora considerati parte della cucina multi-blocco. Possono immagazzinare ingredienti che possono poi essere usati nelle ricette fatte dal Cooking Table."]
+			dependencies: ["14AC85C196945101"]
+			id: "54F981EE270F2756"
+			tasks: [{
+				id: "429CC8080F2B84E6"
+				type: "item"
+				item: "cookingforblockheads:cabinet"
+			}]
+		}
+		{
+			title: "Stoccaggio e spazio di superficie"
+			x: 8.0d
+			y: 0.0d
+			description: [
+				"Il Kitchen Counter può essere usato per conservare gli ingredienti al suo interno, oltre a fornire una superficie su cui possono essere collocati gli elettrodomestici da cucina."
+				""
+				"Come per la maggior parte di questi componenti di cucina multi-block, i Kitchen Counter possono essere tinti usando un colorante su di essi. Date un'occhiata nella JEI ai colori della Terracotta per avere un'idea della tonalità del bancone che otterrete."
+				""
+				"Puoi anche riporre pentole, padelle e altri accessori da cucina in un Kitchen Counter."
+			]
+			dependencies: ["14AC85C196945101"]
+			id: "2C0D05D0404B763B"
+			tasks: [{
+				id: "16492766B31342B2"
+				type: "item"
+				item: "cookingforblockheads:counter"
+			}]
+		}
+		{
+			title: "Andare in giro per la curva"
+			x: 6.0d
+			y: -4.0d
+			description: [
+				"L'Hanging Kitchen Corner è un blocco \"riempitivo\" che permette ai vostri Hanging Kitchen Cabinets di collegarsi intorno agli angoli."
+				""
+				"Non conservano nulla, né servono a nessun altro scopo."
+			]
+			dependencies: ["54F981EE270F2756"]
+			id: "77CE4DD3AAC4D471"
+			tasks: [{
+				id: "798B5EAAE36DB3A0"
+				type: "item"
+				item: "cookingforblockheads:hanging_corner"
+			}]
+		}
+		{
+			title: "Angolo del bancone"
+			x: 8.0d
+			y: -2.0d
+			description: [
+				"I Kitchen Corner è solo una superficie di appoggio. Non contiene nulla."
+				""
+				"Fornisce un modo per collegare i banchi attorno agli angoli in modo che i banchi uniti possano essere \"visti\" dal tavolo da cucina."
+				""
+				"La superficie del Kitchen Corner può essere usata per riporre accessori come un Toaster o una Milk Bottle, ecc."
+			]
+			dependencies: ["2C0D05D0404B763B"]
+			id: "7B3FE985A8E42F5D"
+			tasks: [{
+				id: "42929AF3D7B22397"
+				type: "item"
+				item: "cookingforblockheads:corner"
+			}]
+		}
+		{
+			title: "L'intero lavello della cucina"
+			x: 6.0d
+			y: 2.0d
+			description: ["Il Kitchen Sink non è solo una fonte infinita di acqua da sola, quando fa parte di un ktichen a più blocchi può fornire automaticamente acqua a tutte le ricette che ne hanno bisogno."]
+			dependencies: ["14AC85C196945101"]
+			id: "715DBF61D353522E"
+			tasks: [{
+				id: "144069444B91BB96"
+				type: "item"
+				item: "cookingforblockheads:sink"
+			}]
+		}
+		{
+			title: "Collegare tutto insieme"
+			x: 8.0d
+			y: 2.0d
+			shape: "square"
+			description: [
+				"Il Kitchen Floor (che può anche essere tinto) è estremamente utile quando si desidera una maggiore flessibilità sul layout della vostra cucina."
+				""
+				"L'uso di un pavimento della cucina permette al Cooking Table di \"vedere\" i blocchi che non sono collegati orizzontalmente, il che significa che i progetti che incorporano cose come \"isole\" o cucine divise sono ora possibili, purché siano collegati attraverso il pavimento."
+			]
+			dependencies: ["14AC85C196945101"]
+			id: "0CFF5C6916F7D0AD"
+			tasks: [{
+				id: "4078D122BF9F448D"
+				type: "item"
+				item: "cookingforblockheads:white_kitchen_floor"
+			}]
+			rewards: [{
+				id: "30ED2B5B438D81E9"
+				type: "item"
+				item: "minecraft:ink_sac"
+				count: 4
+				random_bonus: 12
+			}]
+		}
+		{
+			title: "Cucinare il cibo in scala"
+			x: 10.0d
+			y: 2.0d
+			description: ["Il forno può cucinare fino a 9 oggetti simultaneamente. Se la tua cucina a più blocchi ha un forno, e ha abbastanza combustibile, sarai in grado di fare cibi cotti direttamente dalla Cooking Table."]
+			dependencies: ["0CFF5C6916F7D0AD"]
+			hide_text_until_complete: false
+			id: "359E170D5C36CD2D"
+			tasks: [{
+				id: "3D8CA4F1D316EDB7"
+				type: "item"
+				item: "cookingforblockheads:oven"
+			}]
+		}
+		{
+			title: "Cibo refrigerato"
+			x: 8.0d
+			y: 4.0d
+			shape: "gear"
+			description: [
+				"Cos'è una cucina senza fridge?"
+				""
+				"Il fridge può conservare gli ingredienti che possono poi essere utilizzati nelle ricette."
+				""
+				"Può anche essere dotato di una Preservation Chamber o di una Ice Unit per estendere ulteriormente le sue capacità."
+				""
+				"&aRichiesto da: Cosa resta alla fine?&f"
+			]
+			dependencies: ["0CFF5C6916F7D0AD"]
+			size: 1.5d
+			id: "0E9672A8D028CA06"
+			tasks: [{
+				id: "459431DEEE88FA73"
+				type: "item"
+				item: "cookingforblockheads:fridge"
+			}]
+			rewards: [{
+				id: "6195B7E1605ED4E1"
+				type: "item"
+				item: "cookingforblockheads:fridge"
+			}]
+		}
+		{
+			title: "Il maestro dei toast"
+			x: 10.0d
+			y: -3.0d
+			description: ["Il Toaster può essere posizionato su un Kitchen Counter, il che permette al Cooking Table di fare un toast dal pane in modo auto-magico."]
+			dependencies: ["7B3FE985A8E42F5D"]
+			id: "392402CE8874AB40"
+			tasks: [{
+				id: "7428B58A7DDF4AA1"
+				type: "item"
+				item: "cookingforblockheads:toaster"
+			}]
+		}
+		{
+			title: "Attenzione ai moscerini della frutta"
+			x: 10.0d
+			y: -1.0d
+			description: ["Il Fruit Basket può essere posizionato su un bancone della cucina e può quindi conservare la frutta al suo interno. Tutta la frutta richiesta dalle ricette può poi essere fornita al Cooking Table secondo le necessità delle ricette."]
+			dependencies: ["7B3FE985A8E42F5D"]
+			id: "32DE28D7E501942F"
+			tasks: [{
+				id: "68BAAC1155EEEDDE"
+				type: "item"
+				item: "cookingforblockheads:fruit_basket"
+			}]
+		}
+		{
+			title: "Rendi più piccante la tua vita"
+			x: 10.0d
+			y: -4.0d
+			description: ["Lo Spice Rack può essere collocato su una parete sopra un bancone da cucina e usato per conservare cose come spezie e ingredienti in bottiglia che possono poi essere usati dal Cooking Table per fare ricette."]
+			dependencies: ["7B3FE985A8E42F5D"]
+			id: "44F6B55C21320212"
+			tasks: [{
+				id: "4D3B218F5614174E"
+				type: "item"
+				item: "cookingforblockheads:spice_rack"
+			}]
+		}
+		{
+			title: "Strumenti in mostra"
+			x: 10.0d
+			y: 0.0d
+			description: ["Gli utensili da cucina (per esempio i knives) possono essere visualizzati sulla parete sopra un Kitchen Counter usando una Tool Rack. Se gli utensili sono richiesti nelle ricette, il Cooking Table può trovarli automaticamente."]
+			dependencies: ["7B3FE985A8E42F5D"]
+			id: "59F187C1D95FB406"
+			tasks: [{
+				id: "2F547AA2A5D4A07C"
+				type: "item"
+				item: "cookingforblockheads:tool_rack"
+			}]
+		}
+		{
+			title: "Forno elettrico"
+			x: 12.0d
+			y: 4.0d
+			description: ["L'aggiunta di un'unità di riscaldamento al vostro forno vi permetterà di alimentarlo con l'elettricità invece di doverlo rifornire di carbone."]
+			dependencies: ["359E170D5C36CD2D"]
+			id: "00B372F232223B0F"
+			tasks: [{
+				id: "172AEE8E32CF65E2"
+				type: "item"
+				item: "cookingforblockheads:heating_unit"
+			}]
+		}
+		{
+			title: "Granita Puppy"
+			x: 10.0d
+			y: 6.0d
+			description: ["Quando è montata su un Fridge, una Ice Unit fornirà neve e ghiaccio alle ricette come necessario, senza bisogno di conservare la neve o il ghiaccio separatamente."]
+			dependencies: ["0E9672A8D028CA06"]
+			id: "59D175EB7CF15F69"
+			tasks: [{
+				id: "735EE9E237F30898"
+				type: "item"
+				item: "cookingforblockheads:ice_unit"
+			}]
+		}
+		{
+			title: "Mantenere le cose ordinate"
+			x: 10.0d
+			y: 4.0d
+			shape: "gear"
+			description: [
+				"Avere una Preservation Chamber in un fridge assicura che l'ultimo elemento di uno slot non sia consumato dalle ricette fatte attraverso il Cooking Table."
+				""
+				"Questo può essere molto utile quando volete mettere gli ingredienti nel fridge man mano che diventano disponibili, assicurandovi che almeno uno di un elemento rimanga, la vostra disposizione ordinata nel vostro fridge non verrà scombussolata, e non vi ritroverete in una situazione in cui il vostro fridge è pieno solo di un tipo di elemento."
+				""
+				"&aRichiesto da: Cosa rimane alla fine?&f"
+			]
+			dependencies: ["0E9672A8D028CA06"]
+			size: 1.5d
+			id: "09BC0B91BBCD00B8"
+			tasks: [{
+				id: "4BC53BB374DBDF45"
+				type: "item"
+				item: "cookingforblockheads:preservation_chamber"
+			}]
+			rewards: [{
+				id: "35D00E59EE169816"
+				type: "item"
+				item: "cookingforblockheads:preservation_chamber"
+			}]
+		}
+		{
+			title: "Latte in bottiglia"
+			x: 10.0d
+			y: -2.0d
+			description: [
+				"Il Milk Jar può essere collocato su un Kitchen Counter e, una volta riempito di latte, può fornirlo secondo necessità alle ricette che lo richiedono."
+				""
+				"Si può \"riempire\" il Milk Jar riempiendolo con un bucket of Milk."
+			]
+			dependencies: ["7B3FE985A8E42F5D"]
+			id: "1C85E25A64F902B3"
+			tasks: [{
+				id: "176ECC265B82BCA7"
+				type: "item"
+				item: "cookingforblockheads:milk_jar"
+			}]
+		}
+		{
+			title: "È felice lì dentro, te lo prometto!"
+			x: 12.0d
+			y: -2.0d
+			description: [
+				"Togliere il latte da una mucca e metterlo in un Milk Jar sembra un grande sforzo."
+				""
+				"Non sarebbe molto più facile se la mucca (e quindi il latte) fosse già nel Barattolo? In questo modo il latte sarebbe a portata di mano ogni volta che serve."
+				""
+				"Per fortuna c'è un modo..."
+				""
+				"Fate in modo che una mucca stia sopra un Milk Jar, poi mettete un'incudine sopra la mucca. La gravità prenderà il sopravvento e l'incudine cadrà (diciamo \"delicatamente\"), schiacciando la mucca nel Milk Jar. Voilà! Una mucca in un barattolo."
+				""
+				"La mucca riempirà lentamente il Milk Jar con il latte, che può poi essere usato nelle ricette se il barattolo è posizionato su un Kitchen Counter."
+				""
+				"p.s. Se non avete ancora una mucca, scoprite come nel capitolo \"&aMangiare la carne&f\"."
+			]
+			dependencies: ["1C85E25A64F902B3"]
+			id: "664278C6EF796B1A"
+			tasks: [{
+				id: "6C9D2ACBE0C9FFCC"
+				type: "item"
+				item: "cookingforblockheads:cow_jar"
+			}]
+		}
+		{
+			title: "Il granaio degli hamburger"
+			x: 14.0d
+			y: 0.0d
+			shape: "pentagon"
+			description: [
+				"Ora che hai sistemato la tua cucina (o almeno potresti farlo!), fare dei bei pasti dovrebbe essere facile."
+				""
+				"Proviamo a fare qualche hamburger diverso, sia per soddisfare la fame, sia per aumentare la varietà nutrizionale e il benessere generale."
+				""
+				"Avere del cibo ad alta saturazione da portare con voi sarà molto importante presto quando dovremo mandarvi in, ehm... un'avventura o due."
+			]
+			dependencies: [
+				"359E170D5C36CD2D"
+				"664278C6EF796B1A"
+			]
+			id: "1A1B7E75C5236AF0"
+			tasks: [{
+				id: "635DC6F9D87FD0AD"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 0.0d
+			dependencies: ["1A1B7E75C5236AF0"]
+			id: "1F852D0FFC94FAD1"
+			tasks: [{
+				id: "6EE71FABEE4629DE"
+				type: "item"
+				item: "pamhc2foodcore:basichamburgeritem"
+			}]
+			rewards: [{
+				id: "21B614DCFA8C1AA2"
+				type: "item"
+				item: "pamhc2foodcore:basichamburgeritem"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			x: 17.0d
+			y: 2.5d
+			dependencies: ["1F852D0FFC94FAD1"]
+			id: "41C24FC665E7355F"
+			tasks: [{
+				id: "46537B08E2E6F428"
+				type: "item"
+				item: "pamhc2foodcore:basiccheeseburgeritem"
+			}]
+			rewards: [{
+				id: "6B3ABC26601AE6E5"
+				type: "item"
+				item: "pamhc2foodcore:basiccheeseburgeritem"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			x: 17.5d
+			y: -1.5d
+			dependencies: ["1F852D0FFC94FAD1"]
+			id: "238D92A81A13C404"
+			tasks: [{
+				id: "5FDC594DF6ED44F5"
+				type: "item"
+				item: "pamhc2foodextended:deluxecheeseburgeritem"
+			}]
+			rewards: [{
+				id: "763322CF12B0F4E5"
+				type: "item"
+				item: "pamhc2foodextended:deluxecheeseburgeritem"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			x: 18.0d
+			y: -0.5d
+			dependencies: ["1F852D0FFC94FAD1"]
+			id: "41F84812B247C105"
+			tasks: [{
+				id: "50B43FEC605B300F"
+				type: "item"
+				item: "pamhc2foodcore:baconcheeseburgeritem"
+			}]
+			rewards: [{
+				id: "673161DA75E33E5B"
+				type: "item"
+				item: "pamhc2foodcore:baconcheeseburgeritem"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			x: 17.5d
+			y: 1.5d
+			dependencies: ["1F852D0FFC94FAD1"]
+			id: "2162C295885EECBD"
+			tasks: [{
+				id: "3E6CE0A0356061C6"
+				type: "item"
+				item: "pamhc2foodcore:basicchickensandwichitem"
+			}]
+			rewards: [{
+				id: "6D322647BE3BEF23"
+				type: "item"
+				item: "pamhc2foodcore:basicchickensandwichitem"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			x: 17.0d
+			y: -2.5d
+			dependencies: ["1F852D0FFC94FAD1"]
+			id: "6B01DC951B6A9059"
+			tasks: [{
+				id: "30483A99E41DB650"
+				type: "item"
+				item: "pamhc2foodextended:baconmushroomburgeritem"
+			}]
+			rewards: [{
+				id: "1D9F6D0546969A3E"
+				type: "item"
+				item: "pamhc2foodextended:baconmushroomburgeritem"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			x: 18.0d
+			y: 0.5d
+			dependencies: ["1F852D0FFC94FAD1"]
+			id: "271258F3CE69FE70"
+			tasks: [{
+				id: "0B1F13FF5AF25B36"
+				type: "item"
+				item: "pamhc2foodextended:mcpamitem"
+			}]
+			rewards: [{
+				id: "5FDCBC48AE2801B1"
+				type: "item"
+				item: "pamhc2foodextended:mcpamitem"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			x: 20.0d
+			y: 0.0d
+			dependencies: ["271258F3CE69FE70"]
+			id: "2127233E7CF186A0"
+			tasks: [{
+				id: "3A2AC364C1C89DC9"
+				type: "item"
+				item: "pamhc2foodextended:delightedmealitem"
+			}]
+			rewards: [{
+				id: "3381A0CCFB14550B"
+				type: "item"
+				item: "pamhc2foodextended:delightedmealitem"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			description: ["La stagionatura della carne di beef è importante prima di essiccarla, altrimenti c'è il rischio di contaminazione. Non vorremmo aggiungere un'intossicazione alimentare alla tua lista di inconvenienti nell'Avamposto."]
+			dependencies: ["748E7FD5E332FB32"]
+			id: "5D2D50215D16FDBE"
+			tasks: [{
+				id: "3137C509B6291AB8"
+				type: "item"
+				item: "cuboidmod:cured_beef"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			subtitle: "L'ultimo cibo da spuntino"
+			description: ["Il biltong è essenzialmente carne stagionata, speziata ed essiccata, ma è senza dubbio uno dei migliori e più appaganti spuntini in circolazione."]
+			dependencies: ["5D2D50215D16FDBE"]
+			id: "467102366F29F4D8"
+			tasks: [{
+				id: "15CF5F80972B6094"
+				type: "item"
+				item: "cuboidmod:biltong_beef"
+			}]
+		}
+	]
+}

@@ -1,0 +1,993 @@
+{
+	id: "6F10EC412F5FEFB1"
+	group: "53EA7D6C6A1B0F69"
+	order_index: 4
+	filename: "whats_left_in_the_end"
+	title: "Cosa rimane alla fine?"
+	icon: "minecraft:purpur_block"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Cosa rimane alla fine?"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"Sembra che il velo tra questa dimensione? mondo? piano di esistenza? si stia assottigliando come la nostra divisione scientifica ha postulato. Credono che si dovrebbe essere in grado di perforare il velo con un po' di sforzo."
+				""
+				"C'è un po' più di preparazione richiesta prima di andare, ma ecco alcune altre cose che dovreste considerare di assicurarvi di avere prima di tentare effettivamente il viaggio interdimensionale. Potrebbe essere una buona idea:"
+				""
+				"- avere un Jetpack nel caso abbiate bisogno di volare (vedi \"Ottieni la Mekanism\" o \"Su, su e via!\")"
+				""
+				"- avere uno zaino per poter trasportare le cose che trovi (vedi \"Prepara le valigie\")"
+				""
+				"- avere un arco e una buona scorta di frecce"
+				""
+				"- avere un'armatura e delle armi decenti nel caso tu abbia bisogno di proteggerti"
+				""
+				"- avere un set di attrezzi, un po' di cibo, un po' di carburante e alcuni materiali da costruzione nel caso in cui tu abbia bisogno di rimanere lì per un po'."
+			]
+			id: "3AA6054777215BE1"
+			tasks: [
+				{
+					id: "3AE43D41D1B6C7E7"
+					type: "item"
+					item: "mekanism:ultimate_control_circuit"
+				}
+				{
+					id: "7C75DB77D2D01527"
+					type: "item"
+					item: "thermal:enderium_ingot"
+				}
+				{
+					id: "351AA0BBAEC43865"
+					type: "item"
+					item: "powah:crystal_niotic"
+				}
+				{
+					id: "58F0B301ECECE7E1"
+					type: "item"
+					item: "cookingforblockheads:preservation_chamber"
+				}
+				{
+					id: "6F41A89BBD923FE3"
+					type: "item"
+					item: "cookingforblockheads:fridge"
+				}
+				{
+					id: "1E890DE2FA411340"
+					type: "item"
+					item: "thermal:machine_chiller"
+				}
+				{
+					id: "509C77EA67743741"
+					type: "item"
+					item: "ironfurnaces:rainbow_core"
+				}
+			]
+		}
+		{
+			title: "La chiave per la fine"
+			x: 8.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Per permettere al Cryogenic Dimensional Teleporter di perforare il velo tra questa dimensione e la nostra dimensione di destinazione (La Fine), dovremo sintonizzarlo usando un Energised End Stone Brick."
+				""
+				"Una volta che lo avete, usatelo sul CDT e lo vedrete librarsi in posizione sopra il CDT. Una volta che il CDT è completamente carico, potrete cliccare con il tasto destro del mouse su di esso con la mano vuota per essere teletrasportati nella dimensione di destinazione. Saprai che è pronto quando l'oggetto chiave inizia a girare. &cLe chiavi, una volta applicato al CDT sono monouso! La sostituzione con un altro oggetto chiave, o il ritiro del CDT non ti restituirà un oggetto chiave usato.&f"
+				""
+				"Assicurati di avere un modo per tornare indietro se ne hai bisogno, e assicurati di avere un modo facile per arrivarci di nuovo! Le Waystones sono perfette per questo."
+			]
+			dependencies: ["1BD8C96CC9C7495C"]
+			id: "6F366C7E4E7D8F84"
+			tasks: [{
+				id: "49E4BDF7942C110C"
+				type: "item"
+				item: "cuboidmod:energized_end_stone_bricks"
+			}]
+			rewards: [
+				{
+					id: "0DF4E77EB8DACE38"
+					type: "gamestage"
+					title: "Let's go!"
+					icon: "storagedrawers:shroud_key"
+					auto: "disabled"
+					stage: "end_access"
+				}
+				{
+					id: "50EC0061F64E476C"
+					type: "item"
+					item: "mekanism:electric_bow"
+				}
+			]
+		}
+		{
+			title: "È questa la strada per Armadillo?"
+			x: 4.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Ora che hai delle Warp Stones, dovresti sicuramente fare delle Waystones. Potrebbe essere una buona idea tenere una Warp Stones con te, in modo da poter tornare in un punto noto (e presumibilmente sicuro) quando ne hai bisogno."
+				""
+				"Sarà sicuramente una buona idea mettere una Waystone nella vostra base, e probabilmente metterne una in un punto sicuro in ogni dimensione che visitate, in quanto ciò vi permetterà di viaggiare in modo facile e prevedibile andando avanti."
+				""
+				"Non dimenticare di portare una Waystone attraverso la prossima dimensione quando vai! (Cuboid Corp (tm) non si assume alcuna responsabilità per il ritorno alla tua dimensione originale se ignori questo consiglio)"
+			]
+			dependencies: ["447CD827C10015DD"]
+			id: "4D87FF1D91AEEE09"
+			tasks: [{
+				id: "78FE05CECB1810A1"
+				type: "item"
+				item: "waystones:waystone"
+			}]
+			rewards: [{
+				id: "20F1647CD741A46B"
+				type: "item"
+				item: "waystones:waystone"
+			}]
+		}
+		{
+			title: "Warp Stone - Lì e ritorno"
+			x: 2.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Usando alcune Ender Pearl e uno Emerald, più un po' di Purple Dye, dovresti essere in grado di fare una Warp Stone."
+				""
+				"Questa pietra può essere usata nella creazione di una Waystone, un dispositivo speciale che permette di viaggiare istantaneamente attraverso grandi distanze e persino dimensioni."
+				""
+				"Dovrai avere una certa esperienza per essere in grado di usarla, e una Warp Stone ha bisogno della conoscenza delle Waystones per essere di qualche utilità, quindi avrai bisogno di almeno un paio di queste per essere in grado di creare anche qualche Waystones."
+				""
+				"Per tua fortuna, se riesci a racimolare il necessario per la tua prima pietra, saremo in grado di fornirtene altre."
+				""
+				"Una volta che hai attivato le Waystones, puoi tenere in mano e usare una Warp Stone da qualsiasi luogo per poter viaggiare istantaneamente verso una Waystone attivata. La Warp Stone, se usata da sola, impiega circa 5 minuti per ricaricarsi prima di poter essere usata di nuovo."
+			]
+			dependencies: ["3EB44710A602ED1E"]
+			id: "4A25946155277EFB"
+			tasks: [{
+				id: "00020A978ABBC8C1"
+				type: "item"
+				item: {
+					id: "waystones:warp_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "25644F5D92DFC8B4"
+				type: "item"
+				item: {
+					id: "waystones:warp_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				random_bonus: 1
+			}]
+		}
+		{
+			title: "Sfondamento"
+			x: 6.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Per sfondare la prossima dimensione, che la divisione scientifica ha chiamato \"L'End\" per qualche motivo (speriamo che non sia profetico!), avrete bisogno di alcune attrezzature speciali."
+				""
+				"In particolare, devi prendere quello che hai imparato finora e costruire un Cryogenic Dimensional Teleporter (CDT)."
+				""
+				"Il CDT ha bisogno di essere caricato, ma comincerà a caricarsi solo quando verrà caricato con un oggetto chiave appropriato, di cui parleremo dopo."
+				""
+				"Per ora, assicurati solo di posizionare il CDT in un posto che gli fornisca energia, e assicurati che ci sia un'intercapedine d'aria direttamente sopra di esso."
+				""
+				"&cNOTA: Una volta che una chiave è applicata ad un CDT, la chiave non può essere recuperata dal dispositivo. Si consiglia di assicurarsi di posizionare il CDT in una posizione in cui si desidera che rimanga.&f"
+			]
+			dependencies: ["183CEC42DC0F408F"]
+			id: "23B01B040F453BBE"
+			tasks: [{
+				id: "3491651FA15FA600"
+				type: "item"
+				item: "cuboidmod:cryogenic_dimensional_teleporter"
+			}]
+		}
+		{
+			title: "Ecco il Drago!"
+			x: 10.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Alcune piccole cose da notare sulla dimensione dell'End..."
+				""
+				"Potrebbe esserci una sorta di guardiano (non fatevi prendere dal panico, ma crediamo che ci sia un Drago lì)"
+				""
+				"Il Drago viene rigenerato dai fuochi di cristallo in cima ai pilastri, vorrete distruggere quelli il più presto possibile."
+				""
+				"Potresti aver bisogno di alcune bottiglie (te ne forniremo alcune al tuo arrivo, ma potresti volerne altre). Potete usarle per raccogliere il respiro di drago."
+				""
+				"Non guardate direttamente le persone lì. A loro non piace."
+				""
+				"Divertiti!"
+			]
+			dependencies: ["562DF660E5C68A16"]
+			id: "31F344F61D2CCAF8"
+			tasks: [{
+				id: "7A4AC5D443E4EA6E"
+				type: "dimension"
+				title: "Visit The End Dimension"
+				dimension: "minecraft:the_end"
+			}]
+			rewards: [{
+				id: "34C8F7A673D29744"
+				type: "item"
+				auto: "enabled"
+				item: "minecraft:glass_bottle"
+				count: 32
+				random_bonus: 32
+			}]
+		}
+		{
+			title: "L'estinzione è una parola così sporca."
+			x: 10.0d
+			y: 2.0d
+			shape: "square"
+			description: [
+				"&e(Se il drago manca, o semplicemente hai voglia di fare un altro giro, controlla gli articoli di emergenza nell'appendice E)&f"
+				""
+				"Una volta sconfitto il drago, accadranno tre cose degne di nota:"
+				""
+				"1. Un Dragon's Egg apparirà. È un po' complicato da raccogliere, ma vi lasciamo a capirlo."
+				""
+				"2. Un portale apparirà intorno alla base del pilastro centrale su cui poggia il Drago. Crediamo che entrare in questo portale vi teletrasporterà a casa."
+				""
+				"3. Apparirà un ulteriore portale. Se lanciate una Ender Pearl attraverso di essa, finirete da qualche altra parte dove potrete iniziare l'esplorazione di questa affascinante dimensione."
+			]
+			dependencies: ["10E3ABB4530A9F1A"]
+			id: "7FCE1A23625BC7BF"
+			tasks: [{
+				id: "0D5E08A972AA91E3"
+				type: "advancement"
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Penso che più di una mentina sia necessaria qui..."
+			x: 12.0d
+			y: 2.0d
+			description: ["So che è molto da gestire, ma durante il combattimento con il Drago, puoi aspettare che ti spari un proiettile, toglierti di mezzo e poi usare le empty glass bottle sulle particelle viola emesse dal Dragon's Breath per raccoglierne alcune. Vale la pena prendere quello che puoi e non solo la 1 bottiglia!"]
+			dependencies: ["0734276C7081690C"]
+			id: "6B99785A81001903"
+			tasks: [{
+				id: "15A11BF0D995DF95"
+				type: "item"
+				item: "minecraft:dragon_breath"
+			}]
+		}
+		{
+			title: "Segui questa Ender Pearl!"
+			x: 10.0d
+			y: 4.0d
+			shape: "square"
+			description: [
+				"Una volta sconfitto il drago, un portale speciale apparirà a mezz'aria da qualche parte vicino all'isola principale."
+				""
+				"Dovresti scavare un po' di end stone (o usare qualche altro blocco da costruzione se ti sei ricordato di portarne con te) e avvicinarti. Al centro del portale vedrete quello che sembra un po' come un campo portale scintillante, prendete una Ender Pearle lanciatela attraverso il campo scintillante, se tutto va bene colpirà qualche terra dall'altra parte e sarete teletrasportati da qualche altra parte per iniziare la vostra vera esplorazione di questa Dimensione."
+			]
+			dependencies: ["0734276C7081690C"]
+			id: "3E5F77A69CB85846"
+			tasks: [{
+				id: "2DF5223BF9749376"
+				type: "advancement"
+				advancement: "minecraft:end/enter_end_gateway"
+				criterion: ""
+			}]
+		}
+		{
+			title: "La Foresta della pace"
+			x: 8.0d
+			y: 6.0d
+			shape: "square"
+			description: [
+				"La Poise Forest è un bioma nell'End pieno di interessanti piante e animali. La noterai sulla tua mappa grazie alle macchie viola rosate che mostrano gli Poise Trees, e quando ti avvicini, sembra una collezione di enormi funghi psichedelici che spuntano dal terreno."
+				""
+				"Dirigiti verso uno di essi quando lo vedi, avremo bisogno di alcune cose..."
+				""
+				"Nella Poise Forest troverete due Mob che in genere non troverete da nessun'altra parte. Questi sono il Puff Bug e il Booflo, entrambi sono essenzialmente passivi per la maggior parte, ma molto aggressivi se agitati."
+			]
+			dependencies: ["34A91AA5B35BB04F"]
+			id: "0EC123E2FA0854A5"
+			tasks: [{
+				id: "2BF4E078FB5723F2"
+				type: "advancement"
+				advancement: "endergetic:poise_forest"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Un'altra isola fluttuante"
+			x: 12.0d
+			y: 6.0d
+			description: [
+				"Sparsi in questa dimensione vi imbatterete in isole galleggianti che hanno un aspetto un po' diverso dalle altre."
+				""
+				"In primo luogo, hanno alberi con tronchi verdi e foglie viola, e tendono ad avere anche una pozza di qualche tipo di liquido su di loro."
+				""
+				"Fatti strada fino ad uno di essi, ma fai attenzione, spesso contengono occupanti mollicci che non apprezzano essere disturbati."
+			]
+			dependencies: ["34A91AA5B35BB04F"]
+			id: "2DEA76A772B190E8"
+			tasks: [{
+				id: "1B240E6BDA12542D"
+				type: "advancement"
+				advancement: "tconstruct:world/ender_island"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Credenziali verdi"
+			x: 12.0d
+			y: 8.0d
+			description: ["Ora che sei su una di queste slimy island, dovresti abbattere un albero. Si spera di ottenere un sapling anche dalle foglie."]
+			dependencies: ["2ADD91200DFAC5EE"]
+			id: "2E36ECBA3E6A3B6F"
+			tasks: [{
+				id: "6C5FD6717AFFEBF2"
+				type: "item"
+				item: "tconstruct:greenheart_log"
+			}]
+		}
+		{
+			title: "Slimy Sapling"
+			x: 12.0d
+			y: 10.0d
+			description: [
+				"Se sei fortunato, otterrai un Enderslime Sapling, che può essere piantato sulla slimy dirt."
+				""
+				"L'ideale sarebbe aggiungerlo ai tuoi botany pots a casa e avere così una fornitura costante di purple slime a portata di mano ogni volta che ne hai bisogno."
+			]
+			dependencies: ["19D44FBDE6BBEA44"]
+			id: "291332D9EFE40BC0"
+			tasks: [{
+				id: "428AF9734BDA36C6"
+				type: "item"
+				item: "tconstruct:ender_slime_sapling"
+			}]
+		}
+		{
+			title: "Slimy Purple Dirt"
+			x: 14.0d
+			y: 6.0d
+			description: ["Prendi un po' di Ender Slimy Dirt mentre sei sull'isola galleggiante. Puoi usarla per far crescere gli slime saplings e usarla anche nei botany pots."]
+			dependencies: ["2ADD91200DFAC5EE"]
+			id: "06C26162D91DD531"
+			tasks: [{
+				id: "43A9D63220B53FB5"
+				type: "item"
+				item: "tconstruct:ender_slime_dirt"
+			}]
+		}
+		{
+			title: "Enderslime! È come lo Slime, ma viola!"
+			x: 14.0d
+			y: 8.0d
+			description: ["Uccidere un Enderslime ha un'alta probabilità di far cadere delle Enderslime Balls."]
+			dependencies: ["2ADD91200DFAC5EE"]
+			id: "1D39CC0BA3E93AC6"
+			tasks: [{
+				id: "701921089F4826B9"
+				type: "item"
+				item: "tconstruct:ender_slime_ball"
+			}]
+		}
+		{
+			title: "Stelo Poise"
+			x: 7.0d
+			y: 5.0d
+			description: [
+				"I tronchi di questi Poise Trees sono fatti di Poise Stem, che è essenzialmente solo un altro tipo di legno."
+				""
+				"p.s. Potete anche bonificare un Poise Bush per trasformarlo in un Tall Poise Bush, e poi di nuovo per ottenere un Poise Tree."
+			]
+			dependencies: ["432CB8137F1E7DB4"]
+			id: "5119AA76662E3ADB"
+			tasks: [{
+				id: "58A5A6BA0E69F936"
+				type: "item"
+				item: "endergetic:poise_stem"
+			}]
+		}
+		{
+			title: "Un gruppo interessante"
+			x: 6.0d
+			y: 6.0d
+			description: [
+				"I Poise Cluster sono come le foglie del Poise Tree, ma hanno una proprietà unica."
+				""
+				"Se li prendi a pugni, levitano verso l'alto di circa 10 blocchi. Puoi farlo due volte, e poi diventano abbastanza instabili da essere raccolti."
+				""
+				"In alternativa, puoi raccoglierli immediatamente usando le shears su di loro."
+			]
+			dependencies: ["432CB8137F1E7DB4"]
+			id: "09C371227C90998A"
+			tasks: [{
+				id: "5F9826E5D14B0506"
+				type: "item"
+				item: "endergetic:poise_cluster"
+			}]
+		}
+		{
+			title: "Glowing Poise Stem"
+			x: 8.0d
+			y: 4.0d
+			description: ["Glowing Poise Stem può verificarsi naturalmente, ma può anche essere fatto in una crafting grid da 9 Poise Stem standard e un Poise Cluster."]
+			dependencies: ["432CB8137F1E7DB4"]
+			id: "6E773DBB96FFE3BB"
+			tasks: [{
+				id: "22C32DEC06C8F83F"
+				type: "item"
+				item: "endergetic:glowing_poise_stem"
+			}]
+		}
+		{
+			title: "Purple Planks"
+			x: 6.0d
+			y: 4.0d
+			description: ["Poise Stem può essere trasformato in Poise Plank proprio come si fa con altri tipi di legno."]
+			dependencies: ["4EDF7B80D828363A"]
+			id: "3636448FBC8FF231"
+			tasks: [{
+				id: "7B106FCE55721051"
+				type: "item"
+				item: "endergetic:poise_planks"
+				count: 8L
+			}]
+		}
+		{
+			title: "Eumus scherziamo!"
+			x: 10.0d
+			y: 8.0d
+			description: ["Eumus è il terreno roccioso come la sostanza che si trova nel Poise Forest."]
+			dependencies: ["432CB8137F1E7DB4"]
+			id: "624F7ED2E644ABF9"
+			tasks: [{
+				id: "71054B38507421DB"
+				type: "item"
+				item: "endergetic:eumus"
+				count: 16L
+			}]
+		}
+		{
+			title: "Eumus per creare bricks!"
+			x: 10.0d
+			y: 12.0d
+			description: ["Puoi fondere Eumus per ottenere un Eumus Brick."]
+			dependencies: ["5AF013727BA31234"]
+			id: "63F7B11BB3055C83"
+			tasks: [{
+				id: "3CAB6D6FE155D0E4"
+				type: "item"
+				item: "endergetic:eumus_brick"
+			}]
+		}
+		{
+			title: "Dimensional Shardening"
+			x: 10.5d
+			y: 6.0d
+			shape: "gear"
+			description: [
+				"Il Dimensional Shard può essere ottenuto estraendo il Dimensional Shard Ore, che è abbastanza facile da trovare in questa dimensione."
+				""
+				"Oltre ad essere un componente critico che ti permette di viaggiare nella prossima dimensione della nostra lista, è anche usato nella creazione di alcuni macchinari e attrezzature abbastanza avanzate che richiedono o una Infused Ender Pearl o Infused Diamond per funzionare correttamente."
+			]
+			dependencies: ["34A91AA5B35BB04F"]
+			size: 1.2d
+			id: "2D4A7300F3A7247D"
+			tasks: [{
+				id: "0CD402F1CDDA3113"
+				type: "item"
+				item: "rftoolsbase:dimensionalshard"
+			}]
+		}
+		{
+			title: "Ender Biotite"
+			x: 9.5d
+			y: 6.0d
+			description: [
+				"Ender Biotite ha solo pochi usi."
+				""
+				"In primo luogo, è un ingrediente sia del Redstone Randomizer che del Weather Detector, e in secondo luogo, 4 possono essere combinati in un blocco, che è principalmente a scopo decorativo."
+			]
+			dependencies: ["34A91AA5B35BB04F"]
+			id: "1BA2B53E07E405F9"
+			tasks: [{
+				id: "0F215A634DF10740"
+				type: "item"
+				item: "quark:biotite"
+			}]
+		}
+		{
+			title: "Frutta galleggiante"
+			x: 6.0d
+			y: 8.0d
+			description: [
+				"I Bolloom Fruit possono essere trovati galleggianti sopra i boccioli di Bolloom aperti, attaccati da viticci."
+				""
+				"Potete raccogliere i Bolloom Fruit punzonandoli, se li rimuovete tutti da un bocciolo Bolloom, il bocciolo si chiuderà fino a quando non verrà impollinato di nuovo (da un Puff Bug)."
+				""
+				"Mangiare un Bolloom Fruit garantirà circa 5 secondi di levitazione, ma l'uso veramente interessante per loro è nella fabbricazione di Palloncini Bolloom."
+				""
+				"Il Bolloom Fruit è anche uno dei preferiti dai Booflo e può essere usato per addomesticarli."
+			]
+			dependencies: ["432CB8137F1E7DB4"]
+			id: "0AB948DC9ABE0501"
+			tasks: [{
+				id: "2DB61406069011BE"
+				type: "item"
+				item: "endergetic:bolloom_fruit"
+			}]
+			rewards: [{
+				id: "3065D047EB06F835"
+				type: "item"
+				item: "minecraft:string"
+				count: 8
+				random_bonus: 8
+			}]
+		}
+		{
+			title: "La linea del Chorus"
+			x: 12.0d
+			y: 0.0d
+			description: [
+				"La pianta Chorus cresce nell'End su Endstone, e sono quelle piante alte, magre e viola che incontrerete, tipicamente con 2 o 3 fiori, uno in cima a ciascuno dei loro rami."
+				""
+				"Se si rompe lo stelo, il Chorus Fruit cadrà, ma il Chorus Flower no."
+				""
+				"Per ottenere un Chorus Flower, dovrai ottenerlo prima di rompere lo stelo."
+			]
+			dependencies: ["10E3ABB4530A9F1A"]
+			id: "4044F07458C78418"
+			tasks: [{
+				id: "61800EC3D9A9F9D5"
+				type: "item"
+				item: "minecraft:chorus_fruit"
+			}]
+		}
+		{
+			title: "Spunta il frutto! (Chorus)"
+			x: 14.0d
+			y: -2.0d
+			description: [
+				"La Chorus fruit spuntata si ottiene fondendo la Chorus fruit."
+				""
+				"Il Chorus fruit spuntato può poi essere combinato in Purpur, un blocco di costruzione deliziosamente viola."
+			]
+			dependencies: ["6DE6A228614AE83F"]
+			id: "2CCD1223FAE85617"
+			tasks: [{
+				id: "1F77089112F2C3B8"
+				type: "item"
+				item: "minecraft:popped_chorus_fruit"
+			}]
+		}
+		{
+			title: "Chorus Flowers"
+			x: 14.0d
+			y: 0.0d
+			description: [
+				"Ottenere un Chorus Flower non è difficile, basta assicurarsi di prendere il fiore prima di rompere lo stelo."
+				""
+				"Probabilmente puoi usare un arco e una freccia e far cadere un fiore anche in quel modo, se vuoi."
+			]
+			dependencies: ["6DE6A228614AE83F"]
+			id: "32CCE795B10B5513"
+			tasks: [{
+				id: "7508C7CCAF53AB6E"
+				type: "item"
+				item: "minecraft:chorus_flower"
+			}]
+		}
+		{
+			title: "Su, su e lontano!"
+			x: 5.0d
+			y: 7.0d
+			description: [
+				"Con un po' di String e un Bolloom Fruit, puoi fare un palloncino Bolloom."
+				""
+				"Questi possono essere attaccati a cose come recinzioni per la decorazione, tinti con colori diversi, e fatti scoppiare colpendoli."
+				""
+				"Quando sono attaccati ad entità viventi, circa 4 saranno sufficienti per farli fluttuare in cielo! Basta fare attenzione, scoppiano se arrivano troppo in alto. Meno palloncini Bolloom attaccati garantiscono un effetto di caduta lenta."
+			]
+			dependencies: ["62ADCC53E025410F"]
+			id: "2924D2D065FDC590"
+			tasks: [{
+				id: "3DEAAECB1E58BCF3"
+				type: "item"
+				item: "endergetic:bolloom_balloon"
+			}]
+		}
+		{
+			title: "Una barca viola!"
+			x: 5.0d
+			y: 5.0d
+			description: [
+				"Con del legno viola viene una barca viola."
+				""
+				"Perché mai avresti bisogno di una barca nell'End? Vediamo..."
+			]
+			dependencies: ["47368E8C5D9F42CE"]
+			id: "2A0DE619BF051516"
+			tasks: [{
+				id: "3F749661A83A64BC"
+				type: "item"
+				item: "endergetic:poise_boat"
+			}]
+		}
+		{
+			title: "La Darling Buds di Mayday"
+			x: 5.0d
+			y: 9.0d
+			description: [
+				"Ci sono due modi per mettere le mani su un Bolloom Bud."
+				""
+				"Il più semplice è semplicemente raccoglierne uno alla solita maniera."
+				""
+				"Un modo un po' più complicato è nutrire un Bolloom Fruit con un Puff Bug che ha recentemente impollinato un Bolloom Bud, il che farà sì che il Puff Bug faccia cadere un altro bocciolo, utile da sapere se decidete di portarne qualcuno a casa e coltivarlo!"
+			]
+			dependencies: ["62ADCC53E025410F"]
+			id: "6B4381DC96DB9641"
+			tasks: [{
+				id: "54A0303AA7301502"
+				type: "item"
+				item: "endergetic:bolloom_bud"
+			}]
+		}
+		{
+			title: "Qualunque cosa faccia galleggiare la tua barca"
+			x: 4.0d
+			y: 6.0d
+			description: [
+				"Metti giù una barca, e poi attacca 4 palloncini Bolloom ad essa e saltaci dentro!"
+				""
+				"Probabilmente è meglio avere a disposizione alcuni palloncini di riserva prima di provare a percorrere lunghe distanze, nel caso in cui quelli sulla tua barca scoppino (o tu stesso li scoppi per controllare la tua altezza)."
+			]
+			dependencies: [
+				"6C28E1C885BFEF86"
+				"24001AED0AE41D2A"
+			]
+			id: "46541AE5F3C10868"
+			tasks: [{
+				id: "7024FA634F5421BF"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Io sono un Soldato Booflo"
+			x: 8.0d
+			y: 8.0d
+			shape: "square"
+			description: [
+				"Booflo sono quelle creature simili a rospi che saltellano tra gli alberi di Poise, mangiando la Poise Fruit e sgranocchiando i Puff Bugs."
+				""
+				"Puoi addomesticare i Booflo dando loro la Poise Fruit, ma fai attenzione! Ai Booflo non piacciono le persone vicino a loro mentre stanno mangiando, quindi se ne dai da mangiare ad uno, scappa immediatamente fino a quando non ha finito di fare lo spuntino!"
+				""
+				"Saprai che un Booflo è addomesticato quando ha dei \"Braccialetti\" sulle zampe anteriori (puoi tingerli usando i normali coloranti sui Booflo già addomesticati)."
+				""
+				"Per allevare Booflo, dai da mangiare i Poise Cluster a due Booflo addomesticati. Una volta che si sono accoppiati, piccoli girini Booflo appariranno su uno dei Booflo. Col tempo cresceranno nella forma adolescenziale e poi in quella adulta."
+				""
+				"Puoi anche cavalcare un Booflo addomesticato, e se salti a metà del salto, si lancerà in aria e scenderà lentamente. Prova a tenere il salto più a lungo per un salto più alto, che ti permetterà praticamente di volare intorno a L'End a volontà."
+				""
+				"L'altra cosa per cui un Booflo è buono è la sua pelle, che viene usata per creare Boof Blocks e un Booflo Vest. Non sono un avversario banale però, quindi fai attenzione!"
+			]
+			dependencies: ["432CB8137F1E7DB4"]
+			id: "3D06A4B7C87DE259"
+			tasks: [{
+				id: "2DF50AAEDF3543E0"
+				type: "item"
+				item: "endergetic:booflo_hide"
+				count: 4L
+			}]
+		}
+		{
+			title: "Gli Airbag del \"Boof!\""
+			x: 8.0d
+			y: 10.0d
+			shape: "gear"
+			description: [
+				"4 pezzi di Booflo Hide possono essere combinati in un Boof Block."
+				""
+				"Il Boof Block è una cosa affascinante, quando è posizionato a terra rimbalza le cose che si avvicinano troppo, inclusi te, i Mob e i proiettili!"
+			]
+			dependencies: ["586388ADC05A9E7C"]
+			size: 1.2d
+			id: "35DA0F43615F166B"
+			tasks: [{
+				id: "57B87AEE5E62DB03"
+				type: "item"
+				item: "endergetic:boof_block"
+			}]
+			rewards: [{
+				id: "6AE6EAA83FF9BEAE"
+				type: "item"
+				item: "endergetic:booflo_hide"
+				count: 4
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "Doppio salto come se fossi il 1337!"
+			x: 8.0d
+			y: 12.0d
+			description: ["Il Booflo Vest è fatto da un Boof Block e più Booflo Hide. Quando viene indossato, può essere usato per fare un \"doppio salto\". Se lo abbini ad attaccare da 1 a 3 palloncini Bolloom a te stesso (per un effetto di caduta lenta), dovresti avere un modo abbastanza nuovo e utile per aggirare l'End!"]
+			dependencies: ["1CF4FF16ECAC59B1"]
+			id: "56280E1BD3B68FAB"
+			tasks: [{
+				id: "5435183532012024"
+				type: "item"
+				item: {
+					id: "endergetic:booflo_vest"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "I ragazzi spingono"
+			x: 4.0d
+			y: 10.0d
+			subtitle: "(Voglio dire Poise Bush)"
+			description: [
+				"Per raccogliere Poise Bush (e la variante più alta) avrete bisogno di shears."
+				""
+				"Cresce solo su Poise Moss o Eumus."
+				""
+				"Se si bonifica un Poise Bush, diventerà un Tall Poise Bush."
+				""
+				"Se si bonifica il Poismoss, allora il Poise Bush (e la variante alta) può crescere spontaneamente."
+			]
+			dependencies: ["0794F3E138B7D647"]
+			id: "46D5D1DBBD8B0B1E"
+			tasks: [{
+				id: "2984E2B1BC46AB2A"
+				type: "item"
+				item: "endergetic:poise_bush"
+			}]
+		}
+		{
+			title: "I ragazzi alti spingono di più"
+			x: 5.0d
+			y: 10.5d
+			subtitle: "(Voglio dire Tall Poise Bush)"
+			description: [
+				"Come la variante standard, Tall Poise Bush può essere raccolto con le Shears e cresce su Poise Moss o Eumus."
+				""
+				"Se si bonifica un Tall Poise Bush, esso può crescere in un Poise Tree."
+				""
+				"Se disossate il Poismoss, allora il Tall Poise Bush (e la variante standard) può crescere spontaneamente."
+				""
+				"Tall Poise Bush può essere dato in pasto a due Puff Bugs per iniziare la loro riproduzione."
+			]
+			dependencies: ["0794F3E138B7D647"]
+			id: "31C8E7FC012527B6"
+			tasks: [{
+				id: "723BAC33E81A7D91"
+				type: "item"
+				item: "endergetic:tall_poise_bush"
+			}]
+		}
+		{
+			title: "Trova una città dell'End"
+			x: 12.0d
+			y: 4.0d
+			subtitle: "(preferibilmente uno con una End Ship!)"
+			description: [
+				"Trovare una End City può essere un compito scoraggiante e dispendioso in termini di tempo, e anche se la trovi, potrebbe essere una città piccola o senza una nave finale nelle vicinanze."
+				""
+				"Sta a te decidere se vuoi provare a razziare quelle più piccole (di solito c'è un bottino abbastanza decente), ma se è un Elytra che stai davvero cercando, potresti voler continuare a cercare finché non ne trovi una con una Nave."
+				""
+				"Mentre gli esploratori esperti hanno i loro metodi collaudati per trovare le End City, una strategia di base che sembra funzionare abbastanza bene è quella di scegliere una direzione cardinale e generalmente viaggiare in quella direzione. Ogni volta che vi imbattete in un'isola più grande, esploratela ragionevolmente a fondo e usate la vostra Mappa per ricontrollare cosa c'è. Una volta che hai escluso l'isola, continua ad andare nella direzione originale fino alla prossima grande isola e ripeti."
+				""
+				"O semplicemente affidati alla fortuna o ai tuoi metodi come meglio credi!"
+			]
+			dependencies: ["34A91AA5B35BB04F"]
+			id: "401EF8BE41DA9BCC"
+			tasks: [{
+				id: "177F64B42D835560"
+				type: "advancement"
+				advancement: "minecraft:end/find_end_city"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Eumus per fare un pò di charcoal!"
+			x: 10.0d
+			y: 10.0d
+			description: [
+				"Fai una Fornace Eumus da 8 blocchi Eumus. Poi fondere alcuni Poise Stems per ottenere un po' di charcoal"
+				""
+				"Se non hai con te un crafting table, ricorda che i Poise Stems sono fondamentalmente come tronchi di legno..."
+			]
+			dependencies: ["39692BF31EB233EB"]
+			id: "417CCFCAE6CD9709"
+			tasks: [{
+				id: "1ED2E388EBC30AAB"
+				type: "item"
+				item: "cuboidmod:eumus_furnace"
+			}]
+		}
+		{
+			title: "I mattoni di Bricks Eumus fanno,"
+			x: 10.0d
+			y: 14.0d
+			subtitle: "Yoda"
+			description: ["Eumus Brick: 4 possono essere combinati in Eumus Bricks."]
+			dependencies: ["54256DDD256A563F"]
+			id: "2B17831054FE4A8B"
+			tasks: [{
+				id: "479D47E49DB86E83"
+				type: "item"
+				item: "endergetic:eumus_bricks"
+			}]
+		}
+		{
+			title: "Smettila di shulkare e pensa a pensieri felici!"
+			x: 14.0d
+			y: 4.0d
+			description: [
+				"Le End Citie sono sorvegliate dagli Shulker. Sono una specie di vongole corazzate che si teletrasportano."
+				""
+				"Mentre sono nel loro guscio, subiscono molti meno danni. Quando il loro guscio è aperto, sparano palle di sputo a bersaglio automatico che, se colpiscono, non solo fanno una quantità considerevole di danni, ma ti fanno levitare per alcuni secondi. Davvero, davvero, davvero fastidiosi."
+				""
+				"Gli shulker hanno anche un ulteriore meccanismo difensivo: a volte possono teletrasportarsi via dopo essere stati colpiti. In genere si teletrasportano solo a una manciata di blocchi di distanza (a distanza di sputo, per così dire)."
+				""
+				"Uccidere uno Shulker a volte gli farà cadere un guscio Shulker."
+			]
+			dependencies: ["34C57639DE500A70"]
+			id: "73FC438AAD3C06DC"
+			tasks: [{
+				id: "24EBB87F5D724589"
+				type: "item"
+				item: "minecraft:shulker_shell"
+			}]
+			rewards: [{
+				id: "5928160D66EEFF64"
+				type: "item"
+				item: "minecraft:shulker_shell"
+			}]
+		}
+		{
+			title: "Casse indimenticabili"
+			x: 15.0d
+			y: 3.0d
+			description: [
+				"Quando due Shulker Shells sono combinati con un chest, il risultato è una Shulker Box."
+				""
+				"Le Shulker Box sono essenzialmente come le chest, tranne che hanno un bell'aspetto quando si aprono e si chiudono, e \"ricordano\" il loro contenuto invece di spargerlo per terra quando la Shulker Box viene raccolta, rendendola un modo pratico per portare in giro un sacco di roba con te."
+				""
+				"Se siete a corto di spazio nell'inventario, abbattere un slimy tree o mettere le mani su alcuni Poise Stems e fare un chest da combinare con un paio di Shulker Shells può salvarvi dal bisogno di sbarazzarvi di roba a metà avventura."
+			]
+			dependencies: ["7DFC01B9EC1CF045"]
+			optional: true
+			id: "745771EFC142671B"
+			tasks: [{
+				id: "0E5BD440FAF65120"
+				type: "item"
+				item: "minecraft:shulker_box"
+			}]
+		}
+		{
+			title: "Wings and things"
+			x: 16.0d
+			y: 4.0d
+			description: [
+				"Non sono del tutto sicuro di come si pronuncia, ma so come si scrive, quindi grazie al cielo stiamo comunicando via SMS!"
+				""
+				"Comunque... L'Elytra può essere equipaggiato al posto della corazza e ti dà essenzialmente delle ali che puoi usare per planare. Ottenere un \"ascensore\" è un po' più complicato."
+				""
+				"Forse sarai in grado di capirlo in un secondo momento, prendi sicuramente un Elytra se puoi!"
+				""
+				"L'Elytra di solito si trova all'interno di una End Ship in un Item Frame, basta colpire l'item frame per liberarlo."
+			]
+			dependencies: ["7DFC01B9EC1CF045"]
+			id: "397A7989EA1FBDED"
+			tasks: [{
+				id: "4EBF46138C2CBF6F"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "La testa del drago"
+			x: 15.0d
+			y: 5.0d
+			description: [
+				"End Ships usually have a Dragon Head decorating their prow."
+				""
+				"If you fancy grabbing one, that's where to get it - just be careful not to drop it into the void!"
+				""
+				"If you didn't already know, you can \"animate\" the Dragon Head by placing it down in the world and applying a redstone signal to it."
+			]
+			dependencies: ["7DFC01B9EC1CF045"]
+			optional: true
+			id: "5B6C0C5537AC92C1"
+			tasks: [{
+				id: "1D0DFD89E18A1D0A"
+				type: "item"
+				item: "minecraft:dragon_head"
+			}]
+		}
+		{
+			title: "Puff Bug Hives"
+			x: 5.0d
+			y: 12.0d
+			description: [
+				"If you try and get a puff bug hive in the wild, it's most likely going to end up with the Puff Bugs around it attacking you relentlessly and, unless you've got a special implement with the silkiest of touches, it'll probably just break."
+				""
+				"The alternative (and less confrontational way) of getting your hands on a Puff Bug Hive is to ask nicely."
+				""
+				"This is done by waiting near a closed Bolloom Bud and waiting for a Puff Bug to come along and pollinate it. After pollination, the Puff Bug will look slightly different. If you feed the Puff Bug a Tall Poise Bush while in this state, it will kindly produce a Puff Bug Hive for you and drop it for you to collect."
+			]
+			dependencies: ["0EDF1010C2446014"]
+			id: "2592B3E57947BEF4"
+			tasks: [{
+				id: "7A445AA87B8EA6BC"
+				type: "item"
+				item: "endergetic:puffbug_hive"
+			}]
+		}
+		{
+			title: "The Seed Stock"
+			x: 5.0d
+			y: 13.5d
+			description: [
+				"So now you have a hive, know how to get more Bolloom Buds and Puff Bugs, but how do you get the first Puff Bug moved over to where you want to set up your farm?"
+				""
+				"Simple - use a bottle to capture a Puff Bug and take it with you! You'll obviously need a few, plus some Tall Poise Bush for breeding purposes."
+			]
+			dependencies: ["508AC51E5CFEDAE6"]
+			id: "6CA9EE0A4BF9B762"
+			tasks: [{
+				id: "7893D54A187490CB"
+				type: "item"
+				item: "endergetic:puffbug_bottle"
+			}]
+		}
+		{
+			title: "Useless Portals and Stuff"
+			disable_toast: true
+			x: 8.0d
+			y: 2.0d
+			description: [
+				"You will probably come across some useless broken portals, end ship wrecks, and even things like Outposts, Temples, and more."
+				""
+				"If you are feeling very adventurous (and have a decent method of getting around), you could even see if you can find an End Stronghold by the usual means - throwing an Eye of Ender and seeing which direction you need to travel in. Yes - there are actually End Strongholds, but be ready for a long trip - they're typically 10,000 blocks or more from the Dragon Island."
+				""
+				"&aTo complete this task, just visit one of those broken portals that look a bit like a Nether portal.&f"
+			]
+			dependencies: ["34A91AA5B35BB04F"]
+			optional: true
+			id: "116048F22955ED61"
+			tasks: [{
+				id: "23D0037FE161C878"
+				type: "advancement"
+				advancement: "repurposed_structures:ruined_portal_end"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "64F3E1EC3BEE3FDB"
+				type: "item"
+				item: "waystones:waystone"
+			}]
+		}
+	]
+}

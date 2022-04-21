@@ -1,0 +1,407 @@
+{
+	id: "224354F4BDF62683"
+	group: "53EA7D6C6A1B0F69"
+	order_index: 5
+	filename: "exploring_the_nether_regions"
+	title: "Esplorare il Nether"
+	icon: "exnihilosequentia:crushed_netherrack"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Esplorare il Nether"
+			x: -1.0d
+			y: 2.0d
+			shape: "gear"
+			description: ["Ora che sei riuscito a visitare l'End e sei sopravvissuto per raccontarlo, avrai bisogno di alcuni dei materiali che hai raccolto finora per esplorare la prossima dimensione. Questa volta, è il luogo da cui la Divisione Scientifica crede che provengano i Mobs."]
+			id: "2280A6EEC1BFDEDD"
+			tasks: [
+				{
+					id: "598A8BA555915DF1"
+					type: "item"
+					item: "rftoolsbase:dimensionalshard"
+				}
+				{
+					id: "50FDF0F8AA087D2F"
+					type: "item"
+					item: "minecraft:nether_bricks"
+				}
+				{
+					id: "21E3DEA97509F418"
+					type: "item"
+					item: "powah:crystal_niotic"
+				}
+				{
+					id: "5C575C37D9D2698D"
+					type: "item"
+					item: "endergetic:boof_block"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 4.0d
+			shape: "square"
+			description: [
+				"Avrete bisogno di una nuova chiave per il Cryogenic Dimensional Teleporter per poter accedere alla prossima dimensione. La Divisione Scientifica ha assicurato che energizzando alcuni Nether Bricks si sintonizzerà il CDT per consentire un passaggio sicuro."
+				""
+				"Speriamo che funzioni, ma non ci soffermiamo su questo adesso... vai avanti e prepara i mattoni del Nether Bricks energizzati e vediamo, va bene?"
+			]
+			dependencies: ["2280A6EEC1BFDEDD"]
+			id: "46821A52352BBC8F"
+			tasks: [{
+				id: "08117E8BF30437D8"
+				type: "item"
+				item: "cuboidmod:energized_nether_bricks"
+			}]
+			rewards: [{
+				id: "672DC08DB4F9A8FB"
+				type: "gamestage"
+				title: "Andiamo!"
+				icon: "storagedrawers:shroud_key"
+				auto: "disabled"
+				stage: "nether_access"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.0d
+			shape: "square"
+			description: [
+				"Come per l'esplorazione della dimensione dell'End, è una buona idea andare preparati."
+				""
+				"Assicuratevi di avere un modo per volare (e che il vostro jetpack sia sufficientemente carico!), di avere un posto dove riporre le cose, di avere qualche arma e armatura, e qualche pietra di via per rendere l'andata e il ritorno un po' più facile se mai doveste tornare!"
+				""
+				"p.s. Uno dei nostri più smanettoni, voglio dire devoti! sembra pensare che la dimensione del \"Nether\" possa essere un piano di esistenza infernale da quello che prima era percepito solo come mitologia. A quanto pare, almeno per quanto riguarda le storie, ci potrebbero essere alcuni abitanti che amano il Gold, e disprezzano chiunque non indossi qualcosa con un po' di bling. D'altronde, questo è solo quello che dice Ashrem, quindi vi lasciamo a farvi un'idea da soli su questo."
+			]
+			dependencies: ["46821A52352BBC8F"]
+			id: "248E373FA159A972"
+			tasks: [{
+				id: "62434700F775BD85"
+				type: "dimension"
+				title: "Entrare nel Nether"
+				dimension: "minecraft:the_nether"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 10.0d
+			description: [
+				"Probabilmente avete già incontrato un Blaze. Si scopre che provengono dal Nether."
+				""
+				"Si trovano più spesso nelle vicinanze delle fortezze del Nether, e spesso sembrano nascere da dispositivi di spawner."
+			]
+			dependencies: ["42F7BB732588FE2B"]
+			id: "1E782624571D6928"
+			tasks: [{
+				id: "68F7AB3C0286EEFA"
+				type: "advancement"
+				advancement: "minecraft:nether/obtain_blaze_rod"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Un po' come Conan senza la carne..."
+			x: -2.0d
+			y: 10.0d
+			description: ["Una volta che hai trovato una Fortezza del Nether, fai attenzione. Secondo il mito, ci sono delle creature non morte alte e aggressive chiamate Wither Skeletons che le pattugliano. Anche un solo tocco può portare a una morte rapida se non sei preparato."]
+			dependencies: ["42F7BB732588FE2B"]
+			id: "2CCD8D8A135B4012"
+			tasks: [{
+				id: "55930FCDE6793F9D"
+				type: "advancement"
+				advancement: "minecraft:nether/get_wither_skull"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Individuare una fortezza del Nether"
+			x: -1.0d
+			y: 8.0d
+			description: [
+				"Se sei abbastanza fortunato, la tua mappa, così gentilmente fornita dalla Cuboid Corp (tm), ti mostrerà una o due strutture vicine."
+				""
+				"La nostra matrice di intelligenza artificiale terziaria, il Digital Extraneous Literary Forensicist (D.E.L.F.), ha previsto che ci dovrebbero essere grandi strutture simili a fortezze da trovare nella dimensione Nether."
+				""
+				"Quando si tratta di medicina legale letteraria (come cercare di capire i testi mitologici che Ashrem ha fornito e che hanno spinto il resto della Divisione Scientifica a condurvi qui), tendiamo a fidarci di ciò che pensa D.E.L.F... quindi andate a cercarne una! Secondo la D.E.L.F., c'è una probabilità del 99,97% che esistano davvero!"
+				""
+				"... anche se una volta ha predetto l'esistenza degli unicorni con un livello di certezza simile, e ha cercato di ingannarci tutti attaccando una carota sulla fronte di un asino."
+			]
+			dependencies: ["248E373FA159A972"]
+			id: "42F7BB732588FE2B"
+			tasks: [{
+				id: "10EF5F1603135887"
+				type: "advancement"
+				advancement: "minecraft:nether/find_fortress"
+				criterion: ""
+			}]
+		}
+		{
+			x: -3.0d
+			y: 11.5d
+			description: [
+				"I Wither Skeletons sono costituiti da ossa ricoperte da un brutto tessuto necrotico nero."
+				""
+				"Tuttavia, un campione andrebbe bene, quindi assicurati di raccoglierne un po'."
+			]
+			dependencies: ["2CCD8D8A135B4012"]
+			id: "5228AC6AE66600A9"
+			tasks: [{
+				id: "7F1ABEC7A490B886"
+				type: "item"
+				item: "tconstruct:necrotic_bone"
+			}]
+		}
+		{
+			title: "Teschi scuri come la notte"
+			x: -1.0d
+			y: 11.5d
+			description: [
+				"Un'altra cosa che gli Wither Skeletons hanno, di cui avrai bisogno, è un teschio. Sfortunatamente, tendono ad essere attaccati agli Wither Skeleton, quindi dovrai cercare di risolvere questo piccolo problema."
+				""
+				"Secondo la mitologia, ne avrete bisogno di 3 per evocare un'entità più potente, che a sua volta vi darà accesso a un altro ingrediente vitale."
+				""
+				"Avrete anche bisogno di un bel po' di questi, quindi potrebbe effettivamente valere la pena di provare a catturare uno Wither Skeleton in uno strumento di imprigionamento della folla e poi mettersi a duplicarli in modo controllato alla base. In alternativa, puoi correre / volare in giro vedendo quanti teschi puoi raccogliere e sperare che siano sufficienti."
+			]
+			dependencies: ["2CCD8D8A135B4012"]
+			id: "201E274E8AF73865"
+			tasks: [{
+				id: "6D8923FBDC026412"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+				count: 3L
+			}]
+			rewards: [{
+				id: "1DF1D59D6DE8C13D"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+				count: 3
+				random_bonus: 6
+			}]
+		}
+		{
+			x: 1.0d
+			y: 11.5d
+			description: ["Distruggi alcuni Blaze e raccogli alcune blaze rods."]
+			dependencies: ["1E782624571D6928"]
+			id: "14DD4220E654B1A5"
+			tasks: [{
+				id: "117DC9F090335B5A"
+				type: "item"
+				item: "minecraft:blaze_rod"
+			}]
+			rewards: [{
+				id: "2ABED4487128C00B"
+				type: "item"
+				item: "minecraft:blaze_rod"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Isole Icky"
+			x: 1.0d
+			y: 6.0d
+			description: ["Sembra che ci siano alcune strane isole che galleggiano nel mare di lava. Per favore, esplorane qualcuna così possiamo determinare se c'è qualcosa di utile su di esse."]
+			dependencies: ["248E373FA159A972"]
+			id: "244ED9B4D1CBE9AC"
+			tasks: [{
+				id: "5C6BD88342B2E516"
+				type: "advancement"
+				advancement: "tconstruct:world/blood_island"
+				criterion: ""
+			}]
+		}
+		{
+			x: 2.5d
+			y: 6.0d
+			description: [
+				"Solo perché sembra un fungo non significa che dovresti mangiarlo."
+				""
+				"Nel caso del Bloodshroom, sembra che contenga molto, beh, sangue. Potrebbe valere la pena portarne a casa qualcuno e provare a coltivarlo in un botany pot."
+			]
+			dependencies: ["244ED9B4D1CBE9AC"]
+			id: "047B6EBAE1807B03"
+			tasks: [{
+				id: "4A86899259AAC5F4"
+				type: "item"
+				item: "tconstruct:blood_slime_sapling"
+				count: 4L
+			}]
+		}
+		{
+			x: 2.0d
+			y: 5.0d
+			description: ["Prendi un campione della terra che compone l'isola. Potrebbe rivelarsi utile in termini di terreno nei botany pots, tentando di far crescere i bloodshroom nella nostra dimensione, o anche solo setacciandolo per vedere cosa otteniamo."]
+			dependencies: ["244ED9B4D1CBE9AC"]
+			id: "3ACD607AE2660F6E"
+			tasks: [{
+				id: "0AB7BCC0128822A2"
+				type: "item"
+				item: "tconstruct:ichor_slime_dirt"
+				count: 8L
+			}]
+		}
+		{
+			x: 2.0d
+			y: 7.0d
+			description: ["Il gambo della grande pianta del bloodshroom è essenzialmente come il legno macchiato di sangue, di un bel colore rosso vibrante. Portatene un po' a casa per aggiungere un po' di colore qua e là."]
+			dependencies: ["244ED9B4D1CBE9AC"]
+			id: "2776F79EABC10B36"
+			tasks: [{
+				id: "61260AE125A05266"
+				type: "item"
+				item: "tconstruct:bloodshroom_log"
+				count: 4L
+			}]
+		}
+		{
+			title: "Esplorare un bastione"
+			x: -3.0d
+			y: 6.0d
+			description: [
+				"Crediamo che in questa dimensione ci possano essere grandi strutture chiamate Bastion. Dovrebbero essere in gran parte costruiti con una pietra nera."
+				""
+				"Potrebbe valere la pena di esplorarne uno o due."
+			]
+			dependencies: ["248E373FA159A972"]
+			optional: true
+			id: "52B9B245AEAB386B"
+			tasks: [{
+				id: "026869BFC0248580"
+				type: "advancement"
+				advancement: "minecraft:nether/find_bastion"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Grida spettrali!"
+			x: -3.0d
+			y: 8.0d
+			subtitle: "Abbastanza per farti impazzire!"
+			description: [
+				"Quei grandi mob bianchi fluttuanti sono piuttosto orribili. Il fatto che continuino a sputarti addosso palle di fuoco non li rende esattamente più simpatici!"
+				""
+				"Perché non vedere se puoi colpire una di quelle palle di fuoco e dargli un assaggio della sua stessa medicina!"
+			]
+			dependencies: ["248E373FA159A972"]
+			optional: true
+			id: "793BD41368775901"
+			tasks: [{
+				id: "08ED9E2374B6AB91"
+				type: "advancement"
+				advancement: "minecraft:nether/return_to_sender"
+				criterion: ""
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.5d
+			description: ["Quella che sembra, a prima vista, dell'acqua sporca, in realtà sembra essere Magma Cream liquida. Prendete un secchio di questa roba!"]
+			dependencies: ["244ED9B4D1CBE9AC"]
+			id: "688ED713E6A8695F"
+			tasks: [{
+				id: "56A91D70C1CBBCA4"
+				type: "item"
+				item: "tconstruct:magma_bucket"
+			}]
+		}
+		{
+			title: "Blubber a stelle e strisce"
+			x: -1.0d
+			y: 14.5d
+			shape: "gear"
+			description: [
+				"Uccidere un Wither li fa collassare su se stessi e formare quella che noi chiamiamo Nether Star. Questo sarà un ingrediente importante per alcune delle lavorazioni avanzate che abbiamo davanti a noi, quindi ne avrete bisogno."
+				""
+				"Fortunatamente, sembra che ci sia abbastanza energia di riserva in questa guida di sopravvivenza digitale per eseguire alcune repliche al vostro primo successo, quindi sarete ricompensati per i vostri sforzi questa prima volta."
+				""
+				"Buona fortuna!"
+			]
+			dependencies: ["3C37857BCEA55086"]
+			size: 1.5d
+			id: "7D30BCCFA1ACF48B"
+			tasks: [{
+				id: "116D7BB3AEA275A0"
+				type: "item"
+				item: "minecraft:nether_star"
+			}]
+			rewards: [{
+				id: "19D4CD775F57156D"
+				type: "item"
+				item: "minecraft:nether_star"
+				random_bonus: 1
+			}]
+		}
+		{
+			title: "Prenditi il tuo tempo!"
+			x: 1.0d
+			y: 8.0d
+			subtitle: "C'è molto da esplorare"
+			description: [
+				"Sembra che il Nether non sia così noioso e vuoto come ci si aspetterebbe per un posto che dovrebbe essere simile agli inferi!"
+				""
+				"Prenditi un po' di tempo per esplorare ancora un po', quando avrai fatto abbastanza esplorazione visitando tutti i biomi di questa dimensione (in nome della Scienza, naturalmente), allora saremo in grado di fornirti un segno speciale del nostro apprezzamento."
+			]
+			dependencies: ["248E373FA159A972"]
+			optional: true
+			id: "68E5299643C9D8E3"
+			tasks: [{
+				id: "773788BEB5397CA1"
+				type: "advancement"
+				advancement: "minecraft:nether/explore_nether"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "13B7E2E58AF24D9A"
+				type: "choice"
+				table_id: 2037880618578575318L
+			}]
+		}
+		{
+			title: "Heathcliff!"
+			x: -2.0d
+			y: 13.0d
+			description: [
+				"Questa è, forse, la cosa più impegnativa che ti chiederemo di fare. Per ora."
+				""
+				"È il momento di provare a evocare un Wither. Si tratta di un pezzo abbastanza brutto, quindi varrà la pena prendere tutte le precauzioni sensate che vi vengono in mente. Per esempio, assicuratevi che il vostro jetpack sia carico, abbiate buone armi e armature, abbiate una buona scorta di cibo e vedete se c'è un modo per \"formaggiarlo\"."
+				""
+				"Potresti voler evitare di evocare una di queste cose troppo vicino a qualcosa che ti piace, la tua base per esempio."
+				""
+				"Per evocare un Wither, usa 4 blocchi di Soul Sand posizionati a forma di T, e poi posiziona 3 Wither Skeleton Skulls in cima alla T. Non appena posizionerai il terzo, prevediamo che il Wither apparirà immediatamente."
+				""
+				"Potreste voler stare indietro inizialmente perché i testi antichi suggeriscono che possono fare un'entrata un po' esplosiva quando vengono evocati."
+			]
+			dependencies: ["201E274E8AF73865"]
+			id: "3C37857BCEA55086"
+			tasks: [{
+				id: "0991948E533FD474"
+				type: "advancement"
+				advancement: "minecraft:nether/summon_wither"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Ottenere una Blaze Lantern"
+			x: -3.0d
+			y: 4.0d
+			shape: "gear"
+			description: [
+				"Uno degli ingredienti chiave di cui avrai bisogno dal Nether è una Blaze Lantern."
+				""
+				"Potete trovarle in alte guglie negli oceani di lava, e sono tipicamente protette dal loro omonimo."
+				""
+				"In alternativa, è possibile farne una da Blaze Rods, Blaze Powder, e la variante nether di Dimensional Share Ore (è necessario utilizzare un piccone con Silk Touch o un Tinkers Tool con l'abilità Silky su di esso per raccogliere un blocco piuttosto che solo i frammenti)"
+			]
+			dependencies: ["248E373FA159A972"]
+			size: 1.5d
+			id: "036A00C69FE8FD59"
+			tasks: [{
+				id: "5EE34EC0795F7010"
+				type: "item"
+				item: "quark:blaze_lantern"
+			}]
+		}
+	]
+}

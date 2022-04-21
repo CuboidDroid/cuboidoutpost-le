@@ -1,0 +1,357 @@
+{
+	id: "61FBF00D10609D4B"
+	group: "6E3D5CD175F7344D"
+	order_index: 4
+	filename: "meeting_the_underlings"
+	title: "Meeting the Udders"
+	icon: "minecraft:milk_bucket"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Meeting the Udders"
+			x: -8.5d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"A questo punto hai imparato il metodo totalmente scientifico di creare Spawn Eggs. Ci sono alcune altre creature che puoi riportare in vita in questa fase. Solo un'altra richiede una pozza di Witchwater, una richiede Sea Water, e il resto può usare alcuni dei frutti del nostro lavoro finora, il Milk, mescolato con Salt, per Lactic Acid."
+				""
+				"Nota che &anon sei obbligato a fare nessuna di queste&f spawn eggs per ottenere una sufficiente biodiversità, ma più sono meglio è, giusto? Se vuoi davvero la perfezione, sentiti libero di farle tutte! Se ne fai &aalmeno 5&f, abbiamo un bel bonus per te!"
+			]
+			dependencies: ["4D0F1810876E3DF6"]
+			id: "659F614DFFD07509"
+			tasks: [{
+				id: "5BAC0B30D6879F66"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Tutti i gatti sono comunisti"
+			x: -9.0d
+			y: 4.5d
+			subtitle: "Vogliono cibo gratis e continuano a parlare di Mao"
+			description: [
+				"Per fare un Furbaby (aka Cat) Spawn Egg, gettare questi in una pozza di Lactic Acid:"
+				"- Egg"
+				"- Primordial Gloop"
+				"- Raw Cod"
+				"- String"
+				""
+				"I gatti indomiti attaccano i conigli e le tartarughe piccole."
+				""
+				"Creepers e Phantoms evitano i gatti."
+				""
+				"Puoi addomesticare i gatti con Raw Cod o Raw Salmon."
+				""
+				"I gatti addomesticati possono essere allevati alimentando due di loro con Raw Cod o Raw Salmon, almeno un gatto non deve essere seduto affinché l'allevamento abbia successo."
+			]
+			dependencies: ["1344D5915E1DA763"]
+			id: "3EE876B0F4B1EE73"
+			tasks: [{
+				id: "5871FB7B049D1266"
+				type: "item"
+				item: "minecraft:cat_spawn_egg"
+			}]
+		}
+		{
+			title: "Puppy Love"
+			x: -10.0d
+			y: 4.0d
+			description: [
+				"Per fare una Wolf Spawn Egg, mettere giù una pozza di Lactic Acid e buttate dentro:"
+				"- Egg"
+				"- Primordial Gloop"
+				"- Steak"
+				"- Bone"
+				""
+				"A meno che non siano addomesticati, i Wolves potrebbero attaccare il tuo altro bestiame, in particolare le Sheep, quindi fai attenzione."
+				""
+				"Per addomesticare un Wolf, dagli da mangiare delle bone."
+				""
+				"I Wolf addomesticati mangiano la maggior parte della carne e non si avvelenano, il che significa che anche la Rotten Flesh, Raw Chicken e Pufferfish sono cibo adatto per loro."
+			]
+			dependencies: ["1344D5915E1DA763"]
+			id: "14BC194EDD82CE40"
+			tasks: [{
+				id: "5C22C008465EAA25"
+				type: "item"
+				item: "minecraft:wolf_spawn_egg"
+			}]
+		}
+		{
+			title: "Orsi bipolari"
+			x: -12.0d
+			y: 3.0d
+			subtitle: "(Si trovano sia al Polo Nord che al Polo Sud)"
+			description: [
+				"Fare un Polar Bear Spawn Egg è semplice come qualsiasi altro, basta buttare questi ingredienti in una pozza di Lactic Acid:"
+				"- Egg"
+				"- Primordial Gloop"
+				"- Block of Snow"
+				"- Glowstone Dust"
+				""
+				"Purtroppo i Polar Bears generati in questo modo sono sterili e non possono essere allevati."
+				""
+				"p.s. A loro non piacciono proprio le Foxes."
+			]
+			dependencies: ["1344D5915E1DA763"]
+			id: "1B0AF4CD426B9993"
+			tasks: [{
+				id: "5F8F391677AB8545"
+				type: "item"
+				item: "minecraft:polar_bear_spawn_egg"
+			}]
+		}
+		{
+			title: "Attenzione ai baci dei lama!"
+			x: -8.0d
+			y: 4.5d
+			subtitle: "Sono le labbra di alpaca!"
+			description: [
+				"Fare un Llama Spawn Egg, è semplice come qualsiasi altro, basta buttare questi ingredienti in una pozza di Lactic Acid:"
+				"- Egg"
+				"- Primordial Gloop"
+				"- A Lead (not the metal!)"
+				"- Albumen"
+				""
+				"Per addomesticare un Llama, dovrai addestrarlo proprio come un Horse, saltandoci sopra ripetutamente finché non impara ad amarti."
+				""
+				"Per allevare i lama, dovrai dare da mangiare hay bales a due lama addomesticati."
+				""
+				"I lama addomesticati possono essere equipaggiati con una chest e spostati usando un Lead."
+			]
+			dependencies: ["1344D5915E1DA763"]
+			id: "7574BCAE208819BB"
+			tasks: [{
+				id: "2EE8051F080AD047"
+				type: "item"
+				item: "minecraft:llama_spawn_egg"
+			}]
+		}
+		{
+			title: "Qualcuno vuole una Omelette di Mooshroom?"
+			x: -5.0d
+			y: 3.0d
+			description: [
+				"Un Mooshroom Spawn Egg si ottiene facendo cadere i seguenti elementi in una pozza di Lactic Acid:"
+				"- Egg"
+				"- Primordial Gloop"
+				"- Red Mushroom"
+				"- Brown Mushroom"
+				""
+				"Togliere un fungo Mooshroom con il growing che crescono su di esso trasformerà irreversibilmente una mucca normale in una Mooshroom e lascerà cadere dei funghi."
+				""
+				"Un Red Mooshroom colpito da un fulmine diventerà un Brown Mooshroom e viceversa."
+				""
+				"Usando un secchio su un Mooshroom si ottiene il Latte. Usando una ciotola su un fungo si ottiene il Mushroom Stew. Se si usa un fiore su un Mooshroom prima, e poi una ciotola, il risultato potrebbe essere uno Suspicious Stew, che può avere effetti diversi a seconda del tipo di fiore usato."
+				""
+				"I Mooshrooms, come le Mucche, possono essere allevati usando il grano."
+				""
+				"Suggerimento: Ancient Spores in un barrel di Witch Water vi darà un blocco di brown mushroom."
+			]
+			dependencies: ["1344D5915E1DA763"]
+			id: "3EA0212C7626E6F0"
+			tasks: [{
+				id: "0540BEA4C380441C"
+				type: "item"
+				item: "minecraft:mooshroom_spawn_egg"
+			}]
+		}
+		{
+			title: "Mulder, non Scully"
+			x: -7.0d
+			y: 4.0d
+			description: [
+				"Per creare una Fox Spawn Egg non potrebbe essere più facile! Beh, forse potrebbe, ma tuttavia, avete solo bisogno di una pozza di Lactic Acid e di buttare dentro:"
+				"- Egg"
+				"- Primordial Gloop"
+				"- Sweet Berries"
+				"- Raw Chicken"
+				""
+				"Le Untamed Red Foxes attaccano polli, conigli e tartarughe. Le Untamed White Foxes attaccheranno merluzzi, salmoni e pesci tropicali."
+				""
+				"Addomesticare una Fox è difficile, è necessario nutrire due Fox adulte non addomesticate con delle  Sweet Berries. Il loro kit (cucciolo di fox) sarà addomesticato, anche se, mentre è ancora giovane, seguirà le fox adulte piuttosto che voi."
+			]
+			dependencies: ["1344D5915E1DA763"]
+			id: "59F7D370A16D9482"
+			tasks: [{
+				id: "03D0E0B46469C908"
+				type: "item"
+				item: "minecraft:fox_spawn_egg"
+			}]
+		}
+		{
+			title: "Polly vuole un cracker..."
+			x: -13.0d
+			y: 2.5d
+			subtitle: "... e per \"Cracker\" intendo \"Seeds\"."
+			description: [
+				"Per creare un Parrot Spawn Egg, gettare questi in una pozza di Witchwater:"
+				"- Egg"
+				"- Primordial Gloop"
+				"- Feather"
+				"- Blue Dye"
+				""
+				"Parrots possono essere addomesticati nutrendoli con:"
+				"- Wheat Seeds"
+				"- Pumpkin Seeds"
+				"- Melon Seeds"
+				"- Beetroot Seeds"
+				""
+				"Sfortunatamente, i Parrot fatto in questo modo è sterile e non può essere allevato. Mi dispiace."
+			]
+			dependencies: ["37D3AECE9A71E07F"]
+			id: "7D5DF86B464F2092"
+			tasks: [{
+				id: "22395EE02EF6524D"
+				type: "item"
+				item: "minecraft:parrot_spawn_egg"
+			}]
+		}
+		{
+			title: "Chi ha incastrato Roger?"
+			x: -6.0d
+			y: 3.5d
+			description: [
+				"Per creare un Rabbit Spawn Egg, gettare questi in una pozza di Lactic Acid:"
+				"- Egg"
+				"- Primordial Gloop"
+				"- Carrot"
+				"- Golden Carrot"
+				""
+				"Rabbits possono essere allevati con Carrots, Golden Carrots oo Dandelions"
+				""
+				"Rabbits sarà attaccato da un indomito Wolves, Foxes e Cats."
+			]
+			dependencies: ["1344D5915E1DA763"]
+			id: "4A42D7760E366ACD"
+			tasks: [{
+				id: "60CFED22F131AA87"
+				type: "item"
+				item: "minecraft:rabbit_spawn_egg"
+			}]
+		}
+		{
+			title: "TMNT meno il \"Ninja\""
+			x: -4.0d
+			y: 2.5d
+			description: [
+				"Per creare un Turtle Spawn Egg, gettare quanto segue in una pozza di Sea Water:"
+				"- Egg"
+				"- Primordial Gloop"
+				"- Kelp"
+				"- Sea Grass"
+				""
+				"Si può fare la Sea Water mettendo un Wood Barrel sopra la Sand e riempiendolo di Water."
+				""
+				"Le Turtles mangiano e possono essere allevate con la Sea Grass. Dovresti assicurarti di far nascere una Turtle su una spiaggia adatta (molta sabbia intorno ad un po' d'acqua, con una chiara vista del cielo)"
+			]
+			dependencies: ["4BB8CB60EAFE1F62"]
+			id: "4D7F418135FD9005"
+			tasks: [{
+				id: "1E8AE18C7A9C3A1E"
+				type: "item"
+				item: "minecraft:turtle_spawn_egg"
+			}]
+		}
+		{
+			title: "Niente di negativo su questo Panda..."
+			x: -11.0d
+			y: 3.5d
+			subtitle: "Tranne che ogni selfie è sempre in bianco e nero"
+			description: [
+				"Per creare un Panda Spawn Egg, gettare questi in una pozza di Lactic Acid:"
+				"- Egg"
+				"- Primordial Gloop"
+				"- Block of Snow"
+				"- Block of Coal"
+				""
+				"I Panda mangiano Bamboo, ma non dare da mangiare a più Panda troppo vicini tra loro o si arrabbiano."
+				""
+				"Per allevare i panda, assicurati che ci sia molto bamboo in crescita intorno, e poi dai da mangiare a due panda che non siano troppo vicini tra loro."
+			]
+			dependencies: ["1344D5915E1DA763"]
+			id: "7C72EBDE2A4CEAAC"
+			tasks: [{
+				id: "08F717B877F400AC"
+				type: "item"
+				item: "minecraft:panda_spawn_egg"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 1.5d
+			dependencies: ["659F614DFFD07509"]
+			id: "37D3AECE9A71E07F"
+			tasks: [{
+				id: "65B74AB5241C0B57"
+				type: "item"
+				item: "exnihilosequentia:bucket_witchwater"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 2.0d
+			description: [
+				"Il modo per ottenere un Bucket of Lactic Acid è abbastanza semplice..."
+				""
+				"In un crafting table, crea insieme un Bucket of Milk, del Salt, e un Bucket vuoto (per mescolarlo). Otterrai il secchio vuoto che conteneva il latte e un Bucket of Lactic Acid."
+			]
+			dependencies: ["659F614DFFD07509"]
+			id: "1344D5915E1DA763"
+			tasks: [{
+				id: "1C467C1C45E1EFD8"
+				type: "item"
+				item: "kubejs:lactic_acid_bucket"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 1.5d
+			description: [
+				"Il Sea water si può ottenere mettendo un Barrel su un blocco di Sand e riempiendo il barile di Wather, l'acqua si trasformerà in sea water dopo pochi secondi."
+				""
+				"In alternativa, usando un blocco di Sand su un Barrel di Wather si consumerà la Sand, ma trasformerà immediatamente l'acqua in sea water."
+			]
+			dependencies: ["659F614DFFD07509"]
+			id: "4BB8CB60EAFE1F62"
+			tasks: [{
+				id: "1BE0F35C2E11D10E"
+				type: "item"
+				item: "exnihilosequentia:bucket_sea_water"
+			}]
+		}
+		{
+			title: "Sfide bonus"
+			x: -8.5d
+			y: 6.5d
+			shape: "gear"
+			description: ["Crea un minimo di 5 di queste spawn egg aggiuntive e il Dipartimento dei bambini pelosi e della zoologia della Cuboid Corp ha deciso di premiarti con qualcosa di veramente speciale."]
+			hide_dependency_lines: true
+			min_required_dependencies: 5
+			dependencies: [
+				"7D5DF86B464F2092"
+				"1B0AF4CD426B9993"
+				"7C72EBDE2A4CEAAC"
+				"14BC194EDD82CE40"
+				"3EE876B0F4B1EE73"
+				"7574BCAE208819BB"
+				"59F7D370A16D9482"
+				"4A42D7760E366ACD"
+				"3EA0212C7626E6F0"
+				"4D7F418135FD9005"
+			]
+			id: "51AED40724C46C09"
+			tasks: [{
+				id: "45CB64F373B4EEF0"
+				type: "checkmark"
+				title: "Rivendicare la ricompensa!"
+			}]
+			rewards: [{
+				id: "380D8B796B819611"
+				type: "random"
+				table_id: 2037880618578575318L
+			}]
+		}
+	]
+}

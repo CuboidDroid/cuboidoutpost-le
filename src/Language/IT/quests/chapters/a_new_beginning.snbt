@@ -1,0 +1,164 @@
+{
+	id: "5E2656C57DE61A5F"
+	group: "298C586EA6E5A561"
+	order_index: 1
+	filename: "a_new_beginning"
+	title: "Un nuovo inizio?"
+	icon: "minecraft:grass_block"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "La chiave di ogni cosa"
+			x: 0.0d
+			y: 5.5d
+			shape: "square"
+			description: [
+				"Ora che hai visitato (e, si spera, conquistato) l'End e il Nether, e hai messo insieme tutti i requisiti necessari, dovresti essere in grado di farti un blocco di Energized Thatlduvium."
+				""
+				"A parte l'aspetto un po' ridicolo e figo allo stesso tempo, la cosa più importante da riconoscere è che crediamo che questo blocco di materiale, se usato in un Cryogenic Dimensional Teleporter, aprirà un percorso verso un'altra nuova dimensione. Alcuni postulano che questo sia solo un bersaglio per una dimensione esistente, mentre altri (compresa la signora delle torte, Chaynne, per quanto possa valere) pensano che sarà effettivamente portato all'esistenza! In ogni caso, crediamo che questo sia qualcosa di speciale"
+				""
+				"Secondo la divisione scientifica, questa dimensione dovrebbe brulicare di vita, dovrebbe avere esseri senzienti (anche se un po' \"poco cotti\") e dovrebbe offrirvi la possibilità di avere un'esistenza abbastanza normale, anche se agricola. Visto dove siamo e cosa è successo alla vostra casa, questo deve essere un miglioramento. Giusto?"
+				""
+				"Beh, lasceremo a voi questa valutazione - questo è il massimo che possiamo fare. Da qui in poi, sei da solo... Esplora il tuo nuovo mondo, applica ciò che hai imparato finora, e cerca di non rovinare questo come noi abbiamo fatto con il nostro!"
+				""
+				"Buona fortuna e addio!"
+			]
+			dependencies: [
+				"327A619C473DC760"
+				"2B6BC28B06186D7B"
+				"34D38F5115D8D5AB"
+				"7F08B486E9150C8E"
+				"36D099113E0B2042"
+				"1CF4D6DD0070E2A6"
+				"10E3ABB4530A9F1A"
+				"248E373FA159A972"
+			]
+			id: "51C4DAB656980D21"
+			tasks: [{
+				id: "78AC14702F7E8F14"
+				type: "item"
+				item: "cuboidmod:energized_thatlduvium"
+			}]
+			rewards: [{
+				id: "4BB7F44427C78A91"
+				type: "gamestage"
+				title: "Let's go!"
+				icon: "storagedrawers:shroud_key"
+				auto: "disabled"
+				stage: "cuboid_overworld_access"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 5.0d
+			shape: "gear"
+			id: "327A619C473DC760"
+			tasks: [{
+				id: "2AB6FCBB07234906"
+				type: "item"
+				item: "cuboidmod:thatldu_block"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.0d
+			shape: "gear"
+			id: "2B6BC28B06186D7B"
+			tasks: [{
+				id: "4E02094658106539"
+				type: "item"
+				item: "appliedenergistics2:singularity"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			shape: "gear"
+			id: "34D38F5115D8D5AB"
+			tasks: [{
+				id: "37FD120055B298C1"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.5d
+			shape: "gear"
+			id: "7F08B486E9150C8E"
+			tasks: [{
+				id: "0EB4E4487E4E04BB"
+				type: "item"
+				item: "powah:capacitor_nitro"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.0d
+			shape: "gear"
+			id: "36D099113E0B2042"
+			tasks: [{
+				id: "6F8752D8D61DFDFD"
+				type: "item"
+				item: "industrialforegoing:ether_gas_bucket"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 5.0d
+			shape: "gear"
+			id: "1CF4D6DD0070E2A6"
+			tasks: [{
+				id: "007124EB02A4D758"
+				type: "item"
+				item: "quark:blaze_lantern"
+			}]
+		}
+		{
+			title: "Visita il Cuboid Overworld (tm)"
+			x: 0.0d
+			y: 7.5d
+			shape: "square"
+			dependencies: ["51C4DAB656980D21"]
+			id: "16324378203BF827"
+			tasks: [{
+				id: "22F98966F6AC219A"
+				type: "dimension"
+				title: "Visita il Cuboid Overworld (tm)"
+				dimension: "cuboidmod:cuboid_overworld"
+			}]
+		}
+		{
+			title: "Altro da esplorare..."
+			x: 0.0d
+			y: 9.5d
+			description: [
+				"Ben fatto! Hai raggiunto la fine della guida al surival! Benvenuto nella tua nuova vita!"
+				""
+				"C'è di più, però... Ci sono un mucchio di strutture aggiuntive, dungeons, villagers, pillagers e altro ancora. Sta a voi decidere se avete finito, se volete esplorare di più o se volete scavare più a fondo nei diversi strumenti e tecnologie disponibili."
+				""
+				"La vostra scelta principale, però, è questa: saccheggiare questa dimensione per il personale e i materiali per integrare la vostra base e il vostro mondo esistenti, o andare a soggiogare le masse su questa?"
+				""
+				"Qualunque cosa decidiate, grazie per aver dedicato il tempo e lo sforzo di arrivare fin qui! Speriamo che la fine dell'esistenza come la conoscevi sia stata un'esperienza gratificante."
+				""
+				"Cordiali saluti,"
+				""
+				"Cuboid Corp (tm)"
+			]
+			dependencies: ["16324378203BF827"]
+			id: "7CC0A39D2D7EE62D"
+			tasks: [{
+				id: "01C2A1EAD965AA7F"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "284B6E4AC7222E73"
+				type: "choice"
+				icon: "bountifulbaubles:horseshoe_balloon"
+				table_id: 14445345906588080L
+			}]
+		}
+	]
+}

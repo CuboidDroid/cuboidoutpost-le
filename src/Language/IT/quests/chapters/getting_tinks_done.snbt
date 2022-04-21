@@ -1,0 +1,890 @@
+{
+	id: "6B875C77BF0C8CD5"
+	group: "719DAED049159F2E"
+	order_index: 3
+	filename: "getting_tinks_done"
+	title: "Ottieni la Tinker"
+	icon: "tconstruct:smeltery_controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -5.5d
+			y: 4.5d
+			width: 3.8d
+			height: 5.75d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/seared_melter.png"
+			hover: ["Esempio di un setup di Seared Melter"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 8.5d
+			y: 3.0d
+			width: 6.75d
+			height: 5.4d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/basic_smeltery.png"
+			hover: ["Esempio di una Smeltery 3x3x2"]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "Ottieni la Tinker"
+			x: -10.5d
+			y: 0.5d
+			shape: "gear"
+			description: ["È ora di iniziare dalla tinker e a fare alcune cose."]
+			dependencies: ["11F9CF9280A7259D"]
+			id: "0BA4183E9254B2AD"
+			tasks: [{
+				id: "56218806F1A5FC3D"
+				type: "checkmark"
+				title: "Ottieni la Tinker"
+			}]
+		}
+		{
+			title: "È per il bene di Grouter"
+			x: -8.5d
+			y: 0.5d
+			shape: "square"
+			description: [
+				"Grout. Non il tipo con cui si attaccano le piastrelle al muro - l'altro tipo."
+				""
+				"Infatti, questo tipo lo fonderemo in un mucchio di Seared Brick e costruiremo fusori e fonditrici con cui potremo armeggiare."
+				""
+				"Per cominciare, comporre 40 blocchi di Grout, e da lì si può partire."
+			]
+			dependencies: ["0BA4183E9254B2AD"]
+			id: "7689811B675CB663"
+			tasks: [{
+				id: "49D59D73E9165F7D"
+				type: "item"
+				item: "tconstruct:grout"
+				count: 40L
+			}]
+		}
+		{
+			title: "Mattoni leggermente troppo cotti"
+			x: -5.5d
+			y: 0.5d
+			shape: "square"
+			description: [
+				"I Seared Bricks sono fatti semplicemente fondendo la Grout. Getta i tuoi blocchi di Grout in una fornace e ognuno di essi si cuocerà in un Seared Brick."
+				""
+				"I Seared Bricks sono usati in molti dei blocchi del nostro Tinker's Melter su cui lavoreremo prossimamente."
+			]
+			dependencies: ["7689811B675CB663"]
+			id: "1F4CB5B1FA691BAC"
+			tasks: [{
+				id: "5F93AB2B1F682EC9"
+				type: "item"
+				item: "tconstruct:seared_brick"
+			}]
+		}
+		{
+			title: "Un altro Seared Brick nel muro"
+			x: 2.0d
+			y: 3.0d
+			shape: "square"
+			subtitle: "(dalla Smeltery)"
+			description: ["Con 29 blocchi di Seared Bricks, una Smeltery Controller, una Seared Fuel Tank, una Seared Chute, e una Seared Drain, Puoi creare una Smeltery a 3x3x2 (misura interna)."]
+			dependencies: ["54493C0419586822"]
+			id: "504A8DED31C4E3EC"
+			tasks: [{
+				id: "574EAA111108B2C3"
+				type: "item"
+				item: "tconstruct:seared_bricks"
+				count: 29L
+			}]
+		}
+		{
+			title: "Metallo fuso alla spina"
+			x: -2.5d
+			y: -0.5d
+			shape: "square"
+			description: [
+				"Seared Faucets può essere utilizzato attaccato al lato(i) della maggior parte dei contenitori di liquidi."
+				""
+				"Questo include lo Seared Melter, cosi come Seared Tanks e Seared Gauges."
+				""
+				"Se dotato di un segnale di redstone, lo Seared Faucet verserà automaticamente un materiale fuso quando può, o senza un segnale di redstone, può essere fatto per dispensare materiali fusi a mano."
+			]
+			dependencies: ["1F4CB5B1FA691BAC"]
+			id: "38125BFEC7884F38"
+			tasks: [{
+				id: "10994F67755FD853"
+				type: "item"
+				item: "tconstruct:seared_faucet"
+			}]
+		}
+		{
+			title: "Riscaldarlo"
+			x: -2.5d
+			y: 0.5d
+			shape: "square"
+			description: [
+				"Lo Seared Heater è posizionato sotto un Seared Melter per fornire sufficiente calore per fondere i materiali messi all'interno del melter."
+				""
+				"Lo Seared Heater consuma quasi tutte le fonti di combustibile, tra cui il coal e il wood, proprio come una furnace."
+				""
+				"Sarà anche usato in seguito per fare lo Smeltery Controller, quindi, mentre un Seared Fuel Tank pieno di lava potrebbe essere usato per alimentare la Seared Melter, vale la pena di fare uno di questi adesso a prescindere."
+			]
+			dependencies: ["1F4CB5B1FA691BAC"]
+			id: "44443475CE111148"
+			tasks: [{
+				id: "018EC9387F41B4DD"
+				type: "item"
+				item: "tconstruct:seared_heater"
+			}]
+		}
+		{
+			title: "Una Smeltery in miniatura"
+			x: -2.5d
+			y: -1.5d
+			shape: "square"
+			description: [
+				"La Seared Melter è un piccolo contenitore per fondere e tenere piccole quantità di materiali fusi."
+				""
+				"Avrà bisogno di:"
+				"  - una Seared Heater sotto"
+				""
+				"  - Seared Faucet attaccato al lato(i) del Seared Melter"
+				""
+				"  - un Casting Basin o Casting Table su cui versare il materiale fuso."
+				""
+				"Si noti che lo Seared Melter non può legare materiali fusi, lo risolveremo presto però quando ci aggiorneremo a un Smeltery."
+			]
+			dependencies: ["1F4CB5B1FA691BAC"]
+			id: "3468A1304A244F66"
+			tasks: [
+				{
+					id: "48F1BA79A6314BF5"
+					type: "item"
+					item: "tconstruct:seared_fuel_gauge"
+				}
+				{
+					id: "7DACD9AD1E7C395C"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+			]
+		}
+		{
+			title: "Nessun Cast necessario"
+			x: -2.5d
+			y: 1.5d
+			shape: "square"
+			description: ["Viene riempito mettendovi del liquido fuso e poi lasciando raffreddare il liquido fino a formare un solido. Per esempio, riempiendolo di Molten Iron e lasciandolo raffreddare si ottiene un Iron Block."]
+			dependencies: ["1F4CB5B1FA691BAC"]
+			id: "0D7C115221200F4E"
+			tasks: [{
+				id: "7B2B895E62E3418E"
+				type: "item"
+				item: "tconstruct:seared_basin"
+			}]
+		}
+		{
+			title: "Il cuore che batte"
+			x: 1.0d
+			y: 4.0d
+			shape: "square"
+			subtitle: "(per la Smeltery)"
+			description: ["Per fare una Smeltery Controller, piazza un Seared Heater nella Seared Casting Basin e inserire 4 lingotti di Molten Copper. Una volta che si raffredda, avrete un nuovo splendente Smeltery Controller."]
+			dependencies: ["54493C0419586822"]
+			id: "71C94DD1513C239E"
+			tasks: [{
+				id: "6888EAC1B4EC22C7"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
+			}]
+		}
+		{
+			title: "Creare Forme"
+			x: -2.5d
+			y: 2.5d
+			shape: "square"
+			description: [
+				"Lo Seared Casting Table può usare calchi di forme diverse per fare parti specifiche per utensili, macchinari o lingotti."
+				""
+				"L'esempio più semplice per iniziare è l'Ingot Cast, che può essere fatto in uno dei due modi."
+				""
+				"Il primo modo è attraverso un Ingot Sand Cast, che viene consumato dal processo di fusione, o attraverso un Ingot Gold Cast, che è riutilizzabile."
+			]
+			dependencies: ["1F4CB5B1FA691BAC"]
+			id: "1825174040BFD858"
+			tasks: [{
+				id: "5AB713D013461E27"
+				type: "item"
+				item: "tconstruct:seared_table"
+			}]
+		}
+		{
+			title: "Blankety Blank"
+			x: -2.0d
+			y: 3.5d
+			description: [
+				"Un blocco di sand può essere facilmente convertito in 4 Blank Sand Casts in una crafting table."
+				""
+				"L'uso tipico per il Blank Sand Cast è di metterne uno sul tavolo di colata, poi di fare il calco sagomato mettendo un elemento di modello (come un stick per un Rod Sand Cast), rimuovendo l'elemento di modello, e poi versando il materiale fuso."
+			]
+			dependencies: ["1825174040BFD858"]
+			optional: true
+			id: "1F502D916C90EBBA"
+			tasks: [{
+				id: "44535C3C32C698EC"
+				type: "item"
+				item: "tconstruct:blank_sand_cast"
+				count: 4L
+			}]
+		}
+		{
+			title: "Dentro il Chute e fuori dal Drain"
+			x: 3.0d
+			y: 2.0d
+			shape: "square"
+			description: [
+				"Lo Seared Chute può essere usato per inserire materiali nel Smeltery tramite un Hopper o altro metodo di trasporto degli articoli."
+				""
+				"The seared drain can be used to extract molten material from the Smeltery through the use of Seared Faucets, pipes, or other fluid transport method."
+			]
+			dependencies: ["54493C0419586822"]
+			dependency_requirement: "one_started"
+			id: "06701B9E3630EED8"
+			tasks: [
+				{
+					id: "0756D33C8B5EE77C"
+					type: "item"
+					item: "tconstruct:seared_drain"
+				}
+				{
+					id: "386DE7EB5D67D5D6"
+					type: "item"
+					item: "tconstruct:seared_chute"
+				}
+			]
+		}
+		{
+			title: "Un po' come la Bone China"
+			x: -6.5d
+			y: -0.5d
+			shape: "square"
+			description: [
+				"Si scopre che la Bone Meal e la Clay quando si mescolano insieme formano una specie di porcellana che è adatta, una volta cotta, a contenere liquidi estremamente caldi."
+				""
+				"Fai almeno 6 palline di Porcelain Clay e un po' di Grout, e modellale in un Unfired Crucible.
+			]
+			dependencies: ["7689811B675CB663"]
+			id: "307E3B89B44B462C"
+			tasks: [
+				{
+					id: "1A4674119DEF63F2"
+					type: "item"
+					item: "exnihilosequentia:porcelain_clay"
+					count: 6L
+				}
+				{
+					id: "068DB47D59025F1D"
+					type: "item"
+					item: "tconstruct:grout"
+				}
+				{
+					id: "6876EAA3C6D0CE1A"
+					type: "item"
+					item: "exnihilosequentia:crucible_unfired"
+				}
+			]
+		}
+		{
+			title: "Tutto pronto per l'uso"
+			x: -4.5d
+			y: -1.5d
+			shape: "square"
+			description: ["Metti l'Unfired Crucible dentro una furnace per ottenere un Fired Crucible."]
+			dependencies: ["307E3B89B44B462C"]
+			id: "3546C3F02222AD0D"
+			tasks: [{
+				id: "59E4D769813EB5C0"
+				type: "item"
+				item: "exnihilosequentia:crucible_fired"
+			}]
+		}
+		{
+			title: "Lava Palava"
+			x: -2.5d
+			y: -2.5d
+			shape: "square"
+			description: [
+				"Mettere una fonte di calore sotto il Fired Crucible e aumenterà lentamente la temperatura fino a diventare abbastanza calda da trasformare la pietra in Lava."
+				""
+				"Diversi materiali forniscono diverse quantità di roccia fusa (aka Lava). Il metodo più efficiente in questo momento è probabilmente 4 rocce, che produrranno abbastanza Lava per riempire uno standard Bucket."
+				""
+				"Per iniziare, usa una Torch sotto il crucible, controlla il JEI per metodi più efficienti verso cui puoi lavorare in seguito."
+			]
+			dependencies: ["3546C3F02222AD0D"]
+			id: "7ABCB955100B92C0"
+			tasks: [{
+				id: "2DA12207E7FA9DA5"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			title: "Grazie mille"
+			x: 4.0d
+			y: 1.0d
+			shape: "square"
+			description: [
+				"Lo Seared Fuel Tank può contenere fino a 4 secchi di Lava."
+				""
+				"Quando è posizionato come uno dei blocchi di muro di un Smeltery, fornisce calore fino a 1000 gradi, che è sufficiente per la maggior parte delle ricette, anche se alcune richiedono più calore."
+				""
+				"Per esigenze di temperatura più elevate, lo Seared Fuel Tank può anche contenere Blazing Blood, che fornirà calore fino a 1500 gradi."
+			]
+			dependencies: ["54493C0419586822"]
+			id: "46AFFB07DDB85108"
+			tasks: [{
+				id: "00EA5B814E3D4C31"
+				type: "item"
+				item: "tconstruct:seared_fuel_tank"
+			}]
+		}
+		{
+			title: "Tonetherness"
+			x: 7.0d
+			y: -5.0d
+			shape: "square"
+			description: [
+				"Usa un pezzo di Redstone nello Stone Barrel pieno di Lava e sarete in grado di creare un materiale infernale chiamato Netherrack."
+				""
+				"Vedremo più tardi i modi per farlo più rapidamente, ma per ora, dare fuoco a un blocco di Netherrack sotto un Fired Crucible ti darà una spinta di velocità decente quando si tratta di fare Lava."
+			]
+			dependencies: ["1D85898B092C9EC0"]
+			id: "79F700177E90BB51"
+			tasks: [{
+				id: "6D90414844FDED91"
+				type: "item"
+				item: "minecraft:netherrack"
+				count: 8L
+			}]
+		}
+		{
+			title: "Cobble insieme"
+			x: -0.5d
+			y: -3.5d
+			shape: "square"
+			description: [
+				"Ora che hai la lava, dovresti essere in grado di fare un Cobblestone generator mettendo l'acqua e la lava l'una vicino all'altra, basta assicurarsi che l'acqua non raggiunga il blocco di lava sorgente o si trasformerà in Obsidian."
+				""
+				"Forse il cobblestone generator più semplice da fare può essere fatto scavando una trincea 3x1, mettendo delle scale ad un'estremità (con il lato \"aperto\" rivolto verso l'estremità della trincea), poi innaffiando le scale. (Se l'acqua scorre, hai fatto qualcosa di sbagliato!) Lascia il vuoto nel mezzo, e metti un secchio di Lava all'altra estremità della trincea."
+				""
+				"Quando la lava scorre e tocca la scala impregnata d'acqua, si forma un pezzo di Cobblestone."
+			]
+			dependencies: ["7ABCB955100B92C0"]
+			id: "02B6D4809390E44E"
+			tasks: [{
+				id: "0B47650F2688464A"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 9L
+			}]
+		}
+		{
+			title: "Appianamento"
+			x: 1.5d
+			y: -4.5d
+			shape: "square"
+			description: [
+				"Prendi 9 di Cobblestone che hai fatto e mettili in una Furnace per ottenere 9 Stone."
+				""
+				"p.s. Ora che hai dei modi per mettere le mani su Stone, potresti iniziare a pensare di fare una Mob Farm, se non l'hai già fatto. C'è un capitolo nella sezione 4 chiamato \"&aIl mattatoio&f\", che ha una sottosezione per gli strumenti che potresti trovare utili per fare una Mob Farm decente."
+			]
+			dependencies: ["02B6D4809390E44E"]
+			id: "554C2B8969903BC6"
+			tasks: [{
+				id: "0F16B5080A380453"
+				type: "item"
+				item: "minecraft:stone"
+				count: 9L
+			}]
+		}
+		{
+			title: "Slab"
+			x: 3.5d
+			y: -5.5d
+			shape: "square"
+			description: ["3 Stone in una riga nella crafting table può essere diviso in 6 Stone Slabs."]
+			dependencies: ["554C2B8969903BC6"]
+			id: "6661387F6A3E1BCA"
+			tasks: [{
+				id: "6D7351AB69CCF2B9"
+				type: "item"
+				item: "minecraft:stone_slab"
+				count: 6L
+			}]
+		}
+		{
+			title: "Molti più Barrel"
+			x: 5.5d
+			y: -6.5d
+			shape: "square"
+			description: ["Ora che hai la Stone e Stone Slabs, puoi creare lo Stone Barrel. A differenza del Wood, lo Stone Barrel può contenere liquidi ad alta temperatura, compresa la Lava."]
+			dependencies: ["6661387F6A3E1BCA"]
+			id: "1D85898B092C9EC0"
+			tasks: [{
+				id: "667247C878E418E8"
+				type: "item"
+				item: "exnihilosequentia:barrel_stone"
+			}]
+		}
+		{
+			title: "Crushed Netherrack"
+			x: 7.0d
+			y: -3.5d
+			shape: "square"
+			description: ["La Crushed Netherrack può essere setacciato con una Iron Mesh o superiore."]
+			dependencies: ["79F700177E90BB51"]
+			id: "24E0AF40A7800C82"
+			tasks: [{
+				id: "6BEAA253B08B1B63"
+				type: "item"
+				item: "exnihilosequentia:crushed_netherrack"
+				count: 8L
+			}]
+		}
+		{
+			title: "Non dalla Stonehenge"
+			x: 5.5d
+			y: -5.0d
+			description: ["Usa un pezzo di Glowstone Dust su un Stone Barrel pieno di Lava e creerai la End Stone."]
+			dependencies: ["1D85898B092C9EC0"]
+			optional: true
+			id: "55130CF64C4F9EBB"
+			tasks: [{
+				id: "3560FFE36865EE7C"
+				type: "item"
+				item: "minecraft:end_stone"
+				count: 8L
+			}]
+		}
+		{
+			title: "Crushed End Stone"
+			x: 5.5d
+			y: -3.5d
+			description: ["La Crushed End Stone può essere setacciata con una Iron Mesh o superiore per darvi la possibilità di ottenere una Ender Pearl (senza bisogno di uccidere un Enderman)."]
+			dependencies: ["55130CF64C4F9EBB"]
+			optional: true
+			id: "29EB650396A8609B"
+			tasks: [{
+				id: "72D9FD24B0A83E18"
+				type: "item"
+				item: "exnihilosequentia:crushed_end_stone"
+				count: 8L
+			}]
+		}
+		{
+			title: "È uno scarto del Nether, giusto?"
+			x: 10.0d
+			y: -0.5d
+			shape: "square"
+			description: [
+				"Puoi anche ottenere Netherite Scraps dal setaccio della Crushed Netherrack, il che è un bel bonus!"
+				""
+				"Non appena avrai il tuo primo scrap o due, potresti voler controllare come fare Ancient Debris, e come potresti essere in grado di frantumarlo e arricchirlo per un metodo più affidabile per ottenere più Netherite Scraps."
+			]
+			dependencies: ["24E0AF40A7800C82"]
+			id: "2CDC1C706AFA2E47"
+			tasks: [{
+				id: "5BA1FE72963139D3"
+				type: "item"
+				item: "minecraft:netherite_scrap"
+				count: 4L
+			}]
+		}
+		{
+			title: "Gold! (Oro)"
+			x: 7.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Credi sempre nella tua anima"
+			description: ["Setacciando il Crushed Netherrack con un Iron Mesh o superiore, avrai la possibilità di ottenere chunk di Gold Ore, che possono essere combinati in un Gold Ore Chunk."]
+			dependencies: ["24E0AF40A7800C82"]
+			id: "41533B9883BC8046"
+			tasks: [{
+				id: "06EB9253FE030BFD"
+				type: "item"
+				item: "exnihilosequentia:chunk_gold"
+			}]
+		}
+		{
+			title: "Il blu quello bello"
+			x: 8.5d
+			y: -3.5d
+			description: ["Setacciando Crushed Netherrack ci sarà la possibilità di far cadere Cobalt Ore Pieces, che puoi combinare in un Cobalt Ore Chunk."]
+			dependencies: ["24E0AF40A7800C82"]
+			id: "02C565DF230C9A02"
+			tasks: [{
+				id: "7617224DF1652A7A"
+				type: "item"
+				item: "exnihilosequentia:chunk_cobalt"
+			}]
+		}
+		{
+			title: "Ma giuro che nei giorni che restano"
+			x: 7.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Cammineremo in campi d'oro"
+			description: [
+				"Fondi un pò di Gold Ingots, saranno utili per ogni genere di cose."
+				""
+				"A chi non piace anche un po' di bling?"
+				""
+				"&aSblocca: Ottenere il digitale&f"
+				"&aSblocca: Previsione industriale&f"
+				"&aSblocca: Ther-malcontent&f"
+				"&aSblocca: Reti per X-Men&f"
+			]
+			dependencies: ["41533B9883BC8046"]
+			size: 1.5d
+			id: "3B00278F3DDF103C"
+			tasks: [{
+				id: "01616EB880322908"
+				type: "item"
+				item: "minecraft:gold_ingot"
+				count: 4L
+			}]
+		}
+		{
+			title: "Netherite!"
+			x: 8.5d
+			y: -0.5d
+			description: ["Ora che avete un po' di Gold e la Netherite Scraps, puoi creare la Netherite Ingots."]
+			dependencies: [
+				"2CDC1C706AFA2E47"
+				"3B00278F3DDF103C"
+			]
+			id: "2AFD34A536E1F29A"
+			tasks: [{
+				id: "6CD1DA551BCF8758"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+		}
+		{
+			title: "I'm blue, da ba dee da ba daa"
+			x: 10.0d
+			y: -3.5d
+			subtitle: "(Da ba dee da ba daa x6)"
+			description: ["Fondi un pò di quel Cobalt (forse prima ti conviene tritarlo) e puoi crearti il Cobalt Ingots."]
+			dependencies: ["02C565DF230C9A02"]
+			id: "5A325EC318C6B44C"
+			tasks: [{
+				id: "3934CF1C614F8C7C"
+				type: "item"
+				item: "tconstruct:cobalt_ingot"
+				count: 3L
+			}]
+		}
+		{
+			title: "Manyullyn..."
+			x: 10.0d
+			y: -2.0d
+			subtitle: "... prova a dirlo 5 volte velocemente!"
+			description: [
+				"Il Manyullyn è un materiale molto resistente fatto di leghe di Molten Debris e Cobalt sempre nella Smeltery che ha una fonte di combustibile di almeno 1200 gradi."
+				""
+				"L'unica fonte di combustibile di questo tipo a nostra disposizione è il Blazing Blood. Una volta sistemato questo, legare Manyullyn non è difficile."
+			]
+			dependencies: [
+				"2CDC1C706AFA2E47"
+				"5A325EC318C6B44C"
+				"3725D438E369781D"
+			]
+			id: "29AD6791E3C49B6C"
+			tasks: [{
+				id: "42E5D0085314ABFA"
+				type: "item"
+				item: "tconstruct:manyullyn_ingot"
+			}]
+		}
+		{
+			title: "Attenzione alle ostriche"
+			x: 5.5d
+			y: -2.0d
+			description: ["Setacciare la Crushed End Stone usando una Iron Mesh o superiore, con un po' di fortuna, vi ritroverete con una o due Ender Pearl."]
+			dependencies: ["29EB650396A8609B"]
+			optional: true
+			id: "17073588CB8CC58B"
+			tasks: [{
+				id: "4A7F1AE7D925C083"
+				type: "item"
+				item: "minecraft:ender_pearl"
+			}]
+		}
+		{
+			title: "Alloy Aloha!"
+			x: 4.0d
+			y: 4.0d
+			shape: "diamond"
+			description: [
+				"Inizia piazzando una base di 3x3 di Seared Bricks, poi 4 muri all'esterno di quelli che sono 3x2. Vi mancheranno 4 blocchi, che potrete usare il Tank, Chute, Drain e il Controller."
+				""
+				"Una volta che hai posizionato il controller della Smeltery e tutti i muri sono completi di blocchi Smeltery validi, si formerà la struttura Smeltery a più blocchi."
+				""
+				"Metti un po' di Lava o di Blazing Blood nel Seared Fuel Tank, e la tua Smeltery sarà pronta per iniziare a fondere e legare materiali fusi."
+				""
+				"Nota: se il contenuto di una Smeltery può essere legato insieme, il processo è automatico."
+				""
+				"Usa faucet con lever sopra di loro, casting tables e basins sotto i faucet, e Hopper per estrarre gli oggetti dai tavoli e dalle vasche di colata in modo molto simile a quello suggerito per la configurazione del Seared Melter."
+				""
+				"La nostra divisione scientifica ha fornito un'immagine di un'installazione campione da esaminare. I Cellulose Bricks sono aggiunte decorative per consentire le leve sopra i rubinetti."
+			]
+			dependencies: [
+				"06701B9E3630EED8"
+				"71C94DD1513C239E"
+				"46AFFB07DDB85108"
+				"504A8DED31C4E3EC"
+			]
+			id: "2827AB59F3D85E9D"
+			tasks: [{
+				id: "41F718B8F6D58AE9"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Smelt o Melt"
+			x: 0.5d
+			y: 0.5d
+			shape: "diamond"
+			description: [
+				"A questo punto hai tutto il necessario per fare il tuo primo Seared Melter e iniziare a usarlo."
+				""
+				"Fate riferimento all'immagine fornita come promemoria di come potreste impostarlo."
+				""
+				"Si noti che per una certa automazione semplice si può usare una Hopper per immettere oggetti nel Seared Melter dall'alto o dai lati, e si possono estrarre materiali che sono stati fusi e completamente raffreddati usando un Hopper sotto il Seared Casting Table e il Seared Casting Basin."
+			]
+			dependencies: [
+				"3468A1304A244F66"
+				"38125BFEC7884F38"
+				"44443475CE111148"
+				"0D7C115221200F4E"
+				"1825174040BFD858"
+				"7ABCB955100B92C0"
+			]
+			id: "54493C0419586822"
+			tasks: [{
+				id: "3F9C93758622F915"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Osmium Osmosi"
+			x: 4.0d
+			y: 5.5d
+			shape: "gear"
+			description: [
+				"un elemento chiave per l'uso in meccanismi avanzati, può essere fatto attraverso la lega di Fullerene (molten Carbon Nanotubes), Iron e Thatldu."
+				""
+				"L'Osmium è in realtà un elemento puro, quindi anche la nostra Divisione Scientifica è incerta su quale sia il processo reale qui, ma c'è qualcosa di \"strano\" in quella roba di Thatldu che sembra renderlo possibile."
+				""
+				"Probabilmente avrete bisogno di un bel po' di Osmium andando avanti, quindi potreste anche fare un po' di scorta."
+				""
+				"&aSblocca: Lega? Lega? Leghe!&f"
+				"&aSblocca: Ottieni la Mekanism (2/2)&f"
+			]
+			dependencies: ["2827AB59F3D85E9D"]
+			size: 1.5d
+			id: "495C59666CD6C3A0"
+			tasks: [{
+				id: "47970DBB4446450F"
+				type: "item"
+				item: "mekanism:ingot_osmium"
+				count: 3L
+			}]
+		}
+		{
+			title: "Il mio pioccolo Blazey"
+			x: 11.5d
+			y: -3.5d
+			description: ["Aggiungi una Blazing Doll nel barrel di Lava spawnerà a Blaze. Questo è particolarmente utile per mettere le mani su qualche Blazing Blood."]
+			dependencies: [
+				"5D14F476E568B129"
+				"742CB98CD34C3815"
+			]
+			id: "6418606FCB78AE9F"
+			tasks: [
+				{
+					id: "647C981B3E0D1CE1"
+					type: "item"
+					item: "exnihilosequentia:porcelain_clay"
+					count: 5L
+				}
+				{
+					id: "74C0592F1B3A46C2"
+					type: "item"
+					item: "exnihilosequentia:doll_crafting"
+				}
+				{
+					id: "7BFB98282F8CA846"
+					type: "item"
+					item: "exnihilosequentia:doll_blaze"
+				}
+			]
+		}
+		{
+			title: "Sanguinamento dei Blaze"
+			x: 11.5d
+			y: -2.0d
+			description: [
+				"Blazing Blood si ottiene mettendo un Blaze all'interno della Smeltery. Il Blaze prende danno, e produce Blazing Blood finchè non muore."
+				""
+				"Più avanti sarai in grado di fare cose come impostare uno Spawner per creare Blaze in altri modi, o catturare Blaze e rilasciarli direttamente in una Smeltery, ma all'inizio, usare una Blazing Doll per evocare un Blaze potrebbe essere il tuo unico modo di ottenere questo risultato."
+			]
+			dependencies: ["6418606FCB78AE9F"]
+			id: "3725D438E369781D"
+			tasks: [{
+				id: "76C119766ECDC82C"
+				type: "item"
+				item: "tconstruct:blazing_blood_bucket"
+			}]
+		}
+		{
+			title: "Il vecchio fungo"
+			x: 7.0d
+			y: -7.0d
+			shape: "square"
+			description: [
+				"Ancient Spores può essere ottenuto setacciando Silica Dust Blocks usando un diamond mesh."
+				""
+				"Se non l'avete ancora capito, i Diamond possono essere ottenuti setacciando, Gravel o Crushed Diorite in un Iron Mesh."
+				""
+				"&aAncient Spores può essere usato sulla Dirt per trasformarlo in Mycelium&f. Fate attenzione però, si diffonde! Potrebbe essere una buona idea fare un bordo di qualche tipo di pietra intorno a un'area 3x3 di Dirt e poi usare le Ancient Spore sul blocco centrale."
+			]
+			dependencies: ["1D85898B092C9EC0"]
+			id: "7F6BB5E95997690C"
+			tasks: [{
+				id: "3CE850AFE9C0341A"
+				type: "item"
+				title: "Ancient Spores"
+				item: "exnihilosequentia:ancient_spores"
+			}]
+		}
+		{
+			title: "Acqua Witches"
+			x: 8.5d
+			y: -7.0d
+			shape: "square"
+			description: [
+				"Piazza un Wooden Barrel, Come ad esempio l'Oak Barrel, sopra il blocco di Mycelium, e poi riempirlo d'acqua."
+				""
+				"Dopo pochi secondi, l'acqua all'interno del barrel si trasformerà in Witch Water."
+				""
+				"Se si versa questa roba sul terreno, può trasformare alcuni mob ostili in versioni più potenti, come uno Skeletons in Wither Skeletons, e un Creepers in Charged Creepers. Fate attenzione!"
+			]
+			dependencies: ["7F6BB5E95997690C"]
+			id: "1640986D10506C1D"
+			tasks: [{
+				id: "0A6EB3EF495CA016"
+				type: "item"
+				item: "exnihilosequentia:bucket_witchwater"
+			}]
+		}
+		{
+			title: "Spooky Dirty Sand"
+			x: 10.0d
+			y: -6.5d
+			shape: "square"
+			description: [
+				"Aggiungi la Sand in un Barrel pieno di Witch Water trasformerà la Sand in Soul Sand, consumando la Witch Water durante il processo."
+				""
+				"p.s. Automatizzare la produzione di Soul Sand può essere notoriamente difficile. Se decidete di provarci comunque, i guru della Divisione Scientifica hanno elaborato un metodo passo dopo passo da provare. Prima dovrai avere accesso al Gold e alla Redstone, ma una volta che li avrai in mano, dai un'occhiata alla sezione \"Reti per X-Men\" di questa Guida alla sopravvivenza nell'Appendice A."
+			]
+			dependencies: ["1640986D10506C1D"]
+			id: "185FD41758B01CB1"
+			tasks: [{
+				id: "42EA454D1CD57C9E"
+				type: "item"
+				item: "minecraft:soul_sand"
+			}]
+		}
+		{
+			title: "Più come l'erba di San Giovanni"
+			x: 11.0d
+			y: -5.5d
+			shape: "square"
+			subtitle: "Non il tipo che si suppone si ottenga dalle rane"
+			description: [
+				"Setacciare la Soul Sand con una Iron Mesh può far uscire alcuni Nether Wart."
+				""
+				"Nether Wart può essere coltivato sulla Soul Sand, ed è un ingrediente di molte ricette. Sarà particolarmente utile in seguito, quando cominceremo a preparare pozioni."
+			]
+			dependencies: ["185FD41758B01CB1"]
+			id: "5D14F476E568B129"
+			tasks: [{
+				id: "3BF851A35704A7D8"
+				type: "item"
+				item: "minecraft:nether_wart"
+			}]
+		}
+		{
+			title: "Powdered Blaze"
+			x: 9.0d
+			y: -5.5d
+			shape: "square"
+			description: ["Blaze Powder può essere ottenuto dalla setacciatura della Dust con un Iron Mesh"]
+			dependencies: ["1D85898B092C9EC0"]
+			id: "742CB98CD34C3815"
+			tasks: [{
+				id: "041A23E2D7932DE3"
+				type: "item"
+				item: "minecraft:blaze_powder"
+				count: 4L
+			}]
+		}
+		{
+			title: "Gold Casts - un miglioramento della qualità della vita"
+			x: 5.5d
+			y: -0.5d
+			description: [
+				"Sand Casts è OK, ma può essere anche un po' doloroso. Ora che hai un po' di Gold a disposizione, dovreste considerare di fare qualche Gold Casts"
+				""
+				"Un ottimo esempio è l'Ingot Gold Cast - per crearlo basta che inserisci un lingotto (o un oggetto a forma di lingotto come un brick) in un Casting Table, e poi versandovi sopra il Gold fuso."
+				""
+				"Il brick (o il lingotto) verrà consumato, ma vi rimarrà una versione in Gold che non si consuma quando si fanno i lingotti andando avanti. Vale sicuramente la pena di investire!"
+			]
+			dependencies: ["3B00278F3DDF103C"]
+			optional: true
+			id: "335B313D35BDDF8C"
+			tasks: [{
+				id: "57FFA64939A753EF"
+				type: "item"
+				item: "tconstruct:ingot_cast"
+			}]
+		}
+		{
+			title: "Sandy Ingot Casting (sic)"
+			icon: "tconstruct:ingot_sand_cast"
+			x: -1.5d
+			y: 4.5d
+			description: [
+				"Per creare un Ingot Sand Cast, piazza un Blank Sand Cast sulla Casting Table, poi usare un oggetto a forma di lingotto su di esso (come un vero lingotto, o un Seared Brick)."
+				""
+				"Se si prende l'Ingot Sand Cast, si otterrà un Blank Sand Cast."
+			]
+			dependencies: ["1F502D916C90EBBA"]
+			optional: true
+			id: "5C4B82EC3BC4FB7D"
+			tasks: [{
+				id: "07E9361CEF1E4B4B"
+				type: "checkmark"
+				title: "Sandy Ingot Casting (sic)"
+			}]
+		}
+	]
+}

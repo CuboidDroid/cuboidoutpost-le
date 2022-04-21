@@ -1,0 +1,519 @@
+{
+	id: "3EFF31C92A1EC870"
+	group: "6E3D5CD175F7344D"
+	order_index: 3
+	filename: "dishing_up_the_meat"
+	title: "Assaggiare la carne"
+	icon: "minecraft:chicken"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Assaggiare la carne"
+			x: 0.5d
+			y: -2.5d
+			shape: "gear"
+			description: [
+				"A parte un rifornimento di carne un po' losco e un rifornimento di pesce che richiede un po' di tempo, non si ha un accesso facile alla carne e ai prodotti animali!"
+				""
+				"È il momento di cercare di rimediare a questo!"
+				""
+				"Devi iniziare a lavorare per ricreare un po' di vita animale familiare ora, datti da fare!"
+				""
+				"Sbloccato in:"
+				"- Sporcare i piatti"
+			]
+			dependencies: ["060D9DD7789DB5C5"]
+			id: "08E383BD1910ECD4"
+			tasks: [{
+				id: "51F8838903D06494"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Acido Ribonucleico (RNA)"
+			x: 0.5d
+			y: 1.5d
+			shape: "square"
+			description: [
+				"Come tutti sappiamo, l'acido ribonucleico (RNA) è un complesso composto di alto peso molecolare che funziona nella sintesi proteica cellulare..."
+				""
+				"Blah blah blah. La divisione scientifica ha detto di più, ma lasciate che ve lo spieghi meglio."
+				""
+				"Si mette un po' di Bone o di Rotten Flesh nel Molecular Recycler e si ottiene un po' di RNA, che useremo per fare altra roba. "
+				""
+				" "
+				"Vai avanti."
+			]
+			dependencies: ["76528FB8C0913777"]
+			dependency_requirement: "one_completed"
+			id: "05E0AE86BB17A33C"
+			tasks: [{
+				id: "701894EAF2A2D852"
+				type: "item"
+				item: "kubejs:rna"
+			}]
+		}
+		{
+			title: "Materia prima #2"
+			x: -0.5d
+			y: -0.5d
+			description: ["Un ingrediente alternativo per una delle prime ricette è l'uso di Bone invece di Rotten Flesh, quindi potresti considerare di usare Bone dove puoi invece di Rotten Flesh."]
+			dependencies: ["08E383BD1910ECD4"]
+			optional: true
+			id: "4903A7F989486276"
+			tasks: [{
+				id: "25B38E67A711948D"
+				type: "item"
+				item: "minecraft:bone"
+			}]
+		}
+		{
+			title: "Materia Prima #1"
+			x: 1.5d
+			y: -0.5d
+			shape: "square"
+			description: [
+				"Secondo la nostra divisione scientifica, l'ingrediente principale di cui avremo bisogno è la Rotten Flesh."
+				""
+				"Ne avrete bisogno di un bel po' per quando avremo finito, quindi fate la scorta!"
+			]
+			dependencies: ["08E383BD1910ECD4"]
+			id: "76528FB8C0913777"
+			tasks: [{
+				id: "38CC39DD4FA6BCBB"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+				count: 8L
+			}]
+		}
+		{
+			title: "Protein Paste non è uno spreco"
+			x: 2.5d
+			y: 1.5d
+			shape: "square"
+			description: [
+				"Non sorprende che abbiamo bisogno di una fonte di proteine abbastanza \"pulita\" con cui lavorare."
+				""
+				"Fai una scorta di Protein Paste, la useremo in diversi modi per creare le specifiche strutture di DNA di cui abbiamo bisogno, per creare le forme di vita animale che stiamo cercando."
+			]
+			dependencies: ["76528FB8C0913777"]
+			id: "41496EE5EE76DC58"
+			tasks: [
+				{
+					id: "4A7A9EA022A11ECC"
+					type: "item"
+					item: "cuboidmod:silica_dust"
+				}
+				{
+					id: "36229CB337DB4880"
+					type: "item"
+					item: "cuboidmod:protein_paste"
+				}
+			]
+		}
+		{
+			title: "Filo e consegna"
+			x: 3.5d
+			y: 3.5d
+			shape: "square"
+			description: ["Avremo bisogno di fornire filamenti di proteine per la nostra produzione di DNA, fortunatamente sappiamo già come fare le Protein Strand usando Wikidium Dust e Protein Paste nel QTC, bisogna solo crearne altri per poter andare avanti."]
+			dependencies: ["41496EE5EE76DC58"]
+			id: "61497419EBD02DB9"
+			tasks: [
+				{
+					id: "561B860DF080FC58"
+					type: "item"
+					item: "cuboidmod:wikidium_dust"
+				}
+				{
+					id: "61E5E151E1442AD9"
+					type: "item"
+					item: "cuboidmod:protein_fiber"
+				}
+			]
+		}
+		{
+			title: "Gloop non è solo per i bambini"
+			x: 1.5d
+			y: 3.5d
+			shape: "square"
+			description: ["Mescolando l'RNA con la Protein Paste in una Quantum Transmutation Chamber si ottiene un Primordial Gloop che ci permetterà di formare i filamenti di base del DNA di cui abbiamo bisogno."]
+			dependencies: [
+				"41496EE5EE76DC58"
+				"05E0AE86BB17A33C"
+			]
+			id: "53CEDE6D17D353F5"
+			tasks: [{
+				id: "42EAE16A2B2F67D5"
+				type: "item"
+				item: "kubejs:primordial_gloop"
+			}]
+		}
+		{
+			title: "Acido diossiribonucleico (DNA)"
+			x: 2.5d
+			y: 5.5d
+			shape: "square"
+			description: [
+				"Dioxyribonucleic Acid (DNA) è un acido nucleico elicoidale a doppio filamento che è cruciale per contenere le informazioni genetiche per la crescita, la divisione e la funzione delle cellule ed è ... più bla bla bla temo."
+				""
+				"La cosa importante che devi sapere al momento è che sei a un punto in cui puoi fare del DNA abbastanza generico mettendo dei Protein Strands e del Primordial Gloop nella Quantum Transmutation Chamber."
+			]
+			dependencies: [
+				"53CEDE6D17D353F5"
+				"61497419EBD02DB9"
+			]
+			id: "377A606304CD8D19"
+			tasks: [{
+				id: "6A43F3F0D4B632C0"
+				type: "item"
+				item: "kubejs:dna"
+			}]
+		}
+		{
+			title: "Non sparare finché non si vede il bianco delle uova."
+			x: 4.5d
+			y: 5.5d
+			shape: "square"
+			description: ["Un'altra volta attraverso il QTC, questa volta usando il DNA e Bone Meal si otterrà l'Albumen, che è fondamentalmente l'albume d'uovo, più o meno qualche mutazione genetica casuale."]
+			dependencies: ["377A606304CD8D19"]
+			id: "13886489459A87C8"
+			tasks: [
+				{
+					id: "40E60E51E8A934B0"
+					type: "item"
+					item: "minecraft:bone_meal"
+				}
+				{
+					id: "61C60EED1D7FE74A"
+					type: "item"
+					item: "kubejs:albumen"
+				}
+			]
+		}
+		{
+			title: "Uova, Benedetto?"
+			x: 5.5d
+			y: 3.5d
+			shape: "square"
+			description: [
+				"Mettete un po' di questo Albumen in un Drying Cupboard, e con il tempo vi ritroverete con un Egg."
+				""
+				"Ora, potreste buttare queste uova in giro e sperare per il meglio, ma noi cercheremo di essere più intelligenti su questo, e ci daremo un modo garantito di covare i polli."
+				""
+				"Quindi tenete qualche uovo, e continuate a seguire le istruzioni per vedere come si può fare."
+			]
+			dependencies: ["13886489459A87C8"]
+			id: "6CD9C6679E598E91"
+			tasks: [{
+				id: "432B409523994366"
+				type: "item"
+				item: "minecraft:egg"
+			}]
+		}
+		{
+			title: "Stregoneria acquatica"
+			x: 2.5d
+			y: -2.5d
+			shape: "square"
+			dependencies: ["08E383BD1910ECD4"]
+			id: "00EDB66EC0496C81"
+			tasks: [{
+				id: "7B9D02DDB59092DD"
+				type: "item"
+				item: "exnihilosequentia:bucket_witchwater"
+			}]
+		}
+		{
+			title: "Il figlio della scienza e della magia,"
+			x: 4.5d
+			y: 1.5d
+			shape: "square"
+			description: [
+				"Avete sentito dire che la Scienza, se sufficientemente avanzata, sarà indistinguibile dalla Magia. Bene, questa è una di quelle volte."
+				""
+				"Noi pensiamo"
+				"."
+				""
+				"Almeno quelli della Divisione Scienza ritengono che ci sia una base scientifica per quello che sta per succedere, anche se non sono stati in grado di spiegarlo a sufficienza! Comunque..."
+				""
+				"Fate un buco, e riempitelo con un bucket of Witch Water."
+				""
+				"Buttateci dentro un Egg, un pezzo di Primordial Gloop, alcuni Wheat Seed e un po' di RNA extra, e si verificherà una reazione chimica (totalmente spiegabile dalla Scienza) che risulterà in un uovo speciale, specificamente codificato per garantire la schiusa di un Pollo."
+				""
+				"Prima di usarlo, potresti voler recintare un'area e creare 2 di queste Chicken Spawn Eggs, in modo da poterne allevare altre e iniziare a raccogliere altre Uova andando avanti, piuttosto che aver bisogno di crearne altre!"
+			]
+			dependencies: [
+				"6CD9C6679E598E91"
+				"4BB2AF29BC6BA080"
+			]
+			id: "30E793C110473B32"
+			tasks: [{
+				id: "2423D3CEBBC44857"
+				type: "item"
+				item: "minecraft:chicken_spawn_egg"
+			}]
+		}
+		{
+			title: "Non è Dolly."
+			x: 5.5d
+			y: -0.5d
+			shape: "square"
+			description: [
+				"La prossima volta ricreeremo delle pecore."
+				""
+				"Per farlo, raccogliete un pezzo di White Wool, un blocco di Sky Stone, del Primordial Gloop e un Egg, e gettateli in una pozza di Witchwater."
+			]
+			dependencies: ["30E793C110473B32"]
+			id: "62EB9B9BD1FB1035"
+			tasks: [
+				{
+					id: "1479560A0A29913A"
+					type: "item"
+					item: "minecraft:white_wool"
+				}
+				{
+					id: "63A91D0A1529E672"
+					type: "item"
+					item: "appliedenergistics2:sky_stone_block"
+				}
+				{
+					id: "01E9D7C3303E10AE"
+					type: "item"
+					item: "minecraft:egg"
+				}
+				{
+					id: "466F81C9B1CD37A0"
+					type: "item"
+					item: "kubejs:primordial_gloop"
+				}
+			]
+		}
+		{
+			title: "Non affatto maleeee."
+			x: 6.5d
+			y: -2.5d
+			shape: "square"
+			description: [
+				"Anche in questo caso, sarebbe ragionevole fare almeno due Sheep Spawn Eggs e far nascere le pecore all'interno di un'area recintata. Allevatele con il Wheat nel solito modo prima di iniziare a macellarle."
+				""
+				"Fai attenzione! Dovrai assicurarti di avere sempre almeno 2 pecore vive in qualsiasi momento per essere in grado di allevarne facilmente altre."
+			]
+			dependencies: ["62EB9B9BD1FB1035"]
+			id: "07E96BCF479B5C4D"
+			tasks: [{
+				id: "1F0E2230483C868F"
+				type: "item"
+				item: "minecraft:sheep_spawn_egg"
+			}]
+		}
+		{
+			title: "Porcino, non Porcospino"
+			x: 7.5d
+			y: -0.5d
+			shape: "square"
+			description: [
+				"Mmmm... bacon."
+				""
+				"Non manca molto, devi solo raccogliere del Raw Mutton, Dirt, un Egg, e Primordial Gloop, gettarli in una pozza di Witchwater, e subito dopo ci saranno pancetta e salsicce per colazione!"
+			]
+			dependencies: ["07E96BCF479B5C4D"]
+			id: "4823D1F8EC861304"
+			tasks: [
+				{
+					id: "0814EF0B4D682443"
+					type: "item"
+					item: "minecraft:mutton"
+				}
+				{
+					id: "3AEA9FAE19C1DA25"
+					type: "item"
+					item: "minecraft:dirt"
+				}
+				{
+					id: "0C491DC9E421D891"
+					type: "item"
+					item: "minecraft:egg"
+				}
+				{
+					id: "2613A7A6D164E5EE"
+					type: "item"
+					item: "kubejs:primordial_gloop"
+				}
+			]
+		}
+		{
+			title: "Meglio di Peppa e George"
+			x: 8.5d
+			y: 1.5d
+			shape: "square"
+			description: ["Un paio di Pig Spawn Eggs più una scorta di Carrot vi permetteranno di mangiare pancetta fino a quando i maiali non torneranno a casa (perché mangiare pancetta davanti a loro sarebbe sbagliato)."]
+			dependencies: ["4823D1F8EC861304"]
+			id: "61B962D3125436C3"
+			tasks: [{
+				id: "44BAD38BEED07A7D"
+				type: "item"
+				item: "minecraft:pig_spawn_egg"
+			}]
+		}
+		{
+			title: "Vicini, tutti hanno bisogno di buoni Vicini!"
+			x: 9.5d
+			y: -0.5d
+			shape: "square"
+			description: [
+				"È il momento di iniziare a cavalcare."
+				""
+				"Proprio così: cavalli! (e forse anche asini e muli)"
+				""
+				"Questa volta si tratta solo di una Raw Pork Chop, Raw Mutton, un Egg e un po' di Primordial Gloop e voilà! L'amicizia è magica!"
+			]
+			dependencies: ["61B962D3125436C3"]
+			id: "5C087A68C6D837C9"
+			tasks: [
+				{
+					id: "08D36D24CBFEFBF7"
+					type: "item"
+					item: "minecraft:porkchop"
+				}
+				{
+					id: "37BB19E63E81E673"
+					type: "item"
+					item: "minecraft:mutton"
+				}
+				{
+					id: "583B4C0B63B3B31A"
+					type: "item"
+					item: "minecraft:egg"
+				}
+				{
+					id: "3983113BE501F91F"
+					type: "item"
+					item: "kubejs:primordial_gloop"
+				}
+			]
+		}
+		{
+			title: "Cavalli da corsa"
+			x: 10.5d
+			y: -2.5d
+			shape: "square"
+			description: [
+				"È un po' più complicato allevare cavalli di quanto si possa pensare."
+				""
+				"Prima di tutto, dovrete addomesticarli... quindi saltate su, tenetevi forte, e sperate che sia facile e veloce!"
+				""
+				"In secondo luogo, per far sì che i cavalli si riproducano, devi trattarli come dei reali e dar loro da mangiare Golden Apples o Golden Carrots."
+				""
+				"Ricorda che puoi accelerare i tempi di crescita dei puledri nutrendoli. Gli alimenti adatti includono:"
+				"- Sugar"
+				"- Wheat"
+				"- Apples"
+				"- Golden Carrots"
+				"- Golden Apples"
+				"- Haybales"
+			]
+			dependencies: ["5C087A68C6D837C9"]
+			id: "4A1CC3ACD2F86E07"
+			tasks: [{
+				id: "5C20A7FFE6FCF82C"
+				type: "item"
+				item: "minecraft:horse_spawn_egg"
+			}]
+			rewards: [{
+				id: "779B6B2F1F543258"
+				type: "item"
+				item: "minecraft:saddle"
+			}]
+		}
+		{
+			title: "Muoviti"
+			x: 11.5d
+			y: -0.5d
+			shape: "square"
+			description: [
+				"Non hai un mucca!"
+				""
+				"Prendine due o più!"
+				""
+				"Puoi fabbricare un Cow Spawn egg gettando Leather, un Bucket, un Egg, e Primordial Gloop in una pozza di Witchwater."
+			]
+			dependencies: ["4A1CC3ACD2F86E07"]
+			id: "3254E6F98E2CC544"
+			tasks: [
+				{
+					id: "199977C39FCF7A68"
+					type: "item"
+					item: "minecraft:leather"
+				}
+				{
+					id: "06CCD4C1C7621C4B"
+					type: "item"
+					item: "minecraft:bucket"
+				}
+				{
+					id: "5DB0696034C36440"
+					type: "item"
+					item: "minecraft:egg"
+				}
+				{
+					id: "6A5F976242069098"
+					type: "item"
+					item: "kubejs:primordial_gloop"
+				}
+			]
+		}
+		{
+			title: "Perché le mucche hanno gli zoccoli invece dei piedi?"
+			x: 12.5d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "Perché lattiginoso."
+			description: [
+				"Ricordati di fare un paio di Cow Spawn eggs in modo da poter iniziare ad allevare mucche (usando Wheat). Le mucche saranno una grande fonte di Leather, ma anche di Milk e Beef, che apriranno un intero nuovo mondo di opzioni in termini di cibo e tutti i benefici per la salute che ne derivano."
+				""
+				"&aSblocca: Incontrare le mammelle&f"
+				"&aSblocca: Deliziosamente creativo&f"
+				"&aSblocca: Previsione industriale: Ranch&f"
+			]
+			dependencies: ["3254E6F98E2CC544"]
+			size: 1.5d
+			id: "4D0F1810876E3DF6"
+			tasks: [{
+				id: "22E5FA984BF969B9"
+				type: "item"
+				item: "minecraft:cow_spawn_egg"
+			}]
+		}
+		{
+			title: "Un ingrediente necessario per la semina"
+			x: 3.5d
+			y: -0.5d
+			shape: "square"
+			description: [
+				"Il primo animale che prenderemo di mira è un pollo. Alle galline piacciono i semi di grano."
+				""
+				"Nuff era una fata."
+				""
+				""
+				""
+				""
+				""
+				""
+				""
+				""
+				""
+				""
+				"Fata Nuff."
+			]
+			dependencies: ["00EDB66EC0496C81"]
+			id: "4BB2AF29BC6BA080"
+			tasks: [{
+				id: "5880125EE2A272E7"
+				type: "item"
+				item: "minecraft:wheat_seeds"
+			}]
+		}
+	]
+}

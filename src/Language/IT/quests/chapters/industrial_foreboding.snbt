@@ -1,0 +1,300 @@
+{
+	id: "5443FFBF7205B186"
+	group: "4F582DBBFACF1F69"
+	order_index: 3
+	filename: "industrial_foreboding"
+	title: "Previsione industriale"
+	icon: "industrialforegoing:fluid_extractor"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Previsione industriale"
+			x: 3.5d
+			y: -1.5d
+			shape: "gear"
+			subtitle: "(sì, sappiamo che è la \"Foregoing\")"
+			description: [
+				"Stiamo per mostrarvi come fare altre macchine di livello industriale."
+				""
+				"C'è un processo ben definito, e può richiedere un po' di tempo all'inizio, ma le macchine si dimostreranno sicuramente estremamente utili, quindi vale sicuramente la pena perseverare se volete davvero migliorare la qualità della vostra vita. Decisamente."
+				""
+				"Oh... e dovrai farlo se vorrai mai vedere anche altre persone, naturalmente."
+			]
+			id: "77007FF168D85A8D"
+			tasks: [{
+				id: "589F46204B55BE43"
+				type: "item"
+				item: "minecraft:gold_ingot"
+			}]
+			rewards: [{
+				id: "0D50126C56656CDB"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "industrialforegoing:industrial_foregoing"
+					}
+				}
+			}]
+		}
+		{
+			title: "Questo non farà male a nessuno"
+			x: 5.5d
+			y: 0.5d
+			shape: "square"
+			description: [
+				"Molti dei macchinari e della tecnologia che costruiremo richiederanno un tipo speciale di plastica."
+				""
+				"Per creare la roba, sarà necessario un po' di processo. Probabilmente vale la pena pianificare l'automazione qui, dato che, nel tempo, avrete comunque bisogno di più Plastic."
+				""
+				"Per iniziare, fate un Fluid Extractor."
+			]
+			dependencies: ["7D849BDAF350B6E1"]
+			id: "2D02655F72604407"
+			tasks: [{
+				id: "7EED3849AB9E6B28"
+				type: "item"
+				item: "industrialforegoing:fluid_extractor"
+			}]
+			rewards: [{
+				id: "7978D1E9D7519CC7"
+				type: "item"
+				item: "industrialforegoing:fluid_extractor"
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "Pietoso Machine Frames"
+			x: 3.5d
+			y: 0.5d
+			shape: "square"
+			description: ["I telai delle macchine per iniziare questa parte della tua \"avventura\" sono stati fantasiosamente chiamati Pity Machine Frames e richiedono solo un po' di Wood, dell'Iron e della Redstone."]
+			dependencies: ["77007FF168D85A8D"]
+			id: "7D849BDAF350B6E1"
+			tasks: [{
+				id: "4E50CF0D7628BE17"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+			rewards: [{
+				id: "63C628CBC5FA4C42"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+				count: 3
+				random_bonus: 9
+			}]
+		}
+		{
+			title: "Con l'Acacia non lo sapevo... ottenere il latex è lento!"
+			x: 7.5d
+			y: 0.5d
+			shape: "square"
+			description: [
+				"I Fluid extractors devono essere posizionati di fronte a un tronco. Dai un'occhiata agli usi di un Fluid extractors per vedere la lista, ma la cosa che dovresti sapere è che diversi tipi di wood producono diverse quantità di Latex, e l'Acacia è il re in questo senso! Se posizionato correttamente, il Fluid Extractor inizierà (molto) lentamente a distruggere il tronco posto di fronte ad esso, aspirando tutto il Latex e mettendolo nel suo serbatoio interno."
+				""
+				"Noterete molto rapidamente che il Fluid extractors funziona abbastanza lentamente! Ci sono alcuni modi per velocizzarlo..."
+				""
+				"In primo luogo, puoi usare più di un Fluid Extractor, puoi anche averne fino a 4 di fronte allo stesso tronco per risparmiare spazio."
+				""
+				"In secondo luogo, mentre il Fluid Extractor non richiede energia, funziona marginalmente più veloce con l'alimentazione fornita."
+				""
+				"Per completare questo compito, hai solo bisogno di un secchio di Latex. Se stai usando più di un Fluid extractors, potrebbe essere una buona idea costruirti qualcosa come un Common Black Hole Tank (che può contenere 16 bucket di fluido) e convogliare il lattice dai tuoi Fluid Extractors nel serbatoio, in questo modo avrai il secchio pieno prima, e avrai anche un buffer tra la tua produzione di Latex e il consumo di Latex in seguito."
+			]
+			dependencies: ["2D02655F72604407"]
+			id: "2C246C82D6A79240"
+			tasks: [{
+				id: "7C1B1F1470B2FF25"
+				type: "item"
+				item: "industrialforegoing:latex_bucket"
+			}]
+		}
+		{
+			title: "Latex Processing 101"
+			x: 9.5d
+			y: 0.5d
+			shape: "square"
+			description: [
+				"Ora che hai una scorta di Latex, puoi costruirti un Latex Processing Unit."
+				""
+				"La funzione del Latex Processing Unit è quella di consumare Latex e Wather, e (con un po' di energia) produce la Tiny Dry Rubber."
+				""
+				"All'inizio puoi mettere nel secchio sia il latex che l'acqua, ma probabilmente varrà la pena di convogliarli nell'Unit per automatizzare questo processo."
+				""
+				"Per un rifornimento costante di acqua potreste considerare di usare un Water Condensator, un Aqueous Accumulator, o un Sink (parte della cucina a più blocchi)."
+			]
+			dependencies: ["2C246C82D6A79240"]
+			id: "24F0FE60CD37F65D"
+			tasks: [{
+				id: "6FE623EB5AEEFBC1"
+				type: "item"
+				item: "industrialforegoing:latex_processing_unit"
+			}]
+		}
+		{
+			title: "Tiny Dry Rubber"
+			x: 9.5d
+			y: 2.5d
+			shape: "square"
+			description: [
+				"Probabilmente avrete bisogno di lasciare la vostra Latex Processing Unit (e tutto ciò che la precede) in funzione per un po' di tempo per ottenere una fornitura decente di Tiny Dry Rubber. Non appena ne avrete 9, sarete pronti ad andare avanti."
+				""
+				"Si consiglia vivamente di utilizzare qualcosa come una Chest o un Drawer come buffer per la vostra Tiny Dry Rubber da accumulare in modo che in seguito sia disponibile quando necessario."
+			]
+			dependencies: ["24F0FE60CD37F65D"]
+			id: "322DCA0880F99F9A"
+			tasks: [{
+				id: "668DC54B7466CDF0"
+				type: "item"
+				item: "industrialforegoing:tinydryrubber"
+				count: 9L
+			}]
+			rewards: [{
+				id: "05858D8853F1B926"
+				type: "item"
+				item: "industrialforegoing:tinydryrubber"
+				count: 9
+				random_bonus: 18
+			}]
+		}
+		{
+			title: "Dry Rubber"
+			x: 7.5d
+			y: 2.5d
+			shape: "square"
+			description: [
+				"La Dry Rubber è fatta lavorando insieme 9 minuscoli Tiny Dry Rubber."
+				""
+				"Potete farlo manualmente in una crafting table, naturalmente, ma se volete automatizzare tutto il percorso fino alla plastica, potreste considerare di usare qualcosa come il Sequential Fabricator per trasformare automaticamente i Tiny Dry Rubber in Dry Rubber."
+			]
+			dependencies: ["322DCA0880F99F9A"]
+			id: "797FDDDF3D34F795"
+			tasks: [{
+				id: "3D71B1251EB450B0"
+				type: "item"
+				item: "industrialforegoing:dryrubber"
+			}]
+			rewards: [{
+				id: "2F490978F708C8C7"
+				type: "item"
+				item: "industrialforegoing:dryrubber"
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Fantastica Plastica"
+			x: 5.5d
+			y: 2.5d
+			shape: "gear"
+			description: [
+				"Plastic! Proprio quello di cui ha bisogno questo ambiente incontaminato..."
+				""
+				"Questo particolare tipo di Plastic è fatto semplicemente fondendo la Dry Rubber in una furnace."
+				""
+				"Con la Plastic disponibile, ci sono un certo numero di nuove macchine disponibili anche per voi, così come la Dissolution Chamber, che sarà fondamentale nella realizzazione di macchinari industriali di livello superiore."
+				""
+				"&aRichiesto per:&f"
+				"&a - Il Mattatoio #2&f"
+				"&a - Cosa rimane alla fine?"
+			]
+			dependencies: ["797FDDDF3D34F795"]
+			size: 1.5d
+			id: "0ED1096C2B8D864F"
+			tasks: [{
+				id: "47BCD742A2BB3C03"
+				type: "item"
+				item: "industrialforegoing:plastic"
+			}]
+			rewards: [{
+				id: "2B10B2A3A09B8609"
+				type: "item"
+				item: "industrialforegoing:plastic"
+				count: 3
+				random_bonus: 5
+			}]
+		}
+		{
+			title: "Il (non tanto appetitoso) Simple Machine Frame"
+			x: 1.5d
+			y: 2.5d
+			shape: "gear"
+			description: [
+				"Il Simple Machine Frame è fatto nella Dissolution Chamber."
+				""
+				"Richiede un Pity Machine Frame, due pezzi di plastic, due Nether Bricks, due Iron Ingot e un Gold Gear in termini di oggetti, ma richiede anche 250 mb (1/4 di un bucket) di latex nel suo serbatoio interno."
+				""
+				"Completando questo passo si aprirà &a\"Il mattatoio #2\"&f e l'accesso ad altre macchine nella sezione &a\"Forzatura industriale\" dell'Appendice D.&f"
+			]
+			dependencies: ["35A217AE8B3D4016"]
+			size: 1.5d
+			id: "0654D844EC12E8A2"
+			tasks: [{
+				id: "78BB34C850CD2816"
+				type: "item"
+				item: "industrialforegoing:machine_frame_simple"
+			}]
+		}
+		{
+			title: "La Dissolution Chamber"
+			x: 3.5d
+			y: 2.5d
+			shape: "square"
+			description: [
+				"La Dissolution Chamber è un'apparecchiatura specializzata che può combinare ingredienti solidi con fluidi specifici per realizzare attrezzature avanzate."
+				""
+				"Oltre ai telai delle macchine di livello superiore, la Dissolution Chamber è usata per creare molti degli Addon (aggiornamenti) per queste macchine, compresi gli Addon di Speed, Efficiency e Range."
+				""
+				"Potreste trovare più semplice creare più Dissolution Chambers, una per tipo di fluido, che provare a lavorare con una sola. Infatti, ti aiuteremo nel tuo percorso, tu ne fai una e noi te ne doniamo una seconda. Non siamo generosi?"
+			]
+			dependencies: ["0ED1096C2B8D864F"]
+			id: "35A217AE8B3D4016"
+			tasks: [{
+				id: "567DDF90E257C59C"
+				type: "item"
+				item: "industrialforegoing:dissolution_chamber"
+			}]
+			rewards: [{
+				id: "3C9D3C6FBF732925"
+				type: "item"
+				item: "industrialforegoing:dissolution_chamber"
+			}]
+		}
+		{
+			title: "Tutti i colori delle code di unicorno"
+			x: 6.5d
+			y: 4.5d
+			description: [
+				"Se fornito con coloranti Red, Green e Blue (pensate a Beetroot, Cactus e Lapis), poi per un costo di soli 30RF, può fare qualsiasi altro colore Dye."
+				""
+				"Questa potrebbe rivelarsi una macchina utile da avere in giro..."
+			]
+			dependencies: ["0ED1096C2B8D864F"]
+			optional: true
+			id: "35BD67430303F011"
+			tasks: [{
+				id: "48B92B5EA61B5199"
+				type: "item"
+				item: "industrialforegoing:dye_mixer"
+			}]
+		}
+		{
+			title: "Mettilo giù!"
+			x: 4.5d
+			y: 4.5d
+			description: [
+				"Il Block Placer prenderà dei blocchi dal suo inventario e li posizionerà immediatamente davanti a sé."
+				""
+				"Questo è davvero utile per fare cose come automatizzare il posizionamento dei blocchi davanti a un Fluid Extractor."
+			]
+			dependencies: ["0ED1096C2B8D864F"]
+			optional: true
+			id: "0E79AC3B5E5E9BBB"
+			tasks: [{
+				id: "65B36F5D34E196C3"
+				type: "item"
+				item: "industrialforegoing:block_placer"
+			}]
+		}
+	]
+}

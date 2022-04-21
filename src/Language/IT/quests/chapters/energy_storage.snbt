@@ -1,0 +1,373 @@
+{
+	id: "1DFBC234A86906B5"
+	group: "24F09E0B1AD125E9"
+	order_index: 5
+	filename: "energy_storage"
+	title: "Accumulo di energia"
+	icon: "powah:energy_cell_basic"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Energy Storage"
+			x: 1.0d
+			y: -0.5d
+			shape: "gear"
+			description: [
+				"L'accumulo di energia è vitale per una base decente. Non c'è niente di peggio che rimanere senza energia nel bel mezzo di qualcosa di importante, o dover aspettare che venga prodotta abbastanza energia per finire di fare qualcosa!"
+				""
+				"L'uso di meccanismi di immagazzinamento dell'energia può appianare le operazioni della vostra base, e garantire che nessuna di quella succosa energia prodotta vada persa inutilmente."
+				""
+				"Ecco la maggior parte delle opzioni di immagazzinamento di energia disponibili (o che saranno presto disponibili) per voi..."
+			]
+			id: "19FD7F44BF12B9CC"
+			tasks: [{
+				id: "337CF673D763E1C0"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			description: ["Il Basic Energy Cube stores 1.6 MFE"]
+			id: "17955004B38A3C96"
+			tasks: [{
+				id: "6197DEC5631DA4F8"
+				type: "item"
+				item: "mekanism:basic_energy_cube"
+			}]
+		}
+		{
+			title: "Basic Induction Cell Energy Storage"
+			x: 5.0d
+			y: 1.5d
+			description: [
+				"Se le altre opzioni di immagazzinamento dell'energia qui non soddisfano le tue esigenze, la Induction Matrix multi-blocco dovrebbe sicuramente fare il trucco, è espandibile e in grado di memorizzare enormi quantità di energia."
+				""
+				"Una Induction Matrix è fatta da una Shell di Induction Casings con Induction Ports per l'ingresso o l'uscita di energia (configurato utilizzando un configurator). Tutti i bordi devono essere induction casing, con induction port nelle facce interne che toccano un induction provider."
+				""
+				"All'interno della Shell della induction matrix è dove si collocano le Induction Cells (che determinano la capacità) e i Induction Providers (che determinano i tassi di I/O), ci deve essere almeno uno di ciascuno."
+				""
+				"La più piccola induction matrix valida è quindi alta 4 blocchi con un'impronta 3x3 (cioè una scatola con due spazi interni, uno per una cell e uno per un provider)"
+				""
+				"Anche la Basic Induction Cell immagazzina una quantità pazzesca di energia, 3,2 miliardi di RF, e l'Induction Provider di base ha una velocità di trasferimento di 102,4k RF/t."
+				""
+				"Potresti espandere le dimensioni della struttura fino ad un massimo di 18x18x18, ma prima di correre a costruire qualcosa di enorme, considera che anche la più piccola Induction matrix di 3x4x3 ma con una Ultimate Induction Cell e un Ultimate Induction Provider può immagazzinare 1,6 trilioni di RF e ha un tasso di trasferimento di 52,42 milioni di RF/t !"
+			]
+			dependencies: ["7545A28EC99DDD1C"]
+			id: "040AE11A8FC02A34"
+			tasks: [
+				{
+					id: "5D28DA09716D11DB"
+					type: "item"
+					item: "mekanism:induction_casing"
+				}
+				{
+					id: "43698A185FEC30F2"
+					type: "item"
+					item: "mekanism:induction_port"
+				}
+				{
+					id: "4B97C3B019F0CF8A"
+					type: "item"
+					item: "mekanism:basic_induction_cell"
+				}
+				{
+					id: "73A8B8E435765407"
+					type: "item"
+					item: "mekanism:basic_induction_provider"
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 1.5d
+			description: [
+				"L'Energy Cell immagazzina energia in AE, che è una forma di energia usata nelle macchine della Applied Energistics e nelle reti ME. Per caricarne una da una fonte di energia FE, è necessario un Energy Acceptor."
+				""
+				"Questa cella immagazzina 200 kAE e quando è collegata ad una rete ME serve come un UPS (Uninterrupted Power Supply)."
+			]
+			id: "4E5135EEC5FF54F6"
+			tasks: [{
+				id: "581F33AE8D923CB5"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:energy_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			description: [
+				"Una Dense Energy Cell è composta da 8 Energy Cells standard e un Calculation Processor."
+				""
+				"La Dense Energy Cell immagazzina 1,6 MAE (che è 8 volte una cella standard)."
+			]
+			dependencies: ["4E5135EEC5FF54F6"]
+			id: "2954202B0EF6F084"
+			tasks: [{
+				id: "19312B53704E1476"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:dense_energy_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			description: ["L'Advanced Energy Cube immagazzina 6.4 MFE"]
+			dependencies: ["17955004B38A3C96"]
+			id: "4B89D0ABD031547B"
+			tasks: [{
+				id: "19FE5E1C6C309619"
+				type: "item"
+				item: "mekanism:advanced_energy_cube"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.5d
+			description: ["L'Elite Energy Cube immagazzina 25.6 MFE"]
+			dependencies: ["4B89D0ABD031547B"]
+			id: "553895A4868C5827"
+			tasks: [{
+				id: "3DCE0A84D4E12BED"
+				type: "item"
+				item: "mekanism:elite_energy_cube"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.0d
+			description: ["L'Ultimate Energy Cube immagazzina 102.4 MFE"]
+			dependencies: ["553895A4868C5827"]
+			id: "66830DB294453D9C"
+			tasks: [{
+				id: "5FB1A2BED8344946"
+				type: "item"
+				item: "mekanism:ultimate_energy_cube"
+			}]
+		}
+		{
+			title: "Advanced Induction Cell Energy Storage"
+			x: 5.0d
+			y: 3.0d
+			dependencies: ["040AE11A8FC02A34"]
+			id: "244DE84998736BCA"
+			tasks: [
+				{
+					id: "12EB08C1BE9BF62A"
+					type: "item"
+					item: "mekanism:advanced_induction_cell"
+				}
+				{
+					id: "0B988123EC9F29E1"
+					type: "item"
+					item: "mekanism:advanced_induction_provider"
+				}
+			]
+		}
+		{
+			title: "Elite Induction Cell Energy Storage"
+			x: 5.0d
+			y: 4.5d
+			dependencies: ["244DE84998736BCA"]
+			id: "2AC37402D13774E6"
+			tasks: [
+				{
+					id: "39EF36BB98B843D8"
+					type: "item"
+					item: "mekanism:elite_induction_cell"
+				}
+				{
+					id: "75B092F0D1B66DDC"
+					type: "item"
+					item: "mekanism:elite_induction_provider"
+				}
+			]
+		}
+		{
+			title: "Ultimate Induction Cell Energy Storage"
+			x: 5.0d
+			y: 6.0d
+			dependencies: ["2AC37402D13774E6"]
+			id: "4F9A331CC2D78524"
+			tasks: [
+				{
+					id: "20DBCF350B6599E0"
+					type: "item"
+					item: "mekanism:ultimate_induction_cell"
+				}
+				{
+					id: "59BED154931BC32E"
+					type: "item"
+					item: "mekanism:ultimate_induction_provider"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 1.5d
+			description: [
+				"Una Redstone Flux Cell è una cella di potenza aggiornabile (attraverso gli augments) che può contenere da 1 milione di RF a 24 milioni di RF quando è completamente aggiornata."
+				""
+				"Può trasferire energia ad un tasso di 1000 RF/t senza alcun potenziamento, fino a 24000 RF/t quando è completamente potenziata."
+				""
+				"Una cella completamente potenziata avrebbe i Resonant Integral Components, una High-Flux RF Coil augment, e una Stabilized RF Coil augment. (Se viene usato più di un augment, il moltiplicatore più alto tra gli augment viene usato per ogni statistica)."
+			]
+			id: "3F652A888F48C0F3"
+			tasks: [{
+				id: "0EA0D0175EB491BD"
+				type: "item"
+				item: {
+					id: "thermal:energy_cell"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							EnergyMax: 1000000
+							EnergySend: 1000
+							Energy: 0
+							EnergyRecv: 1000
+						}
+					}
+				}
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 1.5d
+			description: [
+				"L'Energy Cells sono come le batterie. Sono ottime per immagazzinare energia aggiuntiva in un buffer, in modo da rendere più uniforme la produzione e la fornitura di energia."
+				""
+				"Un ottimo esempio di questo è per cose come i Solar Panels che producono energia solo durante il giorno. Aggiungendo una Energy Cell tra i Solar Panels che producono energia e le macchine che la consumano, è possibile immagazzinare energia extra che può essere utilizzata di notte, quando le Solar Cells non producono energia."
+				""
+				"L'Energy Cells hanno una capacità che va da 100k FE per questa versione Starter fino a 140M FE per la versione Nitro. Vedere i tooltip quando si passa sopra gli oggetti in JEI per le cifre esatte di ciascuno (compresi i loro tassi massimi di I/O)."
+				""
+				"Capacità: &a100 kFE&f \\& I/O: &a200 FE/t&f"
+			]
+			id: "317225FAA8F4EE62"
+			tasks: [{
+				id: "368E9211B31C5225"
+				type: "item"
+				item: "powah:energy_cell_starter"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 3.0d
+			description: ["Capacità: &a1 MFE&f \\& I/O: &a2.5 kFE/t&f"]
+			dependencies: ["317225FAA8F4EE62"]
+			id: "02896AF012D63D68"
+			tasks: [{
+				id: "2343880EB024892D"
+				type: "item"
+				item: "powah:energy_cell_basic"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 4.5d
+			description: ["Capacità: &a4 MFE&f \\& I/O: &a8 kFE/t&f"]
+			dependencies: ["02896AF012D63D68"]
+			id: "5129EAA3D6B0F2CB"
+			tasks: [{
+				id: "63A1A0CD0F3A27C1"
+				type: "item"
+				item: "powah:energy_cell_hardened"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 6.0d
+			description: ["Capacità: &a10 MFE&f \\& I/O: &a8 kFE/t&f"]
+			dependencies: ["5129EAA3D6B0F2CB"]
+			id: "122E783FC632AC64"
+			tasks: [{
+				id: "01545A9C6776325C"
+				type: "item"
+				item: "powah:energy_cell_blazing"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 7.5d
+			description: ["Capacità: &a25 MFE&f \\& I/O: &a50 kFE/t&f"]
+			dependencies: ["122E783FC632AC64"]
+			id: "0F669E9BAC134BC5"
+			tasks: [{
+				id: "59022D4524960CCD"
+				type: "item"
+				item: "powah:energy_cell_niotic"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 9.0d
+			description: ["Capacità: &a60 MFE&f \\& I/O: &a100 kFE/t&f"]
+			dependencies: ["0F669E9BAC134BC5"]
+			id: "58E29073090B3298"
+			tasks: [{
+				id: "49B7EE727DDCA322"
+				type: "item"
+				item: "powah:energy_cell_spirited"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 10.5d
+			description: ["Capacità: &a140 MFE&f \\& I/O: &a400 kFE/t&f"]
+			dependencies: ["58E29073090B3298"]
+			id: "20048F66B67FC7E0"
+			tasks: [{
+				id: "6DB979EF20A33557"
+				type: "item"
+				item: "powah:energy_cell_nitro"
+			}]
+		}
+		{
+			title: "Lithium Dust - Da Water a Lithium Dust, che confusione!"
+			x: 5.0d
+			y: -0.5d
+			description: [
+				"La Lithium Dust è necessaria per realizzare i componenti di una induction matrix. Questa descrizione del compito copre una semplice configurazione che vi permetterà di ottenere la Lithium Dust di cui avete bisogno. Potete scalare il tutto a vostro piacimento."
+				""
+				"Avrete bisogno di due thermal evaporation towers. La prima convertirà la water in brine, e la seconda convertirà la brine in liquid lithium. Raccogli 72 Thermal Evaporation Blocks, 6 Thermal Evaporation Valves, e 2 Thermal Evaporation Controllers. Posiziona due basi 4x4 con 3 blocchi di spazio tra di loro, poi costruisci 2 blocchi alti intorno ai bordi. Nello strato centrale, uno di fronte all'altro attraverso lo spazio di 3 blocchi, disponi 2 Valve su ogni torre nei blocchi centrali del lato. Posiziona le Valve rimanenti sui lati esterni in uno dei 2 blocchi centrali. Infine, sempre nella fila centrale, aggiungi un controller per ogni torre. Saprai che sono corretti quando appariranno le particelle di redstone."
+				""
+				"{image:kubejs:textures/quests/lithium/lithium_dust_1.png width:600 height:227 align:1 fit:true}"
+				""
+				"Fornite acqua alla prima Thermal Evaporation Tower attraverso una valve esterna. Usate qualcosa come un Kitchen Sink (da Cooking for Blockheads) o una Pump in modo da avere una fornitura costante di acqua alla torre. Dovrebbe iniziare a funzionare immediatamente, ma inizialmente sarà piuttosto lento."
+				""
+				"{image:kubejs:textures/quests/lithium/lithium_dust_2.png width:600 height:354 align:1 fit:true}"
+				""
+				"Successivamente, convogliare la brine dalla prima torre nella seconda torre usando Mechanical Pipes. Opzionalmente, mettete un Resistive Heater su ciascuna delle valve rimanenti e alimentatele. All'interno dell'interfaccia per i Resistive Heaters è possibile regolare l'uso della potenza, più potenza si fornisce, più alta è la temperatura dei heaters. Se usi un Thatldu SRG con una Uranium Quantum Singularity, puoi impostare entrambi i heaters a 125 FE/t e dovrebbe tenere il passo (poiché produce 250 FE/t)"
+				""
+				"{image:kubejs:textures/quests/lithium/lithium_dust_3.png width:600 height:331 align:1 fit:true}"
+				""
+				"Estrarre il liquid Lithium dalla seconda torre e trasferirlo a un Rotary Condensentrator. All'interno dell'interfaccia utente del Rotary Condensentrator, commuta l'operazione su Decondensentrating per trasformare il liquid Lithium in Lithium gas, e attiva l'uscita automatica del gas verso un Chemical Crystalizer, che convertirà il Lithium gas in Lithium Dust."
+				""
+				"{image:kubejs:textures/quests/lithium/lithium_dust_4.png width:600 height:331 align:1 fit:true}"
+				""
+				"Opzionalmente, impostate l'uscita dell'oggetto per l'espulsione automatica in qualche tipo di inventario (come un storage drawer come mostrato nell'immagine sopra). Ora dovreste essere in grado di lasciarlo girare e avrete (alla fine) tutta la Lithium Dust di cui avete bisogno."
+			]
+			id: "7545A28EC99DDD1C"
+			tasks: [{
+				id: "559AEB5C0C5BCD12"
+				type: "item"
+				item: "mekanism:dust_lithium"
+			}]
+		}
+	]
+}

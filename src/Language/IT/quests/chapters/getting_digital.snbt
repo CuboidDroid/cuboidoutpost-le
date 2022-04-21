@@ -1,0 +1,773 @@
+{
+	id: "1D11A99D1F5E79C8"
+	group: "719DAED049159F2E"
+	order_index: 6
+	filename: "getting_digital"
+	title: "Diventare digitali"
+	icon: {
+		id: "appliedenergistics2:4k_storage_cell"
+		Count: 1b
+		tag: { }
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Diventare digitali"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"Il sistema ME nell'avamposto è ottimo, ma davvero limitato in termini di quanto si può utilizzare in questo momento a causa del numero limitato e la dimensione delle unità di archiviazione disponibili. Sfortunatamente, non avevamo previsto che aveste bisogno di qualcosa di più grande, e non c'è modo di farvene avere di più nel poco tempo disponibile prima che il nostro angolo di galassia imploda."
+				""
+				"Quello che possiamo fare, tuttavia, è cercare di portarvi ad un punto in cui sarete in grado di fare di più da soli."
+				""
+				"Questo è un processo rischioso, tuttavia, e dovrete essenzialmente strapparlo a pezzi prima di poterlo ricostruire di nuovo."
+				""
+				"Procedere con cautela!"
+				""
+				"Cominciamo con l'assicurarci di avere i requisiti minimi a portata di mano..."
+			]
+			dependencies: ["3B00278F3DDF103C"]
+			id: "4784709844098E0E"
+			tasks: [{
+				id: "0388F3CB3E86CF89"
+				type: "checkmark"
+				title: "Andiamo!"
+			}]
+		}
+		{
+			title: "2 Sticky Pistons"
+			x: 2.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Avrai bisogno di 2 sticky pistons, che sono fondamentalmente piston con un po' di Slime sopra."
+				""
+				"Se non hai ancora lo slime, ci sono alcuni modi per mettere le mani su di esso... Controlla la JEI per maggiori informazioni, ma le opzioni includono:"
+				""
+				"- Uccidere uno Slime"
+				""
+				"- Fare la Dough con la Create e aggiungere il lime dye"
+				""
+				"- Creare Albumen e aggiungi lime dye (vedi il capitolo 'Impiattando la carne')"
+				""
+				"- Aggiungere 3 gocce di Maple Syrup insieme"
+				""
+				"- Aggiungere un po' di Bone Meal a un barrel di Witchwater"
+			]
+			dependencies: ["4784709844098E0E"]
+			id: "5C82C3665E774298"
+			tasks: [{
+				id: "38C35A46E941C51B"
+				type: "item"
+				item: "minecraft:sticky_piston"
+				count: 2L
+			}]
+		}
+		{
+			title: "5 Iron Ingots"
+			x: 2.0d
+			y: 2.0d
+			shape: "square"
+			description: ["Ormai dovresti sapere come fare l'Iron (che hai imparato nel capitolo 'Diventare creativi')"]
+			dependencies: ["4784709844098E0E"]
+			id: "5A4885301242EADD"
+			tasks: [{
+				id: "24BEAA8798E07A6A"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 5L
+			}]
+		}
+		{
+			title: "Un (Pure) Fluix Crystal"
+			x: 2.0d
+			y: -2.0d
+			shape: "square"
+			description: [
+				"Avrai bisogno di un Fluix Crystal o di un Pure Fluix Crystal. Se non hai ancora nessuno dei due, ecco come puoi procurarteli..."
+				""
+				"&aFluix Crystal&f"
+				"- Procurati un Charged Certus Quartz - o caricando un Quartz Certus in un caricatore, o Crushed Sky Stone frantumata in una Diamond Mesh o meglio".
+				"Getta il Charged Certus Quartz, un pezzo di Nether Quartz e della redstone in una pozza d'acqua.
+				""
+				"&aPure Fluix Crystal - Metodo lento&f"
+				"- Ottenere la Fluix Dust setacciando la Dust con una Diamond Mesh o meglio."
+				"Creare un Fluix Seed combinando Fluix Dust e Sand.
+				"Gettare il Fluix Seed in una pozza d'acqua e aspettare a lungo!
+				""
+				"&aPure Fluix Crystal - Metodo veloce&f"
+				"- Creare un Fluix Seed come sopra, o setacciare la Crushed Sky Stone usando un Emerald Mash o superiore."
+				"- Mettere il Fluix Seed in una Enrichment Chamber."
+			]
+			dependencies: ["4784709844098E0E"]
+			id: "623DF24DF6AE747A"
+			tasks: [{
+				id: "43478FF52B0B2BAD"
+				type: "item"
+				title: "Fluix Crystal o Pure Fluix Crystal"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "appliedenergistics2:crystals/fluix"
+					}
+				}
+			}]
+		}
+		{
+			title: "Il tuo primo Inscriber"
+			x: 4.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Ok, questa era la parte facile, ma ora dovreste avere tutto il necessario per fare il vostro primo Inscriber."
+				""
+				"L'Inscriber è uno strumento che sarà usato per creare nuovi processori usando una combinazione di energia, materie prime e un'appropriata Inscriber Press (una specie di modello / stampo)."
+				""
+				"Il problema è che non hai nessuna delle Inscriber Presses necessarie, e certamente non ne abbiamo spedita nessuna come parte del solito kit dell'Avamposto."
+				""
+				"Quindi... dovremo crearne un po'. Ancora una volta, la Divisione Scientifica dice di avere un \"piano\". Il prossimo passo è raccogliere altre materie prime, una per ogni tipo di Inscriber Press di cui avrete bisogno."
+			]
+			dependencies: [
+				"5A4885301242EADD"
+				"5C82C3665E774298"
+				"623DF24DF6AE747A"
+			]
+			id: "3FB2AF3606A3098A"
+			tasks: [{
+				id: "133494738BD4A9BF"
+				type: "item"
+				item: "appliedenergistics2:inscriber"
+			}]
+		}
+		{
+			title: "Un blocco di Certus Quartz"
+			x: 6.0d
+			y: 3.0d
+			shape: "square"
+			dependencies: ["3FB2AF3606A3098A"]
+			id: "64768BEB7E46CE75"
+			tasks: [{
+				id: "0B5774D5CF6C05E3"
+				type: "item"
+				item: "appliedenergistics2:quartz_block"
+			}]
+		}
+		{
+			title: "Un blocco di Diamond"
+			x: 6.0d
+			y: 1.0d
+			shape: "square"
+			dependencies: ["3FB2AF3606A3098A"]
+			id: "316D9E44032440F7"
+			tasks: [{
+				id: "68B6704BEF6E5541"
+				type: "item"
+				item: "minecraft:diamond_block"
+			}]
+		}
+		{
+			title: "Un blocco di Gold"
+			x: 6.0d
+			y: -1.0d
+			shape: "square"
+			dependencies: ["3FB2AF3606A3098A"]
+			id: "32726EE26E9DFED4"
+			tasks: [{
+				id: "45B7180A64931C32"
+				type: "item"
+				item: "minecraft:gold_block"
+			}]
+		}
+		{
+			title: "Un blocco di Quartz"
+			x: 6.0d
+			y: -3.0d
+			shape: "square"
+			dependencies: ["3FB2AF3606A3098A"]
+			id: "69AD6791BAC108C2"
+			tasks: [{
+				id: "606A35ABCC3FAB2B"
+				type: "item"
+				item: "minecraft:quartz_block"
+			}]
+		}
+		{
+			title: "Riconoscete che accettate i rischi."
+			x: 8.0d
+			y: 0.0d
+			description: [
+				"A questo punto, assicuratevi di avere:"
+				""
+				"1) Un Molecular Recycler."
+				"2) Una Quantum Transmutation Chamber."
+				"3) Un blocco di Certus Quartz, Diamond, Gold e Quartz."
+				""
+				"Continuando con questa guida di sopravvivenza confermi di aver compreso i rischi (potresti non avere l'archiviazione digitale alla fine di questo se fai casino), e assolvi qualsiasi cosa sia rimasta della Cuboid Corp. (che probabilmente non è nulla nel momento in cui fai questo) da qualsiasi negligenza o atto illecito, sia presente, futuro o passato."
+				""
+				"Per favore, accettate questo, prendete un pickaxe e facciamolo!"
+				""
+				"Ora potrebbe essere un buon momento per togliere dal tuo sistema ME qualsiasi cosa che non vuoi rischiare di perdere, o potrebbe essere bloccato in forma digitale per sempre se questo va male!"
+			]
+			dependencies: [
+				"64768BEB7E46CE75"
+				"316D9E44032440F7"
+				"32726EE26E9DFED4"
+				"69AD6791BAC108C2"
+			]
+			id: "473036F8B239EBC4"
+			tasks: [{
+				id: "7FF46C7E32BBD42F"
+				type: "checkmark"
+				title: "Concordo"
+			}]
+		}
+		{
+			title: "Speculare per accumulare"
+			x: 10.0d
+			y: 1.0d
+			shape: "square"
+			description: [
+				"È ora il momento della parte rischiosa dell'operazione..."
+				""
+				"Rimuovi con attenzione l'ME Crafting Terminal dalla tua ME"
+			]
+			dependencies: ["473036F8B239EBC4"]
+			id: "5D4C8F09E8B28232"
+			tasks: [{
+				id: "3EB79B69A4C36605"
+				type: "item"
+				item: "appliedenergistics2:crafting_terminal"
+			}]
+		}
+		{
+			title: "Guida alla sopravvivenza"
+			x: 10.0d
+			y: -1.0d
+			shape: "square"
+			description: ["Rimuovi il tuo attuale Disk di archiviazione ME Drive e poi prendi ME Drive..."]
+			dependencies: ["473036F8B239EBC4"]
+			id: "6E64F15FACF03BEE"
+			tasks: [{
+				id: "5C3E52B41FACEEDD"
+				type: "item"
+				item: "appliedenergistics2:drive"
+			}]
+		}
+		{
+			title: "Ricicla l'ME Terminal"
+			x: 12.0d
+			y: 0.0d
+			shape: "square"
+			description: ["Dopo aver dato il bacio d'addio al tuo TME Crafting Terminal e averlo messo nel Molecular Recycler, uno degli oggetti che otterrai dall'elaborazione dovrebbe essere un ME Terminal."]
+			dependencies: ["5D4C8F09E8B28232"]
+			id: "6C117200608F720A"
+			tasks: [{
+				id: "79F5B41ACDB7503D"
+				type: "item"
+				item: "appliedenergistics2:terminal"
+			}]
+		}
+		{
+			title: "Calculation Processor Riciclato"
+			x: 12.0d
+			y: 2.0d
+			shape: "square"
+			description: ["Dopo aver dato l'addio al tuo ME Crafting Terminal e averlo messo nel Molecular Recycler, uno degli oggetti che otterrai dall'elaborazione dovrebbe essere un Calculation Processor. Tienilo, ne avrai bisogno presto!"]
+			dependencies: ["5D4C8F09E8B28232"]
+			id: "2DA6F8C608369DAB"
+			tasks: [{
+				id: "77E67FD3FBC277BA"
+				type: "item"
+				item: "appliedenergistics2:calculation_processor"
+			}]
+		}
+		{
+			title: "Engineering Processor Riciclato"
+			x: 12.0d
+			y: -2.0d
+			shape: "square"
+			description: [
+				"Prendete il vostro ME Drive, dategli un bacio d'addio e gettatelo nel Molecular Recycler."
+				""
+				"Dovresti riavere un Engineering Processor, di cui dovresti avere buona cura perché ne avrai bisogno!"
+			]
+			dependencies: ["6E64F15FACF03BEE"]
+			id: "14809E788C95B703"
+			tasks: [{
+				id: "06C57E1B796C2738"
+				type: "item"
+				item: "appliedenergistics2:engineering_processor"
+			}]
+		}
+		{
+			title: "Logic Processor Riciclato"
+			x: 14.0d
+			y: 0.0d
+			shape: "square"
+			description: ["Alimentando il ME Terminal di nuovo nel Molecular Recycler dovresti ottenere un Logic Processor, tienilo a portata di mano! Ne avrai bisogno!"]
+			dependencies: ["6C117200608F720A"]
+			id: "232731C1C4D1113B"
+			tasks: [{
+				id: "2AF951F84776DCF4"
+				type: "item"
+				item: "appliedenergistics2:logic_processor"
+			}]
+		}
+		{
+			title: "Calculation Press Ricreata"
+			x: 14.0d
+			y: 2.0d
+			shape: "square"
+			description: [
+				"Metti il Calculation Processor che hai ottenuto e un Block of Certus Quartz nella Quantum Transmutation Chamber, questo dovrebbe creare una Inscriber Calculation Press."
+				""
+				"Notate che una volta che avete un Press, potete duplicarlo in un Inscriber usando un Block of Iron."
+			]
+			dependencies: ["2DA6F8C608369DAB"]
+			id: "67B68420FB0E241E"
+			tasks: [{
+				id: "19B67AAC7220ADE2"
+				type: "item"
+				item: "appliedenergistics2:calculation_processor_press"
+			}]
+		}
+		{
+			title: "Logic Press Ricreata"
+			x: 16.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Metti il Logic Processor che hai ottenuto e un Block of Gold nella Quantum Transmutation Chamber, questo dovrebbe creare una Inscriber Logic Press."
+				""
+				"Notate che una volta che avete un Press, potete duplicarlo in un Inscriber usando un Block of Iron."
+			]
+			dependencies: ["232731C1C4D1113B"]
+			id: "01F9BB1CACB2B06F"
+			tasks: [{
+				id: "68A19907F0B8C1F5"
+				type: "item"
+				item: "appliedenergistics2:logic_processor_press"
+			}]
+		}
+		{
+			title: "Engineering Press Ricreato"
+			x: 14.0d
+			y: -2.0d
+			shape: "square"
+			description: [
+				"Metti il Engineering Processor che hai ottenuto e un Block of Diamond nella Quantum Transmutation Chamber  - questo dovrebbe creare una Inscriber Engineering Press."
+				""
+				"Notate che una volta che avete un Press, potete duplicarlo in un Inscriber usando un Block of Iron."
+			]
+			dependencies: ["14809E788C95B703"]
+			id: "6D20E12DA72D8B81"
+			tasks: [{
+				id: "0BE00F1FE1411D21"
+				type: "item"
+				item: "appliedenergistics2:engineering_processor_press"
+			}]
+		}
+		{
+			title: "Stampa i nuovi Processors"
+			x: 18.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"A questo punto dovreste avere 3 di 4 Inscriber Presses. Per la quarta, avrai bisogno di uno dei Printed Processors, potresti anche farne almeno uno di ognuno adesso."
+				""
+				"Controlla JEI per i dettagli, ma essenzialmente tutto quello che devi fare è inserire la Press nello slot superiore dell'inscriber, e il materiale da usare per la stampa nello slot centrale, e assicurarti che l'inscriber abbia energia."
+			]
+			dependencies: [
+				"67B68420FB0E241E"
+				"01F9BB1CACB2B06F"
+				"6D20E12DA72D8B81"
+			]
+			id: "6081B09209FC997F"
+			tasks: [
+				{
+					id: "66BF9C8283CD7685"
+					type: "item"
+					item: "appliedenergistics2:printed_calculation_processor"
+				}
+				{
+					id: "3E140046BAD9F055"
+					type: "item"
+					item: "appliedenergistics2:printed_engineering_processor"
+				}
+				{
+					id: "1D25AC7B82B3A2D9"
+					type: "item"
+					item: "appliedenergistics2:printed_logic_processor"
+				}
+			]
+		}
+		{
+			title: "Silicon Press Ricreata"
+			x: 20.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Metti uno qualsiasi dei Printed processors che hai appena fatto e un Block of Quartz nella Quantum Transmutation Chamber, questo dovrebbe fare una Inscriber Silicon Press."
+				""
+				"Notate che una volta che avete un Press, potete duplicarlo in un Inscriber usando un Block of Iron."
+			]
+			dependencies: ["6081B09209FC997F"]
+			id: "1040CE5E84ECE131"
+			tasks: [{
+				id: "6ADD08F62142129A"
+				type: "item"
+				item: "appliedenergistics2:silicon_press"
+			}]
+		}
+		{
+			title: "Silicon Valley"
+			x: 20.0d
+			y: 2.0d
+			shape: "square"
+			description: [
+				"Per completare i Processors, avrete bisogno di 3 cose: il Printed Processor, un Printed Silicon, e un pò Redstone."
+				""
+				"Quindi, essenzialmente, avrete bisogno di un bel po' di queste parti di Printed Silicon per fare i processori necessari nella creazione di macchine per le vostre esigenze di archiviazione digitale e di auto-crafting."
+				""
+				"p.s. Se non hai ancora capito come fare il silicon, controlla su JEI le opzioni, ma è essenzialmente solo un caso di cottura del Quartz or Quartz Dust."
+			]
+			dependencies: ["1040CE5E84ECE131"]
+			id: "2654C45262000F4C"
+			tasks: [{
+				id: "332A531E883D7982"
+				type: "item"
+				item: "appliedenergistics2:printed_silicon"
+			}]
+		}
+		{
+			title: "Calculation Processors Fai da Te"
+			x: 18.0d
+			y: 4.0d
+			shape: "square"
+			description: [
+				"Ora avete la possibilità di creare i vostri Calculation Processors nell'Inscriber. Per farlo, mettete questi elementi negli slot specificati nell'Inscriber:"
+				""
+				"Sopra: Printed Calculation Circuit"
+				"Centro: Redstone Dust"
+				"Sotto: Printed Silicon"
+			]
+			dependencies: ["2654C45262000F4C"]
+			id: "3884B79CA43B87F8"
+			tasks: [{
+				id: "4470554B413B90C5"
+				type: "item"
+				item: "appliedenergistics2:calculation_processor"
+			}]
+		}
+		{
+			title: "Engineering Processors Fai da Te"
+			x: 22.0d
+			y: 4.0d
+			shape: "square"
+			description: [
+				"Ora avete la possibilità di creare i vostri Engineering Processors nell'Inscriber. Per farlo, metti questi oggetti negli slot specificati nell'Inscriber:"
+				""
+				"Sopra: Printed Engineering Circuit"
+				"Centro: Redstone Dust"
+				"Sotto: Printed Silicon"
+			]
+			dependencies: ["2654C45262000F4C"]
+			id: "2564F3F0FDE48426"
+			tasks: [{
+				id: "74A0CEAD8C91CD70"
+				type: "item"
+				item: "appliedenergistics2:engineering_processor"
+			}]
+		}
+		{
+			title: "Logic Processors Fai da Te"
+			x: 20.0d
+			y: 4.0d
+			shape: "square"
+			description: [
+				"Ora avete la possibilità di creare i vostri Logic Processors nell'Inscriber. Per farlo, mettete questi elementi negli slot specificati nell'Inscriber:"
+				""
+				"Sopra: Printed Logic Circuit"
+				"Centro: Redstone Dust"
+				"Sotto: Printed Silicon"
+			]
+			dependencies: ["2654C45262000F4C"]
+			id: "6C2FA7588E107E80"
+			tasks: [{
+				id: "098B441FD031EA98"
+				type: "item"
+				item: "appliedenergistics2:logic_processor"
+			}]
+		}
+		{
+			title: "Terminal Velocity"
+			x: 20.0d
+			y: 6.0d
+			shape: "square"
+			description: ["Ora dovreste essere in grado di fare di nuovo un ME Terminal e, ancora meglio, di farne più di uno se volete!"]
+			dependencies: ["6C2FA7588E107E80"]
+			id: "65BD74FF14641F2F"
+			tasks: [{
+				id: "4C22AE892DC1B99D"
+				type: "item"
+				item: "appliedenergistics2:terminal"
+			}]
+		}
+		{
+			title: "Terminal Crafting"
+			x: 19.0d
+			y: 8.0d
+			shape: "square"
+			description: ["Ora dovresti essere in grado di trasformare un ME Terminal in una ME Crafting Terminal"]
+			dependencies: [
+				"65BD74FF14641F2F"
+				"3884B79CA43B87F8"
+			]
+			id: "2DD6E2C876E17728"
+			tasks: [{
+				id: "07294B40DEC45FC2"
+				type: "item"
+				item: "appliedenergistics2:crafting_terminal"
+			}]
+		}
+		{
+			title: "Guidare verso casa"
+			x: 21.0d
+			y: 8.0d
+			shape: "square"
+			description: ["Non dovreste avere problemi a fare un ME Drive sostitutivo ora, e potenzialmente anche più unità in futuro per espandere davvero le vostre opzioni di archiviazione."]
+			dependencies: ["2564F3F0FDE48426"]
+			id: "203B87EB08269543"
+			tasks: [{
+				id: "5053DA220C9B659E"
+				type: "item"
+				item: "appliedenergistics2:drive"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 10.0d
+			description: [
+				"Ben fatto!"
+				""
+				"A questo punto, dovresti essere tornato al punto di partenza: rimetti il ME Crafting Terminal e il ME Drive dove li hai presi, rimetti la tua 4K Storage Cell originale nel ME Drive e tira un sospiro di sollievo!"
+				""
+				"La buona notizia è che ora puoi anche pensare di espandere il tuo storage..."
+			]
+			dependencies: [
+				"2DD6E2C876E17728"
+				"203B87EB08269543"
+			]
+			id: "0841F4A3C8B05581"
+			tasks: [{
+				id: "64671EB9185E1FE5"
+				type: "checkmark"
+				title: "Whew!"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 10.0d
+			shape: "square"
+			description: ["Le Storage Cell richiedono Storage Housings. Fanne uno ora, e quando l'avrai fatto, abbiamo alcuni pezzi di ricambio che siamo riusciti a salvare per te come ricompensa."]
+			dependencies: ["0841F4A3C8B05581"]
+			id: "0A0D9409C51D60B4"
+			tasks: [{
+				id: "24F57F8B0CA43176"
+				type: "item"
+				item: "appliedenergistics2:empty_storage_cell"
+			}]
+			rewards: [{
+				id: "4F72914B06CC8A0E"
+				type: "item"
+				item: "appliedenergistics2:empty_storage_cell"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "1k Storage Components"
+			x: 16.0d
+			y: 10.0d
+			shape: "square"
+			description: ["1k ME Storage Components possono essere collocati in un Storage Housing per creare un 1k Storage Cell, oppure 3 possono essere combinati in un 4k ME Storage Component."]
+			dependencies: ["0A0D9409C51D60B4"]
+			id: "2A0BA655B05B5F2D"
+			tasks: [{
+				id: "4B1393029545A9DC"
+				type: "item"
+				item: "appliedenergistics2:1k_cell_component"
+			}]
+			rewards: [{
+				id: "264EE5EF74114A8F"
+				type: "item"
+				item: "appliedenergistics2:1k_cell_component"
+				random_bonus: 1
+			}]
+		}
+		{
+			title: "4k Storage Components"
+			x: 14.0d
+			y: 10.0d
+			shape: "square"
+			description: ["4k ME Storage Components possono essere collocati in un Storage Housing per creare un 4k Storage Cell, oppure 3 possono essere combinati in un 16k ME Storage Component."]
+			dependencies: ["2A0BA655B05B5F2D"]
+			dependency_requirement: "one_completed"
+			id: "23CE2E93B226AFFC"
+			tasks: [{
+				id: "65F5CAEDB2A6D714"
+				type: "item"
+				item: "appliedenergistics2:4k_cell_component"
+			}]
+			rewards: [{
+				id: "55533B4BDB98A027"
+				type: "item"
+				item: "appliedenergistics2:4k_cell_component"
+				random_bonus: 1
+			}]
+		}
+		{
+			title: "16k Storage Components"
+			x: 12.0d
+			y: 10.0d
+			shape: "square"
+			description: ["16k ME Storage Components possono essere collocati in un Storage Housing per creare un 16k Storage Cell, oppure 3 possono essere combinati in un 64k ME Storage Component."]
+			dependencies: ["23CE2E93B226AFFC"]
+			id: "156FC2E5AB8F3967"
+			tasks: [{
+				id: "44465694085E9170"
+				type: "item"
+				item: "appliedenergistics2:16k_cell_component"
+			}]
+			rewards: [{
+				id: "6625DC55B0991216"
+				type: "item"
+				item: "appliedenergistics2:16k_cell_component"
+				random_bonus: 1
+			}]
+		}
+		{
+			title: "64k Storage Components"
+			x: 10.0d
+			y: 10.0d
+			shape: "square"
+			description: ["64k ME Storage Components possono essere collocati in un Storage Housing per creare un 64k Storage Cell."]
+			dependencies: ["156FC2E5AB8F3967"]
+			id: "7AB259F629E00DD9"
+			tasks: [{
+				id: "4310F1EB0CABC430"
+				type: "item"
+				item: "appliedenergistics2:64k_cell_component"
+			}]
+			rewards: [{
+				id: "1279CF40587D2AD8"
+				type: "item"
+				item: "appliedenergistics2:64k_cell_component"
+			}]
+		}
+		{
+			title: "1k Bytes of Storage in 63 Types"
+			x: 16.0d
+			y: 12.0d
+			description: [
+				"La 1k Storage Cell può immagazzinare 1k Bytes di oggetti in modo digitale, con un massimo di 63 tipi diversi di oggetti."
+				""
+				"La cosa fondamentale da ricordare è che ogni Storage Cell nel sistema di stoccaggio digitale di Applied Energistics può contenere un massimo di 63 diversi tipi di articoli (ad esempio, se hai 2 celle di stoccaggio, allora il tuo sistema può contenere, al massimo, 126 diversi tipi di oggetti)."
+				""
+				"In pratica questo significa che se vuoi immagazzinare molti articoli diversi con basse quantità, allora vorrai molte 1k Storage Cells per massimizzare il numero di tipi disponibili nel tuo sistema di stoccaggio."
+				""
+				"Al contrario, se si desidera memorizzare un piccolo numero di tipi di elementi in grandi quantità, allora sarebbe meglio con 64k Storage Cells come sono più efficienti da fare e occupano meno spazio (cioè non avrete bisogno di come molti ME Drives per ospitarli)."
+				""
+				"In realtà, nel tempo è probabile che tu voglia una buona miscela di Storage Cells di diverse dimensioni per coprire tutte le basi."
+			]
+			dependencies: ["2A0BA655B05B5F2D"]
+			id: "7A24453A042D2D00"
+			tasks: [{
+				id: "3187F5E5644F1669"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:1k_storage_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "4k Bytes of Storage in 63 Types"
+			x: 14.0d
+			y: 12.0d
+			description: ["The 4k Storage Cell può memorizzare 4k Bytes di oggetti in modo digitale, con un massimo di 63 tipi diversi di oggetti."]
+			dependencies: ["23CE2E93B226AFFC"]
+			id: "0AF2E06C3503B0A6"
+			tasks: [{
+				id: "2A6BA81D80630E0D"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:4k_storage_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "16k Bytes of Storage in 63 Types"
+			x: 12.0d
+			y: 12.0d
+			description: ["The 16k Storage Cell può memorizzare 16k Bytes di articoli in modo digitale, con un massimo di 63 tipi diversi di articoli."]
+			dependencies: ["156FC2E5AB8F3967"]
+			id: "4AB66FD31093156D"
+			tasks: [{
+				id: "726658307F86395B"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:16k_storage_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "64k Bytes of Storage in 63 Types"
+			x: 10.0d
+			y: 12.0d
+			description: ["The 64k Storage Cell può memorizzare 64k Bytes di articoli in modo digitale, con un massimo di 63 tipi diversi di articoli."]
+			dependencies: ["7AB259F629E00DD9"]
+			id: "6EE37CAA175FE56D"
+			tasks: [{
+				id: "48B6842994D695D2"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:64k_storage_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 20.0d
+			y: 12.0d
+			description: [
+				"Se avete provato ad automatizzare un Inscriber standard, avrete probabilmente capito che non è così facile come sperate. C'è un Refined Inscriber che potete fare e che potrebbe essere interessante."
+				""
+				"Il Refined Inscriber è leggermente più affamato di energia (circa il 12,5% in più per operazione), ma ha il vantaggio di essere in grado di mettere in coda più elementi di input negli slot di input, il che significa che si può effettivamente mettere in una stack completo di ciò che è necessario per una ricetta e lasciarla in esecuzione."
+				""
+				"È anche un po' più veloce di un Inscriber standard (che non è stato aggiornato con schede di accelerazione)."
+				""
+				"Inoltre, i lati hanno un codice colore. Il lato verde (il sinistro, ma anche la parte anteriore della macchina) permetterà agli oggetti di essere incanalati nello slot in alto a sinistra nell'interfaccia utente della macchina. I lati arancioni (destro e posteriore) accettano oggetti per lo slot in alto a destra nell'interfaccia utente, e la parte superiore della macchina (viola) accetterà oggetti per lo slot centrale in basso nell'interfaccia utente. Gli oggetti risultanti possono essere estratti dalla parte inferiore della macchina."
+				""
+				"&o&7Il Refined Inscriber usa i normali FE come fonte di energia.&r"
+			]
+			dependencies: ["0841F4A3C8B05581"]
+			optional: true
+			id: "163B031D52555C0F"
+			tasks: [{
+				id: "6CE38EE4DE616A3B"
+				type: "item"
+				item: "cuboidmod:refined_inscriber"
+			}]
+		}
+	]
+}

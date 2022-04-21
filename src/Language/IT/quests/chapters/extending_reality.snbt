@@ -1,0 +1,395 @@
+{
+	id: "61D154122E71A9ED"
+	group: "298C586EA6E5A561"
+	order_index: 0
+	filename: "extending_reality"
+	title: "Estendere la realtà"
+	icon: "extendedcrafting:ultimate_table"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 10.0d
+			y: 7.0d
+			shape: "square"
+			description: [
+				"E ora costruisci un Quantum Compressor. A differenza del Quantum Collapser, che è totalmente diverso ovviamente, questa macchina richiede tre cose per farla funzionare."
+				""
+				"In primo luogo, ha bisogno di energia. In secondo luogo, ha bisogno di un Ultimate Catalyst (te ne verrà dato uno quando finirai di fare l'Ultimate Crafting Table). E infine, ha bisogno di 2000 oggetti da comprimere in un altro tipo di Singularity."
+				""
+				"Queste Singularity sono più grandi e più instabili delle Quantum Singularities a cui sei abituato finora, ma possono essere combinate in qualcosa di molto speciale..."
+			]
+			dependencies: ["6C7EA2C8289435E6"]
+			id: "5816A28D1A733245"
+			tasks: [{
+				id: "5EDBA6D207693C7D"
+				type: "item"
+				item: "extendedcrafting:compressor"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -1.0d
+			shape: "square"
+			description: ["Avrete anche bisogno di un po' di black iron..."]
+			dependencies: [
+				"2A3A34A47D8AF234"
+				"73ADCC28894D93DA"
+			]
+			id: "4BB1A12C3A2C3421"
+			tasks: [{
+				id: "5B89287E192DB587"
+				type: "item"
+				item: "extendedcrafting:black_iron_ingot"
+				count: 16L
+			}]
+			rewards: [{
+				id: "2B1F0654E3628559"
+				type: "item"
+				item: "extendedcrafting:black_iron_ingot"
+				count: 16
+				random_bonus: 32
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.0d
+			shape: "square"
+			description: [
+				"E alcune Black Iron Slates."
+				""
+				"E con questo, siete pronti per iniziare a mettere tutto insieme."
+				"In ogni caso, avrete bisogno di 8 Components, 4 dei quali saranno usati per fare un Catalyst. I restanti 4 Components e il Catalyst saranno usati nella creazione della crafting table stessa."
+				""
+				"Ricordate, &cavrete solo bisogno di fare uno di ogni livello delle crafting table&r... abbiamo ancora uno di ognuno da donarvi grazie agli ultimi sforzi di Chris S. Wildersteak prima del... beh, lo sapete!"
+			]
+			dependencies: ["4BB1A12C3A2C3421"]
+			id: "2E7D0C59FCAEC0E9"
+			tasks: [{
+				id: "0B17C8A3A645EDE7"
+				type: "item"
+				item: "extendedcrafting:black_iron_slate"
+				count: 8L
+			}]
+			rewards: [{
+				id: "4BE59D4936268892"
+				type: "item"
+				item: "extendedcrafting:black_iron_slate"
+				count: 8
+				random_bonus: 16
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			shape: "square"
+			dependencies: ["5B6C15083527B310"]
+			id: "63DDA4FF2238E2B3"
+			tasks: [{
+				id: "01FDC17933F3790B"
+				type: "item"
+				item: "extendedcrafting:basic_catalyst"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			shape: "square"
+			dependencies: ["2E7D0C59FCAEC0E9"]
+			id: "5B6C15083527B310"
+			tasks: [{
+				id: "40269884E646D3B8"
+				type: "item"
+				item: "extendedcrafting:basic_component"
+				count: 8L
+			}]
+		}
+		{
+			x: 4.0d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["63DDA4FF2238E2B3"]
+			id: "69C6ED05E847BA4F"
+			tasks: [{
+				id: "0DE78977801E4C4E"
+				type: "item"
+				item: "extendedcrafting:basic_table"
+			}]
+			rewards: [{
+				id: "46DC98F1A84546DE"
+				type: "item"
+				item: "extendedcrafting:basic_table"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.0d
+			shape: "square"
+			dependencies: ["2E7D0C59FCAEC0E9"]
+			id: "1470747D35D3D196"
+			tasks: [{
+				id: "3758468ECA2B4AD5"
+				type: "item"
+				item: "extendedcrafting:advanced_component"
+				count: 8L
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			shape: "square"
+			dependencies: ["1470747D35D3D196"]
+			id: "3ACF037A7A317F6F"
+			tasks: [{
+				id: "3DF21E9E554B26AA"
+				type: "item"
+				item: "extendedcrafting:advanced_catalyst"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 5.0d
+			shape: "square"
+			dependencies: [
+				"3ACF037A7A317F6F"
+				"69C6ED05E847BA4F"
+			]
+			id: "36DBDB92426FAC0F"
+			tasks: [{
+				id: "75B16D8B1A3636B7"
+				type: "item"
+				item: "extendedcrafting:advanced_table"
+			}]
+			rewards: [{
+				id: "16FFC492B01F7C5B"
+				type: "item"
+				item: "extendedcrafting:advanced_table"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 1.0d
+			shape: "square"
+			dependencies: ["2E7D0C59FCAEC0E9"]
+			id: "4EE30516DA41D2E5"
+			tasks: [{
+				id: "429B2162E0F7BC3D"
+				type: "item"
+				item: "extendedcrafting:elite_component"
+				count: 8L
+			}]
+		}
+		{
+			x: 8.0d
+			y: 3.0d
+			shape: "square"
+			dependencies: ["4EE30516DA41D2E5"]
+			id: "6008394412BDF379"
+			tasks: [{
+				id: "03D2361941EEB05C"
+				type: "item"
+				item: "extendedcrafting:elite_catalyst"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 5.0d
+			shape: "square"
+			dependencies: [
+				"6008394412BDF379"
+				"36DBDB92426FAC0F"
+			]
+			id: "6771E8ED6A02A5B1"
+			tasks: [{
+				id: "7486E96AD97C9EE1"
+				type: "item"
+				item: "extendedcrafting:elite_table"
+			}]
+			rewards: [{
+				id: "7DF1CD5030457ED2"
+				type: "item"
+				item: "extendedcrafting:elite_table"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 7.0d
+			shape: "square"
+			description: ["Buoni progressi finora! Ora devi iniziare a lavorare su un altro piccolo progetto secondario. Per procedere con questo, costruisciti un Black Iron Frame, che useremo per ospitare un Quantum Compressor..."]
+			dependencies: ["6771E8ED6A02A5B1"]
+			id: "6C7EA2C8289435E6"
+			tasks: [{
+				id: "26B8F00549D6E042"
+				type: "item"
+				item: "extendedcrafting:frame"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 1.0d
+			shape: "square"
+			dependencies: ["2E7D0C59FCAEC0E9"]
+			id: "3DEB7AA0FCB90D95"
+			tasks: [{
+				id: "2E3E43953B6148D6"
+				type: "item"
+				item: "extendedcrafting:ultimate_component"
+				count: 8L
+			}]
+		}
+		{
+			x: 10.0d
+			y: 3.0d
+			shape: "square"
+			dependencies: ["3DEB7AA0FCB90D95"]
+			id: "43AFDACB073946B5"
+			tasks: [{
+				id: "77A66547B0FC28F0"
+				type: "item"
+				item: "extendedcrafting:ultimate_catalyst"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 5.0d
+			shape: "square"
+			description: ["Ben fatto! Avrete bisogno di questo catalyst extra (ammettiamolo, non lo faremo) per fare il prossimo livello di Singularitie da combinare nella Ultimate Singularity."]
+			dependencies: [
+				"43AFDACB073946B5"
+				"6771E8ED6A02A5B1"
+			]
+			id: "1B77906ED5BDB46E"
+			tasks: [{
+				id: "56F3D414E0998BC0"
+				type: "item"
+				item: "extendedcrafting:ultimate_table"
+			}]
+			rewards: [{
+				id: "27870E8BD74644D8"
+				type: "item"
+				item: "extendedcrafting:ultimate_catalyst"
+			}]
+		}
+		{
+			title: "L'Ultimate Singularity"
+			x: 12.0d
+			y: 7.0d
+			shape: "gear"
+			description: [
+				"L'Ultimate Singularity è una costruzione teorica che postuliamo che vi permetterà di mirare (eventualmente creare?) una nuova dimensione quando combinata con alcuni altri pezzi."
+				""
+				"Non è assolutamente nulla di simile a una delle tre singularitie che la nostra Divisione Scientifica ha cercato di combinare quando è successo l'Incidente, però, quindi non preoccupatevi."
+				""
+				"p.s. Se hai problemi a creare la Ultimate Singularity, assicurati di avere tutti gli ingredienti corretti nella Ultimate Crafting Table e poi (anche se la singolarità non è visualizzata nello slot di uscita), prova a tirarla fuori! C'è qualcosa di strano nel modo in cui incasina lo spazio e il tempo che significa che a volte può entrare in uno stato quantico in cui può essere invisibile ad occhio nudo."
+			]
+			dependencies: [
+				"5816A28D1A733245"
+				"1B77906ED5BDB46E"
+			]
+			size: 1.2d
+			id: "1C41E13DA168579E"
+			tasks: [{
+				id: "12EC2B79191738A6"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "È come se si fosse accesa una luce!"
+			description: [
+				"Grandi notizie! Hai fatto progressi così buoni seguendo fedelmente questa guida che siamo quasi in grado di estendere il tessuto stesso della realtà!"
+				""
+				"Abbiamo grandi progetti... e con grandi progetti viene la necessità di un grande crafting table."
+				""
+				"L'ingegnere junior (in formazione) più anziano della nostra divisione scientifica, Chris S. Wildersteak, ha trovato il modo di costruirne uno. E' arrivato circa a metà strada nel costruirlo prima che... sapete... \"ha dovuto smettere\". (principalmente a causa delle radiazioni). Tuttavia, crediamo che funzionerà, e la buona notizia è che saremo in grado di aiutarvi fornendovi circa la metà di ciò che vi serve."
+				""
+				"Per cominciare, però, avrai bisogno di una polvere speciale chiamata Luminessence."
+			]
+			dependencies: [
+				"49B2FC7C055AAC4A"
+				"7D30BCCFA1ACF48B"
+			]
+			id: "73ADCC28894D93DA"
+			tasks: [{
+				id: "5F27B1BFA0AE880A"
+				type: "item"
+				item: "extendedcrafting:luminessence"
+				count: 16L
+			}]
+			rewards: [{
+				id: "5AB7ACD36438635A"
+				type: "item"
+				item: "extendedcrafting:luminessence"
+				count: 16
+				random_bonus: 16
+			}]
+		}
+		{
+			x: 14.0d
+			y: 3.0d
+			shape: "gear"
+			description: [
+				"Ok, ok, quindi questo è un terzo tipo di singularity. Ma è una pura coincidenza, solo perché quegli idioti della Divisione Scienza hanno in qualche modo intrecciato 3 singularity e causato la fine dell'esistenza nel nostro angolo di galassia, non significa che stia per accadere di nuovo. Abbiate fiducia nel processo!"
+				""
+				"Fare questo tipo di singularity è abbastanza semplice. Mettete un 64k ME Component nello slot superiore, &acambiate la modalità di uscita per produrre singolarità&f, e poi inserite 256.000 oggetti per farlo schiacciare fino al nulla e \"pop\", ne esce una Singularity."
+			]
+			dependencies: [
+				"55E9D9E41FCDB264"
+				"7D30BCCFA1ACF48B"
+			]
+			id: "6559792A54D4ABA8"
+			tasks: [
+				{
+					id: "6322398849494365"
+					type: "item"
+					item: "appliedenergistics2:condenser"
+				}
+				{
+					id: "6B0BD333EB49D32D"
+					type: "item"
+					item: "appliedenergistics2:64k_cell_component"
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: 5.0d
+			shape: "gear"
+			description: [
+				"Un lavoro fantastico!"
+				""
+				"Hai un'altra delle 3 singularitie richieste per il Gran Finale!"
+				""
+				"Questo è il Finale, stai calmo."
+			]
+			dependencies: ["6559792A54D4ABA8"]
+			size: 1.2d
+			id: "17D6C3A7E868026C"
+			tasks: [{
+				id: "041C3A8A968C0FE5"
+				type: "item"
+				item: "appliedenergistics2:singularity"
+			}]
+		}
+		{
+			x: 14.0d
+			y: 7.0d
+			shape: "circle"
+			description: [
+				"La creazione di quantum linked singularities consiste semplicemente nel far cadere una Singularity e una Ender Dust e provocare un'esplosione nelle vicinanze, per esempio, facendo esplodere del TNT."
+				""
+				"Queste Quantum Linked Singularities possono essere usate in una ME Quantum Link Chamber all'interno di un anello di blocchi di  ME Quantum Ring per creare un gateway attraverso il quale i segnali ME possono passare su distanze enormi, e persino in modo interdimensionale."
+			]
+			dependencies: ["17D6C3A7E868026C"]
+			id: "35FF6178EB0AE116"
+			tasks: [{
+				id: "09FC5C69B91CDB30"
+				type: "item"
+				item: "appliedenergistics2:quantum_entangled_singularity"
+			}]
+		}
+	]
+}

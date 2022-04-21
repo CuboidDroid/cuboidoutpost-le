@@ -1,0 +1,1021 @@
+{
+	id: "50A44C7F08817A5F"
+	group: "53EA7D6C6A1B0F69"
+	order_index: 0
+	filename: "the_slaughter_house"
+	title: "Il mattatoio"
+	icon: "industrialforegoing:mob_slaughter_factory"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: 10.5d
+		y: 7.0d
+		width: 7.0d
+		height: 8.0d
+		rotation: 0.0d
+		image: "kubejs:textures/quests/ether_gas.png"
+		hover: ["Camera di stasi che tiene in posizione un Wither, con una Fluid Laser Base immediatamente sopra la sua testa, e 12 Laser Drills alimentati. Racchiuso nell'Hardened Glass per sicurezza."]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "Il mattatoio #2"
+			icon: "industrialforegoing:plastic"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"Mentre la Mob Farm di base funziona ragionevolmente bene, dovrai aumentare significativamente il tuo gioco per essere in grado di raccogliere alcuni dei materiali più esotici di cui abbiamo bisogno per rimettere la tua vita sui binari (o almeno deragliata e messa su un nuovo binario)."
+				""
+				"Una volta che avrete messo le mani su un po' di Plastic, sarete quasi pronti a spaccare con questa prossima fase di murderizzazione (che è una parola straniera, che significa \"ottenere oggetti da esseri che non ne hanno più bisogno\")."
+				""
+				"&aVedi come fare la plastica nel capitolo intitolato \"Presagio industriale\".&f"
+			]
+			dependencies: ["0ED1096C2B8D864F"]
+			id: "33B9229822CC74AF"
+			tasks: [{
+				id: "6C8DE9B0AA4D7B80"
+				type: "item"
+				item: "industrialforegoing:plastic"
+			}]
+		}
+		{
+			title: "Il mattatoio #1"
+			x: -8.5d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"Invece di correre in giro ogni mattina a raccogliere rifiuti, o uscire la sera e uccidere i mob, si potrebbe fare una specie di Farm dei mob e raccogliere automaticamente cose come Bone, Rotten flesh e così via."
+				""
+				"Una volta che hai fatto un po' di progressi, e prima che tu abbia a disposizione più tecnologia, ci sono alcuni strumenti di base a tua disposizione."
+				""
+				"Un design ragionevolmente buono per una semplice Farm di mob sarebbe qualcosa come una stanza buia 7x7 o 9x9 (potete usare il Dark Glass per essere in grado di vedere dentro, ma comunque bloccare la luce), e poi un tunnel (largo almeno 2) che si estende per almeno 24 blocchi di distanza (i mob sono timidi e non spawnano troppo vicino a voi!)."
+				""
+				"Considera l'aggiunta di un qualche tipo di illuminazione che puoi accendere/spegnere per fermare la Farm."
+				""
+				"Usate le Vector Plate per spingere i mob giù per il tunnel, e poi usate qualche trappola alla fine per ucciderli."
+				""
+				"Qualcosa come un Ender Hopper o un Vacuumulator può essere usato per raccogliere automaticamente i drop dei mob."
+				""
+				"Si raccomanda di usare dei storage drawer con un controller per immagazzinare il drop dei mob, e di usare i void upgrade per sbarazzarsi di qualsiasi eccesso."
+			]
+			id: "3DBEFFF52C75A9B0"
+			tasks: [
+				{
+					id: "69FC9BCE34605A49"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+				{
+					id: "6292EF3ED698CE9A"
+					type: "item"
+					item: "cuboidmod:salt"
+				}
+				{
+					id: "31C35B85D37C6CEC"
+					type: "item"
+					item: "minecraft:gunpowder"
+				}
+				{
+					id: "4606B745D5EFDA2A"
+					type: "item"
+					item: "minecraft:coal"
+				}
+				{
+					id: "65EE9004176945CA"
+					type: "item"
+					item: "cuboidmod:carbon_deposit"
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: 11.5d
+			description: [
+				"Spinge i mob e le entità nella direzione in cui è puntato."
+				""
+				"Shifta per non farti spingere."
+			]
+			dependencies: ["1568261FCFE104B4"]
+			id: "4CFA3C02614AEF0C"
+			tasks: [{
+				id: "41EE205D16835B0D"
+				type: "item"
+				item: "darkutils:vector_plate"
+			}]
+		}
+		{
+			title: "Un po' troppo salato per i miei gusti"
+			x: -8.5d
+			y: 1.5d
+			description: ["Per andare avanti con la tua Farm di Mob, avrai bisogno di una buona fonte di Black Dye. Il primo passo per metterne le mani su un po' è fare un po' di Sea Water (che può essere fatta mettendo la Wather in un Barrel che è posto sopra la Sand)."]
+			dependencies: ["3DBEFFF52C75A9B0"]
+			id: "7760F78B5FF75D88"
+			tasks: [{
+				id: "7D7028D37519739D"
+				type: "item"
+				item: "exnihilosequentia:bucket_sea_water"
+			}]
+		}
+		{
+			title: "Gli ingredienti"
+			x: -8.5d
+			y: 3.0d
+			description: ["Ora che hai dell'Sea Water pronta, devi raccogliere dell' Uncompressed Coal, della Gunpowder e del Carbon Deposit. Avrai bisogno di 1 di ognuno di questi 3 ingredienti per ogni tentativo."]
+			dependencies: ["7760F78B5FF75D88"]
+			id: "5496BC7B74214C1F"
+			tasks: [
+				{
+					id: "2942EA459DC5E0E9"
+					type: "item"
+					item: "excompressum:uncompressed_coal"
+				}
+				{
+					id: "3B37DD5AD5268D57"
+					type: "item"
+					item: "cuboidmod:carbon_deposit"
+				}
+				{
+					id: "3D6E7B2AB7FA597E"
+					type: "item"
+					item: "minecraft:gunpowder"
+				}
+			]
+		}
+		{
+			title: "Vettore Ynk (pronunciato \"Ink\"))"
+			x: -8.5d
+			y: 4.5d
+			description: [
+				"Prendi gli ingredienti (Uncompressed Coal, Carbon Deposit e Gunpowder) e gettali in una pozza di Sea Water."
+				""
+				"Dovrebbero reagire e produrre un certo numero di Ink Sacs."
+				""
+				"C'è la possibilità che la Sea Water venga consumata, quindi potrebbe essere necessario rabboccare l'acqua se stai cercando di fare una grande quantità."
+			]
+			dependencies: ["5496BC7B74214C1F"]
+			id: "39B75849C3E9642A"
+			tasks: [{
+				id: "3EF0095D0F45E517"
+				type: "item"
+				item: "minecraft:ink_sac"
+				count: 6L
+			}]
+			rewards: [{
+				id: "5265A33337D5D4DF"
+				type: "item"
+				item: "minecraft:ink_sac"
+				count: 10
+				random_bonus: 10
+			}]
+		}
+		{
+			title: "Una tela nera vuota"
+			x: -8.5d
+			y: 6.0d
+			description: ["Le Vector Plate e le varie trappole richiedono tutte Blank Plate. Per fortuna la ricetta te ne dà un bel po'!"]
+			dependencies: ["39B75849C3E9642A"]
+			id: "23E7764EF9EF17B8"
+			tasks: [{
+				id: "46BD205B63271294"
+				type: "item"
+				item: "darkutils:blank_plate"
+			}]
+		}
+		{
+			title: "Vai da quella parte!"
+			x: -8.5d
+			y: 10.0d
+			description: ["Con alcuni blank plate, dello Sugar e dello slime, puoi fare..."]
+			dependencies: ["23E7764EF9EF17B8"]
+			id: "1568261FCFE104B4"
+			tasks: [
+				{
+					id: "25E374FC866F6C54"
+					type: "item"
+					item: "minecraft:sugar"
+					count: 2L
+				}
+				{
+					id: "76A1CE17547481D1"
+					type: "item"
+					title: "Any Slime Ball"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:slimeballs"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: 13.0d
+			description: ["Una versione più veloce delle Vector Plate."]
+			dependencies: ["4CFA3C02614AEF0C"]
+			optional: true
+			id: "7E70885B9774A0F4"
+			tasks: [{
+				id: "6A796785E92613A6"
+				type: "item"
+				item: "darkutils:vector_plate_fast"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 14.5d
+			description: ["Una versione estremamente veloce delle Vector Plate"]
+			dependencies: ["7E70885B9774A0F4"]
+			optional: true
+			id: "1A0547CCF01A6F29"
+			tasks: [{
+				id: "2DAD779C224D3194"
+				type: "item"
+				item: "darkutils:vector_plate_extreme"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 11.5d
+			description: ["Danneggia i mob che lo toccano con danni magici. Non rilascia drop per i soli giocatori."]
+			dependencies: ["56BC496DD932D087"]
+			optional: true
+			id: "2C2D2785E6C04337"
+			tasks: [{
+				id: "09C070CB198F3E88"
+				type: "item"
+				item: "darkutils:rune_damage"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 10.0d
+			description: ["Con alcune Blank Plate e una Iron Sword si può fare un..."]
+			dependencies: ["23E7764EF9EF17B8"]
+			optional: true
+			id: "56BC496DD932D087"
+			tasks: [{
+				id: "1A13CDBE0FA90083"
+				type: "item"
+				item: {
+					id: "minecraft:iron_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: 11.5d
+			description: ["Danneggia i mob che lo toccano con il danno del giocatore. Lascia cadere EXP e bottino."]
+			dependencies: ["127615B7EB69331F"]
+			id: "3FEDD1C0F4BFBD52"
+			tasks: [{
+				id: "4FECFCC8992CBCB3"
+				type: "item"
+				item: "darkutils:rune_damage_player"
+			}]
+		}
+		{
+			title: "La minaccia fantasma"
+			x: -6.5d
+			y: 10.0d
+			description: [
+				"Con alcune Blank Plates, Cyan Dye, una Diamond Sword e una Phantom Membrance, puoi fare un..."
+				""
+				"&a(p.s. togliete il vostro sleep charm per un po' e non dormite per 3 o 4 notti di fila se avete bisogno di una Phantom Membrane)&f"
+			]
+			dependencies: ["23E7764EF9EF17B8"]
+			id: "127615B7EB69331F"
+			tasks: [
+				{
+					id: "4061CC597AA08627"
+					type: "item"
+					item: "minecraft:phantom_membrane"
+				}
+				{
+					id: "1632626E57B83CA8"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0D97008DF4958A77"
+					type: "item"
+					item: "minecraft:cyan_dye"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "7AE98999D7C430D6"
+				type: "item"
+				item: "minecraft:phantom_membrane"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			x: -12.5d
+			y: 11.5d
+			description: ["Avvelena i mob che lo toccano"]
+			dependencies: ["27FBE8609BFAB2CA"]
+			optional: true
+			id: "585ED5732E8783D1"
+			tasks: [{
+				id: "48BB959947C2B1BC"
+				type: "item"
+				item: "darkutils:rune_poison"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 11.5d
+			description: ["Indebolisce i mob che lo toccano"]
+			dependencies: ["3C36E6A9A874BC75"]
+			optional: true
+			id: "1EE0357987D06DA7"
+			tasks: [{
+				id: "19DE368B5103D7CF"
+				type: "item"
+				item: "darkutils:rune_weakness"
+			}]
+		}
+		{
+			x: -14.5d
+			y: 11.5d
+			description: ["Rallenta i mob che lo toccano"]
+			dependencies: ["038A57EFE4380545"]
+			optional: true
+			id: "1F43EA35F5870C9D"
+			tasks: [{
+				id: "6065F0745F16F6BD"
+				type: "item"
+				item: "darkutils:rune_slowness"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 11.5d
+			description: ["Infligge ai mob withering"]
+			dependencies: ["7D46D282381244B0"]
+			optional: true
+			id: "47C1CF2DD5F11C1D"
+			tasks: [{
+				id: "7F414318D87EDA2C"
+				type: "item"
+				item: "darkutils:rune_wither"
+			}]
+		}
+		{
+			x: -16.5d
+			y: 11.5d
+			description: ["Dà fuoco ai mob"]
+			dependencies: ["5EEEE4D69AC77C00"]
+			optional: true
+			id: "2F7235946BA42D67"
+			tasks: [{
+				id: "129EB6CB7240CCA3"
+				type: "item"
+				item: "darkutils:rune_fire"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 11.5d
+			description: ["Infligge ai mob la mining fatigue"]
+			dependencies: ["6BD537EE4A9505BE"]
+			optional: true
+			id: "643F8D9B242B7E3B"
+			tasks: [{
+				id: "7EB627BF28137B64"
+				type: "item"
+				item: "darkutils:rune_fatigue"
+			}]
+		}
+		{
+			x: -18.5d
+			y: 11.5d
+			description: ["Rende più evidenti i mob che lo toccano"]
+			dependencies: ["77770D218143403B"]
+			optional: true
+			id: "2AF7EB3C8E583BE6"
+			tasks: [{
+				id: "696DEB8D4BFC007B"
+				type: "item"
+				item: "darkutils:rune_glowing"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 11.5d
+			description: ["Infligge la fame ai mob"]
+			dependencies: ["0485FD94C70A3624"]
+			optional: true
+			id: "194EC6D5F9F82F93"
+			tasks: [{
+				id: "004D5BCE4B3246ED"
+				type: "item"
+				item: "darkutils:rune_hunger"
+			}]
+		}
+		{
+			x: -20.5d
+			y: 11.5d
+			description: ["Acceca i mob che lo toccano"]
+			dependencies: ["2388683702A74922"]
+			optional: true
+			id: "6CB8E29DD5BCD84C"
+			tasks: [{
+				id: "0E16F21CA7E49DF5"
+				type: "item"
+				item: "darkutils:rune_blindness"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 11.5d
+			description: ["Rende i mob nauseati"]
+			dependencies: ["1E36B230B43F850C"]
+			optional: true
+			id: "2AF57E65CBA85DD3"
+			tasks: [{
+				id: "319D16AC48B79F45"
+				type: "item"
+				item: "darkutils:rune_nausea"
+			}]
+		}
+		{
+			title: "L'oscurità scende"
+			x: -20.5d
+			y: 10.0d
+			description: ["Con un pò di Blank Plates e un Ink Sac, puoi creare un..."]
+			dependencies: ["23E7764EF9EF17B8"]
+			optional: true
+			id: "2388683702A74922"
+			tasks: [{
+				id: "4EDD802B8828BDCF"
+				type: "item"
+				item: "minecraft:ink_sac"
+			}]
+		}
+		{
+			title: "Inutili nella battaglia"
+			x: 3.5d
+			y: 10.0d
+			description: ["Con un pò di Blank Plates e una Nether Wart, puoi creare un..."]
+			dependencies: ["23E7764EF9EF17B8"]
+			optional: true
+			id: "1E36B230B43F850C"
+			tasks: [{
+				id: "1EB60A90A94DEF66"
+				type: "item"
+				item: "minecraft:nether_wart"
+			}]
+		}
+		{
+			title: "Sbuffo abbastanza per te?"
+			x: -12.5d
+			y: 10.0d
+			description: ["Con un pò di Blank Plates e un Pufferfish, puoi creare un..."]
+			dependencies: ["23E7764EF9EF17B8"]
+			optional: true
+			id: "27FBE8609BFAB2CA"
+			tasks: [{
+				id: "0956FAB0D0208927"
+				type: "item"
+				item: "minecraft:pufferfish"
+			}]
+		}
+		{
+			title: "Freddo fino alle ossa"
+			x: -14.5d
+			y: 10.0d
+			description: ["Con un pò di Blank Plates e un Block of Ice, puoi creare un..."]
+			dependencies: ["23E7764EF9EF17B8"]
+			optional: true
+			id: "038A57EFE4380545"
+			tasks: [{
+				id: "2C902733477696C8"
+				type: "item"
+				item: "minecraft:ice"
+			}]
+		}
+		{
+			title: "Non abbiamo appiccato il fuoco"
+			x: -16.5d
+			y: 10.0d
+			description: ["Con un pò di Blank Plates un Flint e dello Steel, puoi creare un..."]
+			dependencies: ["23E7764EF9EF17B8"]
+			optional: true
+			id: "5EEEE4D69AC77C00"
+			tasks: [{
+				id: "0BE4837C1ADB0C79"
+				type: "item"
+				item: {
+					id: "minecraft:flint_and_steel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Luminoso come il giorno"
+			x: -18.5d
+			y: 10.0d
+			description: ["Con un pò di Blank Plates e alcune Glowstone, puoi creare un..."]
+			dependencies: ["23E7764EF9EF17B8"]
+			optional: true
+			id: "77770D218143403B"
+			tasks: [{
+				id: "386A7620610E593F"
+				type: "item"
+				item: "minecraft:glowstone"
+			}]
+		}
+		{
+			title: "Nessuna pietà per i deboli"
+			x: -4.5d
+			y: 10.0d
+			description: ["Con un pò di Blank Plates e un Fermented Spider Eye, puoi creare un..."]
+			dependencies: ["23E7764EF9EF17B8"]
+			optional: true
+			id: "3C36E6A9A874BC75"
+			tasks: [{
+				id: "3D50F790B3226D2A"
+				type: "item"
+				item: "minecraft:fermented_spider_eye"
+			}]
+		}
+		{
+			title: "La salute svanisce"
+			x: -2.5d
+			y: 10.0d
+			description: ["Con un pò di Blank Plates e una Wither Rose, puoi creare un..."]
+			dependencies: ["23E7764EF9EF17B8"]
+			optional: true
+			id: "7D46D282381244B0"
+			tasks: [{
+				id: "7195C7E5537D5923"
+				type: "item"
+				item: "minecraft:wither_rose"
+			}]
+		}
+		{
+			title: "Stanco e provato"
+			x: -0.5d
+			y: 10.0d
+			description: ["Con un pò di Blank Plates e Prismarine Crystals, puoi creare un..."]
+			dependencies: ["23E7764EF9EF17B8"]
+			optional: true
+			id: "6BD537EE4A9505BE"
+			tasks: [{
+				id: "328C51CCF3AC00F8"
+				type: "item"
+				item: "minecraft:prismarine_crystals"
+			}]
+		}
+		{
+			title: "Affamato come un lupo"
+			x: 1.5d
+			y: 10.0d
+			description: ["Con un pò di Blank Plates e delle Rotten Flesh, puoi creare un..."]
+			dependencies: ["23E7764EF9EF17B8"]
+			optional: true
+			id: "0485FD94C70A3624"
+			tasks: [{
+				id: "4983F1C13D781FD6"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+			}]
+		}
+		{
+			title: "Giù le mani dal macello"
+			x: 2.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"La Mob Slaughter Factory ha bisogno di essere fornita di energia, e massacrerà qualsiasi mob (passivo o ostile) che capita di vagare nella sua area di lavoro."
+				""
+				"L'area di lavoro di default è solo 1x1, ma questa può essere ampliata attraverso l'uso di Range Addon. Per esempio, un +2 Range Addon sposterà il centro dell'area di lavoro a 2 blocchi di distanza dalla macchina, ed espanderà l'area di lavoro di 2 blocchi in tutte e quattro le direzioni cardinali dando un'area di lavoro di 5x5."
+				""
+				"La Mob Slaughter Factory produrrà Liquid Meat e Pink Slime, entrambe in forma liquida. Tuttavia, non lascia nessun drop di mob intatta."
+				""
+				"Si noti che la Mob Slaughter Factory può funzionare attraverso i blocchi solidi, a condizione che vengano utilizzati gli addon di portata appropriati. Questo è utile in quanto puoi posizionare la Mob Slaughter Factory al di fuori dei muri della tua Farm di mob e funzionerebbe comunque, ad esempio, un'area 3x3 circondata da muri solidi può essere completamente coperta usando un +2 Range Addon perché questo darà alla Mob Slaughter Factory un'area di lavoro di 5x5. Perché dovreste fare questo? Semplifica drasticamente il cablaggio, dandovi accesso a 5/6 lati della macchina per fornire energia, pompare fuori i liquidi, ecc."
+			]
+			dependencies: [
+				"33B9229822CC74AF"
+				"2A3A34A47D8AF234"
+			]
+			id: "6DDDE1A0CBBF73F0"
+			tasks: [{
+				id: "2EBF7C1380AC84CD"
+				type: "item"
+				item: "industrialforegoing:mob_slaughter_factory"
+			}]
+		}
+		{
+			title: "Non è Pepto-Bismol"
+			x: 4.0d
+			y: 0.0d
+			shape: "square"
+			description: ["Prendete un secchio di Pink Slime, è un ingrediente necessario per fare L'Advanced Machine Frames."]
+			dependencies: ["6DDDE1A0CBBF73F0"]
+			id: "370577641CAB9072"
+			tasks: [{
+				id: "629986ACDD5E4A79"
+				type: "item"
+				item: "industrialforegoing:pink_slime_bucket"
+			}]
+		}
+		{
+			title: "Advanced Machine Frames"
+			x: 6.0d
+			y: 0.0d
+			shape: "gear"
+			description: ["Ora che avete un modo per ottenere la Pink Slime, sarete in grado di aggiornare un Simple Machine Frame a un Advanced Machine Frame in una Dissolution Chamber."]
+			dependencies: [
+				"370577641CAB9072"
+				"3DE054F1DAE75C18"
+				"462F76F61874D5D7"
+			]
+			id: "3603C1EDE06AF667"
+			tasks: [{
+				id: "6BFE0C645E48FBD5"
+				type: "item"
+				item: "industrialforegoing:machine_frame_advanced"
+			}]
+		}
+		{
+			title: "Ho una cotta per te"
+			x: 7.0d
+			y: -1.0d
+			description: [
+				"Usa uno di quei nuovi Advanced Machine Frames e fatti un Mob Crusher."
+				""
+				"Questa bestia di una macchina schiaccia semplicemente quasi tutti i Mob nella sua area di lavoro in un batter d'occhio."
+				""
+				"L'area di lavoro può essere ampliata utilizzando i Range Addons, e il Mob Crusher ha bisogno di energia per funzionare."
+				""
+				"Nella sua modalità operativa standard, il Mob Crusher produrrà Essence e fornirà anche il drop dei Mob. C'è un'opzione per consumare invece l'Essence, il che rende i drop dei mob più abbondanti."
+				""
+				"L'Essence è estremamente utile però, quindi potrebbe essere una buona idea farne una scorta prima di cambiare modalità."
+			]
+			dependencies: ["3603C1EDE06AF667"]
+			optional: true
+			id: "377C09C3874A8B57"
+			tasks: [{
+				id: "0C98892FC88CDF25"
+				type: "item"
+				item: "industrialforegoing:mob_crusher"
+			}]
+		}
+		{
+			title: "Penso di essere un clone ora"
+			x: 6.0d
+			y: -2.0d
+			subtitle: "(La parodia di \"Weird Al\" Yankovic)"
+			description: [
+				"Hai mai voluto clonare una folla? Forse clonare una mucca, o uno scheletro, o forse uno zombie?"
+				""
+				"Beh, con un Mob Duplicator, sarete un passo più vicini!"
+			]
+			dependencies: ["7DB117C3899E0055"]
+			optional: true
+			id: "1206A4293BB2489D"
+			tasks: [{
+				id: "5E82CF71056BA49F"
+				type: "item"
+				item: "industrialforegoing:mob_duplicator"
+			}]
+		}
+		{
+			title: "Conservane uno per dopo"
+			x: 2.0d
+			y: -2.0d
+			description: [
+				"Con la plastic a disposizione, tutto ciò di cui hai bisogno è una Ghast Tear e puoi fare uno strumento di Mob Imprisonment Tool."
+				""
+				"Tutto quello che dovete fare è usare uno di questi su un Mob e sarà intrappolato all'interno dello Mob Imprisonment Tool."
+				""
+				"Per liberare il Mob, basta usare di nuovo lo strumento."
+				""
+				"&aLe Ghast Tears possono essere ottenute setacciando la Soul Sand con una Diamond Mesh&f"
+			]
+			dependencies: [
+				"33B9229822CC74AF"
+				"1D6A08BEFDD5DB77"
+			]
+			optional: true
+			id: "1DC41CB20494B832"
+			tasks: [{
+				id: "4CD2A4D8018F35E5"
+				type: "item"
+				item: "industrialforegoing:mob_imprisonment_tool"
+			}]
+		}
+		{
+			title: "Duplicare i Mobs"
+			x: 4.0d
+			y: -2.0d
+			description: [
+				"Con un Mob Duplicator e un Mob Imprisonment Tool, con un po' di potere e una scorta di Essence, anche tu puoi duplicare i mob su richiesta!"
+				""
+				"Prima di accenderlo però, potrebbe essere un'idea per:"
+				""
+				"- Aggiungere una leva o una specie di interruttore a distanza e impostare il duplicatore per richiedere redstone"
+				""
+				"- Ricontrollare l'area di lavoro e regolare come necessario"
+				""
+				"Si prega di essere responsabili / attenti quando si tenta di duplicare i mob più impegnativi come i Rabbit e i wither skeletons."
+			]
+			dependencies: [
+				"1206A4293BB2489D"
+				"1DC41CB20494B832"
+			]
+			optional: true
+			id: "720F353F9388C386"
+			tasks: [{
+				id: "4B658F73D630DBA5"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Fa schifo!"
+			x: 6.0d
+			y: 2.0d
+			shape: "square"
+			subtitle: "Fluidi dal nulla!"
+			description: [
+				"Il Fluid Laser Base, da solo, non fa nulla."
+				""
+				"Con i Laser Drill posizionati correttamente, tuttavia, la Fluid Laser Base è dove si controlla l'intero setup."
+				""
+				"Il modo migliore per vedere cosa è possibile estrarre con questo è guardare gli usi della Fluid Laser Base nella JEI."
+			]
+			dependencies: ["3603C1EDE06AF667"]
+			id: "3540D7BEA9EE53B3"
+			tasks: [{
+				id: "347722D6B70FCA20"
+				type: "item"
+				item: "industrialforegoing:fluid_laser_base"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			shape: "gear"
+			description: [
+				"Un altro ingrediente importante per passare alle macchine più avanzate necessarie qui è la Simple Machine Frame."
+				""
+				"&aVedi come fare un Simple Machine Frame nel capitolo intitolato \"Presagio industriale\".&f"
+			]
+			dependencies: [
+				"0654D844EC12E8A2"
+				"33B9229822CC74AF"
+			]
+			id: "462F76F61874D5D7"
+			tasks: [{
+				id: "6ECA46E9756812E5"
+				type: "item"
+				item: "industrialforegoing:machine_frame_simple"
+			}]
+		}
+		{
+			title: "Laser Drills"
+			x: 4.0d
+			y: 4.0d
+			shape: "square"
+			description: [
+				"I Laser Drill, da soli, non fanno molto."
+				""
+				"Avrete bisogno di puntarli verso una Laser Base di qualche tipo, o una Ore Laser Base (se volete i minerali come output) o una Fluid Laser Base (se state mirando ai fluidi, che è qualcosa che dovrete fare tra un po'...)."
+				""
+				"Potete usare più Ore Laser per base, finché le loro aree operative si sovrappongono alla Laser Base, dovrebbero funzionare."
+				""
+				"Le Laser Drill hanno bisogno di potenza, e possono accettare potenziamenti di Speed ed Efficiency."
+			]
+			dependencies: ["462F76F61874D5D7"]
+			id: "58EBBFFFCA2F18BE"
+			tasks: [{
+				id: "1206E83844BC986E"
+				type: "item"
+				item: "industrialforegoing:laser_drill"
+			}]
+			rewards: [{
+				id: "4128D8532E339714"
+				type: "item"
+				item: "industrialforegoing:laser_drill"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "Gas Ether, può comportare esplosioni"
+			x: 6.0d
+			y: 4.0d
+			shape: "gear"
+			description: [
+				"Sfortunatamente, dovremo mettere le mani su un po' di Ether Gas, il che richiede di trapanare la testa di un Wither vivo."
+				""
+				"Fortunatamente, con la Stasis Chamber ora disponibile, questa dovrebbe essere un'operazione abbastanza sicura."
+				""
+				"Siamo riusciti a includere un diagramma di quella che crediamo sarà una soluzione funzionante. Essenzialmente, si sistema la Stasis Chamber in basso e la si alimenta, e si accende l'anteprima dell'area di lavoro. Sopra il centro dell'area di lavoro, posizionate la Fluid Laser Base, con una lente viola al suo interno."
+				""
+				"Posizionare il/i Laser Drill orientati in modo da collegarsi alla base del Fluid Laser Base. Assicurarsi che le Laser Drill abbiano anche l'alimentazione. È possibile accendere l'anteprima dell'area di lavoro delle Laser Drill, la Laser Base deve essere all'interno dell'area di lavoro affinché la trivella si colleghi."
+				""
+				"Si raccomanda di prendere delle precauzioni nel caso in cui l'alimentazione venga a mancare, magari usate qualcosa come l'Hardened Glass per proteggere voi stessi e l'area vicina in caso di interruzione catastrofica dell'alimentazione. Ricordatevi di costruire il Wither prima di sigillarlo."
+				""
+				"Solo un promemoria, per costruire un Wither, fai una forma a T con 4 Soul Sand, e metti 3 Wither Skeleton Skulls in cima alle 3 Soul Sand che formano la parte superiore della forma a T. Il Wither apparirà non appena l'ultimo Wither Skeleton Skull sarà posizionato. Poiché è nel campo di stasi (ti sei ricordato di accenderlo prima, giusto?), dovrebbe essere tenuto in posizione nella sua fase iniziale."
+			]
+			dependencies: [
+				"58EBBFFFCA2F18BE"
+				"3540D7BEA9EE53B3"
+				"695925FD2C3D1D64"
+			]
+			size: 1.2d
+			id: "6C8F17AE612A4E83"
+			tasks: [
+				{
+					id: "05EE8FE670FFD9C8"
+					type: "item"
+					item: "industrialforegoing:laser_lens10"
+				}
+				{
+					id: "1EF8F986833C081B"
+					type: "item"
+					item: "industrialforegoing:ether_gas_bucket"
+				}
+			]
+		}
+		{
+			title: "Supreme Machines"
+			x: 6.0d
+			y: 6.0d
+			description: ["Con l'Ether Gas, ora puoi creare la Supreme Machine Frames."]
+			dependencies: ["6C8F17AE612A4E83"]
+			id: "6E5D4300D46FB4B7"
+			tasks: [{
+				id: "0D313CF09EE4158C"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+		}
+		{
+			title: "Wither senza di te"
+			x: 6.0d
+			y: 8.0d
+			description: [
+				"Il Wither Builder, quando viene fornito con la Soul Sand, i Wither Skeleton Skulls e l'energia, costruirà automaticamente il Withers per te."
+				""
+				"Ovviamente, dovresti prendere delle precauzioni! Assicuratevi di avere un buon modo per affrontarli in modo rapido e sicuro. Possiamo suggerire un Mob Crusher per ucciderli e una gabbia a prova di Whiter(Whiter-Proof) in cui contenerli?"
+			]
+			dependencies: ["6E5D4300D46FB4B7"]
+			id: "520B7BA10BCB9EA6"
+			tasks: [{
+				id: "4B1910B434BBEAEF"
+				type: "item"
+				item: "industrialforegoing:wither_builder"
+			}]
+		}
+		{
+			title: "Essence, Shelly!"
+			x: 8.0d
+			y: -2.0d
+			description: ["Riempi un secchio con Essence, vorrai metterne un po' in una delle macchine accanto."]
+			dependencies: ["377C09C3874A8B57"]
+			optional: true
+			id: "7DB117C3899E0055"
+			tasks: [{
+				id: "0149068486679F05"
+				type: "item"
+				item: "industrialforegoing:essence_bucket"
+			}]
+		}
+		{
+			title: "Recycled Enchantments"
+			x: 8.0d
+			y: 0.0d
+			description: [
+				"L'Enchantment Extractor usa il potere per estrarre gli incanti dagli oggetti incantati e metterli sui libri (che devi fornire). L'oggetto, senza incanti, viene messo in uno slot di uscita."
+				""
+				"Alcuni incanti (principalmente le maledizioni) non possono essere estratti."
+				""
+				"Questo è un modo davvero utile, quando accoppiato con una Farm di mob che lascia cadere oggetti incantati o un Marine Fisher che fornisce alcuni oggetti incantati, per ottenere una grande varietà di libri incantati con cui lavorare."
+			]
+			dependencies: ["3603C1EDE06AF667"]
+			optional: true
+			id: "1E352617334FDFBF"
+			tasks: [{
+				id: "2BA5C64B963F38A9"
+				type: "item"
+				item: "industrialforegoing:enchantment_extractor"
+			}]
+		}
+		{
+			title: "Uno per me, uno per te"
+			x: 10.0d
+			y: 0.0d
+			description: [
+				"L'Enchantment Sorter fa praticamente quello che dice sulla scatola."
+				""
+				"Usando un pò di energia, è in grado di rilevare se l'oggetto nello slot di ingresso è incantato o meno, e poi lo mette nello slot di uscita appropriato."
+				""
+				"Le uscite possono essere configurate in modo che gli oggetti incantati e quelli normali possano uscire da lati diversi."
+			]
+			dependencies: ["1E352617334FDFBF"]
+			optional: true
+			id: "49BE28927FB5382E"
+			tasks: [{
+				id: "02DB45BE9C11B489"
+				type: "item"
+				item: "industrialforegoing:enchantment_sorter"
+			}]
+		}
+		{
+			title: "Incantato, ne sono sicuro."
+			x: 10.0d
+			y: -2.0d
+			description: [
+				"La Enchantment Factory consuma energia ed Essence per incantare casualmente Book e Item."
+				""
+				"Accoppiato con un enchantment extractor, questo è un ottimo modo per ottenere gli incanti che vuoi davvero sulle tue armature, armi e strumenti."
+			]
+			dependencies: ["7DB117C3899E0055"]
+			optional: true
+			id: "49B20F558AA370B9"
+			tasks: [{
+				id: "521F65F641785462"
+				type: "item"
+				item: "industrialforegoing:enchantment_factory"
+			}]
+		}
+		{
+			title: "Applica te stesso"
+			x: 12.0d
+			y: 0.0d
+			description: ["L'Enchantment Applicator è un po' come una Anvil. Se fornito di Energia ed essence, un oggetto non incantato può essere combinato con un libro incantato. Questo viene fatto senza consumare nessuno dei tuoi livelli (l'Essence serve invece a questo scopo)"]
+			dependencies: [
+				"49B20F558AA370B9"
+				"49BE28927FB5382E"
+			]
+			optional: true
+			id: "321DD135DB3E839F"
+			tasks: [{
+				id: "6C28BF2EFD98B0C2"
+				type: "item"
+				item: "industrialforegoing:enchantment_applicator"
+			}]
+		}
+		{
+			title: "Mechanical Spawning"
+			x: 3.0d
+			y: -1.0d
+			description: [
+				"Con la Liquid Meat si può fare la Mechanical Dirt. Questa terra speciale, se fornita di energia e di un rifornimento costante di Liquid Meat, forzerà lo spawning di Mob ostili sopra di essa, il che può essere un ottimo modo per migliorare la tua Farm di mob."
+				""
+				"Nota che se metti i blocchi di Mechanical Dirt uno accanto all'altro, essi condivideranno automaticamente l'energia e la Liquid Meat, quindi dovrai solo fornire energia a uno di essi, e Liquid Meat a uno di essi, per rifornire tutti i blocchi di Mechanical Dirt toccanti."
+			]
+			dependencies: ["6DDDE1A0CBBF73F0"]
+			optional: true
+			id: "3A83A36C23765FD2"
+			tasks: [{
+				id: "2E44C9088F53C760"
+				type: "item"
+				item: "industrialforegoing:mechanical_dirt"
+			}]
+		}
+		{
+			title: "Resta fermo per favore"
+			x: 8.0d
+			y: 2.0d
+			shape: "square"
+			description: [
+				"La Stasis Chamber può congelare i mob sul posto."
+				""
+				"Questo avviene in un'area 3x3x3 immediatamente sopra di essa."
+				""
+				"Fate attenzione però! Se l'energia si esaurisce, il campo di stasi collasserà e il mob sarà di nuovo libero!"
+			]
+			dependencies: ["3603C1EDE06AF667"]
+			id: "695925FD2C3D1D64"
+			tasks: [{
+				id: "3189A08C802C116A"
+				type: "item"
+				item: "industrialforegoing:stasis_chamber"
+			}]
+		}
+	]
+}

@@ -1,0 +1,886 @@
+{
+	id: "621C89BFC53401DE"
+	group: "6E3D5CD175F7344D"
+	order_index: 6
+	filename: "deliciously_creative"
+	title: "Deliziosamente creativo"
+	icon: "create:sweet_roll"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 3.5d
+			y: 11.0d
+			width: 4.0d
+			height: 4.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/create_sweet_roll_step_1a.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 7.0d
+			y: 11.0d
+			width: 3.0d
+			height: 4.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/create_sweet_roll_step_1b.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 9.5d
+			y: 11.0d
+			width: 2.0d
+			height: 4.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/create_sweet_roll_step_1c.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.5d
+			y: 16.0d
+			width: 4.0d
+			height: 4.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/create_sweet_roll_step_2.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.5d
+			y: 21.0d
+			width: 4.0d
+			height: 4.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/create_sweet_roll_step_3.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.5d
+			y: 26.0d
+			width: 4.0d
+			height: 4.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/create_sweet_roll_step_4.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.5d
+			y: 31.0d
+			width: 4.0d
+			height: 4.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/create_sweet_roll_step_5.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 4.0d
+			y: 36.0d
+			width: 5.75d
+			height: 4.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/create_sweet_roll_step_6.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.5d
+			y: 41.0d
+			width: 4.0d
+			height: 4.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/create_sweet_roll_step_7.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.5d
+			y: 46.0d
+			width: 4.0d
+			height: 4.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/create_sweet_roll_step_8.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.5d
+			y: 51.0d
+			width: 4.0d
+			height: 4.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/create_sweet_roll_step_9.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.5d
+			y: 56.0d
+			width: 4.0d
+			height: 4.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/create_sweet_roll_step_10a.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 8.0d
+			y: 56.0d
+			width: 5.5d
+			height: 4.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/create_sweet_roll_step_10b.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 13.0d
+			y: 56.0d
+			width: 5.4d
+			height: 4.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/create_sweet_roll_step_10c.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.5d
+			y: 61.0d
+			width: 4.5d
+			height: 6.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/create_sweet_roll_step_11.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 9.0d
+			y: 61.0d
+			width: 7.2d
+			height: 6.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/create_sweet_roll_step_power.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "Deliziosamente creativo"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "(totalmente opzionale!)"
+			description: [
+				"La nostra regina delle torte, Chaynne, è davvero preoccupata che tu possa dover vivere il resto della tua vita senza l'accesso ai suoi famosi Sweet Rolls. Un team di ingegneri qui alla Cuboid Corp (tm) ha messo insieme un piano per placare Chaynne, e anche per permetterti di mangiare quanti più Sweet Rolls puoi."
+				""
+				"Non sono nemmeno sicuro che ti piacciano i rotoli dolci, ma nel caso in cui ti piacciano, abbiamo incluso questo pezzo della Guida di sopravvivenza per te da considerare."
+				""
+				"Abbiamo cercato di renderlo il più facile possibile da seguire, quindi speriamo che lo troverai istruttivo piuttosto che intimidatorio!"
+			]
+			dependencies: ["4D0F1810876E3DF6"]
+			id: "574CE4094B4ABC72"
+			tasks: [
+				{
+					id: "58DE25E7837DA81C"
+					type: "item"
+					disable_toast: true
+					item: "create:millstone"
+				}
+				{
+					id: "4D804011516A2ABF"
+					type: "item"
+					disable_toast: true
+					item: "create:encased_fan"
+				}
+				{
+					id: "52B7CEEEE676AA53"
+					type: "item"
+					title: "Brass Ingot"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/brass"
+						}
+					}
+				}
+				{
+					id: "3496EA2CCF18AB81"
+					type: "item"
+					item: "minecraft:quartz"
+				}
+				{
+					id: "34738D0F74A67F73"
+					type: "item"
+					item: "create:cogwheel"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "0D2A7F623B2049D9"
+					type: "item"
+					item: "trashcans:item_trash_can"
+				}
+				{
+					id: "38F6A689FA6F6382"
+					type: "item"
+					item: "create:encased_fan"
+					count: 2
+				}
+				{
+					id: "5411F8D680851196"
+					type: "item"
+					item: "create:cogwheel"
+					count: 4
+					random_bonus: 6
+				}
+			]
+		}
+		{
+			title: "Qualcosa su cui lavorare"
+			x: 0.0d
+			y: 2.0d
+			description: ["Un Depot è una superficie di lavoro che può contenere oggetti da elaborare / lavorare. Il design che gli ingegneri hanno ideato richiede un totale di 3, devi fornirne 2, e noi ne avevamo uno in più che puoi avere."]
+			dependencies: ["574CE4094B4ABC72"]
+			optional: true
+			id: "4FB9FA967B3EE350"
+			tasks: [{
+				id: "6361C0B2B607EDFF"
+				type: "item"
+				item: "create:depot"
+				count: 2L
+			}]
+			rewards: [{
+				id: "525C9BCA7FCEF353"
+				type: "item"
+				item: "create:depot"
+			}]
+		}
+		{
+			title: "Imbuti di fantasia"
+			x: 0.0d
+			y: 8.0d
+			description: [
+				"La chiave per il design della Sweet Roll factory saranno i Brass Funnels. Funzionano essenzialmente allo stesso modo degli Andesite Funnels, eccetto che i Brass Funnels possono avere dei filtri applicati per permettere solo a specifici tipi di oggetti di passarvi attraverso."
+				""
+				"Li attacchi ancora a un inventario nello stesso modo, ma c'è una piccola fessura su di essi, una volta posizionati, che ti permette di inserire un oggetto da filtrare (o un Filter se volevi che più tipi di oggetti ci passassero attraverso), e puoi usare la tua Wrench inglese su di essa per cambiare la direzione di funzionamento (indicata da una piccola freccia in alto)."
+			]
+			dependencies: ["35989B99214D45F6"]
+			optional: true
+			id: "79232363587AA883"
+			tasks: [{
+				id: "5065DC74E0553D42"
+				type: "item"
+				item: "create:brass_funnel"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "4973D1E62379860B"
+					type: "item"
+					item: "create:shaft"
+					count: 8
+					random_bonus: 8
+				}
+				{
+					id: "00374152BA9B84A6"
+					type: "item"
+					item: "create:belt_connector"
+					count: 4
+					random_bonus: 4
+				}
+				{
+					id: "06823C54DE0D61A6"
+					type: "item"
+					item: "create:gearbox"
+					count: 2
+					random_bonus: 2
+				}
+				{
+					id: "471C571C1D98DB93"
+					type: "item"
+					item: "create:vertical_gearbox"
+					count: 2
+					random_bonus: 2
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 4.0d
+			description: ["La Sand Paper è fatta di, beh, Sand e Paper. La ragione principale per cui ne avrete bisogno è per fare il Polished Rose Quartz."]
+			dependencies: ["4FB9FA967B3EE350"]
+			optional: true
+			id: "6690650E031AC11C"
+			tasks: [{
+				id: "1BCADA9B313BB6D3"
+				type: "item"
+				item: {
+					id: "create:sand_paper"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "01C5DBCCA99CE172"
+				type: "item"
+				item: "minecraft:quartz"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.0d
+			description: ["Rose Quartz è fatta coprendo Nether Quartz con Redstone Dust nella crafting table. Ha proprietà uniche che si manifestano una volta che è stato lucidato."]
+			dependencies: ["4FB9FA967B3EE350"]
+			optional: true
+			id: "2AC873F2B792C194"
+			tasks: [{
+				id: "1314E64FDD4E229F"
+				type: "item"
+				item: "create:rose_quartz"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"Per creare la Polished Rose Quartz, Tenendo un pà di Sand Paper a mano vuota, e Rose Quartz nella tua mano principale, e usale per strofinare insieme fino ad ottenere Polished Rose Quartz."
+				""
+			]
+			dependencies: [
+				"6690650E031AC11C"
+				"2AC873F2B792C194"
+			]
+			optional: true
+			id: "35989B99214D45F6"
+			tasks: [{
+				id: "737B0AFFD2372F31"
+				type: "item"
+				title: "La lucidatura"
+				item: "create:polished_rose_quartz"
+				count: 4L
+			}]
+			rewards: [{
+				id: "060411288A5FC60A"
+				type: "item"
+				item: "create:brass_ingot"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Checkpoint 1"
+			x: 0.0d
+			y: 10.0d
+			shape: "hexagon"
+			description: [
+				"Questi sono gli elementi di cui avrete bisogno per il passo 1"
+				""
+				"Avrai anche bisogno di 10 blocchi per questo passo (più altri 26 per dopo), e potresti anche volere una small Cog Wheel e una Hand Crank (così puoi ottenere il tuo primo pezzo di Wheat Flour)"
+				""
+				"Ricordatevi di scorrere per dare un'occhiata più da vicino alle immagini di esempio, se ne avete bisogno."
+			]
+			dependencies: ["79232363587AA883"]
+			optional: true
+			id: "5B6C59479BE6A4F8"
+			tasks: [
+				{
+					id: "14C24C0AB09B4AF9"
+					type: "item"
+					item: "create:millstone"
+				}
+				{
+					id: "59621F3CF108CE5C"
+					type: "item"
+					item: "trashcans:item_trash_can"
+				}
+				{
+					id: "551EF42B89D3E526"
+					type: "item"
+					item: "create:chute"
+				}
+				{
+					id: "0825EAA154FFE7C0"
+					type: "item"
+					item: "create:brass_funnel"
+					count: 2L
+				}
+				{
+					id: "6880BECD88DB69E0"
+					type: "item"
+					item: "create:depot"
+				}
+			]
+		}
+		{
+			title: "Passo 1 - Da grano a farina di grano"
+			x: 0.0d
+			y: 12.0d
+			description: [
+				"Inizia disponendo i 10 blocchi da costruzione come mostrato in un gradino alto 4. Posiziona il Mill in cima al gradino alto 4."
+				""
+				"A questo punto dovresti probabilmente attaccare temporaneamente una Cog Wheel al lato del Mill (l'albero dovrebbe essere verticale in modo che gli ingranaggi si ingranino insieme), e attaccare la hand crank alla parte superiore della Cog Wheel. Getta un po' di Wheat nella parte superiore del Mill, e poi gira la Hand Crank per un po' (finché non ci sono più segni di wheat schiacciato), poi usa una mano nuda sul Mill per estrarre il contenuto del Mill. Avrai bisogno di almeno una Wheat Flour e un Wheat Seed per impostare i filtri sugli Brass Funnels."
+				""
+				"Un passo più in basso del mulino, posiziona un deposito. Sul lato opposto, posiziona il bidone della spazzatura due blocchi più in basso, con uno scivolo sopra di esso. Una volta che questi sono in posizione, sei pronto per attaccare gli Brass Funnels."
+				""
+				"Iniziate attaccando un Brass Funnel al Mill sul lato sopra il deposito. Metti un pezzo di Wheat Flour nella fessura del filtro come mostrato."
+				""
+				"Sul lato opposto, mettete un Brass Funnel sul Mill (sopra lo scivolo), e mettete un Wheat Seed nel filtro del Brass Funnel come mostrato."
+				""
+				"A questo punto puoi testare di nuovo il sistema - butta dentro un po' di wheat, e quando il Mill finisce di lavorarne uno, gli imbuti dovrebbero ora mettere automaticamente la Wheat Flour nel deposito, e gettare i Wheat Seeds nello Chute (che a sua volta li inserirà nel Trash Can)."
+			]
+			dependencies: ["5B6C59479BE6A4F8"]
+			optional: true
+			id: "76781961999FE587"
+			tasks: [{
+				id: "04452542F7D92B10"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Checkpoint 2"
+			x: 0.0d
+			y: 15.0d
+			shape: "hexagon"
+			description: ["Per questo prossimo passo, avrete bisogno di alcune wooden stairs, un bucket of water e un encased fan."]
+			dependencies: ["76781961999FE587"]
+			optional: true
+			id: "2FFAF634FDD29430"
+			tasks: [
+				{
+					id: "36EEE940BD6DD9E2"
+					type: "item"
+					title: "Wooden Stairs"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:wooden_stairs"
+						}
+					}
+				}
+				{
+					id: "55FCDCFF75FA308B"
+					type: "item"
+					item: "create:encased_fan"
+				}
+				{
+					id: "2921FF77100C336E"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+			]
+		}
+		{
+			title: "Passo 2 - Lavaggio della farina alla rinfusa"
+			x: 0.0d
+			y: 17.0d
+			description: [
+				"La prima fase della lavorazione della Wheat Flour è quella di lavarla per ottenere la Dough. In questa fase, estendi i passi dei blocchi di costruzione per avere un totale di 3 blocchi di larghezza, metti giù l'encased fan come mostrato (le pale del ventilatore verso il deposito con un singolo spazio in mezzo), e poi metti giù delle stairs nell'orientamento mostrato."
+				""
+				"Ora dovresti essere in grado di usare il tuo Water Bucket sulle scale per \"bagnarle\" senza che l'acqua scorra dappertutto."
+			]
+			dependencies: ["2FFAF634FDD29430"]
+			optional: true
+			id: "64FE60E8C1EC5BFF"
+			tasks: [{
+				id: "3312653404ECCBCA"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Checkpoint 3"
+			x: 0.0d
+			y: 20.0d
+			shape: "hexagon"
+			description: ["Prima di andare avanti, potresti mettere un po' di Wheat Flour sul deposito esistente (quello per il lavaggio) e attaccare una hand crank sul retro della encased fan, poi farla girare finché la Wheat Flour sul deposito si trasforma in Dough, avrai bisogno di un pezzo di Dough per impostare il filtro su questo nuovo Brass Funnel."]
+			dependencies: ["64FE60E8C1EC5BFF"]
+			optional: true
+			id: "213DA57A37086E6D"
+			tasks: [
+				{
+					id: "15AE5BAD075568A7"
+					type: "item"
+					item: "create:depot"
+				}
+				{
+					id: "29668FC0E6B85E35"
+					type: "item"
+					item: "create:brass_funnel"
+				}
+			]
+		}
+		{
+			title: "Passo 3 - Spostare l'impasto"
+			x: 0.0d
+			y: 22.0d
+			description: [
+				"Posizionare un secondo deposito un passo sotto il primo, e poi attaccare Brass Funnel al lato del primo deposito. Metti un pezzo di Dough nel filtro del nuovo Brass Funnel."
+				""
+				"Ciò che questo fa è assicurare che la Wheat Flour rimanga sul primo deposito fino a quando non si è trasformata in Dough, e non appena è cambiata, sarà messa su questo nuovo Depot, pronta per un'ulteriore lavorazione."
+			]
+			dependencies: ["64FE60E8C1EC5BFF"]
+			optional: true
+			id: "60B3626BC014EFB6"
+			tasks: [{
+				id: "710443F4D8D98546"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Checkpoint 4"
+			x: 0.0d
+			y: 25.0d
+			description: ["Stiamo per agganciare le prime due fasi di lavorazione utilizzando 4 small Cog Wheels e un Vertical Gearbox."]
+			dependencies: ["60B3626BC014EFB6"]
+			optional: true
+			id: "721DF79A9838A88D"
+			tasks: [
+				{
+					id: "0177483B3457DB04"
+					type: "item"
+					item: "create:cogwheel"
+					count: 4L
+				}
+				{
+					id: "46BD189FD5A66CCC"
+					type: "item"
+					item: "create:vertical_gearbox"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 27.0d
+			description: [
+				"Rimuovi il blocco di costruzione più esterno sul gradino superiore (accanto alla encased fan) e sostituiscilo con un Vertical Gearbox. Assicurati che sia allineato come mostrato nell'immagine con la connessione accanto alla connessione per la Encased Fan."
+				""
+				"Usa due small Cog Wheels per collegare la encased fan e il vertical gearbox, e altre due small Cog Wheels per collegare il Mill al Vertical Gearbox."
+			]
+			dependencies: ["721DF79A9838A88D"]
+			optional: true
+			id: "00D76BF71ADD54B1"
+			tasks: [{
+				id: "3D152ECA83D697A6"
+				type: "checkmark"
+				title: "Passo 4 - Collegare le fasi 1 e 2"
+			}]
+		}
+		{
+			title: "Checkpoint 5"
+			x: 0.0d
+			y: 30.0d
+			shape: "hexagon"
+			description: [
+				"Ora che dovremmo essere in grado di fare automaticamente la dough, la fase successiva è quella di cuocerla in bread."
+				""
+				"Per fortuna, per farlo basta soffiarci sopra dell'aria calda, quindi basta un altro encased fan e un campfire,"
+				""
+				"p.s. Stai andando alla grande! Prendi una tazza di tè da noi!"
+			]
+			dependencies: ["00D76BF71ADD54B1"]
+			optional: true
+			id: "3BD9E729B4CF0882"
+			tasks: [
+				{
+					id: "3AA77758482E7A2A"
+					type: "item"
+					item: "minecraft:campfire"
+				}
+				{
+					id: "4DB8B4EFE5B95D8F"
+					type: "item"
+					item: "create:encased_fan"
+				}
+			]
+			rewards: [{
+				id: "602DC3E465E278B9"
+				type: "item"
+				item: "create:builders_tea"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 32.0d
+			description: ["Piazza la Encased Fan con le lame rivolte verso il Depot che riceverà il raw Dough (con uno spazio tra il Encased Fan e il Depot), e poi posare il campfire tra di loro."]
+			dependencies: ["3BD9E729B4CF0882"]
+			optional: true
+			id: "4E31461BA80A95BD"
+			tasks: [{
+				id: "5E60B6828734C888"
+				type: "checkmark"
+				title: "Passo 5 - Cucinare l'impasto"
+			}]
+		}
+		{
+			title: "Checkpoint 6"
+			x: 0.0d
+			y: 35.0d
+			shape: "hexagon"
+			description: [
+				"Per questo prossimo pezzo, collegheremo un po' più di potenza di rotazione e imposteremo un mechanical belt per spostare il bread alla fase successiva della lavorazione."
+				""
+				"Avrai bisogno di 4 small Cog Wheels, 4 SHAFT!, e una Mechanical Belt."
+			]
+			dependencies: ["4E31461BA80A95BD"]
+			optional: true
+			id: "58D47E7A29724AC5"
+			tasks: [
+				{
+					id: "33F7631B2F72B95B"
+					type: "item"
+					item: "create:cogwheel"
+					count: 4L
+				}
+				{
+					id: "431D531D28703BD4"
+					type: "item"
+					title: "4x SHAFT!"
+					item: "create:shaft"
+					count: 4L
+				}
+				{
+					id: "25ABDC77E51B9DC5"
+					type: "item"
+					item: "create:belt_connector"
+				}
+				{
+					id: "3C76001BCFC13F52"
+					type: "item"
+					item: "create:brass_funnel"
+				}
+			]
+		}
+		{
+			title: "Passo 6 - Collegare le fasi 2 e 3"
+			x: 0.0d
+			y: 37.0d
+			description: [
+				"Iniziare mettendo giù le 4 small cog wheels come mostrato nell'immagine. Attacca 3 SHAFT! alla ruota dentata inferiore, che portano sotto il Depot più in basso. Usa qualche altro blocco per costruire un po' più in là del gradino inferiore, e metti giù l'ultimo SHAFT!. Collega lo SHAFT! sotto il Depot più in basso a quello a pochi isolati di distanza usando una Mechanical Belt."
+				""
+				"Assicurati di avere del Bread a disposizione, poi metti giù il Brass Funnel sul Depot, e aggiungi il Bread al Funnel's filter. Puoi testare che questo funzioni mettendo del Bread sul Depot più in basso, attacca una manovella da qualche parte, e poi falla girare, il nastro dovrebbe allontanarsi dal Depot, e questo dovrebbe tirare il Bread sul nastro. (Potrebbe essere necessario rimuovere temporaneamente un ingranaggio per essere in grado di usare la manovella, o attaccare qualche altra forma di forza rotatoria)"
+				""
+				"Assicurati di avere alcuni blocchi extra alla fine delle Mechanical Belts per ora, abbiamo bisogno di loro per \"tornare indietro\" quando colpiscono la fine del nastro."
+			]
+			dependencies: ["58D47E7A29724AC5"]
+			optional: true
+			id: "519951BD1642E5DA"
+			tasks: [{
+				id: "13536B13302E1547"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Checkpoint 7"
+			x: 0.0d
+			y: 40.0d
+			shape: "hexagon"
+			description: ["Per girare il Bread nello Sweet Roll, avrai bisogno dello Spout."]
+			dependencies: ["519951BD1642E5DA"]
+			optional: true
+			id: "493DC7F5FB52E63C"
+			tasks: [{
+				id: "2E2D2A4B932E3BC3"
+				type: "item"
+				item: "create:spout"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 42.0d
+			description: ["Posizionare lo spout sopra la sezione finale del mechanical belt."]
+			dependencies: ["493DC7F5FB52E63C"]
+			optional: true
+			id: "3978608E0C61E60D"
+			tasks: [{
+				id: "345F90F805D95E34"
+				type: "checkmark"
+				title: "Passo 7 - Piazziamo lo Spout"
+			}]
+		}
+		{
+			title: "Checkpoint 8"
+			x: 0.0d
+			y: 45.0d
+			description: [
+				"Per questa fase successiva, si potrebbe invece usare una Tank e un Bucket milk, o usare un Deployer con secchi per mungere automaticamente una mucca, poi usare un Drain per estrarre il latte, pomparlo attraverso i tubi e così via, o anche solo usare un Rancher."
+				""
+				"Siete invitati a passare a uno qualsiasi di questi più tardi, se lo ritenete opportuno, ma nel frattempo ecco un suggerimento... usate invece una Cow in una Jar e un Mechanical Pipe!"
+				""
+				"Se ti stai chiedendo come ottenere una Cow in una Jar, avrai bisogno di 4 cose... una Milk Jar vicino a un muro, una Cow in piedi sopra il Milk Jar, e un'Envil da mettere sopra la mucca (quindi il muro, è più facile così!). L'incudine cadrà sulla Cow e la costringerà a entrare nella bottiglia. Non preoccupatevi però... è totalmente sicuro! La Cow produrrà lentamente latte per sempre, rendendola un modo utile (anche se lento) per ottenere il latte di cui hai bisogno per questa fabbrica."
+			]
+			dependencies: ["3978608E0C61E60D"]
+			optional: true
+			id: "3B11688AFC597D5B"
+			tasks: [
+				{
+					id: "4D05ED0F83B60B97"
+					type: "item"
+					item: "cookingforblockheads:cow_jar"
+				}
+				{
+					id: "7D5314CD4DCF4AB5"
+					type: "item"
+					item: "mekanism:basic_mechanical_pipe"
+				}
+			]
+		}
+		{
+			title: "Passo 8 - Fornire il latte"
+			x: 0.0d
+			y: 47.0d
+			description: ["Una volta che hai una Cow in una Jar, collegala al Spout usando il Mechanical Pipe (assicurati di aver impostato il tubo per estrarre dal barattolo usando il tuo Configurator su di esso). Lo Spout dovrebbe iniziare a riempirsi di Milk."]
+			dependencies: ["3B11688AFC597D5B"]
+			optional: true
+			id: "6C235AAF3C518909"
+			tasks: [{
+				id: "2A0A621762CC9565"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Checkpoint/Passo 9 - Il primo Sweet Roll"
+			x: 0.0d
+			y: 51.0d
+			description: [
+				"Non appena lo Spout ha abbastanza Milk, e supponendo che il mechanical belt sia in movimento, il Milk sarà spruzzato verso il basso sul Bread in un modello delicato, risultando in un delizioso Sweet Roll."
+				""
+				"Ne avrai bisogno nel prossimo passo, quindi non mangiare ancora l'ultimo! Nel frattempo, ecco un'altra tazza di tè per festeggiare il tuo successo!"
+			]
+			dependencies: ["6C235AAF3C518909"]
+			optional: true
+			id: "08886DE0FD266ADB"
+			tasks: [{
+				id: "14F5C402450B37AE"
+				type: "item"
+				item: "create:sweet_roll"
+			}]
+			rewards: [{
+				id: "61B385BC1E505766"
+				type: "item"
+				item: "create:builders_tea"
+			}]
+		}
+		{
+			title: "Checkpoint 10"
+			x: 0.0d
+			y: 55.0d
+			shape: "hexagon"
+			description: ["Per la parte finale di questa macchina, avrete bisogno di un Brass Funnel e un 1x1 Storage Drawer."]
+			dependencies: ["08886DE0FD266ADB"]
+			optional: true
+			id: "5FD4BF7EDEE97960"
+			tasks: [
+				{
+					id: "01110C28ABB4CFA9"
+					type: "item"
+					item: "storagedrawers:oak_full_drawers_1"
+				}
+				{
+					id: "6A69B33D90390F01"
+					type: "item"
+					item: "create:brass_funnel"
+				}
+			]
+		}
+		{
+			title: "Passo 10 - Storare l'uscita"
+			x: 0.0d
+			y: 57.0d
+			description: [
+				"In realtà, si potrebbe usare qualsiasi tipo di deposito per i Sweet Rolls, purché si imposti correttamente il filtro sul Brass Funnel. Oppure si potrebbe usare lo Storage Drawer come filtro, e semplicemente usare un Andesite Funnel invece di uno di Brass."
+				""
+				"Raccomandiamo, comunque, di abbassare prima lo storage drawer, e di mettere il Sweet Roll che hai tenuto da parte. Questo assicurerà che solo gli Sweet Rolls possano essere spostati dal nastro al Drawer. Potete poi sostituire il Brass Funnel con uno di Andesite, se volete, o rimanere con una versione di Brass (come abbiamo fatto noi) semplicemente perché ha un aspetto migliore. Basta attaccare il funnel al lato del Drawer rivolto verso il nastro e dovrebbe funzionare bene."
+				""
+				"A questo punto, avete essenzialmente finito, tutto quello che resta da fare è rifornire il Mill di Wheat e collegare la Rotational Force da qualche parte, avrete solo bisogno di assicurarvi che sia sufficiente per eseguire correttamente sia la fase di lavaggio che quella di cottura, sia in termini di soffiare nella giusta direzione, che abbastanza lontano. Se trovate che le cose vanno al contrario, dovreste davvero avere solo bisogno di mettere un gearbox extra tra la fonte della forza di rotazione e questo aggeggio, o connettervi a una diversa Cog Wheel."
+			]
+			dependencies: ["5FD4BF7EDEE97960"]
+			optional: true
+			id: "3985B75DD006791A"
+			tasks: [{
+				id: "3AEEF9C7CEAAB1A9"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "29FBE64077AF185B"
+					type: "item"
+					item: "botanypots:hopper_botany_pot"
+				}
+				{
+					id: "3D6BE76378552590"
+					type: "item"
+					item: "minecraft:farmland"
+				}
+				{
+					id: "44CBCB383888C763"
+					type: "item"
+					item: "minecraft:wheat_seeds"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 61.0d
+			shape: "gear"
+			description: [
+				"Mentre si potrebbe trovare qualche altro modo per alimentare il Wheat nel Mill (compresa una farm alimentata dalla forza di rotazione), si può anche fare uso di un Hopping Bonsai Pot che coltiva Wheat per fornire un lento e costante flusso di Wheat che, quando combinato con il lento e costante flusso di Milk infinito dalla Cow in Jar, significa avere una lenta e costante fornitura di infiniti Sweet Rolls!"
+				""
+				"La nostra bella regina delle torte, Chaynne, sarebbe così orgogliosa!"
+				""
+				"p.s. Una encased fan, un blocco di magma e uno Switch per accendere la ventola incassata saranno abbastanza forza di rotazione per alimentare tutto questo aggeggio! Vedi l'immagine a destra per il posizionamento."
+			]
+			dependencies: ["3985B75DD006791A"]
+			optional: true
+			id: "2CC618DE549047D3"
+			tasks: [{
+				id: "3FCB54BD4FC06FB2"
+				type: "checkmark"
+				title: "Passo 11 - Totale automazione"
+			}]
+		}
+	]
+}

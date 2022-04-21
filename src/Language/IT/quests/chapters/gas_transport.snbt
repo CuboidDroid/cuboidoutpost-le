@@ -1,0 +1,154 @@
+{
+	id: "7245BEC5B17E8B67"
+	group: "033EC740B2EF1FC1"
+	order_index: 1
+	filename: "gas_transport"
+	title: "Trasporto del Gas"
+	icon: "mekanism:basic_mechanical_pipe"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Trasporto del Gas"
+			x: 0.75d
+			y: -0.75d
+			shape: "gear"
+			description: ["Non molte macchine usano o producono gas, ma se pensate di fare alcune di quelle più avanzate della Mekanism, dovrete sapere come far muovere i gas."]
+			size: 1.5d
+			id: "4D50DCFC7ABA3DE0"
+			tasks: [{
+				id: "7EE8E8F937DD11DB"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			description: [
+				"Il Basic Pressurized Tube può essere utilizzato per convogliare il gas tra le macchine e/o i chemical tanks."
+				""
+				"Utilizzare un Configurator all'estremità del tubo per cambiarlo in tiro, spinta, scollegato o collegarlo."
+				""
+				"Il Basic Pressurized Tube pompa il gas ad una velocità di 1000mb per tick."
+			]
+			id: "0D3FF9FC5DB9F402"
+			tasks: [{
+				id: "1A607E38F25046D3"
+				type: "item"
+				item: "mekanism:basic_pressurized_tube"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"L'Advanced Pressurized Tube può trasferire gas a una velocità di 4000mb per tick."
+				""
+				"Puoi potenziare fino a 8 Basic Pressurized Tubes collegati \"nel mondo\" usando una Infused Alloy su uno di essi."
+			]
+			dependencies: ["0D3FF9FC5DB9F402"]
+			id: "115406F6904219FA"
+			tasks: [{
+				id: "3DAB2F18FDB037AC"
+				type: "item"
+				item: "mekanism:advanced_pressurized_tube"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			description: [
+				"L'Elite Pressurized Tube può trasferire gas a una velocità di 128.000 mb per tick."
+				""
+				"Puoi potenziare fino a 8 Advanced Pressure Tube collegati \"nel mondo\" usando una Reinforced Alloy su uno di essi."
+			]
+			dependencies: ["115406F6904219FA"]
+			id: "77C9370879035020"
+			tasks: [{
+				id: "6236FC5CDD50AAE7"
+				type: "item"
+				item: "mekanism:elite_pressurized_tube"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"L'Ultimate Pressurized Tube può trasferire gas a una velocità di 1.024.000 mb per tick."
+				""
+				"Puoi aggiornare fino a 8 Elite Pressurized Tube collegati alla versione Ultimate usando una Atomic Alloy su uno di essi."
+			]
+			dependencies: ["77C9370879035020"]
+			id: "2E07B0C35F4790C5"
+			tasks: [{
+				id: "33D8789465679EA5"
+				type: "item"
+				item: "mekanism:ultimate_pressurized_tube"
+			}]
+		}
+		{
+			title: "XNet per i Gas"
+			x: -2.0d
+			y: 1.5d
+			description: [
+				"I connector XNet e i network cable possono essere utilizzati (insieme a un controller XNet) anche per trasferire i gas. Basta assicurarsi di aver impostato il canale per trattare i gas."
+				""
+				"Se volete alcuni esempi di come usarlo, date un'occhiata all'argomento \"Reti per XMen\" in questa appendice."
+				""
+				"&cPurtroppo non puoi cercare la ricetta direttamente da qui a causa della corruzione che si è verificata durante la trasmissione di questa guida di sopravvivenza. Usa invece la funzione di ricerca in JEI.&f)"
+			]
+			dependency_requirement: "one_completed"
+			id: "48E08A97659F6B85"
+			tasks: [
+				{
+					id: "4D4094409BDB2182"
+					type: "item"
+					title: "Connector"
+					icon: "xnet:connector_blue"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "xnet:connectors"
+						}
+					}
+				}
+				{
+					id: "1FFF9541C491E2DF"
+					type: "item"
+					title: "Network Cable"
+					icon: "xnet:netcable_blue"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "xnet:cables"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			description: [" I Chemical Tanks (Basic, Advanced, Elite e Ultimate) possono essere usati per spostare i gas. È possibile riempirli in una macchina (o convogliandovi del gas) ed essi tratterranno il gas quando verranno raccolti, permettendovi di posizionarli manualmente (o di metterli nella macchina di destinazione) secondo necessità."]
+			id: "3CFDC5A35FD9DD08"
+			tasks: [{
+				id: "5137DFA5FFDA6EDA"
+				type: "item"
+				item: "mekanism:basic_chemical_tank"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			description: ["Trasferisce i gas. Usa una Pipe Wrench per configurare. Può essere aggiornato usando Pipe Upgrades."]
+			id: "73F2525F3CE42FAE"
+			tasks: [{
+				id: "49F8D19837FA125D"
+				type: "item"
+				item: "pipez:gas_pipe"
+			}]
+		}
+	]
+}

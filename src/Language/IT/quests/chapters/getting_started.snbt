@@ -1,0 +1,1630 @@
+{
+	id: "2A9ECC6240050E8C"
+	group: "719DAED049159F2E"
+	order_index: 1
+	filename: "getting_started"
+	title: "Come iniziare"
+	icon: "minecraft:tnt"
+	subtitle: ["A volte è necessario ricominciare da capo"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Rompendo..."
+			x: -10.0d
+			y: -14.0d
+			shape: "gear"
+			subtitle: "Sta tutto nella preparazione"
+			description: [
+				"Con una netta mancanza di risorse a vostra disposizione, l'unico modo per andare avanti è trovare un modo per riciclare un po' di quello che avete ora in qualcosa di più utile."
+				""
+				"Dovremo essere molto metodici e attenti lungo la strada e, ad essere sinceri, potremmo non aver pensato a tutti i modi per raggiungere le cose, quindi a volte avremo molte indicazioni per voi, e altre volte dovrete usare la vostra iniziativa per capire come raggiungere alcuni obiettivi."
+				""
+				"Per cominciare, però, ciò che resta della nostra Divisione Scientifica è riuscita a mettere insieme un piano su come iniziare. Abbiate fiducia nel processo, seguite i consigli e alla fine tutto andrà bene."
+				""
+				"Probabilmente."
+				""
+				"Prima di metterci dentro, però, dovremo usare alcuni dei materiali disponibili localmente."
+			]
+			dependencies: ["42182228C9517AA2"]
+			id: "2EABC9C58CBBD9CE"
+			tasks: [{
+				id: "6BE51446729D55F2"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "4254A9C5A5F419E8"
+				type: "item"
+				item: {
+					id: "minecraft:iron_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Hi-ho, hi-ho!"
+			icon: "cuboidmod:notsogudium_chunk"
+			x: -7.5d
+			y: -14.0d
+			shape: "square"
+			subtitle: "Non è molto buono..."
+			description: [
+				"Il pianeta su cui ti trovi sembra avere una crosta spessa di un materiale abbastanza debole e, a causa della tettonica minima, è in uno strato superiore abbastanza spesso e uniforme."
+				""
+				"Dirigiti nella neve (c'è una pala nel sistema ME), prendi il tuo piccone e vai a estrarne un po'. Dovresti essere in grado di combinare parte di ciò che raccogli in pezzi, pronti per un'ulteriore lavorazione."
+			]
+			id: "08199C54CDA05152"
+			tasks: [{
+				id: "2C3B7D403AEAFC86"
+				type: "item"
+				item: "cuboidmod:notsogudium_chunk"
+				count: 16L
+			}]
+		}
+		{
+			title: "Questa mia piccola luce"
+			icon: "minecraft:lantern"
+			x: -3.5d
+			y: -14.0d
+			shape: "square"
+			subtitle: "Mi sento illuminato"
+			description: [
+				"Sembra che i carbon deposit possano essere trasformati in carbone, il che è molto utile."
+				""
+				"Se fai delle bacchette con quei lingotti di Notsogudium, dovresti essere in grado di fare delle torce. E una volta che le hai, fare delle lanterne dovrebbe essere abbastanza semplice."
+				""
+				"Fino ad ora, avere un'illuminazione decente di notte non era importante, ma dato che ora sembra che i mob prendano il sopravvento quando è buio, illuminare un po' il posto potrebbe non essere una cattiva idea."
+			]
+			id: "7754450C6BBFDB88"
+			tasks: [
+				{
+					id: "60AB1C55A0FFD3C0"
+					type: "item"
+					item: "minecraft:torch"
+				}
+				{
+					id: "768866E35A773960"
+					type: "item"
+					item: "minecraft:lantern"
+				}
+				{
+					id: "6061FD56DBBC98CC"
+					type: "item"
+					item: "cuboidmod:notsogudium_rod"
+				}
+			]
+			rewards: [
+				{
+					id: "188E129640D17868"
+					type: "item"
+					item: "minecraft:torch"
+					count: 8
+					random_bonus: 8
+				}
+				{
+					id: "2D4353B886668550"
+					type: "item"
+					item: "minecraft:lantern"
+					count: 2
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			title: "Mettiamoci a cucinare!"
+			x: -5.5d
+			y: -14.0d
+			shape: "square"
+			subtitle: "Almeno è metallico"
+			description: [
+				"Ora che hai dei chunk, puoi fare dei lingotti."
+				""
+				"Puoi semplicemente mettere i chunk direttamente nella fornace, ma questo è un po' uno spreco. Se li polverizzi prima, puoi ottenere più materiale metallico in forma di polvere, che può poi essere fuso - raddoppiando effettivamente la tua produzione."
+			]
+			dependencies: ["6A3AEAB7ACCE1B5D"]
+			id: "626FA164933436D7"
+			tasks: [{
+				id: "3BE9A2D4AC8B7567"
+				type: "item"
+				item: "cuboidmod:notsogudium_ingot"
+				count: 16L
+			}]
+		}
+		{
+			title: "Perché la migliore difesa non è sempre \"scappare.\""
+			x: -1.5d
+			y: -14.0d
+			shape: "square"
+			subtitle: "Preparare il terreno..."
+			description: [
+				"Ora che hai alcuni materiali di base con cui lavorare, dovresti investirne un po' in qualche arma e protezione."
+				""
+				"Per cominciare, facciamo un'armatura e una spada."
+			]
+			dependencies: ["57093BC651DEC803"]
+			id: "3129A1AE176B5CB9"
+			tasks: [
+				{
+					id: "7F26406410D7DE75"
+					type: "item"
+					item: {
+						id: "cuboidmod:notsogudium_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7DAC065A6E65822A"
+					type: "item"
+					item: {
+						id: "cuboidmod:notsogudium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "71CAFD43790E1955"
+					type: "item"
+					item: {
+						id: "cuboidmod:notsogudium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1BE6121AEE1A82F7"
+					type: "item"
+					item: {
+						id: "cuboidmod:notsogudium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "322316CC58D2E959"
+					type: "item"
+					item: {
+						id: "cuboidmod:notsogudium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Non è proprio Mjolnir"
+			x: 0.5d
+			y: -14.0d
+			shape: "square"
+			subtitle: "È tempo di martellare!"
+			description: [
+				"Avrete notato che avremo bisogno di molto più materiale. Per fortuna c'è un antico dispositivo manuale specificamente progettato per sfondare grandi aree di roccia ad un ritmo abbastanza rapido."
+				""
+				"Prendi un po' di quei lingotti di Notsogudium, fai alcune aste e blocchi, e fai il tuo primo Smasher."
+			]
+			id: "17A095E4028652A2"
+			tasks: [
+				{
+					id: "21A4462EB51E8C0A"
+					type: "item"
+					item: "cuboidmod:notsogudium_block"
+					count: 2L
+				}
+				{
+					id: "12FB952DD962458B"
+					type: "item"
+					item: {
+						id: "cuboidmod:notsogudium_smasher"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Solo non aggrovigliare quantisticamente questi per favore"
+			x: 2.5d
+			y: -14.0d
+			shape: "square"
+			subtitle: "Quantum Singularities... cosa potrebbe andare storto?"
+			description: [
+				"Niente panico. Siamo (abbastanza) sicuri che le singolarità prodotte dal Quantum Collapser non risulterà in un altro ciclo di feedback incontrollabile che distrugge anche la vostra realtà locale."
+				""
+				"Non è che tu abbia scelta comunque... dobbiamo provare qualcosa per far ripartire la vita come la conoscevamo."
+				""
+				"Quindi, prendete dei materiali, preparate alcuni ingredienti necessari e costruitevi un Notsogudium Quantum Collapser."
+				""
+				"NOTA: Se prendete un Quantum Collapser, perderà il suo attuale progresso / reset."
+			]
+			id: "3B3D52DD98A287F1"
+			tasks: [
+				{
+					id: "1FF4264A368864D9"
+					type: "item"
+					item: "minecraft:furnace"
+				}
+				{
+					id: "4C3AD7F2590652CB"
+					type: "item"
+					item: "cuboidmod:notsogudium_furnace"
+				}
+				{
+					id: "450A6C5E6E1FC9E7"
+					type: "item"
+					item: "cuboidmod:notsogudium_quantum_collapser"
+				}
+			]
+		}
+		{
+			title: "Stoccaggio di base"
+			x: 2.5d
+			y: -16.0d
+			shape: "square"
+			subtitle: "Un posto dove tenere alcune cose"
+			description: [
+				"Per quanto riguarda l'automazione, in passato avremmo semplicemente suggerito di utilizzare il vostro sistema ME e vi avremmo inviato le periferiche necessarie."
+				""
+				"Sfortunatamente, non è più un'opzione."
+				""
+				"Quello che si può fare, tuttavia, è rivolgersi ad alcuni metodi più primitivi, ma ancora efficaci, di stoccaggio e trasferimento degli oggetti."
+				""
+				"Il primo passo sarà quello di costruirsi una specie di chest dai materiali locali."
+			]
+			id: "5F78547A1AA3DE82"
+			tasks: [{
+				id: "5FBF7B8C21682EC1"
+				type: "item"
+				item: "cuboidmod:notsogudium_chest"
+			}]
+		}
+		{
+			title: "Salta su"
+			x: 4.5d
+			y: -16.0d
+			shape: "square"
+			subtitle: "Abbastanza lento da farti impazzire"
+			description: [
+				"Ok, non è proprio un logistical transport pipe, ma almeno funziona!"
+				""
+				"Ora che puoi fare una chest, puoi anche creare un hopper."
+				""
+				"Facciamolo!"
+			]
+			dependencies: ["3F81ADF31804E872"]
+			id: "59F0E3D2CA2BCFA1"
+			tasks: [{
+				id: "475714292F2F3D19"
+				type: "item"
+				item: "minecraft:hopper"
+			}]
+		}
+		{
+			title: "Questo potrebbe richiedere un po' di tempo"
+			x: 4.5d
+			y: -14.0d
+			shape: "square"
+			subtitle: "Alla fine ne varrà la pena!"
+			description: [
+				"Le Quantum Singularities sono un po' fastidiosi da fare inizialmente, ma miglioreranno significativamente la qualità della vostra vita nel prossimo futuro."
+				""
+				"Fate lo sforzo ora, e iniziate il processo per farne un po'."
+				""
+				"Si noti che il collapser non ha bisogno di energia, e si possono inserire gli ingressi nella parte superiore ed estrarli da qualsiasi altro lato."
+				""
+				"Per ora si consiglia di farne almeno uno dai lingotti di Notsogudium."
+				""
+				"NOTA: Se raccogliete un Quantum Collapser, esso perderà il suo attuale progresso / reset."
+			]
+			dependencies: [
+				"534EB9B17D03F982"
+				"5BCCB692F2DA18EE"
+			]
+			id: "1B19F62AC8F6800F"
+			tasks: [{
+				id: "6355247194133299"
+				type: "item"
+				item: "cuboidmod:notsogudium_quantum_singularity"
+			}]
+		}
+		{
+			title: "L'unica cosa migliore delle miniere..."
+			x: 4.5d
+			y: -12.0d
+			shape: "square"
+			subtitle: "... è poter scegliere di non farlo!"
+			description: [
+				"Estrarre tutto quel Notsogudium a mano non è poi così difficile, ma sono sicuro che stai cominciando a sentire che hai di meglio da fare."
+				""
+				"Per fortuna, grazie alle meraviglie della scienza moderna, ora dovresti essere in grado di fare un SRG di primo livello."
+				""
+				"Il Notsogudium Singularity Resource Generator è un fantastico pezzo di equipaggiamento che utilizza le Quantum Singularities per generare risorse gratuite a un ritmo costante. Più tardi, sarai in grado di costruire SRG di livello superiore, ma per ora, concentriamoci su come far funzionare il Notsogudium SRG di base."
+				""
+				"Una volta che l'hai ottenuto, inserisci semplicemente una Quantum Singularity del tipo per cui vuoi risorse, e lui farà la sua magia! Puoi usare un hopper per estrarre automaticamente ciò che viene generato, o prenderne un po' dall'interno dell'interfaccia utente dell'SRG."
+			]
+			dependencies: ["359365F5F00C3049"]
+			id: "083190DE38442109"
+			tasks: [
+				{
+					id: "4B0FD5041D827366"
+					type: "item"
+					item: "cuboidmod:notsogudium_crafting_table"
+				}
+				{
+					id: "118FFA2ED64EDDFB"
+					type: "item"
+					item: "cuboidmod:notsogudium_singularity_resource_generator"
+				}
+			]
+		}
+		{
+			title: "L'efficienza non è tutto"
+			x: 3.5d
+			y: -15.0d
+			subtitle: "Ti presento lo Smoosher"
+			description: [
+				"Assomiglia un po' a uno Smasher, ma il suo scopo non è quello di rompere le rocce, ma piuttosto di frantumare i pezzi in polvere."
+				""
+				"Potresti, naturalmente, continuare a usare il tuo Pulverizer, che non costa altro che un po' di energia per raddoppiare la tua produzione. Lo Smoosher usa alcune risorse per fabbricarlo, e ha una durata, ma poi ti dà un modo molto più veloce di ottenere lo stesso risultato."
+				""
+				"Fate qualche furnace vecchio stile, e sarete in grado di produrre lingotti a un ritmo molto più veloce."
+			]
+			dependencies: ["5BCCB692F2DA18EE"]
+			optional: true
+			id: "0D109E0A430DE384"
+			tasks: [{
+				id: "23778F9EE905438C"
+				type: "item"
+				item: {
+					id: "cuboidmod:smoosher"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "55B3A05D684101BF"
+				type: "item"
+				item: "cuboidmod:notsogudium_furnace"
+			}]
+		}
+		{
+			title: "Ti servirà..."
+			x: 2.5d
+			y: -12.0d
+			shape: "square"
+			subtitle: "Una potente fonte"
+			description: [
+				"È ora di mettere a frutto un po' di quel Coal in eccesso."
+				""
+				"Se non hai un eccesso, che cosa hai fatto? Torna là fuori e spacca ancora un po' di roccia!"
+				""
+				"Mentre attualmente avete una buona fonte di energia nei Wind Generator sul tetto, purtroppo non possiamo ancora farne altri, e avremo bisogno di fonti di energia alternative."
+				""
+				"La Divisione Scientifica qui alla Cuboid Corporation crede che un Coal Quantum Singularity potrebbe essere possibile da usare in qualche tipo di generatore alimentato dalla Singularity, quindi potresti anche iniziare a far collazionare un mucchio di Coal in uno..."
+			]
+			dependencies: ["57FC3EB6E54A8FC5"]
+			id: "46C0CB8EAB4DDC96"
+			tasks: [{
+				id: "70F5AF2B3BEC1E2A"
+				type: "item"
+				item: "cuboidmod:coal_quantum_singularity"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -14.0d
+			dependencies: ["359365F5F00C3049"]
+			optional: true
+			id: "1D7CFD8F45FE273A"
+			tasks: [{
+				id: "22C2FB1F3E5E4FB0"
+				type: "item"
+				item: "cuboidmod:silica_dust_quantum_singularity"
+			}]
+		}
+		{
+			title: "Una nuova fonte di energia"
+			x: 0.5d
+			y: -11.0d
+			shape: "square"
+			subtitle: "Metti la singularity al lavoro"
+			description: [
+				"Ora che hai un blocco di redstone, sei in grado di fare il tuo primo Singularity Power Generator, o SPG in breve."
+				""
+				"Molto simile all'SRG (che produce risorse passivamente quando gli viene fornita una Quantum Singularity), l'SPG produce energia passivamente quando gli viene data una Quantum Singularity appropriata."
+				""
+				"Notate che non una qualsiasi Quantum Singularity andrà bene. Infatti, praticamente l'unica che puoi usare in questo momento è una Coal Quantum Singularity. Per fortuna, a quest'ora ne hai già una anche tu, o almeno sai come ottenerla!"
+				""
+				"Andate avanti e fatevi il vostro primo SPG, mettetelo vicino a qualcosa che ha bisogno di energia, o collegato a un cavo di alimentazione di qualche tipo, mettete la Coal Quantum Singularity, e inizierà a produrre energia per voi."
+			]
+			dependencies: [
+				"728ECEC4326B2A5B"
+				"350F4F474580937C"
+			]
+			id: "7BEE753402BFAC35"
+			tasks: [{
+				id: "44281D897930AB66"
+				type: "item"
+				item: "cuboidmod:notsogudium_singularity_power_generator"
+			}]
+		}
+		{
+			title: "La rivoluzione verde"
+			x: 4.5d
+			y: -10.0d
+			shape: "square"
+			subtitle: "Il riciclo inizia a casa"
+			description: [
+				"Abbiamo appena raggiunto il punto in cui stiamo esaurendo le risorse che ci permetteranno effettivamente di progredire. Fortunatamente, il vostro avamposto è arrivato con alcuni pezzi che possiamo riutilizzare per qualcosa che (si spera) si rivelerà utile per andare avanti."
+				""
+				"Crediamo che sia possibile costruire un Molecular Recycler usando alcuni dei materiali locali, insieme ad alcune delle cose di cui il vostro avamposto è dotato."
+				""
+				"Dovrai sacrificare il Centrifugal Separator (abbastanza inutile in questo momento) e uno del Advanced Energy Cubes nel soffitto. Questi dovrebbero poi essere in grado di essere combinati con una singolarità e alcuni dei materiali e delle macchine che hai già fatto con le risorse locali."
+				""
+				"Potresti raccogliere alcuni dei cavi di energia in eccesso e ricollegare le cose che hanno ancora bisogno di energia, e poi vedere cosa puoi fare un Molecular Recycler."
+			]
+			dependencies: ["57FC3EB6E54A8FC5"]
+			id: "2271B59D762A5728"
+			tasks: [{
+				id: "5E88928DD7F64735"
+				type: "item"
+				item: "cuboidmod:molecular_recycler"
+			}]
+		}
+		{
+			title: "Fai la tua parte per l'ambiente"
+			x: 2.5d
+			y: -10.0d
+			shape: "square"
+			subtitle: "Probabilmente hai bisogno solo di 1 per adesso"
+			description: [
+				"Ammettiamolo, quegli aggeggi per l'energia solare sul tetto sono decenti, ma non così decenti da essere un grosso problema se ne perdi uno."
+				""
+				"Quindi prendine uno."
+				""
+				"Sali sul tetto, abbatti uno degli Advanced Solar Generators e alimentalo nel Molecular Recycler (richiede energia)."
+				""
+				"Dal momento che l'aggeggio solare contiene un mucchio di redstone come ingredienti nei componenti, si spera di recuperarne un po' nella sua forma grezza, insieme ad altri materiali (potenzialmente) utili."
+				""
+				"Avrai bisogno di un blocco di questa roba, quindi se sei a corto, puoi provare a riciclare l'altro."
+				""
+				"&c&lAttenzione:&r Mentre è possibile riciclare molte cose, il Molecular Recycler è una macchina molto imperfetta, si otterrà indietro una frazione degli ingredienti originali necessari per fare la cosa che si ricicla, e non c'è alcuna garanzia che si otterrà indietro ciò che si spera! In particolare, &c&lnon riciclare la tecnologia che non sai ancora fare da solo, a meno che non ti venga detto di farlo!&r"
+			]
+			dependencies: ["7720D6A233945D64"]
+			id: "6F4D106786BFD4A3"
+			tasks: [{
+				id: "2FC9024E139921C1"
+				type: "item"
+				item: "minecraft:redstone_block"
+			}]
+		}
+		{
+			title: "Nessuna E in questo progetto"
+			x: -2.5d
+			y: -11.0d
+			shape: "square"
+			subtitle: "Fai una cosa con, beh, due cose."
+			description: [
+				"Probabilmente avrete già notato che abbiamo una varietà abbastanza limitata di materie prime con cui lavorare, la vita vegetale è praticamente inesistente e la qualità della vita è piuttosto scarsa."
+				""
+				"Le cose stanno per peggiorare prima di migliorare. Ma miglioreranno!"
+				""
+				"Probabilmente. È soggettivo, ma credo di sì."
+				""
+				"Abbiamo un piano che ci permetterà di iniziare a creare nuovi materiali combinando l'essenza di due oggetti banali per trasformarli in un nuovo oggetto banale. Sì, è tutto piuttosto banale, ma se si considera che questo è il primo passo verso la costruzione di un mondo migliore (o almeno nuovo), va tutto bene!"
+				""
+				"Sfortunatamente, dovrai prendere la Fornace di Redstone e il controller ME per fare la prossima macchina di cui abbiamo bisogno, la Quantum Transmutation Chamber (richiede energia)."
+				""
+				"Suggerimento utile... spostate l'unità ME fino a dove si trovava il controller ME e sarete ancora in grado di accedere alla vostra memoria digitale."
+			]
+			dependencies: ["7E9E5FA53469BBC8"]
+			id: "4C42735306BC65F7"
+			tasks: [{
+				id: "412E73FE0D07B842"
+				type: "item"
+				item: "cuboidmod:quantum_transmutation_chamber"
+			}]
+		}
+		{
+			title: "Te l'avevo detto che poteva essere meglio"
+			x: -10.0d
+			y: -11.0d
+			shape: "square"
+			subtitle: "Minarlo, generarlo o trasmutarlo"
+			description: [
+				"Il minerale Kudbebedda può essere trovato in uno strato sotto il minerale Notsogudium."
+				""
+				"A questo punto sai già che per ottenere lingotti, puoi estrarre il minerale per mettere le mani su pezzi, poi su chunk e fonderli. Sai anche che puoi generare i chunk mettendo una Kudbebedda Quantum Singularity in un SRG. Ora c'è un terzo modo... puoi trasmutare due chunk di Notsogudium o minerale nella versione Kudbebedda."
+				""
+				"Ok, non è così impressionante, e per completare questo particolare compito non ci interessa davvero come si fa a mettere le mani su un chunk della roba, ma vale la pena saperlo!"
+				""
+				"Vale anche la pena di sapere che il Quantum Transmutation Chamber può essere collegato dall'alto per l'ingrediente superiore, da qualsiasi lato per l'ingrediente inferiore, e può essere collegata dal basso."
+			]
+			dependencies: ["75F3CE46A3424CE2"]
+			id: "65800ADA22C71358"
+			tasks: [{
+				id: "680C4F7021612DB7"
+				type: "item"
+				item: "cuboidmod:kudbebedda_chunk"
+			}]
+		}
+		{
+			title: "Comunque non è male!"
+			x: -10.0d
+			y: -8.0d
+			shape: "square"
+			subtitle: "Minarlo, generarlo o trasmutarlo!"
+			description: [
+				"Come per Kudbebedda, puoi ottenere Notarfbadium in uno dei 3 modi."
+				""
+				"1. Minmarlo (si trova sotto Kudbebedda)."
+				""
+				"2. Crea una Notarfbadium Quantum Singularity e poi generare di più in un SRG."
+				""
+				"3. Trasmuta 2 chunk o minerali di Kudbebedda in 1 equivalente di Notarfbadium."
+				""
+				"Puoi completare questo compito usando qualsiasi metodo, ti sto solo facendo conoscere le opzioni!"
+			]
+			dependencies: ["16BB78A89729391F"]
+			id: "16CE84A036CD2A62"
+			tasks: [{
+				id: "465833F9636B672B"
+				type: "item"
+				item: "cuboidmod:notarfbadium_chunk"
+			}]
+		}
+		{
+			title: "Questo non si può estrarre!"
+			x: -10.0d
+			y: -5.0d
+			shape: "square"
+			subtitle: "Risorse prodotte #1"
+			description: [
+				"Wikidium è il primo materiale alieno che dovrai creare, piuttosto che ottenerlo solo con un po' di miniere."
+				""
+				"Dovrai mettere 2x chunk di Notarfbadium o minerale nella Quantum Transmutation Chamber (uno nello slot superiore, uno in quello inferiore), assicurarti che abbia energia, e aspettare qualche secondo... e voilà! Wikidium!"
+				""
+				"P.S. Potrebbe essere una buona idea automatizzare la creazione di lingotti di Wikidium e fare una Wikidium Quantum Singularity in modo da poter generare passivamente più pezzi andando avanti."
+			]
+			dependencies: ["052685E351A93306"]
+			id: "199CAEB93E97A1FD"
+			tasks: [{
+				id: "77147074F2C12740"
+				type: "item"
+				item: "cuboidmod:wikidium_chunk"
+			}]
+		}
+		{
+			title: "Aggiornamento Kudbebedda"
+			x: -12.0d
+			y: -11.0d
+			description: [
+				"Questa sezione è davvero solo nel caso in cui tu sia un \"completista\" e vuoi provare a fare uno di tutto."
+				""
+				"Nella maggior parte dei casi, l'uso di materiali migliorati nella costruzione di oggetti significa un aumento di produttività, velocità o efficacia, ma non sempre."
+				""
+				"I compiti a sinistra di questo sono tutti opzionali, ma ognuno spiega il miglioramento (se esiste) rispetto al precedente livello Notsogudium dello stesso oggetto."
+			]
+			dependencies: ["16BB78A89729391F"]
+			optional: true
+			id: "7989D992D4F86431"
+			tasks: [{
+				id: "7BE0CB33F0405FD9"
+				type: "checkmark"
+				title: "Aggiornamento Kudbebedda"
+			}]
+		}
+		{
+			x: -15.0d
+			y: -8.0d
+			description: [
+				"Compiti opzionali per i completisti."
+				""
+				"I compiti a sinistra di questo sono tutti opzionali, ma ognuno spiega il miglioramento (se esiste) rispetto al precedente livello Kudbebedda dello stesso oggetto."
+			]
+			dependencies: ["052685E351A93306"]
+			optional: true
+			id: "1E6FAF3C2B1508F2"
+			tasks: [{
+				id: "66802EAC34E992B3"
+				type: "checkmark"
+				title: "Aggiornamento Notarfbadium"
+			}]
+		}
+		{
+			x: -12.0d
+			y: -5.0d
+			description: [
+				"Compiti opzionali per i completisti."
+				""
+				"I compiti a sinistra di questo sono tutti opzionali, ma ognuno spiega il miglioramento (se esiste) rispetto al precedente livello Notarfbadium dello stesso oggetto."
+			]
+			dependencies: ["1D214D44162D304C"]
+			optional: true
+			id: "30537621FEC665E6"
+			tasks: [{
+				id: "3DE18811BAAC0BBA"
+				type: "checkmark"
+				title: "Aggiornamento Wikidium"
+			}]
+		}
+		{
+			x: -12.0d
+			y: -9.5d
+			description: [
+				"La Notsogudium Chest contiene 18 stack (2 file), lascia cadere il suo contenuto quando si rompe e non può essere aperto se ostruito sopra."
+				""
+				"La Kudbebedda Chest contiene 27 stack (3 file), lascia cadere il suo contenuto quando si rompe e non può essere aperto se ostruito sopra."
+			]
+			dependencies: ["239BDF86B0F52664"]
+			optional: true
+			id: "6937C51C2253C1C9"
+			tasks: [{
+				id: "557172DF5BBF687A"
+				type: "item"
+				item: "cuboidmod:kudbebedda_chest"
+			}]
+		}
+		{
+			title: "Kudbebedda Furnace"
+			x: -12.0d
+			y: -12.5d
+			description: [
+				"Una furnace normale impiega 10 secondi (200 ticks) per fondere 1 oggetto."
+				""
+				"La Notsogudium Furnace impiega 9 secondi (180 tick)."
+				""
+				"La Kudbebedda Furnace impiega 8 secondi (160 ticks)."
+			]
+			dependencies: ["239BDF86B0F52664"]
+			optional: true
+			id: "2E311515EBE97B3B"
+			tasks: [{
+				id: "39296D6E9FBFDD8D"
+				type: "item"
+				item: "cuboidmod:kudbebedda_furnace"
+			}]
+		}
+		{
+			x: -13.0d
+			y: -10.0d
+			description: [
+				"Un Notsogudium Quantum Collapser funziona a velocità 1.0x, il che significa che una ricetta che dice che sono necessari 10 secondi per far collassare la singularity richiederà:"
+				""
+				"10 secondi / 1.0 = 10 secondi"
+				""
+				"La Kudbebedda Quantum Collapser funziona a velocità 1.2x, che significa che una ricetta che dichiara 10 secondi ci vorrà:"
+				""
+				"10 secondi / 1.2 = 8.33 secondi"
+			]
+			dependencies: ["239BDF86B0F52664"]
+			optional: true
+			id: "39675B14FC0AA9C9"
+			tasks: [{
+				id: "2B642A43631A9490"
+				type: "item"
+				item: "cuboidmod:kudbebedda_quantum_collapser"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -11.0d
+			description: [
+				"Livello precedente (Notsogudium):"
+				"  Genera: 4 FE/t"
+				"  As: 40FE ogni 10 tick"
+				"  Massimo estratto: 16 FE/t"
+				"  Capacità: 20,000 FE"
+				""
+				"Kudbebedda SPG:"
+				"  Genera: 8 FE/t"
+				"  As: 80FE ogni 10 tick"
+				"  Massimo estratto: 60 FE/t"
+				"  Capacità: 60,000 FE"
+			]
+			dependencies: ["239BDF86B0F52664"]
+			optional: true
+			id: "4680B5CCA942A086"
+			tasks: [{
+				id: "62793C84A1B69017"
+				type: "item"
+				item: "cuboidmod:kudbebedda_singularity_power_generator"
+			}]
+		}
+		{
+			x: -13.0d
+			y: -12.0d
+			description: [
+				"Il livello precedente di SRG (Notsogudium) genera 1 oggetto ogni 20 tick, cioè 1 al secondo."
+				""
+				"Il Kudbebedda SRG genera 2 oggetti ogni 10 tick, dando 4 oggetti al secondo."
+				""
+				"Questi sono i tassi di produzione di base e possono essere regolati secondo la singolarità in uso. Vedi la JEI per cifre più precise."
+			]
+			dependencies: ["239BDF86B0F52664"]
+			optional: true
+			id: "4EC0B5970D2FBB94"
+			tasks: [{
+				id: "4356508B71CD3A02"
+				type: "item"
+				item: "cuboidmod:kudbebedda_singularity_resource_generator"
+			}]
+		}
+		{
+			title: "Notarfbadium Furnace"
+			x: -15.0d
+			y: -9.5d
+			description: [
+				"La fornace di livello precedente (Kudbebedda) impiega 8 secondi (160 ticks) per fondere un oggetto."
+				""
+				"Quello di Notarfbadium richiede 7 secondi (140 tick)."
+			]
+			dependencies: ["44C381EA0A38D2A6"]
+			optional: true
+			id: "3B63AC2FFEF7B28C"
+			tasks: [{
+				id: "7EF78DDA1E6E2AB4"
+				type: "item"
+				item: "cuboidmod:notarfbadium_furnace"
+			}]
+		}
+		{
+			x: -16.0d
+			y: -7.0d
+			description: [
+				"La Notarfbadium Quantum Collapser funziona a velocità 1.5x, nel senso che una ricetta che dichiara 10 secondi ci vorrebbe:"
+				""
+				"10 secondi / 1.5 = 6.67 secondi"
+			]
+			dependencies: ["44C381EA0A38D2A6"]
+			optional: true
+			id: "5B54A75C39CDCDE1"
+			tasks: [{
+				id: "41141DE46A68288E"
+				type: "item"
+				item: "cuboidmod:notarfbadium_quantum_collapser"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -8.0d
+			description: [
+				"Notarfbadium SPG:"
+				"  Genera: 16 FE/t"
+				"  As: 160 FE ogni 10 tick"
+				"  Massimo estratto: 120 FE/t"
+				"  Capacità: 150,000 FE"
+			]
+			dependencies: ["44C381EA0A38D2A6"]
+			optional: true
+			id: "24566FA65BC4B58D"
+			tasks: [{
+				id: "50ABDD6FA9247A35"
+				type: "item"
+				item: "cuboidmod:notarfbadium_singularity_power_generator"
+			}]
+		}
+		{
+			x: -16.0d
+			y: -9.0d
+			description: [
+				"Il livello precedente di SRG (Kudbebedda) genera 2 oggetti ogni 10 tick, dando 8 oggetti al secondo."
+				""
+				"Il Notarfbadium SRG genera 4 oggetti ogni 5 tick, dando 16 oggetti al secondo."
+				""
+				"Questi sono i tassi di produzione di base e possono essere regolati secondo la singolarità in uso. Vedi la JEI per cifre più precise."
+			]
+			dependencies: ["44C381EA0A38D2A6"]
+			optional: true
+			id: "76AC6247522DE276"
+			tasks: [{
+				id: "711AF1C7F441C4D5"
+				type: "item"
+				item: "cuboidmod:notarfbadium_singularity_resource_generator"
+			}]
+		}
+		{
+			x: -15.0d
+			y: -6.5d
+			description: ["Il Notarfbadium Chest contiene 36 stack (4 file), lascia cadere il suo contenuto quando si rompe, e può essere aperto se ostruito sopra."]
+			dependencies: ["44C381EA0A38D2A6"]
+			optional: true
+			id: "4F7101EB6F858E1B"
+			tasks: [{
+				id: "409D3843B0C416E2"
+				type: "item"
+				item: "cuboidmod:notarfbadium_chest"
+			}]
+		}
+		{
+			title: "Wikidium Furnace"
+			x: -12.0d
+			y: -6.5d
+			description: [
+				"Il livello precedente di forno (Notarfbadium) impiega 7 secondi (140 ticks) per fondere un oggetto."
+				""
+				"Questa versione di Wikidium richiede 5,5 secondi (110 tick)."
+			]
+			dependencies: ["3291D57CA3523B67"]
+			optional: true
+			id: "0F6EA2B56011A781"
+			tasks: [{
+				id: "27F8C981E836B35A"
+				type: "item"
+				item: "cuboidmod:wikidium_furnace"
+			}]
+		}
+		{
+			x: -13.0d
+			y: -6.0d
+			description: [
+				"Il livello precedente di SRG (Notarfbadium) genera 4 oggetti ogni 5 tick, dando 16 oggetti al secondo."
+				""
+				"Il Wikidium SRG genera 16 articoli ogni 5 tick, dando 64 oggetti al secondo."
+				""
+				"Questi sono i tassi di produzione di base e possono essere regolati secondo la singolarità in uso. Vedi JEI per cifre più precise."
+			]
+			dependencies: ["3291D57CA3523B67"]
+			optional: true
+			id: "2F40CC61E400D966"
+			tasks: [{
+				id: "45B3DE5B3802020F"
+				type: "item"
+				item: "cuboidmod:wikidium_singularity_resource_generator"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -5.0d
+			description: [
+				"Wikidium SPG:"
+				"  Genera: 40 FE/t"
+				"  As: 400FE ogni 10 tick"
+				"  Massimo estratto: 300 FE/t"
+				"  Capacità: 500,000 FE"
+			]
+			dependencies: ["3291D57CA3523B67"]
+			optional: true
+			id: "293F16649306740A"
+			tasks: [{
+				id: "19565E65AE288608"
+				type: "item"
+				item: "cuboidmod:wikidium_singularity_power_generator"
+			}]
+		}
+		{
+			x: -13.0d
+			y: -4.0d
+			description: [
+				"Il Wikidium Quantum Collapser funziona a velocità 2.5x, il che significa che una ricetta che dichiara 10 secondi ci vorrebbe:"
+				""
+				"10 secondi / 2.5 = 4 secondi"
+			]
+			dependencies: ["3291D57CA3523B67"]
+			optional: true
+			id: "3B1CC002040AA7A7"
+			tasks: [{
+				id: "4FBFE97BFBEE1EF0"
+				type: "item"
+				item: "cuboidmod:wikidium_quantum_collapser"
+			}]
+		}
+		{
+			x: -12.0d
+			y: -3.5d
+			description: ["Il Wikidium Chest contiene 45 stack (5 file), mantiene il suo contenuto se rotto, e può essere aperto se ostruito sopra."]
+			dependencies: ["3291D57CA3523B67"]
+			optional: true
+			id: "42AFF9A5370077D7"
+			tasks: [{
+				id: "633D0AC6CCF91DA0"
+				type: "item"
+				item: "cuboidmod:wikidium_chest"
+			}]
+		}
+		{
+			title: "Il composto organico più abbondante"
+			x: 0.5d
+			y: -7.5d
+			shape: "square"
+			subtitle: "(ma non dove sei tu)"
+			description: [
+				"La Cellulose è il principale costituente della fibra vegetale. Sfortunatamente, nessuna si trova naturalmente dove sei tu."
+				""
+				"Fortunatamente, come molti composti organici, è fondamentalmente solo atomi di carbonio, ossigeno e idrogeno disposti in una struttura particolare, e attraverso la magia tecnologica della Quantum Transmutation Chamber, la Cellulose può essere creata da Carbon Deposits e acqua, entrambi i quali dovresti avere accesso."
+			]
+			dependencies: ["75F3CE46A3424CE2"]
+			id: "5C7006518FE48E27"
+			tasks: [{
+				id: "7D48208B3CF47518"
+				type: "item"
+				item: "cuboidmod:cellulose"
+			}]
+		}
+		{
+			title: "C'è un buco nel mio secchio"
+			x: -4.5d
+			y: -13.0d
+			shape: "square"
+			subtitle: "Perché se non ci fosse, non sarei in grado di riempirlo."
+			description: [
+				"Puoi fare un secchio da uno qualsiasi dei lingotti che hai fatto finora."
+				""
+				"Il secchio stesso, per qualche ragione inspiegabile, avrà l'aspetto e si comporterà esattamente come un secchio fatto di ferro."
+				""
+				"Ma non è di ferro."
+				""
+				"Onestamente."
+			]
+			id: "44649406A775F210"
+			tasks: [{
+				id: "050091521FF8DF6B"
+				type: "item"
+				item: "minecraft:bucket"
+			}]
+		}
+		{
+			title: "Sembra un po' come la pasta di pesce"
+			x: -5.5d
+			y: -9.0d
+			shape: "square"
+			subtitle: "Una migliore fonte di proteine"
+			description: [
+				"Mettendo un po' di Rotten Flesh insieme a della Silica Dust nella Quantum Transmutation Chamber, la proteina della Rotten Flesh può essere trasmutata in una fonte più pura di proteine."
+				""
+				"Ne avremo bisogno sia per nutrirci un po' meglio, sia nella nostra ricerca di avviare una vita non ostile su questo pianeta."
+			]
+			dependencies: ["75F3CE46A3424CE2"]
+			id: "263D869DBA9A06A3"
+			tasks: [{
+				id: "4B19D09FC7088E75"
+				type: "item"
+				item: "cuboidmod:protein_paste"
+			}]
+		}
+		{
+			title: "Un dispositivo che ti permette di vedere attraverso i muri?"
+			x: -2.5d
+			y: -9.0d
+			shape: "square"
+			subtitle: "Che ne dici di una finestra?"
+			description: [
+				"È ora di mettere un altro po' di quella Silica Dust a buon uso."
+				""
+				"Mettendone un blocco in una furnace si dovrebbe fondere in Glass."
+			]
+			dependencies: ["75F3CE46A3424CE2"]
+			id: "5DB383BAB0DAB95C"
+			tasks: [
+				{
+					id: "239FD815E76AB692"
+					type: "item"
+					item: "cuboidmod:silica_dust_block"
+				}
+				{
+					id: "70485A73F8E509CC"
+					type: "item"
+					item: "minecraft:glass"
+				}
+			]
+		}
+		{
+			title: "Un grande miglioramento in un piccolo pacchetto"
+			x: -1.5d
+			y: -7.5d
+			shape: "square"
+			subtitle: "Da non confondere con le Carbon Fibers"
+			description: [
+				"I Carbon Nanotubes sono una meraviglia della scienza. Possono avere un notevole grado di conducibilità elettrica, possono essere semiconduttori, hanno un'alta resistenza alla trazione e conducibilità termica, e saranno preziosi in molte aree della scienza dei materiali."
+				""
+				"Hanno anche un nome incredibilmente \"scientifico\"!"
+				""
+				"Non solo saranno fantastici per le applicazioni inorganiche, ma i nostri scienziati qui alla Cuboid Corp credono fermamente che saremo in grado di trovare altre applicazioni per loro nella nostra ricerca di dare il via alla vita organica su quel pezzo di roccia senza vita su cui sei attualmente stazionato."
+				""
+				"Puoi farne uno nella Quantum Transmutation Chamber da un po' di Coal e un pezzo di Glass, o un blocco alla volta da un Block of Coal e un pezzo di Glass."
+			]
+			dependencies: ["6BDA5EEFCAB4C140"]
+			id: "00E930106160EFB5"
+			tasks: [{
+				id: "220DF189C393EB00"
+				type: "item"
+				item: "cuboidmod:carbon_nanotube"
+			}]
+		}
+		{
+			title: "Cos'è marrone e appiccicoso?"
+			x: -1.5d
+			y: -5.0d
+			shape: "square"
+			subtitle: "Uno stick"
+			description: [
+				"Ora ci stiamo avvicinando. I nerd della Divisione Scientifica ci hanno assicurato che la Quantum Transmutation Chamber può combinare Cellulose e Carbon Nanotubes, insieme a un po' di energia, in qualcosa che assomiglia molto a un pezzo di legno."
+				""
+				"Ok, quindi non un sacco di wood. Più che altro un ramoscello morto, o forse un stick."
+				""
+				"Tuttavia, è un progresso!"
+			]
+			dependencies: [
+				"2B7D0DBFAFD792AE"
+				"3E4B3D2395AC60E7"
+			]
+			id: "4D057B02F38D1917"
+			tasks: [{
+				id: "31D9ADD682E4863A"
+				type: "item"
+				item: "minecraft:stick"
+			}]
+		}
+		{
+			title: "La vita è una spiaggia"
+			x: -3.5d
+			y: -7.5d
+			shape: "square"
+			subtitle: "Almeno potrebbe esserlo se si facesse abbastanza..."
+			description: [
+				"Un pezzo di Glass e un Block of Silica Dust fatti passare attraverso la Quantum Transmutation Chamber dovrebbero risultare in un materiale granulare che è così indistinguibile dalla Sand, che non proveremo nemmeno a tenerli separati."
+				""
+				"La Sand ha molti usi, non ultimo dei quali è un requisito sulla strada per ricreare un suolo capace di sostenere la vita vegetale di base..."
+			]
+			dependencies: ["6BDA5EEFCAB4C140"]
+			id: "6D0F714127E5C052"
+			tasks: [{
+				id: "2EC079016A9578F4"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			title: "È organico, ma non è veramente Sand"
+			x: -3.5d
+			y: -5.0d
+			shape: "square"
+			description: [
+				"Abbiamo bisogno di mescolare insieme alcune delle cose che abbiamo raccolto e fatto fino ad oggi per fare ciò che ottimisticamente chiamiamo Organically Enriched Sand, ma in realtà sono solo alcuni degli ingredienti grezzi di cui avremo bisogno per alimentare la Quantum Transmutation Chamber al fine di ottenere un terreno in grado di sostenere la vita vegetale."
+				""
+				"Date un'occhiata alla JEI per la ricetta esatta, ma ormai non dovreste avere problemi a fare questa roba."
+			]
+			dependencies: [
+				"4088C430AA2F748B"
+				"34B3587553A3ED9E"
+				"3E4B3D2395AC60E7"
+			]
+			id: "47DE9D4BD830F670"
+			tasks: [{
+				id: "0F6E89518A6F5CA9"
+				type: "item"
+				item: "cuboidmod:organically_enriched_sand"
+			}]
+		}
+		{
+			title: "Aggiornamento alla Fiber"
+			x: -5.5d
+			y: -5.0d
+			shape: "square"
+			description: [
+				"La natura abrasiva della Wikidium Dust, se combinata con la Protein Paste nella Quantum Transmutation Chamber, dovrebbe produrre Protein Fibers."
+				""
+				"La Protein Fibers è un costituente principale in tutti i tipi di materiali utili, e saranno un componente necessario per i nostri scopi."
+			]
+			dependencies: [
+				"34B3587553A3ED9E"
+				"1D214D44162D304C"
+			]
+			id: "521EBAB86F086D08"
+			tasks: [
+				{
+					id: "3128DA31C12D827F"
+					type: "item"
+					item: "cuboidmod:wikidium_dust"
+				}
+				{
+					id: "2F5A9523E59D46D3"
+					type: "item"
+					item: "cuboidmod:protein_fiber"
+				}
+			]
+		}
+		{
+			title: "Una parola sporca di quattro lettere che inizia per D?"
+			x: -3.5d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Dirt."
+			description: [
+				"Ora che abbiamo Organically Enriched Sand e alcune Protein Fiber, possiamo alimentarle nella Quantum Transmutation Chamber per ottenere un terreno adatto alla coltivazione delle piante."
+				""
+				"La Quantum Transmutation Chamber prenderà gli ingredienti grezzi, accelererà massicciamente il processo di decomposizione e sputerà fuori un po' di Dirt, siamo così vicini!"
+			]
+			dependencies: [
+				"02CB6372DD01A4A9"
+				"32A582847B54C04D"
+			]
+			id: "5589F4B4F6F418FD"
+			tasks: [{
+				id: "7FE82B2C48391617"
+				type: "item"
+				item: "minecraft:dirt"
+			}]
+		}
+		{
+			title: "Non proprio una zolletta di zucchero"
+			x: 0.5d
+			y: -5.0d
+			shape: "square"
+			description: [
+				"Si può fare un block of cellulose e usarlo per costruire, ma attenzione: non è esattamente il materiale da costruzione più resistente."
+				""
+				"Avrete anche bisogno di blocchi di questa roba per la prossima fase di ricostruzione della vita vegetale rudimentale."
+			]
+			dependencies: ["3E4B3D2395AC60E7"]
+			id: "2763D9368CF2B0A2"
+			tasks: [{
+				id: "2571CF04A0F05EEC"
+				type: "item"
+				item: "cuboidmod:cellulose_block"
+			}]
+		}
+		{
+			title: "Un po' come un ceppo"
+			x: -1.5d
+			y: -3.5d
+			shape: "square"
+			subtitle: "Un pacchetto di divertimento"
+			description: ["Ben fatto! Ora abbiamo solo bisogno di altri 8 di quei stick, che dovranno essere combinati in un Bundle of Sticks, che dovrebbe imitare la dimensione e la composizione di un tronco molto piccolo, un tronco di alberello se volete."]
+			dependencies: ["62C0F81C229BF82A"]
+			id: "10B3784D5426A9AB"
+			tasks: [{
+				id: "3A7C7FEDF243090C"
+				type: "item"
+				item: "cuboidmod:stick_bundle"
+			}]
+		}
+		{
+			title: "L'albero della vita"
+			x: -1.5d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Non è questo, ma è un albero che dà vita!"
+			description: [
+				"Un sacco di energia, Bundle of Sticks e un Block of Cellulose in una Quantum Transmutation Chamber e, voilà!"
+				""
+				"Un Oak Sapling!"
+				""
+				"Congratulazioni per essere arrivati fin qui, è un enorme Quantum Leap in avanti!"
+				""
+				"Il signor Bakula sarebbe orgoglioso!"
+			]
+			dependencies: [
+				"5A91C6998A122039"
+				"5998B0507F176BB5"
+			]
+			id: "09804D9AABFFC08A"
+			tasks: [{
+				id: "14EE74B805E61BC2"
+				type: "item"
+				item: "minecraft:oak_sapling"
+			}]
+		}
+		{
+			title: "Il legno sarebbe bello?"
+			x: -2.5d
+			y: -0.5d
+			shape: "gear"
+			description: [
+				"Esci e pianta quell'alberello sul tuo nuovo pezzo di Dirt, e aspetta che la magia accada!"
+				""
+				"Oppure usa un po' di Bone Meal su di esso se ti senti un po' impaziente ormai! Puoi anche incoraggiare le piante a crescere in questo clima freddo riscaldando l'aria intorno - questo può essere fatto... facendo squat ripetitivi! Non solo questo incoraggerà la crescita delle piante, ma è un ottimo modo per tenersi in forma e allontanare la noia!"
+				""
+				"In ogni caso, prendete (o costruite) una Axe e abbattetela per ottenere Oak Logs, almeno 8, e poi potremo passare alla fase 2."
+				""
+				"Ricordati di raccogliere gli alberelli che cadono, ma anche se non ne cadono, almeno sappiamo come farli se necessario."
+				""
+				"&aSblocca: Andare avanti&f"
+			]
+			dependencies: [
+				"6D9DE17783539AC6"
+				"269596C2525BBD22"
+			]
+			size: 1.5d
+			id: "24EB16ED87F19B91"
+			tasks: [{
+				id: "7396DC8969A13193"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 8L
+			}]
+		}
+		{
+			title: "Che fortuna marcia"
+			x: -6.5d
+			y: -15.0d
+			subtitle: "I mendicanti non possono essere schizzinosi"
+			description: [
+				"Ormai avrete notato che le notti possono essere piuttosto spaventose. Quei \"mob\", come li chiamiamo noi, sembrano apparire in massa dopo il tramonto. Fate attenzione là fuori!"
+				""
+				"Il lato positivo è che sembra che alcuni di loro siano colpiti dalla radiazione naturale prodotta artificilmente, e alcuni (ma non tutti) periscono alla luce del sole. Ancora meglio, alcuni di loro si lasciano dietro alcune cose utili."
+				""
+				"Potreste prendere l'abitudine di andare fuori la mattina e raccogliere un po' di quello che è rimasto. Se siete davvero fortunati, potreste anche trovare qualche tipo di prodotto a base di carne che potrebbe, forse, sostenervi fino a quando non avremo una migliore fornitura di cibo."
+			]
+			dependencies: ["6A3AEAB7ACCE1B5D"]
+			id: "0BFD4FEA16C56A98"
+			tasks: [
+				{
+					id: "271BB85D2572BB86"
+					type: "item"
+					item: "minecraft:rotten_flesh"
+				}
+				{
+					id: "3EC70EA2350FD5A3"
+					type: "item"
+					item: "minecraft:bone"
+				}
+				{
+					id: "78AD416E18C2D61D"
+					type: "item"
+					item: "minecraft:spider_eye"
+				}
+			]
+		}
+		{
+			title: "Non c'è bisogno di estrarre neanche questo!"
+			x: -10.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Risorse fabbricate #2"
+			description: [
+				"Come con Wikidium, dovrai generare il livello successivo di materiale alieno nella Quantum Transmutation Chamber."
+				""
+				"Metti un pezzo di Wikidium ciascuno negli slot superiore e inferiore della Quantum Transmutation Chamber, assicurati che abbia energia, e ti ritroverai con un Thatldu Chunk."
+				""
+				"Di nuovo, potrebbe valere la pena di automatizzare questo fino a quando non avrete una Thatldu Quantum Singularity in modo da poterne produrre passivamente di più in futuro."
+			]
+			dependencies: ["1D214D44162D304C"]
+			id: "4F5254D608FD3206"
+			tasks: [{
+				id: "62618EA7716A0EFB"
+				type: "item"
+				item: "cuboidmod:thatldu_chunk"
+			}]
+		}
+		{
+			title: "Thatldu Furnace"
+			x: -15.0d
+			y: -3.5d
+			description: [
+				"Il livello precedente della furnace(Wikidium) impiega 6 secondi (120 tick) per fondere un oggetto."
+				""
+				"La Thatldu Furnace impiega 3.5 secondi (70 ticks)."
+			]
+			dependencies: ["172866E6C0DDDE2E"]
+			optional: true
+			id: "52C519C5927B641B"
+			tasks: [{
+				id: "1C55848EA6EE3153"
+				type: "item"
+				item: "cuboidmod:thatldu_furnace"
+			}]
+		}
+		{
+			x: -16.0d
+			y: -3.0d
+			description: [
+				"Il livello precedente di SRG (Wikidium) genera 16 oggetti ogni 5 tick, dando 64 oggetti al secondo."
+				""
+				"Il Thatldu SRG genera 64 oggetti ogni 5 tick, dando 256 oggetti al secondo."
+				""
+				"Questi sono i tassi di produzione di base e possono essere regolati secondo la singolarità in uso. Vedi la JEI per cifre più precise."
+			]
+			dependencies: ["172866E6C0DDDE2E"]
+			optional: true
+			id: "3CF5305F12E6FE2A"
+			tasks: [{
+				id: "4A38374283C5FE4C"
+				type: "item"
+				item: "cuboidmod:thatldu_singularity_resource_generator"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -2.0d
+			description: [
+				"Thatldu SPG:"
+				"  Genera: 100 FE/t"
+				"  As: 1000 FE ogni 10 ticks"
+				"  Massimo estratto: 800 FE/t"
+				"  Capacità: 1,000,000 FE"
+			]
+			dependencies: ["172866E6C0DDDE2E"]
+			optional: true
+			id: "1888D49A5486E758"
+			tasks: [{
+				id: "51F0B1D9CEDDC1E4"
+				type: "item"
+				item: "cuboidmod:thatldu_singularity_power_generator"
+			}]
+		}
+		{
+			x: -16.0d
+			y: -1.0d
+			description: [
+				"Il Thatldu Quantum Collapser funziona a velocità 5.0x, il che significa che una ricetta che dichiara 10 secondi ci vorrebbe:"
+				""
+				"10 secondi / 5.0 = 2 secondi"
+			]
+			dependencies: ["172866E6C0DDDE2E"]
+			optional: true
+			id: "5FF305F799393F94"
+			tasks: [{
+				id: "0EF1143FA19EB19F"
+				type: "item"
+				item: "cuboidmod:thatldu_quantum_collapser"
+			}]
+		}
+		{
+			x: -15.0d
+			y: -0.5d
+			description: ["La Thatldu Chest contiene 54 stack (6 file), &atiene&r il suo contenuto quando è rotto, e &apuò&r essere aperto se ostruito sopra."]
+			dependencies: ["172866E6C0DDDE2E"]
+			optional: true
+			id: "4E1279668F750C4E"
+			tasks: [{
+				id: "075FCD2AEBE1F615"
+				type: "item"
+				item: "cuboidmod:thatldu_chest"
+			}]
+		}
+		{
+			x: -15.0d
+			y: -2.0d
+			description: [
+				"Compiti per i completisti."
+				""
+				"I compiti a sinistra di questo sono tutti opzionali, ma ognuno spiega il miglioramento (se esiste) rispetto al precedente livello Wikidium dello stesso oggetto."
+			]
+			dependencies: ["4A854F9DFEFFC80F"]
+			optional: true
+			id: "36C36062464386AE"
+			tasks: [{
+				id: "2B97EC3A9546E9AB"
+				type: "checkmark"
+				title: "Aggiornamento Thatldu"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -12.0d
+			description: [
+				"Le tabelle di crafting si comportano tutte allo stesso modo, ma sono usate come ingredienti nella fabbricazione delle macchine di livello superiore."
+				""
+				"E ad alcune persone piace un'altra tonalità di blu-verde malaticcio!"
+			]
+			dependencies: ["239BDF86B0F52664"]
+			optional: true
+			id: "2F98307643F4F345"
+			tasks: [{
+				id: "39016624E00A106E"
+				type: "item"
+				item: "cuboidmod:kudbebedda_crafting_table"
+			}]
+		}
+		{
+			x: -14.0d
+			y: -9.0d
+			description: ["Le tabelle di crafting si comportano tutte allo stesso modo, ma sono usate come ingredienti nella fabbricazione delle macchine di livello superiore."]
+			dependencies: ["44C381EA0A38D2A6"]
+			optional: true
+			id: "3DB65918EE484A3A"
+			tasks: [{
+				id: "3B86312E0E8B7E85"
+				type: "item"
+				item: "cuboidmod:notarfbadium_crafting_table"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -6.0d
+			description: ["Le tabelle di crafting si comportano tutte allo stesso modo, ma sono usate come ingredienti nella fabbricazione delle macchine di livello superiore."]
+			dependencies: ["3291D57CA3523B67"]
+			optional: true
+			id: "38C2CE4D4C96FA11"
+			tasks: [{
+				id: "7D0B58F5B5B96D21"
+				type: "item"
+				item: "cuboidmod:wikidium_crafting_table"
+			}]
+		}
+		{
+			x: -14.0d
+			y: -3.0d
+			description: ["Le tabelle di crafting si comportano tutte allo stesso modo, ma sono usate come ingredienti nella fabbricazione delle macchine di livello superiore."]
+			dependencies: ["172866E6C0DDDE2E"]
+			optional: true
+			id: "3A7BED936339A134"
+			tasks: [{
+				id: "70FC77393BA886B7"
+				type: "item"
+				item: "cuboidmod:thatldu_crafting_table"
+			}]
+		}
+		{
+			title: "Segui la strada di mattoni bianchi/viola"
+			x: 2.5d
+			y: -5.0d
+			description: ["Puoi fare i Cellulose Bricks da 4 Cellulose Blocks, e anche la variante dei Chiseled Cellulose Bricki. Anche gli Stonecutter funzionano. Solo per la decorazione in realtà!"]
+			dependencies: ["5998B0507F176BB5"]
+			optional: true
+			id: "74A89F2B586A6191"
+			tasks: [
+				{
+					id: "776DC4DF1BE1E69D"
+					type: "item"
+					item: "cuboidmod:cellulose_bricks"
+				}
+				{
+					id: "46B36F072A516A7E"
+					type: "item"
+					item: "cuboidmod:cellulose_chiseled_bricks"
+				}
+			]
+		}
+		{
+			title: "Fare un Meal con quelle Bone"
+			x: -5.5d
+			y: -16.0d
+			subtitle: "Non serve smooshing."
+			description: ["Fatti un po' di Bone Meal, possiamo poi farne un pasto."]
+			dependencies: ["538675D4249E3A92"]
+			id: "57139EDC39DC2EA3"
+			tasks: [{
+				id: "7B06228D8E9A2331"
+				type: "item"
+				item: "minecraft:bone_meal"
+			}]
+		}
+		{
+			title: "Solo perché la civiltà è finita..."
+			x: -4.5d
+			y: -15.0d
+			subtitle: "... non c'è bisogno di essere incivili!"
+			description: [
+				"Una cosa davvero buona dei lingotti di Notsogudium che hai fatto è che per essere un metallo, è sorprendentemente malleabile."
+				""
+				"In effetti, dovreste essere in grado di fare abbastanza facilmente delle Bowls di Notsogudium con questa roba."
+			]
+			id: "4C0BEA9C1AFE8A72"
+			tasks: [{
+				id: "5DAEBD530B675612"
+				type: "item"
+				item: "cuboidmod:notsogudium_bowl"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -16.0d
+			dependencies: [
+				"287BB5792C91513D"
+				"4EEFD2914212B75A"
+			]
+			id: "07179856BB3D5966"
+			tasks: [{
+				id: "157D49519641099A"
+				type: "item"
+				item: "cuboidmod:broth"
+			}]
+		}
+		{
+			title: "Per favore, signore, ne voglio ancora."
+			x: -6.5d
+			y: -10.0d
+			description: [
+				"Aggiungendo un cucchiaio di Protein Paste a una Bowl of Broth, si dovrebbe ottenere una ciotola di Gruel più appagante e in qualche modo, ehm... fragrante?"
+				""
+				"Bon appetite!"
+			]
+			dependencies: ["34B3587553A3ED9E"]
+			id: "100909A9BC5197EC"
+			tasks: [{
+				id: "0E8F25C8C999E2EB"
+				type: "item"
+				item: "cuboidmod:gruel"
+			}]
+			rewards: [{
+				id: "2A1B829E59EE93EA"
+				type: "item"
+				item: "cuboidmod:gruel"
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Cibo in viaggio"
+			x: -7.0d
+			y: -9.0d
+			description: ["È possibile cucinare la Protein Paste. Si compatta piacevolmente in una pratica barretta Protein Bar, che può darti un po' di carica quando ne hai più bisogno."]
+			dependencies: ["34B3587553A3ED9E"]
+			id: "1B8F34013A5C8636"
+			tasks: [{
+				id: "6B4040BC4164C5A6"
+				type: "item"
+				item: "cuboidmod:protein_bar"
+			}]
+			rewards: [{
+				id: "15FDFB69094924A0"
+				type: "item"
+				item: "cuboidmod:protein_bar"
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Il Kebab"
+			x: -6.5d
+			y: -8.0d
+			subtitle: "Un po' schivo, ma così buono dopo una notte difficile!"
+			description: [
+				"Un Notsogudium Rod è un fantastico spiedino. Aggiungete un po' di Rotten Flesh, Protein Paste e un Spider Eye e avrete praticamente la stessa cosa servita in tutto l'universo nei take away a tarda notte."
+				""
+				"Mentre il Kebab nella sua forma cruda può essere mangiato, probabilmente non è una buona idea."
+			]
+			dependencies: ["34B3587553A3ED9E"]
+			id: "7CE8687734691F84"
+			tasks: [{
+				id: "6B2C78B7F8BFD6B0"
+				type: "item"
+				item: "cuboidmod:kebab_raw"
+			}]
+		}
+		{
+			title: "Un pasto soddisfacente"
+			x: -7.5d
+			y: -7.0d
+			subtitle: "(il più delle volte)"
+			description: [
+				"Cuocere un Raw Kebab in un forno per un autentico sapore di fumo. È un buon pasto, anche se non tutti i Kebab sono uguali."
+				""
+				"Anche se dopo averne mangiato uno ti sentirai un po' brusco, almeno avrai soddisfatto la tua fame per un po'!"
+			]
+			dependencies: ["14179F89779DE045"]
+			id: "643B2B66BCDB18CA"
+			tasks: [{
+				id: "4F6BA0D1563D0A99"
+				type: "item"
+				item: "cuboidmod:kebab_cooked"
+			}]
+			rewards: [{
+				id: "06B68615704CE6E3"
+				type: "item"
+				item: "cuboidmod:kebab_cooked"
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Spider eye fritti del Kentucky"
+			x: -7.5d
+			y: -16.0d
+			subtitle: "Non raccomandato per i supereroi rossi e blu."
+			description: ["Si scopre che la cottura degli spider eyes riduce la loro tossicità e (cosa più importante) migliora il loro sapore."]
+			dependencies: ["538675D4249E3A92"]
+			id: "27581BC260CB2592"
+			tasks: [{
+				id: "6BB0E9A8DCAC9FC1"
+				type: "item"
+				item: "cuboidmod:arachnugget"
+			}]
+		}
+	]
+}

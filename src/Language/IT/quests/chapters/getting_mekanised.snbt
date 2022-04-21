@@ -1,0 +1,735 @@
+{
+	id: "4263B8C4A58CC2F5"
+	group: "719DAED049159F2E"
+	order_index: 5
+	filename: "getting_mekanised"
+	title: "Ottieni la Mekanism"
+	icon: "mekanism:alloy_infused"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Ottieni la Mekanism"
+			x: -19.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "(con la Mekanism)"
+			description: [
+				"Ora che avete accesso a entrambi Iron e Osmium, possiamo iniziare a lavorare su alcuni macchinari abbastanza avanzati."
+				""
+				"Sbloccato in:"
+				"  - Ottieni la Creative (1/2)"
+				"  - Ottieni la Tinker (2/2)"
+			]
+			dependencies: ["2A3A34A47D8AF234"]
+			id: "222E7D1D24E47EE0"
+			tasks: [{
+				id: "0CCC9D6C4EEE6B7E"
+				type: "checkmark"
+				title: "Getting Mekanised"
+			}]
+			rewards: [{
+				id: "722E792C7B9C563B"
+				type: "item"
+				item: {
+					id: "mekanism:configurator"
+					Count: 1b
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "60000"
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Infondi quei metalli!"
+			x: -17.0d
+			y: 2.0d
+			shape: "square"
+			subtitle: "Mostragli chi è il capo!"
+			description: [
+				"La prima nuova macchina che dobbiamo fare è il Metallurgic Infuser."
+				""
+				"Essenzialmente, si fornisce energia alla macchina (o si mette della Redstone nello slot dell'energia sulla destra), si inserisce il materiale da infusione come il Coal o la Redstone per riempire il serbatoio del materiale da infusione (vedi le ricette per gli altri), e poi si mette il metallo che si vuole infondere."
+				""
+				"Qualche secondo rumoroso dopo, e avrete i risultati dell'infusione."
+				""
+				"Se il rumore ti da veramente fastidio, puoi cercare di fare dei Muffler Upgrades (fino a 4 per macchina), o puoi usare il sound muffler nel tuo inventario per silenziare suoni specifici."
+			]
+			dependencies: ["222E7D1D24E47EE0"]
+			id: "2EDEBF605629EAF5"
+			tasks: [{
+				id: "758E7E22CD876569"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+		}
+		{
+			title: "Infused Alloys"
+			x: -21.0d
+			y: 4.0d
+			shape: "square"
+			description: [
+				"10mb di Redstone nel serbatoio di infusione del Metallurgic Infuser e un Iron Ingot produrrà una Infused Alloy."
+				""
+				"L'Infused Alloy sono usate in molte macchine e possono essere infuse di nuovo per produrre leghe di livello superiore."
+				""
+				"Puoi anche usarlo su Basic cable già piazzati per aggiornare fino a 8 Advanced Cable collegati senza bisogno di farlo in un Crafting Table."
+			]
+			dependencies: ["2EDEBF605629EAF5"]
+			id: "1DFD647EF1A8254C"
+			tasks: [{
+				id: "5FDCFF9A33FBC1D1"
+				type: "item"
+				item: "mekanism:alloy_infused"
+				count: 32L
+			}]
+			rewards: [{
+				id: "569CC30EE4D358B1"
+				type: "item"
+				item: "mekanism:alloy_infused"
+				random_bonus: 31
+			}]
+		}
+		{
+			title: "Un'infusione di controllo di base"
+			x: -17.0d
+			y: 4.0d
+			shape: "square"
+			description: [
+				"20mb di Redstone nel serbatoio di infusione più un Osmium Ingot produce un Basic Control Circuit."
+				""
+				"Basic Control Circuits possono essere aggiornati a livelli più alti e sono usati come ingredienti in molte delle macchine che puntiamo a reinventare presto, quindi potresti voler fare un po' di scorta."
+			]
+			dependencies: ["2EDEBF605629EAF5"]
+			id: "2A2991C7A49282DB"
+			tasks: [{
+				id: "12252D4D84D5F358"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+				count: 32L
+			}]
+			rewards: [{
+				id: "735DFA8249851257"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+				random_bonus: 15
+			}]
+		}
+		{
+			title: "Nervi di Steel"
+			x: -15.0d
+			y: 3.0d
+			shape: "square"
+			description: [
+				"Lo Steel è un materiale forte e durevole che è anche un requisito per molte macchine avanzate di cui avremo bisogno lungo la strada."
+				""
+				"Per creare lo steel utilizza una Metallurgic Infuser è un processo in due fasi. Prima si mette un po' di Carbon nel serbatoio di infusione (10mb per operazione), e poi si mette l'Iron. Questo produce l'Enriched Iron dust."
+				""
+				"Inserisci l'Enriched Iron dust all'interno della Metallurgic Infuser con altri 10mb di Carbon e produce della Steel Dust, poi basta cuocerlo in una furnace per creare lo Steel Ingots."
+			]
+			dependencies: ["2EDEBF605629EAF5"]
+			id: "58C29DF76FB2F288"
+			tasks: [
+				{
+					id: "2341253C43B5149C"
+					type: "item"
+					item: "mekanism:enriched_iron"
+					count: 32L
+				}
+				{
+					id: "252106879C7832C4"
+					type: "item"
+					title: "32x Steel Dust"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:dusts/steel"
+						}
+					}
+					count: 32L
+				}
+				{
+					id: "638003E4CCA29C48"
+					type: "item"
+					title: "32x Steel Ingot"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/steel"
+						}
+					}
+					count: 32L
+				}
+			]
+		}
+		{
+			title: "Un'infusione di controllo avanzata"
+			x: -17.0d
+			y: 6.0d
+			shape: "square"
+			description: [
+				"Combinando 2 Infused Alloy con un Basic Control Circuit si passa al livello successivo:  L'Advanced Control Circuit."
+				""
+				"Questo aprirà più opzioni per i macchinari, così come livelli più alti di aggiornamenti per quelli esistenti."
+			]
+			dependencies: [
+				"2A2991C7A49282DB"
+				"1DFD647EF1A8254C"
+			]
+			id: "5095107E4E8235DE"
+			tasks: [{
+				id: "1EA02C3A398C9B20"
+				type: "item"
+				item: "mekanism:advanced_control_circuit"
+				count: 6L
+			}]
+			rewards: [{
+				id: "317F518BCD1712E8"
+				type: "item"
+				item: "mekanism:advanced_control_circuit"
+				random_bonus: 5
+			}]
+		}
+		{
+			title: "Un'infusione di controllo d'Elite"
+			x: -17.0d
+			y: 8.0d
+			shape: "square"
+			description: [
+				"Combinando 2 Reinforced Alloys con un Advanced Control Circuit si passa al livello successivo: L'Elite Control Circuit."
+				""
+				"Questo aprirà più opzioni per i macchinari, così come livelli più alti di aggiornamenti per quelli esistenti."
+			]
+			dependencies: [
+				"5095107E4E8235DE"
+				"09E3F456104DF524"
+			]
+			id: "61C0AA54A152FCAA"
+			tasks: [{
+				id: "54A946CE644136FF"
+				type: "item"
+				item: "mekanism:elite_control_circuit"
+				count: 4L
+			}]
+			rewards: [{
+				id: "61449BFD511E055A"
+				type: "item"
+				item: "mekanism:elite_control_circuit"
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Un'infusione di controllo definitivo"
+			x: -17.0d
+			y: 10.0d
+			shape: "gear"
+			description: [
+				"Combinando 2 Atomic Alloys con un Elite Control Circuit si passa al livello successivo: L'Ultimate Control Circuit."
+				""
+				"Questo aprirà più opzioni per i macchinari, così come livelli più alti di aggiornamenti per quelli esistenti."
+				""
+				"&aRichiesto per: Cosa resta all'End?&f"
+			]
+			dependencies: [
+				"61C0AA54A152FCAA"
+				"335E73D74980F177"
+			]
+			size: 1.5d
+			id: "10E2C4E20F68BED8"
+			tasks: [{
+				id: "656E2E531B35E307"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+				count: 2L
+			}]
+			rewards: [{
+				id: "610D352C2F5E7BC7"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Reinforced Alloys"
+			x: -21.0d
+			y: 6.0d
+			shape: "square"
+			description: [
+				"20mb di Diamond Dust nel serbatoio di infusione del Metallurgic Infuser e un Infused Alloy produce un Reinforced Alloy."
+				""
+				"Reinforced Alloys sono usati in molte macchine e possono essere infusi di nuovo per produrre una lega di livello superiore."
+				""
+				"Puoi anche usarlo su Advanced cable già posizionati per aggiornare fino a 8 Elite cable senza doverlo fare in un crafting table."
+			]
+			dependencies: ["1DFD647EF1A8254C"]
+			id: "09E3F456104DF524"
+			tasks: [{
+				id: "7D23D114FB7A76D7"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+				count: 16L
+			}]
+			rewards: [{
+				id: "6EFF2F108869B4FE"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+				random_bonus: 15
+			}]
+		}
+		{
+			title: "Atomic Alloys"
+			x: -21.0d
+			y: 8.0d
+			shape: "square"
+			description: [
+				"40mb di Refined Obsidian nel serbatoio di infusione del the Metallurgic Infuser e un Reinforced Alloy produrrà un Atomic Alloy."
+				""
+				"Atomic Alloys sono utilizzati in molte macchine di alto livello."
+				""
+				"Puoi anche usarlo su Elite Cable già posizionati per aggiornare fino a 8 Ultimate Cable senza doverlo fare in un crafting table."
+			]
+			dependencies: [
+				"09E3F456104DF524"
+				"7E01B04F285F87CF"
+			]
+			id: "335E73D74980F177"
+			tasks: [{
+				id: "46B7BD3931AFABFE"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+				count: 6L
+			}]
+			rewards: [{
+				id: "2EBCDAECC235D058"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+				random_bonus: 5
+			}]
+		}
+		{
+			title: "Un nucleo interno d'acciaio"
+			x: -13.0d
+			y: 4.0d
+			shape: "square"
+			description: ["I macchinari pesanti richiedono un telaio forte e robusto. Steel Casings sono un requisito per la maggior parte dei Mekanisms, quindi per ora dovresti andare avanti e farne una mezza dozzina per andare avanti."]
+			dependencies: ["58C29DF76FB2F288"]
+			id: "57047D57E53534BF"
+			tasks: [{
+				id: "6D7A16FB467754E2"
+				type: "item"
+				item: "mekanism:steel_casing"
+				count: 4L
+			}]
+			rewards: [{
+				id: "30C9CD6E26A177EB"
+				type: "item"
+				item: "mekanism:steel_casing"
+				count: 3
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Arricchisci la tua vita"
+			x: -15.0d
+			y: 5.0d
+			shape: "square"
+			description: [
+				"Non tutti i materiali saranno adatti alla creazione di Quantum Singularities che può poi essere usato in un SRG. Alcuni avranno bisogno di altri metodi per ottenere il massimo da quelle risorse."
+				""
+				"Ci sono 4 macchine che dovresti cercare di realizzare in questo momento. All'inizio saranno abbastanza semplici, ma possono essere migliorate usando gli aggiornamenti (come i miglioramenti di velocità ed efficienza energetica), così come aggiornandole a fabbriche di alto livello (che forniscono un'elaborazione più parallela)."
+				""
+				"Enrichment Chamber"
+				"- Utilizzato per arricchire i materiali / trasformare le polveri in oggetti / come parte della triplicazione dei minerali"
+				""
+				"Crusher"
+				"- Un modo per frullare ogni sorta di cose usando un po' di energia"
+				""
+				"Energized Smelter"
+				"- un modo di fondere le cose usando energia invece di oggetti bruciabili come combustibile."
+				""
+				"Precision Sawmill"
+				"- davvero utile quando si automatizzano ricette che richiedono cose come assi e bastoni"
+			]
+			dependencies: [
+				"57047D57E53534BF"
+				"2A2991C7A49282DB"
+			]
+			id: "09801260481BD6F9"
+			tasks: [
+				{
+					id: "2E5698A30208A3DD"
+					type: "item"
+					item: "mekanism:enrichment_chamber"
+				}
+				{
+					id: "2A48AB2725CA85FE"
+					type: "item"
+					item: "mekanism:energized_smelter"
+				}
+				{
+					id: "5262066C4C80EB76"
+					type: "item"
+					item: "mekanism:precision_sawmill"
+				}
+				{
+					id: "26A09644B3184AA7"
+					type: "item"
+					item: "mekanism:crusher"
+				}
+			]
+		}
+		{
+			title: "Basic Factories"
+			x: -19.0d
+			y: 4.0d
+			description: [
+				"Un Basic Tier Installer è un aggiornamento che può essere usato direttamente sulle macchine di base che sono già collegate. Converte le macchine di base nella loro versione di fabbrica di base, che essenzialmente aumenta le loro capacità di elaborazione parallela in modo che 3 input possano essere elaborati contemporaneamente."
+				""
+				"Può essere applicato a un'ampia varietà di macchine Mekanism, cerca \"factory\" in JEI per vedere una lista."
+			]
+			dependencies: ["2A2991C7A49282DB"]
+			id: "79926615667744FB"
+			tasks: [{
+				id: "6EEA8DFD27372B8A"
+				type: "item"
+				item: "mekanism:basic_tier_installer"
+			}]
+		}
+		{
+			title: "Fabbriche avanzate"
+			x: -19.0d
+			y: 6.0d
+			description: ["Può essere applicato alle Basic Factories per convertirli sul posto in Advanced Factories, che aumenta il numero di ingressi che possono essere elaborati in parallelo da 3 a 5."]
+			dependencies: ["5095107E4E8235DE"]
+			id: "6A91722A7C8216E2"
+			tasks: [{
+				id: "749122A429D71FB5"
+				type: "item"
+				item: "mekanism:advanced_tier_installer"
+			}]
+		}
+		{
+			title: "Fabbriche Elite"
+			x: -19.0d
+			y: 8.0d
+			description: ["Può essere applicato alle Advanced Factories per convertirli sul posto in Elite Factories, che aumenta il numero di ingressi che possono essere elaborati in parallelo da 5 a 7."]
+			dependencies: ["61C0AA54A152FCAA"]
+			id: "2DA204B08A16A02D"
+			tasks: [{
+				id: "629EE11C87FA1F0E"
+				type: "item"
+				item: "mekanism:elite_tier_installer"
+			}]
+		}
+		{
+			title: "Fabbriche Ultimate"
+			x: -19.0d
+			y: 10.0d
+			description: ["Può essere applicato alle Elite Factories per convertirli sul posto in Ultimate Factories, che aumenta il numero di ingressi che possono essere elaborati in parallelo da 7 a 9."]
+			dependencies: ["10E2C4E20F68BED8"]
+			id: "55C8109845C482E3"
+			tasks: [{
+				id: "556F6D3438089741"
+				type: "item"
+				item: "mekanism:ultimate_tier_installer"
+			}]
+		}
+		{
+			title: "Purezza compressa"
+			x: -15.0d
+			y: 7.0d
+			description: [
+				"L'Osmium Compressor può essere usato per creare lingotti avanzati che servono come ingredienti per utensili, armi e altre ricette di crafting."
+				""
+				"Il Purification Chamber consuma ossigeno e può essere utilizzato in diversi processi per il trattamento dei minerali 3x, 4x e 5x."
+			]
+			dependencies: [
+				"5095107E4E8235DE"
+				"09801260481BD6F9"
+			]
+			id: "3338C7FA3C1698BE"
+			tasks: [
+				{
+					id: "08127692DE6233D0"
+					type: "item"
+					item: "mekanism:purification_chamber"
+				}
+				{
+					id: "762C8EE18DE29A9B"
+					type: "item"
+					item: "mekanism:osmium_compressor"
+				}
+			]
+		}
+		{
+			title: "Electrolytic Separation"
+			x: -23.0d
+			y: 5.0d
+			shape: "square"
+			description: [
+				"Ok, quindi non hai intenzione di fare una griglia, e probabilmente non ti interessa nemmeno avere un barbecue in questo momento, ma abbiamo ancora bisogno di un modo per mettere le mani su alcuni gas."
+				""
+				"In particolare, avremo bisogno di Hydrogen, e più tardi potrebbe volere anche Oxygen."
+				""
+				"Se costruiamo un Electrolytic Separator, possiamo mettere le mani su entrambi semplicemente scindendo le molecole d'acqua nei loro atomi componenti."
+				""
+				"Una volta che avete costruito un Electrolytic Separator, fornirgli acqua ed energia e comincerà a produrre gas di Hydrogen e Oxygen."
+				""
+				"Si può usare un secchio per mettere manualmente l'acqua nell'Electrolytic Separator, o potete inserirlo in un tubo, possibilmente usando un Electric Pump, Fluid Pump o un Sink."
+			]
+			dependencies: ["1DFD647EF1A8254C"]
+			id: "7F093389CF7E25F9"
+			tasks: [
+				{
+					id: "0726DEDF28110AA4"
+					type: "item"
+					item: "mekanism:electrolytic_core"
+				}
+				{
+					id: "34214171D8448434"
+					type: "item"
+					item: "mekanism:electrolytic_separator"
+				}
+			]
+		}
+		{
+			title: "Si fa il BBQ sui carboni, e il GRILL sul gas"
+			x: -23.0d
+			y: 4.0d
+			shape: "square"
+			description: [
+				"Chemical Tanks sono usati per immagazzinare gas sotto pressione, come Oxygen e Hydrogen."
+				""
+				"La Basic tank può immagazzinare 64.000 mb di gas."
+			]
+			dependencies: ["1DFD647EF1A8254C"]
+			id: "2BBDDBAB24C47867"
+			tasks: [{
+				id: "02DE402C45690C38"
+				type: "item"
+				item: "mekanism:basic_chemical_tank"
+			}]
+		}
+		{
+			title: "Vola come un uccello!"
+			x: -25.0d
+			y: 6.0d
+			shape: "square"
+			description: [
+				"Ora che avete una scorta di Hydrogen, puoi costruirti un Jetpack e prendere il volo."
+				""
+				"Perché? Perché si può!"
+				""
+				"Ne avrai bisogno anche più tardi, quando andremo in esplorazione, fidati di me su questo!"
+				""
+				"Prima di volare via, però, potresti voler pensare a come atterrare in sicurezza. Si consiglia di indossare qualcosa come Free Runners per assorbire i danni della caduta, o si rischia di avere un atterraggio un po' appiccicoso e poco aggraziato davanti a sé."
+			]
+			dependencies: [
+				"2BBDDBAB24C47867"
+				"7F093389CF7E25F9"
+			]
+			id: "3AEF883219F65FF5"
+			tasks: [{
+				id: "1A9ADD9E2C17E732"
+				type: "item"
+				item: {
+					id: "mekanism:jetpack"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+		}
+		{
+			title: "Non solo un aquilone a motore"
+			x: -25.0d
+			y: 8.0d
+			description: [
+				"Mentre il Jetpack standard è ottimo per andare in giro, non fornisce esattamente il busto con molto in termini di protezione!"
+				""
+				"L'Armored Jetpack, tuttavia, è abbastanza decente in termini non solo di fornire la capacità di volare in giro, ma fornisce anche un livello decente di protezione allo stesso tempo."
+			]
+			dependencies: ["3AEF883219F65FF5"]
+			id: "3B9269E12FF51576"
+			tasks: [{
+				id: "635CC4AE475DCD32"
+				type: "item"
+				item: "mekanism:jetpack_armored"
+			}]
+		}
+		{
+			title: "Batterie moderne"
+			x: -21.0d
+			y: 2.0d
+			description: ["Le Energy Tablets sono le batterie utilizzate in molte macchine e gadget. In generale non sono molto buone da sole, ma sono un pezzo fondamentale in molte delle cose che vogliamo (re)inventare."]
+			dependencies: ["1DFD647EF1A8254C"]
+			id: "73469BF238C904F6"
+			tasks: [{
+				id: "41814C221F694106"
+				type: "item"
+				item: "mekanism:energy_tablet"
+			}]
+		}
+		{
+			title: "Correre con l'energia"
+			x: -23.0d
+			y: 3.0d
+			description: [
+				"Non sarebbe bello potersi muovere un po' più velocemente senza dover saltare tutto il tempo? E forse anche non doversi preoccupare così tanto di subire danni quando si cade?"
+				""
+				"Buone notizie!"
+				""
+				"Le Free Runners sono stivali che ti hanno coperto! Hanno solo bisogno di essere alimentati, e useranno l'energia sia per darvi il passo, sia per assorbire i danni delle cadute consumando energia."
+				""
+				"Ricordatevi solo di tenerli in carica, o potreste ritrovarvi a schiantarvi quando meno ve lo aspettate."
+			]
+			dependencies: ["73469BF238C904F6"]
+			id: "162D84598C9C824A"
+			tasks: [{
+				id: "211074DD3F82FC1E"
+				type: "item"
+				item: "mekanism:free_runners"
+			}]
+		}
+		{
+			title: "Il ragazzo dei cavi"
+			x: -13.0d
+			y: 6.0d
+			shape: "square"
+			description: [
+				"Avrai bisogno di una sorta di cablaggio per collegare il tuo nuovo macchinario. Ce ne sono diversi tipi a vostra disposizione:"
+				""
+				"Logistical Transporter - Per spostare gli oggetti"
+				""
+				"Universal Cable - per spostare l'energia."
+				""
+				"Mechanical Pipe - per spostare i fluidi."
+				""
+				"Pressurized Tube - per spostare i gas."
+				""
+				"Puoi usare un Configurator nella modalità appropriata (shift + rotella di scorrimento per cambiare) per configurarli come necessario."
+				""
+				"Puoi passare dal livello Base al livello Avanzato usando una Infused Alloy, o in una crafting table, o direttamente sul cavo già posizionato nel mondo. Allo stesso modo, per passare al livello successivo, usa il livello successivo di lega."
+			]
+			dependencies: [
+				"57047D57E53534BF"
+				"09801260481BD6F9"
+			]
+			id: "7D512A79A62F1361"
+			tasks: [
+				{
+					id: "669F11FEA270661A"
+					type: "item"
+					item: "mekanism:basic_universal_cable"
+				}
+				{
+					id: "443B9959DDC72C12"
+					type: "item"
+					item: "mekanism:basic_mechanical_pipe"
+				}
+				{
+					id: "13AB3D87412AAE01"
+					type: "item"
+					item: "mekanism:basic_pressurized_tube"
+				}
+				{
+					id: "183AC768E1F63896"
+					type: "item"
+					item: "mekanism:basic_logistical_transporter"
+				}
+			]
+		}
+		{
+			title: "Refined Obsidian"
+			x: -23.0d
+			y: 7.0d
+			shape: "square"
+			description: [
+				"Obsidian può essere fatto in un Stone Barrel riempiendo il barrel con la lava, e poi facendo mettere dell'acqua sopra il barrel."
+				""
+				"Obsidian Dust è fatto mettendo un blocco di Obsidian nella Enrichment Chamber."
+				""
+				"Refined Obsidian Dust può essere fatto mettendo Obsidian Dust nella Metallurgic Infuser che ha Diamond nel suo serbatoio di infusione."
+				""
+				"Considerando quanto tempo e denaro richieda la realizzazione di Refined Obsidian Dust, potresti voler mettere la polvere in un Enrichment Chamber per ottenere Enriched Obsidian da usare per fare Atomic Alloys piuttosto che usare direttamente la polvere, perché andrà 8 volte più lontano."
+			]
+			hide_dependency_lines: true
+			dependencies: ["09801260481BD6F9"]
+			id: "7E01B04F285F87CF"
+			tasks: [
+				{
+					id: "1761FBDECBD9AE9A"
+					type: "item"
+					item: "mekanism:dust_obsidian"
+				}
+				{
+					id: "501DBA1B60F28ED1"
+					type: "item"
+					item: "mekanism:dust_refined_obsidian"
+				}
+			]
+		}
+		{
+			title: "A proposito di caricarsi..."
+			x: -25.0d
+			y: 4.0d
+			description: [
+				"Alcuni strumenti e attrezzature personali richiedono una ricarica. Nella maggior parte dei casi, si possono mettere in macchine fatte apposta per caricare le cose, o per fornire energia, ma non sarebbe bello poter stare in piedi su qualcosa e avere tutto carico senza doverli prima togliere?"
+				""
+				"Bene, il Chargepad è la risposta alle tue preghiere! Basta collegarlo a una fonte di energia, e ogni volta che ci stai sopra, ricaricherà qualsiasi cosa nel tuo inventario o che stai indossando senza bisogno di togliertela prima!"
+				""
+				"Non c'è di che!"
+			]
+			dependencies: ["162D84598C9C824A"]
+			id: "48C961DA8D4EE3D5"
+			tasks: [{
+				id: "5F15007FEC80E196"
+				type: "item"
+				item: "mekanism:chargepad"
+			}]
+		}
+		{
+			title: "Mekanical Multi-Tool"
+			x: -15.0d
+			y: 9.0d
+			description: [
+				"L'Atomic Disassembler è un multiutensile che utilizza l'energia per alimentarlo."
+				""
+				"Può eseguire la maggior parte delle stesse funzioni di un Pickaxe, Axe, Shovel e Hoe."
+				""
+				"L'Atomic Disassembler ha diverse modalità (di default, accovacciati e scorri per cambiare modalità):"
+				""
+				"&aNormal&f: funziona come un utensile di diamante con Efficiency II"
+				"&aSlow&f: funziona come un utensile di diamante"
+				"&aFast&f: funziona come un utensile di diamante con Efficiency V"
+				"&aVein&f: Estrae un'intera vena di stone/ore/wood con un solo colpo."
+				"&aExtended vein mining&f: Come l'estrazione in vena, ma estrarrà materiali simili (ad esempio, se si estrae la pietra, si estraggono anche le varianti della pietra)"
+				"&aOff&f: Tanto vale usare la mano."
+			]
+			dependencies: [
+				"3338C7FA3C1698BE"
+				"10E2C4E20F68BED8"
+			]
+			id: "58E7FC36824A169E"
+			tasks: [{
+				id: "40CC2619274FAF46"
+				type: "item"
+				item: {
+					id: "mekanism:atomic_disassembler"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+		}
+	]
+}

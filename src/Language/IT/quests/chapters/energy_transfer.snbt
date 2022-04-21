@@ -1,0 +1,329 @@
+{
+	id: "74CA2AF06834E7BC"
+	group: "033EC740B2EF1FC1"
+	order_index: 2
+	filename: "energy_transfer"
+	title: "Trasferimento di energia"
+	icon: "immersiveengineering:wirecoil_copper"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 3.5d
+			description: [
+				"Le MV Wire Coils possono trasferire 8192 FE/t in modo continuo prima di bruciarsi, e perdono circa lo 0,156% FE per ogni blocco di distanza percorso (la distanza massima del filo è di 16 blocchi)."
+				""
+				"Come le  LV Wire Coils, ci sono sia versioni standard che isolate della MV Wire Coil, e la versione standard vi darà la scossa se toccata."
+			]
+			dependencies: ["7040588235EC486C"]
+			id: "63CD676C5C5D1C1D"
+			tasks: [
+				{
+					id: "1D32E3E557C4ACEF"
+					type: "item"
+					item: "immersiveengineering:wirecoil_electrum"
+				}
+				{
+					id: "1AB05EB25B535C22"
+					type: "item"
+					item: "immersiveengineering:wirecoil_electrum_ins"
+				}
+				{
+					id: "65329895A71BBD37"
+					type: "item"
+					item: "immersiveengineering:connector_mv"
+				}
+				{
+					id: "003426107E3CD473"
+					type: "item"
+					item: "immersiveengineering:connector_mv_relay"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			description: [
+				"Le HV Wire Coils possono trasferire 32768 FE/t in modo continuo prima di bruciarsi, e perdono circa lo 0,078% FE per ogni blocco di distanza percorso (la massima distanza di filo percorsa è di 32 blocchi)."
+				""
+				"Non esiste una versione isolata della HV Wire Coil, quindi occorre prestare attenzione quando la si utilizza."
+			]
+			dependencies: ["63CD676C5C5D1C1D"]
+			id: "7F1EFBCEB7CF828D"
+			tasks: [
+				{
+					id: "7FA9708B1D381AC3"
+					type: "item"
+					item: "immersiveengineering:wirecoil_steel"
+				}
+				{
+					id: "452B3629D415F349"
+					type: "item"
+					item: "immersiveengineering:connector_hv"
+				}
+				{
+					id: "1B9FBAC9EB84AFB0"
+					type: "item"
+					item: "immersiveengineering:connector_hv_relay"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Per le applicazioni a bassa tensione (LV), il cavo di energia viene trasferito utilizzando le LV wire coils tra i LV Connectors e i LV Relays."
+				""
+				"I connettori devono essere aggiunti alla fonte dell'energia (da dove viene estratta l'energia) e al consumatore di energia (ad esempio la macchina). I Connectors possono avere un solo cavo collegato ad essi."
+				""
+				"I Relays possono avere fino a 8 cavi attaccati a loro, e non trasferiscono l'energia al blocco o alla macchina a cui sono collegati, semplicemente trasmettono l'energia agli altri LV cables collegati che, a loro volta, possono collegarsi a più Relays o a connettori sulle macchine."
+				""
+				"Si noti che i  LV cables sono disponibili in forme standard e isolate. I Standard LV cables vi daranno la scossa se alimentati, mentre i Insulated LV Cables sono sicuri al tatto."
+				""
+				"Le LV Wire Coils possono essere attaccate tra un LV Connector e un LV Relay, usandole su ogni punto che si vuole collegare. Esse possono essere rimosse sia rompendo il connector o il relay, sia usando su di esse delle Engineer's Wire Cutters."
+				""
+				"Le LV Wire Coils possono trasferire 2048 FE/t in modo continuo prima di bruciarsi, e perdono circa lo 0,312% FE per ogni blocco di distanza percorso (la massima distanza di filo percorsa è di 16 blocchi)."
+			]
+			id: "7040588235EC486C"
+			tasks: [
+				{
+					id: "0988E26F33A8A08C"
+					type: "item"
+					item: "immersiveengineering:wirecoil_copper"
+				}
+				{
+					id: "14AE4077C4CAABA2"
+					type: "item"
+					item: "immersiveengineering:connector_lv"
+				}
+				{
+					id: "1914C243D1285C74"
+					type: "item"
+					item: "immersiveengineering:connector_lv_relay"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			description: [
+				"Il Basic Universal Cable può trasferire energia a una velocità di 3,2kFE/t."
+				""
+				"Gli Universal cables possono essere configurati utilizzando un Configurator. Per impostazione predefinita, quando i cavi sono posizionati in basso, tenteranno di connettersi a tutto ciò che possono, e permetteranno all'energia di fluire in qualsiasi direzione. Questo è di solito quello che vuoi, ma in alcuni casi, potresti voler cambiare questo comportamento. Usando il configurator, puoi cambiare una connessione per permettere all'energia di essere solo tirata, spinta, o anche di essere scollegata per una particolare direzione in cui il cavo si connette."
+				""
+				"Gli Universal cables possono convertire automaticamente tra diversi tipi di energia, compresi FE, EU e Joule."
+			]
+			id: "7579E2A5FD29894A"
+			tasks: [{
+				id: "658D67B29297EFAD"
+				type: "item"
+				item: "mekanism:basic_universal_cable"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.5d
+			description: [
+				"Gli Advanced Universal Cable possono trasferire energia a una velocità di 51.2kFE/t."
+				""
+				"È possibile eseguire un aggiornamento \"nel mondo\" di un massimo di 8 Basic Universal Cables a questa versione avanzata utilizzando una Infused Alloy su uno di essi."
+			]
+			dependencies: ["7579E2A5FD29894A"]
+			id: "549C0E94F29DCF32"
+			tasks: [{
+				id: "0C6379F9ADDF5FB4"
+				type: "item"
+				item: "mekanism:advanced_universal_cable"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 5.0d
+			description: [
+				"L'Elite Universal Cable possono trasferire energia a una velocità di 409.6kFE/t."
+				""
+				"È possibile eseguire un aggiornamento \"nel mondo\" di un massimo di 8 Advanced Universal Cables a questa versione avanzata utilizzando una Reinforced Alloy su uno di essi."
+			]
+			dependencies: ["549C0E94F29DCF32"]
+			id: "025DEAF9BABC8F66"
+			tasks: [{
+				id: "614FF834720CF255"
+				type: "item"
+				item: "mekanism:elite_universal_cable"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.5d
+			description: [
+				"Gli Ultimate Universal Cable possono trasferire energia a una velocità di of 3.27MFE/t."
+				""
+				"Fino a 8 Elite Univeral Cables collegati possono essere potenziati \"nel mondo\" utilizzando una Atomic Alloy su uno di essi."
+			]
+			dependencies: ["025DEAF9BABC8F66"]
+			id: "6366AE3C13655BD1"
+			tasks: [{
+				id: "6CEEFE981FAA33C2"
+				type: "item"
+				item: "mekanism:ultimate_universal_cable"
+			}]
+		}
+		{
+			title: "XNet per l'energia"
+			x: 2.0d
+			y: 2.0d
+			description: [
+				"Anche la XNet può essere usato per trasferire energia. Avrai bisogno di un controller collegato, un canale di energia e una fonte di energia che abbia un connettore attaccato, e poi di mettere un connettore sul blocco a cui vuoi trasferire l'energia. Nel controller, imposta il canale per estrarre dalla fonte di energia e inserirlo nel blocco di destinazione."
+				""
+				"I Normal connectors possono trasferire energia a una velocità massima di 50.000 FE/t. I Advanced Connectors possono trasferire energia a un tasso di 500.000 FE/t."
+				""
+				"Una nota sui Advanced Connectors per l'energia, non è possibile consumare energia da altri lati del blocco di energia sorgente anche con un Advanced Connectors. l'energia può essere consumata solo da un lato della fonte di energia che sta fornendo energia. I Advanced Connectors possono, tuttavia, fornire energia ai lati a cui il connettore non è effettivamente collegato."
+				""
+				"Se volete alcuni esempi di come usarlo, date un'occhiata all'argomento \"Reti per XMen\" in questa appendice."
+				""
+				"&cPurtroppo non puoi cercare la ricetta direttamente da qui a causa della corruzione che si è verificata durante la trasmissione di questa guida di sopravvivenza. Usa invece la funzione di ricerca in JEI.&f"
+			]
+			id: "4684D4B747C9FBB4"
+			tasks: [
+				{
+					id: "054FBCCC43077EAE"
+					type: "item"
+					title: "Connector"
+					icon: "xnet:connector_blue"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "xnet:connectors"
+						}
+					}
+				}
+				{
+					id: "478A405F85CF52D6"
+					type: "item"
+					title: "Network Cable"
+					icon: "xnet:netcable_blue"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "xnet:cables"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			description: [
+				"Gli Energy Cables hanno una capacità abbastanza alta, e sono abbastanza speciali in quanto non bloccano il movimento."
+				""
+				"Gli Starter Energy Cables possono trasferire ad una velocità di 100 FE/t"
+			]
+			id: "10449893EC1BD735"
+			tasks: [{
+				id: "220E0886E740783B"
+				type: "item"
+				item: "powah:energy_cable_starter"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.5d
+			description: ["I Basic Energy Cables possono trasferire ad una velocità di 1.4k FE/t"]
+			dependencies: ["10449893EC1BD735"]
+			id: "52CAE4A078362D76"
+			tasks: [{
+				id: "20E22F0D3834D78F"
+				type: "item"
+				item: "powah:energy_cable_basic"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 5.0d
+			description: ["L'Hardened Energy Cables possono trasferire ad una velocità di 5k FE/t"]
+			dependencies: ["52CAE4A078362D76"]
+			id: "4B22B5E60F8E1C9D"
+			tasks: [{
+				id: "638AEF4BDBA08929"
+				type: "item"
+				item: "powah:energy_cable_hardened"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.5d
+			description: ["Il Blazing Energy Cables possono trasferire ad una velocità di 18k FE/t"]
+			dependencies: ["4B22B5E60F8E1C9D"]
+			id: "34D8BA1A3C031B0B"
+			tasks: [{
+				id: "6D1A02B8C2261208"
+				type: "item"
+				item: "powah:energy_cable_blazing"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 8.0d
+			description: ["Il Niotic Energy Cables possono trasferire ad una velocità di 40k FE/t"]
+			dependencies: ["34D8BA1A3C031B0B"]
+			id: "367D6CD950F4E48B"
+			tasks: [{
+				id: "5821E1C8FA8BAEBF"
+				type: "item"
+				item: "powah:energy_cable_niotic"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 9.5d
+			description: ["Gli Spirited Energy Cables possono trasferire ad una velocità di 90k FE/t"]
+			dependencies: ["367D6CD950F4E48B"]
+			id: "573B2B8B63121C43"
+			tasks: [{
+				id: "18910295FFD96E58"
+				type: "item"
+				item: "powah:energy_cable_spirited"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 11.0d
+			description: ["Il Nitro Energy Cables possono trasferire ad una velocità di 200k FE/t"]
+			dependencies: ["573B2B8B63121C43"]
+			id: "09D9978BC183F61F"
+			tasks: [{
+				id: "671EC127685853D3"
+				type: "item"
+				item: "powah:energy_cable_nitro"
+			}]
+		}
+		{
+			title: "Opzioni di trasferimento dell'energia"
+			x: 2.0d
+			y: 0.0d
+			shape: "gear"
+			description: ["Spostare l'energia in giro sarà importante quando cominceremo ad avere bisogno di voi per fare molte macchine diverse. Questa parte della guida mira a delineare le principali opzioni a vostra disposizione."]
+			size: 1.5d
+			id: "12F66403A13D4B05"
+			tasks: [{
+				id: "0E67762453A2B546"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			description: ["Transfers energy. Usa una Pipe Wrench per configurarlo. Può essere potenziato usando i Pipe Upgrades."]
+			id: "6E50D5E02D8FBDD3"
+			tasks: [{
+				id: "7104A049A0F84693"
+				type: "item"
+				item: "pipez:energy_pipe"
+			}]
+		}
+	]
+}

@@ -1,0 +1,201 @@
+{
+	id: "0950DB97D4C589FC"
+	group: ""
+	order_index: 0
+	filename: "farewell"
+	title: "Addio"
+	icon: "minecraft:writable_book"
+	subtitle: ["Priority Message from The Cuboid Corp (tm) HQ"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "L'inizio"
+			icon: "minecraft:writable_book"
+			disable_toast: true
+			x: 6.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "(della fine)"
+			description: [
+				"Buona giornata a voi! Spero che questa missiva vi trovi bene."
+				""
+				"Prima di andare troppo avanti, voglio ringraziarti per tutto il duro, persino esemplare, lavoro che hai fatto per la Corporazione nel corso degli anni nell'avamposto 42. Hai i nostri sinceri ringraziamenti e la nostra eterna gratitudine."
+				""
+				"Beh... forse non proprio 'eterna'."
+				""
+				"Vedete, la nostra divisione scientifica qui alla Cuboid Corp (tm) ha fatto un piccolo errore. In qualche modo sono riusciti ad agganciare quantisticamente non due, ma tre singolarità contemporaneamente! All'inizio questo sembrava un incredibile progresso tecnologico e scientifico, ma quando le hanno messe direttamente in una delle nostre matrici di teletrasporto... beh... è allora che è successo."
+				""
+				"Ehm..."
+			]
+			id: "197A96E41270A0A4"
+			tasks: [{
+				id: "53C8D2DB609C3A1E"
+				type: "checkmark"
+				title: "Andiamo!"
+			}]
+		}
+		{
+			title: "Che cosa è successo?"
+			icon: "minecraft:writable_book"
+			disable_toast: true
+			x: 8.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "La versione breve"
+			description: [
+				"Comunque, ecco la versione breve..."
+				""
+				"È iniziata una reazione a catena. Non possiamo controllarla. Abbiamo letteralmente ancora pochi minuti prima che tutta la nostra rete di comunicazione si spenga e, poco dopo, la vita come la conosciamo sul nostro pianeta arrivi a una brutale, ardente, apocalittica fine."
+				""
+				"Ops!"
+				""
+				"Quindi... Non c'è modo per noi di recuperarvi, non c'è modo per noi di connettervi con altri avamposti, e solo teorie su ciò che potrebbe accadere dopo."
+				""
+				"Mi dispiace."
+				""
+				"Quello che possiamo fare, però, è cercare di darvi le migliori possibilità di sopravvivenza."
+			]
+			dependencies: ["197A96E41270A0A4"]
+			id: "0A0FB7D6F6EEE0AB"
+			tasks: [{
+				id: "30BF87C9D8F1359E"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Guarda il lato positivo!"
+			icon: "minecraft:writable_book"
+			disable_toast: true
+			x: 10.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "La buona notizia!"
+			description: [
+				"Il lato positivo è che il vostro avamposto è incredibilmente ben equipaggiato, come ben sapete."
+				""
+				"C'è l'ultimo equipaggiamento di lusso, tra cui, ma non solo:"
+				"- energia rinnovabile sotto forma di generatori solari ed eolici!"
+				"- un frigorifero per mantenere freschi i vostri pacchetti di razioni!"
+				"una tecnologia al top della gamma!"
+				"- l'ultima novità in fatto di archiviazione digitale che la Corporazione ha da offrire!"
+				"Un letto!"
+				"- tutta l'acqua che puoi sciogliere! (praticamente)"
+				"- un posto caldo per proteggerti dagli... elementi!"
+				""
+				"La vita è bella!"
+			]
+			dependencies: ["0A0FB7D6F6EEE0AB"]
+			id: "283B6CFF3F804676"
+			tasks: [{
+				id: "38B5126D24B27E92"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "0655ABEF2FB4FF64"
+				type: "item"
+				item: "cuboidmod:ration_pack"
+				count: 8
+			}]
+		}
+		{
+			title: "La nuova realtà"
+			icon: "minecraft:writable_book"
+			disable_toast: true
+			x: 12.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "La cattiva notizia..."
+			description: [
+				"Purtroppo per te, la vita diventerà molto più complicata."
+				""
+				"Per esempio, il pianeta su cui vi trovate non ha vita vegetale naturale. In effetti, è completamente sterile. Non c'è nemmeno vita animale nativa e le risorse naturali sono limitate."
+				""
+				"Per peggiorare le cose, non saremo in grado di offrire molta assistenza. Possiamo (e lo faremo) rilasciare pacchetti di assistenza per voi al completamento di determinati compiti, che vi saranno messi a disposizione al momento opportuno. Non preoccupatevi però, vorrete completarli."
+				""
+				"Dopo tutto, la vostra stessa sopravvivenza dipenderà da questo."
+			]
+			dependencies: ["283B6CFF3F804676"]
+			id: "5BB19605EF94827E"
+			tasks: [{
+				id: "0D5193CE76C546BB"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Non siamo più in Kansas"
+			icon: "minecraft:writable_book"
+			disable_toast: true
+			x: 14.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Le notizie davvero brutte..."
+			description: [
+				"Sfortunatamente, ci sono alcuni altri punti di cui essere consapevoli... l'incidente sembra aver reso possibile la materializzazione di forme di vita indesiderabili in tutto l'universo. Noi li chiamiamo Mob. Sembra che ce ne sia una grande varietà. Ma ogni nuvola ha un rivestimento d'argento, anche le nuvole a forma di fungo!"
+				""
+				"Potrebbero rivelarsi preziose come fonte di nuovi materiali, e persino di cibo!"
+				""
+				"Quindi è davvero una buona notizia! Evviva!"
+				""
+				"Sono sicuro che sarete super grati per le piccole misericordie, quindi sarete felici di sapere che la nostra Divisione Scientifica è riuscita a mettere insieme un gadget che ridurrà il bisogno di dormire, e renderà i vostri pisolini molto più brevi, basta equipaggiarlo e nel tempo il vostro bisogno di dormire si ridurrà man mano che questo Sleep Charm si sintonizza sul vostro codice genetico."
+				""
+				"Ora... prepariamoci a iniziare la tua nuova vita facendo a pezzi quella vecchia!"
+			]
+			dependencies: ["5BB19605EF94827E"]
+			size: 1.5d
+			id: "42182228C9517AA2"
+			tasks: [{
+				id: "209B7C631E208E9B"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "4DBD8AE825A5FD29"
+				type: "item"
+				item: "darkutils:charm_sleep"
+			}]
+		}
+		{
+			title: "Informazioni su passi e compiti"
+			x: 10.0d
+			y: 3.5d
+			description: [
+				"I passi / compiti con una forma a &eIngranaggio&f sono tipicamente o l'&ainizio di un particolare capitolo, o un collegamento ad un altro capitolo&f. In altre parole, di solito vorrete provare ad aprire tutti gli ingranaggi se il vostro scopo è quello di ottenere l'accesso a tutti i capitoli."
+				""
+				"I passi / compiti con una forma &eQuadrata&f fanno parte dei &aprincipali requisiti della guida di sopravvivenza&f, se il vostro obiettivo è quello di progredire attraverso il pacchetto e saltare alcuni degli elementi meno critici, potete &aconcentrarvi sul completamento dei compiti Quadrati&f prima."
+				""
+				"I passi / compiti a forma di &eCerchio&f sono di solito o &atotalmente opzionali, o semplicemente non critici&f per la tua esistenza continua."
+				""
+				"Mentre questo è l'intento, è possibile che questo non sia sempre vero... ma si spera che vi dia un'idea di come affrontare le cose."
+			]
+			optional: true
+			id: "28877C7DC0FB478C"
+			tasks: [{
+				id: "03B368440F87C0DB"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Sfruttare al meglio questa guida di sopravvivenza"
+			x: 10.0d
+			y: 4.5d
+			description: [
+				"Questa guida di sopravvivenza è stata realizzata con amore (anche se principalmente per senso di colpa) per aiutarvi a farvi una nuova vita in questa terra arida e un po' inospitale in cui siete bloccati."
+				""
+				"La prima cosa da notare è che è importante leggere ciò che abbiamo scritto. Sì, noi blateriamo un po', ma di solito c'è uno scopo. Se lo sfogliate, potreste perdere una parte importante di informazioni e morire di una morte fredda, solitaria e orribile. La scelta è comunque vostra."
+				""
+				"Alcuni compiti hanno spiegazioni abbastanza lunghe, e anche suggerimenti, &apotresti aver bisogno di scorrere in basso&f per vederlo tutto!"
+				""
+				"Per completare una fase, è necessario completare i compiti elencati. Questa guida di sopravvivenza cercherà di riconoscere automaticamente quando hai completato qualcosa, ma è sintonizzata su di te, quindi &aassicurati di tenere l'oggetto nel tuo inventario per farlo riconoscere automaticamente!&f"
+				""
+				"Se ti stai chiedendo perché un particolare passo è in grigio e non è disponibile per te, c'è una piccola freccia nera nella casella \"Compiti\", se la apri vedrai una lista di altri passi che dovrai completare prima. Puoi selezionarne uno da quella lista per essere portato a quel passo nella guida. Questa è la \"piccola freccia nera\" che intendiamo:"
+				"{image:kubejs:textures/quests/farewell_ftb_dependencies.png width:600 height:175 align:1 fit:true}"
+			]
+			optional: true
+			id: "108D30AC48535DA5"
+			tasks: [{
+				id: "09B1BA699B8963A8"
+				type: "checkmark"
+			}]
+		}
+	]
+}

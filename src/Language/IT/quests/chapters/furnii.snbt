@@ -1,0 +1,443 @@
+{
+	id: "428ED2EA3F42160E"
+	group: "4F582DBBFACF1F69"
+	order_index: 0
+	filename: "furnii"
+	title: "Crea l'arcobaleno"
+	icon: "ironfurnaces:million_furnace"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Bagna l'arcobaleno"
+			x: -1.5d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"Quando si tratta di fondere roba, hai già alcune opzioni ormai, tuttavia è sempre utile avere delle alternative."
+				""
+				"Con alcuni dei materiali più avanzati a cui ora avete accesso (e a cui avrete accesso), sono disponibili Furnace più avanzate. E con una Quantum Singularity che fornisce materiali bruciabili gratis come il wood o il coal, non avete nemmeno bisogno di preoccuparvi di alimentarle con l'energia (anche se, come vedrete, anche questa è un'opzione)."
+				""
+				"In particolare, la Rainbow Furnace di livello superiore è davvero, davvero, davvero veloce, quindi, mentre richiede un po' di sforzo per ottenere, può ridurre significativamente il tempo totale di crafting quando c'è un sacco di fusione coinvolta."
+				""
+				"Tutta questa gamma di Furnace può essere configurata nella loro GUI per controllare le loro direzioni di ingresso e di uscita, possono avere aggiornamenti applicati, e hanno opzioni di controllo della redstone, che è un passo avanti rispetto alle varianti di pietra e locali delle Furnaces."
+				""
+				"C'è anche qualcos'altro... è una cosa chiamata Rainbow Core, che non è solo parte della Rainbow Furnace, ma una parte importante di cui avremo bisogno ancora più tardi."
+			]
+			dependencies: ["164AA3AA7EEDB5DC"]
+			id: "6F523723CEDC4C89"
+			tasks: [
+				{
+					id: "00BEF0EFD5583F21"
+					type: "item"
+					item: "minecraft:iron_ingot"
+				}
+				{
+					id: "39EF1551D09C6EAE"
+					type: "item"
+					item: "minecraft:redstone"
+				}
+			]
+		}
+		{
+			title: "Iron Furnaces"
+			x: 1.0d
+			y: 1.0d
+			shape: "square"
+			description: [
+				"Una Iron Furnace è la Furnace migliorata di base."
+				""
+				"Fonde oggetti ad una velocità di 1 ogni 8 secondi (1,25 volte più veloce di una Furnace di pietra standard)."
+				""
+				"Una Iron Furnace può essere realizzata potenziando una Furnace standard, o migliorando una Copper Furnace."
+			]
+			dependencies: ["6F523723CEDC4C89"]
+			id: "3480BA37EF1BC9FB"
+			tasks: [{
+				id: "50433AE0BE19BD40"
+				type: "item"
+				item: "ironfurnaces:iron_furnace"
+			}]
+		}
+		{
+			title: "Copper Furnaces"
+			x: 0.0d
+			y: -1.0d
+			description: [
+				"Una Copper Furnace è l'aggiornamento del forno entry level."
+				""
+				"Fonde gli oggetti al ritmo di 1 ogni 9 secondi (una Furnace di pietra standard è di 1 ogni 10 secondi)."
+				""
+				"La Copper Furnaces può essere realizzata potenziando una Silver Furnace o un Iron Furnace."
+			]
+			dependencies: ["6F523723CEDC4C89"]
+			optional: true
+			id: "6B976D6C51C88594"
+			tasks: [{
+				id: "149F91D7A88BFF68"
+				type: "item"
+				item: "ironfurnaces:copper_furnace"
+			}]
+		}
+		{
+			title: "Silver Furnaces"
+			x: 2.0d
+			y: -1.0d
+			description: [
+				"Una Silver Furnace è la \"caso a metà strada\" tra una Iron Furnace e una Golden Furnace."
+				""
+				"Fonde gli oggetti in 7 secondi (poco meno di 1,43 volte la velocità standard del forno)"
+				""
+				"Una Silver furnace può essere realizzata potenziando una Iron o una Copper Furnace."
+			]
+			dependencies: ["6B976D6C51C88594"]
+			optional: true
+			id: "06BE9F026B6857AF"
+			tasks: [{
+				id: "72BDFE47F5613337"
+				type: "item"
+				item: "ironfurnaces:silver_furnace"
+			}]
+		}
+		{
+			title: "Golden Furnaces"
+			x: 3.0d
+			y: 1.0d
+			shape: "square"
+			description: [
+				"La Golden Furnace fonde gli oggetti in 6 secondi (poco meno di 1,7 volte più veloce di un forno di pietra standard)."
+				""
+				"Può essere realizzata potenziando una Iron Furnace o una Silver Furnace."
+			]
+			dependencies: ["3480BA37EF1BC9FB"]
+			id: "0888F8C192976BB9"
+			tasks: [{
+				id: "41DA67ADFC778B91"
+				type: "item"
+				item: "ironfurnaces:gold_furnace"
+			}]
+		}
+		{
+			title: "Diamond Furnaces"
+			x: 4.5d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Una Diamond Furnace fonde un oggetto in 4 secondi (2,5 volte più veloce di una fornace di pietra standard)."
+				""
+				"Può essere realizzata potenziando una Golden Furnace."
+			]
+			dependencies: ["0888F8C192976BB9"]
+			id: "1A4B501C3A7BBB37"
+			tasks: [{
+				id: "4EF1D72D52C2ED8F"
+				type: "item"
+				item: "ironfurnaces:diamond_furnace"
+			}]
+			rewards: [{
+				id: "46728B93ADC1B2D2"
+				type: "item"
+				item: "ironfurnaces:upgrade_diamond"
+			}]
+		}
+		{
+			title: "Emerald Furnaces"
+			x: 6.0d
+			y: 1.0d
+			shape: "square"
+			description: [
+				"Come la Crystal Furnace, la Emerald Furnace fonde un oggetto in 2 secondi (5 volte più veloce di un forno di pietra standard)."
+				""
+				"Può essere realizzata potenziando una Diamond Furnace."
+			]
+			dependencies: ["1A4B501C3A7BBB37"]
+			id: "16046F3BCF2AE6D4"
+			tasks: [{
+				id: "46F8F76341F1F1CA"
+				type: "item"
+				item: "ironfurnaces:emerald_furnace"
+			}]
+			rewards: [{
+				id: "390473B90671403C"
+				type: "item"
+				item: "ironfurnaces:upgrade_emerald"
+			}]
+		}
+		{
+			title: "Obsidian Furnaces"
+			x: 7.5d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"L'Obsidian Furnace fonde un oggetto ogni secondo (10 volte più veloce di una fornace di pietra standard)."
+				""
+				"Può essere realizzata potenziando una Crystal Furnace o una Emerald Furnace."
+			]
+			dependencies: [
+				"16046F3BCF2AE6D4"
+				"19E59602755AA85F"
+			]
+			id: "37E89D33460536FD"
+			tasks: [{
+				id: "6C5D96B25CFC90A0"
+				type: "item"
+				item: "ironfurnaces:obsidian_furnace"
+			}]
+			rewards: [
+				{
+					id: "060C441F64E2BED9"
+					type: "item"
+					item: "ironfurnaces:upgrade_obsidian"
+				}
+				{
+					id: "0A92B0871E6F8123"
+					type: "item"
+					item: "ironfurnaces:upgrade_obsidian2"
+				}
+			]
+		}
+		{
+			title: "Crystal Furnaces"
+			x: 6.0d
+			y: -1.0d
+			description: [
+				"Come la Emerald Furnace, la Crystal Furnace fonde un oggetto in soli 2 secondi (5 volte più veloce di una fornace di pietra standard)."
+				""
+				"La Crystal Furnace viene creata potenziando un Diamond Furnace."
+			]
+			dependencies: ["1A4B501C3A7BBB37"]
+			id: "32039F7DDE84BDCE"
+			tasks: [{
+				id: "041B112AF245CC17"
+				type: "item"
+				item: "ironfurnaces:crystal_furnace"
+			}]
+			rewards: [{
+				id: "37005624C9315AA2"
+				type: "item"
+				item: "ironfurnaces:upgrade_crystal"
+			}]
+		}
+		{
+			title: "Netherite Furnaces"
+			x: 9.0d
+			y: 1.0d
+			shape: "square"
+			description: [
+				"La Netherite furnace fonde un oggetto ogni 0,25 secondi! Questo è 40 volte più veloce di una fornace di pietra standard."
+				""
+				"Può essere realizzata potenziando una Obsidian Furnace."
+				""
+			]
+			dependencies: ["37E89D33460536FD"]
+			id: "248E99BD7D655952"
+			tasks: [{
+				id: "29EC55E45E4D89DB"
+				type: "item"
+				item: "ironfurnaces:netherite_furnace"
+			}]
+			rewards: [{
+				id: "4FE675B2D13B9A9A"
+				type: "item"
+				item: "ironfurnaces:upgrade_netherite"
+			}]
+		}
+		{
+			title: "Rainbow Plating"
+			x: 10.0d
+			y: -1.0d
+			description: [
+				"La fornace di livello superiore, la Rainbow Furnace, richiede 8 Rainbow Plating e un Rainbow Core."
+				""
+				"Puoi ottenere 8 Rainbow Plating combinando 6 furnace in un crafting table:"
+				"- Iron Furnace"
+				"- Gold Furnace"
+				"- Diamond Furnace"
+				"- Crystal Furnace"
+				"- Emerald Furnace"
+				"- Obsidian Furnace"
+			]
+			dependencies: ["37E89D33460536FD"]
+			id: "1D8895C4AF9C916D"
+			tasks: [{
+				id: "0D2C1653C40C8715"
+				type: "item"
+				item: "ironfurnaces:rainbow_plating"
+				count: 8L
+			}]
+			rewards: [{
+				id: "14596729BA46F120"
+				type: "item"
+				item: "ironfurnaces:rainbow_plating"
+				count: 8
+			}]
+		}
+		{
+			title: "Rainbow Core"
+			x: 11.0d
+			y: 1.0d
+			shape: "gear"
+			description: [
+				"La fornace di livello superiore, la Rainbow Furnace, richiede uno speciale Rainbow Core."
+				""
+				"È fatta da 2 Netherite Furnaces e 7 blocchi di Stained Glass specifici"
+				"."
+				""
+				"Il Rainbow Core sarà anche necessario per un oggetto speciale più tardi, per evitare che tu perda una Rainbow Furnace, noi della Cuboid Corp (tm) abbiamo racimolato abbastanza per darti un ricambio come ricompensa."
+			]
+			dependencies: ["248E99BD7D655952"]
+			size: 1.5d
+			id: "58400C24E1A5B14B"
+			tasks: [{
+				id: "59727F13D36F6A8F"
+				type: "item"
+				item: "ironfurnaces:rainbow_core"
+			}]
+			rewards: [{
+				id: "11C3BCE68314B3DD"
+				type: "item"
+				item: "ironfurnaces:rainbow_core"
+			}]
+		}
+		{
+			title: "The Rainbow Furnace"
+			x: 12.5d
+			y: 0.0d
+			description: [
+				"La Rainbow Furnace è la fornace di livello superiore che può fondere un'intero stack in 1 secondo (che è fino a 640 volte più veloce di una fornace di pietra standard)."
+				""
+				"Si noti che il tempo di elaborazione è di 1 secondo indipendentemente da quanti oggetti sono disponibili per essere cucinati, quindi se c'è solo 1 oggetto inserito, allora ci vuole ancora 1 secondo per elaborare. Tenetelo a mente quando usate una Rainbow Furnace nell'automazione, volete cercare di inserire stack intere alla volta, se possibile!"
+			]
+			dependencies: [
+				"58400C24E1A5B14B"
+				"1D8895C4AF9C916D"
+			]
+			id: "44D9832C88B16755"
+			tasks: [{
+				id: "0625A695BA0B6BBE"
+				type: "item"
+				item: "ironfurnaces:million_furnace"
+			}]
+		}
+		{
+			title: "Più gentile con l'ambiente?"
+			x: -1.5d
+			y: 2.0d
+			description: [
+				"Se preferisci usare l'energia come combustibile invece di materiali bruciabili, allora hai la possibilità, per questa gamma di forni, di usare invece il trasferimento di calore senza fili."
+				""
+				"Dovrete costruire un Wireless Heat Transmitter e collegarlo a una fonte di energia."
+			]
+			dependencies: ["6F523723CEDC4C89"]
+			id: "796072D8AB53D130"
+			tasks: [{
+				id: "09F5608BC47B9A96"
+				type: "item"
+				item: "ironfurnaces:heater"
+			}]
+		}
+		{
+			title: "Utilizza le microonde?"
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"Una volta che avete un Wireless Heat Transmitter, dovrete fare un Wireless Heat Receiver per ogni forno che volete alimentare senza fili usando l'energia."
+				""
+				"Fate semplicemente un Wireless Heat Receiver e mettetelo nello slot del combustibile della vostra fornace scelta, e non brucerà più combustibile, ma brucerà invece energia."
+			]
+			dependencies: ["796072D8AB53D130"]
+			id: "37D2959298434CC9"
+			tasks: [{
+				id: "36D116FE06D4CA8F"
+				type: "item"
+				item: "ironfurnaces:item_heater"
+			}]
+		}
+		{
+			title: "Augment: Blasting"
+			x: 1.0d
+			y: 4.0d
+			description: ["Questo augment raddoppia la velocità della fornace senza influire sul consumo di combustibile, ma limita le ricette che può gestire a quelle di Blast Furnace."]
+			dependencies: ["37D2959298434CC9"]
+			optional: true
+			id: "5C68D0517708F745"
+			tasks: [{
+				id: "6B4615ADA868FEB7"
+				type: "item"
+				item: "ironfurnaces:augment_blasting"
+			}]
+		}
+		{
+			title: "Augment: Smoking"
+			x: 1.5d
+			y: 3.0d
+			description: ["Questo augment raddoppia la velocità del forno senza influire sul consumo di combustibile, ma limita le ricette che può gestire a quelle dello Smoker."]
+			dependencies: ["37D2959298434CC9"]
+			optional: true
+			id: "022CC4243530B40D"
+			tasks: [{
+				id: "4C67B0D134B078CB"
+				type: "item"
+				item: "ironfurnaces:augment_smoking"
+			}]
+		}
+		{
+			title: "Augment: Speed"
+			x: 0.0d
+			y: 4.5d
+			description: ["Questo Augment raddoppia la velocità di cottura del forno (impiega la metà del tempo), ma raddoppia anche il consumo di combustibile per operazione."]
+			dependencies: ["37D2959298434CC9"]
+			optional: true
+			id: "297880E7894F583C"
+			tasks: [{
+				id: "7B1471848C91D5DB"
+				type: "item"
+				item: "ironfurnaces:augment_speed"
+			}]
+		}
+		{
+			title: "Augment: Fuel Efficiency"
+			x: -1.0d
+			y: 4.0d
+			description: [
+				"Se preferite bruciare combustibili fossili, o volete ridurre il consumo di energia, potete farlo in modo più efficiente usando uno di questi augment."
+				""
+				"Riduce il consumo di carburante del 50%, ma i tempi di cottura richiedono il 25% in più."
+			]
+			dependencies: ["37D2959298434CC9"]
+			optional: true
+			id: "16EB826CB6000B77"
+			tasks: [{
+				id: "614174FEE0F06914"
+				type: "item"
+				item: "ironfurnaces:augment_fuel"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -2.0d
+			shape: "square"
+			description: [
+				"Per il prossimo aggiornamento, avrai bisogno di blaze rod. Sfortunatamente, c'è solo un modo per ottenerle..."
+				""
+				"Fatevi una Blazing Doll e usatela su un Stone Barrel pieno di Lava. Questo dovrebbe, per quanto ne sappiamo, evocare un mob chiamato Blaze. Uccidete il Blaze (è autodifesa in realtà, vedrete!), e si spera che lasci cadere qualche Blaze Rods per voi."
+			]
+			hide_dependency_lines: true
+			dependencies: ["16046F3BCF2AE6D4"]
+			id: "19E59602755AA85F"
+			tasks: [{
+				id: "3E54806CC2FAEB93"
+				type: "item"
+				item: "minecraft:blaze_rod"
+				count: 2L
+			}]
+			rewards: [{
+				id: "646DD3CFC39AC6FC"
+				type: "item"
+				item: "minecraft:blaze_rod"
+				count: 2
+				random_bonus: 6
+			}]
+		}
+	]
+}
