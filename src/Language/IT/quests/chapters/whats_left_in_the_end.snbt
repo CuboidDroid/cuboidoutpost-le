@@ -90,7 +90,7 @@
 				{
 					id: "0DF4E77EB8DACE38"
 					type: "gamestage"
-					title: "Let's go!"
+					title: "Andiamo!"
 					icon: "storagedrawers:shroud_key"
 					auto: "disabled"
 					stage: "end_access"
@@ -216,7 +216,7 @@
 			tasks: [{
 				id: "7A4AC5D443E4EA6E"
 				type: "dimension"
-				title: "Visit The End Dimension"
+				title: "Visita la dimensione dell'End"
 				dimension: "minecraft:the_end"
 			}]
 			rewards: [{

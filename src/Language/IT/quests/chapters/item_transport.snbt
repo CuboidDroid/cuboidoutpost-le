@@ -19,7 +19,7 @@
 			tasks: [{
 				id: "60E5F847F56F3A79"
 				type: "item"
-				title: "Any Wooden Chest"
+				title: "Una qualsiasi Wooden Chest"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b

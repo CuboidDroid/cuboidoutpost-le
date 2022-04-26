@@ -27,7 +27,7 @@
 			tasks: [{
 				id: "2FA23F81FE8D046A"
 				type: "checkmark"
-				title: "Getting Immersed"
+				title: "Ottini L'Immersive"
 			}]
 		}
 		{
@@ -150,7 +150,7 @@
 			}]
 		}
 		{
-			title: "Una Crafting Table adatta ad un Engineer"
+			title: "Una Crafting Table adatta ad un ingegnere"
 			x: -8.5d
 			y: -2.5d
 			shape: "square"

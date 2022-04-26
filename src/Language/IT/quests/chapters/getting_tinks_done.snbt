@@ -547,7 +547,7 @@
 				""
 				"&aSblocca: Ottenere il digitale&f"
 				"&aSblocca: Previsione industriale&f"
-				"&aSblocca: Ther-malcontent&f"
+				"&aSblocca: Contenuto termico&f"
 				"&aSblocca: Reti per X-Men&f"
 			]
 			dependencies: ["41533B9883BC8046"]

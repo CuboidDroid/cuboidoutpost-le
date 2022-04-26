@@ -1095,7 +1095,7 @@
 			tasks: [{
 				id: "6E6DAD3B23E7535A"
 				type: "item"
-				title: "Any fish will do"
+				title: "Qualsiasi pesce andrà bene"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b

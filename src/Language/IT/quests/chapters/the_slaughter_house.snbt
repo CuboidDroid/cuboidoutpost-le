@@ -201,7 +201,7 @@
 				{
 					id: "76A1CE17547481D1"
 					type: "item"
-					title: "Any Slime Ball"
+					title: "Una qualsiasi Slime Ball"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b

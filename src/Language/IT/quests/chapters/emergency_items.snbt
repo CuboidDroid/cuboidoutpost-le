@@ -120,7 +120,7 @@
 			tasks: [{
 				id: "5CEB140C0276AEAC"
 				type: "checkmark"
-				title: "Let's do this!"
+				title: "Facciamolo!"
 			}]
 			rewards: [{
 				id: "2643F170CE20050B"
@@ -144,7 +144,7 @@
 			tasks: [{
 				id: "4C3BE3C13A9CC9B1"
 				type: "checkmark"
-				title: "Let's do this!"
+				title: "Facciamolo!"
 			}]
 			rewards: [{
 				id: "54CDC1A580F92D11"

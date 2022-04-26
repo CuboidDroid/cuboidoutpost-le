@@ -34,7 +34,7 @@
 			title: "Bronze"
 			x: -2.0d
 			y: -2.0d
-			description: ["Bronze is a blend of Copper and Tin at a ratio of 3 Copper to 1 Tin."]
+			description: ["Il Bronze è una miscela di Copper e Tin in un rapporto di 3 Copper e 1 Tin."]
 			dependencies: ["369719631E5F14B6"]
 			id: "140955639DEA4214"
 			tasks: [{
@@ -55,7 +55,7 @@
 			x: 0.0d
 			y: -3.0d
 			shape: "square"
-			description: ["Osmium can be made through alloying Fullerene (molten Carbon Nanotubes), Iron, and Thatldu in a 1:1:1 ratio."]
+			description: ["L'Osmium può essere fatto attraverso la lega di Fullerene (Carbon Nanotubes fusi), Iron e Thatldu in un rapporto 1:1:1."]
 			dependencies: ["369719631E5F14B6"]
 			id: "090F38009D34E249"
 			tasks: [{
@@ -75,7 +75,7 @@
 			title: "Brass"
 			x: -3.0d
 			y: 0.0d
-			description: ["Brass is an alloy of Zinc and Copper in a 1:1 ratio."]
+			description: ["Brass è una fusione di Zinc e Copper in un rapporto di 1:1."]
 			dependencies: ["369719631E5F14B6"]
 			id: "24F30CABB4C47AA4"
 			tasks: [{
@@ -95,7 +95,7 @@
 			title: "Electrum"
 			x: 2.5d
 			y: -1.0d
-			description: ["Electrum is an alloy of Silver and Gold in a 1:1 ratio."]
+			description: ["L'Electrum è una fusione di Silver e Gold in un rapporto di 1:1."]
 			dependencies: ["369719631E5F14B6"]
 			id: "51DA3ED80175B5E0"
 			tasks: [{
@@ -116,7 +116,7 @@
 			x: 2.5d
 			y: 2.5d
 			shape: "gear"
-			description: ["Invar is a blend of Iron and Nickel at a ratio of 2 Iron to 1 Nickel."]
+			description: ["L'Invar è una miscela di Iron e Nickel in un rapporto di 2 Iron e 1 Nickel."]
 			dependencies: ["369719631E5F14B6"]
 			size: 1.5d
 			id: "370DC91DCE34BD2B"
@@ -138,7 +138,7 @@
 			x: 3.75d
 			y: 1.5d
 			shape: "gear"
-			description: ["Constantan is a blend of Copper and Nickel in a 1:1 ratio"]
+			description: ["Il Constantan è una miscela di Copper e Nickel in un rapporto di 1:1"]
 			dependencies: ["369719631E5F14B6"]
 			size: 1.5d
 			id: "239ABB6920C2D4C2"
@@ -156,14 +156,14 @@
 			}]
 		}
 		{
-			title: "Inducted Alloys"
+			title: "Leghe induttive"
 			x: 6.0d
 			y: 4.0d
 			shape: "square"
 			description: [
-				"Some alloys cannot be made in a Smeltery and require specialized equipment like the Induction Smelter in order to make them."
+				"Alcune leghe non possono essere fatte in una Smeltery e richiedono attrezzature specializzate come la Induction Smelter per poterle fare."
 				""
-				"We have included more information about the bits and bobs required for an Induction Smelter in the section called \"Ther-malcontents\""
+				"Abbiamo incluso maggiori informazioni sui pezzi necessari per una fonderia a induzione nella sezione chiamata \"Contenuti termici\"."
 			]
 			dependencies: ["067D1B88BA7BF46C"]
 			id: "4212A4F682A37D7D"
@@ -195,7 +195,7 @@
 		{
 			x: 8.0d
 			y: 4.0d
-			description: ["Can only be made in an Induction Smelter."]
+			description: ["Può essere fatto solo in una Induction Smelter."]
 			dependencies: ["4212A4F682A37D7D"]
 			id: "571E7C3571C1AA0F"
 			tasks: [{
@@ -214,7 +214,7 @@
 		{
 			x: 7.5d
 			y: 2.5d
-			description: ["Can only be made in an Induction Smelter."]
+			description: ["Può essere fatto solo in una Induction Smelter."]
 			dependencies: ["4212A4F682A37D7D"]
 			id: "777ED16468E1F16B"
 			tasks: [{
@@ -235,9 +235,9 @@
 			y: 5.5d
 			shape: "gear"
 			description: [
-				"Can only be made in an Induction Smelter."
+				"Può essere fatto solo in una Induction Smelter."
 				""
-				"&aRequired for: What's left in the End?&f"
+				"&aRichiesto per: Cosa resta alla fine?&f"
 			]
 			dependencies: ["4212A4F682A37D7D"]
 			size: 1.5d
@@ -256,11 +256,11 @@
 			}]
 		}
 		{
-			title: "Simple Alloys"
+			title: "Leghe semplici"
 			x: -3.0d
 			y: 3.0d
 			shape: "square"
-			description: ["Some alloys can simply be made in a crafting table."]
+			description: ["Alcune leghe possono essere semplicemente fatte in un crafting table."]
 			dependencies: ["369719631E5F14B6"]
 			id: "4E7D71A91E344942"
 			tasks: [{
@@ -281,9 +281,9 @@
 			x: -0.5d
 			y: 3.0d
 			description: [
-				"Pig Iron is an alloy of Iron, Blood, and Clay. You will need 1 Iron Ingot, 250mb of Blood, and 1 ball of clay for two Pig Iron Ingots."
+				"Pig Iron è una fusione di Iron, Blood, e Clay. Avrete bisogno di 1 Iron Ingot, 250mb di Blood, e 1 ball of clay per due Pig Iron Ingots."
 				""
-				"Hint: Putting Rotten Flesh into the smeltery will yield 50Mb of blood."
+				"Suggerimento: mettendo Rotten Flesh nella smeltery si ottengono 50Mb di Blood."
 			]
 			dependencies: ["369719631E5F14B6"]
 			id: "57854FD6E093FA2D"
@@ -305,7 +305,7 @@
 			x: -5.0d
 			y: 3.0d
 			shape: "square"
-			description: ["A Black Iron ingot can be made by crafting together an Iron Ingot and Black Dye."]
+			description: ["Il Black Iron ingot può essere fatto mettendo insieme un Iron Ingot e Black Dye."]
 			dependencies: ["4E7D71A91E344942"]
 			id: "4110F460124B1386"
 			tasks: [{
@@ -319,7 +319,7 @@
 			title: "Redstone Ingot"
 			x: -4.5d
 			y: 4.5d
-			description: ["Redstone Ingot can be made by crafting together an Iron Ingot and some Redstone Dust."]
+			description: ["Redstone Ingot puo essere fatto mettendo insieme Iron Ingot e un pò Redstone Dust."]
 			dependencies: ["4E7D71A91E344942"]
 			id: "26369EFF641A1340"
 			tasks: [{
@@ -333,7 +333,7 @@
 			title: "Ender Ingot"
 			x: -3.0d
 			y: 5.0d
-			description: ["An Ender Ingot can be crafted by combining an Iron Ingot and an Ender Pearl."]
+			description: ["Un Ender Ingot puo essere fatto mettendo insieme un Iron Ingot e una Ender Pearl."]
 			dependencies: ["4E7D71A91E344942"]
 			id: "2E1B604422C7B074"
 			tasks: [{
@@ -347,9 +347,9 @@
 			x: 0.5d
 			y: 3.0d
 			description: [
-				"Slimesteel can be alloyed in a Smeltery by combining an Iron Ingot, a Skyslime Ball, and an ingot of Seared Stone."
+				"Lo Slimesteel può essere fuso in una Smeltery combinando un Iron Ingot, una Skyslime Ball, e un ingot of Seared Stone."
 				""
-				"Hint: 1 Grout in a smeltery will produce 2 Seared Stone, and a Seared Brick is the equivalent of 1 Seared Stone."
+				"Suggerimento: 1 Grout in una smeltery produrrà 2 Seared Stone, e un Seared Brick è l'equivalente di 1 Seared Stone."
 			]
 			dependencies: ["369719631E5F14B6"]
 			id: "3B410436A764384A"
@@ -370,7 +370,7 @@
 			title: "Tinker's Bronze"
 			x: 2.0d
 			y: -2.0d
-			description: ["3 ingots of Copper and a block of Glass in a Smeltery will yield 3 ingots of Tinker's Bronze."]
+			description: ["3 ingots of Copper e un block of Glass in una Smeltery vi darà 3 ingots of Tinker's Bronze."]
 			dependencies: ["369719631E5F14B6"]
 			id: "68B9E7722BFF92E9"
 			tasks: [{
@@ -390,7 +390,7 @@
 			title: "Rose Gold"
 			x: 3.0d
 			y: 0.0d
-			description: ["Rose Gold can be made in a Smeltery with Copper and Gold in a 3:1 ratio."]
+			description: ["Rose Gold può essere creato i una Smeltery con Copper e Gold in un rapporto di 3:1."]
 			dependencies: ["369719631E5F14B6"]
 			id: "47C575BDE417827B"
 			tasks: [{
