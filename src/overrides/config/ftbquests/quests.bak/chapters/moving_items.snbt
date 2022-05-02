@@ -1,0 +1,403 @@
+{
+	id: "39AE34428D014BEC"
+	group: "033EC740B2EF1FC1"
+	order_index: 3
+	filename: "moving_items"
+	title: "Moving Items"
+	icon: "enderstorage:ender_chest"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: 0.0d
+			description: [
+				"A Basic Logistical Transporter can move up to 2 items a distance of 1 block every second."
+				""
+				"Use a configurator on the connection to an inventory or machine to change the mode from Normal to Pull (i.e. extract items and send them down the pipe), to Push (i.e. take items from the pipe and put into the attached inventory) to None (disconnect)."
+				""
+				"Note that in Normal mode, the pipe will still work if it has items being actively pumped into it by some other machine (e.g. machine with auto-output), without needing to explicitly set the connection to Pull."
+				""
+				"Similarly, if items are travelling in a pipe, if an inventory is found that can accept an item, it will be deposited without needing to explicitly set the connection to Push."
+				""
+				"Logistical Transporters will always try and deposit items into the first connected inventory that will accept the item in the pipe that it can route to. To change this behaviour, you will need to use a Logistical Sorter."
+			]
+			id: "771FE160AB82E93D"
+			tasks: [{
+				id: "0BD379BA344489C2"
+				type: "item"
+				item: "mekanism:basic_logistical_transporter"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.5d
+			description: ["An Advanced Logistical Transporter can move up to 32 items a distance of 2 blocks every second."]
+			dependencies: ["771FE160AB82E93D"]
+			id: "77164C9BAEC48316"
+			tasks: [{
+				id: "238C05BA44C21445"
+				type: "item"
+				item: "mekanism:advanced_logistical_transporter"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			description: ["An Elite Logistical Transporter can move up to 64 items a distance of 4 blocks every second."]
+			dependencies: ["77164C9BAEC48316"]
+			id: "6ABF0D13FB892268"
+			tasks: [{
+				id: "699E6DFA9FF05587"
+				type: "item"
+				item: "mekanism:elite_logistical_transporter"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.5d
+			description: ["An Ultimate Logistical Transporter can move up to 128 items a distance of 10 blocks every second."]
+			dependencies: ["6ABF0D13FB892268"]
+			id: "11E0226EAE21EE6D"
+			tasks: [{
+				id: "534FD3B0C49A281D"
+				type: "item"
+				item: "mekanism:ultimate_logistical_transporter"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			description: [
+				"A Logistical Sorter can be used to determine where in a network of Logistical Transporters that items should be sent."
+				""
+				"This is done by using a Configurator on a Logistical Transporter pipe connected to the target inventory to change its colour, and then setting up filters in the Logistical Sorter to specify what items should be routed to a target colour."
+				""
+				"The Logistical Sorter is a powerful piece of kit, but can take a but of getting used to!"
+			]
+			id: "5B40CF0C26FA4D48"
+			tasks: [{
+				id: "4FDB062B18603C9B"
+				type: "item"
+				item: "mekanism:logistical_sorter"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			description: [
+				"These conveyor belts do not need power, and simply move whatever is dropped or placed onto them until an obstruction or the end of the conveyor belt is reached."
+				""
+				"These Conveyor Belts can be rotated using an Engineer's hammer, and can also travel at 45 degree angles up or down."
+				""
+				"A covered version of these belts is also available."
+			]
+			id: "4023C40F3002AC45"
+			tasks: [{
+				id: "3CF13788C2B39FE3"
+				type: "item"
+				item: "immersiveengineering:conveyor_basic"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.5d
+			description: ["Vertical conveyor belts work in the same way as the standard ones, except that they allow for items to be moved vertically."]
+			id: "515712C92361FDD4"
+			tasks: [{
+				id: "6E2230C6B4BA4AFB"
+				type: "item"
+				item: "immersiveengineering:conveyor_vertical"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.0d
+			description: ["A dropping conveyor belt, when placed above an inventory, will drop the item travelling on the belt into the inventory below."]
+			id: "2CEE014FDACFB2AA"
+			tasks: [{
+				id: "2C6D31312B3B0C81"
+				type: "item"
+				item: "immersiveengineering:conveyor_dropper"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 4.5d
+			description: ["The extracting conveyor belt, when attached to an inventory (e.g. a chest) will extract items from the inventory and place them onto the belt for transport."]
+			id: "78E1C171E5D7755D"
+			tasks: [{
+				id: "717E71775F7F1BFD"
+				type: "item"
+				item: "immersiveengineering:conveyor_extract"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 6.0d
+			description: ["A splitting conveyor belt will attempt to split the incoming items into two separate tracks, exiting at a 90 degree angle to the original direction of travel."]
+			id: "511603C278061999"
+			tasks: [{
+				id: "03176BD4E21F9638"
+				type: "item"
+				item: "immersiveengineering:conveyor_splitter"
+			}]
+		}
+		{
+			title: "Conveyed by Rotational Force"
+			x: -6.0d
+			y: 0.0d
+			description: [
+				"Once you have a source of Rotational Force, you can use SHAFT!s and Mechanical Belts to move items from place to place."
+				""
+				"On their own, these mechanical belts will just move anything dropped onto them until they get to the end of the belt, at which point they will fall off again."
+				""
+				"The speed that the SHAFT!s rotate will determine the speed that the belts move. Note that belts can also be used simply to transfer rotational force between shafts."
+				""
+				"Belts can be placed horizontally, as well as at 45 degree angles, and can still move items. It is also possible to place belts vertically, but items won't \"stick\" to them in vertical orientation like this."
+				""
+				"Tunnels, Funnels and Chutes (as well as hoppers) can be used to automatically put things onto belts and take them off again to make automatically moving items from A to B more practical."
+			]
+			id: "04FD705635701534"
+			tasks: [
+				{
+					id: "5CC333372A82FBF5"
+					type: "item"
+					item: "create:belt_connector"
+				}
+				{
+					id: "7A249A0113A94819"
+					type: "item"
+					item: "create:shaft"
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: 1.5d
+			description: [
+				"Tunnels can cover mechanical belts to avoid items (and you!) being accidentally dropped onto them."
+				""
+				"In addition, if tunnels are placed next to each other on parallel belts, then items entering the tunnels will be split between the belts exiting them, allowing for distribution too."
+				""
+				"Andesite Tunnels are very basic and will just split the items in a round-robin fashion. If you need to specify which items should be placed onto a specific belt, then you will need Brass Tunnels instead, which can have a filter applied."
+			]
+			id: "76B554CC34945020"
+			tasks: [{
+				id: "7DB9FB4895D7C06C"
+				type: "item"
+				item: "create:andesite_tunnel"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 1.5d
+			description: [
+				"Brass Tunnels behave the same way as Andesite Tunnels, except that they can have filters applied to them. This means that when multiple joined tunnels are set up on parallel belts, it is possible to specify what item(s) should be allowed to exit a specific tunnel. This effectively allows for sorting and routing to occur."
+				""
+				"Above the tunnel exit you will find a small area in which you can insert an item or a filter to specify what should be allowed to exit that specific tunnel onto the belt exiting from it."
+			]
+			id: "03C17F549EA160DE"
+			tasks: [{
+				id: "668C73363498DE8E"
+				type: "item"
+				item: "create:brass_tunnel"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 3.0d
+			description: [
+				"Funnels can pick up items off a belt and place them into the inventory to which they are connected. It's common to attach a funnel to a chest at the end of a Mechanical Belt for example. They can also be configured to work in the reverse direction and extract items from an inventory and place them onto a Mechanical Belt or other block that can accept items (such as a Depot)."
+				""
+				"The direction of operation is shown by a small arrow on the Funnel's frame, and can be changed by using a Wrench on the frame."
+				""
+				"Andesite Funnels work a bit like hoppers in that they will accept or extract any item. If you need to filter what items can be picked up or extracted by a funnel, you will need to use the Brass version instead."
+			]
+			id: "020FC982F30FA0C0"
+			tasks: [{
+				id: "321A84D8C066D893"
+				type: "item"
+				item: "create:andesite_funnel"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 3.0d
+			description: [
+				"Brass Funnels behave the same way as their Andesite counterparts, but have the ability to have a filter applied. This can be useful for sorting and routing."
+				""
+				"An example might be that you have a mechanical belt that might contain sand or gravel, and you want to store them in different chests. You can place a brass funnel on each chest, configure them to pull items off the belt, and place sand in one Funnel's filter and Gravel in the other one. They will then only pick up the items on the belt when they match the filter."
+				""
+				"Similarly, you might have a chest with primary and secondary outputs from a machine, and want to move them on belts to different locations. You can attach two Brass Funnels to the chest (on different sides), apply filters to each of them, and ensure that they are set to extract items from the chest and deposit them onto belts (use the Wrench on the frame of the funnel to change the direction it moves items)."
+			]
+			id: "7166B30D53F350AC"
+			tasks: [{
+				id: "0978D35D2967EF1F"
+				type: "item"
+				item: "create:brass_funnel"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 4.5d
+			description: [
+				"Chutes allow items to be moved vertically. If items are dropped into the top of a chute, they will fall down through the chute (or chain of chutes) and be dropped onto the belt (or ground or other block) below."
+				""
+				"If an encased fan is used beneath a chute to blow upward, the direction can be reversed."
+				""
+				"Andesite Chutes will allow any item to travel through them. If you need to be specific about what items can use a chute, you will need to use a Smart Chute instead."
+			]
+			id: "281118B8A2CCB6CD"
+			tasks: [{
+				id: "05CC428EEBA215C6"
+				type: "item"
+				item: "create:chute"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 4.5d
+			description: ["A Smart Chute works in a similar way to the Chute, but can have a filter applied to it to restrict what item(s) will be allowed to travel through it. You can either use a single item in the filter slot, or use a Filter to specify more than one type of item that can use the Smart Chute."]
+			id: "5537B428F502B4BA"
+			tasks: [{
+				id: "18BBA00035668CB3"
+				type: "item"
+				item: "create:smart_chute"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			description: [
+				"All Ender Chests sharing the same channel (set by applying dyes to the buttons on top, or in a crafting grid) have access to the same chest inventory (27 stacks - 3 rows of 9 stacks - same size as a standard Chest)"
+				""
+				"Essentially what this means is that if you have two Ender Chests with the same channel and fill one with Cobblestone, you can extract that Cobblestone from the other Ender Chest - this works cross-dimensionally as well as over any distance!"
+				""
+				"p.s. If you're paranoid about other people in other dimensions nicking your stuff, you can make your Ender Chests private by applying a Diamond to the latch on the Ender Chest. Note that you should be careful here - if there is already something in the chest, that's on the public channel - so applying a diamond will change to a private channel, but not keep the contents!"
+			]
+			id: "5E674CC0FE9ECD44"
+			tasks: [{
+				id: "203EA348A09ECC3D"
+				type: "item"
+				item: "enderstorage:ender_chest"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			description: [
+				"An Ender Pouch allows you to access an Ender Chest from anywhere, so long as you have tuned it to the Ender Chest you want access to, and have the pouch with you."
+				""
+				"To tune the Ender Pouch to the same channel as an Ender Chest, crouch and use it on an already-configured Ender Chest. Once tuned, it works exactly like a portable version of that Ender Chest on whatever channel that chest was configured to use."
+			]
+			id: "5F95CF05B912275D"
+			tasks: [{
+				id: "7B383462518155B9"
+				type: "item"
+				item: "enderstorage:ender_pouch"
+			}]
+		}
+		{
+			title: "XNet for Items"
+			x: 3.5d
+			y: 0.0d
+			description: [
+				"XNet can be used to rapidly transfer items from connected inventories (chests, machines, etc). It's highly configurable, supports advanced features like filters, number of items to transfer per operation, multiple channels for transferring items to different destinations using a single network cable, and more."
+				""
+				"If you would like some examples of how to use it, take a look at the \"Networks for XMen\" topic in this appendix."
+				""
+				"&cUnfortunately you can't look up the recipe from here directly due to corruption that occurred during transmission of this survival guide. Please use the search feature in JEI instead.&f"
+			]
+			id: "2C69BA63A47A0E40"
+			tasks: [
+				{
+					id: "5ED38A1C95DD9D5C"
+					type: "item"
+					title: "Network Cable"
+					icon: "xnet:netcable_blue"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "xnet:cables"
+						}
+					}
+				}
+				{
+					id: "363C1254FAE20EE1"
+					type: "item"
+					title: "Connector"
+					icon: "xnet:connector_blue"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "xnet:connectors"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Better than a man in a van"
+			x: 0.0d
+			y: -2.25d
+			shape: "gear"
+			description: [
+				"Sooner or later you are going to have to think about automation and moving items around. Fortunately, there are quite a few options available, although some of them you will need to earn access to."
+				""
+				"In this appendix entry, many of the simpler options are presented to help you get moving."
+			]
+			size: 1.5d
+			id: "44D7204AAA23552C"
+			tasks: [{
+				id: "5BDF007D5D3390F7"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 6.0d
+			description: ["A filter can be used to specify more than one kind of item to be filtered when using a Brass Tunnel, Brass Funnel or Smart Chute (or other similar machines using this sort of filter)."]
+			id: "03937D67746BE765"
+			tasks: [{
+				id: "300F36E6A95B2B59"
+				type: "item"
+				item: {
+					id: "create:filter"
+					Count: 1b
+					tag: {
+						Items: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.0d
+			description: [
+				"A pair of Item Transporters can be used to move items between blocks over a 1 block distance. Place an Item Transporter on each block, and then press in the button on the side you want to receive the items."
+				""
+				"Can be filtered by whitelist / blacklist."
+			]
+			id: "4CD2F74DF812083B"
+			tasks: [{
+				id: "569631D59D8BFA8B"
+				type: "item"
+				item: "industrialforegoing:item_transporter_type"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			description: ["Transfers items. Use a Pipe Wrench to configure. Can be upgraded using Pipe Upgrades."]
+			id: "47C0486BA8120EB0"
+			tasks: [{
+				id: "7FD9DB0052845816"
+				type: "item"
+				item: "pipez:item_pipe"
+			}]
+		}
+	]
+}

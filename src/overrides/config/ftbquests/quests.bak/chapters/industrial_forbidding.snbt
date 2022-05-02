@@ -1,0 +1,894 @@
+{
+	id: "04D54A9ECAA72ADA"
+	group: "4785B5C7E26FA669"
+	order_index: 2
+	filename: "industrial_forbidding"
+	title: "Industrial Forbidding"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Industrial Plastics"
+			disable_toast: true
+			x: 0.0d
+			y: -2.5d
+			shape: "gear"
+			description: [
+				"While many view plastic as the scourge of the modern age, our Science Division has pointed out that it's also a really useful material."
+				""
+				"To prove it to you, they've been putting their little heads together to come up with a bunch of machines that require plastic in some shape or form. I'll leave it to you to decide whether you think any of these will be useful or not!"
+			]
+			size: 1.5d
+			id: "76732FBE9A8C66D9"
+			tasks: [{
+				id: "354A9521767970E2"
+				type: "item"
+				item: "industrialforegoing:plastic"
+			}]
+		}
+		{
+			title: "Breaking Bad"
+			x: -1.5d
+			y: -1.0d
+			description: ["The Block Breaker is a simple machine that simply breaks any block immediately in front of it and puts the block into its inventory, ready to be piped out or picked up later."]
+			dependencies: ["76732FBE9A8C66D9"]
+			id: "77411B682D02F4E2"
+			tasks: [{
+				id: "73F383D5EF544132"
+				type: "item"
+				item: "industrialforegoing:block_breaker"
+			}]
+		}
+		{
+			title: "Put it down!"
+			disable_toast: true
+			x: -2.0d
+			y: -2.5d
+			description: ["The Block Placer will take blocks from its inventory and place them immediately in front of itself."]
+			dependencies: ["76732FBE9A8C66D9"]
+			id: "533B5517A1ECB654"
+			tasks: [{
+				id: "33DAC19ADC3F8E3E"
+				type: "item"
+				item: "industrialforegoing:block_placer"
+			}]
+		}
+		{
+			title: "Slurp!"
+			x: -1.5d
+			y: -4.0d
+			description: ["The Fluid Collector will drain a fluid source block in front of it and put it into its internal tank, ready to be piped out."]
+			dependencies: ["76732FBE9A8C66D9"]
+			id: "067FBABC0776FE74"
+			tasks: [{
+				id: "5EE324FC5BE88F1C"
+				type: "item"
+				item: "industrialforegoing:fluid_collector"
+			}]
+		}
+		{
+			title: "Burp!"
+			x: 0.0d
+			y: -4.5d
+			description: ["The Fluid Placer will take a fluid from its internal tank and place it into the world in front of it."]
+			dependencies: ["76732FBE9A8C66D9"]
+			id: "029622AFBFB99C6A"
+			tasks: [{
+				id: "1F8DF6C4155E14A6"
+				type: "item"
+				item: "industrialforegoing:fluid_placer"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			description: [
+				"The Plant Sower will plant seeds in dirt above it, and will till the soil first if necessary."
+				""
+				"The range of the sowing can be increased easily by using Range Addons - these will increase the range in each direction by the addon amount. For example a +1 range addon will add a range of 1 north, 1 south, 1 east and 1 west, resulting in a 3x3 area that is covered."
+				""
+				"For more information about how to control what gets planted where, and what all of the options for the machine are, see the manual."
+				""
+				"This machine only plants seeds or saplings. To harvest them, you will need some other solution such as the Plant Gatherer."
+			]
+			dependencies: ["76732FBE9A8C66D9"]
+			id: "6008564FC758C4C5"
+			tasks: [{
+				id: "0F5294A4A2E2B6D3"
+				type: "item"
+				item: "industrialforegoing:plant_sower"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			description: [
+				"The Plant Gatherer will harvest crops and trees in its range."
+				""
+				"By default, the range is just the single block in front of it. This can easily be adjusted through the use of Range Addons. A +1 Range Addon will move the centre of the area 1 block further away from the machine, and add 1 block range in each cardinal direction, resulting in a 3x3 area in which plants can be autmatically gathered."
+				""
+				"A by-product of gathering plants is Sludge, which can be processed using a Sludge Refiner."
+			]
+			dependencies: ["6008564FC758C4C5"]
+			id: "018967A12D6042A1"
+			tasks: [{
+				id: "6AA5E198EA5A48A6"
+				type: "item"
+				item: "industrialforegoing:plant_gatherer"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			description: [
+				"Sludge can be refined in a Sludge Refiner. This essentially takes the sludge produced as a by-product of a Plant Gatherer and turns it into something useful."
+				""
+				"What you get from each operation is random, but includes things like Sand, Dirt, Clay, Gravel and Soul Sand."
+			]
+			dependencies: ["018967A12D6042A1"]
+			id: "293343406BD1BD8A"
+			tasks: [{
+				id: "0155F8C3235281DD"
+				type: "item"
+				item: "industrialforegoing:sludge_refiner"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.5d
+			y: -4.0d
+			description: ["If supplied with Red, Green and Blue dyes (think Beetroot, Cactus and Lapis), then for a cost of just 30RF, it can make any other colour Dye."]
+			dependencies: ["76732FBE9A8C66D9"]
+			id: "6A5678138716AF96"
+			tasks: [{
+				id: "207E6091E2182007"
+				type: "item"
+				item: "industrialforegoing:dye_mixer"
+			}]
+		}
+		{
+			title: "Industrial Ranching"
+			disable_toast: true
+			x: 7.0d
+			y: -2.5d
+			shape: "gear"
+			size: 1.5d
+			id: "5569711F6E3BEA01"
+			tasks: [{
+				id: "5C9F04CD8D7FA453"
+				type: "item"
+				item: "industrialforegoing:plastic"
+			}]
+		}
+		{
+			title: "For lazy cowboys..."
+			x: 9.0d
+			y: -2.5d
+			description: [
+				"If a steady supply of milk or wool is what you need, look no further than the Animal Rancher."
+				""
+				"This machine can automatically shear sheep and milk cows in its range."
+				""
+				"The range can be increased using range addons - for example a +1 Range Addon will move the centre of the area of effect 1 block further away from the Animal Rancher, and increase the area by 1 block in each direction, creating a 3x3 area of effect in front of the machine."
+				""
+				"Any cows or sheep walking into the area of effect will be milked or sheared as appropriate. Milk ends up being stored in the internal tank (and can be piped out) and wool is stored in the internal inventory (and can also be piped out)."
+			]
+			dependencies: ["5569711F6E3BEA01"]
+			id: "7C271DDB34C7CF5D"
+			tasks: [{
+				id: "698FB17A791A7A67"
+				type: "item"
+				item: "industrialforegoing:animal_rancher"
+			}]
+		}
+		{
+			title: "For lazy breeders..."
+			x: 7.0d
+			y: -4.5d
+			description: [
+				"The Animal Feeder can take animal feed items from its internal inventory and feed any animals in its area of effect automatically as soon as they are hungry."
+				""
+				"If feeding the animal meets its requirements to breed (e.g. wheat being fed to two cows), then the animals will breed. So long as you are able to keep the feed items stocked up, the animals will continue to be bred."
+				""
+				"It's probably not a good idea to keep this running indefinitely though! At the very least you will want to ensure you're culling the herd a bit too! For that, you should look at using something like the Animal Baby Separator or Mob Filter (child) to automatically move baby animals into a separate area for processing."
+			]
+			dependencies: ["5569711F6E3BEA01"]
+			id: "0204E4D9E6300101"
+			tasks: [{
+				id: "0781208B96AA98F0"
+				type: "item"
+				item: "industrialforegoing:animal_feeder"
+			}]
+		}
+		{
+			title: "Give the parents a break!"
+			x: 5.0d
+			y: -2.5d
+			description: [
+				"The Animal Baby Separator will teleport baby animals from in front of it to behind it."
+				""
+				"This can be useful in situations where you want to keep some adult animals as breeding pairs, but move babies into a separate area for, um... processing?... once they have fattened up - I mean grown up!"
+			]
+			dependencies: ["5569711F6E3BEA01"]
+			id: "41F7D8A3A22F6F91"
+			tasks: [{
+				id: "3F188D251D3B45D6"
+				type: "item"
+				item: "industrialforegoing:animal_baby_separator"
+			}]
+		}
+		{
+			title: "Dealing with the mess!"
+			x: 7.0d
+			y: -0.5d
+			subtitle: "Nobody likes a stinky farm!"
+			description: [
+				"And especially with automated breeding (if you go with an Animal Feeder), the problem of... well... poop... will only get worse! Luckily there's a solution that will allow for the Sewage waste product to be turned into something really useful."
+				""
+				"In addition, breeding animal will cause experience to drop, which over time can build up to be a real mess (induces lag!), so this Sewer will also collect up loose experience orbs and store them as Essence."
+				""
+				"Both the Sewage and the Essence can be piped out and dealt with in a more controlled (and somewhat more fragrant) manner."
+			]
+			dependencies: ["5569711F6E3BEA01"]
+			id: "27651D4BF3C2A478"
+			tasks: [{
+				id: "0C72BBE3D942B105"
+				type: "item"
+				item: "industrialforegoing:sewer"
+			}]
+		}
+		{
+			title: "Useful effluent"
+			x: 7.0d
+			y: 1.0d
+			description: [
+				"Sewage collected from the Sewer can be piped into the Sewage Composter and turned into Fertilizer."
+				""
+				"This Fertilizer can be used like bonemeal on crops, and can also be used in the creation of Hydroponic Beds."
+			]
+			dependencies: ["27651D4BF3C2A478"]
+			id: "51A474A57192808E"
+			tasks: [{
+				id: "4CE20F86A6827244"
+				type: "item"
+				item: "industrialforegoing:sewage_composter"
+			}]
+		}
+		{
+			title: "Manure!"
+			x: 7.0d
+			y: 2.5d
+			subtitle: "(a.k.a. Fertilizer)"
+			description: [
+				"This job's a bit poops, but somebody has to do it."
+				""
+				"And since there is nobody else, I guess it's up to you!"
+			]
+			dependencies: ["51A474A57192808E"]
+			id: "50F6022EB42C71BB"
+			tasks: [{
+				id: "49F82192D991ED78"
+				type: "item"
+				item: "industrialforegoing:fertilizer"
+			}]
+			rewards: [{
+				id: "261C6792FB3F9080"
+				type: "item"
+				item: "industrialforegoing:fertilizer"
+				count: 8
+				random_bonus: 8
+			}]
+		}
+		{
+			title: "Industrial Simplicity"
+			disable_toast: true
+			x: 14.0d
+			y: -2.5d
+			shape: "gear"
+			size: 1.5d
+			id: "3D8ADEC8E08C0C88"
+			tasks: [{
+				id: "262D4DB16C3B6DF9"
+				type: "item"
+				item: "industrialforegoing:machine_frame_simple"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: -2.5d
+			description: [
+				"The Dissolution Chamber is a specialised piece of equipment that can combine solid ingredients with specific fluids to make advanced equipment."
+				""
+				"In addition to higher tier Machine Frames, the Dissolution Chamber is used to create many of the Addons (upgrades) for these machines, including Speed, Efficiency and Range Addons."
+				""
+				"You might find it simpler to make multiple Dissolution Chambers - one per fluid type - than to try working with a single one."
+			]
+			dependencies: ["76732FBE9A8C66D9"]
+			id: "5D956852A7CA4CF2"
+			tasks: [{
+				id: "337195C66293BF35"
+				type: "item"
+				item: "industrialforegoing:dissolution_chamber"
+			}]
+		}
+		{
+			title: "Efficient crop growth"
+			x: 14.0d
+			y: -0.5d
+			description: [
+				"By default, if provided with power and water (or lava for nether crops), the Hydroponic Bed grows crops mildly faster than normal."
+				""
+				"Later on, when you have access to the stuff, adding a small amount of Ether Gas will drastically increase the rate of production, as well as allow for automated harvesting."
+				""
+				"In the meantime, coupling an array of Hydroponic Beds with a Plant Sower and Plant Gatherer should do the trick (i.e. replace the dirt in your Sower/Gatherer setup with Hydroponic beds instead)."
+				""
+				"Note that Hydroponic Beds placed adjacent to each other will automatically share power and water (or lava) - you don't need to supply these to every one individually."
+			]
+			dependencies: [
+				"3D8ADEC8E08C0C88"
+				"50F6022EB42C71BB"
+			]
+			id: "08B0E7CCF4261CF4"
+			tasks: [{
+				id: "2340305BE6029D97"
+				type: "item"
+				item: "industrialforegoing:hydroponic_bed"
+			}]
+		}
+		{
+			title: "Let it grow! Let it grow!"
+			x: 16.0d
+			y: -2.5d
+			subtitle: "Can't hold me back anymore!"
+			description: [
+				"The Plant Fertilizer will apply Bone Meal or Fertilizer to crops in its area of effect."
+				""
+				"It does this by continuously applying it to a crop in a block until it accepts no more before moving on to the next one. This makes it unsuitable for some crops, but works wonders on most crops (assuming you have a steady supply of input material)."
+				""
+				"The area of effect is, by default a 1x1 block immediately in front of the machine. This can be increased through the use of Range Addons. For example, a +2 Range Addon will move the center of the area 2 blocks further away from the machine, and increase the range by 2 blocks in each cardinal direction, resulting in a 5x5 working area."
+			]
+			dependencies: ["3D8ADEC8E08C0C88"]
+			id: "4680373A78B8F0F1"
+			tasks: [{
+				id: "4DEF1FEC70804C0D"
+				type: "item"
+				item: "industrialforegoing:plant_fertilizer"
+			}]
+		}
+		{
+			title: "For lazy fishermen..."
+			x: 12.0d
+			y: -2.5d
+			description: [
+				"The Marine Fisher uses a fairly hefty amount of power to catch fish, but saves you from endless boredom staring at a pool of water!"
+				""
+				"When placed above a (at least) 3x3 pool of water, it will catch fish (and perhaps something else?) automatically at a cost of 5000 RF per operation."
+			]
+			dependencies: ["3D8ADEC8E08C0C88"]
+			id: "06856E9683A0E4DD"
+			tasks: [{
+				id: "1306E26A35735D05"
+				type: "item"
+				item: "industrialforegoing:marine_fisher"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 14.0d
+			y: -4.5d
+			description: [
+				"Laser Drills, on their own, don't do much."
+				""
+				"You will need to aim them at a Laser Base of sorts - either an Ore Laser Base (if you want ores as an output) or a Fluid Laser Base (if you are targetting fluids)."
+				""
+				"You can use multiple Ore Lasers per base - so long as their operating areas overlap with the Laser Base, they should work."
+				""
+				"The Laser Drills need power, and can accept Speed and Efficiency upgrades."
+			]
+			dependencies: ["3D8ADEC8E08C0C88"]
+			dependency_requirement: "one_completed"
+			id: "1AD240B7CC719585"
+			tasks: [{
+				id: "550F655F0D522776"
+				type: "item"
+				item: "industrialforegoing:laser_drill"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -4.0d
+			description: [
+				"This machine will detect how many mobs are in front of it (within its range) and output a redstone signal out the back equal to that number."
+				""
+				"This can be used to, for example, turn machines like the Mob Crusher on when there are mobs to kill, or turn them off when there's nothing to do, saving energy in the process."
+			]
+			dependencies: ["3D8ADEC8E08C0C88"]
+			id: "1B862F3D13008CAC"
+			tasks: [{
+				id: "2C712A68531FFE92"
+				type: "item"
+				item: "industrialforegoing:mob_detector"
+			}]
+		}
+		{
+			x: 15.5d
+			y: -4.0d
+			description: [
+				"You probably shouldn't bother making this machine at the moment - it's part of a multi-stage process for ore quintupling, but since you have access to Singularity Resource Generators, what's the point really?"
+				""
+				"If you're curious, this machine will seal its contents when reaching the configured level and ferment the Raw Ore Meat (made in a Washing Factory) down to fermented ore meat, ready for the next stage in the process done in a Fluid Sieving Machine."
+			]
+			dependencies: ["3D8ADEC8E08C0C88"]
+			id: "0CBF45A8A7A7C44B"
+			tasks: [{
+				id: "641F6E26078349CB"
+				type: "item"
+				item: "industrialforegoing:fermentation_station"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 7.5d
+			shape: "gear"
+			description: ["Once you have a way of getting Pink Slime, you will be able to upgrade a Simple Machine Frame to an Advanced Machine Frame in a Dissolution Chamber."]
+			hide_dependency_lines: true
+			dependencies: ["3D8ADEC8E08C0C88"]
+			size: 1.5d
+			id: "2996F0F6C75C18CE"
+			tasks: [{
+				id: "25332D071220CA22"
+				type: "item"
+				item: "industrialforegoing:machine_frame_advanced"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 6.0d
+			description: ["The Fluid Sieving Machine is the final stage in the 5x Ore Processing multi-stage process. It sieves the Fermented Ore Meat, yielding the resulting resource."]
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "014B7AC405EA2A18"
+			tasks: [{
+				id: "6B0119B2FFC628B2"
+				type: "item"
+				item: "industrialforegoing:fluid_sieving_machine"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 6.0d
+			description: ["This machine will charge items that contain power. If the item is an Infinity Item, it will charge it very quickly."]
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "43C07C9C8F81B664"
+			tasks: [{
+				id: "1E0494FFD9F5477C"
+				type: "item"
+				item: "industrialforegoing:infinity_charger"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 7.5d
+			description: [
+				"Potions - I mean \"modern medicines\" - can be a pain to brew in a Brewing Stand."
+				""
+				"If you really want to brew potions in large quantities, then this machine should help!"
+			]
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "6E8F6A093FCECB82"
+			tasks: [{
+				id: "23E845BDB7C0145D"
+				type: "item"
+				item: "industrialforegoing:potion_brewer"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.5d
+			y: 9.0d
+			description: [
+				"The Fluid Laser Base, on its own, does nothing."
+				""
+				"With correctly place Laser Drills, however, the Fluid Laser Base is where you control the whole setup."
+				""
+				"The best way to see what's possible to mine with this is to look at the uses of the Fluid Laser Base in JEI."
+			]
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "4DFA2CEA803CD973"
+			tasks: [{
+				id: "38855F4C0A352530"
+				type: "item"
+				item: "industrialforegoing:fluid_laser_base"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 9.5d
+			description: [
+				"The Stasis Chamber can freeze mobs in place."
+				""
+				"This is done in a 3x3x3 area immediately above it."
+				""
+				"Be careful though! If the power runs dry, the stasis field will collapse, and the mob will be free again!"
+			]
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "6C39F9EE5CD29A70"
+			tasks: [{
+				id: "16B46A186FD3D742"
+				type: "item"
+				item: "industrialforegoing:stasis_chamber"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 9.0d
+			description: [
+				"This single machine can generate Obsidian, Granite, Diorite, Andesite, Cobblestone and Netherrack."
+				""
+				"Apart from Cobblestone, generating requires some input materials that are consumed. For Cobblestone, the internal tanks must have water and lava in them, but they will not be consumed."
+				""
+				"In addition to generating the different raw materials, this machine can also perform different processing steps too, giving a total to 36 additional outputs! Check JEI or the supplementary documentation \"Industrial Foregoing's Manual\" for more information."
+			]
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "50A22A3ED8A775A3"
+			tasks: [{
+				id: "02D876C87AAF92A7"
+				type: "item"
+				item: "industrialforegoing:material_stonework_factory"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 7.5d
+			description: [
+				"The Ore Laser Base, on its own, does nothing."
+				""
+				"With correctly place Laser Drills, however, the Ore Laser Base is where you control the whole setup."
+				""
+				"The best way to see what's possible to mine with this is to look at the uses of the Ore Laser Base in JEI."
+			]
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "4D4AD4D62B9AB65A"
+			tasks: [{
+				id: "2A86A5FB4F5D9A0B"
+				type: "item"
+				item: "industrialforegoing:ore_laser_base"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			description: [
+				"The Washing Factory washes ores in Liquid Meat to produce Raw Ore Meat, ready to be processed in the Fermentation Station. This is the first machine in a 3-stage process that yields 5x Ore Processing."
+				""
+				"Arguably this is not worth doing if you've already got Singularity Resource Generators and Quantum Singularities, but perhaps you prefer having lots of options, so here's another one for you!"
+			]
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "265AB2D17A6FA8F2"
+			tasks: [{
+				id: "1EB59DFDA8EAF6FB"
+				type: "item"
+				item: "industrialforegoing:washing_factory"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 7.0d
+			y: 7.5d
+			shape: "gear"
+			description: ["A Supreme Machine Frame requires Ether Gas to be in the Dissolution Chamber in order to make it. See the second part of the chapter \"The Slaughter House\" for more on how to get your hands on some."]
+			hide_dependency_lines: true
+			dependencies: ["2996F0F6C75C18CE"]
+			size: 1.5d
+			id: "531C316189E908F5"
+			tasks: [{
+				id: "65A80ACBDA1C1CC0"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 7.0d
+			y: 5.5d
+			description: [
+				"The Wither Builder, when supplied with Soul Sand, Wither Skeleton Skulls, and power, will automatically build Withers for you."
+				""
+				"Obviously, you should take precautions! Ensure you've got a good way of dealing with them quickly and safely. Might we suggest a Mob Crusher to kill them and a wither-proof cage to contain them in?"
+			]
+			dependencies: ["531C316189E908F5"]
+			id: "2757A23A4100A52B"
+			tasks: [{
+				id: "128F824F44BE2288"
+				type: "item"
+				item: "industrialforegoing:wither_builder"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 9.5d
+			description: ["The Black Hole Controller can hold up to 16 other Black Hole Units or Black Hole Tanks, allowing for massive external storage when connected to your ME system via a Storage Bus."]
+			dependencies: ["531C316189E908F5"]
+			id: "09EC26A89D4CE5E0"
+			tasks: [{
+				id: "4189035CDC7577B9"
+				type: "item"
+				item: "industrialforegoing:black_hole_controller"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 7.5d
+			description: [
+				"The Mycelial Reactor will produce a whopping 20 million RF per tick - but only with one of each of the 16 other Mycelial Generators running simultaneously!"
+				""
+				"The biggest challenge to having a running Mycelial Reactor is in automating each of the 16 generators so that they can run constantly. It's a real challenge to get right, and requires a fair amount of work to set up, so it might not be something you decide to pursue..."
+			]
+			dependencies: ["531C316189E908F5"]
+			id: "087B1B24B1CEB64D"
+			tasks: [{
+				id: "2F7B8F7127BCED5B"
+				type: "item"
+				item: "industrialforegoing:mycelial_reactor"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 6.0d
+			description: [
+				"Burns furnace fuels and produces:"
+				"&a80 FE/t&f for 2.5 to 1600 seconds depending on the material being burnt"
+			]
+			hide_dependency_lines: true
+			dependencies: ["3D8ADEC8E08C0C88"]
+			id: "1F13871D302C247E"
+			tasks: [{
+				id: "1E545998D95A04E0"
+				type: "item"
+				item: "industrialforegoing:mycelial_furnace"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 7.0d
+			description: [
+				"Consumes 250 mB Milk and a Slime ball, and produces:"
+				"&a200 FE/t&f for 20 seconds"
+			]
+			hide_dependency_lines: true
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "25119080A30B87B6"
+			tasks: [{
+				id: "4ED5AAEF913A7351"
+				type: "item"
+				item: "industrialforegoing:mycelial_slimey"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 8.0d
+			description: [
+				"Consumes food items and produces:"
+				"Between &a8 FE/t&f and &a160 FE/t&f for 8 to 256 seconds depending on the quality of the food."
+			]
+			hide_dependency_lines: true
+			dependencies: ["3D8ADEC8E08C0C88"]
+			id: "084642F7108A86BD"
+			tasks: [{
+				id: "36622266BFB432EB"
+				type: "item"
+				item: "industrialforegoing:mycelial_culinary"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 9.0d
+			description: [
+				"Consumes potions (or water bottles), producing:"
+				"Between &a10 FE/t&f and &a7290 FE/t&f for 4 to 484 seconds depending on the potency of the potion used."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "4B0DA7311482E35D"
+			tasks: [{
+				id: "530B4BCA8799F8D9"
+				type: "item"
+				item: "industrialforegoing:mycelial_potion"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 6.0d
+			description: [
+				"Consumes enchanted books, and produces:"
+				"Between &a40 FE/t&f and &a160 FE/t&f for 16 to 52 seconds depending on the quality of the enchantment."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "40FA1054CF0F4B36"
+			tasks: [{
+				id: "593D8EAA6CFF913A"
+				type: "item"
+				item: "industrialforegoing:mycelial_disenchantment"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 7.0d
+			description: [
+				"Consumes Eye Of Ender or Ender Pearl, and produces:"
+				"&a40 FE/t&f (Ender Pearl) for 80 seconds, or &a80 EF/t&f for 160 seconds (Eye of Ender)"
+			]
+			hide_dependency_lines: true
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "3F5FA6CBC1DC4734"
+			tasks: [{
+				id: "652FD401F48543C8"
+				type: "item"
+				item: "industrialforegoing:mycelial_ender"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 8.0d
+			description: [
+				"Consumes Gunpowder or TNT, and produces:"
+				"&a160 FE/t&f for 20 or 160 seconds"
+			]
+			hide_dependency_lines: true
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "77C84C932F3529E0"
+			tasks: [{
+				id: "0BEE696D88056496"
+				type: "item"
+				item: "industrialforegoing:mycelial_explosive"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 9.0d
+			description: [
+				"Consumes different types of snow and ice, and produces:"
+				"Between &a2 FE/t&f and &a40 FE/t&f for 20-180 seconds"
+			]
+			hide_dependency_lines: true
+			dependencies: ["3D8ADEC8E08C0C88"]
+			id: "5BE659FCA09580FD"
+			tasks: [{
+				id: "24B5D65D9111D56A"
+				type: "item"
+				item: "industrialforegoing:mycelial_frosty"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 6.0d
+			description: [
+				"Consume Dragon's Breath and produces:"
+				"&a40 FE/t&f for 600 seconds"
+			]
+			hide_dependency_lines: true
+			dependencies: ["531C316189E908F5"]
+			id: "4E258DA8B1DB307F"
+			tasks: [{
+				id: "4FCDFA43CE2F3E6A"
+				type: "item"
+				item: "industrialforegoing:mycelial_halitosis"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 7.0d
+			description: [
+				"Consumes Lava (and, optionally, Redstone), and produces:"
+				"&a50 FE/t&f (just Lava) or &a100 FE/t&f (with Redstone) for 25 seconds"
+			]
+			hide_dependency_lines: true
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "2EAAACD86EFD1A78"
+			tasks: [{
+				id: "27AB4BC9F32FA2AA"
+				type: "item"
+				item: "industrialforegoing:mycelial_magma"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 8.0d
+			description: [
+				"Consumes pink items, and produces:"
+				"&a135 FE/t&f for 3.45 seconds"
+			]
+			hide_dependency_lines: true
+			dependencies: ["3D8ADEC8E08C0C88"]
+			id: "7A70D3BA58ED438B"
+			tasks: [{
+				id: "5DDE7C4BF08D73FF"
+				type: "item"
+				item: "industrialforegoing:mycelial_pink"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 9.0d
+			description: [
+				"Consumes Nether Stars, and produces:"
+				"&a4000 FE/t&f for 120 seconds"
+			]
+			hide_dependency_lines: true
+			dependencies: ["531C316189E908F5"]
+			id: "186527276B05032F"
+			tasks: [{
+				id: "69CB3425D6B57F95"
+				type: "item"
+				item: "industrialforegoing:mycelial_netherstar"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 6.0d
+			description: [
+				"Consumes Bone, Rotten Flesh, or Wither Skeleton Skulls, and produces:"
+				"&a20 FE/t&f for 10 seconds"
+			]
+			hide_dependency_lines: true
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "305540D9B90FCD24"
+			tasks: [{
+				id: "12338FAF3AA9ABC2"
+				type: "item"
+				item: "industrialforegoing:mycelial_death"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 7.0d
+			description: [
+				"Consumes rockets and produces:"
+				"&a80 FE/t&f and up, depending on rocket type."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "7D3A0BDDB67E55C8"
+			tasks: [{
+				id: "4E6D56822EF3BA66"
+				type: "item"
+				item: "industrialforegoing:mycelial_rocket"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 8.0d
+			description: [
+				"Consumes nether foliage (shrooms, fungus, etc), and produces:"
+				"&a20 FE/t&f or &a40 FE/t&f for 10 or 20 seconds, depending on the input"
+			]
+			hide_dependency_lines: true
+			dependencies: ["2996F0F6C75C18CE"]
+			id: "711CBBA866A34A57"
+			tasks: [{
+				id: "4CB5AF005FC23EBB"
+				type: "item"
+				item: "industrialforegoing:mycelial_crimed"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 9.0d
+			description: [
+				"Consumes 20 mB of Liquid Meat and an Ingot, and produces:"
+				"&a100 FE/t&f for 20 seconds"
+			]
+			hide_dependency_lines: true
+			dependencies: ["531C316189E908F5"]
+			id: "154A6BCBB48DF0D2"
+			tasks: [{
+				id: "23B95FBB4BBEC468"
+				type: "item"
+				item: "industrialforegoing:mycelial_meatallurgic"
+			}]
+		}
+	]
+}

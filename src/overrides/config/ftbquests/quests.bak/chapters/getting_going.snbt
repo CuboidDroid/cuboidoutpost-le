@@ -1,0 +1,1258 @@
+{
+	id: "09FE676C0CEB86EC"
+	group: "719DAED049159F2E"
+	order_index: 1
+	filename: "getting_going"
+	title: "Getting Going"
+	icon: "exnihilosequentia:sieve"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Moving on down"
+			icon: "minecraft:oak_log"
+			x: -17.0d
+			y: -10.5d
+			shape: "gear"
+			description: [
+				"Congratulations! You've just about hit rock bottom!"
+				""
+				"Have a free Kebab on us!"
+				""
+				"The only way now is up!"
+				""
+				"We're going to have to go through a period of \"back to basics\" for a bit - we really need to get our access to more familiar resources sorted out as soon as possible."
+				""
+				"For the next while, we'll be going back to tried and tested techniques for extracting useful raw materials from the somewhat mundane ones we have available."
+			]
+			dependencies: ["164AA3AA7EEDB5DC"]
+			id: "3851A991AC7B9CC6"
+			tasks: [{
+				id: "664C7C33962CC41E"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "36F93DA2AD7444DB"
+				type: "item"
+				item: "cuboidmod:kebab_cooked"
+			}]
+		}
+		{
+			title: "Not for sheep"
+			x: -23.5d
+			y: -8.0d
+			shape: "square"
+			description: [
+				"Now that you have easy access to wood and sticks, you can make yourself a Wood Crook."
+				""
+				"A crook can be used to break leaves on trees, giving a higher than normal chance of getting Apples."
+			]
+			dependencies: ["3851A991AC7B9CC6"]
+			id: "1438CB442450350F"
+			tasks: [{
+				id: "759181E80DE41947"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:crook_wood"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Silk is mainly Protein Fiber"
+			x: -20.5d
+			y: -5.5d
+			shape: "square"
+			description: [
+				"Did you know that silk is primarily made up of Protein Fibers?"
+				""
+				"Well, our Science Division did. And they've figured out how to turn some of those useless worms infesting those Rotten Apples into more useful organisms by transmuting a Rotten Apple and some extra Protein Fibers."
+			]
+			dependencies: ["3027392E2062395C"]
+			id: "0810233938445D12"
+			tasks: [{
+				id: "6F5350EA63C58A2F"
+				type: "item"
+				item: "exnihilosequentia:silkworm"
+				count: 6L
+			}]
+		}
+		{
+			title: "A crunchy little delicacy"
+			x: -19.5d
+			y: -7.0d
+			description: [
+				"After a while, you'll probably have more silkworms than you will know what to do with."
+				""
+				"Luckily, there's a useful way of consuming them."
+				""
+				"Just cook them first!"
+			]
+			dependencies: ["0810233938445D12"]
+			id: "3D7F38B0BB1A15AE"
+			tasks: [{
+				id: "4E81733C982EE1F2"
+				type: "item"
+				item: "exnihilosequentia:cooked_silkworm"
+			}]
+		}
+		{
+			title: "String theory"
+			x: -19.0d
+			y: -5.5d
+			shape: "square"
+			description: [
+				"You should have string already, and know how to get more, but if you need a lot of it in short order, the easiest way now available to you is by puttng those silkworms to good use."
+				""
+				"Simply place them onto the leaves of a tree, wait until the silkworms turn the leaves white, and then harvest the leaves with a Crook. You should end up with tons of silky String in no time at all."
+			]
+			dependencies: ["0810233938445D12"]
+			id: "3513BE459009658F"
+			tasks: [{
+				id: "35654C55E7A87208"
+				type: "item"
+				item: "minecraft:string"
+				count: 32L
+			}]
+		}
+		{
+			title: "Meshed Together"
+			x: -17.0d
+			y: -5.0d
+			shape: "square"
+			description: [
+				"A sieve is no good without a mesh in it."
+				""
+				"For now, we can make a simple mesh from string, and then place that in the sieve to start getting some additional materials."
+			]
+			dependencies: [
+				"3513BE459009658F"
+				"428FD7AF1B49A51D"
+			]
+			id: "6AF8FD5317351B8A"
+			tasks: [{
+				id: "26A43EF0879761F4"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:mesh_string"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "The Shimmy Shimmy Shake"
+			x: -17.0d
+			y: -8.0d
+			shape: "gear"
+			description: [
+				"Now that we have some wood, we can put together a basic Sieve (or more) to help with resource gathering."
+				""
+				"Sieves can work \"meshed\" together in up to a 5x5 arrangement. It might be worth making at least 4 to help speed up your processing."
+			]
+			dependencies: ["3851A991AC7B9CC6"]
+			size: 1.5d
+			id: "428FD7AF1B49A51D"
+			tasks: [
+				{
+					id: "0E35258E81651894"
+					type: "item"
+					title: "4x Oak Planks"
+					item: "minecraft:oak_planks"
+					count: 4L
+				}
+				{
+					id: "262BA7BC4930B72D"
+					type: "item"
+					item: "minecraft:stick"
+					count: 2L
+				}
+				{
+					id: "5D49BCD3A96AFF2D"
+					type: "item"
+					item: "minecraft:oak_slab"
+				}
+				{
+					id: "346620DF8CA6BF15"
+					type: "item"
+					item: "exnihilosequentia:sieve"
+				}
+			]
+		}
+		{
+			title: "What's in a name?"
+			x: -14.0d
+			y: -8.0d
+			shape: "square"
+			subtitle: "A lot! Honestly!"
+			description: [
+				"This is just ridiculous. Scientists and their stupid names for things."
+				""
+				"A Smasher - that makes sense because you use it to smash things."
+				""
+				"A Smoosher - that makes sense because you use it to smoosh things."
+				""
+				"But a \"Hammer\"? Seriously! Where do they come up with this stuff!"
+				""
+				"Nevertheless, you'll need to make one."
+			]
+			dependencies: ["3851A991AC7B9CC6"]
+			id: "37652379CE1B798B"
+			tasks: [{
+				id: "0A0512592765F4B5"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:hammer_wood"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Ashes to ashes..."
+			x: -13.0d
+			y: -6.0d
+			shape: "square"
+			subtitle: "... and Sand to Dust"
+			description: ["Place down some of that sand you have, then whack it with your hammer to get your hands on some Dust."]
+			dependencies: ["37652379CE1B798B"]
+			id: "546A3E1E5069E3D6"
+			tasks: [{
+				id: "7DF9FBC4DAF6AE63"
+				type: "item"
+				item: "exnihilosequentia:dust"
+			}]
+		}
+		{
+			title: "Dust is a must"
+			x: -15.0d
+			y: -6.0d
+			description: [
+				"Who would have guessed that sieve plain old boring Dust would net you Gunpowder?"
+				""
+				"Not only that, but it can also be an additional supply of bonemeal."
+			]
+			dependencies: [
+				"6AF8FD5317351B8A"
+				"546A3E1E5069E3D6"
+			]
+			id: "473BE4B46491DEEA"
+			tasks: [{
+				id: "786D75AA4A4C10CE"
+				type: "item"
+				item: "minecraft:gunpowder"
+			}]
+		}
+		{
+			title: "Barrels of fun"
+			x: -11.0d
+			y: -8.0d
+			shape: "square"
+			description: [
+				"Oak barrels can be used to mix dry ingredients into liquids. They can also be used to catch rain water, as well as composting materials into Dirt."
+				""
+				"When making dirt (and for other automation), you can hopper into the barrel from the top and sides, and hopper out from the bottom. For example, a hopper into the top could insert leaves (use shears on leaves), wood chippings (use a hammer on logs), saplings, etc., which will then compost into dirt, and a hopper underneath can extract the dirt to be stored. Once you have two stacks of dirt, you'll be able to create a Dirt Quantum Singularity and use that in an SRG for an unlimited supply of dirt moving forward."
+			]
+			dependencies: ["3851A991AC7B9CC6"]
+			id: "53F89DDA31E8A134"
+			tasks: [{
+				id: "3C534E407B030D9C"
+				type: "item"
+				item: "exnihilosequentia:barrel_wood"
+			}]
+		}
+		{
+			title: "Wet dust"
+			x: -11.0d
+			y: -6.0d
+			shape: "square"
+			subtitle: "(That's an instruction, not a description)"
+			description: ["Fill a barrel with water, then use some Dust on it, and it will turn to Clay."]
+			dependencies: [
+				"546A3E1E5069E3D6"
+				"53F89DDA31E8A134"
+			]
+			id: "60C790CDAC49476B"
+			tasks: [{
+				id: "68E114FC2AE73D08"
+				type: "item"
+				item: "minecraft:clay"
+			}]
+		}
+		{
+			title: "Logically Redstone"
+			x: -13.0d
+			y: -5.0d
+			description: ["You now have access to highly reactive Gunpowder and highly conductive Carbon Nanotubes - put them into a Quantum Transmutation Chamber and our Science Division believes you can create Redstone Dust."]
+			dependencies: ["473BE4B46491DEEA"]
+			id: "639FAD5D76D7C78A"
+			tasks: [{
+				id: "492AA61E25EA62FB"
+				type: "item"
+				item: "minecraft:redstone"
+			}]
+			rewards: [{
+				id: "6BE91C75DB2BA437"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 16
+				random_bonus: 16
+			}]
+		}
+		{
+			title: "Sometimes I sound like Gravel"
+			x: -9.0d
+			y: -6.0d
+			shape: "square"
+			subtitle: "... and sometimes I sound like Coffee and Cream. ~Nina Simone"
+			description: [
+				"Ah Gravel. If only we had a driveway to spread some out on."
+				""
+				"But it does have its uses."
+				""
+				"It can be a good source of flint for one, and can be sifted later on for more materials too,"
+				""
+				"Sifting Gravel will become a great source of materials moving forwards - you should consider making a Gravel Quantum Singularity before long."
+			]
+			dependencies: [
+				"7DFF7B15FCC186F8"
+				"60C790CDAC49476B"
+				"16F877D52D0B4336"
+			]
+			id: "33D7D002936CF024"
+			tasks: [
+				{
+					id: "044E88D2B894D650"
+					type: "item"
+					item: "cuboidmod:aggregate"
+				}
+				{
+					id: "0242E4869B6F5C89"
+					type: "item"
+					item: "minecraft:gravel"
+				}
+			]
+		}
+		{
+			title: "The Flint Stones"
+			x: -8.0d
+			y: -5.0d
+			shape: "square"
+			subtitle: "(stones that give flint - not the cartoons)"
+			description: ["You can get flint from gravel in several ways. Perhaps the most reliable is to craft 3 Gravel together in a crafting table to get back a piece of flint."]
+			dependencies: ["33D7D002936CF024"]
+			id: "5F897F5B4A3C5F15"
+			tasks: [{
+				id: "64DFA232203AEA73"
+				type: "item"
+				item: "minecraft:flint"
+			}]
+		}
+		{
+			title: "Flinty Meshy Upgrade"
+			x: -7.0d
+			y: -4.0d
+			shape: "square"
+			description: ["By adding some flint to your String Mesh, you can start getting some more interesting raw materials. Gather up some flint, then upgrade your String Mesh(es)."]
+			dependencies: ["5F897F5B4A3C5F15"]
+			id: "753DB049680259E8"
+			tasks: [{
+				id: "18225BCDB2D69598"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:mesh_flint"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Wooden it be nice?"
+			x: -15.0d
+			y: -5.0d
+			shape: "square"
+			description: [
+				"While Oak is prefectly serviceable for most things, perhaps a bit more variety would be good."
+				""
+				"Now that we've already kick-started organic life on this planet, the Science Division thinks that simply sieving Blocks of Cellulose might produce additional seeds you can plant on dirt to get a wider variety of tree species."
+			]
+			dependencies: ["6AF8FD5317351B8A"]
+			id: "622A14D949B6F090"
+			tasks: [
+				{
+					id: "1DC32D8905C139EF"
+					type: "item"
+					item: "exnihilosequentia:seed_oak"
+				}
+				{
+					id: "4C8708E98DFCCFEF"
+					type: "item"
+					item: "exnihilosequentia:seed_spruce"
+				}
+				{
+					id: "1285E4D6EFABCA22"
+					type: "item"
+					item: "exnihilosequentia:seed_birch"
+				}
+				{
+					id: "4844D798370B8D1E"
+					type: "item"
+					item: "exnihilosequentia:seed_jungle"
+				}
+				{
+					id: "08155ED95E672AD8"
+					type: "item"
+					item: "exnihilosequentia:seed_acacia"
+				}
+				{
+					id: "3CD5637D8EB3FCFA"
+					type: "item"
+					item: "exnihilosequentia:seed_darkoak"
+				}
+			]
+		}
+		{
+			title: "Sand bags"
+			x: -5.0d
+			y: -6.0d
+			shape: "square"
+			description: ["Now that you have a flint mesh, sieving sand will give you a few more interesting things. Why not try your luck with at least 16 blocks of sand and see what happens?"]
+			dependencies: ["753DB049680259E8"]
+			id: "63D63B464E338443"
+			tasks: [{
+				id: "72902CEC54488ADD"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			title: "Cactus Seeds"
+			x: -6.0d
+			y: -7.0d
+			shape: "square"
+			description: ["You can plant cactus seeds on sand to get a cactus. Remember that cactus can't grow next to another occupied space, so if you want lots in a small area, plant them in a checkerboard pattern."]
+			dependencies: ["63D63B464E338443"]
+			id: "3692DB87A200AEAA"
+			tasks: [{
+				id: "6125B175000FD76D"
+				type: "item"
+				item: "exnihilosequentia:seed_cactus"
+			}]
+		}
+		{
+			title: "The Unforbidden Fruit"
+			x: -23.5d
+			y: -5.5d
+			shape: "square"
+			description: [
+				"Once you have a few apples, a few more opportunities will open up to you."
+				""
+				"Firstly, they're pretty tasty, so help yourself to one!"
+				""
+				"Secondly, they can be combined with Rotten Flesh in a Quantum Transmutation Chamber to produce a rotten apple, which is fantastic!"
+				""
+				"And third, you can combine it with a Water Bottle to transmute it into Apple Cider Vinegar!"
+				""
+				"Let's go ahead and do those last two next."
+			]
+			dependencies: ["1438CB442450350F"]
+			id: "4FE0F1F1907DE0D3"
+			tasks: [{
+				id: "7F8AF730AB97C311"
+				type: "item"
+				item: "minecraft:apple"
+				count: 3L
+			}]
+		}
+		{
+			title: "Vinegar? Why not just Apple Cider?"
+			x: -22.0d
+			y: -3.0d
+			subtitle: "A step too far :-("
+			description: [
+				"An apple and a glass bottle in the QTC with a bit of energy applied gives a pretty decent Apple Cider Vinegar."
+				""
+				"You can drink it, but it's better as an ingredient for what comes next."
+			]
+			dependencies: ["4FE0F1F1907DE0D3"]
+			id: "5FFEBF55D0A30DAB"
+			tasks: [{
+				id: "596787749D99A67A"
+				type: "item"
+				item: "cuboidmod:apple_cider_vinegar"
+			}]
+		}
+		{
+			title: "Rotten to the core"
+			x: -22.0d
+			y: -5.5d
+			shape: "square"
+			description: [
+				"An Apple and some Rotten Flesh in the QTC results in a Rotten Apple. The worms in it are pretty useless though - we're going to take care of that next."
+				""
+				"By the way, you can eat Rotten Apples, but it's not really recommended!"
+			]
+			dependencies: ["4FE0F1F1907DE0D3"]
+			id: "3027392E2062395C"
+			tasks: [{
+				id: "4A75E9CC3AF0B9F1"
+				type: "item"
+				item: "cuboidmod:rotten_apple"
+			}]
+		}
+		{
+			title: "Fred and Wilma's offspring"
+			x: -15.0d
+			y: -4.0d
+			shape: "square"
+			description: [
+				"Sifting Dirt can give Pebbles."
+				""
+				"Hint: You might want to look at making a Dirt Quantum Singularity before embarking on sieving dirt for this task!"
+			]
+			dependencies: ["6AF8FD5317351B8A"]
+			id: "6151DF88A40CD55B"
+			tasks: [
+				{
+					id: "44D08101E426FF2F"
+					type: "item"
+					item: "exnihilosequentia:pebble_andesite"
+				}
+				{
+					id: "040B58AD7131EDF1"
+					type: "item"
+					item: "exnihilosequentia:pebble_granite"
+				}
+				{
+					id: "650B9E6818920B29"
+					type: "item"
+					item: "exnihilosequentia:pebble_diorite"
+				}
+				{
+					id: "5BCC0A282192A763"
+					type: "item"
+					item: "exnihilosequentia:pebble_basalt"
+				}
+				{
+					id: "44F7A7E8A0129BAC"
+					type: "item"
+					item: "exnihilosequentia:pebble_blackstone"
+				}
+			]
+		}
+		{
+			title: "Rocks"
+			x: -13.0d
+			y: -1.5d
+			shape: "square"
+			description: [
+				"Some pebbles in a crafting table can be combined into different forms of rock."
+				""
+				"Go ahead and make some Andesite, Basalt, Blackstone, Diorite and Granite."
+				""
+				"Hint: As with most raw materials, there are Quantum Singularities for these too, but you probably won't need all of them. If you're able, you might want to invest the time and effort into obtaining Andesite, Diorite and Granite Quantum Singularities though."
+			]
+			dependencies: ["6151DF88A40CD55B"]
+			id: "09E583ACB8521C0D"
+			tasks: [
+				{
+					id: "591AE1721F9A5446"
+					type: "item"
+					item: "minecraft:andesite"
+					count: 16L
+				}
+				{
+					id: "7E6FAF98063D2F92"
+					type: "item"
+					item: "minecraft:granite"
+					count: 16L
+				}
+				{
+					id: "0B9C2F1ECE98E9AF"
+					type: "item"
+					item: "minecraft:diorite"
+					count: 16L
+				}
+				{
+					id: "3607F32C1368E49A"
+					type: "item"
+					item: "minecraft:basalt"
+					count: 16L
+				}
+				{
+					id: "7F0DD423EDAF5844"
+					type: "item"
+					item: "minecraft:blackstone"
+					count: 16L
+				}
+			]
+		}
+		{
+			title: "Rock on sister!"
+			x: -11.5d
+			y: -3.0d
+			shape: "square"
+			description: ["Those \"hammer\" gadgets can also be made using some of those new rocks, giving you a Stone Hammer, which is a bit more durable than the wood version you have been using so far."]
+			dependencies: ["09E583ACB8521C0D"]
+			id: "5D41AFE88B363373"
+			tasks: [{
+				id: "15F9F6561D4C8EFF"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:hammer_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Crushed Rocks"
+			x: -9.0d
+			y: -4.0d
+			shape: "square"
+			description: [
+				"Some rocks can be crushed, and then have different uses."
+				""
+				"Let's start off by getting a few of the Crushed Andesite, Diorite and Granite."
+			]
+			dependencies: ["5D41AFE88B363373"]
+			id: "7DFF7B15FCC186F8"
+			tasks: [
+				{
+					id: "5E1906BA235B8611"
+					type: "item"
+					item: "exnihilosequentia:crushed_andesite"
+					count: 16L
+				}
+				{
+					id: "154FEE180E81F013"
+					type: "item"
+					item: "exnihilosequentia:crushed_diorite"
+					count: 16L
+				}
+				{
+					id: "29E39DA60B08FD70"
+					type: "item"
+					item: "exnihilosequentia:crushed_granite"
+					count: 16L
+				}
+			]
+		}
+		{
+			title: "Sugarcane Seeds"
+			x: -5.0d
+			y: -7.5d
+			shape: "square"
+			description: [
+				"Sugarcane can grow on Dirt or Sand, but must be adjacent to water in at least one of the cardinal directions."
+				""
+				"If you want to maximise planting in an area, start off by placing some water, then move 2 blocks forward and one to the side, and place more water."
+				""
+				"Repeating this pattern in a field of Sand or Dirt will give you a high concentration of Sugarcane, but may not be the best solution for a simple automated farm. It's great for manual harvesting, or for when you have harvesting of a wide area automated."
+				""
+				"For a more Vanilla farm, you might want to consider planting along the banks of a strip of 1 wide water instead."
+			]
+			dependencies: ["63D63B464E338443"]
+			id: "465B8B56A73F884D"
+			tasks: [{
+				id: "3026C2962C6BBC13"
+				type: "item"
+				item: "exnihilosequentia:seed_sugarcane"
+			}]
+		}
+		{
+			title: "Bamboozled"
+			x: -4.0d
+			y: -7.0d
+			shape: "square"
+			description: ["Bamboo grows on Dirt or Grass - quite rapidly too. It's a good source of sticks and scaffolding."]
+			dependencies: ["63D63B464E338443"]
+			id: "68FB0BC06AF50D6A"
+			tasks: [{
+				id: "14EDFD3DBB80DF3D"
+				type: "item"
+				item: "exnihilosequentia:seed_bamboo"
+			}]
+		}
+		{
+			title: "Andesite Alloy Ahoy"
+			x: -13.0d
+			y: 0.5d
+			shape: "gear"
+			description: [
+				"Combining nuggets of Zinc with Andesite results in a unique and useful Andesite Alloy, which will open the gates to rediscovering the wonders of rotational force, and is the path to recovering the secrets of Iron production."
+				""
+				"&aUnlocks: Getting Creative&f"
+			]
+			dependencies: [
+				"09E583ACB8521C0D"
+				"542FE8F3A4EDD091"
+			]
+			size: 1.5d
+			id: "55B899DC63CFA8E3"
+			tasks: [{
+				id: "3A23ABB952E79EC1"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 18L
+			}]
+		}
+		{
+			title: "Zinc and Tin"
+			x: -10.5d
+			y: -1.5d
+			shape: "square"
+			description: ["Sieving Crushed Andesite yields pieces of Zinc and Tin that can be combined into Chunks, which in turn can be processed into dusts or ingots."]
+			dependencies: [
+				"753DB049680259E8"
+				"7DFF7B15FCC186F8"
+			]
+			id: "2A78D30A0B063CD4"
+			tasks: [
+				{
+					id: "473718479E40C60E"
+					type: "item"
+					item: "exnihilosequentia:piece_zinc"
+					count: 16L
+				}
+				{
+					id: "1A7F5B604497B901"
+					type: "item"
+					item: "exnihilosequentia:piece_tin"
+					count: 16L
+				}
+			]
+		}
+		{
+			title: "Silver and Aluminium"
+			x: -5.5d
+			y: -1.5d
+			shape: "square"
+			description: ["Sieving Crushed Diorite yields pieces of Silver and Aluminium (a.k.a. Aluminum) that can be combined into Chunks, which in turn can be processed into dusts or ingots."]
+			dependencies: [
+				"753DB049680259E8"
+				"7DFF7B15FCC186F8"
+			]
+			id: "78B85E020187C16A"
+			tasks: [
+				{
+					id: "1B2A15AE2AE18A22"
+					type: "item"
+					item: "exnihilosequentia:piece_silver"
+					count: 16L
+				}
+				{
+					id: "22392A41F95A459D"
+					type: "item"
+					item: "exnihilosequentia:piece_aluminum"
+					count: 16L
+				}
+			]
+		}
+		{
+			title: "Copper and Nickel"
+			x: -8.0d
+			y: -1.5d
+			shape: "square"
+			description: ["Sieving Crushed Granite yields pieces of Copper and Nickel that can be combined into Chunks, which in turn can be processed into dusts or ingots."]
+			dependencies: [
+				"753DB049680259E8"
+				"7DFF7B15FCC186F8"
+			]
+			id: "0FF5B2944BADD9E4"
+			tasks: [
+				{
+					id: "559201D864D916A7"
+					type: "item"
+					item: "exnihilosequentia:piece_copper"
+					count: 16L
+				}
+				{
+					id: "0B4A12ADE9E7D64E"
+					type: "item"
+					item: "exnihilosequentia:piece_nickel"
+					count: 16L
+				}
+			]
+		}
+		{
+			title: "The Kitchen Zinc"
+			x: -11.5d
+			y: 0.5d
+			shape: "square"
+			description: ["Zinc will be useful in the making of Andesite Alloy and other materials."]
+			dependencies: ["2A78D30A0B063CD4"]
+			id: "542FE8F3A4EDD091"
+			tasks: [
+				{
+					id: "68688DA9CC0B4506"
+					type: "item"
+					item: "exnihilosequentia:chunk_zinc"
+					count: 4L
+				}
+				{
+					id: "360948DB752A3ACB"
+					type: "item"
+					title: "Zinc Ingots"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/zinc"
+						}
+					}
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Tinnitus"
+			x: -10.0d
+			y: 0.5d
+			shape: "square"
+			description: [
+				"From Tin Cans to advanced machinery, tin is a super useful material for making all sorts of stuff."
+				""
+				"Except for the tin cans, for now."
+			]
+			dependencies: ["2A78D30A0B063CD4"]
+			id: "5F0557BE95A5A634"
+			tasks: [
+				{
+					id: "58F308941B6F1122"
+					type: "item"
+					item: "exnihilosequentia:chunk_tin"
+					count: 4L
+				}
+				{
+					id: "2395D797CD9E3FFE"
+					type: "item"
+					title: "Tin Ingots"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/tin"
+						}
+					}
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "The Fuzz"
+			x: -8.5d
+			y: 0.5d
+			shape: "gear"
+			description: [
+				"Copper is a truly versatile metal. It is a key component in many machines, and has many alloys too."
+				""
+				"&aUnlocks: Getting Tinks Done&f"
+			]
+			dependencies: ["0FF5B2944BADD9E4"]
+			size: 1.5d
+			id: "11F9CF9280A7259D"
+			tasks: [
+				{
+					id: "74A9E81612C44446"
+					type: "item"
+					item: "exnihilosequentia:chunk_copper"
+					count: 4L
+				}
+				{
+					id: "1ED496BE95E1FFBF"
+					type: "item"
+					title: "Copper Ingots"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/copper"
+						}
+					}
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Half a Dime"
+			x: -7.0d
+			y: 0.5d
+			shape: "square"
+			description: ["Unfortunately, two Nickels don't make a Dime. Nickel, however, has a couple of important alloys you'll need to get your hands on later."]
+			dependencies: ["0FF5B2944BADD9E4"]
+			id: "2FF831E930E77273"
+			tasks: [
+				{
+					id: "77C881580A110995"
+					type: "item"
+					item: "exnihilosequentia:chunk_nickel"
+					count: 4L
+				}
+				{
+					id: "60F8AAB4CCB5EC4E"
+					type: "item"
+					title: "Nickel Ingots"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/nickel"
+						}
+					}
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Hi ho Silver!"
+			x: -5.5d
+			y: 0.5d
+			shape: "square"
+			description: [
+				"It's so shiny!"
+				""
+				"It's also useful for making all sorts of stuff soon, so knowing how to make it when you need it will be important."
+			]
+			dependencies: ["78B85E020187C16A"]
+			id: "33371313528B9C26"
+			tasks: [
+				{
+					id: "70986199AD5BA147"
+					type: "item"
+					item: "exnihilosequentia:chunk_silver"
+					count: 4L
+				}
+				{
+					id: "257FA5A97A008C52"
+					type: "item"
+					title: "Silver Ingots"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/silver"
+						}
+					}
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Don't forget the second I"
+			x: -4.0d
+			y: 0.5d
+			shape: "gear"
+			description: [
+				"Ok, ok. You can call it Aluminum too."
+				""
+				"If you decide to get immersed in engineering for a bit, you'll find this stuff invaluable."
+			]
+			dependencies: ["78B85E020187C16A"]
+			size: 1.5d
+			id: "1F8D8241F7495CD3"
+			tasks: [
+				{
+					id: "6B14507456012806"
+					type: "item"
+					item: "exnihilosequentia:chunk_aluminum"
+					count: 4L
+				}
+				{
+					id: "0836F6E4FB8DFD4A"
+					type: "item"
+					title: "Aluminium Ingots"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/aluminum"
+						}
+					}
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Curing is a process"
+			x: -20.5d
+			y: -1.0d
+			description: ["Curing is a food preservation process. By using Apple Cider Vinegar and Salt, it's possible to cure the nasties out of Rotten Flesh too."]
+			dependencies: [
+				"5FFEBF55D0A30DAB"
+				"38A57A4898341AFA"
+			]
+			id: "7E7F87ED3FE0EDF2"
+			tasks: [{
+				id: "5D42FFB769A58176"
+				type: "item"
+				item: "cuboidmod:cured_flesh"
+			}]
+		}
+		{
+			title: "More than just a flavour enhancer"
+			x: -20.5d
+			y: -3.0d
+			description: ["Salt can be obtained by sieving Blocks of Silica Dust"]
+			dependencies: ["6AF8FD5317351B8A"]
+			id: "38A57A4898341AFA"
+			tasks: [{
+				id: "6F8831F876C2185C"
+				type: "item"
+				title: "Salt"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:dusts/salt"
+					}
+				}
+			}]
+		}
+		{
+			title: "A little helper"
+			x: -16.5d
+			y: -3.5d
+			description: [
+				"There's a way to automatically sieve using a machine. We're calling it the Auto Sieve."
+				""
+				"Does what it says on the tin."
+				""
+				"You will need to sacrifice your Pulverizer in order to make it, but you'll (eventually) be able to replace it, so it's probably worth it for now."
+				""
+				"p.s. If you feed your little helper(s), they work a bit faster for a short period."
+			]
+			dependencies: ["6AF8FD5317351B8A"]
+			id: "7D0687B0C3527D41"
+			tasks: [{
+				id: "4756E38867F740E1"
+				type: "item"
+				item: "excompressum:auto_sieve"
+			}]
+		}
+		{
+			title: "Mass dessication"
+			x: -13.0d
+			y: -3.5d
+			shape: "square"
+			description: [
+				"You should have enough bits and pieces lying around to cobble together a Drying Cupboard. If you're short a few parts, you might need to employ the recycler again on one of those Solar Generators or Wind Generators on the roof."
+				""
+				"The Drying Cupboard allows for mass drying to occur. It can dry 8 things at once at no additional cost in energy - simply spread out the inputs into each of the 8 slots to make use of this feature."
+				""
+				"The Drying Cupboard can be used to dry out Wet Sponges, Dry out fish into Hardfiskur, and cured meats into Biltong. It's also used to dry out Aggregate in the production of Gravel."
+			]
+			dependencies: ["622A14D949B6F090"]
+			id: "16F877D52D0B4336"
+			tasks: [{
+				id: "365BA9D95E041F75"
+				type: "item"
+				item: "cuboidmod:drying_cupboard"
+			}]
+		}
+		{
+			title: "Gone fishing"
+			x: -19.0d
+			y: -2.5d
+			subtitle: "(waders optional)"
+			description: [
+				"It seems that some of the microbes in the soil you've been making have made their way into the water. The star in this solar system seems to be rapidly mutating the microbes into fish!"
+				""
+				"Totally unbelievable right?!"
+				""
+				"Nevertheless, you should make yourself a fishing rod and go catch something to eat..."
+			]
+			dependencies: ["3513BE459009658F"]
+			id: "35F547ACB0E2CFD8"
+			tasks: [{
+				id: "79A8DC1287956E39"
+				type: "item"
+				item: {
+					id: "minecraft:fishing_rod"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -17.5d
+			y: -2.0d
+			dependencies: ["35F547ACB0E2CFD8"]
+			id: "1D822A48AB7D58C5"
+			tasks: [{
+				id: "6E6DAD3B23E7535A"
+				type: "item"
+				title: "Any fish will do"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:fishes"
+					}
+				}
+			}]
+		}
+		{
+			title: "A taste of Iceland"
+			x: -15.5d
+			y: -1.5d
+			description: ["While traditional Hardfiskur is wind-dried on wooden racks on the foreshore, the drying cupboard can be used to produce a reasonable facsimile at a (relatively) rapid pace."]
+			dependencies: [
+				"1D822A48AB7D58C5"
+				"16F877D52D0B4336"
+			]
+			id: "71C6C7B9C6E1BB83"
+			tasks: [{
+				id: "7A21F97534674C26"
+				type: "item"
+				item: "cuboidmod:hardfiskur"
+			}]
+		}
+		{
+			title: "Biltong!"
+			x: -15.5d
+			y: 0.0d
+			description: ["Cured Flesh can be dried out to make Zombie Biltong - a pretty decent food source, even if it does taste nothing like Beef Biltong (which is absolutely delicious!)"]
+			dependencies: [
+				"7E7F87ED3FE0EDF2"
+				"16F877D52D0B4336"
+			]
+			id: "4867992DCBF29C06"
+			tasks: [{
+				id: "0C329970815D2BFE"
+				type: "item"
+				item: "cuboidmod:biltong_zombie"
+			}]
+			rewards: [{
+				id: "74C8435037E8E6DD"
+				type: "item"
+				item: "cuboidmod:biltong_zombie"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "No real cream in that coffee"
+			x: -3.5d
+			y: -4.0d
+			shape: "square"
+			subtitle: "(I ain't no Nina)"
+			description: ["Your flint mesh will also let you get more materials from sieving Gravel. You will still get the same stuff you got from a String Mesh, but there are now more materials too."]
+			dependencies: ["753DB049680259E8"]
+			id: "7988A4A5437282D2"
+			tasks: [{
+				id: "70EBD940EE70A15D"
+				type: "item"
+				item: "minecraft:gravel"
+				count: 16L
+			}]
+		}
+		{
+			title: "Pulling an all Niter"
+			x: -3.5d
+			y: -5.5d
+			description: ["Niter is used in the production of Phyto-Gro and Gunpowder."]
+			dependencies: ["7988A4A5437282D2"]
+			id: "57BDC073A6FF7EAF"
+			tasks: [{
+				id: "546AAEFF5F40CBAF"
+				type: "item"
+				item: "thermal:niter"
+			}]
+		}
+		{
+			title: "Don't lose your Apatite."
+			x: -2.5d
+			y: -5.0d
+			description: ["Apatite is a key ingredient in the making of Phyto-Gro. It's also a handy source of Cyan Dye."]
+			dependencies: ["7988A4A5437282D2"]
+			id: "3D6027E5BD7101C3"
+			tasks: [{
+				id: "62B3D63168CADF67"
+				type: "item"
+				item: "thermal:apatite"
+			}]
+		}
+		{
+			title: "Cinnabar, a.k.a. Mercury Sulfide"
+			x: -2.0d
+			y: -4.0d
+			subtitle: "(not to be eaten)"
+			description: ["Cinnabar can be used as a catalyst in an Induction Smelter to improve production."]
+			dependencies: ["7988A4A5437282D2"]
+			id: "3811CEE735335546"
+			tasks: [{
+				id: "4A9763149BCEF289"
+				type: "item"
+				item: "thermal:cinnabar"
+			}]
+		}
+		{
+			title: "Close the coal mines"
+			x: -2.5d
+			y: -3.0d
+			description: ["With a Flint Mesh, your can now get Coal through sieving too."]
+			dependencies: ["7988A4A5437282D2"]
+			id: "5E990B8B91DD3200"
+			tasks: [{
+				id: "046A1CAF096E5701"
+				type: "item"
+				item: "minecraft:coal"
+			}]
+		}
+		{
+			title: "Lovely Lapis Lazuli"
+			x: -3.5d
+			y: -2.5d
+			description: ["Lapis Lazuli has many uses - arguably the most important of which is for enchanting."]
+			dependencies: ["7988A4A5437282D2"]
+			id: "683CFCFCE9480C64"
+			tasks: [{
+				id: "4B5A9CED5CA8A790"
+				type: "item"
+				item: "minecraft:lapis_lazuli"
+			}]
+		}
+		{
+			title: "Wiffs a bit like rotten eggs"
+			x: -4.5d
+			y: -3.0d
+			description: ["Apart from being an alternative fuel source, Sulfur can also be used in the making of Gunpowder, Sulfuric Acid and Sulfur Dioxide."]
+			dependencies: ["7988A4A5437282D2"]
+			id: "2F9B6B63C2690972"
+			tasks: [{
+				id: "37C88649BFAC5703"
+				type: "item"
+				item: "thermal:sulfur"
+			}]
+		}
+		{
+			title: "As tough as leather"
+			x: -15.5d
+			y: 1.5d
+			subtitle: "Personally, I prefer it less dry"
+			description: ["If you put some biltong back in the drying cupboard, it becomes as tough as leather."]
+			dependencies: ["4867992DCBF29C06"]
+			optional: true
+			id: "16F4815BB74482D3"
+			tasks: [{
+				id: "59415A5FA700F7C4"
+				type: "item"
+				item: "minecraft:leather"
+			}]
+		}
+	]
+}

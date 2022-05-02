@@ -1,0 +1,274 @@
+{
+	id: "6362652E582C4885"
+	group: "24F09E0B1AD125E9"
+	order_index: 3
+	filename: "mekanism"
+	title: "Fluid Storage"
+	icon: "mekanism:basic_fluid_tank"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 2.5d
+			description: [
+				"The Basic Fluid Tank is made from 4x Iron Ingots and 4x Redstone. This is so cheap it's almost a shame not to use them whenever you can!"
+				""
+				"The Basic Fluid Tank (and others) can be set to automatically push their fluid downwards by crouching and using a Configurator on them, which is a handy way of getting fluids into machines or barrels. You can also pipe into and out of these Fluid Tanks as you would expect."
+				""
+				"The Basic Fluid Tank can hold &a14k mB&f of fluid (14 buckets)."
+			]
+			id: "42653A59BE87EB10"
+			tasks: [{
+				id: "1586EEDD33F211F8"
+				type: "item"
+				item: "mekanism:basic_fluid_tank"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"The Advanced Fluid Tank is made by reinforcing a Basic Fluid Tank with 4 more Iron Ingots and 4 Infused Alloys."
+				""
+				"This Advanced version holds twice as much fluid as the Basic Fluid Tank, which means it can hold &a28k mB&f of fluid (28 buckets)."
+			]
+			dependencies: ["42653A59BE87EB10"]
+			id: "106D46ACF4A554A1"
+			tasks: [{
+				id: "1D729892B72DACFC"
+				type: "item"
+				item: "mekanism:advanced_fluid_tank"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			description: [
+				"The Elite Fluid Tank is made by reinforcing an Advanced Fluid Tank with 4 more Iron Ingots and 4 Reinforced Alloys."
+				""
+				"This Elite version holds twice as much fluid as the Advanced Fluid Tank, which means it can hold &a56k mB&f of fluid (56 buckets)."
+			]
+			dependencies: ["106D46ACF4A554A1"]
+			id: "1D475D06EFC829B5"
+			tasks: [{
+				id: "73524C25A340E976"
+				type: "item"
+				item: "mekanism:elite_fluid_tank"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 7.0d
+			description: [
+				"The Ultimate Fluid Tank is made by reinforcing an Elite Fluid Tank with 4 more Iron Ingots and 4 Atomic Alloys."
+				""
+				"This Ultimate version holds twice as much fluid as the Elite Fluid Tank, which means it can hold &a112k mB&f of fluid (112 buckets)."
+			]
+			dependencies: ["1D475D06EFC829B5"]
+			id: "7FB133615DC58178"
+			tasks: [{
+				id: "0A4AE2A91A70F726"
+				type: "item"
+				item: "mekanism:ultimate_fluid_tank"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			description: [
+				"A Dynamic Tank Structure is a multi-block structure made from Dynamic Tank walls and Dynamic Valves (to access the single type of fluid it contains). The structure can be made in any shape, but all outer edges (corners) must be made from Dynamic Tank blocks, and the Dynamic Valves must be in a face with the internal void behind it (the open space where the fluid is)."
+				""
+				"The minimum size for a Dynamic Tank Structure is a hollow 3x3x3, and the maximum is a hollow 18x18x18 structure."
+				""
+				"Every block making up the tank walls (whether Dynamic Tank or Dynamic Valve blocks), as well as the air blocks inside the structure, provides 16k mB of fluid storage - so the minimum tank structure of 3x3x3 has a capacity of 27 x 16k mB - or 432k mB (432 buckets) of storage."
+				""
+				"When making a Dynamic Tank structure, it will flash with \"active redstone\" particles when the tank structure is considered valid."
+			]
+			id: "6EA1BED42FEAFC0C"
+			tasks: [
+				{
+					id: "77712FE8EB1ABC14"
+					type: "item"
+					item: "mekanism:dynamic_tank"
+				}
+				{
+					id: "52F2FB024B373273"
+					type: "item"
+					item: "mekanism:dynamic_valve"
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 2.5d
+			description: ["The Fluid Tank is a fluid storage mechanism that can store up to 8 buckets of fluid per block. Fluid tanks will also merge with adjacent tanks (1x1, 2x2 or 3x3 footprint), up to 32 blocks high in a 3x3 footprint, allowing to store up to 2,304 buckets of any fluid."]
+			id: "064A1B5AC31A3824"
+			tasks: [{
+				id: "4733423E499441B0"
+				type: "item"
+				item: "create:fluid_tank"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.5d
+			description: ["While this Fuel Tank is designed for use as part of a Smeltery and is meant to store Lava or Blazing Blood as fuel for the Smeltery to use, it can also be used as a portable tank holding up to 4 buckets of these fluids."]
+			id: "5B3D08C917D40635"
+			tasks: [{
+				id: "0F33C3A0CF589972"
+				type: "item"
+				item: "tconstruct:seared_fuel_tank"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.5d
+			description: ["This tank is ideal for holding up to 32 ingots of molten metals. While designed to be used for outputs from a Smeltery, it can also be used as a portable tank to be able to store or safely move molten metals around the Outpost."]
+			id: "264E2498394090CF"
+			tasks: [{
+				id: "04AD57603F420461"
+				type: "item"
+				item: "tconstruct:seared_ingot_tank"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.5d
+			description: ["While this Fuel Tank is designed for use as part of a Foundry and is meant to store Lava or Blazing Blood as fuel for the Foundry to use, it can also be used as a portable tank holding up to 4 buckets of these fluids."]
+			id: "40870017816A89CA"
+			tasks: [{
+				id: "3EB0AAD5F85A21A7"
+				type: "item"
+				item: "tconstruct:scorched_fuel_tank"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.5d
+			description: ["This tank is ideal for holding up to 3 blocks of molten metals. While designed to be used for outputs from a Foundry or as inputs for an Alloyer, it can also be used as a portable tank."]
+			id: "0576A7A9C57F2EB8"
+			tasks: [{
+				id: "3747A93E54442B35"
+				type: "item"
+				item: "tconstruct:scorched_ingot_tank"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.5d
+			description: ["The Common Black Hole Tank can hold &a16 buckets&f of any single fluid."]
+			id: "14ACC056658FE59C"
+			tasks: [{
+				id: "665FD057DEBCF1C5"
+				type: "item"
+				item: "industrialforegoing:common_black_hole_tank"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.5d
+			description: ["The Pity Black Hole Tank can hold &a64 buckets&f of any single fluid."]
+			id: "7486BE3EE148DB62"
+			tasks: [{
+				id: "2E6F5247392D7BA1"
+				type: "item"
+				item: "industrialforegoing:pity_black_hole_tank"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.5d
+			description: ["The Simple Black Hole Tank can hold &a1024 buckets&f of any single fluid."]
+			id: "126C76D1A7178D26"
+			tasks: [{
+				id: "35A97A70ED7C3974"
+				type: "item"
+				item: "industrialforegoing:simple_black_hole_tank"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.5d
+			description: ["The Advanced Black Hole Tank can hold &a64k (65536) buckets&f of any single fluid."]
+			id: "14F553BA1ABCEDEA"
+			tasks: [{
+				id: "2C0C70C069B020A5"
+				type: "item"
+				item: "industrialforegoing:advanced_black_hole_tank"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.5d
+			description: ["The Supreme Black Hole Tank can hold &a2.147 million buckets&f of any single fluid!!"]
+			id: "20BB802691FB3B2B"
+			tasks: [{
+				id: "40041A6C578B24AD"
+				type: "item"
+				item: "industrialforegoing:supreme_black_hole_tank"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 2.5d
+			description: [
+				"The Ender Tank works much like an Ender Chest, except that it can hold one type of fluid in it instead of items. All Ender Tanks sharing the same channel (set by applying dyes to the buttons on top, or in a crafting grid) have access to the same fluid storage tank."
+				""
+				"Essentially what this means is that if you have two Ender Tanks with the same channel and fill one with lava, you can extract that lava from the other tank - this works cross-dimensionally as well as over any distance!"
+				""
+				"p.s. If you're paranoid about other people in other dimensions nicking your stuff, you can make your Ender Tanks private by applying a Diamond to the dial on the tank."
+			]
+			id: "6FBCCE519B37691C"
+			tasks: [{
+				id: "5FEE4E350CD93F12"
+				type: "item"
+				item: "enderstorage:ender_tank"
+			}]
+		}
+		{
+			title: "Fluid Storage"
+			x: 0.5d
+			y: 0.5d
+			shape: "gear"
+			description: [
+				"Having tanks capable of storing fluids is important for many different reasons. Sometimes it's just because you want some of a liquid on hand for when you need it, and sometimes it's to act as a buffer between different stages in a complex multi-stage process."
+				""
+				"Whatever your needs, this section of the Survival Guide lays out your main options for fluid storage."
+			]
+			id: "07ECB3D29598CFBC"
+			tasks: [{
+				id: "6143AF856557D38C"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.5d
+			description: [
+				"The Fluid Cell starts off with a capacity of 32 buckets. What makes this tank different to others is that it can be configured to limit the flow of fluid into and out of the block, and can be upgraded through the use of augments."
+				""
+				"With Resonant Integral Components and an Expanded Tank Construction augment it can hold 512 buckets of fluid. It is also possible to add a Filter Augment to these tanks to limit the types of fluids than can be stored in it."
+			]
+			id: "343A0B3CF993D5B0"
+			tasks: [{
+				id: "726F271DE4E64E40"
+				type: "item"
+				item: {
+					id: "thermal:fluid_cell"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							TankInv: [{
+								FluidName: "minecraft:empty"
+								Capacity: 32000
+								Tank: 0b
+								Amount: 0
+							}]
+						}
+					}
+				}
+			}]
+		}
+	]
+}

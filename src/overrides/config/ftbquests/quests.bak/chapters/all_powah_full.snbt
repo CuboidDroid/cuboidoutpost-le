@@ -1,0 +1,2042 @@
+{
+	id: "632ED20BD2E3E885"
+	group: "4785B5C7E26FA669"
+	order_index: 1
+	filename: "all_powah_full"
+	title: "All Powah-ful!"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -6.5d
+			y: -2.0d
+			description: [
+				"The Energy Cables are fairly high capacity, and are quite special in that they do not block movement."
+				""
+				"The Starter Energy Cables can transfer at a rate of 100 FE/t."
+			]
+			dependencies: [
+				"3A1537AD1DA341FB"
+				"2A3A34A47D8AF234"
+				"03BEA2FE7419FFEF"
+			]
+			id: "493C96471F84833F"
+			tasks: [{
+				id: "08BD799F60E001DF"
+				type: "item"
+				item: "powah:energy_cable_starter"
+			}]
+			rewards: [{
+				id: "1094C2B4E87CF7E2"
+				type: "item"
+				item: "powah:energy_cable_starter"
+				count: 12
+				random_bonus: 12
+			}]
+		}
+		{
+			x: -6.5d
+			y: -0.5d
+			description: ["The Basic Energy Cables can transfer at a rate of 1.4k FE/t."]
+			dependencies: [
+				"493C96471F84833F"
+				"51B58AF1E1899878"
+			]
+			optional: true
+			id: "2E77948235348C47"
+			tasks: [{
+				id: "61D1D68B70F46C3F"
+				type: "item"
+				item: "powah:energy_cable_basic"
+			}]
+			rewards: [{
+				id: "4D0130277E280292"
+				type: "item"
+				item: "powah:energy_cable_basic"
+				count: 12
+				random_bonus: 12
+			}]
+		}
+		{
+			x: -6.5d
+			y: 1.0d
+			description: ["The Hardened Energy Cables can transfer at a rate of 5k FE/t."]
+			dependencies: [
+				"2E77948235348C47"
+				"5C269BA7E9F8936E"
+			]
+			optional: true
+			id: "44912495B90112EA"
+			tasks: [{
+				id: "628F78052FE832DD"
+				type: "item"
+				item: "powah:energy_cable_hardened"
+			}]
+			rewards: [{
+				id: "49E1286E0107189C"
+				type: "item"
+				item: "powah:energy_cable_hardened"
+				count: 12
+				random_bonus: 12
+			}]
+		}
+		{
+			x: -6.5d
+			y: 2.5d
+			description: ["The Blazing Energy Cables can transfer at a rate of 18k FE/t."]
+			dependencies: [
+				"44912495B90112EA"
+				"5B2DE820AEC7AD5D"
+			]
+			optional: true
+			id: "4A372DE347128513"
+			tasks: [{
+				id: "422C9CC2B975A0CD"
+				type: "item"
+				item: "powah:energy_cable_blazing"
+			}]
+			rewards: [{
+				id: "501896775F16EB7B"
+				type: "item"
+				item: "powah:energy_cable_blazing"
+				count: 12
+				random_bonus: 12
+			}]
+		}
+		{
+			x: -6.5d
+			y: 4.0d
+			description: ["The Niotic Energy Cables can transfer at a rate of 40k FE/t."]
+			dependencies: [
+				"4A372DE347128513"
+				"52129C82DA500585"
+			]
+			optional: true
+			id: "25D779C1E7CAC407"
+			tasks: [{
+				id: "28CFE45AB9C294BC"
+				type: "item"
+				item: "powah:energy_cable_niotic"
+			}]
+			rewards: [{
+				id: "402BAEAA799639D7"
+				type: "item"
+				item: "powah:energy_cable_niotic"
+				count: 12
+				random_bonus: 12
+			}]
+		}
+		{
+			x: -6.5d
+			y: 5.5d
+			description: ["The Spirited Energy Cables can transfer at a rate of 90k FE/t."]
+			dependencies: [
+				"25D779C1E7CAC407"
+				"04956D12ACA7737F"
+			]
+			optional: true
+			id: "5B74CB59CABE874B"
+			tasks: [{
+				id: "5738DB1E7FE3357A"
+				type: "item"
+				item: "powah:energy_cable_spirited"
+			}]
+			rewards: [{
+				id: "6CDCB4140B04A7AC"
+				type: "item"
+				item: "powah:energy_cable_spirited"
+				count: 12
+				random_bonus: 12
+			}]
+		}
+		{
+			x: -6.5d
+			y: 7.0d
+			description: ["The Nitro Energy Cables can transfer at a rate of 200k FE/t."]
+			dependencies: [
+				"5B74CB59CABE874B"
+				"2D29B68E6C38D2C6"
+			]
+			optional: true
+			id: "7AD6DD7D8640D952"
+			tasks: [{
+				id: "0EB4ACFC49297319"
+				type: "item"
+				item: "powah:energy_cable_nitro"
+			}]
+			rewards: [{
+				id: "5F186D6073F9191B"
+				type: "item"
+				item: "powah:energy_cable_nitro"
+				count: 12
+				random_bonus: 12
+			}]
+		}
+		{
+			x: -4.5d
+			y: -2.0d
+			description: [
+				"Energy Cells are like batteries. They're great for storing up additional energy in a buffer to smooth out your power production and supply."
+				""
+				"A really good example of this is for things like Solar Panels which only produce power during the day. By adding an Energy Cell between the Solar Panels producing power and the machines consuming power, it's possible to store up extra power which can then be drawn from at night when the Solar Cells are not producing any energy."
+			]
+			dependencies: [
+				"4F6101F00C8E011E"
+				"03BEA2FE7419FFEF"
+				"2A3A34A47D8AF234"
+			]
+			id: "2C6F475E57D0B425"
+			tasks: [{
+				id: "1F507EFF6C5AB144"
+				type: "item"
+				item: "powah:energy_cell_starter"
+			}]
+			rewards: [{
+				id: "78024C2980205324"
+				type: "item"
+				item: "powah:energy_cell_starter"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -0.5d
+			dependencies: [
+				"2C6F475E57D0B425"
+				"51B58AF1E1899878"
+			]
+			optional: true
+			id: "101A915D50E6D39F"
+			tasks: [{
+				id: "1CD6DB0C60C05098"
+				type: "item"
+				item: "powah:energy_cell_basic"
+			}]
+			rewards: [{
+				id: "05F4B63994538802"
+				type: "item"
+				item: "powah:energy_cell_basic"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 1.0d
+			dependencies: [
+				"101A915D50E6D39F"
+				"5C269BA7E9F8936E"
+			]
+			optional: true
+			id: "5B31C73F8A4EF052"
+			tasks: [{
+				id: "1B3D3B123E26D8B5"
+				type: "item"
+				item: "powah:energy_cell_hardened"
+			}]
+			rewards: [{
+				id: "163D749F58643A3B"
+				type: "item"
+				item: "powah:energy_cell_hardened"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 2.5d
+			dependencies: [
+				"5B31C73F8A4EF052"
+				"5B2DE820AEC7AD5D"
+			]
+			optional: true
+			id: "3B99A957125EA052"
+			tasks: [{
+				id: "21BE782588B1A551"
+				type: "item"
+				item: "powah:energy_cell_blazing"
+			}]
+			rewards: [{
+				id: "3B85AE0D97B56440"
+				type: "item"
+				item: "powah:energy_cell_blazing"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 4.0d
+			dependencies: [
+				"3B99A957125EA052"
+				"52129C82DA500585"
+			]
+			optional: true
+			id: "67010FD8FA6C7A91"
+			tasks: [{
+				id: "046ABC4D20593BA8"
+				type: "item"
+				item: "powah:energy_cell_niotic"
+			}]
+			rewards: [{
+				id: "3AD56DCA0FBEA164"
+				type: "item"
+				item: "powah:energy_cell_niotic"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 5.5d
+			dependencies: [
+				"67010FD8FA6C7A91"
+				"04956D12ACA7737F"
+			]
+			optional: true
+			id: "79AE8BB715F5E81B"
+			tasks: [{
+				id: "3F055B110F79E480"
+				type: "item"
+				item: "powah:energy_cell_spirited"
+			}]
+			rewards: [{
+				id: "009DB8D604BA7B09"
+				type: "item"
+				item: "powah:energy_cell_spirited"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 7.0d
+			dependencies: [
+				"79AE8BB715F5E81B"
+				"2D29B68E6C38D2C6"
+			]
+			optional: true
+			id: "62CCDA110A9417DD"
+			tasks: [{
+				id: "3F4F8E532F5202BD"
+				type: "item"
+				item: "powah:energy_cell_nitro"
+			}]
+			rewards: [{
+				id: "52635AB1127FF8FB"
+				type: "item"
+				item: "powah:energy_cell_nitro"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.0d
+			description: [
+				"Ender Cells allow the power stored in Energy Cells to be transmitted wirelessly to Ender Gates, which can be attached to machines directly, significantly cutting down on wiring clutter."
+				""
+				"Ender Cells do not contain any capacity themselves - you will need to add Energy Cells to the Ender Cell to make the energy capacity available to it."
+			]
+			dependencies: [
+				"05FE63B0135FF8CB"
+				"2A3A34A47D8AF234"
+			]
+			id: "0A9474717CEDCC65"
+			tasks: [{
+				id: "4783E027FD67FD1D"
+				type: "item"
+				item: "powah:ender_cell_starter"
+			}]
+			rewards: [{
+				id: "4FB59BA5F83E4FC7"
+				type: "item"
+				item: "powah:ender_core"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: [
+				"05FE63B0135FF8CB"
+				"2A3A34A47D8AF234"
+			]
+			optional: true
+			id: "0E1217608414F7C1"
+			tasks: [{
+				id: "778FFF8F40DF4FDA"
+				type: "item"
+				item: "powah:ender_cell_basic"
+			}]
+			rewards: [{
+				id: "2B12451B90D6257C"
+				type: "item"
+				item: "powah:ender_core"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: [
+				"05FE63B0135FF8CB"
+				"3B895232E8390F8F"
+			]
+			optional: true
+			id: "130FE7F579AF27F6"
+			tasks: [{
+				id: "21B22158C962171F"
+				type: "item"
+				item: "powah:ender_cell_hardened"
+			}]
+			rewards: [{
+				id: "28DD9269E69A47B2"
+				type: "item"
+				item: "powah:ender_core"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.5d
+			hide_dependency_lines: true
+			dependencies: [
+				"05FE63B0135FF8CB"
+				"4B03FC50AF4FB103"
+			]
+			optional: true
+			id: "5F082419141E5D31"
+			tasks: [{
+				id: "5CE18A9C8FC81E66"
+				type: "item"
+				item: "powah:ender_cell_blazing"
+			}]
+			rewards: [{
+				id: "3DFDAEA6725003A9"
+				type: "item"
+				item: "powah:ender_core"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: [
+				"05FE63B0135FF8CB"
+				"5FB416898A60641C"
+			]
+			optional: true
+			id: "44C9E15D59C7DB4B"
+			tasks: [{
+				id: "37CD3390E6FB9FC6"
+				type: "item"
+				item: "powah:ender_cell_niotic"
+			}]
+			rewards: [{
+				id: "6C89401461B660E2"
+				type: "item"
+				item: "powah:ender_core"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 5.5d
+			hide_dependency_lines: true
+			dependencies: [
+				"05FE63B0135FF8CB"
+				"7643B8FEE6A22D62"
+			]
+			optional: true
+			id: "49573498469246DE"
+			tasks: [{
+				id: "1EB503759572440B"
+				type: "item"
+				item: "powah:ender_cell_spirited"
+			}]
+			rewards: [{
+				id: "6CEA1D0A4AC53408"
+				type: "item"
+				item: "powah:ender_core"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 7.0d
+			hide_dependency_lines: true
+			dependencies: [
+				"05FE63B0135FF8CB"
+				"272B81B875079A94"
+			]
+			optional: true
+			id: "1B660FEB4CB763D2"
+			tasks: [{
+				id: "12C50A3532242720"
+				type: "item"
+				item: "powah:ender_cell_nitro"
+			}]
+			rewards: [{
+				id: "495AD2C7FADA3A06"
+				type: "item"
+				item: "powah:ender_core"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			description: [
+				"Ender Gates will draw power from your Ender Cells wirelessly."
+				""
+				"What this means is that you can connect Ender Gates to machines or distant networks (for example, an Energy Cell in another building) and you will not need to run long lines of energy cable in order to get power transferred."
+				""
+				"&eNote: Due to a limitation in AE2, these can't be crafted in an ME Crafting Grid. You will need to craft these in a standard crafting table instead.&f"
+			]
+			dependencies: [
+				"05FE63B0135FF8CB"
+				"08BD799F60E001DF"
+			]
+			id: "2D30FB64918D7F2A"
+			tasks: [{
+				id: "62D9940A34D51992"
+				type: "item"
+				item: "powah:ender_gate_starter"
+			}]
+			rewards: [{
+				id: "6BD140B705914C69"
+				type: "item"
+				item: "powah:ender_gate_starter"
+				count: 4
+				random_bonus: 8
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: [
+				"05FE63B0135FF8CB"
+				"61D1D68B70F46C3F"
+			]
+			optional: true
+			id: "6921A713403ACC02"
+			tasks: [{
+				id: "74B34AA7EFC46D86"
+				type: "item"
+				item: "powah:ender_gate_basic"
+			}]
+			rewards: [{
+				id: "06F5D8B31218B87E"
+				type: "item"
+				item: "powah:ender_gate_basic"
+				count: 4
+				random_bonus: 8
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: [
+				"05FE63B0135FF8CB"
+				"628F78052FE832DD"
+			]
+			optional: true
+			id: "7413E29E20D1AE1C"
+			tasks: [{
+				id: "41E2F05A3FE1D195"
+				type: "item"
+				item: "powah:ender_gate_hardened"
+			}]
+			rewards: [{
+				id: "31BD9419D0F192A4"
+				type: "item"
+				item: "powah:ender_gate_hardened"
+				count: 4
+				random_bonus: 8
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			hide_dependency_lines: true
+			dependencies: [
+				"05FE63B0135FF8CB"
+				"422C9CC2B975A0CD"
+			]
+			optional: true
+			id: "4E6FDE97F643DE2C"
+			tasks: [{
+				id: "5EF6F0361F205EE2"
+				type: "item"
+				item: "powah:ender_gate_blazing"
+			}]
+			rewards: [{
+				id: "33CF14AB9709D437"
+				type: "item"
+				item: "powah:ender_gate_blazing"
+				count: 4
+				random_bonus: 8
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: [
+				"05FE63B0135FF8CB"
+				"28CFE45AB9C294BC"
+			]
+			optional: true
+			id: "047B5B962C01C938"
+			tasks: [{
+				id: "1B6A87A33614EC84"
+				type: "item"
+				item: "powah:ender_gate_niotic"
+			}]
+			rewards: [{
+				id: "5B913F06ACB84AB0"
+				type: "item"
+				item: "powah:ender_gate_niotic"
+				count: 4
+				random_bonus: 8
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.5d
+			hide_dependency_lines: true
+			dependencies: [
+				"05FE63B0135FF8CB"
+				"5738DB1E7FE3357A"
+			]
+			optional: true
+			id: "01E9E5D048B60943"
+			tasks: [{
+				id: "279E628B3D7134A7"
+				type: "item"
+				item: "powah:ender_gate_spirited"
+			}]
+			rewards: [{
+				id: "6862E963C7E5695E"
+				type: "item"
+				item: "powah:ender_gate_spirited"
+				count: 4
+				random_bonus: 8
+			}]
+		}
+		{
+			x: -0.5d
+			y: 7.0d
+			hide_dependency_lines: true
+			dependencies: [
+				"05FE63B0135FF8CB"
+				"0EB4ACFC49297319"
+			]
+			optional: true
+			id: "54935DAE89459992"
+			tasks: [{
+				id: "19F96C77FA0B6A64"
+				type: "item"
+				item: "powah:ender_gate_nitro"
+			}]
+			rewards: [{
+				id: "71AB6B3F754B5EA4"
+				type: "item"
+				item: "powah:ender_gate_nitro"
+				count: 4
+				random_bonus: 8
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.5d
+			dependencies: [
+				"17073588CB8CC58B"
+				"03BEA2FE7419FFEF"
+				"313C2018A2C04815"
+			]
+			id: "05FE63B0135FF8CB"
+			tasks: [{
+				id: "6257FBFFB613918C"
+				type: "item"
+				item: "powah:ender_core"
+			}]
+			rewards: [{
+				id: "743EBCD2826F53FB"
+				type: "item"
+				item: "powah:ender_core"
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.0d
+			description: ["A Player Transmitter is the device that can wirelessly send power directly to your equipment. The different tiers increase the speed at which power can be transferred."]
+			dependencies: [
+				"03BEA2FE7419FFEF"
+				"4F6101F00C8E011E"
+				"6FB229A249E3E9A3"
+			]
+			id: "65130B4BA77FF206"
+			tasks: [{
+				id: "04B58E408CF6C819"
+				type: "item"
+				item: "powah:player_transmitter_starter"
+			}]
+			rewards: [{
+				id: "09BE547BC8371231"
+				type: "item"
+				item: "powah:dielectric_casing"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			dependencies: [
+				"65130B4BA77FF206"
+				"51B58AF1E1899878"
+			]
+			optional: true
+			id: "44F74A78A5A6CD04"
+			tasks: [{
+				id: "21FDB3BE37C652F9"
+				type: "item"
+				item: "powah:player_transmitter_basic"
+			}]
+			rewards: [{
+				id: "50114185C6B2EC3D"
+				type: "item"
+				item: "powah:dielectric_casing"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			dependencies: [
+				"44F74A78A5A6CD04"
+				"5C269BA7E9F8936E"
+			]
+			optional: true
+			id: "5C4C15AE9D70347B"
+			tasks: [{
+				id: "205CB1E5C09FDF33"
+				type: "item"
+				item: "powah:player_transmitter_hardened"
+			}]
+			rewards: [{
+				id: "11069C0C560B4149"
+				type: "item"
+				item: "powah:dielectric_casing"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.5d
+			dependencies: [
+				"5C4C15AE9D70347B"
+				"5B2DE820AEC7AD5D"
+			]
+			optional: true
+			id: "2B729DCE55586829"
+			tasks: [{
+				id: "3490007D84AB853D"
+				type: "item"
+				item: "powah:player_transmitter_blazing"
+			}]
+			rewards: [{
+				id: "341F31FEE727C7CE"
+				type: "item"
+				item: "powah:dielectric_casing"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.0d
+			dependencies: [
+				"2B729DCE55586829"
+				"52129C82DA500585"
+			]
+			optional: true
+			id: "67B2F7C1C59503D4"
+			tasks: [{
+				id: "7331289C1B8FDA9E"
+				type: "item"
+				item: "powah:player_transmitter_niotic"
+			}]
+			rewards: [{
+				id: "3A91CBEEB2E05414"
+				type: "item"
+				item: "powah:dielectric_casing"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 5.5d
+			dependencies: [
+				"67B2F7C1C59503D4"
+				"04956D12ACA7737F"
+			]
+			optional: true
+			id: "2C900556924DB990"
+			tasks: [{
+				id: "4B4A9509E2AC82E2"
+				type: "item"
+				item: "powah:player_transmitter_spirited"
+			}]
+			rewards: [{
+				id: "663AF19AC5B85F65"
+				type: "item"
+				item: "powah:dielectric_casing"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 7.0d
+			dependencies: [
+				"2C900556924DB990"
+				"2D29B68E6C38D2C6"
+			]
+			optional: true
+			id: "2AD316FCC33F8BD6"
+			tasks: [{
+				id: "6B2CD1C9F0B30004"
+				type: "item"
+				item: "powah:player_transmitter_nitro"
+			}]
+			rewards: [{
+				id: "653CE9E0E675100B"
+				type: "item"
+				item: "powah:dielectric_casing"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.5d
+			description: [
+				"A Player Aerial Pearl is made by using an empty Aerial Pearl on a Zombie or a Husk. This activates the Aerial Pearl and binds it to you."
+				""
+				"These activated Aerial Pearls can then be used to create a method of wirelessly transferring power directly to your equipment or items in your inventory that need to be charged."
+			]
+			dependencies: ["380596D31AD90229"]
+			id: "6FB229A249E3E9A3"
+			tasks: [{
+				id: "56EB2956191C67AC"
+				type: "item"
+				item: "powah:player_aerial_pearl"
+			}]
+			rewards: [{
+				id: "02468B9E60D49CF1"
+				type: "item"
+				item: "powah:dielectric_casing"
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 1.5d
+			y: -5.0d
+			description: ["An Aerial Pearl on its own is not much use. You will need to activate it and bind it to yourself."]
+			dependencies: [
+				"17073588CB8CC58B"
+				"2A3A34A47D8AF234"
+				"5D2E655D627DE6AA"
+			]
+			id: "380596D31AD90229"
+			tasks: [{
+				id: "41F1D965837EDA7F"
+				type: "item"
+				item: "powah:aerial_pearl"
+			}]
+			rewards: [{
+				id: "51E16A2972AC2C36"
+				type: "item"
+				item: "powah:aerial_pearl"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.0d
+			description: ["Energy Hoppers can be pointed at an inventory (like a chest) and, when supplied with power, will charge any items in the target inventory that requires charging."]
+			dependencies: [
+				"4F6101F00C8E011E"
+				"03BEA2FE7419FFEF"
+			]
+			id: "4C9F93629D2517A1"
+			tasks: [{
+				id: "4E0838A1199B6E4E"
+				type: "item"
+				item: "powah:energy_hopper_starter"
+			}]
+			rewards: [{
+				id: "6A40E0B7ABE11C47"
+				type: "item"
+				item: "powah:capacitor_basic_tiny"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			dependencies: [
+				"4C9F93629D2517A1"
+				"51B58AF1E1899878"
+			]
+			optional: true
+			id: "2930A58CC564276C"
+			tasks: [{
+				id: "72C02E7AB1EBCC25"
+				type: "item"
+				item: "powah:energy_hopper_basic"
+			}]
+			rewards: [{
+				id: "13E61E1BF03373CF"
+				type: "item"
+				item: "powah:capacitor_basic"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.5d
+			dependencies: [
+				"1C2C88E58A520D8C"
+				"5B2DE820AEC7AD5D"
+			]
+			optional: true
+			id: "1788CDE1F7F8B42A"
+			tasks: [{
+				id: "3DCD7FACF0A9C755"
+				type: "item"
+				item: "powah:energy_hopper_blazing"
+			}]
+			rewards: [{
+				id: "41C931BEA892F4BE"
+				type: "item"
+				item: "powah:capacitor_blazing"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.0d
+			dependencies: [
+				"2930A58CC564276C"
+				"5C269BA7E9F8936E"
+			]
+			optional: true
+			id: "1C2C88E58A520D8C"
+			tasks: [{
+				id: "7F1C83A0DC050A75"
+				type: "item"
+				item: "powah:energy_hopper_hardened"
+			}]
+			rewards: [{
+				id: "78B65DE578F2B979"
+				type: "item"
+				item: "powah:capacitor_hardened"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 3.5d
+			y: 4.0d
+			dependencies: [
+				"1788CDE1F7F8B42A"
+				"52129C82DA500585"
+			]
+			optional: true
+			id: "2AE8B85B6AF17EAD"
+			tasks: [{
+				id: "3FF10A76ABAB92C7"
+				type: "item"
+				item: "powah:energy_hopper_niotic"
+			}]
+			rewards: [{
+				id: "2FD42805455F8D00"
+				type: "item"
+				item: "powah:capacitor_niotic"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 3.5d
+			y: 5.5d
+			dependencies: [
+				"2AE8B85B6AF17EAD"
+				"04956D12ACA7737F"
+			]
+			optional: true
+			id: "1F6AAC92EE8195B1"
+			tasks: [{
+				id: "3AC6987C7B56B915"
+				type: "item"
+				item: "powah:energy_hopper_spirited"
+			}]
+			rewards: [{
+				id: "29A5C20D7BA60BD6"
+				type: "item"
+				item: "powah:capacitor_spirited"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 3.5d
+			y: 7.0d
+			dependencies: [
+				"1F6AAC92EE8195B1"
+				"2D29B68E6C38D2C6"
+			]
+			optional: true
+			id: "63908071F0BC3E9F"
+			tasks: [{
+				id: "715273943C29B167"
+				type: "item"
+				item: "powah:energy_hopper_nitro"
+			}]
+			rewards: [{
+				id: "43B66E071C258718"
+				type: "item"
+				item: "powah:capacitor_nitro"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 5.5d
+			y: -2.0d
+			description: ["Energy Dischargers extract any energy stored in items and put that power into an internal buffer. That power can then be extracted out to charge energy cells or power connected machinery."]
+			dependencies: [
+				"4F6101F00C8E011E"
+				"03BEA2FE7419FFEF"
+			]
+			id: "515742BA062C7550"
+			tasks: [{
+				id: "504A18A2F04A3D8F"
+				type: "item"
+				item: "powah:energy_discharger_starter"
+			}]
+			rewards: [{
+				id: "53EC9E141D0C68E4"
+				type: "item"
+				item: "powah:capacitor_basic_tiny"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 5.5d
+			y: -0.5d
+			dependencies: [
+				"4F6101F00C8E011E"
+				"51B58AF1E1899878"
+			]
+			optional: true
+			id: "0CDB46E2ECEC6AF8"
+			tasks: [{
+				id: "6D26F2897B5ACC5D"
+				type: "item"
+				item: "powah:energy_discharger_basic"
+			}]
+			rewards: [{
+				id: "04F55A021DDC15C0"
+				type: "item"
+				item: "powah:capacitor_basic"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.0d
+			dependencies: [
+				"4F6101F00C8E011E"
+				"5C269BA7E9F8936E"
+			]
+			optional: true
+			id: "1E1F45056015761F"
+			tasks: [{
+				id: "68B610AC2195F2EA"
+				type: "item"
+				item: "powah:energy_discharger_hardened"
+			}]
+			rewards: [{
+				id: "15E858E666FCA255"
+				type: "item"
+				item: "powah:capacitor_hardened"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.5d
+			dependencies: [
+				"4F6101F00C8E011E"
+				"5B2DE820AEC7AD5D"
+			]
+			optional: true
+			id: "4A458C1026EC231A"
+			tasks: [{
+				id: "645A958E2205373C"
+				type: "item"
+				item: "powah:energy_discharger_blazing"
+			}]
+			rewards: [{
+				id: "49585D719AA19165"
+				type: "item"
+				item: "powah:capacitor_blazing"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.0d
+			dependencies: [
+				"4F6101F00C8E011E"
+				"52129C82DA500585"
+			]
+			optional: true
+			id: "4607E6CF75E30388"
+			tasks: [{
+				id: "547ECA4BC8CE5256"
+				type: "item"
+				item: "powah:energy_discharger_niotic"
+			}]
+			rewards: [{
+				id: "411C2E8BEB5E8233"
+				type: "item"
+				item: "powah:capacitor_niotic"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 5.5d
+			y: 5.5d
+			dependencies: [
+				"4F6101F00C8E011E"
+				"04956D12ACA7737F"
+			]
+			optional: true
+			id: "3F0D533B979CCB04"
+			tasks: [{
+				id: "2A6469D87CA582CA"
+				type: "item"
+				item: "powah:energy_discharger_spirited"
+			}]
+			rewards: [{
+				id: "413A3555E17950D6"
+				type: "item"
+				item: "powah:capacitor_spirited"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 5.5d
+			y: 7.0d
+			dependencies: [
+				"4F6101F00C8E011E"
+				"2D29B68E6C38D2C6"
+			]
+			optional: true
+			id: "0DBFD90B6AEB8E95"
+			tasks: [{
+				id: "7CF441FCCC8621F8"
+				type: "item"
+				item: "powah:energy_discharger_nitro"
+			}]
+			rewards: [{
+				id: "44B5E9EFF070E62F"
+				type: "item"
+				item: "powah:capacitor_nitro"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 9.0d
+			y: -2.0d
+			description: [
+				"The Furnator turns burnable materials into raw power."
+				""
+				"The Starter version generates 15 FE per tick (300 FE per second)."
+			]
+			dependencies: [
+				"4F6101F00C8E011E"
+				"03BEA2FE7419FFEF"
+			]
+			id: "65DE8AA93BBEDBA5"
+			tasks: [{
+				id: "3842548453DCF8E6"
+				type: "item"
+				item: "powah:furnator_starter"
+			}]
+			rewards: [{
+				id: "7809E5457221FA3D"
+				type: "item"
+				item: "powah:capacitor_basic_tiny"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 9.0d
+			y: -0.5d
+			description: [
+				"The Furnator turns burnable materials into raw power."
+				""
+				"The Basic version generates 70 FE per tick (1400 FE per second)."
+			]
+			dependencies: [
+				"65DE8AA93BBEDBA5"
+				"51B58AF1E1899878"
+			]
+			optional: true
+			id: "4F1A356245D32D06"
+			tasks: [{
+				id: "54C5E12DF18C5C6D"
+				type: "item"
+				item: "powah:furnator_basic"
+			}]
+			rewards: [{
+				id: "459607B230ACDDA4"
+				type: "item"
+				item: "powah:capacitor_basic"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 9.0d
+			y: 1.0d
+			description: [
+				"The Furnator turns burnable materials into raw power."
+				""
+				"The Hardened version generates 180 FE per tick (3600 FE per second)."
+			]
+			dependencies: [
+				"4F1A356245D32D06"
+				"5C269BA7E9F8936E"
+			]
+			optional: true
+			id: "3B943B302C7D324A"
+			tasks: [{
+				id: "388AF6AD6F9AC5FF"
+				type: "item"
+				item: "powah:furnator_hardened"
+			}]
+			rewards: [{
+				id: "639852A39A5210DA"
+				type: "item"
+				item: "powah:capacitor_hardened"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 9.0d
+			y: 2.5d
+			description: [
+				"The Furnator turns burnable materials into raw power."
+				""
+				"The Blazing version generates 400 FE per tick (8000 FE per second)."
+			]
+			dependencies: [
+				"3B943B302C7D324A"
+				"5B2DE820AEC7AD5D"
+			]
+			optional: true
+			id: "0622101DBD613FFD"
+			tasks: [{
+				id: "2E83D83EA475BAD6"
+				type: "item"
+				item: "powah:furnator_blazing"
+			}]
+			rewards: [{
+				id: "2FF71761DD0AE19F"
+				type: "item"
+				item: "powah:capacitor_blazing"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 9.0d
+			y: 4.0d
+			description: [
+				"The Furnator turns burnable materials into raw power."
+				""
+				"The Niotic version generates 900 FE per tick (18000 FE per second)."
+			]
+			dependencies: [
+				"0622101DBD613FFD"
+				"52129C82DA500585"
+			]
+			optional: true
+			id: "1650802CCC3D9BDE"
+			tasks: [{
+				id: "232F39A5217A8F34"
+				type: "item"
+				item: "powah:furnator_niotic"
+			}]
+			rewards: [{
+				id: "63CB223A0484C330"
+				type: "item"
+				item: "powah:capacitor_niotic"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 9.0d
+			y: 5.5d
+			description: [
+				"The Furnator turns burnable materials into raw power."
+				""
+				"The Spirited version generates 2000 FE per tick (40000 FE per second)."
+			]
+			dependencies: [
+				"1650802CCC3D9BDE"
+				"04956D12ACA7737F"
+			]
+			optional: true
+			id: "6C667C73C43D415F"
+			tasks: [{
+				id: "3F8350E23920BD1D"
+				type: "item"
+				item: "powah:furnator_spirited"
+			}]
+			rewards: [{
+				id: "617B56D2BE0964A0"
+				type: "item"
+				item: "powah:capacitor_spirited"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 9.0d
+			y: 7.0d
+			description: [
+				"The Furnator turns burnable materials into raw power."
+				""
+				"The Nitro version generates 4800 FE per tick (96000 FE per second)."
+			]
+			dependencies: [
+				"6C667C73C43D415F"
+				"2D29B68E6C38D2C6"
+			]
+			optional: true
+			id: "1BDC3FE6E3C5A09D"
+			tasks: [{
+				id: "6F0EB5E069830E4E"
+				type: "item"
+				item: "powah:furnator_nitro"
+			}]
+			rewards: [{
+				id: "73D017F70E8C61CF"
+				type: "item"
+				item: "powah:capacitor_nitro"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 11.0d
+			y: -2.0d
+			description: [
+				"Magmators consume Lava in producing power."
+				""
+				"The Starter version generates 15 FE per tick (300 FE per second)."
+			]
+			dependencies: [
+				"4F6101F00C8E011E"
+				"03BEA2FE7419FFEF"
+			]
+			id: "5F9691A2040652E5"
+			tasks: [{
+				id: "66B26D8098CAC32B"
+				type: "item"
+				item: "powah:magmator_starter"
+			}]
+			rewards: [{
+				id: "2848BC5B4753F23F"
+				type: "item"
+				item: "powah:capacitor_basic_tiny"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 11.0d
+			y: -0.5d
+			description: [
+				"Magmators consume Lava in producing power."
+				""
+				"The Basic version generates 70 FE per tick (1400 FE per second)."
+			]
+			dependencies: [
+				"5F9691A2040652E5"
+				"51B58AF1E1899878"
+			]
+			optional: true
+			id: "33F2B130F2B64760"
+			tasks: [{
+				id: "3457C9ECFB6FFC52"
+				type: "item"
+				item: "powah:magmator_basic"
+			}]
+			rewards: [{
+				id: "1C43CC4143BADC18"
+				type: "item"
+				item: "powah:capacitor_basic"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 11.0d
+			y: 1.0d
+			description: [
+				"Magmators consume Lava in producing power."
+				""
+				"The Hardened version generates 180 FE per tick (3600 FE per second)."
+			]
+			dependencies: [
+				"33F2B130F2B64760"
+				"5C269BA7E9F8936E"
+			]
+			optional: true
+			id: "3C0087C27EB09AE5"
+			tasks: [{
+				id: "646B20BE83FEBE73"
+				type: "item"
+				item: "powah:magmator_hardened"
+			}]
+			rewards: [{
+				id: "213B73C56EC62AEE"
+				type: "item"
+				item: "powah:capacitor_hardened"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 11.0d
+			y: 2.5d
+			description: [
+				"Magmators consume Lava in producing power."
+				""
+				"The Blazing version generates 400 FE per tick (8000 FE per second)."
+			]
+			dependencies: [
+				"3C0087C27EB09AE5"
+				"5B2DE820AEC7AD5D"
+			]
+			optional: true
+			id: "7A5A35EE8E3C1D81"
+			tasks: [{
+				id: "538FA9B93CF8FFF5"
+				type: "item"
+				item: "powah:magmator_blazing"
+			}]
+			rewards: [{
+				id: "1FA4835DA12DDB73"
+				type: "item"
+				item: "powah:capacitor_blazing"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 11.0d
+			y: 4.0d
+			description: [
+				"Magmators consume Lava in producing power."
+				""
+				"The Niotic version generates 900 FE per tick (18000 FE per second)."
+			]
+			dependencies: [
+				"7A5A35EE8E3C1D81"
+				"52129C82DA500585"
+			]
+			optional: true
+			id: "3EE9C6E08570786D"
+			tasks: [{
+				id: "5AEE78FDA6E95773"
+				type: "item"
+				item: "powah:magmator_niotic"
+			}]
+			rewards: [{
+				id: "478E2413CB93C4B8"
+				type: "item"
+				item: "powah:capacitor_niotic"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 11.0d
+			y: 5.5d
+			description: [
+				"Magmators consume Lava in producing power."
+				""
+				"The Spirited version generates 2000 FE per tick (40000 FE per second)."
+			]
+			dependencies: [
+				"3EE9C6E08570786D"
+				"04956D12ACA7737F"
+			]
+			optional: true
+			id: "2A0839037D1887F8"
+			tasks: [{
+				id: "4147EDB5E11B2424"
+				type: "item"
+				item: "powah:magmator_spirited"
+			}]
+			rewards: [{
+				id: "378F7170863A0B8E"
+				type: "item"
+				item: "powah:capacitor_spirited"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 11.0d
+			y: 7.0d
+			description: [
+				"Magmators consume Lava in producing power."
+				""
+				"The Nitro version generates 4000 FE per tick (80000 FE per second)."
+			]
+			dependencies: [
+				"2A0839037D1887F8"
+				"2D29B68E6C38D2C6"
+			]
+			optional: true
+			id: "04ED6F336D1C3156"
+			tasks: [{
+				id: "5BADDBDB66FC4337"
+				type: "item"
+				item: "powah:magmator_nitro"
+			}]
+			rewards: [{
+				id: "4B2372B9E3506499"
+				type: "item"
+				item: "powah:capacitor_nitro"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 13.0d
+			y: -2.0d
+			description: [
+				"Must be placed above a heat source and supplied with water."
+				""
+				"The Starter version has a base rate of 3 FE per tick (60 FE per second)."
+			]
+			dependencies: [
+				"4F6101F00C8E011E"
+				"741D46D2F52D5F01"
+			]
+			id: "1EE8CC1E052DEB34"
+			tasks: [{
+				id: "42D2E0A88E7A5584"
+				type: "item"
+				item: "powah:thermo_generator_starter"
+			}]
+			rewards: [{
+				id: "3A6222702F6CC422"
+				type: "item"
+				item: "powah:capacitor_basic_tiny"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 13.0d
+			y: -0.5d
+			description: [
+				"Must be placed above a heat source and supplied with water."
+				""
+				"The Basic version has a base rate of 8 FE per tick (160 FE per second)."
+			]
+			dependencies: [
+				"1EE8CC1E052DEB34"
+				"51B58AF1E1899878"
+			]
+			optional: true
+			id: "5799657CADC0AC25"
+			tasks: [{
+				id: "333031AEB296C8D8"
+				type: "item"
+				item: "powah:thermo_generator_basic"
+			}]
+			rewards: [{
+				id: "1D55E970907F78E7"
+				type: "item"
+				item: "powah:capacitor_basic"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 13.0d
+			y: 1.0d
+			description: [
+				"Must be placed above a heat source and supplied with water."
+				""
+				"The Hardened version has a base rate of 18 FE per tick (360 FE per second)."
+			]
+			dependencies: [
+				"5799657CADC0AC25"
+				"5C269BA7E9F8936E"
+			]
+			optional: true
+			id: "2B844895A0231E8B"
+			tasks: [{
+				id: "42AA559688DEADD0"
+				type: "item"
+				item: "powah:thermo_generator_hardened"
+			}]
+			rewards: [{
+				id: "4F66CF21BAE0B44E"
+				type: "item"
+				item: "powah:capacitor_hardened"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 13.0d
+			y: 2.5d
+			description: [
+				"Must be placed above a heat source and supplied with water."
+				""
+				"The Blazing version has a base rate of 42 FE per tick (840 FE per second)."
+			]
+			dependencies: [
+				"2B844895A0231E8B"
+				"5B2DE820AEC7AD5D"
+			]
+			optional: true
+			id: "33542ED2A5F8DC82"
+			tasks: [{
+				id: "2EDEFEF1C3D68909"
+				type: "item"
+				item: "powah:thermo_generator_blazing"
+			}]
+			rewards: [{
+				id: "1643B6A931F3A64B"
+				type: "item"
+				item: "powah:capacitor_blazing"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 13.0d
+			y: 4.0d
+			description: [
+				"Must be placed above a heat source and supplied with water."
+				""
+				"The Niotic version has a base rate of 90 FE per tick (1800 FE per second)."
+			]
+			dependencies: [
+				"33542ED2A5F8DC82"
+				"52129C82DA500585"
+			]
+			optional: true
+			id: "75CAB23B407904BF"
+			tasks: [{
+				id: "4AB3E172F30994A8"
+				type: "item"
+				item: "powah:thermo_generator_niotic"
+			}]
+			rewards: [{
+				id: "72517EB9CD782146"
+				type: "item"
+				item: "powah:capacitor_niotic"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 13.0d
+			y: 5.5d
+			description: [
+				"Must be placed above a heat source and supplied with water."
+				""
+				"The Spirited version has a base rate of 200 FE per tick (4000 FE per second)."
+			]
+			dependencies: [
+				"75CAB23B407904BF"
+				"04956D12ACA7737F"
+			]
+			optional: true
+			id: "1B1032A9F0CE1928"
+			tasks: [{
+				id: "722885B6FCF4F6BB"
+				type: "item"
+				item: "powah:thermo_generator_spirited"
+			}]
+			rewards: [{
+				id: "05A769E9AB2A1C74"
+				type: "item"
+				item: "powah:capacitor_spirited"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 13.0d
+			y: 7.0d
+			description: [
+				"Must be placed above a heat source and supplied with water."
+				""
+				"The Nitro version has a base rate of 800 FE per tick (16000 FE per second)."
+			]
+			dependencies: [
+				"1B1032A9F0CE1928"
+				"2D29B68E6C38D2C6"
+			]
+			optional: true
+			id: "62C9FD074AA48D82"
+			tasks: [{
+				id: "168B0A6AA3D953BC"
+				type: "item"
+				item: "powah:thermo_generator_nitro"
+			}]
+			rewards: [{
+				id: "70BD5042386A20CD"
+				type: "item"
+				item: "powah:capacitor_nitro"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 13.0d
+			y: -3.5d
+			description: [
+				"Thermogenerators work by using Thermo Plates to obtain Powah from the temperature differential between the liquid cooling (a.k.a. water) being pumped into them and the heat source underneath them."
+				""
+				"The efficiency of the Thermogenerator depends on the temperatute of the heat source underneath - the hotter the material, the more efficient the power production. A temperature of 1000 degrees underneath will produce at 100% efficiency. Lower temperatures will produce less power, and higher temperatures will produce more. For example, Magma is 800 degrees and will produce at a rate of 80%, whereas a block of blazing crystal is 2800 degrees, and will produce at 280%. Lava is 1000 degrees, and produces at 100%."
+			]
+			dependencies: [
+				"03BEA2FE7419FFEF"
+				"639FAD5D76D7C78A"
+				"23547FB474FA1578"
+			]
+			id: "741D46D2F52D5F01"
+			tasks: [{
+				id: "2A6372EDDCF47DFD"
+				type: "item"
+				item: "powah:thermoelectric_plate"
+			}]
+			rewards: [{
+				id: "7BD0A312C2C222AD"
+				type: "item"
+				item: "powah:thermoelectric_plate"
+				random_bonus: 9
+			}]
+		}
+		{
+			x: 15.0d
+			y: -2.0d
+			description: ["The Starter Solar Panel generates 5 FE per tick (100 FE per second) during daylight hours."]
+			dependencies: [
+				"5B83188CDD92EE93"
+				"03BEA2FE7419FFEF"
+				"4F6101F00C8E011E"
+			]
+			id: "6E0FADA908A3001E"
+			tasks: [{
+				id: "238CDB0557D8807C"
+				type: "item"
+				item: "powah:solar_panel_starter"
+			}]
+			rewards: [{
+				id: "06D1D3983EC6AECB"
+				type: "item"
+				item: "powah:solar_panel_starter"
+				random_bonus: 1
+			}]
+		}
+		{
+			x: 15.0d
+			y: -3.5d
+			description: [
+				"Solar Panels require Photoelectric Panes to turn the Powah provided by the sun into electricity. They must have a clear \"view\" of the sky,"
+				""
+				"Solar Panels are great in that they are a totally passive method of power generation, but do have the drawback of only working when the sun is up. They are not particularly fast compared to other power sources, but they do offer a solution where you can put them down and forget about them!"
+				""
+				"It's a good idea to have some kind of energy storage available so that the energy is also available during the night time hours."
+			]
+			dependencies: [
+				"683CFCFCE9480C64"
+				"5D2E655D627DE6AA"
+				"6BDA5EEFCAB4C140"
+			]
+			id: "5B83188CDD92EE93"
+			tasks: [{
+				id: "4411AEBB2425A49A"
+				type: "item"
+				item: "powah:photoelectric_pane"
+			}]
+			rewards: [{
+				id: "09AACC61D46B4EC1"
+				type: "item"
+				item: "powah:photoelectric_pane"
+				count: 9
+				random_bonus: 11
+			}]
+		}
+		{
+			x: 15.0d
+			y: -0.5d
+			description: ["The Basic Solar Panel generates 12 FE per tick (240 FE per second) during daylight hours."]
+			dependencies: [
+				"6E0FADA908A3001E"
+				"51B58AF1E1899878"
+			]
+			optional: true
+			id: "38C76CFB7B4B89F2"
+			tasks: [{
+				id: "67A202B641EECC75"
+				type: "item"
+				item: "powah:solar_panel_basic"
+			}]
+			rewards: [{
+				id: "29649C3C03C98673"
+				type: "item"
+				item: "powah:solar_panel_basic"
+				random_bonus: 1
+			}]
+		}
+		{
+			x: 15.0d
+			y: 1.0d
+			description: ["The Hardened Solar Panel generates 40 FE per tick (800 FE per second) during daylight hours."]
+			dependencies: [
+				"38C76CFB7B4B89F2"
+				"5C269BA7E9F8936E"
+			]
+			optional: true
+			id: "3614FB8BB2F6BB78"
+			tasks: [{
+				id: "4102182D1366DAAD"
+				type: "item"
+				item: "powah:solar_panel_hardened"
+			}]
+			rewards: [{
+				id: "593830B8CA5109DC"
+				type: "item"
+				item: "powah:solar_panel_hardened"
+				random_bonus: 1
+			}]
+		}
+		{
+			x: 15.0d
+			y: 2.5d
+			description: ["The Blazing Solar Panel generates 90 FE per tick (1800 FE per second) during daylight hours."]
+			dependencies: [
+				"3614FB8BB2F6BB78"
+				"5B2DE820AEC7AD5D"
+			]
+			optional: true
+			id: "3E2BDC2313836421"
+			tasks: [{
+				id: "0BFA58B8C30144C1"
+				type: "item"
+				item: "powah:solar_panel_blazing"
+			}]
+			rewards: [{
+				id: "709B9FA5AA57855B"
+				type: "item"
+				item: "powah:solar_panel_blazing"
+				random_bonus: 1
+			}]
+		}
+		{
+			x: 15.0d
+			y: 4.0d
+			description: ["The Niotic Solar Panel generates 220 FE per tick (4400 FE per second) during daylight hours."]
+			dependencies: [
+				"3E2BDC2313836421"
+				"52129C82DA500585"
+			]
+			optional: true
+			id: "4767D47B842BD95B"
+			tasks: [{
+				id: "52E740D7E3AB02A5"
+				type: "item"
+				item: "powah:solar_panel_niotic"
+			}]
+			rewards: [{
+				id: "389BCFF56C9805D9"
+				type: "item"
+				item: "powah:solar_panel_niotic"
+				random_bonus: 1
+			}]
+		}
+		{
+			x: 15.0d
+			y: 5.5d
+			description: ["The Spirited Solar Panel generates 500 FE per tick (10000 FE per second) during daylight hours."]
+			dependencies: [
+				"4767D47B842BD95B"
+				"04956D12ACA7737F"
+			]
+			optional: true
+			id: "44395D2C4EE739CC"
+			tasks: [{
+				id: "07C9978DC0131E24"
+				type: "item"
+				item: "powah:solar_panel_spirited"
+			}]
+			rewards: [{
+				id: "7AF1514D4FEECF04"
+				type: "item"
+				item: "powah:solar_panel_spirited"
+				random_bonus: 1
+			}]
+		}
+		{
+			x: 15.0d
+			y: 7.0d
+			description: ["The Nitro Solar Panel generates 1200 FE per tick (24000 FE per second) during daylight hours."]
+			dependencies: [
+				"44395D2C4EE739CC"
+				"2D29B68E6C38D2C6"
+			]
+			optional: true
+			id: "378362835C75AE05"
+			tasks: [{
+				id: "197F59D35DDC92C5"
+				type: "item"
+				item: "powah:solar_panel_nitro"
+			}]
+			rewards: [{
+				id: "501B6B197E20EA8A"
+				type: "item"
+				item: "powah:solar_panel_nitro"
+				random_bonus: 1
+			}]
+		}
+		{
+			x: 17.0d
+			y: -2.0d
+			description: [
+				"The Starter Reactor generates 100 FE per tick."
+				""
+				"We suggest you have a look in the Powah Manual you were provided for more information on how to build and use your reactor. At a minimum, you will need to provide your reactor with Water and Uraninite in order for it to work with reasonable efficiency."
+			]
+			dependencies: [
+				"03BEA2FE7419FFEF"
+				"44FF4A5C9945D1CD"
+				"57A96FC3C5CAB331"
+			]
+			id: "267936F33C9D6041"
+			tasks: [{
+				id: "3322DE4D8185928A"
+				type: "item"
+				item: "powah:reactor_starter"
+			}]
+		}
+		{
+			x: 17.0d
+			y: -0.5d
+			description: ["The Basic Reactor generates 400 FE per tick."]
+			hide_dependency_lines: true
+			dependencies: [
+				"4F6101F00C8E011E"
+				"1D6F6B69D5EF353D"
+				"57A96FC3C5CAB331"
+			]
+			optional: true
+			id: "4F963B253756A068"
+			tasks: [{
+				id: "6AD7CEFB63B6F32D"
+				type: "item"
+				item: "powah:reactor_basic"
+			}]
+		}
+		{
+			x: 17.0d
+			y: 1.0d
+			description: ["The Hardened Reactor generates 840 FE per tick."]
+			hide_dependency_lines: true
+			dependencies: [
+				"4F6101F00C8E011E"
+				"5C269BA7E9F8936E"
+				"57A96FC3C5CAB331"
+			]
+			optional: true
+			id: "603B6BDA489D55AE"
+			tasks: [{
+				id: "08CAB531A8FA1856"
+				type: "item"
+				item: "powah:reactor_hardened"
+			}]
+		}
+		{
+			x: 17.0d
+			y: 2.5d
+			description: ["The Blazing Reactor generates 1200 FE per tick."]
+			hide_dependency_lines: true
+			dependencies: [
+				"4F6101F00C8E011E"
+				"5B2DE820AEC7AD5D"
+				"57A96FC3C5CAB331"
+			]
+			optional: true
+			id: "18E9651B542E52A3"
+			tasks: [{
+				id: "789576C49F14F4DE"
+				type: "item"
+				item: "powah:reactor_blazing"
+			}]
+		}
+		{
+			x: 17.0d
+			y: 4.0d
+			description: ["The Niotic Reactor generates 2700 FE per tick."]
+			hide_dependency_lines: true
+			dependencies: [
+				"4F6101F00C8E011E"
+				"52129C82DA500585"
+				"57A96FC3C5CAB331"
+			]
+			optional: true
+			id: "3EA7CC42D64537BE"
+			tasks: [{
+				id: "3F13F5FF3068EAE5"
+				type: "item"
+				item: "powah:reactor_niotic"
+			}]
+		}
+		{
+			x: 17.0d
+			y: 5.5d
+			description: ["The Spirited Reactor generates 3800 FE per tick."]
+			hide_dependency_lines: true
+			dependencies: [
+				"4F6101F00C8E011E"
+				"04956D12ACA7737F"
+				"57A96FC3C5CAB331"
+			]
+			optional: true
+			id: "3C538D74173FA73C"
+			tasks: [{
+				id: "5FD1129CD4E67E17"
+				type: "item"
+				item: "powah:reactor_spirited"
+			}]
+		}
+		{
+			x: 17.0d
+			y: 7.0d
+			description: ["The Nitro Reactor generates 5400 FE per tick."]
+			hide_dependency_lines: true
+			dependencies: [
+				"4F6101F00C8E011E"
+				"2D29B68E6C38D2C6"
+				"57A96FC3C5CAB331"
+			]
+			optional: true
+			id: "5C5FE3138014DFFC"
+			tasks: [{
+				id: "3B1C20E4C831B783"
+				type: "item"
+				item: "powah:reactor_nitro"
+			}]
+		}
+		{
+			x: 17.0d
+			y: -3.5d
+			description: [
+				"Smelt Raw Uraninite to get Uraninite."
+				""
+				"Each of the Reactors can be built without needing to build the previous tier first. In each case, you need 36 of the Reactor blocks in your inventory. To build the reactor, just look at the ground where you would like it built and you will be shown the footprint for the reactor. If the footprint is shown as red, then it cannot be built in that location (it requires a 3x3 space that is 4 blocks high). If the footprint shown is green, simply use the block and the reactor will be automatically built from the blocks in your inventory."
+				""
+				"You might want to consider making a Uraninite Quantum Singularity if you plan on using Reactors for power generation."
+			]
+			id: "57A96FC3C5CAB331"
+			tasks: [{
+				id: "78DEEFBF6882CD17"
+				type: "item"
+				item: "powah:uraninite"
+			}]
+			rewards: [{
+				id: "45365CA2501CD16B"
+				type: "item"
+				item: "powah:uraninite"
+				count: 32
+				random_bonus: 32
+			}]
+		}
+	]
+}

@@ -1,0 +1,201 @@
+{
+	id: "0950DB97D4C589FC"
+	group: ""
+	order_index: 0
+	filename: "farewell"
+	title: "Farewell"
+	icon: "minecraft:writable_book"
+	subtitle: ["Priority Message from The Cuboid Corp (tm) HQ"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Beginning"
+			icon: "minecraft:writable_book"
+			disable_toast: true
+			x: 6.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "(of the end)"
+			description: [
+				"Good day to you! I hope this missive finds you well."
+				""
+				"Before I get too far ahead of myself, I want to thank you for all the hard, even exemplary, work that you have done for the Corporation over the years out there in Outpost 42. You have our sincere thanks and eternal gratitude."
+				""
+				"Well... maybe not quite 'eternal'."
+				""
+				"You see, our scientific division here at The Cuboid Corp (tm) have made a little bit of a mistake. Somehow they managed to quantum entangle not two, but three singularities at once! At first this felt like amazing technological and scientific progress, but when they put them straight into one of our teleporter arrays... well... that's when it happened."
+				""
+				"Um..."
+			]
+			id: "197A96E41270A0A4"
+			tasks: [{
+				id: "53C8D2DB609C3A1E"
+				type: "checkmark"
+				title: "Let's go!"
+			}]
+		}
+		{
+			title: "What happened?"
+			icon: "minecraft:writable_book"
+			disable_toast: true
+			x: 8.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "The Short Version"
+			description: [
+				"So anyway, here's the short version..."
+				""
+				"A chain reaction started. We can't control it. We've literally got a few more minutes before our entire communication network shuts down and, shortly thereafter, life as we know it on our home planet comes to a brutal, fiery, apocalyptic end."
+				""
+				"Oops!"
+				""
+				"So... There's no way for us to retrieve you, no way for us to connect you with other Outposts, and only theories as to what might happen next."
+				""
+				"Sorry."
+				""
+				"What we can do, however, is try to give you the best possible chance at survival."
+			]
+			dependencies: ["197A96E41270A0A4"]
+			id: "0A0FB7D6F6EEE0AB"
+			tasks: [{
+				id: "30BF87C9D8F1359E"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Look on the Bright Side!"
+			icon: "minecraft:writable_book"
+			disable_toast: true
+			x: 10.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "The Good News!"
+			description: [
+				"On the brighter side, your Outpost is amazingly well equipped as you well know."
+				""
+				"There's the latest in luxurious equipment including, but not limited to:"
+				"- renewable power in the form of both solar and wind generators!"
+				"- a fridge to keep your ration packs fresh!"
+				"- top-of-the-line technology!"
+				"- the latest in digital storage that the Corporation has to offer!"
+				"- a bed!"
+				"- all the water you can melt! (practically)"
+				"- somewhere warm to protect you from the... elements!"
+				""
+				"Life is good!"
+			]
+			dependencies: ["0A0FB7D6F6EEE0AB"]
+			id: "283B6CFF3F804676"
+			tasks: [{
+				id: "38B5126D24B27E92"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "0655ABEF2FB4FF64"
+				type: "item"
+				item: "cuboidmod:ration_pack"
+				count: 8
+			}]
+		}
+		{
+			title: "The New Reality"
+			icon: "minecraft:writable_book"
+			disable_toast: true
+			x: 12.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "The Bad News..."
+			description: [
+				"Unfortunately for you, life is going to get a lot more complicated."
+				""
+				"For example, the planet you're on has no natural plant life. In fact, it's completely barren. No native animal life either, and limited natural resources."
+				""
+				"To make matters worse, we're not going to be able to offer much assistance. We can (and will) release care packages for you upon completion of certain tasks, which will be made available to you at the appropriate time. Don't worry though - you'll want to complete them."
+				""
+				"After all, your very survival will depend on it."
+			]
+			dependencies: ["283B6CFF3F804676"]
+			id: "5BB19605EF94827E"
+			tasks: [{
+				id: "0D5193CE76C546BB"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "We're not in Kansas anymore"
+			icon: "minecraft:writable_book"
+			disable_toast: true
+			x: 14.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "The Really Bad News..."
+			description: [
+				"Unfortunately, there are a few other points to be aware of... the, um, accident, seems to have made it possible for undesirable lifeforms to materialise throughout the universe. We call them Mobs. There seem to be a wide variety of them. But every cloud has a silver lining - even mushroom clouds!"
+				""
+				"They could prove to be invaluable as a source of new materials, and even food!"
+				""
+				"So it's actually good news! Yay!"
+				""
+				"I'm sure you'll be super grateful for small mercies, so you'll be glad to hear that our Science Division has managed to cobble together a gadget that will reduce the need to sleep, and make your naps feel a lot shorter - simply equip it and over time your need to sleep will be reduced as this Sleep Charm attunes itself to your genetic code."
+				""
+				"Now... let's get ready to start your new life by ripping up your old one!"
+			]
+			dependencies: ["5BB19605EF94827E"]
+			size: 1.5d
+			id: "42182228C9517AA2"
+			tasks: [{
+				id: "209B7C631E208E9B"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "4DBD8AE825A5FD29"
+				type: "item"
+				item: "darkutils:charm_sleep"
+			}]
+		}
+		{
+			title: "Step and Tasks Info"
+			x: 10.0d
+			y: 3.5d
+			description: [
+				"Steps / tasks with a &eGear&f shape are typically either the &astart of a particular chapter, or a link to another chapter&f. In other words, you will usually want to try and open up all gears if your aim is to get access to all chapters."
+				""
+				"Steps / tasks with a &eSquare&f shape are part of the &amain survival guide requirements&f - if your aim is to progress through the pack and skip some of the less critical items, you can &afocus on completing the Square tasks&f first."
+				""
+				"Steps / tasks with a &eCircle&f shape are usually either &atotally optional, or just not critical&f to your continued existence."
+				""
+				"While this is the intent, it may be possible that this does not always hold true... but it hopefully gives you a bit of an idea of how to approach things."
+			]
+			optional: true
+			id: "28877C7DC0FB478C"
+			tasks: [{
+				id: "03B368440F87C0DB"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Making the most of this Survival Guide"
+			x: 10.0d
+			y: 4.5d
+			description: [
+				"This Survival Guide has been lovingly crafted (even if mainly out of guilt) to help you make a new life for yourself in this barren and somewhat inhospitable land you're stranded in."
+				""
+				"The first thing to note is that it's important to read what we've written. Yes, we do waffle on a bit, but there's usually a point to it. &aIf you skim through, you might miss an important bit of information&f, and die a cold, lonely, horrible death. The choice is yours though."
+				""
+				"Some tasks have fairly long explanations, and even hints in them - &ayou might need to scroll down&f to see it all!"
+				""
+				"To complete a step, you will need to complete the listed tasks. This survival guide will automatically attempt to recognise when you have completed something, but it's attuned to you - so &aensure you hold the item in your inventory for it to be automatically recognised!&f"
+				""
+				"If you're wondering why a particular step is greyed-out and unavailable to you, there is a little black arrow in the \"Tasks\" box - if you open that up you will see a list of other steps you will need to complete first. You can select one from that list to be taken to that step in the guide. This is the \"little black arrow\" we mean:"
+				"{image:kubejs:textures/quests/farewell_ftb_dependencies.png width:600 height:175 align:1 fit:true}"
+			]
+			optional: true
+			id: "108D30AC48535DA5"
+			tasks: [{
+				id: "09B1BA699B8963A8"
+				type: "checkmark"
+			}]
+		}
+	]
+}

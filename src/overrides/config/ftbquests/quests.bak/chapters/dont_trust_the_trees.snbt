@@ -1,0 +1,760 @@
+{
+	id: "1F820E75593F375A"
+	group: "0B5EDAD5D67C6935"
+	order_index: 1
+	filename: "dont_trust_the_trees"
+	title: "Tree pun? I'm stumped."
+	icon: "pamhc2trees:apple_sapling"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Trees are trustworthy!"
+			x: 0.0d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "(even if they do look a bit shady)"
+			description: [
+				"Trees. We need more of them."
+				""
+				"Not only will they help with terraforming this horrible landscape into something more pleasant to look at, but there is such a wide variety of possible trees for you to cultivate for things like food, wood and other useful materials."
+				""
+				"Of course, if you're happy with the variety you already have, we can't force you to make more!"
+			]
+			dependencies: ["6C3D1415B37046A6"]
+			id: "0DEE4B90568C264D"
+			tasks: [{
+				id: "0A6684BD9D0056C7"
+				type: "checkmark"
+				title: "Let's grow!"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			dependencies: ["0DEE4B90568C264D"]
+			id: "65CCF89FB9576F2A"
+			tasks: [{
+				id: "5E6195DBF02CCCDE"
+				type: "item"
+				item: "pamhc2trees:apple_sapling"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.0d
+			dependencies: ["0DEE4B90568C264D"]
+			id: "19D11F714E5C0299"
+			tasks: [{
+				id: "7CAF432BAF514008"
+				type: "item"
+				item: "pamhc2trees:paperbark_sapling"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			dependencies: ["0DEE4B90568C264D"]
+			id: "3823A697F8879541"
+			tasks: [{
+				id: "6AB9A0B130AF98FE"
+				type: "item"
+				item: "pamhc2trees:spiderweb_sapling"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.0d
+			dependencies: [
+				"77B5FDCE5560BC66"
+				"65CCF89FB9576F2A"
+			]
+			id: "4BEFE011106BE5D2"
+			tasks: [{
+				id: "00978E1B01427614"
+				type: "item"
+				item: "pamhc2trees:candlenut_sapling"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.5d
+			dependencies: [
+				"77B5FDCE5560BC66"
+				"4BEFE011106BE5D2"
+			]
+			id: "21A95A64CFC0BE78"
+			tasks: [{
+				id: "4956B80D1DE82B1B"
+				type: "item"
+				item: "pamhc2trees:avocado_sapling"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.0d
+			dependencies: [
+				"7506024137BD1494"
+				"65CCF89FB9576F2A"
+			]
+			id: "2B8AEC6F097B2528"
+			tasks: [{
+				id: "33CDF4DC7568ADE6"
+				type: "item"
+				item: "pamhc2trees:cherry_sapling"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.5d
+			dependencies: [
+				"4BEFE011106BE5D2"
+				"2B8AEC6F097B2528"
+			]
+			id: "4D6798930224AA6E"
+			tasks: [{
+				id: "3E8DD338697F333D"
+				type: "item"
+				item: "pamhc2trees:chestnut_sapling"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.0d
+			dependencies: [
+				"4D6798930224AA6E"
+				"043B7EE5C870C36E"
+			]
+			id: "6A10479FDB2252AF"
+			tasks: [{
+				id: "1EFFF51F2B4DC7F3"
+				type: "item"
+				item: "pamhc2trees:gooseberry_sapling"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -8.5d
+			dependencies: [
+				"78DC136EEDCE2FFA"
+				"6A10479FDB2252AF"
+			]
+			id: "1472898DB2F648B6"
+			tasks: [{
+				id: "36F060C373D8221F"
+				type: "item"
+				item: "pamhc2trees:lemon_sapling"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -7.0d
+			dependencies: [
+				"21A95A64CFC0BE78"
+				"4D6798930224AA6E"
+			]
+			id: "78DC136EEDCE2FFA"
+			tasks: [{
+				id: "7D4254112B39246C"
+				type: "item"
+				item: "pamhc2trees:nutmeg_sapling"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -10.0d
+			dependencies: [
+				"1472898DB2F648B6"
+				"0A38104A8E296348"
+			]
+			id: "4A3E2A3F60E94DFA"
+			tasks: [{
+				id: "1B680C95CD009189"
+				type: "item"
+				item: "pamhc2trees:orange_sapling"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -8.5d
+			dependencies: [
+				"6A10479FDB2252AF"
+				"3C50378909CBBE0F"
+			]
+			id: "0A38104A8E296348"
+			tasks: [{
+				id: "4744176DB7890289"
+				type: "item"
+				item: "pamhc2trees:peach_sapling"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -7.0d
+			dependencies: [
+				"77B5FDCE5560BC66"
+				"21A95A64CFC0BE78"
+			]
+			id: "689C5B84AE0F94DD"
+			tasks: [{
+				id: "0D98AA2E71AA561B"
+				type: "item"
+				item: "pamhc2trees:pear_sapling"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.5d
+			dependencies: [
+				"7506024137BD1494"
+				"2B8AEC6F097B2528"
+			]
+			id: "043B7EE5C870C36E"
+			tasks: [{
+				id: "1B39327BB5FEE885"
+				type: "item"
+				item: "pamhc2trees:plum_sapling"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -8.5d
+			dependencies: [
+				"689C5B84AE0F94DD"
+				"78DC136EEDCE2FFA"
+			]
+			id: "1D900541CF5B190E"
+			tasks: [{
+				id: "2F47703227D7EEFE"
+				type: "item"
+				item: "pamhc2trees:walnut_sapling"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -10.0d
+			dependencies: [
+				"525F075B9433FB85"
+				"1D900541CF5B190E"
+			]
+			id: "185B69E098416CBE"
+			tasks: [{
+				id: "68BE01DA30708C2D"
+				type: "item"
+				item: "pamhc2trees:hazelnut_sapling"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -8.5d
+			dependencies: [
+				"77B5FDCE5560BC66"
+				"689C5B84AE0F94DD"
+			]
+			id: "525F075B9433FB85"
+			tasks: [{
+				id: "215BAD88D82614E4"
+				type: "item"
+				item: "pamhc2trees:pawpaw_sapling"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -10.0d
+			dependencies: [
+				"77B5FDCE5560BC66"
+				"525F075B9433FB85"
+			]
+			id: "14BAE8C1657D48DF"
+			tasks: [{
+				id: "45EFF7E3708FF3EB"
+				type: "item"
+				item: "pamhc2trees:soursop_sapling"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -13.0d
+			dependencies: [
+				"2DB41631F62C4FAA"
+				"401B65B22B260316"
+			]
+			id: "37E04C904E4D465B"
+			tasks: [{
+				id: "2624EB2E0FF32073"
+				type: "item"
+				item: "pamhc2trees:almond_sapling"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -10.0d
+			dependencies: [
+				"0A38104A8E296348"
+				"15D574997960A2A3"
+			]
+			id: "5059EA0EB339AD0A"
+			tasks: [{
+				id: "494BD07E66B17EDD"
+				type: "item"
+				item: "pamhc2trees:apricot_sapling"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -10.0d
+			dependencies: [
+				"1D900541CF5B190E"
+				"1472898DB2F648B6"
+			]
+			id: "7125657852264A55"
+			tasks: [{
+				id: "55D3F7EB6E101B45"
+				type: "item"
+				item: "pamhc2trees:banana_sapling"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -11.5d
+			dependencies: [
+				"14BAE8C1657D48DF"
+				"185B69E098416CBE"
+			]
+			id: "401B65B22B260316"
+			tasks: [{
+				id: "65F98BCD5FF0251A"
+				type: "item"
+				item: "pamhc2trees:cashew_sapling"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -11.5d
+			dependencies: [
+				"185B69E098416CBE"
+				"7125657852264A55"
+			]
+			id: "649EE80A3B544863"
+			tasks: [{
+				id: "1D03736C5494CE62"
+				type: "item"
+				item: "pamhc2trees:cinnamon_sapling"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -13.0d
+			dependencies: [
+				"401B65B22B260316"
+				"649EE80A3B544863"
+			]
+			id: "628357CAF0B0B892"
+			tasks: [{
+				id: "1F522E0C3F293840"
+				type: "item"
+				item: "pamhc2trees:coconut_sapling"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -10.0d
+			dependencies: [
+				"7506024137BD1494"
+				"15D574997960A2A3"
+			]
+			id: "6962C0E8863834E0"
+			tasks: [{
+				id: "38C58A2BE0D1EEC8"
+				type: "item"
+				item: "pamhc2trees:date_sapling"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -7.0d
+			dependencies: [
+				"7506024137BD1494"
+				"043B7EE5C870C36E"
+			]
+			id: "3C50378909CBBE0F"
+			tasks: [{
+				id: "48623A7E3E6C10B4"
+				type: "item"
+				item: "pamhc2trees:dragonfruit_sapling"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -11.5d
+			dependencies: [
+				"77B5FDCE5560BC66"
+				"14BAE8C1657D48DF"
+			]
+			id: "2DB41631F62C4FAA"
+			tasks: [{
+				id: "5C62CF4723EDB899"
+				type: "item"
+				item: "pamhc2trees:durian_sapling"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -11.5d
+			dependencies: [
+				"5059EA0EB339AD0A"
+				"6962C0E8863834E0"
+			]
+			id: "5481E47CCA432EF6"
+			tasks: [{
+				id: "6B56D2EC4D3B18C6"
+				type: "item"
+				item: "pamhc2trees:fig_sapling"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -11.5d
+			dependencies: [
+				"4A3E2A3F60E94DFA"
+				"5059EA0EB339AD0A"
+			]
+			id: "2C052B386B7BE279"
+			tasks: [{
+				id: "526248E1AE3D8DB9"
+				type: "item"
+				item: "pamhc2trees:grapefruit_sapling"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -16.0d
+			dependencies: [
+				"06514783D5216E18"
+				"0B363571DD89A48F"
+			]
+			id: "5554B6591A3E3F07"
+			tasks: [{
+				id: "44F4DC076FAF0A7D"
+				type: "item"
+				item: "pamhc2trees:lime_sapling"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -11.5d
+			dependencies: [
+				"7125657852264A55"
+				"4A3E2A3F60E94DFA"
+			]
+			id: "259C29BBB851C229"
+			tasks: [{
+				id: "341C72D17EA158B9"
+				type: "item"
+				item: "pamhc2trees:mango_sapling"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -13.0d
+			dependencies: [
+				"649EE80A3B544863"
+				"259C29BBB851C229"
+			]
+			id: "5513D2D736636643"
+			tasks: [{
+				id: "3F118F097FBABF10"
+				type: "item"
+				item: "pamhc2trees:olive_sapling"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -13.0d
+			dependencies: [
+				"259C29BBB851C229"
+				"2C052B386B7BE279"
+			]
+			id: "72FB7E9B19E43FB3"
+			tasks: [{
+				id: "3075939B3962E0DD"
+				type: "item"
+				item: "pamhc2trees:papaya_sapling"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -16.0d
+			dependencies: [
+				"57B2EA65CBEC6629"
+				"4C224F044B4DC50D"
+			]
+			id: "145E6072886D147B"
+			tasks: [{
+				id: "5DBED624B68F2368"
+				type: "item"
+				item: "pamhc2trees:pecan_sapling"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -14.5d
+			dependencies: [
+				"628357CAF0B0B892"
+				"5513D2D736636643"
+			]
+			id: "0B363571DD89A48F"
+			tasks: [{
+				id: "30B12AFC3A203492"
+				type: "item"
+				item: "pamhc2trees:peppercorn_sapling"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -8.5d
+			dependencies: [
+				"7506024137BD1494"
+				"3C50378909CBBE0F"
+			]
+			id: "15D574997960A2A3"
+			tasks: [{
+				id: "45C424F5F9056BC6"
+				type: "item"
+				item: "pamhc2trees:pomegranate_sapling"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -16.0d
+			dependencies: [
+				"4C224F044B4DC50D"
+				"06DB20A138B3049C"
+			]
+			id: "57E93BBCF5090CE1"
+			tasks: [{
+				id: "02F70F356DF15D2F"
+				type: "item"
+				item: "pamhc2trees:starfruit_sapling"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -14.5d
+			dependencies: [
+				"5513D2D736636643"
+				"72FB7E9B19E43FB3"
+			]
+			id: "57B2EA65CBEC6629"
+			tasks: [{
+				id: "73F6FA61F6028B87"
+				type: "item"
+				item: "pamhc2trees:vanillabean_sapling"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -16.0d
+			dependencies: [
+				"0B363571DD89A48F"
+				"57B2EA65CBEC6629"
+			]
+			id: "728B404FDE6990FA"
+			tasks: [{
+				id: "5EEED030C4A9C205"
+				type: "item"
+				item: "pamhc2trees:breadfruit_sapling"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -14.5d
+			dependencies: [
+				"37E04C904E4D465B"
+				"628357CAF0B0B892"
+			]
+			id: "06514783D5216E18"
+			tasks: [{
+				id: "567558AB730A81E3"
+				type: "item"
+				item: "pamhc2trees:guava_sapling"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -11.5d
+			dependencies: [
+				"7506024137BD1494"
+				"6962C0E8863834E0"
+			]
+			id: "750902DDAFED1ED5"
+			tasks: [{
+				id: "3533FA153BD45EB2"
+				type: "item"
+				item: "pamhc2trees:lychee_sapling"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -14.5d
+			dependencies: [
+				"72FB7E9B19E43FB3"
+				"7F2BC9DA9640CFBA"
+			]
+			id: "4C224F044B4DC50D"
+			tasks: [{
+				id: "04233F0629CAE915"
+				type: "item"
+				item: "pamhc2trees:jackfruit_sapling"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -13.0d
+			dependencies: [
+				"2C052B386B7BE279"
+				"5481E47CCA432EF6"
+			]
+			id: "7F2BC9DA9640CFBA"
+			tasks: [{
+				id: "008433EC889870AB"
+				type: "item"
+				item: "pamhc2trees:passionfruit_sapling"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -13.0d
+			dependencies: [
+				"5481E47CCA432EF6"
+				"750902DDAFED1ED5"
+			]
+			id: "5AF5FE01AC71DADC"
+			tasks: [{
+				id: "4E197F5E28FCDBE4"
+				type: "item"
+				item: "pamhc2trees:rambutan_sapling"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -14.5d
+			dependencies: [
+				"7F2BC9DA9640CFBA"
+				"5AF5FE01AC71DADC"
+			]
+			id: "06DB20A138B3049C"
+			tasks: [{
+				id: "0FA045E8CBE418F2"
+				type: "item"
+				item: "pamhc2trees:tamarind_sapling"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.0d
+			dependencies: ["0DEE4B90568C264D"]
+			id: "7506024137BD1494"
+			tasks: [{
+				id: "717BF4D511D28D0B"
+				type: "item"
+				item: "pamhc2trees:maple_sapling"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			dependencies: ["0DEE4B90568C264D"]
+			id: "77B5FDCE5560BC66"
+			tasks: [{
+				id: "24A086D75E8D48C2"
+				type: "item"
+				item: "pamhc2trees:pinenut_sapling"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -17.5d
+			dependencies: [
+				"728B404FDE6990FA"
+				"145E6072886D147B"
+			]
+			id: "444EE4DAD250DA20"
+			tasks: [{
+				id: "0640BB87A9C60361"
+				type: "item"
+				item: "quark:red_blossom_sapling"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -19.0d
+			dependencies: [
+				"00373B0CF126CD25"
+				"444EE4DAD250DA20"
+			]
+			id: "509D52C72AD0DCAC"
+			tasks: [{
+				id: "7526115A8525E52D"
+				type: "item"
+				item: "quark:orange_blossom_sapling"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -19.0d
+			dependencies: [
+				"0CC12934633FEA5F"
+				"444EE4DAD250DA20"
+			]
+			id: "19EC3C319F1025E7"
+			tasks: [{
+				id: "2F7BCA58DD32929D"
+				type: "item"
+				item: "quark:yellow_blossom_sapling"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -20.5d
+			dependencies: [
+				"509D52C72AD0DCAC"
+				"19EC3C319F1025E7"
+			]
+			id: "44462C321451E5C7"
+			tasks: [{
+				id: "259DA63D87CF71F1"
+				type: "item"
+				item: "quark:pink_blossom_sapling"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -17.5d
+			dependencies: [
+				"5554B6591A3E3F07"
+				"728B404FDE6990FA"
+			]
+			id: "00373B0CF126CD25"
+			tasks: [{
+				id: "033FC051EBD5464A"
+				type: "item"
+				item: "quark:lavender_blossom_sapling"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -17.5d
+			dependencies: [
+				"145E6072886D147B"
+				"57E93BBCF5090CE1"
+			]
+			id: "0CC12934633FEA5F"
+			tasks: [{
+				id: "612F15A385535814"
+				type: "item"
+				item: "quark:blue_blossom_sapling"
+			}]
+		}
+	]
+}

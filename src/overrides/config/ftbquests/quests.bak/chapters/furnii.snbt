@@ -1,0 +1,442 @@
+{
+	id: "428ED2EA3F42160E"
+	group: "4F582DBBFACF1F69"
+	order_index: 0
+	filename: "furnii"
+	title: "Baste the Rainbow"
+	icon: "ironfurnaces:million_furnace"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Baste the Rainbow"
+			x: -1.5d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"When it comes to smelting stuff, you've already got a few options by now, however, it's always useful having alternatives."
+				""
+				"With some of the more advanced materials you now have access to (and will gain access to), more advanced Furnaces are available to you. And with a Quantum Singularity providing free burnable materials like wood or Coal, you don't even need to worry about powering these with energy (although, as you will see, that too is an option)."
+				""
+				"In particular, the top tier Rainbow Furnace is really, really, really fast - so while it takes a bit of effort to obtain, it can significantly cut down the total time of crafting when there's a lot of smelting involved."
+				""
+				"All of this range of Furnaces can be configured in their GUI to control their input and output directions, can have upgrades applied, and have redstone control options, which is a step up from the stone and local variants of Furnaces."
+				""
+				"There's also something else... it's something called the Rainbow Core, which is not only part of the Rainbow Furnace, but an important part we'll need again later."
+			]
+			dependencies: ["164AA3AA7EEDB5DC"]
+			id: "6F523723CEDC4C89"
+			tasks: [
+				{
+					id: "00BEF0EFD5583F21"
+					type: "item"
+					item: "minecraft:iron_ingot"
+				}
+				{
+					id: "39EF1551D09C6EAE"
+					type: "item"
+					item: "minecraft:redstone"
+				}
+			]
+		}
+		{
+			title: "Iron Furnaces"
+			x: 1.0d
+			y: 1.0d
+			shape: "square"
+			description: [
+				"An Iron Furnace is the basic improved furnace."
+				""
+				"It smelts items at a rate of 1 every 8 seconds (1.25x faster than a standard stone Furnace)."
+				""
+				"An Iron Furnace can be made by upgrading a standard stone furnace, or upgrading a Copper Furnace."
+			]
+			dependencies: ["6F523723CEDC4C89"]
+			id: "3480BA37EF1BC9FB"
+			tasks: [{
+				id: "50433AE0BE19BD40"
+				type: "item"
+				item: "ironfurnaces:iron_furnace"
+			}]
+		}
+		{
+			title: "Copper Furnaces"
+			x: 0.0d
+			y: -1.0d
+			description: [
+				"A Copper Furnace is the entry-level furnace upgrade."
+				""
+				"It smelts items at a rate of 1 every 9 seconds (a standard stone furnace is 1 every 10 seconds)."
+				""
+				"Copper Furnaces can be upgraded to a Silver Furnace or an Iron Furnace."
+			]
+			dependencies: ["6F523723CEDC4C89"]
+			optional: true
+			id: "6B976D6C51C88594"
+			tasks: [{
+				id: "149F91D7A88BFF68"
+				type: "item"
+				item: "ironfurnaces:copper_furnace"
+			}]
+		}
+		{
+			title: "Silver Furnaces"
+			x: 2.0d
+			y: -1.0d
+			description: [
+				"A Silver Furnace is the \"halfway house\" between an Iron Furnace and a Golden Furnace."
+				""
+				"It smelts items in 7 seconds (just under 1.43x the standard furnace speed)"
+				""
+				"A Silver furnace can be made by upgrading either an Iron or Copper Furnace."
+			]
+			dependencies: ["6B976D6C51C88594"]
+			optional: true
+			id: "06BE9F026B6857AF"
+			tasks: [{
+				id: "72BDFE47F5613337"
+				type: "item"
+				item: "ironfurnaces:silver_furnace"
+			}]
+		}
+		{
+			title: "Golden Furnaces"
+			x: 3.0d
+			y: 1.0d
+			shape: "square"
+			description: [
+				"The Golden Furnace smelts items in 6 seconds (just under 1.7x faster than a standard stone furnace)."
+				""
+				"It can be made by upgrading an Iron Furnace or a Silver Furnace."
+			]
+			dependencies: ["3480BA37EF1BC9FB"]
+			id: "0888F8C192976BB9"
+			tasks: [{
+				id: "41DA67ADFC778B91"
+				type: "item"
+				item: "ironfurnaces:gold_furnace"
+			}]
+		}
+		{
+			title: "Diamond Furnaces"
+			x: 4.5d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"A Diamond Furnace smelts an item in 4 seconds (2.5x faster than a standard stone furnace)."
+				""
+				"It can be created by upgrading a Golden Furnace."
+			]
+			dependencies: ["0888F8C192976BB9"]
+			id: "1A4B501C3A7BBB37"
+			tasks: [{
+				id: "4EF1D72D52C2ED8F"
+				type: "item"
+				item: "ironfurnaces:diamond_furnace"
+			}]
+			rewards: [{
+				id: "46728B93ADC1B2D2"
+				type: "item"
+				item: "ironfurnaces:upgrade_diamond"
+			}]
+		}
+		{
+			title: "Emerald Furnaces"
+			x: 6.0d
+			y: 1.0d
+			shape: "square"
+			description: [
+				"Like the Crystal Furnace, the Emerald Furnace smelts an item in 2 seconds (5x faster than a standard stone furnace)."
+				""
+				"It is created by upgrading a Diamond Furnace."
+			]
+			dependencies: ["1A4B501C3A7BBB37"]
+			id: "16046F3BCF2AE6D4"
+			tasks: [{
+				id: "46F8F76341F1F1CA"
+				type: "item"
+				item: "ironfurnaces:emerald_furnace"
+			}]
+			rewards: [{
+				id: "390473B90671403C"
+				type: "item"
+				item: "ironfurnaces:upgrade_emerald"
+			}]
+		}
+		{
+			title: "Obsidian Furnaces"
+			x: 7.5d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"The Obsidian Furnace smelts an item every second (10x faster than a standard stone furnace)."
+				""
+				"It can be created by upgrading either a Crystal Furnace or an Emerald Furnace."
+			]
+			dependencies: [
+				"16046F3BCF2AE6D4"
+				"19E59602755AA85F"
+			]
+			id: "37E89D33460536FD"
+			tasks: [{
+				id: "6C5D96B25CFC90A0"
+				type: "item"
+				item: "ironfurnaces:obsidian_furnace"
+			}]
+			rewards: [
+				{
+					id: "060C441F64E2BED9"
+					type: "item"
+					item: "ironfurnaces:upgrade_obsidian"
+				}
+				{
+					id: "0A92B0871E6F8123"
+					type: "item"
+					item: "ironfurnaces:upgrade_obsidian2"
+				}
+			]
+		}
+		{
+			title: "Crystal Furnaces"
+			x: 6.0d
+			y: -1.0d
+			description: [
+				"Like the Emerald Furnace, the Crystal Furnace smelts an item in just 2 seconds (5x faster than a standard stone furnace)."
+				""
+				"The Crystal Furnace is created by upgrading a Diamond Furnace."
+			]
+			dependencies: ["1A4B501C3A7BBB37"]
+			id: "32039F7DDE84BDCE"
+			tasks: [{
+				id: "041B112AF245CC17"
+				type: "item"
+				item: "ironfurnaces:crystal_furnace"
+			}]
+			rewards: [{
+				id: "37005624C9315AA2"
+				type: "item"
+				item: "ironfurnaces:upgrade_crystal"
+			}]
+		}
+		{
+			title: "Netherite Furnaces"
+			x: 9.0d
+			y: 1.0d
+			shape: "square"
+			description: [
+				"The Netherite furnace smelts an item every 0.25 seconds! That's 40x faster than a standard stone furnace."
+				""
+				"It is an upgrade from the Obsidian Furnace."
+				""
+			]
+			dependencies: ["37E89D33460536FD"]
+			id: "248E99BD7D655952"
+			tasks: [{
+				id: "29EC55E45E4D89DB"
+				type: "item"
+				item: "ironfurnaces:netherite_furnace"
+			}]
+			rewards: [{
+				id: "4FE675B2D13B9A9A"
+				type: "item"
+				item: "ironfurnaces:upgrade_netherite"
+			}]
+		}
+		{
+			title: "Rainbow Plating"
+			x: 10.0d
+			y: -1.0d
+			description: [
+				"The top tier furnace, the Rainbow Furnace, requires 8 Rainbow Plating and a Rainbow Core."
+				""
+				"You can obtain 8 Rainbow Plating by combining 6 furnaces in a crafting table:"
+				"- Iron Furnace"
+				"- Gold Furnace"
+				"- Diamond Furnace"
+				"- Crystal Furnace"
+				"- Emerald Furnace"
+				"- Obsidian Furnace"
+			]
+			dependencies: ["37E89D33460536FD"]
+			id: "1D8895C4AF9C916D"
+			tasks: [{
+				id: "0D2C1653C40C8715"
+				type: "item"
+				item: "ironfurnaces:rainbow_plating"
+				count: 8L
+			}]
+			rewards: [{
+				id: "14596729BA46F120"
+				type: "item"
+				item: "ironfurnaces:rainbow_plating"
+				count: 8
+			}]
+		}
+		{
+			title: "Rainbow Core"
+			x: 11.0d
+			y: 1.0d
+			shape: "gear"
+			description: [
+				"The top tier furnace, the Rainbow Furnace, requires a special Rainbow Core."
+				""
+				"It's made from 2 Netherite Furnaces and 7 specific Stained Glass blocks."
+				""
+				"The Rainbow Core is also going to be needed for a special item later - to save you from missing out on a Rainbow Furnace, we at Cuboid Corp (tm) have all scrounged together enough to present you with a spare as a reward."
+			]
+			dependencies: ["248E99BD7D655952"]
+			size: 1.5d
+			id: "58400C24E1A5B14B"
+			tasks: [{
+				id: "59727F13D36F6A8F"
+				type: "item"
+				item: "ironfurnaces:rainbow_core"
+			}]
+			rewards: [{
+				id: "11C3BCE68314B3DD"
+				type: "item"
+				item: "ironfurnaces:rainbow_core"
+			}]
+		}
+		{
+			title: "The Rainbow Furnace"
+			x: 12.5d
+			y: 0.0d
+			description: [
+				"The Rainbow Furnace is the top tier furnace that can smelt an entire stack in 1 second (that's up to 640x faster than a standard stone furnace)."
+				""
+				"Note that the processing time is 1 second regardless of how many items are available to be cooked - so if there is only 1 item inserted, then it still takes 1 second to process. Bear this in mind when using a Rainbow Furnace in automation - you want to try and get full stacks being inserted at a time if possible!"
+			]
+			dependencies: [
+				"58400C24E1A5B14B"
+				"1D8895C4AF9C916D"
+			]
+			id: "44D9832C88B16755"
+			tasks: [{
+				id: "0625A695BA0B6BBE"
+				type: "item"
+				item: "ironfurnaces:million_furnace"
+			}]
+		}
+		{
+			title: "Kinder to the environment?"
+			x: -1.5d
+			y: 2.0d
+			description: [
+				"If you'd prefer to use energy as fuel instead of burnable materials, then you have the ability, for this range of furnaces, to use wireless heat transfer instead."
+				""
+				"You will need to make a Wireless Heat Transmitter and hook it up to a source of energy."
+			]
+			dependencies: ["6F523723CEDC4C89"]
+			id: "796072D8AB53D130"
+			tasks: [{
+				id: "09F5608BC47B9A96"
+				type: "item"
+				item: "ironfurnaces:heater"
+			}]
+		}
+		{
+			title: "Does this use microwaves?"
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"Once you have a Wireless Heat Transmitter, you will need to make a Wireless Heat Receiver for each furnace you want to power wirelessly using energy."
+				""
+				"Simply make a Wireless Heat Receiver, and put it in the fuel slot for your chosen furnace, and it will no longer burn fuel, but burn energy instead."
+			]
+			dependencies: ["796072D8AB53D130"]
+			id: "37D2959298434CC9"
+			tasks: [{
+				id: "36D116FE06D4CA8F"
+				type: "item"
+				item: "ironfurnaces:item_heater"
+			}]
+		}
+		{
+			title: "Augment: Blasting"
+			x: 1.0d
+			y: 4.0d
+			description: ["This augment doubles the speed of the furnace without affecting fuel consumption, but limits the recipes it can handle to Blast Furnace recipes."]
+			dependencies: ["37D2959298434CC9"]
+			optional: true
+			id: "5C68D0517708F745"
+			tasks: [{
+				id: "6B4615ADA868FEB7"
+				type: "item"
+				item: "ironfurnaces:augment_blasting"
+			}]
+		}
+		{
+			title: "Augment: Smoking"
+			x: 1.5d
+			y: 3.0d
+			description: ["This augment doubles the speed of the furnace without affecting fuel consumption, but limits the recipes it can handle to Smoker recipes."]
+			dependencies: ["37D2959298434CC9"]
+			optional: true
+			id: "022CC4243530B40D"
+			tasks: [{
+				id: "4C67B0D134B078CB"
+				type: "item"
+				item: "ironfurnaces:augment_smoking"
+			}]
+		}
+		{
+			title: "Augment: Speed"
+			x: 0.0d
+			y: 4.5d
+			description: ["This Augment doubles the furnace cooking speed (takes half the time), but also doubles the fuel consumption per operation."]
+			dependencies: ["37D2959298434CC9"]
+			optional: true
+			id: "297880E7894F583C"
+			tasks: [{
+				id: "7B1471848C91D5DB"
+				type: "item"
+				item: "ironfurnaces:augment_speed"
+			}]
+		}
+		{
+			title: "Augment: Fuel Efficiency"
+			x: -1.0d
+			y: 4.0d
+			description: [
+				"If you'd rather burn fossil fuels, or want to reduce energy consumption, you can do so at a more efficient rate by using one of these augments."
+				""
+				"It reduces fuel consumption by 50%, but cooking times take 25% longer."
+			]
+			dependencies: ["37D2959298434CC9"]
+			optional: true
+			id: "16EB826CB6000B77"
+			tasks: [{
+				id: "614174FEE0F06914"
+				type: "item"
+				item: "ironfurnaces:augment_fuel"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -2.0d
+			shape: "square"
+			description: [
+				"For the next upgrade, you'll need blaze rods. Unfortunately, there's really only one way to get them..."
+				""
+				"Make yourself a Blazing Doll and use it on a Stone Barrel full of Lava. That should, as far as we can tell, summon a mob called a Blaze. Kill the Blaze (it's self defense really - you'll see!), and hopefully it will drop some Blaze Rods for you."
+			]
+			hide_dependency_lines: true
+			dependencies: ["16046F3BCF2AE6D4"]
+			id: "19E59602755AA85F"
+			tasks: [{
+				id: "3E54806CC2FAEB93"
+				type: "item"
+				item: "minecraft:blaze_rod"
+				count: 2L
+			}]
+			rewards: [{
+				id: "646DD3CFC39AC6FC"
+				type: "item"
+				item: "minecraft:blaze_rod"
+				count: 2
+				random_bonus: 6
+			}]
+		}
+	]
+}

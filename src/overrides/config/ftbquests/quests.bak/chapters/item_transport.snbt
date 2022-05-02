@@ -1,0 +1,854 @@
+{
+	id: "1EB726BA93F81517"
+	group: "24F09E0B1AD125E9"
+	order_index: 0
+	filename: "item_transport"
+	title: "Chests and Drawers"
+	icon: "storagedrawers:controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Chest"
+			disable_toast: true
+			x: -15.5d
+			y: -9.5d
+			description: ["A standard wooden chest holds 27 stacks (3 rows of 9)."]
+			optional: true
+			id: "12A954110A989E1F"
+			tasks: [{
+				id: "60E5F847F56F3A79"
+				type: "item"
+				title: "Any Wooden Chest"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:chests/wooden"
+					}
+				}
+			}]
+		}
+		{
+			disable_toast: true
+			x: -20.0d
+			y: -9.5d
+			description: ["The Notsogudium Chest holds 18 stacks (2 rows), &cdrops&r its content when broken, and &ccannot&r be opened if obstructed above."]
+			optional: true
+			id: "5B255ED5F6657CDF"
+			tasks: [{
+				id: "616D42B80379A93D"
+				type: "item"
+				item: "cuboidmod:notsogudium_chest"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -20.0d
+			y: -8.0d
+			description: ["The Kudbebedda Chest holds 27 stacks (3 rows), &cdrops&r its content when broken, and &ccannot&r be opened if obstructed above."]
+			optional: true
+			id: "247CD90098BD0ECE"
+			tasks: [{
+				id: "1C935C29CE7D8646"
+				type: "item"
+				item: "cuboidmod:kudbebedda_chest"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -20.0d
+			y: -6.5d
+			description: ["The Notarfbadium Chest holds 36 stacks (4 rows), &cdrops&r its content when broken, and &acan&r be opened if obstructed above."]
+			optional: true
+			id: "423EB3CD14FC03C5"
+			tasks: [{
+				id: "7A1E0AA19DBA516A"
+				type: "item"
+				item: "cuboidmod:notarfbadium_chest"
+			}]
+		}
+		{
+			x: -20.0d
+			y: -5.0d
+			description: ["The Wikidium Chest holds 45 stacks (5 rows), &akeeps&r its content when broken, and &acan&r be opened if obstructed above."]
+			optional: true
+			id: "746C4F64F0B327D8"
+			tasks: [{
+				id: "6E0AE58DEF17FCB6"
+				type: "item"
+				item: "cuboidmod:wikidium_chest"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -20.0d
+			y: -3.5d
+			description: ["The Thatldu Chest holds 54 stacks (6 rows), &akeeps&r its content when broken, and &acan&r be opened if obstructed above."]
+			optional: true
+			id: "05C6D4E917907308"
+			tasks: [{
+				id: "587F600CBF0B8DE2"
+				type: "item"
+				item: "cuboidmod:thatldu_chest"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -17.0d
+			y: -6.5d
+			description: [
+				"Copper Chests can also be crafted by surrounding a wooden chest with Copper Ingots in a crafting table."
+				""
+				"A Copper Chest holds 45 stacks (5 rows of 9)."
+			]
+			dependencies: ["4A0E0BDEF7FC6B12"]
+			optional: true
+			id: "1DDBB5FD51842B72"
+			tasks: [{
+				id: "05ABA5BB5AAEF30E"
+				type: "item"
+				item: "ironchest:copper_chest"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -17.0d
+			y: -8.0d
+			description: ["Any wooden chest can be upgraded to a Copper Chest without having to move it simply by using one of these upgrades on it."]
+			dependencies: ["12A954110A989E1F"]
+			optional: true
+			id: "4A0E0BDEF7FC6B12"
+			tasks: [{
+				id: "62E4D1CF39CBA0C6"
+				type: "item"
+				item: "ironchest:wood_to_copper_chest_upgrade"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -14.0d
+			y: -8.0d
+			description: ["Any wooden chest can be upgraded to an Iron Chest without having to move it simply by using one of these upgrades on it."]
+			dependencies: ["12A954110A989E1F"]
+			optional: true
+			id: "6ED4DF3D5D28E60B"
+			tasks: [{
+				id: "6E1B7A37EFA59C24"
+				type: "item"
+				item: "ironchest:wood_to_iron_chest_upgrade"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -14.0d
+			y: -6.5d
+			description: [
+				"Iron Chests can also be crafted by surrounding a wooden chest with Iron Ingots in a crafting table, or by surrounding a Copper Chest with alternating Iron Ingots and Glass."
+				""
+				"An Iron Chest holds 54 stacks (6 rows of 9)."
+			]
+			dependencies: [
+				"6ED4DF3D5D28E60B"
+				"177F74A5A7DEBFD8"
+			]
+			optional: true
+			id: "2AC31DB5ABC583EA"
+			tasks: [{
+				id: "6BE3C5B2201E9696"
+				type: "item"
+				item: "ironchest:iron_chest"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -15.5d
+			y: -6.5d
+			description: ["A Copper Chest can be upgraded to an Iron Chest without having to move it simply by using one of these upgrades on it."]
+			dependencies: ["1DDBB5FD51842B72"]
+			optional: true
+			id: "177F74A5A7DEBFD8"
+			tasks: [{
+				id: "16A5D8439683ADD5"
+				type: "item"
+				item: "ironchest:copper_to_iron_chest_upgrade"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -17.0d
+			y: -5.0d
+			description: ["A Copper Chest can be upgraded to a Silver Chest without having to move it simply by using one of these upgrades on it."]
+			dependencies: ["1DDBB5FD51842B72"]
+			optional: true
+			id: "6D6A0DFD0D216DA5"
+			tasks: [{
+				id: "1FAFDF456C7EF6DE"
+				type: "item"
+				item: "ironchest:copper_to_silver_chest_upgrade"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -17.0d
+			y: -3.5d
+			description: [
+				"Silver Chests can also be crafted by surrounding a Copper Chest with Silver Ingots in a crafting table, or by surrounding an Iron Chest with 3 Silver Ingots on each side and Glass on the top and bottom."
+				""
+				"A Silver Chest holds 72 stacks (8 rows of 9)."
+			]
+			dependencies: ["6D6A0DFD0D216DA5"]
+			optional: true
+			id: "2A59B788436BA026"
+			tasks: [{
+				id: "7358885D98A6368D"
+				type: "item"
+				item: "ironchest:silver_chest"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -14.0d
+			y: -5.0d
+			description: ["An Iron Chest can be upgraded to a Gold Chest without having to move it simply by using one of these upgrades on it."]
+			dependencies: ["2AC31DB5ABC583EA"]
+			optional: true
+			id: "0D3A8D017ECDDC0B"
+			tasks: [{
+				id: "759E08E0CCAF8C23"
+				type: "item"
+				item: "ironchest:iron_to_gold_chest_upgrade"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -14.0d
+			y: -3.5d
+			description: [
+				"Gold Chests can also be crafted by surrounding an Iron Chest with Gold Ingots in a crafting table, or by surrounding a Silver Chest with alternating Gold Ingots and Glass."
+				""
+				"A Gold Chest holds 81 stacks (9 rows of 9)."
+			]
+			dependencies: [
+				"0D3A8D017ECDDC0B"
+				"0B29223D36E7784F"
+			]
+			optional: true
+			id: "57C94DB6868CC7E0"
+			tasks: [{
+				id: "6D53AE4402DA5D3B"
+				type: "item"
+				item: "ironchest:gold_chest"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -15.5d
+			y: -3.5d
+			description: ["A Silver Chest can be upgraded to a Gold Chest without having to move it simply by using one of these upgrades on it."]
+			dependencies: ["2A59B788436BA026"]
+			optional: true
+			id: "0B29223D36E7784F"
+			tasks: [{
+				id: "69DFC8A85670F2FB"
+				type: "item"
+				item: "ironchest:silver_to_gold_chest_upgrade"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -15.5d
+			y: -2.0d
+			description: ["A Gold Chest can be upgraded to a Diamond Chest without having to move it simply by using one of these upgrades on it."]
+			dependencies: ["57C94DB6868CC7E0"]
+			optional: true
+			id: "6C078D761856F799"
+			tasks: [{
+				id: "744795D5AB66F27E"
+				type: "item"
+				item: "ironchest:gold_to_diamond_chest_upgrade"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -15.5d
+			y: -0.5d
+			description: [
+				"A Diamond Chest can be crafted from a Gold Chest, 2 Diamonds and 6 Glass, or from a Silver Chest, 3 Diamonds and 5 Glass."
+				""
+				"A Diamond Chest holds 108 stacks (9 rows of 12)."
+			]
+			dependencies: ["6C078D761856F799"]
+			optional: true
+			id: "5DCB6DF90CEFB86E"
+			tasks: [{
+				id: "2982B7F1BBAFFE83"
+				type: "item"
+				item: "ironchest:diamond_chest"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -17.0d
+			y: 2.5d
+			description: [
+				"A Crystal Chest can be crafted by surrounding a Diamond Chest with Glass in a crafting table."
+				""
+				"A Crystal Chest holds 108 stacks (9 rows of 12). It's also see-through!"
+			]
+			dependencies: ["0099996EDE132F51"]
+			optional: true
+			id: "2E388DF5A9F49868"
+			tasks: [{
+				id: "1028DBDA4B8E1EC9"
+				type: "item"
+				item: "ironchest:crystal_chest"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -17.0d
+			y: 1.0d
+			description: ["A Diamond Chest can be upgraded to a Crystal Chest without having to move it simply by using one of these upgrades on it."]
+			dependencies: ["5DCB6DF90CEFB86E"]
+			optional: true
+			id: "0099996EDE132F51"
+			tasks: [{
+				id: "351F741D94816D61"
+				type: "item"
+				item: "ironchest:diamond_to_crystal_chest_upgrade"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -14.0d
+			y: 1.0d
+			description: ["A Diamond Chest can be upgraded to an Obsidian Chest without having to move it simply by using one of these upgrades on it."]
+			dependencies: ["5DCB6DF90CEFB86E"]
+			optional: true
+			id: "308A0E8E45ED02B9"
+			tasks: [{
+				id: "59474C376DC7AF40"
+				type: "item"
+				item: "ironchest:diamond_to_obsidian_chest_upgrade"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -14.0d
+			y: 2.5d
+			description: [
+				"An Obsidian Chest can be crafted by surrounding a Diamond Chest with Obsidian in a crafting table."
+				""
+				"An Obsidian Chest holds 108 stacks (9 rows of 12). It's also blast resistant!"
+			]
+			dependencies: ["308A0E8E45ED02B9"]
+			optional: true
+			id: "1D76CA72CA29632B"
+			tasks: [{
+				id: "6A096C785D7E967A"
+				type: "item"
+				item: "ironchest:obsidian_chest"
+			}]
+		}
+		{
+			title: "Full Size 1x1 Drawers"
+			x: -11.0d
+			y: -9.5d
+			description: ["Before upgrades, a 1x1 drawer has a base storage value of 2048, which means it can hold up to 2048 of one type of item."]
+			optional: true
+			id: "25F528C808746B34"
+			tasks: [{
+				id: "512167B1A5797337"
+				type: "item"
+				title: "Any Full Size 1x1 Drawer"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "storagedrawers:full_drawers_1"
+					}
+				}
+			}]
+		}
+		{
+			title: "Full Size 1x2 Drawers"
+			x: -11.0d
+			y: -8.5d
+			description: ["Before upgrades, a 1x2 drawer has a base storage value of 1024, which means it can hold up to 1024 of each of two types of item in its two drawers."]
+			optional: true
+			id: "5474572A4A105DA0"
+			tasks: [{
+				id: "38FFB6FB2C9EDA51"
+				type: "item"
+				title: "Any Full Size 1x2 Drawer"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "storagedrawers:full_drawers_2"
+					}
+				}
+			}]
+		}
+		{
+			title: "Full Size 2x2 Drawers"
+			x: -11.0d
+			y: -7.5d
+			description: ["Before upgrades, a 2x2 drawer has a base storage value of 512, which means it can hold up to 512 of each of four types of item in its four drawers."]
+			optional: true
+			id: "1D2256EED95CE6CB"
+			tasks: [{
+				id: "581FE8D8AB5AB4DF"
+				type: "item"
+				title: "Any Full Size 2x2 Drawer"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "storagedrawers:full_drawers_4"
+					}
+				}
+			}]
+		}
+		{
+			x: -11.0d
+			y: -5.5d
+			description: [
+				"Framed drawers work exactly the same as their plain wood counterparts, but allow for customisation of appearance to fit in better with your base design."
+				""
+				"To use a framed drawer, place 3 blocks of the materials you would like to use in the drawer construction into a crafting grid in a 2x2 arrangement with the Framed Drawer in the bottom right slot of the 2x2 arrangement."
+				""
+				"The top left block will be used for the back and sides, the top right will be used for the edges/frame, and the bottom left block will be used for the drawer front."
+				""
+				"{image:kubejs:textures/quests/framed_drawer_crafting.png width:200 height:100 align:1}"
+			]
+			optional: true
+			id: "56658D95108D7C3B"
+			tasks: [{
+				id: "6803089632855519"
+				type: "item"
+				item: "framedcompactdrawers:framed_full_one"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -4.5d
+			description: ["Framed drawers work exactly the same as their plain wood counterparts, but allow for customisation of appearance to fit in better with your base design. For a description of how this works, see the entry for the 1x1 Framed Drawer."]
+			optional: true
+			id: "3CA9BEDD18E77D5A"
+			tasks: [{
+				id: "651303A3B00AE379"
+				type: "item"
+				item: "framedcompactdrawers:framed_full_two"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -3.5d
+			description: ["Framed drawers work exactly the same as their plain wood counterparts, but allow for customisation of appearance to fit in better with your base design. For a description of how this works, see the entry for the 1x1 Framed Drawer."]
+			optional: true
+			id: "0B8F2187A32388C0"
+			tasks: [{
+				id: "704B4AFBF0FF29FF"
+				type: "item"
+				item: "framedcompactdrawers:framed_full_four"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -9.0d
+			description: [
+				"The Compacting Drawer automatically compresses items that can be compressed or decompressed in a crafting grid. For example, if you place an iron block in the top drawer slot (the highest compression drawer), then it will automatically show the Iron Ingots and Iron Nuggets."
+				""
+				"The Compacting Drawer will hold up to 8192 of the highest compressed item before upgrades!"
+			]
+			optional: true
+			id: "0495227FC8A82808"
+			tasks: [{
+				id: "148FACD2FDD06426"
+				type: "item"
+				item: "storagedrawers:compacting_drawers_3"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -8.0d
+			description: [
+				"The Drawer Controller allows you to interact with connected drawers up to 12 blocks away, providing an easy drop-off point for any items for which a drawer is already assigned. It can be piped into, and your ME system can even use an ME Storage Bus on it to use it (and hence all connected drawers) as external storage. Drawer controllers can share drawers, but cannot share Controller Slaves."
+				""
+				"Drawer Trim can be used to connect drawers without needing to have a drawer in place. This can be useful when \"turning corners\" with your drawer arrays."
+			]
+			optional: true
+			id: "20CD42FBD0FCF182"
+			tasks: [{
+				id: "75AC40E11ADE7AE0"
+				type: "item"
+				item: "storagedrawers:controller"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -7.0d
+			description: [
+				"A Drawer Controller Slave can be used to mimic a drawer controller anywhere in the drawer network while still in the same network of storage drawers as the controller (remember, there can be only one Drawer Controller in a network of drawers). This allows for better automation options (e.g. hiding the cables connecting your ME system to the storage drawers)"
+				""
+				"Unlike drawers, slaves cannot be shared across Drawer Controller Networks, so you must ensure that, when placing them, there is no overlap."
+			]
+			optional: true
+			id: "7502F4864B72BF9F"
+			tasks: [{
+				id: "67433F7D8B81D9BC"
+				type: "item"
+				item: "storagedrawers:controller_slave"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -5.0d
+			description: ["Framed Compacting Drawers work exactly the same as their plain counterpart, but allows for customisation of appearance to fit in better with your base design. For a description of how this works, see the entry for the 1x1 Framed Drawer."]
+			optional: true
+			id: "27FD652D4C45B6EB"
+			tasks: [{
+				id: "3F6E227E6AD00AD0"
+				type: "item"
+				item: "framedcompactdrawers:framed_compact_drawer"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -4.0d
+			description: ["Framed Drawer Controllers work exactly the same as their plain counterparts, but allow for customisation of appearance to fit in better with your base design. For a description of how this works, see the entry for the 1x1 Framed Drawer."]
+			optional: true
+			id: "782F4E9BE52EF131"
+			tasks: [{
+				id: "432CB30538511960"
+				type: "item"
+				item: "framedcompactdrawers:framed_drawer_controller"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -3.0d
+			description: ["Framed Controller Slaves work exactly the same as their plain counterparts, but allow for customisation of appearance to fit in better with your base design. For a description of how this works, see the entry for the 1x1 Framed Drawer."]
+			optional: true
+			id: "2A17587B14B14AFA"
+			tasks: [{
+				id: "0C12B5EEFEAD4F6C"
+				type: "item"
+				item: "framedcompactdrawers:framed_slave"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -9.5d
+			description: [
+				"A Drawer Key can be used on a Storage Drawer to lock it to a specific item (or unlock it to allow another item type to be used in that drawer). This can be very useful in an array of drawers where items are being piped in via a Drawer Controller, or when hooked up to an ME system. Instead of empty drawers being taken over for storing other things, this allows you to reserve drawers for a specific purpose."
+				""
+				"If a drawer is locked without anything in it, you can still manually place an item into it, at which point the drawer will be locked to that item type."
+				""
+				"You can lock / unlock an entire network of drawers by using the key on the Drawer Controller."
+			]
+			optional: true
+			id: "2DC352147FF24667"
+			tasks: [{
+				id: "08C057A5A64BEDC0"
+				type: "item"
+				item: "storagedrawers:drawer_key"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -9.0d
+			description: ["The Quantify Key will make any drawer it is used on display the quantity of items held in each drawer. It's not recommended that you use this on every drawer, it is useful if used on drawers when you need a little notice when things are running low or getting too full."]
+			optional: true
+			id: "731AE238CEBDC740"
+			tasks: [{
+				id: "1D2D0FA5C1C566D9"
+				type: "item"
+				item: "storagedrawers:quantify_key"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -8.0d
+			description: [
+				"The great thing about Storage Drawers is that they can have up to 7 different upgrades applied to them at once. To make an upgrade, you will need an upgrade base."
+				""
+				"Once you have an upgrade, you can apply it to a drawer either by using it directly on the drawer, or by opening up the drawer interface by sneaking and using the drawer with an empty hand (which is also how you can remove upgrades that aren't being used)"
+			]
+			optional: true
+			id: "0EB52E9B35FF03B4"
+			tasks: [{
+				id: "192A61E80C55DE97"
+				type: "item"
+				item: "storagedrawers:upgrade_template"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -4.0d
+			description: [
+				"This upgrade actually downgrades the drawer's base storage size to a single stack."
+				""
+				"At first you might wonder why you might ever want this, but there are situations where you might have a very expensive automated process running, but you do not need thousands of the resulting items. By downgrading the drawer size to single stack, you can allow that system to back up sooner when the drawer fills up, and thereby limit the amount of expensive processing that occurs."
+			]
+			optional: true
+			id: "6F98522124FA09E2"
+			tasks: [{
+				id: "6E0706DF9295A5C7"
+				type: "item"
+				item: "storagedrawers:one_stack_upgrade"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -3.5d
+			description: [
+				"Increases storage by 2x the drawer's base storage value (additive)."
+				""
+				"For example, on a 1x1 storage drawer which has a base storage size of 2k items, each one of these upgrades added would add an extra 4k items to the maximum that the drawer can store, resulting in a drawer that can store 6k total. Adding another one of these would add another 4k items, giving 10k total, and so on."
+			]
+			optional: true
+			id: "3075EBA8A71F49C0"
+			tasks: [{
+				id: "3BD3B2AEF9990DAE"
+				type: "item"
+				item: "storagedrawers:obsidian_storage_upgrade"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -3.0d
+			description: [
+				"Increases storage by 4 times base storage value (additive)."
+				""
+				"For example, on a 2x2 storage drawer which has a base storage size of 512 items per drawer, each one of these upgrades added would add an extra 2k items per drawer to the maximum that they can store, resulting in a drawers that can store 2.5k items each. Adding another one of these would add another 2k items per drawer, giving 4.5k per drawer, and so on."
+			]
+			optional: true
+			id: "5ED61530B665CBE6"
+			tasks: [{
+				id: "0EB53055D6542B55"
+				type: "item"
+				item: "storagedrawers:iron_storage_upgrade"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -2.5d
+			description: ["Increases storage by 8x the drawer's base storage value (additive)."]
+			optional: true
+			id: "2AF07D1E245F45F6"
+			tasks: [{
+				id: "4557D7F2104E1717"
+				type: "item"
+				item: "storagedrawers:gold_storage_upgrade"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -2.0d
+			description: ["Increases storage by 16x the drawer's base storage value (additive)."]
+			optional: true
+			id: "2481DA40ADAD78B6"
+			tasks: [{
+				id: "123553470BD2E714"
+				type: "item"
+				item: "storagedrawers:diamond_storage_upgrade"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -1.5d
+			description: ["Increases storage by 32x the drawer's base storage value (additive)."]
+			optional: true
+			id: "3E871FA598551EF6"
+			tasks: [{
+				id: "0B7CDEB46485CD73"
+				type: "item"
+				item: "storagedrawers:emerald_storage_upgrade"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -4.5d
+			description: [
+				"The drawer will destroy any excess items when deposited into it."
+				""
+				"This can be useful in situations where a system is in place where items keep coming in, but you don't need to keep them all. For example, there might be a secondary output from an automated process where you only want the main process to back up when another drawer (without this upgrade) is full, but you don't want the secondary item to back up and bring the process to a stop, so the secondary output is put into a drawer with this upgrade on it, which means any excess just gets destroyed and the process can continue filling up the main drawer."
+				""
+				"Another good use case is on Mob Drops from a mob farm - you definitely don't want tons of items collecting on the ground, and you don't want to have to store them all, so store some in a drawer, and let the excess be destroyed by this upgrade."
+			]
+			optional: true
+			id: "505201DC593A0870"
+			tasks: [{
+				id: "2168E20466AE38A9"
+				type: "item"
+				item: "storagedrawers:void_upgrade"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -6.0d
+			description: ["Auto-converts compatible items."]
+			optional: true
+			id: "1254F7155C5435CE"
+			tasks: [{
+				id: "4CE9E80BD735C9F8"
+				type: "item"
+				item: "storagedrawers:conversion_upgrade"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -7.0d
+			description: ["Illuminates drawer labels in the dark."]
+			optional: true
+			id: "7E734EF822FFF44C"
+			tasks: [{
+				id: "04653DDEA7857339"
+				type: "item"
+				item: "storagedrawers:illumination_upgrade"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -6.5d
+			description: ["Drawer emits a redstone signal for the total combined storage across all drawer slots."]
+			optional: true
+			id: "30237C22E955F9A1"
+			tasks: [{
+				id: "2A2A885A35ED8487"
+				type: "item"
+				item: "storagedrawers:redstone_upgrade"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -7.5d
+			description: ["Drawer emits a signal for the most full drawer slot."]
+			optional: true
+			id: "614269F190D376AE"
+			tasks: [{
+				id: "4F1C1B4A07D24502"
+				type: "item"
+				item: "storagedrawers:max_redstone_upgrade"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -5.5d
+			description: ["Drawer emits a redstone signal for the least full drawer slot."]
+			optional: true
+			id: "3887B17AC0A88999"
+			tasks: [{
+				id: "7CB5B4B46C25FB6D"
+				type: "item"
+				item: "storagedrawers:min_redstone_upgrade"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -4.5d
+			y: -9.5d
+			description: [
+				"All Ender Chests sharing the same channel (set by applying dyes to the buttons on top, or in a crafting grid) have access to the same chest inventory (27 stacks - 3 rows of 9 stacks - same size as a standard Chest)"
+				""
+				"Essentially what this means is that if you have two Ender Chests with the same channel and fill one with Cobblestone, you can extract that Cobblestone from the other Ender Chest - this works cross-dimensionally as well as over any distance!"
+				""
+				"p.s. If you're paranoid about other people in other dimensions nicking your stuff, you can make your Ender Chests private by applying a Diamond to the latch on the Ender Chest. Note that you should be careful here - if there is already something in the chest, that's on the public channel - so applying a diamond will change to a private channel, but not keep the contents!"
+			]
+			optional: true
+			id: "749585308C91E2F8"
+			tasks: [{
+				id: "4C1C0FA0BC49FA2F"
+				type: "item"
+				item: "enderstorage:ender_chest"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -7.5d
+			description: [
+				"A Bin is a block used to store large quantities of a single type of item."
+				""
+				"The Basic Bin has a capacity of 4,096 items."
+			]
+			dependencies: ["2A2991C7A49282DB"]
+			id: "7AF60E5B56810596"
+			tasks: [{
+				id: "6ACE24AF25F08A66"
+				type: "item"
+				item: "mekanism:basic_bin"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -6.0d
+			description: [
+				"A Bin is a block used to store large quantities of a single type of item."
+				""
+				"An Advanced Bin has a capacity of 8,192 items."
+			]
+			dependencies: [
+				"7AF60E5B56810596"
+				"5095107E4E8235DE"
+			]
+			id: "1F77564BFE7347DB"
+			tasks: [{
+				id: "4B4E129C2346982E"
+				type: "item"
+				item: "mekanism:advanced_bin"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -4.5d
+			description: [
+				"A Bin is a block used to store large quantities of a single type of item."
+				""
+				"An Elite Bin has a capacity of 32,768 items."
+			]
+			dependencies: [
+				"1F77564BFE7347DB"
+				"61C0AA54A152FCAA"
+			]
+			id: "58D10C4F363CCEC9"
+			tasks: [{
+				id: "3BB18E82D033E6AE"
+				type: "item"
+				item: "mekanism:elite_bin"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -3.0d
+			description: [
+				"A Bin is a block used to store large quantities of a single type of item."
+				""
+				"An Ultimate Bin has a capacity of 262,144 items."
+			]
+			dependencies: [
+				"58D10C4F363CCEC9"
+				"10E2C4E20F68BED8"
+			]
+			id: "6C8D88A9AD8264B8"
+			tasks: [{
+				id: "56B3C098FE5BD9A4"
+				type: "item"
+				item: "mekanism:ultimate_bin"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -10.0d
+			description: ["The Concealment Key will stop your storage drawer from showing what's inside it. This is useful if you want to hide what a drawer contains - however, in some situations where there are lots and lots of drawers, displaying their contents can interfere with the speed at which you perceive reality (the Science Division has termed this phenomenon \"lag\"), and therefore in such situations it might be beneficial to use a concealment key to remove some of those negative effects."]
+			id: "2C99514A8166587C"
+			tasks: [{
+				id: "6C2E26D1FFE1F303"
+				type: "item"
+				item: "storagedrawers:shroud_key"
+			}]
+		}
+	]
+}

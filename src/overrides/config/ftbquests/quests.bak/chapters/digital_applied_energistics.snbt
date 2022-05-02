@@ -1,0 +1,695 @@
+{
+	id: "4563107BC3215F01"
+	group: "24F09E0B1AD125E9"
+	order_index: 1
+	filename: "digital_applied_energistics"
+	title: "Digital: Applied Energistics"
+	icon: "appliedenergistics2:charged_certus_quartz_crystal"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -11.0d
+			y: 4.0d
+			width: 4.0d
+			height: 4.5d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/ae2/ae2-furnace-automation.png"
+			hover: [
+				"A typical example of simple automation for a furnace."
+				""
+				"On top is an ME Interface with Encoded Patterns for processing recipes."
+				""
+				"On the side is an ME Export Bus which is exporting Coal from the ME System into the furnace as fuel."
+				""
+				"On the bottom is an ME Import Bus to import the resulting smelted item back into the ME System."
+			]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -12.5d
+			y: 8.5d
+			width: 8.0d
+			height: 5.5d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/ae2/ae2-molecular-assemblers.png"
+			hover: [
+				"An example of how you might choose to set up your ME Interfaces and Molecular Assemblers."
+				""
+				"Note that a block this size is bigger than would usually work if channels were enabled."
+			]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -12.5d
+			y: 13.0d
+			width: 8.0d
+			height: 3.5d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/ae2/ae2-crafting-cpus.png"
+			hover: [
+				"Examples of valid Crafting CPU multi-block structures. From left to right:"
+				"."
+				"A single 1K Crafting Storage block, allowing for single small crafts to be processed."
+				"."
+				"A single 1K Crafting Storage block (as above) with a Crafting Monitor to show what is being crafted."
+				"."
+				"A Crafting Co-Processor Unit, a 4K Crafting Storage, a Crafting Monitor and a \"filler\" Crafting Unit. This would be capable of crafting two things at once for slightly more complex recipes."
+				"."
+				"Four 16K Crafting Storage as the Crafting CPU. Only a single job can be processed at a time, but would cater for larger crafts (equivalent of a single 64K Crafting Storage)."
+				"."
+				"A 2x3x2 cuboid Crafting CPU comprised of a Crafting Monitor, multiple Crafting Co-Processor Units and multiple Crafting Storage blocks. Capable of processing multiple crafts simultaneously and dealing with very large crafting jobs."
+			]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "Digital Storage: Applied Energistics"
+			x: -3.0d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"In addition to increasing your digital storage capabilities, now that you're able to create storage components and the various processors, there is a lot more that you can do with your ME system."
+				""
+				"This Appendix entry aims to tell you just enough to get you going, and hopefully you will be able to do some amazing things with this technology kindly provided to you by Cuboid Corp (tm) and our affiliate AlgorithmX2 at Applied Energistics."
+			]
+			dependencies: ["2A0BA655B05B5F2D"]
+			id: "1828513DFF41506C"
+			tasks: [{
+				id: "22697D3B1DCA9046"
+				type: "item"
+				item: "appliedenergistics2:1k_cell_component"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 6.5d
+			description: [
+				"The ME Storage Bus allows you to connect external inventories to your ME System and access them through your standard ME Terminals, or use their content in auto-crafting."
+				""
+				"A common use case for this is when you have Storage Drawers containing lots of items and you do not want to flood your digital storage by moving everything across. What you would do in this instance is connect the ME Storage Bus to the Drawer Controller (or a Drawer Controller Slave) and that would allow you to treat the drawers as part of the ME Storage System."
+				""
+				"A Priority can be set to specify whether things should be stored in the external storage before being stored in the ME System, filters (partitions) can be applied to only allow certain items to be accessed, and the direction can be set to Bi-Directional, Insert Only or Extract Only to allow greater control. When attaching to storage drawers, it's often a good idea to set the drawers with a higher priority than your Drives so that they are used first when taking things out or putting things in through your terminals."
+			]
+			dependencies: ["180567EB6F3528A8"]
+			id: "36AF60405BD070AE"
+			tasks: [{
+				id: "445E36BFF3518FB7"
+				type: "item"
+				item: "appliedenergistics2:storage_bus"
+			}]
+			rewards: [{
+				id: "53218249D89795D7"
+				type: "item"
+				item: "appliedenergistics2:storage_bus"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.5d
+			description: [
+				"Fluix ME Glass Cables are the entry-level cables in an ME system. Under normal circumstances, these cables can only carry 8 channels - which means only 8 devices can be connected to a particular run of Fluix Glass ME Cable - any additional devices attached would simply not work!"
+				""
+				"These cables will easily connect to just about any other cable, which is both a blessing and a curse if you needed to worry about channels - luckily for you, you don't have to!"
+				""
+				"If you colour these by applying dye, then the coloured version will only connect with other cables of the same colour."
+			]
+			dependencies: ["6DE3F70EB4CD0CD9"]
+			id: "43B99DA053AE15C6"
+			tasks: [{
+				id: "0F64B776FFD75FA2"
+				type: "item"
+				item: "appliedenergistics2:fluix_glass_cable"
+				count: 4L
+			}]
+			rewards: [{
+				id: "5B7F27346548F39A"
+				type: "item"
+				item: "appliedenergistics2:fluix_glass_cable"
+				count: 8
+				random_bonus: 17
+			}]
+		}
+		{
+			x: 1.5d
+			y: 6.5d
+			description: [
+				"Adding some Redstone and Glowstone to a Fluix ME Cover Cable results in a Fluix ME Smart Cable. What this adds is a visual indicator of the channel usage when you look at the cable. You might find it interesting, if you want to try and understand how channels would normally work, to use the smart version of cables here and there in your ME network."
+				""
+				"These cables can also be coloured using dye to keep your cable runs tidy - they will only connect to other cables of the same colour, or the uncoloured version."
+			]
+			dependencies: ["6E2690379CD0039D"]
+			optional: true
+			id: "344C915EFD13A8E9"
+			tasks: [{
+				id: "1996CB75650E804A"
+				type: "item"
+				item: "appliedenergistics2:fluix_smart_cable"
+			}]
+			rewards: [{
+				id: "70BDFD1040CF52D6"
+				type: "item"
+				item: "appliedenergistics2:fluix_smart_cable"
+				count: 8
+				random_bonus: 8
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			description: [
+				"These cables are essentially the same as the Fluix ME Glass Cables, except that they are less \"flashy\". If you don't like the flickering of the glass version, use a covered version instead."
+				""
+				"These cables can also be coloured using dye to keep your cable runs tidy - they will only connect to other cables of the same colour, or the uncoloured version."
+			]
+			dependencies: ["43B99DA053AE15C6"]
+			id: "6E2690379CD0039D"
+			tasks: [{
+				id: "7EA0931A15C2F38E"
+				type: "item"
+				item: "appliedenergistics2:fluix_covered_cable"
+			}]
+			rewards: [{
+				id: "485420F7035BEB19"
+				type: "item"
+				item: "appliedenergistics2:fluix_covered_cable"
+				count: 8
+				random_bonus: 8
+			}]
+		}
+		{
+			x: -1.5d
+			y: 6.5d
+			description: [
+				"Each face on an ME Controller can normally provide a maximum of 32 channels. The Dense ME Cables allow the full 32 channels to be transmitted across them. Usually you would use dense cables connected to your ME Controller, and branch off 4 other cables from each of the Dense ME Cables to be able to connect the full 32 channels to devices."
+				""
+				"These cables can also be coloured using dye to keep your cable runs tidy - they will only connect to other cables of the same colour, or the uncoloured version."
+			]
+			dependencies: ["6E2690379CD0039D"]
+			optional: true
+			id: "565C5E839DFBAEC5"
+			tasks: [{
+				id: "4C5B30D4178D35ED"
+				type: "item"
+				item: "appliedenergistics2:fluix_covered_dense_cable"
+			}]
+			rewards: [{
+				id: "65568848382305F3"
+				type: "item"
+				item: "appliedenergistics2:fluix_covered_dense_cable"
+				count: 8
+				random_bonus: 8
+			}]
+		}
+		{
+			x: 0.0d
+			y: 8.0d
+			description: [
+				"The addition of some Redstone and Glowstone will turn a Dense ME Cable into a Dense Smart ME Cable, which can provide a visual indication of the number of channels being used. Under normal circumstances this is invaluable in planning your ME network. If you want to try and understand how channels would normally work, then using some of these might be very enlightening."
+				""
+				"As with all previos cables, these can be coloured using dye to keep your cable runs tidy - they will only connect to other cables of the same colour, or the uncoloured version."
+			]
+			dependencies: ["565C5E839DFBAEC5"]
+			optional: true
+			id: "3CACED282D4B8D8C"
+			tasks: [{
+				id: "7091325FC917CB4C"
+				type: "item"
+				item: "appliedenergistics2:fluix_smart_dense_cable"
+			}]
+			rewards: [{
+				id: "6132FB0E9716ED1C"
+				type: "item"
+				item: "appliedenergistics2:fluix_smart_dense_cable"
+				count: 8
+				random_bonus: 8
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.5d
+			description: [
+				"A cable anchor can be used to stop cables from automatically connecting to a machine or other cable, ensuring that power and data do not mix."
+				""
+				"A secondary use is in the creation of &aCable Facades&f. 4 Cable Anchors and a solid block of almost any material will create a Cable Facade. These can then be attached to cables (and ME Terminals) to disguise the cable, making it look like the block you created the Cable Facade from instead. If you think seeing a bunch of cables is unsightly, then this is your solution!"
+			]
+			dependencies: ["6DE3F70EB4CD0CD9"]
+			id: "432597A05BA9C1ED"
+			tasks: [{
+				id: "6B95D1C5BF0E9528"
+				type: "item"
+				item: "appliedenergistics2:cable_anchor"
+			}]
+			rewards: [{
+				id: "07D70B1A09812740"
+				type: "item"
+				item: "appliedenergistics2:cable_anchor"
+				count: 16
+				random_bonus: 16
+			}]
+		}
+		{
+			title: "Connecting with Fiber"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Quartz Fiber is used for multiple purposes. When used in-world, it can allow power to be transferred between ME cables without connecting the data channels, which is useful when you want to share power, but need to keep networks or channels separate."
+				""
+				"The main use for you though will be as a crafting ingredient for the making of cables."
+			]
+			dependencies: ["1828513DFF41506C"]
+			id: "6DE3F70EB4CD0CD9"
+			tasks: [{
+				id: "4D56B9B64AF1F0F7"
+				type: "item"
+				item: "appliedenergistics2:quartz_fiber"
+			}]
+			rewards: [{
+				id: "024581DEEEA3835D"
+				type: "item"
+				item: "appliedenergistics2:quartz_fiber"
+				count: 12
+				random_bonus: 20
+			}]
+		}
+		{
+			title: "The Cores of the matter"
+			x: -6.0d
+			y: 2.0d
+			description: [
+				"At the heart of a digital storage solution lies a dirty little secret... the things you put in are completely annihilated - their matters is essentially destroyed and converted into energy, which in turn is encoded digitally. Similarly, taking something out of digital storage actually means reading the encoded data, building an energy stream, and then using that to form the matter again in the right configuration."
+				""
+				"At the heart of this process are the Annihilation and Formation Cores respectively. You've already made some, but you're going to need some more if you'd like to automate some crafting using your ME system too."
+			]
+			dependencies: ["1828513DFF41506C"]
+			id: "4C2B4423040C29D4"
+			tasks: [
+				{
+					id: "3DE024DFFA4503EF"
+					type: "item"
+					item: "appliedenergistics2:annihilation_core"
+					count: 2L
+				}
+				{
+					id: "0C303FEB1A9D98FD"
+					type: "item"
+					item: "appliedenergistics2:formation_core"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "11CC31228BB97490"
+					type: "item"
+					item: "appliedenergistics2:annihilation_core"
+					count: 4
+					random_bonus: 4
+				}
+				{
+					id: "735CFD505A37D813"
+					type: "item"
+					item: "appliedenergistics2:formation_core"
+					count: 4
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 5.0d
+			description: [
+				"When it comes to autocrafting, the ME Interface is perhaps your most important ally."
+				""
+				"There is no real difference between the block form and the slimline form, except that in block form it can connect to multiple other blocks - particularly useful when working with Molecular Assemblers as you will see."
+				""
+				"The simple usage of an ME interface is to attach it to a machine or inventory and up to 9 different Encoded Patterns for the thing(s) you want to be able to auto-craft using that machine."
+				""
+				"Adding a Crafting Card to an ME Interface will allow it to automatically request crafts for any missing ingredients, assuming you have the ability to autocraft them somewhere in your ME system."
+			]
+			dependencies: ["4C2B4423040C29D4"]
+			id: "180567EB6F3528A8"
+			tasks: [
+				{
+					id: "451596785BD2E33D"
+					type: "item"
+					item: "appliedenergistics2:interface"
+				}
+				{
+					id: "47BA10A37065C5BD"
+					type: "item"
+					item: "appliedenergistics2:cable_interface"
+				}
+			]
+			rewards: [
+				{
+					id: "0F976FA3D77E2258"
+					type: "item"
+					item: "appliedenergistics2:interface"
+					random_bonus: 3
+				}
+				{
+					id: "4E936F8EF675DC28"
+					type: "item"
+					item: "appliedenergistics2:cable_interface"
+					random_bonus: 3
+				}
+				{
+					id: "678A307A51C3824B"
+					type: "item"
+					item: "appliedenergistics2:interface_terminal"
+				}
+			]
+		}
+		{
+			title: "Automatic importing of items into the ME System"
+			x: -7.5d
+			y: 3.5d
+			description: [
+				"An ME Import Bus can be attached to any block with an inventory, including chests and machines. The ME Import Bus will then retrieve items from the inventory it is attached to an add them to your ME System's digital storage. Naturally the ME Import Bus itself must be hooked up to your ME network using some form of ME Cable."
+				""
+				"Note that it is not recommended that you attach an ME Import Bus to something that produces items infinitely or you are likely to end up running out of space in your ME System very quickly!"
+				""
+				"The main use case for an ME Import Bus is to take the results of a crafting operation and put it back into your ME System."
+				""
+				"A filter can be applied to limit the items that are imported, and upgrades can be added to increase the speed at which items are imported."
+			]
+			dependencies: ["4C2B4423040C29D4"]
+			id: "25B5DCD66A623987"
+			tasks: [{
+				id: "00D3122F17912915"
+				type: "item"
+				item: "appliedenergistics2:import_bus"
+			}]
+			rewards: [{
+				id: "7974AA4EEFE86CBE"
+				type: "item"
+				item: "appliedenergistics2:import_bus"
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Automatic exporting of items from the ME System"
+			x: -4.5d
+			y: 3.5d
+			description: [
+				"An ME Export Bus can be attached to any block with an inventory, including chests and machines. It can be configured to export specific items from your ME System's storage."
+				""
+				"A good example of when to use an ME Export Bus would be to provide a Metallurgic Infuser with a constant supply of redstone."
+				""
+				"The ME Export Bus can have upgrades applied to increase the speed at which items are exported."
+				""
+				"Adding a Crafting Card to an ME Export Bus will allow it to automatically request crafts for the item being exported, assuming you have the ability to autocraft it somewhere in your ME system."
+			]
+			dependencies: ["4C2B4423040C29D4"]
+			id: "522EE9FFDCDF2F41"
+			tasks: [{
+				id: "215CFB3F950501CB"
+				type: "item"
+				item: "appliedenergistics2:export_bus"
+			}]
+			rewards: [{
+				id: "099590FD6373B39C"
+				type: "item"
+				item: "appliedenergistics2:export_bus"
+				random_bonus: 3
+			}]
+		}
+		{
+			x: -6.0d
+			y: 6.5d
+			description: [
+				"Molecular Assemblers are where crafting recipes are constructed by your ME system when doing auto-crafting. Each Molecular Assembler can do a single craft at a time. In order to be told what to craft, a molecular assembler must be connected to an ME Interface containing the Encoded Pattern with the appropriate crafting recipe encoded into it."
+				""
+				"It is possible to \"share\" Molecular Assemblers between multiple ME Interfaces. The ME Interfaces will select an unused Molecular Assembler it has access to when a craft is requested. It is therefore quite common to use cuboid structures of ME Interfaces and Molecular Assemblers in a checkerboard pattern to try and maximise the amount of parallel crafting that can occur."
+				""
+				"An ME Interface Terminal can be used to remotely access ME Interfaces, which means you do not need direct access to an ME Interface to be able to change patterns in it."
+				""
+				"In addition to an ME Interface and Molecular Assembler, you will need some form of Crafting CPU available on your ME network, made up of at least one Crafting Storage unit."
+			]
+			dependencies: ["180567EB6F3528A8"]
+			id: "0B8E819D14DB5D63"
+			tasks: [{
+				id: "109C5CBF3A73768F"
+				type: "item"
+				item: "appliedenergistics2:molecular_assembler"
+			}]
+			rewards: [{
+				id: "25A87EBC04901650"
+				type: "item"
+				item: "appliedenergistics2:molecular_assembler"
+				count: 4
+				random_bonus: 12
+			}]
+		}
+		{
+			x: -6.0d
+			y: 10.0d
+			description: [
+				"Adds 1K of memory to your Crafting CPU multiblock structure. Can be used on its own as a single job Crafting CPU for small crafts."
+				""
+				"Multiple Crafting Storage blocks can be added to a Crafting CPU multiblock for increased crafting capacity."
+			]
+			dependencies: ["107150FFDD89FCC2"]
+			id: "01B3726D689E5266"
+			tasks: [{
+				id: "1815D135E79DCB91"
+				type: "item"
+				item: "appliedenergistics2:1k_crafting_storage"
+			}]
+			rewards: [{
+				id: "580BE70B1E3BBE8A"
+				type: "item"
+				item: "appliedenergistics2:1k_crafting_storage"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: -6.0d
+			y: 8.0d
+			description: [
+				"The Crafting Unit offers no functionality of its own, but can be used as either a filler block in a Crafting CPU multiblock structure, or as a crafting ingredient when making components that form part of the Crafting CPU structure."
+				""
+				"A Crafting CPU is a multi-block structure. It takes up a single channel on an ME network regardless of its size. It must be cuboid in structure, and must be comprised of at least one Crafting Storage block (can be more than one), and optionally a Crafting Monitor, a Crafting Co-Processing Unit, and Crafting Units as filler blocks."
+				""
+				"The smallest valid Crafting CPU is therefore a single Crafting Storage block, which is capable of carrying out a single craft at once. To enable multiple crafts to be done simultaneously, one or more Crafting Co-Processing Units can be added to the multiblock structure."
+				""
+				"To view what the multiblock is currently crafting, add a Crafting Monitor."
+				""
+				"To allow the Crafting CPU to work with larger crafts, add more Crafting Storage Blocks."
+				""
+				"It is common to have several different Crafting CPU structures - some for small jobs, and some larger multiblock structures for dealing with large and complex crafts."
+			]
+			dependencies: ["0B8E819D14DB5D63"]
+			id: "107150FFDD89FCC2"
+			tasks: [{
+				id: "5EEA68A7FA657F22"
+				type: "item"
+				item: "appliedenergistics2:crafting_unit"
+			}]
+			rewards: [{
+				id: "514C22A840EBACC1"
+				type: "item"
+				item: "appliedenergistics2:crafting_unit"
+				count: 4
+				random_bonus: 12
+			}]
+		}
+		{
+			x: -6.0d
+			y: 14.0d
+			description: ["A Crafting Monitor can be added to a Crafting CPU multiblock structure to show what the Crafting CPU is currently constructing."]
+			dependencies: ["47BABFF51CE7E145"]
+			id: "7F9F12F66725A42E"
+			tasks: [{
+				id: "02C847EEE2712F19"
+				type: "item"
+				item: "appliedenergistics2:crafting_monitor"
+			}]
+			rewards: [{
+				id: "3FDEBD85BB1032F8"
+				type: "item"
+				item: "appliedenergistics2:crafting_monitor"
+				random_bonus: 3
+			}]
+		}
+		{
+			x: -6.0d
+			y: 12.0d
+			description: ["Each Crafting Co-Processing Unit added to a Crafting CPU multiblock structure will enable another parallel crafting process to be carried out, resulting in quicker crafts, but more demands on both Crafting Storage and power consumption."]
+			dependencies: ["01B3726D689E5266"]
+			id: "47BABFF51CE7E145"
+			tasks: [{
+				id: "65431C90A4A0BB13"
+				type: "item"
+				item: "appliedenergistics2:crafting_accelerator"
+			}]
+			rewards: [
+				{
+					id: "0FCDE19BFF56284E"
+					type: "item"
+					item: "appliedenergistics2:storage_monitor"
+				}
+				{
+					id: "6D13FDF939D96954"
+					type: "item"
+					item: "appliedenergistics2:crafting_accelerator"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: 6.5d
+			description: [
+				"Blank Patterns are encoded in an ME Pattern Terminal. They can be encoded as crafting recipes, or as processing recipes."
+				""
+				"&aCrafting Recipe&f Encoded Patterns are essentially just the recipe you would use in a crafting grid. These patterns must be placed inside an ME Interface block on your ME Network, with at least one Molecular Assembler adjacent to it. The Molecular Assembler is where the craft actually occurs. You will also need some kind of Crafting Storage on your network to be able to hold the necessary information for the craft to be encoded before starting. The bigger the craft, the more crafting storage required."
+				""
+				"&aProcessing Recipe&f Encoded Patterns essentially contain the inputs to send to a machine, and the outputs expected for the ME System to know that the craft has completed. These patterns must be placed in an ME Interface attached to the machine that will carry out the processing. The resulting item(s) must be imported back into the ME system through other means (typically through the use of an ME Import Bus)"
+				""
+				"When creating patterns, the toggle button to the right of the pattern grid allows switching between crafting recipes (Crafting Table icon) and processing recipes (Furnace icon). You can drag items from JEI into the grid to create the patterns, or hover over items in JEI and press R for their recipes and add from there."
+			]
+			dependencies: ["180567EB6F3528A8"]
+			id: "07EEAF0509F099EC"
+			tasks: [{
+				id: "259BDFEDABD624F9"
+				type: "item"
+				item: "appliedenergistics2:blank_pattern"
+			}]
+			rewards: [
+				{
+					id: "40C88D23B2D435FB"
+					type: "item"
+					item: "appliedenergistics2:pattern_terminal"
+				}
+				{
+					id: "3E4A361F658B4DF6"
+					type: "item"
+					item: "appliedenergistics2:blank_pattern"
+					count: 16
+					random_bonus: 16
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 10.0d
+			description: [
+				"Adds 4K of memory to your Crafting CPU multiblock structure. Can be used on its own as a single job Crafting CPU for small to medium crafts."
+				""
+				"Multiple Crafting Storage blocks can be added to a Crafting CPU multiblock for increased crafting capacity."
+			]
+			dependencies: ["01B3726D689E5266"]
+			optional: true
+			id: "095F7882930EE411"
+			tasks: [{
+				id: "4C877C11C06E2C55"
+				type: "item"
+				item: "appliedenergistics2:4k_crafting_storage"
+			}]
+			rewards: [{
+				id: "4520CA46227DF67C"
+				type: "item"
+				item: "appliedenergistics2:4k_crafting_storage"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: -3.0d
+			y: 10.0d
+			description: [
+				"Adds 16K of memory to your Crafting CPU multiblock structure. Can be used on its own as a single job Crafting CPU for medium to large crafts."
+				""
+				"Multiple Crafting Storage blocks can be added to a Crafting CPU multiblock for increased crafting capacity."
+			]
+			dependencies: ["095F7882930EE411"]
+			optional: true
+			id: "62612FD5DFB76BD4"
+			tasks: [{
+				id: "056628837A00C3C6"
+				type: "item"
+				item: "appliedenergistics2:16k_crafting_storage"
+			}]
+			rewards: [{
+				id: "547255217A290F4D"
+				type: "item"
+				item: "appliedenergistics2:16k_crafting_storage"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: -1.5d
+			y: 10.0d
+			description: [
+				"Adds 64K of memory to your Crafting CPU multiblock structure. Can be used on its own as a single job Crafting CPU for large to very large crafts."
+				""
+				"Multiple Crafting Storage blocks can be added to a Crafting CPU multiblock for increased crafting capacity."
+			]
+			dependencies: ["62612FD5DFB76BD4"]
+			optional: true
+			id: "1CD5667305D728A8"
+			tasks: [{
+				id: "0B9CD7AB1FBA922E"
+				type: "item"
+				item: "appliedenergistics2:64k_crafting_storage"
+			}]
+			rewards: [{
+				id: "4810E29025151C1E"
+				type: "item"
+				item: "appliedenergistics2:64k_crafting_storage"
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "Understanding Channels"
+			x: -3.0d
+			y: 2.0d
+			shape: "octagon"
+			description: [
+				"Under normal circumstances, Applied Energistics ships with a requirement to work with Channels. Effectively, each ME Controller can output 32 channels per face, cables have a maximum number of channels they can support, and most things you connect to your ME network will consume a channel. This would typically mean that if you need more channels, you will need more ME controllers."
+				""
+				"In such a situation, you would also need to be a lot more careful about cable management. You would need to use the coloured cables to keep cable runs separate and stop channels mixing unintentionally too."
+				""
+				"As you're just starting out, and there's really no need to make your miserable life more difficult than it already is out there in Outpost 42, we've disabled the channel requirements. For your infomation only, using Smart cables will still show the number of channels that would be used - but things will keep working even if the limit is exceeded (special thanks to one of our Science Division AI's, designated Domaman202)"
+				""
+				"We've also managed to include a spare ME Controller for you - have fun!"
+			]
+			dependencies: ["1828513DFF41506C"]
+			id: "25E84A0A4A537F38"
+			tasks: [{
+				id: "2F8EBD7B9B3C7DFA"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [
+				{
+					id: "2DAA4ECB1D4B8CCD"
+					type: "item"
+					item: "appliedenergistics2:controller"
+				}
+				{
+					id: "6F6B34B81A361FF3"
+					type: "item"
+					item: "appliedenergistics2:energy_acceptor"
+				}
+				{
+					id: "6BD8C17DD5008764"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:energy_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+	]
+}

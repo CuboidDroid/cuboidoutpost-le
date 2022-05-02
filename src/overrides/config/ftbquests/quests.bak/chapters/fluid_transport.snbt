@@ -1,0 +1,269 @@
+{
+	id: "7504D2F4D88313C5"
+	group: "033EC740B2EF1FC1"
+	order_index: 0
+	filename: "fluid_transport"
+	title: "Fluid Transport"
+	icon: "enderstorage:ender_tank"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 2.5d
+			y: 2.0d
+			description: [
+				"Mechanical pipes can transfer fluids over long distances when joined up together. Use a Configurator on an edge attached to a machine to pull fluids out of the machine and push it through the connected pipes."
+				""
+				"The Basic Mechanical Pipe can transfer fluids at a maximum rate of 512mb per tick (a little over 10 buckets a second)"
+			]
+			id: "5E419353EC2F2F44"
+			tasks: [{
+				id: "73B097E020BC0B9A"
+				type: "item"
+				item: "mekanism:basic_mechanical_pipe"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.5d
+			description: [
+				"The Advanced Mechanical Pipe can transfer fluids at a rate of 1000mb per tick (20 buckets per second)"
+				""
+				"You can perform an \"in-world\" upgrade of up to 8 of the Basic Mechanical Pipes to this Advanced version by using an Infused Alloy on one of them."
+			]
+			dependencies: ["5E419353EC2F2F44"]
+			id: "721A102962C8373F"
+			tasks: [{
+				id: "472D4D80A157E367"
+				type: "item"
+				item: "mekanism:advanced_mechanical_pipe"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 5.0d
+			description: [
+				"The Elite Mechanical Pipe can transfer fluids at a maximum rate of 16,000mb per tick (320 buckets per second!)"
+				""
+				"You can upgrade up to 8 connected Advanced Mechanical Pipes \"in-world\" by using a Reinforced Alloy on one of them."
+			]
+			dependencies: ["721A102962C8373F"]
+			id: "09EDB80081CCAA54"
+			tasks: [{
+				id: "1E916F420B2E1600"
+				type: "item"
+				item: "mekanism:elite_mechanical_pipe"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 6.5d
+			description: [
+				"The Ultimate Mechanical Pipe can transfer fluids at a maximum rate of 64,000mb per tick (1280 buckets per second!)"
+				""
+				"Up to 8 connected Elite Mechanical Pipes can be upgraded \"in-world\" by using an Atomic Alloy on one of them."
+			]
+			dependencies: ["09EDB80081CCAA54"]
+			id: "14E47EE15819EF3D"
+			tasks: [{
+				id: "2639228F1B2DE6C9"
+				type: "item"
+				item: "mekanism:ultimate_mechanical_pipe"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			description: ["The electric pump, when powered, will consume connected source blocks of fluid and pump it out to connected mechanical pipes. The pump itself can be waterlogged, but does require a source block of fluid immediately below it to begin working."]
+			id: "725F5C52C894F657"
+			tasks: [{
+				id: "76D946183175597C"
+				type: "item"
+				item: "mekanism:electric_pump"
+			}]
+		}
+		{
+			title: "Immersive: Fluid Pipe"
+			x: -0.5d
+			y: 2.0d
+			description: ["These fluid pipes are extremely basic, but also extremely cheap. You will either need to hook them up to a machine that automatically pumps the fluid into them, or use a Fluid Pump to move the fluid inside them."]
+			id: "64B1FD08E6E2B140"
+			tasks: [{
+				id: "5DB02A4C6E1F26F8"
+				type: "item"
+				item: "immersiveengineering:fluid_pipe"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.0d
+			description: ["These pipes need a Mechanical Pump to have fluid pushed through them, but can actually be used to pull in fluid from the world, or push fluid out into the world too. Use a Wrench on the pipe to add a \"window\" so you can see fluid flowing through it."]
+			id: "133AC42B97A5ACBF"
+			tasks: [{
+				id: "6A782A6A10284D31"
+				type: "item"
+				item: "create:fluid_pipe"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.5d
+			description: ["The Smart Fluid Pipe can have a filter applied to it (place a bucket of the fluid you want to allow through the pipe into the filter slot). This can be useful when using things like a Mixer to ensure you don't pull out fluids before they are properly mixed."]
+			dependencies: ["133AC42B97A5ACBF"]
+			id: "25E394F9E9C727E5"
+			tasks: [{
+				id: "7A812FA6750FB272"
+				type: "item"
+				item: "create:smart_fluid_pipe"
+			}]
+		}
+		{
+			title: "Immersive: Fluid Pump"
+			x: -1.5d
+			y: 2.0d
+			description: ["This fluid pump requires power, and can be turned on and off using a redstone signal. Use an engineer's hammer to specify input (blue) and output (orange) on the sides of the pump."]
+			id: "182026EEBE95B146"
+			tasks: [{
+				id: "236034ADD050CFCA"
+				type: "item"
+				item: "immersiveengineering:fluid_pump"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.0d
+			description: ["The Mechanical Pump uses rotational force to push fluid through a set of connected pipes - up to 16 blocks range. Direction can be reversed using a Wrench, and the rotational speed affects the flow rate."]
+			id: "1A189C9FA030E922"
+			tasks: [{
+				id: "3E5C822799E3A611"
+				type: "item"
+				item: "create:mechanical_pump"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 2.0d
+			description: [
+				"The Ender Tank works much like an Ender Chest, except that it can hold one type of fluid in it instead of items. All Ender Tanks sharing the same channel (set by applying dyes to the buttons on top, or in a crafting grid) have access to the same fluid storage tank."
+				""
+				"Essentially what this means is that if you have two Ender Tanks with the same channel and fill one with lava, you can extract that lava from the other tank - this works cross-dimensionally as well as over any distance!"
+				""
+				"p.s. If you're paranoid about other people in other dimensions nicking your stuff, you can make your Ender Tanks private by applying a Diamond to the dial on the tank."
+			]
+			id: "3837867475B59F18"
+			tasks: [{
+				id: "0747AC7427213B38"
+				type: "item"
+				item: "enderstorage:ender_tank"
+			}]
+		}
+		{
+			title: "XNet for Fluids"
+			x: -3.5d
+			y: 2.0d
+			description: [
+				"XNet can have channels configured for fluids, allowing for filters, rate restriction, priority and distribution modes, and more."
+				""
+				"It does require an XNet Controller too, of course, but if you are looking to automate a process that includes fluids, it can be a great choice."
+				""
+				"If you would like some examples of how to use it, take a look at the \"Networks for XMen\" topic in this appendix."
+				""
+				"&cUnfortunately you can't look up the recipe from here directly due to corruption that occurred during transmission of this survival guide. Please use the search feature in JEI instead.&f"
+			]
+			id: "26642B00376F3070"
+			tasks: [
+				{
+					id: "17CA4CE1C8650ECD"
+					type: "item"
+					title: "Connector"
+					icon: "xnet:connector_blue"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "xnet:connectors"
+						}
+					}
+				}
+				{
+					id: "6603FA3C57ABF327"
+					type: "item"
+					title: "Network Cable"
+					icon: "xnet:netcable_blue"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "xnet:cables"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Fluid Transport"
+			x: 3.75d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"Moving fluids around will be necessary sooner or later, so knowing your options is key."
+				""
+				"There are options that are just manual transportation, options that involve pumps and pipes to move fluids between containers or machines, and options that combine storage with transportability."
+			]
+			size: 1.5d
+			id: "7F4EEC10573D1EB4"
+			tasks: [{
+				id: "2C676AA9A71CAFE9"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 2.0d
+			description: ["The humble bucket is an obvious choice to have on hand, but nevertheless arguably one of the most versatile and useful options for getting small amounts of fluid moved around in the world."]
+			id: "7DB74266994654BB"
+			tasks: [{
+				id: "74CE124D630B37CE"
+				type: "item"
+				item: "minecraft:bucket"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 2.0d
+			description: ["The Jerrycan can be used in certain machines to carry up to 10 buckets of fluid. A prime example of this is to collect Creosote Oil from a Coke Oven. It can then subsequently be used in a crafting grid instead of a bucket of Creosote Oil to make up to 10 batches of Treated Wood Planks."]
+			id: "47C3812B2944C18C"
+			tasks: [{
+				id: "04D8A47038A41DFF"
+				type: "item"
+				item: "immersiveengineering:jerrycan"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 2.0d
+			description: [
+				"A pair of Fluid Transporters can be used to move fluids between blocks over a 1 block distance. Place a Fluid Transporter on each block, and then press in the button on the side you want to receive the fluids."
+				""
+				"Supports filtering on whitelist / blacklist."
+			]
+			id: "3A53D5F1E7426C55"
+			tasks: [{
+				id: "5670EB889425CF2B"
+				type: "item"
+				item: "industrialforegoing:fluid_transporter_type"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 2.0d
+			description: ["Transfers fluids. Use a Pipe Wrench to configure. Can be upgraded using Pipe Upgrades."]
+			id: "6CF2A3AD1FE8A99D"
+			tasks: [{
+				id: "5A3CAF06472F0395"
+				type: "item"
+				item: "pipez:fluid_pipe"
+			}]
+		}
+	]
+}

@@ -1,0 +1,60 @@
+
+#XPiggy Bank Settings
+[xpiggybank]
+	# A flag indicating whether to only accept full multiples of the calculated input rate 
+	# for incoming fluids. This will stop the loss of XP due to pipe transfer rates not transferring
+	# full XP values of fluid at a time, but could mean that not all of a source of incoming fluid is
+	# transferred.
+	#
+	# By default, this should probably be left as 'true', even if sometimes this might mean that
+	# it is unclear to players why the 'last bit' of a tank is not transferred.
+	#
+	# To be clear, if set to false, then there is a good chance resources will be lost. For example,
+	#  if a pipe's transfer rate is 50 mB/tick, then for any of the fluids where 1XP = 20mB, every
+	# tick the player would lose 1XP because 10 mB would be piped out, but would not equate to a full
+	# XP in the internal tank, and so would be lost due to rounding.
+	onlyAcceptMultiples = true
+	# The number of ticks between checks for XP orbs in the collection area.
+	# Default: 10 (1/2 a second)
+	#Range: 1 ~ 1200
+	ticks_per_check = 10
+	# The internal tank size in mB - each mB of Liquid Experience = 1xp.
+	#
+	# You should probably just stick to the default of 20000000 (20000 buckets of Liquid Experience, which is about 2125 levels!)
+	#Range: 16000 ~ 21474000
+	internalTankSize = 20000000
+	# Whether the pickup of XP orbs in the area is enabled. If set to false, then 
+	# the XPiggy Bank can only be used as a tank for converting fluids and storing XP
+	# through the GUI.
+	pickup_enabled = true
+	# The radius around the XPiggy Bank to collect free-floating experience orbs.
+	# e.g. a radius of 0 would mean a 1x1 area, a radius of 1 would be 3x3, a radius of 2 would be 5x5, etc.
+	# and the default of 4 is a 9x9 area centred on the XPiggy Bank. The max is 12 (25x25) area.
+	# For performance reasons, be careful about increasing this too far without also increasing the ticks per check.
+	# Default: 4
+	#Range: 0 ~ 12
+	pickup_radius = 7
+	# A semi-colon separated list of additional fluid types, their rate of conversion from 1000 mB to XP, 
+	# and whether the fluid can be input, output or both.
+	#
+	# For example:
+	#   sophisticatedbackpacks:xp_still=1000:IO;industrialforegoing:essence=10:I;cofh_core:experience=50:IO;minecraft:water=1:O
+	# This example would mean that: 
+	#   - every 1000mb of Sophisticated Backpack's XP would be equivalent to 50XP (20:1 conversion) and can be input or output
+	#   - every 1000mb of Industrial Foregoing's Essence would be equivalent to 10XP (100:1 conversion) but can only be input
+	#   - every 1000mb of COFH Core's Essence of Knowledge  would be equivalent to 50XP (20:1 conversion) and can be input or output
+	#   - every 1000mb of water would be equivalent to 10XP (1000:1 conversion) but can only be output
+	#
+	# Some common XP-like fluids and their recommended rates include:
+	#   - cofh_core:experience=50 - 'Essence of Knowledge' from Thermal
+	#   - sophisticatedbackpacks:xp_still=50 - 'Experience' from Sophisticated Backpacks
+	#   - cyclic:xpjuice=50 - 'Experience' from Cyclic
+	#   - mob_grinding_utils:fluid_xp=50 - 'Fluid XP' from Mob Grinding Utils
+	#   - industrialforegoing:essence=10 - 'Essence' from Industrial Foregoing
+	fluids = "sophisticatedbackpacks:xp_still=1000:IO;industrialforegoing:essence=100:IO;cofh_core:experience=1000:IO"
+
+#Misc
+[misc]
+	# Logs additional information when loading.
+	verbose_logging = false
+

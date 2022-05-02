@@ -1,0 +1,890 @@
+{
+	id: "6B875C77BF0C8CD5"
+	group: "719DAED049159F2E"
+	order_index: 3
+	filename: "getting_tinks_done"
+	title: "Getting Tinks Done"
+	icon: "tconstruct:smeltery_controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -5.5d
+			y: 4.5d
+			width: 3.8d
+			height: 5.75d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/seared_melter.png"
+			hover: ["Example of a Seared Melter setup"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 8.5d
+			y: 3.0d
+			width: 6.75d
+			height: 5.4d
+			rotation: 0.0d
+			image: "kubejs:textures/quests/basic_smeltery.png"
+			hover: ["Example of a 3x3x2 Smeltery"]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "Getting Tinks Done"
+			x: -10.5d
+			y: 0.5d
+			shape: "gear"
+			description: ["It's time to start tinkering and getting some things done."]
+			dependencies: ["11F9CF9280A7259D"]
+			id: "0BA4183E9254B2AD"
+			tasks: [{
+				id: "56218806F1A5FC3D"
+				type: "checkmark"
+				title: "Getting Tinks Done"
+			}]
+		}
+		{
+			title: "It's for the Grouter Good"
+			x: -8.5d
+			y: 0.5d
+			shape: "square"
+			description: [
+				"Grout. Not the kind you stick tiles to a wall with - the other kind."
+				""
+				"In fact, this kind we're going to smelt into a pile of Seared Brick and build melters and smelters we can tinker around with."
+				""
+				"To begin with, make up 40 blocks of Grout, and we can take it from there."
+			]
+			dependencies: ["0BA4183E9254B2AD"]
+			id: "7689811B675CB663"
+			tasks: [{
+				id: "49D59D73E9165F7D"
+				type: "item"
+				item: "tconstruct:grout"
+				count: 40L
+			}]
+		}
+		{
+			title: "Slightly over-cooked bricks"
+			x: -5.5d
+			y: 0.5d
+			shape: "square"
+			description: [
+				"Seared Bricks are made by simply smelting grout. Throw your Grout blocks into a furnace and each one will cook down into a Seared Brick."
+				""
+				"Seared Bricks are used in many of the blocks in our Tinker's Melter that we're going to be working on next."
+			]
+			dependencies: ["7689811B675CB663"]
+			id: "1F4CB5B1FA691BAC"
+			tasks: [{
+				id: "5F93AB2B1F682EC9"
+				type: "item"
+				item: "tconstruct:seared_brick"
+			}]
+		}
+		{
+			title: "Another Seared Brick in the wall"
+			x: 2.0d
+			y: 3.0d
+			shape: "square"
+			subtitle: "(of the Smeltery)"
+			description: ["With 29 Seared Bricks blocks, a Smeltery Controller, a Seared Fuel Tank, a Seared Chute, and a Seared Drain, you can make a 3x3x2 Smeltery (internal measurement)."]
+			dependencies: ["54493C0419586822"]
+			id: "504A8DED31C4E3EC"
+			tasks: [{
+				id: "574EAA111108B2C3"
+				type: "item"
+				item: "tconstruct:seared_bricks"
+				count: 29L
+			}]
+		}
+		{
+			title: "Molten Metal on Tap"
+			x: -2.5d
+			y: -0.5d
+			shape: "square"
+			description: [
+				"Seared Faucets can use attached to the side(s) of most fluid containers."
+				""
+				"This includes the Seared Melter, as well as Seared Tanks and Seared Gauges."
+				""
+				"If provided with a redstone signal, the Seared Faucet will automatically pour out a molten material when it can, or without a redstone signal, it can be made to dispense molten materials by hand."
+			]
+			dependencies: ["1F4CB5B1FA691BAC"]
+			id: "38125BFEC7884F38"
+			tasks: [{
+				id: "10994F67755FD853"
+				type: "item"
+				item: "tconstruct:seared_faucet"
+			}]
+		}
+		{
+			title: "Heating it up"
+			x: -2.5d
+			y: 0.5d
+			shape: "square"
+			description: [
+				"The Seared Heater is placed beneath a Seared Melter to provide sufficient heat to melt materials put inside the melter."
+				""
+				"The Seared Heater consumes almost any fuel source, including the likes of coal and wood - much like a furnace."
+				""
+				"The Seared Heater will also be used later on to make the Smeltery Controller, so while a Seared Fuel Tank full of Lava could be used to power the Seared Melter instead, it's worth making one of these now regardless."
+			]
+			dependencies: ["1F4CB5B1FA691BAC"]
+			id: "44443475CE111148"
+			tasks: [{
+				id: "018EC9387F41B4DD"
+				type: "item"
+				item: "tconstruct:seared_heater"
+			}]
+		}
+		{
+			title: "The Miniature Smeltery"
+			x: -2.5d
+			y: -1.5d
+			shape: "square"
+			description: [
+				"The Seared Melter is a small container for melting and holding small amounts of molten materials."
+				""
+				"It will need:"
+				"  - a Seared Heater underneath"
+				""
+				"  - Seared Faucet(s) attached to the side(s) of the Seared Melter"
+				""
+				"  - a Casting Basin or Casting Table to pour out the molten material onto."
+				""
+				"Note that the Seared Melter cannot alloy molten materials - we'll sort that out soon though when we upgrade to a Smeltery."
+			]
+			dependencies: ["1F4CB5B1FA691BAC"]
+			id: "3468A1304A244F66"
+			tasks: [
+				{
+					id: "48F1BA79A6314BF5"
+					type: "item"
+					item: "tconstruct:seared_fuel_gauge"
+				}
+				{
+					id: "7DACD9AD1E7C395C"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+			]
+		}
+		{
+			title: "No cast needed"
+			x: -2.5d
+			y: 1.5d
+			shape: "square"
+			description: ["The Casting Basin is filled my putting molten liquid into it and then allowing the liquid to cool until it forms a solid. For example, filling it with Molten Iron and then allowing it to cool will produce an Iron Block."]
+			dependencies: ["1F4CB5B1FA691BAC"]
+			id: "0D7C115221200F4E"
+			tasks: [{
+				id: "7B2B895E62E3418E"
+				type: "item"
+				item: "tconstruct:seared_basin"
+			}]
+		}
+		{
+			title: "The Beating Heart"
+			x: 1.0d
+			y: 4.0d
+			shape: "square"
+			subtitle: "(of the Smeltery)"
+			description: ["To make a Smeltery Controller, place a Seared Heater into a Seared Casting Basin and pour over 4 ingots worth of Molten Copper. Once it cools, you'll have a shiny new Smeltery Controller."]
+			dependencies: ["54493C0419586822"]
+			id: "71C94DD1513C239E"
+			tasks: [{
+				id: "6888EAC1B4EC22C7"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
+			}]
+		}
+		{
+			title: "Making shapes"
+			x: -2.5d
+			y: 2.5d
+			shape: "square"
+			description: [
+				"The Seared Casting Table can use casts of different shapes to make specific parts for tools, machinery, or ingots."
+				""
+				"The simplest example to start with is the Ingot Cast, which can be made in one of two ways."
+				""
+				"The first way is through a Ingot Sand Cast, which gets consumed by the casting process, or through a Ingot Gold Cast, which is reusable."
+			]
+			dependencies: ["1F4CB5B1FA691BAC"]
+			id: "1825174040BFD858"
+			tasks: [{
+				id: "5AB713D013461E27"
+				type: "item"
+				item: "tconstruct:seared_table"
+			}]
+		}
+		{
+			title: "Blankety Blank"
+			x: -2.0d
+			y: 3.5d
+			description: [
+				"One block of sand can be easily converted into 4 Blank Sand Casts in a crafting table."
+				""
+				"Typical usage for the Blank Sand Cast is to place one onto the casting table, then to make the shaped cast by placing in a template item (such as a stick for a Rod Sand Cast), removing the template item, and then pouring in the molten material."
+			]
+			dependencies: ["1825174040BFD858"]
+			optional: true
+			id: "1F502D916C90EBBA"
+			tasks: [{
+				id: "44535C3C32C698EC"
+				type: "item"
+				item: "tconstruct:blank_sand_cast"
+				count: 4L
+			}]
+		}
+		{
+			title: "In the Chute and out the Drain"
+			x: 3.0d
+			y: 2.0d
+			shape: "square"
+			description: [
+				"The Seared Chute can be used to input materials into the Smeltery via a Hopper or other item transport method."
+				""
+				"The seared drain can be used to extract molten material from the Smeltery through the use of Seared Faucets, pipes, or other fluid transport method."
+			]
+			dependencies: ["54493C0419586822"]
+			dependency_requirement: "one_started"
+			id: "06701B9E3630EED8"
+			tasks: [
+				{
+					id: "0756D33C8B5EE77C"
+					type: "item"
+					item: "tconstruct:seared_drain"
+				}
+				{
+					id: "386DE7EB5D67D5D6"
+					type: "item"
+					item: "tconstruct:seared_chute"
+				}
+			]
+		}
+		{
+			title: "Kinda like Bone China"
+			x: -6.5d
+			y: -0.5d
+			shape: "square"
+			description: [
+				"It turns out that Bone Meal and Clay when mixed together form a kind of Porcelain which is suitable, once fired, to hold extremely hot liquids."
+				""
+				"Make at least 6 balls of Porcelain Clay and some Grout, and shape them into an Unfired Crucible."
+			]
+			dependencies: ["7689811B675CB663"]
+			id: "307E3B89B44B462C"
+			tasks: [
+				{
+					id: "1A4674119DEF63F2"
+					type: "item"
+					item: "exnihilosequentia:porcelain_clay"
+					count: 6L
+				}
+				{
+					id: "068DB47D59025F1D"
+					type: "item"
+					item: "tconstruct:grout"
+				}
+				{
+					id: "6876EAA3C6D0CE1A"
+					type: "item"
+					item: "exnihilosequentia:crucible_unfired"
+				}
+			]
+		}
+		{
+			title: "All Fired up"
+			x: -4.5d
+			y: -1.5d
+			shape: "square"
+			description: ["Pop that Unfired Crucible into a furnace to get a Fired Crucible."]
+			dependencies: ["307E3B89B44B462C"]
+			id: "3546C3F02222AD0D"
+			tasks: [{
+				id: "59E4D769813EB5C0"
+				type: "item"
+				item: "exnihilosequentia:crucible_fired"
+			}]
+		}
+		{
+			title: "Lava Palava"
+			x: -2.5d
+			y: -2.5d
+			shape: "square"
+			description: [
+				"Put a heat source underneath the Fired Crucible and it will slowly rise in temperature until it gets hot enough to turn stone into Lava."
+				""
+				"Different materials provide different amounts of molten rock (aka Lava). The most efficient method right now is likely to be 4 rocks, which will produce enough Lava to fill a standard Bucket."
+				""
+				"To start with, use a torch underneath the crucible - check JEI for more efficient methods you can work towards later."
+			]
+			dependencies: ["3546C3F02222AD0D"]
+			id: "7ABCB955100B92C0"
+			tasks: [{
+				id: "2DA12207E7FA9DA5"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			title: "Tanks Very Much"
+			x: 4.0d
+			y: 1.0d
+			shape: "square"
+			description: [
+				"The Seared Fuel Tank can store up to 4 buckets of Lava."
+				""
+				"When placed as one of the wall blocks of a Smeltery, it provides heat up to 1000 degrees, which is enough for most recipes, though some will require more heat."
+				""
+				"For higher temperature requirements, the Seared Fuel Tank can also hold Blazing Blood, which will provide heat up to 1500 degrees."
+			]
+			dependencies: ["54493C0419586822"]
+			id: "46AFFB07DDB85108"
+			tasks: [{
+				id: "00EA5B814E3D4C31"
+				type: "item"
+				item: "tconstruct:seared_fuel_tank"
+			}]
+		}
+		{
+			title: "Tonetherness"
+			x: 7.0d
+			y: -5.0d
+			shape: "square"
+			description: [
+				"Use a piece of Redstone on a Stone Barrel full of Lava and you will be able to create a hellish material called Netherrack."
+				""
+				"We'll look at ways of doing this more quickly later, but for now, setting fire to a block of Netherrack under a Fired Crucible will give you a decent speed boost when it comes to making Lava."
+			]
+			dependencies: ["1D85898B092C9EC0"]
+			id: "79F700177E90BB51"
+			tasks: [{
+				id: "6D90414844FDED91"
+				type: "item"
+				item: "minecraft:netherrack"
+				count: 8L
+			}]
+		}
+		{
+			title: "Cobble together"
+			x: -0.5d
+			y: -3.5d
+			shape: "square"
+			description: [
+				"Now that you have lava, you should be able to make a cobblestone generator by placing down water and lava near eachother - just make sure that the water doesn't reach the source block of lava or it will turn into Obsidian."
+				""
+				"Perhaps the simplest cobblestone generator to make can be done by digging a 3x1 trench, placing some stairs at one end (with the \"open\" side facing the end of the trench), then waterlogging the stairs. (If the water flows, youve done something wrong!) Leave the gap in the middle, and put down a bucket of Lava at the other end of the trench."
+				""
+				"When the lava flows and touches the waterlogged stair, a piece of cobble will form."
+			]
+			dependencies: ["7ABCB955100B92C0"]
+			id: "02B6D4809390E44E"
+			tasks: [{
+				id: "0B47650F2688464A"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 9L
+			}]
+		}
+		{
+			title: "Smoothing it out"
+			x: 1.5d
+			y: -4.5d
+			shape: "square"
+			description: [
+				"Take 9 of the cobble you've made and pop them into a furnace to get 9 Stone."
+				""
+				"p.s. Now that you have ways to get your hands on Stone, you might want to start thinking about making a Mob farm if you haven't already done so. There's a chapter in section 4 called \"&aThe Slaughterhouse&f\", which has a sub-section for tools you might find useful in making a decent starter Mob farm."
+			]
+			dependencies: ["02B6D4809390E44E"]
+			id: "554C2B8969903BC6"
+			tasks: [{
+				id: "0F16B5080A380453"
+				type: "item"
+				item: "minecraft:stone"
+				count: 9L
+			}]
+		}
+		{
+			title: "Slabs"
+			x: 3.5d
+			y: -5.5d
+			shape: "square"
+			description: ["3 Stone in a row in the crafting table can be split into 6 half-height Stone Slabs."]
+			dependencies: ["554C2B8969903BC6"]
+			id: "6661387F6A3E1BCA"
+			tasks: [{
+				id: "6D7351AB69CCF2B9"
+				type: "item"
+				item: "minecraft:stone_slab"
+				count: 6L
+			}]
+		}
+		{
+			title: "A more useful Barrel"
+			x: 5.5d
+			y: -6.5d
+			shape: "square"
+			description: ["Now that you have Stone and Stone Slabs, you can make a Stone Barrel. Unlike its Wood counter-part, the Stone Barrel can hold high-temperature liquids, including Lava."]
+			dependencies: ["6661387F6A3E1BCA"]
+			id: "1D85898B092C9EC0"
+			tasks: [{
+				id: "667247C878E418E8"
+				type: "item"
+				item: "exnihilosequentia:barrel_stone"
+			}]
+		}
+		{
+			title: "Crushed Netherrack"
+			x: 7.0d
+			y: -3.5d
+			shape: "square"
+			description: ["Crushed Netherrack can be sieved using an Iron Mesh or higher."]
+			dependencies: ["79F700177E90BB51"]
+			id: "24E0AF40A7800C82"
+			tasks: [{
+				id: "6BEAA253B08B1B63"
+				type: "item"
+				item: "exnihilosequentia:crushed_netherrack"
+				count: 8L
+			}]
+		}
+		{
+			title: "Not from Stonehenge"
+			x: 5.5d
+			y: -5.0d
+			description: ["Use a piece of Glowstone Dust on a Stone Barrel full of Lava and you will create some End Stone."]
+			dependencies: ["1D85898B092C9EC0"]
+			optional: true
+			id: "55130CF64C4F9EBB"
+			tasks: [{
+				id: "3560FFE36865EE7C"
+				type: "item"
+				item: "minecraft:end_stone"
+				count: 8L
+			}]
+		}
+		{
+			title: "Crushed End Stone"
+			x: 5.5d
+			y: -3.5d
+			description: ["Crushed End Stone can be sieved using an Iron Mesh or higher to give you a chance of getting an Ender Pearl (without needing to kill an Enderman for it)."]
+			dependencies: ["55130CF64C4F9EBB"]
+			optional: true
+			id: "29EB650396A8609B"
+			tasks: [{
+				id: "72D9FD24B0A83E18"
+				type: "item"
+				item: "exnihilosequentia:crushed_end_stone"
+				count: 8L
+			}]
+		}
+		{
+			title: "It's a scrap from the Nether, right?"
+			x: 10.0d
+			y: -0.5d
+			shape: "square"
+			description: [
+				"You can also get Netherite Scraps from sieving Crushed Netherrack, which is a nice bonus!"
+				""
+				"As soon as you have your first scrap or two, you might want to check on how to make Ancient Debris, and how you might be able to crush and enrich that for a more reliable method of getting more Netherite Scraps."
+			]
+			dependencies: ["24E0AF40A7800C82"]
+			id: "2CDC1C706AFA2E47"
+			tasks: [{
+				id: "5BA1FE72963139D3"
+				type: "item"
+				item: "minecraft:netherite_scrap"
+				count: 4L
+			}]
+		}
+		{
+			title: "Gold! (Gold)"
+			x: 7.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Always believe in your soul"
+			description: ["Sieving Crushed Netherrack with an Iron Mesh or higher will give a chance of getting Gold Ore Pieces, which can be combined into a Gold Ore Chunk."]
+			dependencies: ["24E0AF40A7800C82"]
+			id: "41533B9883BC8046"
+			tasks: [{
+				id: "06EB9253FE030BFD"
+				type: "item"
+				item: "exnihilosequentia:chunk_gold"
+			}]
+		}
+		{
+			title: "It's blue-tiful"
+			x: 8.5d
+			y: -3.5d
+			description: ["Sieving Crushed Netherrack will give a chance of dropping Cobalt Ore Pieces, which you can combine into a Cobalt Ore Chunk."]
+			dependencies: ["24E0AF40A7800C82"]
+			id: "02C565DF230C9A02"
+			tasks: [{
+				id: "7617224DF1652A7A"
+				type: "item"
+				item: "exnihilosequentia:chunk_cobalt"
+			}]
+		}
+		{
+			title: "But I swear in the days still left"
+			x: 7.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "We'll walk in fields of gold"
+			description: [
+				"Smelt up some Gold Ingots - they're going to be useful for all sorts of things."
+				""
+				"Who doesn't like a bit of bling too?"
+				""
+				"&aUnlocks: Getting Digital&f"
+				"&aUnlocks: Industrial Foreboding&f"
+				"&aUnlocks: Ther-malcontent&f"
+				"&aUnlocks: Networks for X-Men&f"
+			]
+			dependencies: ["41533B9883BC8046"]
+			size: 1.5d
+			id: "3B00278F3DDF103C"
+			tasks: [{
+				id: "01616EB880322908"
+				type: "item"
+				item: "minecraft:gold_ingot"
+				count: 4L
+			}]
+		}
+		{
+			title: "Netherite!"
+			x: 8.5d
+			y: -0.5d
+			description: ["Now that you have some Gold and Netherite Scraps, you can make Netherite Ingots."]
+			dependencies: [
+				"2CDC1C706AFA2E47"
+				"3B00278F3DDF103C"
+			]
+			id: "2AFD34A536E1F29A"
+			tasks: [{
+				id: "6CD1DA551BCF8758"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+		}
+		{
+			title: "I'm blue, da ba dee da ba daa"
+			x: 10.0d
+			y: -3.5d
+			subtitle: "(Da ba dee da ba daa x6)"
+			description: ["Smelt up some of that Cobalt (perhaps Smoosh it first?) and make yourself some Cobalt Ingots."]
+			dependencies: ["02C565DF230C9A02"]
+			id: "5A325EC318C6B44C"
+			tasks: [{
+				id: "3934CF1C614F8C7C"
+				type: "item"
+				item: "tconstruct:cobalt_ingot"
+				count: 3L
+			}]
+		}
+		{
+			title: "Manyullyn..."
+			x: 10.0d
+			y: -2.0d
+			subtitle: "... try say that 5 times fast!"
+			description: [
+				"Manyullyn is a very tough material made from alloying Molten Debris and Cobalt together in a Smeltery that has a fuel source of at least 1200 degrees."
+				""
+				"The only such fuel source available to us is Blazing Blood. Once you've got that sorted out, actually alloying Manyullyn is not hard."
+			]
+			dependencies: [
+				"2CDC1C706AFA2E47"
+				"5A325EC318C6B44C"
+				"3725D438E369781D"
+			]
+			id: "29AD6791E3C49B6C"
+			tasks: [{
+				id: "42E5D0085314ABFA"
+				type: "item"
+				item: "tconstruct:manyullyn_ingot"
+			}]
+		}
+		{
+			title: "Beware of the oysters"
+			x: 5.5d
+			y: -2.0d
+			description: ["Sieve the Crushed End Stone using an Iron Mesh or higher and, with a bit of luck, you'll end up with an Ender Pearl or two."]
+			dependencies: ["29EB650396A8609B"]
+			optional: true
+			id: "17073588CB8CC58B"
+			tasks: [{
+				id: "4A7F1AE7D925C083"
+				type: "item"
+				item: "minecraft:ender_pearl"
+			}]
+		}
+		{
+			title: "Alloy Aloha!"
+			x: 4.0d
+			y: 4.0d
+			shape: "diamond"
+			description: [
+				"Start by putting down a 3x3 base of Seared Bricks, then 4 walls on the outside of those that are 3x2. You will be 4 blocks short, which you can use the Tank, Chute, Drain and Controller for."
+				""
+				"Once you place down the Smeltery Controller and all of the walls are complete with valid Smeltery blocks, the multi-block Smeltery structure will form."
+				""
+				"Put some Lava or Blazing Blood in the Seared Fuel Tank, and your Smeltery will be ready to start smelting and alloying molten materials."
+				""
+				"Note: If the contents in a Smeltery can be alloyed together, the process is automatic."
+				""
+				"Use faucets with levers above them, casting tables and basins under the faucets, and Hoppers to pull items out of the casting tables and basins in much the same way as was suggested for the Seared Melter setup."
+				""
+				"Our Science Division has provided an image of a sample setup for you to review. The Cellulose Bricks are decorative additions to allow for the levers above the faucets."
+			]
+			dependencies: [
+				"06701B9E3630EED8"
+				"71C94DD1513C239E"
+				"46AFFB07DDB85108"
+				"504A8DED31C4E3EC"
+			]
+			id: "2827AB59F3D85E9D"
+			tasks: [{
+				id: "41F718B8F6D58AE9"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Smelt or Melt"
+			x: 0.5d
+			y: 0.5d
+			shape: "diamond"
+			description: [
+				"At this point you have everything you need to make your first Seared Melter and start using it."
+				""
+				"Refer to the provided image as a reminder of how you could set this up."
+				""
+				"Note that for some simple automation you can use a Hopper to input items into the Seared Melter from the top or sides, and you can extract materials that have been cast and completely cooled by using a hopper underneath the Seared Casting Table and Seared Casting Basin."
+			]
+			dependencies: [
+				"3468A1304A244F66"
+				"38125BFEC7884F38"
+				"44443475CE111148"
+				"0D7C115221200F4E"
+				"1825174040BFD858"
+				"7ABCB955100B92C0"
+			]
+			id: "54493C0419586822"
+			tasks: [{
+				id: "3F9C93758622F915"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Osmium Osmosis"
+			x: 4.0d
+			y: 5.5d
+			shape: "gear"
+			description: [
+				"Osmium, a key element for use in advanced mechanisms, can be made through alloying Fullerene (molten Carbon Nanotubes), Iron, and Thatldu."
+				""
+				"Osmium is actually a pure element, so even our Science Division is uncertain as to what the actual process here is, but there's something \"hinky\" about that Thatldu stuff that seems to make this possible."
+				""
+				"You're probably going to need quite a bit of Osmium moving forward, so you might as well stock up a bit."
+				""
+				"&aUnlocks: Allo? Allo? Alloy!&f"
+				"&aUnlocks: Getting Mekanised (2/2)&f"
+			]
+			dependencies: ["2827AB59F3D85E9D"]
+			size: 1.5d
+			id: "495C59666CD6C3A0"
+			tasks: [{
+				id: "47970DBB4446450F"
+				type: "item"
+				item: "mekanism:ingot_osmium"
+				count: 3L
+			}]
+		}
+		{
+			title: "My Little Blazey"
+			x: 11.5d
+			y: -3.5d
+			description: ["Adding a Blazing Doll to a barrel of Lava will spawn a Blaze. This is particularly useful for getting your hands on some Blazing Blood."]
+			dependencies: [
+				"5D14F476E568B129"
+				"742CB98CD34C3815"
+			]
+			id: "6418606FCB78AE9F"
+			tasks: [
+				{
+					id: "647C981B3E0D1CE1"
+					type: "item"
+					item: "exnihilosequentia:porcelain_clay"
+					count: 5L
+				}
+				{
+					id: "74C0592F1B3A46C2"
+					type: "item"
+					item: "exnihilosequentia:doll_crafting"
+				}
+				{
+					id: "7BFB98282F8CA846"
+					type: "item"
+					item: "exnihilosequentia:doll_blaze"
+				}
+			]
+		}
+		{
+			title: "Bleeding Blaze"
+			x: 11.5d
+			y: -2.0d
+			description: [
+				"Blazing Blood can be obtained by putting a live Blaze inside a heated Smeltery. The Blaze will take damage, and produce Blazing Blood until it dies."
+				""
+				"Later on you'll be able to do things like set up a Spawner to create Blazes in other ways, or capture Blazes and release them strait into a smeltery, but early on, using a Blazing Doll to summon a Blaze might be your only way of achieving this."
+			]
+			dependencies: ["6418606FCB78AE9F"]
+			id: "3725D438E369781D"
+			tasks: [{
+				id: "76C119766ECDC82C"
+				type: "item"
+				item: "tconstruct:blazing_blood_bucket"
+			}]
+		}
+		{
+			title: "Olde Fungus"
+			x: 7.0d
+			y: -7.0d
+			shape: "square"
+			description: [
+				"Ancient Spores can be obtained by sieving Silica Dust Blocks using a diamond mesh."
+				""
+				"If you haven't figured it out yet, Diamonds can be obtained by sieving Gravel or Crushed Diorite with an Iron Mesh."
+				""
+				"&aAncient spores can be used on dirt to turn it into Mycelium&f. Be careful though - the stuff spreads! It might be a good idea to make a border of some sort of stone around a 3x3 area of dirt and then use the Ancient Spores on the middle block."
+			]
+			dependencies: ["1D85898B092C9EC0"]
+			id: "7F6BB5E95997690C"
+			tasks: [{
+				id: "3CE850AFE9C0341A"
+				type: "item"
+				title: "Ancient Spores"
+				item: "exnihilosequentia:ancient_spores"
+			}]
+		}
+		{
+			title: "Watery Witches"
+			x: 8.5d
+			y: -7.0d
+			shape: "square"
+			description: [
+				"Place a wooden barrel, such as an Oak Barrel, on top of a block of Mycelium, and then fill it with water."
+				""
+				"After a few seconds, the water inside the barrel will be transformed into Witch Water."
+				""
+				"If you pour this stuff on the ground, it can transform some hostile mobs into more potent versions - such as Skeletons to Wither Skeletons, and Creepers to Charged Creepers. Be careful!"
+			]
+			dependencies: ["7F6BB5E95997690C"]
+			id: "1640986D10506C1D"
+			tasks: [{
+				id: "0A6EB3EF495CA016"
+				type: "item"
+				item: "exnihilosequentia:bucket_witchwater"
+			}]
+		}
+		{
+			title: "Spooky Dirty Sand"
+			x: 10.0d
+			y: -6.5d
+			shape: "square"
+			description: [
+				"Adding Sand to a barrel full of Witch Water will transform the Sand into Soul Sand, consuming the Witch Water in the process."
+				""
+				"p.s. Automating the production of Soul Sand can be notoriously difficult. If you decide you would like to try it anyway, the Science Division gurus have come up with a step-by-step method for you to try. You will need to have access to gold and redstone first, but once those are in hand, take a look at the \"Networks for X-Men\" section of this Survival Guide in Appendix A."
+			]
+			dependencies: ["1640986D10506C1D"]
+			id: "185FD41758B01CB1"
+			tasks: [{
+				id: "42EA454D1CD57C9E"
+				type: "item"
+				item: "minecraft:soul_sand"
+			}]
+		}
+		{
+			title: "More like St John's Wort"
+			x: 11.0d
+			y: -5.5d
+			shape: "square"
+			subtitle: "Not the kind you supposedly get from frogs"
+			description: [
+				"Sieving Soul Sand with an Iron Mesh can result in some Nether Wart."
+				""
+				"Nether Wart can be grown on Soul Sand, and is an ingredient in many recipes. It will be especially useful later on when we start brewing potions."
+			]
+			dependencies: ["185FD41758B01CB1"]
+			id: "5D14F476E568B129"
+			tasks: [{
+				id: "3BF851A35704A7D8"
+				type: "item"
+				item: "minecraft:nether_wart"
+			}]
+		}
+		{
+			title: "Powdered Blaze"
+			x: 9.0d
+			y: -5.5d
+			shape: "square"
+			description: ["Blaze Powder can be obtained from sieving Dust with an Iron Mesh"]
+			dependencies: ["1D85898B092C9EC0"]
+			id: "742CB98CD34C3815"
+			tasks: [{
+				id: "041A23E2D7932DE3"
+				type: "item"
+				item: "minecraft:blaze_powder"
+				count: 4L
+			}]
+		}
+		{
+			title: "Gold Casts - a Quality of Life improvement"
+			x: 5.5d
+			y: -0.5d
+			description: [
+				"Sand Casts are OK, but can be a bit of a pain too. Now that you've got a bit of gold available, you should consider making some Gold Casts for things you cast often."
+				""
+				"A good example is an Ingot Gold Cast - you can create one by placing an ingot (or ingot-shaped item like a brick) on a casting table, and then pouring molten gold over it."
+				""
+				"The brick (or ingot) will be consumed, but you'll be left with a gold version of the cast that doesn't get consumed when making ingots moving forward. It's definitely worth the investment!"
+			]
+			dependencies: ["3B00278F3DDF103C"]
+			optional: true
+			id: "335B313D35BDDF8C"
+			tasks: [{
+				id: "57FFA64939A753EF"
+				type: "item"
+				item: "tconstruct:ingot_cast"
+			}]
+		}
+		{
+			title: "Sandy Ingot Casting (sic)"
+			icon: "tconstruct:ingot_sand_cast"
+			x: -1.5d
+			y: 4.5d
+			description: [
+				"To make an Ingot Sand Cast, place a Blank Sand Cast onto the casting table, then use an ingot-shaped item on it (such as an actual ingot, or a Seared Brick)."
+				""
+				"If you pick up the Ingot Sand Cast, you will get back a Blank Sand Cast."
+			]
+			dependencies: ["1F502D916C90EBBA"]
+			optional: true
+			id: "5C4B82EC3BC4FB7D"
+			tasks: [{
+				id: "07E9361CEF1E4B4B"
+				type: "checkmark"
+				title: "Sandy Ingot Casting (sic)"
+			}]
+		}
+	]
+}
